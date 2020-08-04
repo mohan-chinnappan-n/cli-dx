@@ -45,3 +45,30 @@ SELECT Id
 ```
 
 ### Query Plan Results
+```
+{
+  plans: [
+    {
+      cardinality: 10,
+      fields: [],
+      leadingOperationType: 'Other',
+      notes: [Array],
+      relativeCost: 0.03333333333333333,
+      sobjectCardinality: 1002,
+      sobjectType: 'Account'
+    },
+    {
+      cardinality: 501,
+      fields: [],
+      leadingOperationType: 'TableScan',
+      notes: [Array],
+      relativeCost: 1.7521666666666669,
+      sobjectCardinality: 1002,
+      sobjectType: 'Account'
+    }
+  ],
+  sourceQuery: 'SELECT Id \n FROM Account \n LIMIT 10'
+}
+
+
+```
