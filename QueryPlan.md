@@ -1,4 +1,4 @@
-## How to use DX plugin for getting the query plan
+## How to use DX plugin for getting the query plan ?
 
 - Requires 0.0.46 version of the plugin
     - sfdx-mohanc-plugins@0.0.46
