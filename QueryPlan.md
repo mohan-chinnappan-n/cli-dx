@@ -45,6 +45,7 @@ SELECT Id
 ```
 
 ### Query Plan Results
+- [Query Plan FAQ](https://help.salesforce.com/articleView?id=000334796&type=1&mode=1)
 ```
 {
   plans: [
