@@ -1,4 +1,4 @@
-##  SFDX plugin to 5 Execute Anonymous Apex 
+##  SFDX plugin to  Execute Anonymous Apex 
 
 ### Usage
 
