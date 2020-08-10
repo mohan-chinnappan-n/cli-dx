@@ -28,7 +28,7 @@ EXAMPLE
 
 ### Demo
 
-- Apex Code
+- **Apex Code**
 ``` 
 $ cat tooling_update.soql 
 Account[] acctsBefore = [SELECT NumberOfEmployees  FROM Account  
@@ -44,7 +44,7 @@ Account[] acctsAfter = [SELECT NumberOfEmployees  FROM Account
 System.debug(acctsAfter);
 ```
 
-- Execute
+- **Execute**
 
 ```  
 $ sfdx mohanc:tooling:execute -a tooling_update.soql -u  mohan.chinnappan.n_ea2@gmail.com
@@ -76,4 +76,4 @@ executed?: true
 ```
 
 ### Results
-![tooling update](img/tooling_update-1.png)
+![tooling update](img/tooling-update-1.png)
