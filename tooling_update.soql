@@ -1,0 +1,11 @@
+Account[] acctsBefore = [SELECT NumberOfEmployees  FROM Account  
+                     WHERE Id = '0013h00000Ffg18AAB'
+                  ];
+System.debug(acctsBefore);
+acctsBefore[0].NumberOfEmployees = 12000;
+update acctsBefore;
+
+Account[] acctsAfter = [SELECT NumberOfEmployees  FROM Account  
+                     WHERE Id = '0013h00000Ffg18AAB'
+                  ];
+System.debug(acctsAfter);
