@@ -51,7 +51,6 @@ EXAMPLE
 ## Demos
 <a name="get"></a>
 ###  GET
-- get time
 ```
 # get time
 $ sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/time  -m GET 
