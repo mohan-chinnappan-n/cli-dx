@@ -98,7 +98,7 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 $ cat header.json 
 {
  "Content-Type": "application/json",
-  "Authorization": "Bearer 00D3h000007R1Lu!AR0AQMlV_9bUOI21HnyrKK.GLAo61XhzbQ_gxT3uHNm7YWkbDp4pajIRXKMOyldZepiJjAKIuy.2wbCg_OLXxoFrrKvL2aG9"
+  "Authorization": "Bearer 00D3h000007R1Lu!AR0AQMlV_9bUOI21JUNKJjAKIuy.2wbCg_OLXxoFrrKvL2aG9"
 
 }
 
@@ -158,7 +158,9 @@ $ cat df-start.json
 
 ```
 ### PUT
-- Coming soon here...
+```
+$ sfdx mohanc:ws:rest -r URI  -m POST -f header.json -d data.json
+ 
 
 
 ## Questions
