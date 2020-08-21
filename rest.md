@@ -160,8 +160,8 @@ $ cat df-start.json
 ### PUT
 ```
 $ sfdx mohanc:ws:rest -r URI  -m POST -f header.json -d data.json
- 
-
+``` 
+- PUT demo coming soon...
 
 ## Questions
 
