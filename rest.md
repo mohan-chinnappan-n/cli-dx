@@ -170,7 +170,7 @@ $ sfdx mohanc:ws:rest -r URI  -m POST -f header.json -d data.json
 ```
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com
 
-        accessToken: 00D3h000007R1Lu!AR0AQMlV_9bUOI21HnyrKK.GLAo61XhzbQ_gxT3uHNm7YWkbDp4pajIRXKMOyldZepiJjAKIuy.2wbCg_OLXxoFrrKvL2aG9
+        accessToken: 00D3h000007R1Lu!JUNK.GLAo61XhzbQ_gxT3uHNm7YWkbDp4pajIRXKMOyldZepiJjAKIuy.2wbCg_OLXxoFrrKvL2aG9
         instanceUrl: https://mohansun-ea-02-dev-ed.my.salesforce.com)
         apiVersion: 49.0,
         restAPIURI: https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/
