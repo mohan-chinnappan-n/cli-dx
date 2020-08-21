@@ -51,8 +51,8 @@ EXAMPLE
 ## Demos
 <a name="get"></a>
 ###  GET
+- get time
 ```
-# get time
 $ sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/time  -m GET 
 {
     "time": "2020-08-21T20:24:56.033Z"
