@@ -66,7 +66,7 @@ $ sfdx mohanc:ws:rest -r https://dog.ceo/api/breeds/image/random  -m GET
     "message": "https://images.dog.ceo/breeds/papillon/n02086910_9317.jpg",
     "status": "success"
 }
-
+![dog1](https://images.dog.ceo/breeds/papillon/n02086910_9317.jpg)
 ```
 
 - Get all bulkAPI 2.0 jobs
