@@ -397,6 +397,208 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 ```
 ![dataset dim measure](img/dataset-dim-mes-1.png)
+
+
+- Get Dashboard info
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/dashboards/0FK3h0000001zObGAI -m GET   -f header.json 
+
+{
+    "allowPreview": true,
+    "assetSharingUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/analytics/wave/dashboard?assetId=0FK3h0000001zObGAI&orgId=00D3h000007R1Lu&loginHost=na111.salesforce.com&urlType=sharing",
+    "createdBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/profilephoto/005/T"
+    },
+    "createdDate": "2020-07-14T11:33:54.000Z",
+    "datasets": [
+        {
+            "id": "0Fb3h0000008sAECAY",
+            "label": "fruit-yield-acct",
+            "name": "fruit_yield_acct",
+            "url": "/services/data/v49.0/wave/datasets/0Fb3h0000008sAECAY"
+        }
+    ],
+    "dateVersion": 1,
+    "files": [
+        {
+            "contentType": "image/png",
+            "fileLength": 14499,
+            "fileName": "assetPreviewThumb",
+            "id": "0FJ3h0000004OMJGA2",
+            "lastModifiedDate": "2020-07-14T11:33:56.000Z",
+            "url": "/services/data/v49.0/wave/lenses/0FK3h0000001zObGAI/files/0FJ3h0000004OMJGA2"
+        }
+    ],
+    "folder": {
+        "id": "0053h000002xQ5sAAE",
+        "label": "Mohan Chinnappan"
+    },
+    "historiesUrl": "/services/data/v49.0/wave/dashboards/0FK3h0000001zObGAI/histories",
+    "id": "0FK3h0000001zObGAI",
+    "label": "fruits-acct-db",
+    "lastAccessedDate": "2020-08-22T01:38:49.000Z",
+    "lastModifiedBy": {
+        "id": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "profilePhotoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/profilephoto/005/T"
+    },
+    "lastModifiedDate": "2020-07-14T11:33:54.000Z",
+    "mobileDisabled": false,
+    "name": "fruits_acct_db",
+    "permissions": {
+        "create": true,
+        "manage": true,
+        "modify": true,
+        "view": true
+    },
+    "refreshDate": "2020-07-14T11:30:43.000Z",
+    "state": {
+        "dataSourceLinks": [],
+        "filters": [],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 12,
+                "pages": [
+                    {
+                        "label": "fruits-1",
+                        "name": "789504fc-0a7a-4729-9e0d-742b556edd6b",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 11,
+                                "column": 0,
+                                "name": "table_1",
+                                "row": 1,
+                                "rowspan": 8,
+                                "widgetStyle": {
+                                    "borderEdges": []
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "lens_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb3h0000008sAECAY",
+                        "label": "fruit-yield-acct",
+                        "name": "fruit_yield_acct",
+                        "url": "/services/data/v49.0/wave/datasets/0Fb3h0000008sAECAY"
+                    }
+                ],
+                "isGlobal": false,
+                "label": "lens_1",
+                "query": {
+                    "query": "{&quot;values&quot;:[&quot;act&quot;,&quot;fruit&quot;,&quot;date_Year&quot;,&quot;date_Quarter&quot;,&quot;qty&quot;,&quot;date_day_epoch&quot;,&quot;date_sec_epoch&quot;]}",
+                    "version": -1
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "options": {},
+                    "parameters": {
+                        "borderColor": "#e0e5ee",
+                        "borderWidth": 1,
+                        "cell": {
+                            "backgroundColor": "#ffffff",
+                            "fontColor": "#16325c",
+                            "fontSize": 12
+                        },
+                        "columnProperties": {},
+                        "columns": [],
+                        "customBulkActions": [],
+                        "header": {
+                            "backgroundColor": "#f4f6f9",
+                            "fontColor": "#16325c",
+                            "fontSize": 12
+                        },
+                        "innerMajorBorderColor": "#a8b7c7",
+                        "innerMinorBorderColor": "#e0e5ee",
+                        "maxColumnWidth": 300,
+                        "minColumnWidth": 40,
+                        "mode": "variable",
+                        "numberOfLines": 1,
+                        "showActionMenu": true,
+                        "showRowIndexColumn": true,
+                        "totals": true,
+                        "verticalPadding": 8
+                    },
+                    "type": "table"
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "table_1": {
+                "parameters": {
+                    "borderColor": "#e0e5ee",
+                    "borderWidth": 1,
+                    "cell": {
+                        "backgroundColor": "#ffffff",
+                        "fontColor": "#16325c",
+                        "fontSize": 12
+                    },
+                    "columnProperties": {},
+                    "columns": [],
+                    "customBulkActions": [],
+                    "exploreLink": true,
+                    "header": {
+                        "backgroundColor": "#f4f6f9",
+                        "fontColor": "#16325c",
+                        "fontSize": 12
+                    },
+                    "innerMajorBorderColor": "#a8b7c7",
+                    "innerMinorBorderColor": "#e0e5ee",
+                    "maxColumnWidth": 300,
+                    "minColumnWidth": 40,
+                    "mode": "variable",
+                    "numberOfLines": 1,
+                    "showActionMenu": true,
+                    "showRowIndexColumn": true,
+                    "step": "lens_1",
+                    "totals": true,
+                    "verticalPadding": 8
+                },
+                "type": "table"
+            }
+        }
+    },
+    "type": "dashboard",
+    "url": "/services/data/v49.0/wave/dashboards/0FK3h0000001zObGAI"
+}
+```
+![dbrd1](img/dbrd-1.png)
 <a name="patch"></a>
 ### PATCH
 
