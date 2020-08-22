@@ -1,7 +1,7 @@
 # REST API support using DX
 
-- Requires 0.0.50 version of the plugin
-    - sfdx-mohanc-plugins@0.0.50
+- Requires 0.0.51 version of the plugin
+    - sfdx-mohanc-plugins@0.0.51
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 - Supported Methods
@@ -761,14 +761,19 @@ $ cat df-sched.json | jq
 ## Questions
 
 <a name='myorg'></a>
-### How I can access-token and instanceUrl in for the Salesforce org I logged in via sfdx force:auth:web:login ?
+### How create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
 ```
-$ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com
+$ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json 
 
-        accessToken: 00D3h000007R1Lu!JUNK.GLAo61XhzbQ_gxT3uHNm7YWkbDp4pajIRXKMOyldZepiJjAKIuy.2wbCg_OLXxoFrrKvL2aG9
-        instanceUrl: https://mohansun-ea-02-dev-ed.my.salesforce.com
-        apiVersion: 49.0
-        restAPIURI: https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/
+cat header.json 
+{
+    "Content-Type": "application/json",
+    "Authorization": "Bearer 00D3h000007R1Lu!AR0AQNEVl3sPWaYi4_qJUNKSngDojbDmxCVuYF1HFFT6snO5fhQYJy8s.jFlO2oqi9CP3qXKJ1fAzgO",
+    "apiVersion": "49.0",
+    "instanceUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
+    "restAPIUri": "https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/"
+}
+
 
 ```
 <a name='bulkapi2'></a>
