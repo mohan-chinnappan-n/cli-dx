@@ -396,6 +396,7 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 
 ```
+![dataset dim measure](img/dataset-dim-mes-1.png)
 <a name="patch"></a>
 ### PATCH
 
