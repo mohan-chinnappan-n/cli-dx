@@ -102,6 +102,300 @@ $ cat header.json
 }
 
 ```
+- Get securityCoverageUrl for the given dataset in EA
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/datasets/0Fb3h0000008spECAQ/versions/0Fc3h0000026e3aCAA -m GET   -f header.json 
+{
+    "createdBy": {
+        "id": "0053h000003de6bAAA",
+        "name": "Integration User",
+        "profilePhotoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/profilephoto/005/T"
+    },
+    "createdDate": "2020-07-15T18:10:11.000Z",
+    "dataset": {
+        "id": "0Fb3h0000008spECAQ",
+        "url": "/services/data/v49.0/wave/datasets/0Fb3h0000008spECAQ"
+    },
+    "files": [],
+    "id": "0Fc3h0000026e3aCAA",
+    "lastModifiedBy": {
+        "id": "0053h000003de6bAAA",
+        "name": "Integration User",
+        "profilePhotoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/profilephoto/005/T"
+    },
+    "lastModifiedDate": "2020-08-21T20:42:25.000Z",
+    "permissions": {
+        "create": true,
+        "modify": true,
+        "view": true
+    },
+    "securityCoverageUrl": "/services/data/v49.0/wave/security/coverage/datasets/0Fb3h0000008spECAQ/versions/0Fc3h0000026e3aCAA",
+    "totalRows": 2009,
+    "type": "datasetversion",
+    "url": "/services/data/v49.0/wave/datasets/0Fb3h0000008spECAQ/versions/0Fc3h0000026e3aCAA",
+    "xmdMain": {
+        "createdBy": {
+            "id": "0053h000003de6bAAA",
+            "name": "Integration User",
+            "profilePhotoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/profilephoto/005/T"
+        },
+        "createdDate": "2020-07-15T18:10:12.000Z",
+        "dataset": {
+            "connector": "SalesforceAnalyticsCloudDatasetLoader",
+            "description": "customers",
+            "fullyQualifiedName": "customers"
+        },
+        "dates": [
+            {
+                "alias": "dob",
+                "compact": false,
+                "description": "dob",
+                "fields": {
+                    "day": "dob_Day",
+                    "epochDay": "dob_day_epoch",
+                    "epochSecond": "dob_sec_epoch",
+                    "fullField": "dob",
+                    "hour": "dob_Hour",
+                    "minute": "dob_Minute",
+                    "month": "dob_Month",
+                    "quarter": "dob_Quarter",
+                    "second": "dob_Second",
+                    "week": "dob_Week",
+                    "year": "dob_Year"
+                },
+                "firstDayOfWeek": -1,
+                "fiscalMonthOffset": 0,
+                "fullyQualifiedName": "dob",
+                "isYearEndFiscalYear": true,
+                "label": "dob",
+                "showInExplorer": true,
+                "type": "Date"
+            }
+        ],
+        "derivedDimensions": [],
+        "derivedMeasures": [],
+        "dimensions": [
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob",
+                "isMultiValue": false,
+                "label": "dob",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Year",
+                "isMultiValue": false,
+                "label": "dob_Year",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Quarter",
+                "isMultiValue": false,
+                "label": "dob_Quarter",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Month",
+                "isMultiValue": false,
+                "label": "dob_Month",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Week",
+                "isMultiValue": false,
+                "label": "dob_Week",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Day",
+                "isMultiValue": false,
+                "label": "dob_Day",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Hour",
+                "isMultiValue": false,
+                "label": "dob_Hour",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Minute",
+                "isMultiValue": false,
+                "label": "dob_Minute",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "field": "dob_Second",
+                "isMultiValue": false,
+                "label": "dob_Second",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "customActions": [],
+                "customActionsEnabled": true,
+                "description": "name",
+                "field": "name",
+                "fullyQualifiedName": "name",
+                "isMultiValue": false,
+                "label": "name",
+                "linkTemplateEnabled": true,
+                "members": [],
+                "origin": "name",
+                "recordDisplayFields": [],
+                "salesforceActions": [],
+                "salesforceActionsEnabled": true,
+                "showInExplorer": true
+            }
+        ],
+        "language": "en_US",
+        "lastModifiedBy": {
+            "id": "0053h000003de6bAAA",
+            "name": "Integration User",
+            "profilePhotoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/profilephoto/005/T"
+        },
+        "lastModifiedDate": "2020-07-15T18:10:12.000Z",
+        "measures": [
+            {
+                "conditionalFormatting": {},
+                "description": "amt1",
+                "field": "amt1",
+                "format": {
+                    "decimalDigits": 0,
+                    "delimiters": {}
+                },
+                "fullyQualifiedName": "amt1",
+                "label": "amt1",
+                "origin": "amt1",
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "field": "dob_day_epoch",
+                "format": {
+                    "delimiters": {}
+                },
+                "label": "dob_day_epoch",
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "field": "dob_sec_epoch",
+                "format": {
+                    "delimiters": {}
+                },
+                "label": "dob_sec_epoch",
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "description": "amt2",
+                "field": "amt2",
+                "format": {
+                    "decimalDigits": 0,
+                    "delimiters": {}
+                },
+                "fullyQualifiedName": "amt2",
+                "label": "amt2",
+                "origin": "amt2",
+                "showInExplorer": true
+            },
+            {
+                "conditionalFormatting": {},
+                "description": "seq",
+                "field": "seq",
+                "format": {
+                    "decimalDigits": 0,
+                    "delimiters": {}
+                },
+                "fullyQualifiedName": "seq",
+                "label": "seq",
+                "origin": "seq",
+                "showInExplorer": true
+            }
+        ],
+        "organizations": [],
+        "showDetailsDefaultFields": [],
+        "type": "main",
+        "url": "/services/data/v49.0/wave/datasets/0Fb3h0000008spECAQ/versions/0Fc3h0000026e3aCAA/xmds/main"
+    },
+    "xmdsUrl": "/services/data/v49.0/wave/datasets/0Fb3h0000008spECAQ/versions/0Fc3h0000026e3aCAA/xmds"
+}
+
+
+
+```
 <a name="patch"></a>
 ### PATCH
 
