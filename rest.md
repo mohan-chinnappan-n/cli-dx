@@ -156,6 +156,77 @@ $ cat df-start.json
 }
 
 ```
+- Run EA Query
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/query  -m POST -d fruit-act.saql  -f header.json 
+{
+    "action": "query",
+    "responseId": "4XpnbbxmMVwrdvX2-prgV-",
+    "results": {
+        "metadata": [
+            {
+                "lineage": {
+                    "type": "foreach",
+                    "projections": [
+                        {
+                            "field": {
+                                "id": "q.account",
+                                "type": "string"
+                            },
+                            "inputs": [
+                                {
+                                    "id": "q.act"
+                                }
+                            ]
+                        },
+                        {
+                            "field": {
+                                "id": "q.qty",
+                                "type": "numeric"
+                            },
+                            "inputs": [
+                                {
+                                    "id": "q.qty"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "records": [
+            {
+                "account": "Abbott358 Inc",
+                "qty": 30
+            },
+            {
+                "account": "Abbott372 Inc",
+                "qty": 78
+            },
+            {
+                "account": "Allen182 Inc",
+                "qty": 70
+            },
+            {
+                "account": "Alvarez72 Inc",
+                "qty": 2222
+            },
+            {
+                "account": "Alvarez888 Inc",
+                "qty": 130
+            }
+        ]
+    },
+    "query": "q = load \"0Fb3h0000008sAECAY/0Fc3h0000026QMACA2\";  q = foreach q generate act as  account, qty as qty ;   q = limit q 5;",
+    "responseTime": 2
+}
+
+$ cat fruit-act.saql 
+{
+    "query":"q = load \"0Fb3h0000008sAECAY/0Fc3h0000026QMACA2\";  q = foreach q generate act as  account, qty as qty ;   q = limit q 5;"
+}
+
+```            
 ### PUT
 ```
 $ sfdx mohanc:ws:rest -r URI  -m POST -f header.json -d data.json
