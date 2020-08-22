@@ -599,6 +599,10 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 }
 ```
 ![dbrd1](img/dbrd-1.png)
+![lens1](img/len-1.png)
+
+
+
 <a name="patch"></a>
 ### PATCH
 
