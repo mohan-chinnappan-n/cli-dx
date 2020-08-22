@@ -228,7 +228,7 @@ $ cat fruit-act.saql
 
 ```            
 ### PUT
-- Schedule a dataflow  run 
+- Schedule a EA dataflow  run 
 ```
  $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/asset/02K3h000000Mu1oEAC/schedule -m PUT -d df-sched.json   -f header.json 
 {}
