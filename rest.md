@@ -228,11 +228,35 @@ $ cat fruit-act.saql
 
 ```            
 ### PUT
+- 
 ```
-$ sfdx mohanc:ws:rest -r URI  -m POST -f header.json -d data.json
-``` 
-- PUT demo coming soon...
+ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/asset/02K3h000000Mu1oEAC/schedule -m PUT -d df-sched.json   -f header.json 
+{}
 
+$ cat df-sched.json | jq
+{
+  "daysOfWeek": [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ],
+  "lastHour": 20,
+  "hourlyInterval": 3,
+  "time": {
+    "hour": 2,
+    "minute": 30
+  },
+  "frequency": "hourly"
+}
+
+``` 
+![sched1](img/df-sched-1.png]
+![sched2](img/df-sched-2.png]
+ 
 ## Questions
 
 <a name='myorg'></a>
