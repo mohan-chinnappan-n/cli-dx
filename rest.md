@@ -19,7 +19,7 @@
 - [REST PATCH](#patch)
 - [REST DELETE](#delete)
 - [REST PUT](#put)
-- [Getting Saleforce access-token, instanceUrl, API Version, RestAPIUri](#myorg)
+- [Creating header.json for the connected Salesforce org](#myorg)
 - [BulkAPI 2.0 data load](#bulkapi2) 
 
 <a name="usage"></a>
