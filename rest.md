@@ -228,7 +228,7 @@ $ cat fruit-act.saql
 
 ```            
 ### PUT
-- 
+- Schedule a dataflow  run 
 ```
  $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/asset/02K3h000000Mu1oEAC/schedule -m PUT -d df-sched.json   -f header.json 
 {}
@@ -254,8 +254,8 @@ $ cat df-sched.json | jq
 }
 
 ``` 
-![sched1](img/df-sched-1.png]
-![sched2](img/df-sched-2.png]
+![sched1](img/df-sched-1.png)
+![sched2](img/df-sched-2.png)
  
 ## Questions
 
