@@ -14,12 +14,12 @@
 
 ### Topics
 - [Usage](#usage)
+- [Creating header.json for the connected Salesforce org](#myorg)
 - [REST GET](#get)
 - [REST POST](#post)
 - [REST PATCH](#patch)
 - [REST DELETE](#delete)
 - [REST PUT](#put)
-- [Creating header.json for the connected Salesforce org](#myorg)
 - [BulkAPI 2.0 data load](#bulkapi2) 
 
 <a name="usage"></a>
