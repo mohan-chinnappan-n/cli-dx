@@ -33,6 +33,5 @@ $ cat pe_msg.json
 
 ```
         
-- ![PE subscribe process builder email-alert](img/pe-pwr-down.png)
-
+<img src='img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='300'/>
 
