@@ -97,7 +97,7 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 $ cat header.json 
 {
  "Content-Type": "application/json",
-  "Authorization": "Bearer 00D3h000007R1Lu!AR0AQMlV_9bUOI21JUNKJjAKIuy.2wbCg_OLXxoFrrKvL2aG9"
+  "Authorization": "Bearer 00D3h000007R1Lu!JUNK_9bUOI21JUNKJjAKIuy.2wbCg_OLXxoFrrKvL2aG9"
 
 }
 
@@ -761,14 +761,14 @@ $ cat df-sched.json | jq
 ## Questions
 
 <a name='myorg'></a>
-### How create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
+### How to create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
 ```
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json 
 
 cat header.json 
 {
     "Content-Type": "application/json",
-    "Authorization": "Bearer 00D3h000007R1Lu!AR0AQNEVl3sPWaYi4_qJUNKSngDojbDmxCVuYF1HFFT6snO5fhQYJy8s.jFlO2oqi9CP3qXKJ1fAzgO",
+    "Authorization": "Bearer 00D3h000007R1Lu!qJUNKSngDojbDmxCVuYF1HFFT6snO5fhQYJy8s.jFlO2oqi9CP3qXKJ1fAzgO",
     "apiVersion": "49.0",
     "instanceUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
     "restAPIUri": "https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/"
