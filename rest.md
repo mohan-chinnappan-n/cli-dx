@@ -663,8 +663,7 @@ $ cat pe_msg.json
 { "message__c": "Power Off"}
 
 ```
-        
-- ![PE subscribe process builder email-alert](img/pe-pwr-down.png)
+<img src='img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='400'/>
 
 
 - Start a Dataflow in EA

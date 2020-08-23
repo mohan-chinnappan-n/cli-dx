@@ -33,5 +33,5 @@ $ cat pe_msg.json
 
 ```
         
-<img src='img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='300'/>
+<img src='img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='400'/>
 
