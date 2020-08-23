@@ -144,4 +144,4 @@ executed?: true
   exceptionMessage: null
 }
 ```
-![Email sent](img/tooling-email-1.png)
+<img src='img/tooling-email-1.png' alt='Email-sent' width='400'/>
