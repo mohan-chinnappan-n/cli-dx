@@ -79,5 +79,5 @@ $ sfdx mohanc:data:jq -i ./dataset-1.json  -f '.totalRows'
 
 ```
 
-- [See how to see the fields used in a dataset](./ea-dashboard.md)
+- [See how to see the fields used in a dashboard](./ea-dashboard.md)
 
