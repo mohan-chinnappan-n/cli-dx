@@ -65,3 +65,4 @@ $ cat query.txt |  sfdx mohanc:data:htmlDecode
 "{"values":["act","fruit","date_Year","date_Quarter","qty","date_day_epoch","date_sec_epoch"]}"
 
 ```
+- [See how to see the fields - Dimensions and Measures in a dataset](./ea-dataset.md)
