@@ -46,7 +46,7 @@ null
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/datasets/0Fb3h0000008spECAQ/versions/0Fc3h0000026e3aCAA -m GET   -f header.json > dataset-1.json
 
 ```
-- Query for Measures and Dimensions
+- Query for Dimensions
 ```
 
 $ sfdx mohanc:data:jq -i ./dataset-1.json  -f '.xmdMain.dimensions[].field'
