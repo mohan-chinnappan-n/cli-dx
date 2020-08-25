@@ -1,4 +1,4 @@
-## How to run sharing debugger for the  given user 
+## How to run sharing debugger for the  given user ?
 
 - Chrome Extension version 
 ![sd](img/sd-1.png)
