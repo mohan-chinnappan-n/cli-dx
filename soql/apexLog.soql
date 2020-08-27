@@ -1,0 +1,3 @@
+SELECT id, LogUserId,LogLength, Request,Operation,Application,Status,DurationMilliSeconds,StartTime,Location
+     FROM ApexLog 
+      ORDER BY StartTime DESC  

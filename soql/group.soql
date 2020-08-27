@@ -1,0 +1,11 @@
+SELECT
+Id,
+Name,
+DeveloperName,
+RelatedId,
+Type,
+Email,
+OwnerId,
+DoesSendEmailToMembers,
+DoesIncludeBosses
+FROM Group

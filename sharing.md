@@ -152,20 +152,65 @@ FROM AccountShare
 
 ```
 
-### Getting name,label,type,length for a given sObject (say Account)
+### Getting name,label,type,length for a given sObject (say Group)
 
 ```
 # get Account metadtata
-sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/Account/describe -m GET  > Account.json
+$ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/Group/describe -m GET   > Group.json
 
-$  sfdx mohanc:data:jq -i Account.json -f '.fields[] | .name + "," + .label + "," + .type + "," + (.length | tostring)' | sed -e 's/"//g'
-Id,Account ID,id,18
-IsDeleted,Deleted,boolean,0
-MasterRecordId,Master Record ID,reference,18
-Name,Account Name,string,255
-Type,Account Type,picklist,255
-ParentId,Parent Account ID,reference,18
-BillingStreet,Billing Street,textarea,255
-...
+$  sfdx mohanc:data:jq -i Group.json -f '.fields[] | .name + "," + .label + "," + .type + "," + (.length | tostring)' | sed -e 's/"//g'
+Id,Group ID,id,18
+Name,Name,string,40
+DeveloperName,Developer Name,string,80
+RelatedId,Related ID,reference,18
+Type,Type,picklist,40
+Email,Email,email,255
+OwnerId,Owner ID,reference,18
+DoesSendEmailToMembers,Send Email to Members,boolean,0
+DoesIncludeBosses,Include Bosses,boolean,0
+CreatedDate,Created Date,datetime,0
+CreatedById,Created By ID,reference,18
+LastModifiedDate,Last Modified Date,datetime,0
+LastModifiedById,Last Modified By ID,reference,18
+SystemModstamp,System Modstamp,datetime,0
+
+```
+
+### Read Group sObject
+```
+$ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q ./soql/group.soql | sed -e 's/""/"/g' | sed -e 's/"//g'
+attributes,Id,Name,DeveloperName,RelatedId,Type,Email,OwnerId,DoesSendEmailToMembers,DoesIncludeBosses
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhf6EAA},00G3h000001rhf6EAA,,Sales_WW,00E3h000001JaqREAS,Role,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhf8EAA},00G3h000001rhf8EAA,,CEOA,00E3h000001JaqUEAS,Role,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhf9EAA},00G3h000001rhf9EAA,,CIO,00E3h000001JaqQEAS,Role,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfAEAQ},00G3h000001rhfAEAQ,,Sales_AMER,00E3h000001JaqSEAS,Role,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfBEAQ},00G3h000001rhfBEAQ,,Sales_EMEA,00E3h000001JaqTEAS,Role,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfCEAQ},00G3h000001rhfCEAQ,,CIO,00E3h000001JaqQEAS,RoleAndSubordinates,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfDEAQ},00G3h000001rhfDEAQ,,Sales_WW,00E3h000001JaqREAS,RoleAndSubordinates,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfEEAQ},00G3h000001rhfEEAQ,,Sales_AMER,00E3h000001JaqSEAS,RoleAndSubordinates,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfFEAQ},00G3h000001rhfFEAQ,,Sales_EMEA,00E3h000001JaqTEAS,RoleAndSubordinates,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhfGEAQ},00G3h000001rhfGEAQ,,CEOD,00E3h000001JaqUEAS,RoleAndSubordinates,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciTEAS},00G3h000001HciTEAS,,CEO,00E3h000001JaqUEAS,RoleAndSubordinatesInternal,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciUEAS},00G3h000001HciUEAS,,CIO,00E3h000001JaqQEAS,RoleAndSubordinatesInternal,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciVEAS},00G3h000001HciVEAS,,Sales_AMER,00E3h000001JaqSEAS,RoleAndSubordinatesInternal,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciWEAS},00G3h000001HciWEAS,,Sales_EMEA,00E3h000001JaqTEAS,RoleAndSubordinatesInternal,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciXEAS},00G3h000001HciXEAS,,Sales_WW,00E3h000001JaqREAS,RoleAndSubordinatesInternal,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciSEAS},00G3h000001HciSEAS,,AllPartnerUsers,,PRMOrganization,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001rhf7EAA},00G3h000001rhf7EAA,,AllInternalUsers,,Organization,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HciYEAS},00G3h000001HciYEAS,,AllCustomerPortalUsers,,AllCustomerPortal,,00D3h000007R1LuEAK,false,true
+{type:Group,url:/services/data/v49.0/sobjects/Group/00G3h000001HcicEAC},00G3h000001HcicEAC,selfservice,selfservice,0053h000002xqUhAAI,GuestUserGroup,,00D3h000007R1LuEAK,false,true
+
+$ cat soql/group.soql 
+SELECT
+    Id,
+    Name,
+    DeveloperName,
+    RelatedId,
+    Type,
+    Email,
+    OwnerId,
+    DoesSendEmailToMembers,
+    DoesIncludeBosses
+FROM Group
 
 ```
