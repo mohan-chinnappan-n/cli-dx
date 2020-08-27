@@ -47,6 +47,76 @@ ____________PermSets____________
 "0PS3h000002PwNZGA0","00ex00000018ozh_128_09_04_12_1",true,true,true
 ```
 
+### Listing share sObjects
+```
+$ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects -m GET  >  sobjects.json 
+
+$ sfdx mohanc:data:jq -i sobjects.json -f '.sobjects[].name | select ( contains("Share")  )'
+"AccountBrandShare"
+"AccountShare"
+"AcquiredAccount__Share"
+"AssetShare"
+"AuthorizationFormConsentShare"
+"AuthorizationFormDataUseShare"
+"AuthorizationFormShare"
+"CalendarViewShare"
+"CampaignShare"
+"CaseShare"
+"ChannelProgramLevelShare"
+"ChannelProgramMemberShare"
+"ChannelProgramShare"
+"CommSubscriptionChannelTypeShare"
+"CommSubscriptionConsentShare"
+"CommSubscriptionShare"
+"ConsumptionScheduleShare"
+"ContactPointAddressShare"
+"ContactPointConsentShare"
+"ContactPointEmailShare"
+"ContactPointPhoneShare"
+"ContactPointTypeConsentShare"
+"ContactRequestShare"
+"ContactShare"
+"DataUseLegalBasisShare"
+"DataUsePurposeShare"
+"EngagementChannelTypeShare"
+"ExternalEventMappingShare"
+"FlowInterviewLogShare"
+"FlowInterviewShare"
+"ImageShare"
+"IndividualShare"
+"LeadShare"
+"ListEmailShare"
+"MacroShare"
+"MacroUsageShare"
+"MyFilter__Share"
+"OpportunityHistory__Share"
+"OpportunityShare"
+"OrderShare"
+"OrgDeleteRequestShare"
+"PartnerFundAllocationShare"
+"PartnerFundClaimShare"
+"PartnerFundRequestShare"
+"PartnerMarketingBudgetShare"
+"PartyConsentShare"
+"PromptActionShare"
+"QuickTextShare"
+"QuickTextUsageShare"
+"StreamingChannelShare"
+"TodayGoalShare"
+"UserAppMenuCustomizationShare"
+"UserEmailPreferredPersonShare"
+"UserProvisioningRequestShare"
+"UserShare"
+
+
+# __Share sObjects
+$  sfdx mohanc:data:jq -i sobjects.json -f '.sobjects[].name | select ( contains("__Share")  )'
+"AcquiredAccount__Share"
+"MyFilter__Share"
+"OpportunityHistory__Share"
+
+
+```
 ### Querying the AccountShare
 ```
 $ sfdx mohanc:data:query -q accountShare.soql -u mohan.chinnappan.n_ea2@gmail.com   | sed -e 's/""/"/g' | sed -e 's/"//g'
