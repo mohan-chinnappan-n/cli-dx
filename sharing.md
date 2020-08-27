@@ -51,6 +51,7 @@ ____________PermSets____________
 ```
 $ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects -m GET  >  sobjects.json 
 
+# sObjects with name ending with Share
 $ sfdx mohanc:data:jq -i sobjects.json -f '.sobjects[].name | select ( contains("Share")  )'
 "AccountBrandShare"
 "AccountShare"
