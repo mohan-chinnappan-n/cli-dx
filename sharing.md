@@ -229,4 +229,63 @@ SystemModstamp,System Modstamp,datetime,0
 
 $ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q ./soql/queue.soql | sed -e 's/""/"/g' | sed -e 's/"//g'
 
+```
+### Organization
+```
+$ bash ./sh/getObjectFields.sh Organization
+Id,Organization ID,id,18
+Name,Name,string,80
+Division,Division,string,80
+Street,Street,textarea,255
+City,City,string,40
+State,State/Province,string,80
+PostalCode,Zip/Postal Code,string,20
+Country,Country,string,80
+Latitude,Latitude,double,0
+Longitude,Longitude,double,0
+GeocodeAccuracy,Geocode Accuracy,picklist,40
+Address,Address,address,0
+Phone,Phone,phone,40
+Fax,Fax,phone,40
+PrimaryContact,Primary Contact,string,80
+DefaultLocaleSidKey,Locale,picklist,40
+TimeZoneSidKey,Time Zone,picklist,40
+LanguageLocaleKey,Language,picklist,40
+ReceivesInfoEmails,Info Emails,boolean,0
+ReceivesAdminInfoEmails,Info Emails Admin,boolean,0
+PreferencesRequireOpportunityProducts,RequireOpportunityProducts,boolean,0
+PreferencesTransactionSecurityPolicy,TransactionSecurityPolicy,boolean,0
+PreferencesTerminateOldestSession,TerminateOldestSession,boolean,0
+PreferencesConsentManagementEnabled,ConsentManagementEnabled,boolean,0
+PreferencesAutoSelectIndividualOnMerge,AutoSelectIndividualOnMerge,boolean,0
+PreferencesLightningLoginEnabled,LightningLoginEnabled,boolean,0
+PreferencesOnlyLLPermUserAllowed,OnlyLLPermUserAllowed,boolean,0
+FiscalYearStartMonth,Fiscal Year Starts In,int,0
+UsesStartDateAsFiscalYearName,Fiscal Year Name by Start,boolean,0
+DefaultAccountAccess,Default Account Access,picklist,40
+DefaultContactAccess,Default Contact Access,picklist,40
+DefaultOpportunityAccess,Default Opportunity Access,picklist,40
+DefaultLeadAccess,Default Lead Access,picklist,40
+DefaultCaseAccess,Default Case Access,picklist,40
+DefaultCalendarAccess,Default Calendar Access,picklist,40
+DefaultPricebookAccess,Default Price Book Access,picklist,40
+DefaultCampaignAccess,Default Campaign Access,picklist,40
+SystemModstamp,System Modstamp,datetime,0
+ComplianceBccEmail,Compliance BCC Email,email,80
+UiSkin,UI Skin,picklist,40
+SignupCountryIsoCode,Signup Country,string,2
+TrialExpirationDate,Trial Expiration Date,datetime,0
+NumKnowledgeService,Knowledge Licenses,int,0
+OrganizationType,Edition,picklist,40
+NamespacePrefix,Namespace Prefix,string,15
+InstanceName,Instance Name,string,5
+IsSandbox,Is Sandbox,boolean,0
+WebToCaseDefaultOrigin,Web to Cases Default Origin,string,40
+MonthlyPageViewsUsed,Monthly Page Views Used,int,0
+MonthlyPageViewsEntitlement,Monthly Page Views Allowed,int,0
+IsReadOnly,Is Read Only,boolean,0
+CreatedDate,Created Date,datetime,0
+CreatedById,Created By ID,reference,18
+LastModifiedDate,Last Modified Date,datetime,0
+LastModifiedById,Last Modified By ID,reference,18
 ```            
