@@ -514,7 +514,7 @@ SELECT Id,
          (SobjectType = 'Account')
 
 
-sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q soql/op_account.soql 
+$ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q soql/op_account.soql 
 "attributes","Id","SobjectType","PermissionsCreate","PermissionsRead","PermissionsEdit","PermissionsDelete","PermissionsViewAllRecords","PermissionsModifyAllRecords","Parent"
 "{""type"":""ObjectPermissions"",""url"":""/services/data/v49.0/sobjects/ObjectPermissions/1103h00001wg5TMAAY""}","1103h00001wg5TMAAY","Account",true,true,true,true,true,true,"{""attributes"":{""type"":""PermissionSet"",""url"":""/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwNZGA0""},""Label"":""00ex00000018ozh_128_09_04_12_1"",""IsOwnedByProfile"":true}"
 "{""type"":""ObjectPermissions"",""url"":""/services/data/v49.0/sobjects/ObjectPermissions/00000002PwNZ001AID""}","00000002PwNZ001AID","Account",true,true,true,true,true,true,"{""attributes"":{""type"":""PermissionSet"",""url"":""/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwNZGA0""},""Label"":""00ex00000018ozh_128_09_04_12_1"",""IsOwnedByProfile"":true}"
