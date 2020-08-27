@@ -117,6 +117,19 @@ $  sfdx mohanc:data:jq -i sobjects.json -f '.sobjects[].name | select ( contains
 "OpportunityHistory__Share"
 
 
+# list name,isCustomObject
+$  sfdx mohanc:data:jq -i sobjects.json -f '.sobjects[] | .name + "," + (.custom | tostring)' | sed -e 's/"//g'
+AIInsightAction,false
+AIInsightFeedback,false
+AIInsightReason,false
+AIInsightValue,false
+AIMetric,false
+AIPredictionEvent,false
+AIRecordInsight,false
+AcceptedEventRelation,false
+...
+
+
 ```
 ### Querying the AccountShare
 ```
@@ -137,7 +150,22 @@ CaseAccessLevel
 FROM AccountShare
 
 
+```
 
+### Getting name,label,type,length for a given sObject (say Account)
 
+```
+# get Account metadtata
+sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/Account/describe -m GET  > Account.json
+
+$  sfdx mohanc:data:jq -i Account.json -f '.fields[] | .name + "," + .label + "," + .type + "," + (.length | tostring)' | sed -e 's/"//g'
+Id,Account ID,id,18
+IsDeleted,Deleted,boolean,0
+MasterRecordId,Master Record ID,reference,18
+Name,Account Name,string,255
+Type,Account Type,picklist,255
+ParentId,Parent Account ID,reference,18
+BillingStreet,Billing Street,textarea,255
+...
 
 ```
