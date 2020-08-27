@@ -1,0 +1,17 @@
+
+SELECT Id,
+    SObjectType,
+    Field,
+    PermissionsRead,
+    PermissionsEdit,
+    Parent.label,
+     Parent.IsOwnedByProfile 
+ FROM FieldPermissions  
+ WHERE (ParentId IN 
+         (SELECT PermissionSetId    
+              FROM PermissionSetAssignment
+                  WHERE Assignee.id = '0053h000002xQ5sAAE')
+      ) 
+     AND
+       (SobjectType = 'Account') 
+
