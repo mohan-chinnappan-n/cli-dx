@@ -214,3 +214,19 @@ SELECT
 FROM Group
 
 ```
+
+### Queue
+
+```
+$ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/QueueSobject/describe -m GET   > Queue.json
+
+$  sfdx mohanc:data:jq -i Queue.json -f '.fields[] | .name + "," + .label + "," + .type + "," + (.length | tostring)' | sed -e 's/"//g'
+Id,Queue Sobject ID,id,18
+QueueId,Group ID,reference,18
+SobjectType,Sobject Type,picklist,40
+CreatedById,Created By ID,reference,18
+SystemModstamp,System Modstamp,datetime,0
+
+$ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q ./soql/queue.soql | sed -e 's/""/"/g' | sed -e 's/"//g'
+
+```            
