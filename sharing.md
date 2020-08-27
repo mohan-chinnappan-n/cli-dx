@@ -583,4 +583,35 @@ $ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q soql/fp_account.
 "{"type":"FieldPermissions","url":"/services/data/v49.0/sobjects/FieldPermissions/01k3h0000Iu812UAQQ"}","01k3h0000Iu812UAQQ","Account","Account.CustomerPriority__c",true,true,"{"attributes":{"type":"PermissionSet","url":"/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwNZGA0"},"Label":"00ex00000018ozh_128_09_04_12_1","IsOwnedByProfile":true}"
 "{"type":"FieldPermissions","url":"/services/data/v49.0/sobjects/FieldPermissions/01k3h0000Iu812TAQQ"}","01k3h0000Iu812TAQQ","Account","Account.Active__c",true,true,"{"attributes":{"type":"PermissionSet","url":"/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwNZGA0"},"Label":"00ex00000018ozh_128_09_04_12_1","IsOwnedByProfile":true}"
 ```
+## Detailed User query
 
+```
+$ bash soql/userQuery.soql 0053h000002xQ5sAAE > soql/userQuery.soql
+$ cat  soql/userQuery.soql
+SELECT Id,
+    IsActive,
+    ProfileId,
+    Profile.Name,
+    Profile.UserLicense.Name,
+    UserRoleId,
+    UserRole.DeveloperName,
+    Username,
+    Email,
+    Name,
+    LastLoginDate,
+    CreatedBy.Name,
+    CreatedDate,
+    LastModifiedBy.Name,
+    LastModifiedDate,
+     (SELECT PermissionSet.Name           
+         FROM PermissionSetAssignments          
+           WHERE PermissionSet.IsOwnedByProfile = FALSE) 
+
+FROM User WHERE Id = '0053h000002xQ5sAAE'  
+LIMIT 1
+
+
+$ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q soql/userQuery.soql | sed -e 's/""/"/g' | sed -e 's/"//g'
+attributes,Id,IsActive,ProfileId,Profile,UserRoleId,UserRole,Username,Email,Name,LastLoginDate,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,PermissionSetAssignments
+{type:User,url:/services/data/v49.0/sobjects/User/0053h000002xQ5sAAE},0053h000002xQ5sAAE,true,00e3h000001kqJMAAY,{attributes:{type:Profile,url:/services/data/v49.0/sobjects/Profile/00e3h000001kqJMAAY},Name:System Administrator,UserLicense:{attributes:{type:UserLicense,url:/services/data/v49.0/sobjects/UserLicense/1003h000001GeewAAC},Name:Salesforce}},00E3h000001JaqUEAS,{attributes:{type:UserRole,url:/services/data/v49.0/sobjects/UserRole/00E3h000001JaqUEAS},DeveloperName:CEO},mohan.chinnappan.n_ea2@gmail.com,mohan.chinnappan.n@gmail.com,Mohan Chinnappan,2020-08-27T10:25:03.000+0000,{attributes:{type:User,url:/services/data/v49.0/sobjects/User/0053h000002xQ5sAAE},Name:Mohan Chinnappan},2020-07-13T19:30:57.000+0000,{attributes:{type:User,url:/services/data/v49.0/sobjects/User/0053h000002xQ5sAAE},Name:Mohan Chinnappan},2020-08-23T22:09:49.000+0000,{totalSize:4,done:true,records:[{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000002cLFBCA2},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000001i9aKGAQ},Name:EinsteinAnalyticsPlusAdmin}},{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000001BwoBCAS},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000001iHPpGAM},Name:EA_Plus}},{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000002cLF1CAM},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwO7GAK},Name:Wave_Analytics_Trailhead_Admin}},{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000002cLF3CAM},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwO9GAK},Name:EventMonitoringWaveAdmin}}]}
+```
