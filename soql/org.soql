@@ -1,0 +1,11 @@
+SELECT
+DefaultAccountAccess,
+DefaultContactAccess,
+DefaultOpportunityAccess,
+DefaultLeadAccess,
+DefaultCaseAccess,
+DefaultCalendarAccess,
+DefaultPricebookAccess,
+DefaultCampaignAccess
+
+From Organization

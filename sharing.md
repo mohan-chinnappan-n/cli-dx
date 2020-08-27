@@ -155,10 +155,7 @@ FROM AccountShare
 ### Getting name,label,type,length for a given sObject (say Group)
 
 ```
-# get Account metadtata
-$ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/Group/describe -m GET   > Group.json
-
-$  sfdx mohanc:data:jq -i Group.json -f '.fields[] | .name + "," + .label + "," + .type + "," + (.length | tostring)' | sed -e 's/"//g'
+$ bash ./sh/getObjectFields.sh Group
 Id,Group ID,id,18
 Name,Name,string,40
 DeveloperName,Developer Name,string,80
@@ -218,9 +215,7 @@ FROM Group
 ### Queue
 
 ```
-$ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/QueueSobject/describe -m GET   > Queue.json
-
-$  sfdx mohanc:data:jq -i Queue.json -f '.fields[] | .name + "," + .label + "," + .type + "," + (.length | tostring)' | sed -e 's/"//g'
+$ bash ./sh/getObjectFields.sh QueueSobject
 Id,Queue Sobject ID,id,18
 QueueId,Group ID,reference,18
 SobjectType,Sobject Type,picklist,40
