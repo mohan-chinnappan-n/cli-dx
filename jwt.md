@@ -12,7 +12,7 @@
 
 ### Generae server.key
 
-- Note: I have modified the cert and key files to protect,  so others can't use them!
+- NOTE: I have modified the cert and key files to protect,  so others can't use them!
 
 ```
 $ openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
