@@ -227,6 +227,20 @@ DESCRIPTION
 $ sfdx force:auth:jwt:grant -u mohan.chinnappan.n_ea2@gmail.com -f server.key -i 3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL
 Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
 
+### get header.json 
+
+$ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json
+cat hse~/sfdx-test/cert:
+$ cat header.json 
+{
+    "Content-Type": "application/json",
+    "Authorization": "Bearer 00D3h000007R1LuJUNKAR0AQDUpWk6OgwgPwjh8xvhdAVooN_nlnX.nNtWXtReG1Rk5cqyN2HuqCWdhEOY7z3PE1LRkvPbyKuPXOjZ206V7HFlSPFPX",
+    "apiVersion": "49.0",
+    "instanceUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
+    "restAPIUri": "https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/"
+}
+
+
 ``` 
 
 ### References
