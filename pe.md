@@ -39,7 +39,7 @@ $ cat pe_msg.json
 ### Query EventBusSubscriber
 
 ```
-sfdx mohanc:data:query -q eventbus.query.soql -u mohan.chinnappan.n_ea2@gmail.com   | sed -e 's/""/"/g' | sed -e 's/"//g'
+$ sfdx mohanc:data:query -q eventbus.query.soql -u mohan.chinnappan.n_ea2@gmail.com   | sed -e 's/""/"/g' | sed -e 's/"//g'
 attributes,Id,ExternalId,Name,Type,Topic,Position,Tip,Retries,LastError,Status
 {type:EventBusSubscriber,url:/services/data/v49.0/sobjects/EventBusSubscriber/3013h000000QhUM},000000000000000AAA,3013h000000QhUM,TemperatureMonitor,,Notification__e,102845,-1,0,,Running
 
