@@ -2,7 +2,8 @@
 
 - We need the following
     - server.key (private key)  aka jwt key file
-    - server.crt  (self-signed cert file in creating Connected App in Salesforce)  
+    - Connected App
+        - server.crt  (self-signed cert file in creating Connected App in Salesforce)  
 
 ### Create required files (server.key and server.crt)
 
