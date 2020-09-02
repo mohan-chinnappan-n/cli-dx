@@ -788,7 +788,7 @@ $ cat df-sched.json | jq
 <a name='myorg'></a>
 ### How to create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
 
-- If you like have an automated login use:
+- If you like to have an automated login use:
     -  **JWT flow** (force:auth:jwt:grant)  as explained here [DX Login via JWT flow](jwt.md)
 ```
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json 
