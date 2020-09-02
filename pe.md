@@ -36,7 +36,7 @@ $ cat pe_msg.json
 <img src='img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='400'/>
 
 
-### Query
+### Query EventBusSubscriber
 
 ```
 sfdx mohanc:data:query -q eventbus.query.soql -u mohan.chinnappan.n_ea2@gmail.com   | sed -e 's/""/"/g' | sed -e 's/"//g'
