@@ -35,3 +35,27 @@ $ cat pe_msg.json
         
 <img src='img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='400'/>
 
+
+### Query
+
+```
+sfdx mohanc:data:query -q eventbus.query.soql -u mohan.chinnappan.n_ea2@gmail.com   | sed -e 's/""/"/g' | sed -e 's/"//g'
+attributes,Id,ExternalId,Name,Type,Topic,Position,Tip,Retries,LastError,Status
+{type:EventBusSubscriber,url:/services/data/v49.0/sobjects/EventBusSubscriber/3013h000000QhUM},000000000000000AAA,3013h000000QhUM,TemperatureMonitor,,Notification__e,102845,-1,0,,Running
+
+$ cat eventbus.query.soql 
+SELECT
+    Id,
+    ExternalId,
+    Name,
+    Type,
+    Topic,
+    Position,
+    Tip,
+    Retries,
+    LastError,
+    Status
+
+FROM 
+EventBusSubscriber
+```
