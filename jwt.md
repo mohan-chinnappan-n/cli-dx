@@ -9,12 +9,12 @@
 
 - Generate Private Key and CSR (Certificate Signing Request)
 
-```
 
-### Generated server.key
+### Generae server.key
 
 - Note: I have modified the cert and key files to protect,  so others can't use them!
 
+```
 $ openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
 
 Generating RSA private key, 2048 bit long modulus
@@ -142,6 +142,8 @@ aKWyUme4
 -----END CERTIFICATE REQUEST-----
 
 ```
+
+### Generate Self-signed SSL Cert (server.crt)
 
 - The self-signed SSL certificate (**server.crt**) is generated from the **server.key** private key and **server.csr** files.
 
