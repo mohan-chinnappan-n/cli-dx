@@ -230,7 +230,6 @@ Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007
 ### get header.json 
 
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json
-cat hse~/sfdx-test/cert:
 $ cat header.json 
 {
     "Content-Type": "application/json",
