@@ -1,4 +1,4 @@
-## How to use OAuth2.0 based JWT flow to login to a Salesforce org
+## How to use OAuth2.0 based JWT flow to login to a Salesforce org using DX
 
 - We need the following
     - server.key (private key)  aka jwt key file
