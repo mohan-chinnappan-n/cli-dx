@@ -227,11 +227,12 @@ DESCRIPTION
 ```
 
 ### Login via command line
+```
 $ sfdx force:auth:jwt:grant -u mohan.chinnappan.n_ea2@gmail.com -f server.key -i 3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL
 Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
-
+```
 ### get header.json 
-
+```
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json
 $ cat header.json 
 {
