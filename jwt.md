@@ -187,6 +187,22 @@ ngevFR5Da/oXgw==
 
 
 - Setup the connected app
+    - Key attributes
+        - Callback URL:	http://localhost:1717/OauthRedirect
+        - Selected OAuth Scopes	
+            - Access your basic information (id, profile, email, address, phone)
+            - Access and manage your data (api)
+            - Provide access to your data via the Web (web)
+            - Perform requests on your behalf at any time (refresh_token, offline_access)
+        - OAuth Policies
+            - Permitted Users:	Admin approved users are pre-authorized
+        - Profiles
+            - System Administrator
+            - <Add any other profiles here>
+        - OR Application Permission Set Assignment
+            - Select the appropriate permission sets to choose which users have access to this application.
+        - server.crt file
+
 ![connect app setup](img/jwt-capp-1.gif)
 
 - Consumer Key from the connected app
@@ -231,7 +247,7 @@ DESCRIPTION
 $ sfdx force:auth:jwt:grant -u mohan.chinnappan.n_ea2@gmail.com -f server.key -i 3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL
 Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
 ```
-### get header.json 
+### Get header.json 
 ```
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json
 $ cat header.json 
