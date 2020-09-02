@@ -187,7 +187,7 @@ ngevFR5Da/oXgw==
 
 
 - Setup the connected app
-    - Key attributes
+    - Key attributes required
         - Callback URL:	http://localhost:1717/OauthRedirect
         - Selected OAuth Scopes	
             - Access your basic information (id, profile, email, address, phone)
@@ -198,7 +198,7 @@ ngevFR5Da/oXgw==
             - Permitted Users:	Admin approved users are pre-authorized
         - Profiles
             - System Administrator
-            - <Add any other profiles here>
+            - Add any other profiles here
         - OR Application Permission Set Assignment
             - Select the appropriate permission sets to choose which users have access to this application.
         - server.crt file
