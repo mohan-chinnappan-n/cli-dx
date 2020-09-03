@@ -104,3 +104,29 @@ $ sfdx mohanc:data:jq -i fsc_objects.json -f '.sobjects[].name | select ( contai
 
 
 ```
+
+### Get object fields  for FinServ__AccountAccountRelation__c
+
+```
+$ bash getObjectFields_fsc.sh FinServ__AccountAccountRelation__c
+Id,Record ID,id,18
+OwnerId,Owner ID,reference,18
+IsDeleted,Deleted,boolean,0
+Name,Account Relation Name,string,80
+CreatedDate,Created Date,datetime,0
+CreatedById,Created By ID,reference,18
+LastModifiedDate,Last Modified Date,datetime,0
+LastModifiedById,Last Modified By ID,reference,18
+SystemModstamp,System Modstamp,datetime,0
+FinServ__Account__c,Account,reference,18
+FinServ__Active__c,Active,boolean,0
+FinServ__EndDate__c,End Date,date,0
+FinServ__ExternalId__c,External ID,string,64
+FinServ__InverseRelationship__c,InverseRelationship,reference,18
+FinServ__RelatedAccount__c,Related Account,reference,18
+FinServ__Role__c,Related Role,reference,18
+FinServ__SourceSystemId__c,Source System ID,string,100
+FinServ__StartDate__c,Start Date,date,0
+FinServ__AssociationType__c,Association Type,picklist,255
+
+```
