@@ -198,3 +198,51 @@ SELECT
 FROM BusinessProcess
 ```
 
+
+### Get object fields for FinServ__IndividualRecordTypeMapper__mdt
+```
+$ bash getObjectFields_fsc.sh FinServ__IndividualRecordTypeMapper__mdt
+Id,Custom Metadata Record ID,id,18
+DeveloperName,Custom Metadata Record Name,string,40
+MasterLabel,Label,string,40
+Language,Master Language,picklist,40
+NamespacePrefix,Namespace Prefix,string,15
+Label,Label,string,40
+QualifiedApiName,Qualified API Name,string,70
+FinServ__AccountRecordTypeNamespace__c,Record Type Namespace (Account),string,200
+FinServ__AccountRecordType__c,Account Record Type,string,200
+FinServ__ContactRecordTypeNamespace__c,Record Type Namespace (Contact),string,200
+FinServ__ContactRecordType__c,Contact Record Type,string,200
+FinServ__DetailPage__c,Detail Page,string,200
+FinServ__IndividualType__c,Account SubType,string,200
+FinServ__LeadRecordTypeNamespace__c,Record Type Namespace (Lead),string,200
+FinServ__LeadRecordType__c,Lead Record Type,string,200
+```
+### Get Records for FinServ__IndividualRecordTypeMapper__mdt
+```
+$ sfdx mohanc:data:query -q soql/FinServ__IndividualRecordTypeMapper__mdt.soql -u mohan.chinnappan.n-bdsa@force.com
+"attributes","Id","DeveloperName","MasterLabel","Language","NamespacePrefix","Label","QualifiedApiName","FinServ__AccountRecordTypeNamespace__c","FinServ__AccountRecordType__c","FinServ__ContactRecordTypeNamespace__c","FinServ__ContactRecordType__c","FinServ__DetailPage__c","FinServ__IndividualType__c","FinServ__LeadRecordTypeNamespace__c","FinServ__LeadRecordType__c"
+"{""type"":""FinServ__IndividualRecordTypeMapper__mdt"",""url"":""/services/data/v49.0/sobjects/FinServ__IndividualRecordTypeMapper__mdt/m074W000000ob3qQAA""}","m074W000000ob3qQAA","Individual","Individual","en_US","FinServ","Individual","FinServ__Individual","Industries","IndustriesIndividual","Industries","IndustriesIndividual",,"Individual",,
+"{""type"":""FinServ__IndividualRecordTypeMapper__mdt"",""url"":""/services/data/v49.0/sobjects/FinServ__IndividualRecordTypeMapper__mdt/m074W000000ob3rQAA""}","m074W000000ob3rQAA","PersonAccount","Person Account","en_US",,"Person Account","PersonAccount",,"PersonAccount",,,,,,
+
+$ cat soql/FinServ__IndividualRecordTypeMapper__mdt.soql
+SELECT 
+    Id,
+    DeveloperName,
+    MasterLabel,
+    Language,
+    NamespacePrefix,
+    Label,
+    QualifiedApiName,
+    FinServ__AccountRecordTypeNamespace__c,
+    FinServ__AccountRecordType__c,
+    FinServ__ContactRecordTypeNamespace__c,
+    FinServ__ContactRecordType__c,
+    FinServ__DetailPage__c,
+    FinServ__IndividualType__c,
+    FinServ__LeadRecordTypeNamespace__c,
+    FinServ__LeadRecordType__c
+
+FROM 
+FinServ__IndividualRecordTypeMapper__mdt
+```

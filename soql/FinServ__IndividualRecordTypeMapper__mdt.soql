@@ -1,0 +1,19 @@
+SELECT 
+    Id,
+    DeveloperName,
+    MasterLabel,
+    Language,
+    NamespacePrefix,
+    Label,
+    QualifiedApiName,
+    FinServ__AccountRecordTypeNamespace__c,
+    FinServ__AccountRecordType__c,
+    FinServ__ContactRecordTypeNamespace__c,
+    FinServ__ContactRecordType__c,
+    FinServ__DetailPage__c,
+    FinServ__IndividualType__c,
+    FinServ__LeadRecordTypeNamespace__c,
+    FinServ__LeadRecordType__c
+
+FROM 
+FinServ__IndividualRecordTypeMapper__mdt
