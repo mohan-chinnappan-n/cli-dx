@@ -1,0 +1,13 @@
+SELECT
+    Id,
+    Name,
+    NamespacePrefix,
+    Description,
+    TableEnumOrId,
+    IsActive,
+    CreatedById,
+    CreatedDate,
+    LastModifiedById,
+    LastModifiedDate,
+    SystemModstamp
+FROM BusinessProcess

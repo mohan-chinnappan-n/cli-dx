@@ -130,3 +130,71 @@ FinServ__StartDate__c,Start Date,date,0
 FinServ__AssociationType__c,Association Type,picklist,255
 
 ```
+### Get object fields  for AccountContactRelation
+
+```
+$ bash getObjectFields_fsc.sh AccountContactRelation
+Id,Account Contact Relationship ID,id,18
+AccountId,Account ID,reference,18
+ContactId,Contact ID,reference,18
+Roles,Roles,multipicklist,4099
+IsDirect,Direct,boolean,0
+IsActive,Active,boolean,0
+StartDate,Start Date,date,0
+EndDate,End Date,date,0
+IsDeleted,Deleted,boolean,0
+CreatedDate,Created Date,datetime,0
+CreatedById,Created By ID,reference,18
+LastModifiedDate,Last Modified Date,datetime,0
+LastModifiedById,Last Modified By ID,reference,18
+SystemModstamp,System Modstamp,datetime,0
+FinServ__Primary__c,Primary Member,boolean,0
+FinServ__Rollups__c,Roll-Ups,multipicklist,4099
+FinServ__SourceSystemId__c,Source System ID,string,100
+FinServ__IncludeInGroup__c,Include in Primary Group,boolean,0
+FinServ__PrimaryGroup__c,Primary Group,boolean,0
+
+```
+
+### Get object fields  for BusinessProcess
+
+```
+$ bash getObjectFields_fsc.sh BusinessProcess
+Id,Business Process ID,id,18
+Name,Name,string,80
+NamespacePrefix,Namespace Prefix,string,15
+Description,Description,string,255
+TableEnumOrId,Entity Enumeration Or ID,picklist,40
+IsActive,Active,boolean,0
+CreatedById,Created By ID,reference,18
+CreatedDate,Created Date,datetime,0
+LastModifiedById,Last Modified By ID,reference,18
+LastModifiedDate,Last Modified Date,datetime,0
+SystemModstamp,System Modstamp,datetime,0
+
+```
+### Get recores for BusinessProcess
+
+```
+$ sfdx mohanc:data:query -q soql/businessProcess.soql -u mohan.chinnappan.n-bdsa@force.com
+"attributes","Id","Name","NamespacePrefix","Description","TableEnumOrId","IsActive","CreatedById","CreatedDate","LastModifiedById","LastModifiedDate","SystemModstamp"
+"{""type"":""BusinessProcess"",""url"":""/services/data/v49.0/sobjects/BusinessProcess/0194W000000CvbFQAS""}","0194W000000CvbFQAS","Opportunity Process","FinServ",,"Opportunity",true,"0054W00000ABpuUQAT","2020-08-31T22:34:58.000+0000","0054W00000ABpuUQAT","2020-08-31T22:34:58.000+0000","2020-08-31T22:34:58.000+0000"
+"{""type"":""BusinessProcess"",""url"":""/services/data/v49.0/sobjects/BusinessProcess/0194W000000CvbGQAS""}","0194W000000CvbGQAS","Wallet Share","FinServ",,"Opportunity",true,"0054W00000ABpuUQAT","2020-08-31T22:34:58.000+0000","0054W00000ABpuUQAT","2020-08-31T22:34:58.000+0000","2020-08-31T22:34:58.000+0000"
+"{""type"":""BusinessProcess"",""url"":""/services/data/v49.0/sobjects/BusinessProcess/0194W000000CvbHQAS""}","0194W000000CvbHQAS","Lead Process","FinServ","Consumer lead","Lead",true,"0054W00000ABpuUQAT","2020-08-31T22:34:58.000+0000","0054W00000ABpuUQAT","2020-08-31T22:34:58.000+0000","2020-08-31T22:34:58.000+0000"
+
+$ cat soql/businessProcess.soql 
+SELECT
+    Id,
+    Name,
+    NamespacePrefix,
+    Description,
+    TableEnumOrId,
+    IsActive,
+    CreatedById,
+    CreatedDate,
+    LastModifiedById,
+    LastModifiedDate,
+    SystemModstamp
+FROM BusinessProcess
+```
+
