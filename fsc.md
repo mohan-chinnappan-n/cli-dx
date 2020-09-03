@@ -173,7 +173,7 @@ LastModifiedDate,Last Modified Date,datetime,0
 SystemModstamp,System Modstamp,datetime,0
 
 ```
-### Get recores for BusinessProcess
+### Get records for BusinessProcess
 
 ```
 $ sfdx mohanc:data:query -q soql/businessProcess.soql -u mohan.chinnappan.n-bdsa@force.com
