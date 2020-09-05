@@ -38,10 +38,7 @@ EXAMPLE
 $ sfdx mohanc:aws:s3:ls 
 [
   { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
-  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
-  {
-    Name: 'node-sdk-sample-ea8e2f09-0fd7-4b82-8f5e-e9bc3788159f',
-    CreationDate: 2020-09-05T11:22:00.000Z
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z }
   }
 ]
 
