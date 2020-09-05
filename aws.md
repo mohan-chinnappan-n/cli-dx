@@ -4,13 +4,21 @@
 
 ### Usage
 
-- Make sure that you have aws_access_key_id and aws_secret_access_key are in the file  ~/.aws/credentials 
+- Make sure that you have aws_access_key_id and aws_secret_access_key are in the file  .aws/credentials as shown below 
 
 ```
 $ cat ~/.aws/credentials 
 [default]
 aws_access_key_id =  YOUR_KEY_ID_HERE
 aws_secret_access_key = YOUR_SECRET_ACCESS_KEY_HERE
+
+
+## Windows
+$ type C:\Users\USER_NAME\.aws\credentials  
+[default]
+aws_access_key_id =  YOUR_KEY_ID_HERE
+aws_secret_access_key = YOUR_SECRET_ACCESS_KEY_HERE
+
 
 ```
 
