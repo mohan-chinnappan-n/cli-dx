@@ -29,17 +29,17 @@ EXAMPLE
 ### Demo        
 ```
 
-$ sfdx mohanc:data:query:sql  -q fruits.sql  -d fruits-yield.csv 
+$ sfdx mohanc:data:query:sql  -q sql/fruits.sql  -d data/fruits-yield.csv 
 [{"qty":130,"fruit":"apple"}]
 
-$ cat fruits.sql 
+$ cat sql/fruits.sql 
 SELECT 
     qty,fruit
     FROM ? 
     WHERE qty > 100 
      AND  fruit ='apple'
 
-$ cat fruits-yield.csv 
+$ cat data/fruits-yield.csv 
 fruit,date,qty
 apple,01/01/2020,30
 mango,01/05/2020,78
@@ -50,6 +50,18 @@ mango,01/09/2019,278
 jackfruit,02/11/2019,270
 peach,03/09/2019,266
 
+
+## count example
+
+```
+$ sfdx mohanc:data:query:sql  -q sql/fruits-count.sql  -d data/fruits-yield.csv 
+[{"tot_fruits":2}]
+
+$ cat sql/fruits-count.sql 
+SELECT 
+    COUNT(fruit) tot_fruits
+    FROM ? 
+    WHERE  fruit ='apple
 
 ```
 
