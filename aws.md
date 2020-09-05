@@ -148,9 +148,10 @@ $ sfdx mohanc:aws:s3:ls
   }
 ]
 
-
 ```
+
 <a name='rb'></a>
+
 ## Delete a S3 Bucket
 ### Usage
 ```
