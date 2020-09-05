@@ -4,6 +4,8 @@
 - [List S3 Buckets](#ls)
 - [List S3 Bucket Objects](#lsbo)
 - [Create S3 Bucket](#mb)
+- [Delete S3 Bucket](#r:b)
+
 
 
 <a name="ls"></a>
@@ -109,7 +111,7 @@ $ sfdx mohanc:aws:s3:ls  -b bucketea1
 
 ### Usage
 ```
-Create AWS S3 buckets 
+Create AWS S3 bucket 
 
 USAGE
   $ sfdx mohanc:aws:s3:mb
@@ -121,7 +123,7 @@ OPTIONS
 
 EXAMPLE
 
-       ** Create AWS S3 buckets  **
+       ** Create AWS S3 bucket  **
 
        sfdx mohanc:aws:s3:mb -b <bucketname>
 
@@ -148,3 +150,60 @@ $ sfdx mohanc:aws:s3:ls
 
 
 ```
+<a name='rb'></a>
+## Delete a S3 Bucket
+### Usage
+```
+$ sfdx mohanc:aws:s3:rb -h
+Delete AWS S3 bucket 
+
+USAGE
+  $ sfdx mohanc:aws:s3:rb
+
+OPTIONS
+  -b, --bucketname=bucketname                     Bucket Name to delete
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Delete AWS S3 bucket  **
+
+       sfdx mohanc:aws:s3:rb -b <bucketname>
+
+```
+
+### Demo
+```
+## List 
+$ sfdx mohanc:aws:s3:ls
+[
+  { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
+  {
+    Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+    CreationDate: 2020-09-05T12:54:54.000Z
+  },
+  {
+    Name: 'veggie-4245ddc6-e5b9-4971-9533-9e98c8d2d96e',
+    CreationDate: 2020-09-05T13:03:44.000Z
+  }
+]
+
+## Delete
+$ sfdx mohanc:aws:s3:rb -b veggie-4245ddc6-e5b9-4971-9533-9e98c8d2d96e
+delete bucketname: veggie-4245ddc6-e5b9-4971-9533-9e98c8d2d96e
+{}
+
+## List again
+$ sfdx mohanc:aws:s3:ls
+[
+  { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
+  {
+    Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+    CreationDate: 2020-09-05T12:54:54.000Z
+  }
+]
+```
+
