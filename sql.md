@@ -1,4 +1,4 @@
-## Querying CSV files using SQL
+## Querying CSV file data using SQL
 
 - Requires 0.0.55 version of the plugin
     - sfdx-mohanc-plugins@0.0.55
