@@ -9,20 +9,20 @@
 ### Usage
 ```
 $ sfdx mohanc:data:query:sql  -h
-Runs SQL query 
+Runs SQL query on a given CSV data file 
 
 USAGE
   $ sfdx mohanc:data:query:sql
 
 OPTIONS
-  -d, --datafilename=datafilename                 Data file
-  -q, --sqlfilename=sqlfilename                   SQL Query file
+  -d, --datafilename=datafilename                 CSV data file
+  -q, --sqlfilename=sqlfilename                   SQL query file
   --json                                          format output as json
   --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
 
 EXAMPLE
 
-       ** Runs SQL query  **
+       ** Runs SQL query on a given CSV data file  **
 
        sfdx mohanc:data:sql -q /tmp/q.sql -d data.csv
 ```
