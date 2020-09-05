@@ -53,7 +53,6 @@ peach,03/09/2019,266
 
 ## count example
 
-```
 $ sfdx mohanc:data:query:sql  -q sql/fruits-count.sql  -d data/fruits-yield.csv 
 [{"tot_fruits":2}]
 
