@@ -60,7 +60,7 @@ $ cat sql/fruits-count.sql
 SELECT 
     COUNT(fruit) tot_fruits
     FROM ? 
-    WHERE  fruit ='apple
+    WHERE  fruit ='apple'
 
 ```
 
