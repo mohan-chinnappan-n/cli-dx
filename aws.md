@@ -97,3 +97,47 @@ $ sfdx mohanc:aws:s3:ls  -b bucketea1
 }
 
 ```
+
+## Create a bucket
+
+### Usage
+```
+Create AWS S3 buckets 
+
+USAGE
+  $ sfdx mohanc:aws:s3:mk
+
+OPTIONS
+  -b, --bucketname=bucketname                     Bucket Name to create
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Create AWS S3 buckets  **
+
+       sfdx mohanc:aws:s3:mk -b <bucketname>
+
+       if bucketname is empty it will create a bucket in the format:
+       mybuk-<UUID>
+
+```
+
+### Demo
+```
+$ sfdx mohanc:aws:s3:mk -b fruits
+bucketname: fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
+{ Location: '/fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb' }
+~/sfdx/sfdx-mohanc-plugins:
+$ sfdx mohanc:aws:s3:ls
+[
+  { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
+  {
+    Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+    CreationDate: 2020-09-05T12:54:54.000Z
+  }
+]
+
+
+```
