@@ -63,7 +63,7 @@ $ sfdx mohanc:aws:s3:ls
 ```
 ![aws s3 ls](img/aws-s3-ls-1.png)
 
-<a name="lbo"></a>
+<a name="lsbo"></a>
 ## Listing bucket objects
 
 ```
