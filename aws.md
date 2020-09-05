@@ -1,5 +1,12 @@
 # AWS access via DX
 
+### Topics
+- [List S3 Buckets](#ls)
+- [List S3 Bucket Objects](#lsbo)
+- [Create S3 Bucket](#mb)
+
+
+<a name="ls"></a>
 ## List S3 buckets
 
 ### Usage
@@ -56,8 +63,8 @@ $ sfdx mohanc:aws:s3:ls
 ```
 ![aws s3 ls](img/aws-s3-ls-1.png)
 
-
-### Listing bucket objects
+<a name="lbo"></a>
+## Listing bucket objects
 
 ```
 $ sfdx mohanc:aws:s3:ls  -b bucketea1
@@ -97,7 +104,7 @@ $ sfdx mohanc:aws:s3:ls  -b bucketea1
 }
 
 ```
-
+<a name="mb"></a>
 ## Create a bucket
 
 ### Usage
@@ -105,7 +112,7 @@ $ sfdx mohanc:aws:s3:ls  -b bucketea1
 Create AWS S3 buckets 
 
 USAGE
-  $ sfdx mohanc:aws:s3:mk
+  $ sfdx mohanc:aws:s3:mb
 
 OPTIONS
   -b, --bucketname=bucketname                     Bucket Name to create
@@ -116,7 +123,7 @@ EXAMPLE
 
        ** Create AWS S3 buckets  **
 
-       sfdx mohanc:aws:s3:mk -b <bucketname>
+       sfdx mohanc:aws:s3:mb -b <bucketname>
 
        if bucketname is empty it will create a bucket in the format:
        mybuk-<UUID>
@@ -125,7 +132,7 @@ EXAMPLE
 
 ### Demo
 ```
-$ sfdx mohanc:aws:s3:mk -b fruits
+$ sfdx mohanc:aws:s3:mb -b fruits
 bucketname: fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 { Location: '/fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb' }
 ~/sfdx/sfdx-mohanc-plugins:
