@@ -46,3 +46,4 @@ $ sfdx mohanc:aws:s3:ls
 ]
 
 ```
+![aws s3 ls](img/aws-s3-ls.png)
