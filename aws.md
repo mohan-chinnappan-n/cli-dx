@@ -4,7 +4,7 @@
 - [List S3 Buckets](#ls)
 - [List S3 Bucket Objects](#lsbo)
 - [Create S3 Bucket](#mb)
-- [Delete S3 Bucket](#r:b)
+- [Delete S3 Bucket](#rb)
 
 
 
