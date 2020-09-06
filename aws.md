@@ -111,6 +111,7 @@ $ sfdx mohanc:aws:s3:ls  -b bucketea1
 
 ### Usage
 ```
+$ sfdx mohanc:aws:s3:mb -h
 Create AWS S3 bucket 
 
 USAGE
@@ -118,18 +119,22 @@ USAGE
 
 OPTIONS
   -b, --bucketname=bucketname                     Bucket Name to create
+
+  -p, --perm=perm                                 ACL - permission (optional) private (default) | public-read | public-read-write | 
+                                                  authenticated-read
+
   --json                                          format output as json
+
   --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
 
 EXAMPLE
 
        ** Create AWS S3 bucket  **
 
-       sfdx mohanc:aws:s3:mb -b <bucketname>
+       sfdx mohanc:aws:s3:mb -b <bucketname> -p [perm]
 
        if bucketname is empty it will create a bucket in the format:
        mybuk-<UUID>
-
 ```
 
 ### Demo
@@ -223,15 +228,19 @@ OPTIONS
   -b, --bucketname=bucketname                     Bucket Name
   -f, --foldername=foldername                     Folder Name (optional)
   -i, --inputfilename=inputfilename               Input filename to upload
+
+  -p, --perm=perm                                 ACL - permission (optional) private (default) | public-read | public-read-write | 
+                                                  authenticated-read | aws-exec-read | bucket-owner-read | bucket-owner-full-control
+
   --json                                          format output as json
+
   --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
 
 EXAMPLE
 
        ** Upload a file into a AWS S3 bucket  **
 
-       sfdx mohanc:aws:s3:upload -b <bucketname> -f [folderName] -i <inputFileName> 
-
+       sfdx mohanc:aws:s3:upload -b <bucketname> -f [folderName] -i <inputFileName> -p [perm]
 
      
 ```
@@ -251,10 +260,9 @@ $ sfdx mohanc:aws:s3:ls
 ]
 
 ## Upload into the bucket: fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb and the folder mydata
-$ sfdx mohanc:aws:s3:upload -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata -i ~/bulkapi/dx/data/fruits-2.csv 
+$ sfdx mohanc:aws:s3:upload -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata -i ~/bulkapi/dx/data/fruits-2.csv -p private
 Upload Success: https://fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb.s3.amazonaws.com/mydata/fruits-2.csv
-
-## List bucket objects
+~/sfdx/sfdx-mohanc-plugins:
 $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 {
   IsTruncated: false,
@@ -270,7 +278,7 @@ $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
     },
     {
       Key: 'mydata/fruits-2.csv',
-      LastModified: 2020-09-06T00:25:18.000Z,
+      LastModified: 2020-09-06T00:53:06.000Z,
       ETag: '"2f60af499f0304f33486a267bfc48fa0"',
       Size: 27,
       StorageClass: 'STANDARD',
