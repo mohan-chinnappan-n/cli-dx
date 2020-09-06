@@ -5,7 +5,7 @@
 - [List S3 Bucket Objects](#lsbo)
 - [Create S3 Bucket](#mb)
 - [Delete S3 Bucket](#rb)
-
+- [Upload a file into S3 Bucket](#upload)
 
 
 <a name="ls"></a>
@@ -208,3 +208,67 @@ $ sfdx mohanc:aws:s3:ls
 ]
 ```
 
+<a name='upload'></a>
+## Upload a file into S3 Bucket
+
+### Usage
+```
+$ sfdx mohanc:aws:s3:upload -h
+Upload  a file into a AWS S3 bucket 
+
+USAGE
+  $ sfdx mohanc:aws:s3:upload
+
+OPTIONS
+  -b, --bucketname=bucketname                     Bucket Name
+  -i, --inputfilename=inputfilename               Input filename to upload
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Upload a file  into a AWS S3 bucket  **
+
+       sfdx mohanc:aws:s3:upload -b <bucketname> -i <inputFileName>
+```
+
+### Demo
+
+```
+## List the buckets
+$ sfdx mohanc:aws:s3:ls
+[
+  { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
+  {
+    Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+    CreationDate: 2020-09-05T12:54:54.000Z
+  }
+]
+
+## Upload into the bucket: fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
+$ sfdx mohanc:aws:s3:upload -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -i data/fruits.csv 
+Upload Success: https://fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb.s3.amazonaws.com/fruits.csv
+
+## List bucket objects
+$ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
+{
+  IsTruncated: false,
+  Marker: '',
+  Contents: [
+    {
+      Key: 'fruits.csv',
+      LastModified: 2020-09-06T00:02:25.000Z,
+      ETag: '"4afa7be447a3a57456fdd1a04b9b823a"',
+      Size: 53,
+      StorageClass: 'STANDARD',
+      Owner: [Object]
+    }
+  ],
+  Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+  Prefix: '',
+  MaxKeys: 1000,
+  CommonPrefixes: []
+}
+
+```
