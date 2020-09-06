@@ -10,6 +10,8 @@
 - [Create S3 Bucket](#mb)
 - [Delete S3 Bucket](#rb)
 - [Upload a file into S3 Bucket](#upload)
+- [Download a file from S3 Bucket](#download)
+
 
 
 <a name="ls"></a>
@@ -296,3 +298,90 @@ $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 }
 ```
 ![s3 upload](img/s3-upload-1.png)
+
+<a name='download'></a>
+## Download a file from the S3 Bucket
+
+## Usage
+```
+
+$ sfdx mohanc:aws:s3:download -h
+
+Download a file from the AWS S3 bucket 
+
+USAGE
+  $ sfdx mohanc:aws:s3:download
+
+OPTIONS
+  -b, --bucketname=bucketname                     Bucket Name
+  -f, --filename=filename                         Filename to download
+  -o, --outputfilename=outputfilename             Local filename to download into
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Download a file from the AWS S3 bucket  **
+
+       sfdx mohanc:aws:s3:download -b <bucketname>  -f <inputFileName> -o <localFileName>
+
+
+
+```
+### Demo
+```
+## List the buckets
+$ sfdx mohanc:aws:s3:ls
+[
+  { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
+  {
+    Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+    CreationDate: 2020-09-05T12:54:54.000Z
+  },
+  {
+    Name: 'trees-e40790c1-a951-4814-9fb1-2c46446081f4',
+    CreationDate: 2020-09-06T01:01:08.000Z
+  }
+]
+
+## List the objects in the bucket
+$ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
+{
+  IsTruncated: false,
+  Marker: '',
+  Contents: [
+    {
+      Key: 'fruits.csv',
+      LastModified: 2020-09-06T00:02:25.000Z,
+      ETag: '"4afa7be447a3a57456fdd1a04b9b823a"',
+      Size: 53,
+      StorageClass: 'STANDARD',
+      Owner: [Object]
+    },
+    {
+      Key: 'mydata/fruits-2.csv',
+      LastModified: 2020-09-06T00:53:06.000Z,
+      ETag: '"2f60af499f0304f33486a267bfc48fa0"',
+      Size: 27,
+      StorageClass: 'STANDARD',
+      Owner: [Object]
+    }
+  ],
+  Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+  Prefix: '',
+  MaxKeys: 1000,
+  CommonPrefixes: []
+}
+
+## Download
+$ sfdx mohanc:aws:s3:download -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata/fruits-2.csv -o /tmp/fruits-2.csv
+Done.
+
+## View the downladed file
+$ cat /tmp/fruits-2.csv 
+name,qty
+fig,2000
+pear,100
+
+```
