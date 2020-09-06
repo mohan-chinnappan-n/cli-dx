@@ -1,5 +1,9 @@
 # AWS access via DX
 
+- Requires 0.0.56 version of the plugin
+    - sfdx-mohanc-plugins@0.0.56
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 ### Topics
 - [List S3 Buckets](#ls)
 - [List S3 Bucket Objects](#lsbo)
@@ -262,7 +266,7 @@ $ sfdx mohanc:aws:s3:ls
 ## Upload into the bucket: fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb and the folder mydata
 $ sfdx mohanc:aws:s3:upload -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata -i data/fruits-2.csv -p private
 Upload Success: https://fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb.s3.amazonaws.com/mydata/fruits-2.csv
-~/sfdx/sfdx-mohanc-plugins:
+
 $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 {
   IsTruncated: false,
