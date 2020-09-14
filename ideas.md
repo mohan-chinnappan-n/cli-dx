@@ -1,9 +1,12 @@
-## Ideas
+## Idea
 
 ### Data Model
+
+#### Idea
 ![ideas data model](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/img/Idea.svg)
 ![ideas data model table](img/ideas-1.png)
 
+#### IdeaComment
 ![Idea comment](img/idea-comment-1.png)
 
 ### Classic page
