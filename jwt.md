@@ -269,4 +269,5 @@ $ cat header.json
 - [Creating a Self-Signed SSL Certificate](https://devcenter.heroku.com/articles/ssl-certificate-self#generate-private-key-and-certificate-signing-request)
 - [Using the OAuth 2.0 JWT Bearer Flow to Support the Salesforce DX CLI](http://www.wadewegner.com/2017/04/using-the-oauth-2-jwt-bearer-flow-to-support-the-salesforcedx-cli/)
 - [Java - OAuth 2.0 JWT Bearer Flow for Server-to-Server Integration](https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=5)
+    - [Java Example](jwt/java)
 - [Using python for JWT flow](https://github.com/mohan-chinnappan-n/bulkapi2-dx/tree/master/jwt/py)
