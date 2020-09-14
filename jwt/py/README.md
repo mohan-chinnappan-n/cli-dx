@@ -11,8 +11,14 @@ requests-oauthlib==1.0.0
 requests-toolbelt==0.8.0
 
 ```
+### Install required libs
+```
+$ pip install -r requirements.txt
+```
 
-## JWT ini file
+## JWT ini file to keep keyfile, issuer, subject info
+- store in your home folder for security
+
 ```
 $ cat /Users/mchinnappan/.jwt/jwt.ini
 ```
