@@ -11,6 +11,8 @@
 ### Get SOQL for Idea
 ```
 $ bash getObjectSOQL.sh Idea  
+```
+```sql
 SELECT Id
     ,IsDeleted
     ,Title
@@ -43,6 +45,8 @@ FROM Idea
 ### Get Idea Records
 ```
 $ bash getObjectRecs.sh Idea  json  
+```
+```json
 [
     {
         "attributes": {
