@@ -36,7 +36,7 @@ claim = {
 }
 print (claim)
 assertion = jwt.encode(claim, privateKey, algorithm='RS256', headers={'alg':'RS256'}).decode('utf8')
-
+# print(assertion)
 print('Making OAuth request...')
 r = requests.post('https://{}.salesforce.com/services/oauth2/token'.format(domain), data = {
     'grant_type': 'urn:ietf:params:oauth:grant-type:jwt-bearer',
