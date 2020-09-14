@@ -7,6 +7,39 @@
 ### Classic page
 ![Ideas classic](img/ideas-2.png)
 
+
+### Get SOQL for Idea
+```
+$ bash getObjectSOQL.sh Idea  
+SELECT Id
+    ,IsDeleted
+    ,Title
+    ,RecordTypeId
+    ,CreatedDate
+    ,CreatedById
+    ,LastModifiedDate
+    ,LastModifiedById
+    ,SystemModstamp
+    ,LastViewedDate
+    ,LastReferencedDate
+    ,CommunityId
+    ,Body
+    ,NumComments
+    ,VoteScore
+    ,VoteTotal
+    ,Categories
+    ,Status
+    ,LastCommentDate
+    ,LastCommentId
+    ,ParentIdeaId
+    ,IsHtml
+    ,IsMerged
+    ,CreatorFullPhotoUrl
+    ,CreatorSmallPhotoUrl
+    ,CreatorName
+FROM Idea
+
+```
 ### Get Idea Records
 ```
 $ bash getObjectRecs.sh Idea  json  
