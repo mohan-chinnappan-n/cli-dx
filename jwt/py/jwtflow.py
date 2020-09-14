@@ -22,6 +22,9 @@ with open(keyfile) as fd:
     privateKey = fd.read()
 
 print('Generating signed JWT assertion...')
+### Spec:https://tools.ietf.org/html/rfc7519
+## refer: https://pypi.org/project/PyJWT/0.1.7/
+### https://github.com/jpadilla/pyjwt
 claim = {
     'iss': issuer,
     'exp': int(time.time()) + 300,
