@@ -1,0 +1,5 @@
+cryptography==2.9
+PyJWT==1.7.1
+requests==2.23.0
+requests-oauthlib==1.0.0
+requests-toolbelt==0.8.0
