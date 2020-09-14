@@ -34,6 +34,7 @@ subject=mohan.chinnappan.n_ea2@gmail.com
 ## Python code  
 - [Latest](jwtflow.py)
 ```py
+
 from datetime import datetime
 import jwt
 import time
@@ -45,9 +46,12 @@ import configparser
 config = configparser.ConfigParser()
 config.read(ini_file)
 
-issuer = config['JWT']['issuer']
 isSandbox = config['JWT']['isSandbox']
+## Consumer Key from the Connected App
+issuer = config['JWT']['issuer']
+## server.key containing the private-key
 keyfile = config['JWT']['keyfile']
+## your email-id
 subject = config['JWT']['subject']
 
 
@@ -58,6 +62,9 @@ with open(keyfile) as fd:
     privateKey = fd.read()
 
 print('Generating signed JWT assertion...')
+### Spec:https://tools.ietf.org/html/rfc7519
+## refer: https://pypi.org/project/PyJWT/0.1.7/
+### https://github.com/jpadilla/pyjwt
 claim = {
     'iss': issuer,
     'exp': int(time.time()) + 300,
@@ -75,7 +82,6 @@ r = requests.post('https://{}.salesforce.com/services/oauth2/token'.format(domai
 
 print('Status:', r.status_code)
 print(r.json())
-
 
 ```
 

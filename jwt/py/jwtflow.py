@@ -9,9 +9,12 @@ import configparser
 config = configparser.ConfigParser()
 config.read(ini_file)
 
-issuer = config['JWT']['issuer']
 isSandbox = config['JWT']['isSandbox']
+## Consumer Key from the Connected App
+issuer = config['JWT']['issuer']
+## server.key containing the private-key
 keyfile = config['JWT']['keyfile']
+## your email-id
 subject = config['JWT']['subject']
 
 
