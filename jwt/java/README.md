@@ -630,3 +630,5 @@ $ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar
   "url": "/services/data/v49.0/wave/datasets"
 }
 ```
+### Connected App
+![connected app](img/jwt-flow-app-2.png)
