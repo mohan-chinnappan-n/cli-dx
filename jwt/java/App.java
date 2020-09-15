@@ -115,6 +115,11 @@ Salesforce will provide response similar to this:
 {'access_token': '00D3h000007R1Lu!JUNKGRSTCy.ZrUnaohvV7dc.90kFGJ_aYwoWlPTpRhuM.r6i0x3eN7.weqYjzibxyeZraOoURMo.NpNDIZSp7F6JJy7hym_', 'scope': 'web id api', 'instance_url': 'https://mohansun-ea-02-dev-ed.my.salesforce.com', 'id': 'https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE', 'token_type': 'Bearer'}
 
 
+-----
+
+Use the access_token  as a bearer token in the Authorization header request to access protected data in Salesforce.
+
+ref: https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=5
 
     */
   }
