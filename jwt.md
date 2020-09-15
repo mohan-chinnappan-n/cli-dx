@@ -10,7 +10,7 @@
 - Generate Private Key and CSR (Certificate Signing Request)
 
 
-### Generae server.key
+### Generate server.key
 
 - NOTE: I have modified the cert and key files to protect,  so others can't use them!
 

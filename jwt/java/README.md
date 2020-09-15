@@ -3,6 +3,7 @@
 ### Code  and steps
 ```java
 
+
 package org.mohansun.jwt;
 
 import org.apache.commons.codec.binary.Base64;
@@ -44,7 +45,7 @@ public class App {
       //Load the private key from a keystore - put path for the keystore.jks
       KeyStore keystore = KeyStore.getInstance("JKS");
       /*
-        How to create java keystore (jks)?
+ -  How to create java keystore (jks)?
         - create mohansun4.jks
             keytool -genkeypair -alias certalias  -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -validity 365 -keystore ~/.jks/mohansun4.jks 
 Enter keystore password:  
@@ -63,6 +64,56 @@ What is the two-letter country code for this unit?
   [Unknown]:  us
 Is CN=mohan chinnappan, OU=dev, O=mohansun, L=nashua, ST=nh, C=us correct?
   [no]:  yes
+
+
+ - How to  List it:  
+ $ keytool -list -v -keystore ~/.jks/mohansun4.jks 
+Enter keystore password:  
+Keystore type: PKCS12
+Keystore provider: SUN
+
+Your keystore contains 1 entry
+
+Alias name: certalias
+Creation date: Sep 14, 2020
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=mohan chinnappan, OU=dev, O=mohansun, L=nashua, ST=nh, C=us
+Issuer: CN=mohan chinnappan, OU=dev, O=mohansun, L=nashua, ST=nh, C=us
+Serial number: 50950c42
+Valid from: Mon Sep 14 23:04:52 EDT 2020 until: Tue Sep 14 23:04:52 EDT 2021
+Certificate fingerprints:
+	 SHA1: 2A:E8:E0:57:E3:2B:47:F2:62:98:DE:77:F4:64:11:A2:22:F7:5E:F2
+	 SHA256: 9E:04:AA:77:45:3B:5C:9D:A7:C4:CA:EC:3F:16:5A:AB:35:5A:04:DE:4E:C8:DA:71:44:FC:65:BB:18:16:F5:09
+Signature algorithm name: SHA256withRSA
+Subject Public Key Algorithm: 2048-bit RSA key
+Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 10 80 9E BC B0 0A 5D 4A   6F DC 47 5F D2 A9 5E E7  ......]Jo.G_..^.
+0010: 06 74 C8 3A                                        .t.:
+]
+]
+
+
+
+*******************************************
+*******************************************
+
+-  How to create cert file out jks
+$ keytool -exportcert -alias certalias -keystore ~/.jks/mohansun4.jks -file mohansun4.cer
+
+Note: use this file mohansun4.cer in creating the connected app
+
+- Different format?
+    Ref:
+    Generate a salesforce compatible JKS from PFX or P12
+    https://help.salesforce.com/articleView?id=000313672&language=en_US&type=1&mode=1
 
 
       */
@@ -129,5 +180,4 @@ ref: https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&
     */
   }
 }
-
 ```
