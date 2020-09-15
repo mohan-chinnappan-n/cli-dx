@@ -20,7 +20,7 @@ public class JWTExample {
       token.append(".");
 
       //Create the JWT Claims Object
-      String[] claimArray = new String[4];
+      String[] claimArray = new String[5];
       claimArray[0] = "3MVG99OxTyEMCQ3gNp2PjkqeZKxnmAiG1xV4oHh9AKL_rSK.BoSVPGZHQukXnVjzRgSuQqGn75NL7yfkQcyy7"; // Consumer Key
       claimArray[1] = "my@email.com"; //subject - your email-id
       claimArray[2] = "https://login.salesforce.com"; // or https://test.salesforce.com for sandboxes
@@ -53,7 +53,7 @@ public class JWTExample {
 
       System.out.println(token.toString());
 
-    } catch (Exception ) {
+    } catch (Exception e ) {
         e.printStackTrace();
     }
   }

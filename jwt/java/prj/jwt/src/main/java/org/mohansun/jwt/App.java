@@ -1,13 +1,11 @@
-## JWT flow in java
+package org.mohansun.jwt;
 
-### Code for constructing a JWT bearer token
-```java
 import org.apache.commons.codec.binary.Base64;
 import java.io.*; 
 import java.security.*; 
 import java.text.MessageFormat;  
 
-public class JWTExample {
+public class App {
 
   public static void main(String[] args) {
 
@@ -62,4 +60,3 @@ public class JWTExample {
     }
   }
 }
-```
