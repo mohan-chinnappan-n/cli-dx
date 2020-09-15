@@ -84,4 +84,17 @@ print('Status:', r.status_code)
 print(r.json())
 
 ```
+### Result
 
+```
+python jwtflow.py
+```
+```
+Loading private key...
+Generating signed JWT assertion...
+{'iss': '3MVG9Kip4IKAZJUNKgZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL', 'exp': 1600139923, 'aud': 'https://login.salesforce.com', 'sub': 'mohan.chinnappan.n_ea2@gmail.com'}
+Making OAuth request...
+Status: 200
+{'access_token': '00D3h000007R1Lu!JUNKGRSTCy.ZrUnaohvV7dc.90kFGJ_aYwoWlPTpRhuM.r6i0x3eN7.weqYjzibxyeZraOoURMo.NpNDIZSp7F6JJy7hym_', 'scope': 'web id api', 'instance_url': 'https://mohansun-ea-02-dev-ed.my.salesforce.com', 'id': 'https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE', 'token_type': 'Bearer'}
+
+```

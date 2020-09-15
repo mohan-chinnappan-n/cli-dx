@@ -1,9 +1,3 @@
-## JWT flow in java
-
-### Code  and steps
-```java
-
-
 package org.mohansun.jwt;
 
 import org.apache.commons.codec.binary.Base64;
@@ -125,4 +119,3 @@ Salesforce will provide response similar to this:
     */
   }
 }
-```
