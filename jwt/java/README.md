@@ -3,13 +3,24 @@
 ### Code  and steps
 ```java
 
-
 package org.mohansun.jwt;
 
 import org.apache.commons.codec.binary.Base64;
 import java.io.*; 
 import java.security.*; 
-import java.text.MessageFormat;  
+import java.text.MessageFormat;
+import java.util.*;
+
+
+
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.HashMap;
+import java.net.URLEncoder;
+ 
 
 public class App {
 
@@ -25,15 +36,19 @@ public class App {
       token.append(Base64.encodeBase64URLSafeString(header.getBytes("UTF-8")));
 
       //Separate with a period
-      token.append(".");
+      token.append("."); 
+      
+      Date date = new Date();
+      long ms = date.getTime(); 
+
 
       //Create the JWT Claims Object
       String[] claimArray = new String[5];
-      claimArray[0] = "3MVG99OxTyEMCQ3gNp2PjkqeZKxnmAiG1xV4oHh9AKL_rSK.BoSVPGZHQukXnVjzRgSuQqGn75NL7yfkQcyy7"; // Consumer Key
-      claimArray[1] = "your@email.com"; //subject - your email-id
+      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7ag0sMF7OJIp5gIqWJiSyv7WxbWnnEqdrWI18r0boHvw5KNY05SS3Npc_XXX"; // Consumer Key
+      claimArray[1] = "mohan.chinnappan.n_ea2@gmail.com"; //subject - your user-id
       claimArray[2] = "https://login.salesforce.com"; // or https://test.salesforce.com for sandboxes
       claimArray[3] = Long.toString( ( System.currentTimeMillis()/1000 ) + 300); // expiration
-      claimArray[4]= ""; //Use of this claim (jti) is OPTIONAL.
+      claimArray[4]= "JWT" + ms ; //Use of this claim (jti) is OPTIONAL. //UUID can be used
 
       MessageFormat claims;
       claims = new MessageFormat(claimTemplate);
@@ -134,7 +149,29 @@ Note: use this file mohansun4.cer in creating the connected app
       //Add the encoded signature
       token.append(signedPayload);
 
-      System.out.println(token.toString());
+      //System.out.println(token.toString());
+
+    // POST the assertion(token) to get the access token
+
+    HttpClient client = HttpClient.newHttpClient();
+    String grantType = "urn:ietf:params:oauth:grant-type:jwt-bearer";
+    HttpRequest request = HttpRequest.newBuilder()
+            .uri(URI.create("https://login.salesforce.com/services/oauth2/token"))
+            .header("Content-Type", "application/x-www-form-urlencoded")
+            //.POST(HttpRequest.BodyPublishers.ofString(requestBody))
+            .POST(HttpRequest.BodyPublishers.ofString(
+              "grant_type=" + URLEncoder.encode(grantType, "UTF-8") +
+              "&assertion=" + URLEncoder.encode(token.toString(), "UTF-8") 
+             ))
+            .build();
+
+    HttpResponse<String> response = client.send(request,
+            HttpResponse.BodyHandlers.ofString());
+
+    
+    System.out.println(response.body());
+    
+
 
     } catch (Exception e ) {
         e.printStackTrace();
@@ -148,36 +185,28 @@ Note: use this file mohansun4.cer in creating the connected app
      eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiAiM01WRzk5T3hUeUVNQ1EzZ05wMlBqa3FlWkt4bm1BaUcxeFY0b0hoOUFLTF9yU0suQm9TVlBHWkhRdWtYblZqelJnU3VRcUduNzVOTDd5ZmtRY3l5NyIsICJzdWIiOiAieW91ckBlbWFpbC5jb20iLCAiYXVkIjogImh0dHBzOi8vbG9naW4uc2FsZXNmb3JjZS5jb20iLCAiZXhwIjogIjE2MDAxMzk1MDIiLCAianRpIjogIiJ9.b1ld_2XL8Up3tixwNdMnoFVpY9IekL_i_tUVXZeqdtwk_MYt_FzTPNJhynUXW4W7jkG5TXvhgdryl7ibO-gfvDrCUdBDS94YPCcKkz0UC3zlXOXBsvtVoyKCZKlYQiG0fEVAUa3X-UFQMTbw2ZajzXSqfSYxrL6JHKYPebmaGw5OeCNrri7m1qa_Ii0SX1OCZDWgEsULXxe2_eJy1skUzUj7qxfZRZUYJ-0iFEUtXgTZQWU2VCw4KHQNb53NF5hvd-TUN38HH5c4WwoJGsXUby9rL2_xVdIwoEbL3AIDE4pSqDki0KnhRnFKYteI1sdL_44gb4Q8eJokNf-gPmwKNw
 
 
-    */
-
-    /*
-     Next Steps
+   // Demo
      
-     you got the JWT bearer token as shown above (let us call it JWTBT)
-
-     Now POST it to:  https://login.salesforce.com/services/oauth2/token HTTP/1.1 as shown below:
-
-POST /services/oauth2/token HTTP/1.1
-Host: login.salesforce.com
-Content-Type: application/x-www-form-urlencoded
-
-grant_type= urn:ietf:params:oauth:grant-type:jwt-bearer&
-assertion=JWTBT (that you got from above)
-
------
-
-Salesforce will provide response similar to this:
-
-{'access_token': '00D3h000007R1Lu!JUNKGRSTCy.ZrUnaohvV7dc.90kFGJ_aYwoWlPTpRhuM.r6i0x3eN7.weqYjzibxyeZraOoURMo.NpNDIZSp7F6JJy7hym_', 'scope': 'web id api', 'instance_url': 'https://mohansun-ea-02-dev-ed.my.salesforce.com', 'id': 'https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE', 'token_type': 'Bearer'}
 
 
------
+$ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar  
+{
+  "access_token": "00D3h000007R1Lu!AR0AQDnxtF_JUNKKfJLOx6glLwSaH6LI8UgoedOIgW0embYBrKXoX1a4lQIjGGpOpo04oc7ZX6eUFrdkeJS0vyvn23rQ2K9Es",
+  "scope": "web api id",
+  "instance_url": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
+  "id": "https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE",
+  "token_type": "Bearer"
+}
 
+
+NEXT STEP:
 Use the access_token  as a bearer token in the Authorization header request to access protected data in Salesforce.
 
-ref: https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=5
+References:
+ https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=5
 
     */
   }
 }
+
 ```
