@@ -6,6 +6,11 @@ import java.security.*;
 import java.text.MessageFormat;
 import java.util.*;
 
+import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.ParseException;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.JSONValue;
 
 
 import java.io.IOException;
@@ -22,7 +27,9 @@ public class App {
   public static void main(String[] args) {
 
     String header = "{\"alg\":\"RS256\"}";
-    String claimTemplate = "'{'\"iss\": \"{0}\", \"sub\": \"{1}\", \"aud\": \"{2}\", \"exp\": \"{3}\", \"jti\": \"{4}\"'}'";
+    String claimTemplate5 = "'{'\"iss\": \"{0}\", \"sub\": \"{1}\", \"aud\": \"{2}\", \"exp\": \"{3}\", \"jti\": \"{4}\"'}'";
+    String claimTemplate = "'{'\"iss\": \"{0}\", \"sub\": \"{1}\", \"aud\": \"{2}\", \"exp\": \"{3}\"'}'";
+
 
     try {
       StringBuffer token = new StringBuffer();
@@ -38,12 +45,12 @@ public class App {
 
 
       //Create the JWT Claims Object
-      String[] claimArray = new String[5];
-      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7ag0sMF7OJIp5gIqWJiSyv7WxbWnnEqdrWI18r0boHvw5KNY05SS3Npc_XXX"; // Consumer Key
+      String[] claimArray = new String[4];
+      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7ag0sMF7OJIp5gIqWJiSyv7WxbWnnEqdrWI18r0boHvw5KNY05SS3Npc_JUNK"; // Consumer Key
       claimArray[1] = "mohan.chinnappan.n_ea2@gmail.com"; //subject - your user-id
       claimArray[2] = "https://login.salesforce.com"; // or https://test.salesforce.com for sandboxes
       claimArray[3] = Long.toString( ( System.currentTimeMillis()/1000 ) + 300); // expiration
-      claimArray[4]= "JWT" + ms ; //Use of this claim (jti) is OPTIONAL. //UUID can be used
+      //claimArray[4]= "JWT" + ms ; //Use of this claim (jti) is OPTIONAL. //UUID can be used
 
       MessageFormat claims;
       claims = new MessageFormat(claimTemplate);
@@ -164,7 +171,34 @@ Note: use this file mohansun4.cer in creating the connected app
             HttpResponse.BodyHandlers.ofString());
 
     
-    System.out.println(response.body());
+    String body = response.body();      
+    JSONParser parser = new JSONParser();
+    JSONObject obj = (JSONObject) parser.parse(body);		
+    String accessToken = (String) obj.get("access_token");
+    String instanceUrl = (String) obj.get("instance_url");
+    System.out.println(obj);
+    //System.out.println(accessToken);
+    //System.out.println(instanceUrl);
+
+    // Let use the access token to get the datasets in the EA
+    String restServiceURL = instanceUrl + "/services/data/v49.0/wave/datasets";
+
+    HttpRequest getRequest = HttpRequest.newBuilder()
+            .uri(URI.create(restServiceURL))
+            .header("Authorization", "Bearer " + accessToken)
+            .GET()
+            .build();
+
+    HttpResponse<String> getResponse = client.send(getRequest,
+            HttpResponse.BodyHandlers.ofString());
+     System.out.println(getResponse.body());
+
+    
+
+
+
+
+
     
 
 
@@ -180,22 +214,8 @@ Note: use this file mohansun4.cer in creating the connected app
      eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiAiM01WRzk5T3hUeUVNQ1EzZ05wMlBqa3FlWkt4bm1BaUcxeFY0b0hoOUFLTF9yU0suQm9TVlBHWkhRdWtYblZqelJnU3VRcUduNzVOTDd5ZmtRY3l5NyIsICJzdWIiOiAieW91ckBlbWFpbC5jb20iLCAiYXVkIjogImh0dHBzOi8vbG9naW4uc2FsZXNmb3JjZS5jb20iLCAiZXhwIjogIjE2MDAxMzk1MDIiLCAianRpIjogIiJ9.b1ld_2XL8Up3tixwNdMnoFVpY9IekL_i_tUVXZeqdtwk_MYt_FzTPNJhynUXW4W7jkG5TXvhgdryl7ibO-gfvDrCUdBDS94YPCcKkz0UC3zlXOXBsvtVoyKCZKlYQiG0fEVAUa3X-UFQMTbw2ZajzXSqfSYxrL6JHKYPebmaGw5OeCNrri7m1qa_Ii0SX1OCZDWgEsULXxe2_eJy1skUzUj7qxfZRZUYJ-0iFEUtXgTZQWU2VCw4KHQNb53NF5hvd-TUN38HH5c4WwoJGsXUby9rL2_xVdIwoEbL3AIDE4pSqDki0KnhRnFKYteI1sdL_44gb4Q8eJokNf-gPmwKNw
 
 
-   // Demo
-     
-
-
+// RUN
 $ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar  
-{
-  "access_token": "00D3h000007R1Lu!AR0AQDnxtF_JUNKKfJLOx6glLwSaH6LI8UgoedOIgW0embYBrKXoX1a4lQIjGGpOpo04oc7ZX6eUFrdkeJS0vyvn23rQ2K9Es",
-  "scope": "web api id",
-  "instance_url": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
-  "id": "https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE",
-  "token_type": "Bearer"
-}
-
-
-NEXT STEP:
-Use the access_token  as a bearer token in the Authorization header request to access protected data in Salesforce.
 
 References:
  https://help.salesforce.com/articleView?id=remoteaccess_oauth_jwt_flow.htm&type=5
