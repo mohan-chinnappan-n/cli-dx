@@ -1,5 +1,12 @@
 ## JWT flow in java
 
+- [Code and Steps](#code)
+- [Demo](#demo)
+- [Connected App](#capp)
+
+
+
+<a name="code"></a>
 ### Code  and steps
 ```java
 
@@ -231,6 +238,7 @@ References:
 }
 
 ```
+<a name="demo"></a>
 
 ### Demo
 
@@ -630,5 +638,6 @@ $ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar
   "url": "/services/data/v49.0/wave/datasets"
 }
 ```
+<a name='capp'></a>
 ### Connected App
 ![connected app](img/jwt-flow-app-2.png)

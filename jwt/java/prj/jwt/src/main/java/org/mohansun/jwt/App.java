@@ -46,7 +46,7 @@ public class App {
 
       //Create the JWT Claims Object
       String[] claimArray = new String[4];
-      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7ag0sMF7OJIp5gIqWJiSyv7WxbWnnEqdrWI18r0boHvw5KNY05SS3Npc_JUNK"; // Consumer Key
+      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7ag0sMF7OJIp5gIqWJiSyv7WxbWnnEqdrWI18r0boHvw5KNY05SS3Npc_QNUU"; // Consumer Key
       claimArray[1] = "mohan.chinnappan.n_ea2@gmail.com"; //subject - your user-id
       claimArray[2] = "https://login.salesforce.com"; // or https://test.salesforce.com for sandboxes
       claimArray[3] = Long.toString( ( System.currentTimeMillis()/1000 ) + 300); // expiration
