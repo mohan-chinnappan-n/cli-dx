@@ -642,3 +642,4 @@ $ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar
 <a name='capp'></a>
 ### Connected App
 ![connected app](img/jwt-flow-app-2.png)
+![connected app manage](img/jwt-flow-app-3.png)
