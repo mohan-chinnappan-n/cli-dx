@@ -1,5 +1,6 @@
-## JWT flow in java
+# JWT flow in java
 
+## Topics
 - [Code and Steps](#code)
 - [Demo](#demo)
 - [Connected App](#capp)
