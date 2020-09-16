@@ -22,7 +22,7 @@ total 24
 -rw-r--r--  1 mchinnappan  wheel  1306 Sep 15 21:15 server.crt
 -rw-r--r--@ 1 mchinnappan  wheel  1679 Sep 15 21:14 server.key
 -rw-r--r--  1 mchinnappan  wheel  2590 Sep 15 21:16 server.p12
-
+```
 3. Import server.p12 into server.jks using keytool
 ```
 $ keytool -importkeystore  -destkeystore server.jks -srckeystore server.p12 -srcstoretype PKCS12
