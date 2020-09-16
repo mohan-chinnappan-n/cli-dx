@@ -46,7 +46,7 @@ public class App {
 
       //Create the JWT Claims Object
       String[] claimArray = new String[4];
-      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7ag0sMF7OJIp5gIqWJiSyv7WxbWnnEqdrWI18r0boHvw5KNY05SS3Npc_QNUU"; // Consumer Key
+      claimArray[0] = "3MVG9Kip4IKAZQEX4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhJUNK"; // Consumer Key
       claimArray[1] = "mohan.chinnappan.n_ea2@gmail.com"; //subject - your user-id
       claimArray[2] = "https://login.salesforce.com"; // or https://test.salesforce.com for sandboxes
       claimArray[3] = Long.toString( ( System.currentTimeMillis()/1000 ) + 300); // expiration
@@ -136,8 +136,12 @@ Note: use this file mohansun4.cer in creating the connected app
       */
 
       String mypwd = "mypassword!";
-      keystore.load(new FileInputStream("/Users/mchinnappan/.jks/mohansun4.jks"), mypwd.toCharArray());
-      PrivateKey privateKey = (PrivateKey) keystore.getKey("certalias", mypwd.toCharArray());
+      //keystore.load(new FileInputStream("/Users/mchinnappan/.jks/mohansun4.jks"), mypwd.toCharArray());
+      //PrivateKey privateKey = (PrivateKey) keystore.getKey("certalias", mypwd.toCharArray());
+
+
+      keystore.load(new FileInputStream("/Users/mchinnappan/.jks/server.jks"), mypwd.toCharArray());
+      PrivateKey privateKey = (PrivateKey) keystore.getKey("mohansun", mypwd.toCharArray());
 
       //Sign the JWT Header + "." + JWT Claims Object
       Signature signature = Signature.getInstance("SHA256withRSA");
