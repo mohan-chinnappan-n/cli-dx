@@ -143,6 +143,22 @@ public class App {
             HttpResponse.BodyHandlers.ofString());
      System.out.println(getResponse.body());
 
+    // POST platform event payload 
+    String eventPayload =  "{ \"message__c\": \"Power Off\"}";
+    restServiceURL = instanceUrl + "/services/data/v49.0/sobjects/Notification__e";
+    getRequest = HttpRequest.newBuilder()
+            .uri(URI.create(restServiceURL))
+            .headers(
+              "Content-Type", "application/json",
+              "Authorization", "Bearer " + accessToken
+            )
+            .POST(HttpRequest.BodyPublishers.ofString(eventPayload ))
+            .build();
+    getResponse = client.send(getRequest,
+            HttpResponse.BodyHandlers.ofString());
+    System.out.println(getResponse.body());
+
+
     } 
     catch( ParseException exp ) {
         System.err.println( "Parsing failed.  Reason: " + exp.getMessage() );
