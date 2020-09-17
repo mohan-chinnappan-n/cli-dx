@@ -11,7 +11,7 @@
 ### Steps
 <a name="steps"></a>
 
-### Prepare or create JKS file
+#### Prepare or create JKS file
 - You have server.key (private key) and server.cer (Cert file)? 
     - Then you can convert into jks as explained here: [Prepare JKS](https://github.com/mohan-chinnappan-n/bulkapi2-dx/tree/master/jwt/java/jks)
     - NOTE: Cert file should be same as the one you have provided in your Salesforce connected App
@@ -91,7 +91,7 @@ Note: use this file mohansun4.cer in creating the connected app
 
 ```
 
-### 3 steps
+#### 3 steps
 - STEP-1: Get JWT Assertion
 - STEP-2:  POST the assertion(token) to get the access token
 - STEP 3: use the access token to access Salesforce protected resource
