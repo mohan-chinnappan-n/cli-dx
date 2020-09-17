@@ -105,7 +105,7 @@ Note: use this file mohansun4.cer in creating the connected app
 
 <a name="code"></a>
 ### Sample Code  
-- [App.java](App.java)
+- [App.java](prj/jwt/src/main/java/org/mohansun/jwt/App.java)
 
 <a name="demo"></a>
 
@@ -118,7 +118,7 @@ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar -p ~/.props/jwt.prop
 ```
 
 - Sample jwt.properties file
-    - [jwt.properties](jwt-SAMPLE.properties)
+    - [jwt.properties](prj/jwt/jwt-SAMPLE.properties)
 
 - Output
 ```json
