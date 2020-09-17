@@ -18,9 +18,12 @@
 
 - If you do not have server.key and server.cer?
  -  How to create java keystore (jks)?
- -  **Example   create mohansun4.jks**
+ -  **Example** - how to create jks file:   *mohansun4.jks*
+
 ```
 $ keytool -genkeypair -alias certalias  -keyalg RSA -keysize 2048 -sigalg SHA256withRSA -validity 365 -keystore ~/.jks/mohansun4.jks 
+```
+```
 Enter keystore password:  
 Re-enter new password: 
 What is your first and last name?
@@ -41,7 +44,10 @@ Is CN=mohan chinnappan, OU=dev, O=mohansun, L=nashua, ST=nh, C=us correct?
 
 - How to  List JKS  file:
 ```  
- $ keytool -list -v -keystore ~/.jks/mohansun4.jks 
+$ keytool -list -v -keystore ~/.jks/mohansun4.jks 
+```
+
+```
 Enter keystore password:  
 Keystore type: PKCS12
 Keystore provider: SUN
