@@ -516,7 +516,7 @@ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar -p ~/.props/jwt.prop
 {"id":"e00xx0000000001AAA","success":true,"errors":[{"statusCode":"OPERATION_ENQUEUED","message":"3a77f372-8e80-4fac-a687-ff2852be5876","fields":[]}]}
 
 ```
-- ![Platform Event Email](https://github.com/mohan-chinnappan-n/bulkapi2-dx/blob/master/img/pe-pwr-down.png)
+<img src='https://github.com/mohan-chinnappan-n/bulkapi2-dx/blob/master/img/pe-pwr-down.png' alt ='PE subscribe process builder email-alert' width='400'/>
 
 <a name='capp'></a>
 ### Connected App
