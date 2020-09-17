@@ -8,7 +8,8 @@
 
 
 
-<a name="stpes"></a>
+### Steps
+<a name="steps"></a>
 
 ### Prepare or create JKS file
 - You have server.key (private key) and server.cer (Cert file)? 
@@ -111,7 +112,7 @@ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar -p ~/.props/jwt.prop
 ```
 
 - Sample jwt.properties file
-    - [jwt.properties](jwt.properties)
+    - [jwt.properties](jwt-SAMPLE.properties)
 
 - Output
 ```json
