@@ -2,7 +2,7 @@
 
 ## Topics
 - [Steps](#steps)
-- [Codes](#code)
+- [Sample Code](#code)
 - [Demo](#demo)
 - [Connected App](#capp)
 
@@ -104,7 +104,7 @@ Note: use this file mohansun4.cer in creating the connected app
 - Refer the [code below](#code) for the details of how to do these steps 1-3
 
 <a name="code"></a>
-### Code  
+### Sample Code  
 - [App.java](App.java)
 
 <a name="demo"></a>
