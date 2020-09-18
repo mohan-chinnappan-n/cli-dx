@@ -641,6 +641,38 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 
 ### POST
+
+- POST a Chatter Feed for the given user and message
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/FeedItem -m POST -f header_ea.json -d feed/fi.json 
+{
+    "id": "0D53h00000n2cWXCAY",
+    "success": true,
+    "errors": []
+}
+```
+```
+ $ cat feed/fi.json
+```
+``` json
+$ cat feed/fi.json 
+{
+"ParentId":  "0053h000002xQ5sAAE",
+"Body" : "Threshold has reached, take action!",
+"type" : "TextPost",
+"Title" : "Temperature Threshold Reached!"
+}
+```
+![chatter feed](img/chatter-feed-1.png)
+
+- Apex equivalent [Ref](https://mohan-chinnappan-n2.github.io/2020/sf-aws/sf-aws-pe.html#1)
+```java
+FeedItem post = new FeedItem();
+// userId can come from the event payload
+post.ParentId ='0053h000002xQ5sAAE';
+post.Body =' Threshold has reached, take action! ;
+insert post;
+```
 - Publish a Platform Event *Notification__e*
 
 - [Refer Platform Events Slides for the setup](https://mohan-chinnappan-n.github.io/sfdc/pevents.html#/6)
