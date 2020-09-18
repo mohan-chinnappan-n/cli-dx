@@ -668,9 +668,9 @@ $ cat feed/fi.json
 - Apex equivalent [Refer AWS Lamba and Platform Events Example](https://mohan-chinnappan-n2.github.io/2020/sf-aws/sf-aws-pe.html#1)
 ```java
 FeedItem post = new FeedItem();
-// userId can come from the event payload
 post.ParentId ='0053h000002xQ5sAAE';
-post.Body =' Threshold has reached, take action! ;
+post.Body ='Threshold has reached, take action!' ;
+
 insert post;
 ```
 - Publish a Platform Event *Notification__e*
