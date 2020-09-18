@@ -257,12 +257,12 @@ $ sfdx mohanc:hello:jwt -c ~/.props/jwt.json
 ```
 ```json
 {
-  access_token: '00D3h000007R1Lu!AR0AQLTCNgMvcSwNZNJv3AH.oJ638c.3XVHJpNtraPPdkkR5N4vCFBzbN5Y3P.fwr8IybqXfpzlL_2s0duVfnqVIskUyJUNK',
-  scope: 'web id api',
-  instance_url: 'https://mohansun-ea-02-dev-ed.my.salesforce.com',
-  id: 'https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE',
-  token_type: 'Bearer',
-  assertion: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm4iOiJtb2hhbi5jaGlubmFwcGFuLm5fZWEyQGdtYWlsLmNvbSIsImlhdCI6MTYwMDM5NjA0OCwiZXhwIjoxNjAwMzk2MzQ4LCJhdWQiOiJodHRwczovL2xvZ2luLnNhbGVzZm9yY2UuY29tIiwiaXNzIjoiM01WRzlLaXA0SUtBWlFFWDRnWkRRY1VJN2FsYnlyZkhLTzZ5WXFNVzA5ckJmNUppaXFOT3gzamdJWmRQdkJXYXJneXZES2puWGx3clo0dWhSNndtTCJ9.W-F4L_UOdpfAr8Pt2HDFlL0Ms_DJg_ImdLAJRrE0ELQvrtUbLgmKajH7urLFyoc8S8jgp7GqDChylAUU6Se_4rHtO4iaInEUOoZIGWzH1B9uUlYoISFBCVT4fB480yAU-DbUG93V6mV_1hKrNGfXrxCLuLcPqGLNGoGtHjnGI9KqpjbcVF16LNnjhyVlif6O5Mmo_DfJ1dlfRHqyLmHsjq15HlpfL9kB3PYD9OzuFCa3XVKgOlnyNlbLriUO4v5U1J9M9Qi_a0BACs62ikxRlo7uPfOEPzXsES-QI8PZ9EAdBJoAxpT8D8v_38MyExauflnkv7rVYD4zHfH9OJUNK'
+  "access_token": "00D3h000007R1Lu!AR0AQLTCNgMvcSwNZNJv3AH.oJ638c.3XVHJpNtraPPdkkR5N4vCFBzbN5Y3P.fwr8IybqXfpzlL_2s0duVfnqVIskUyJnue",
+  "scope": "web id api",
+  "instance_url": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
+  "id": "https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE",
+  "token_type": "Bearer",
+  "assertion": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm4iOiJtb2hhbi5jaGlubmFwcGFuLm5fZWEyQGdtYWlsLmNvbSIsImlhdCI6MTYwMDM5NjM3MiwiZXhwIjoxNjAwMzk2NjcyLCJhdWQiOiJodHRwczovL2xvZ2luLnNhbGVzZm9yY2UuY29tIiwiaXNzIjoiM01WRzlLaXA0SUtBWlFFWDRnWkRRY1VJN2FsYnlyZkhLTzZ5WXFNVzA5ckJmNUppaXFOT3gzamdJWmRQdkJXYXJneXZES2puWGx3clo0dWhSNndtTCJ9.K4uFnVI7Gswr2Z6GMs6LyYWbdBfGTbCvX74-V8VCQeC4exq7oue8U3UI4ecJ57sO7rWnQ06vYbW8UAWDul9pwmgHya9gSoJKiJehRXGVdygRUZvZh9AOYGoRta87CIQuP6bwv1ff9Ag08vQhYeRJJA7tFeizdx-14H7iApAXeBaGEHkZzDmPwub-pR9uC-jWyHLh3VJiQk5vemnkAEJ0R1u-4S1PVLz48PNlY-1ITg-R_ZdU_Gb-BkQjT-fCpc2deik8cvQd9cKpn4ADYH-zWFA_P7pJksGEeuEhkgvav55CJwVo3rWFQ4041UmOe0Mx3pw5yvZZa3lbbxhJzMUy2w"
 }
 ```
 <hr>
