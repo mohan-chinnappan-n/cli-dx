@@ -209,11 +209,67 @@ ngevFR5Da/oXgw==
 ![connect app setup](img/jwt-capp-1.gif)
 
 - Consumer Key from the connected app
-    - 3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL
+    - 3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhRJUNK
 
+
+### Login using JWT flow and get access_token
+
+#### Usage
+```
+
+$ sfdx mohanc:hello:jwt -h
+JWT flow to get access_token
+
+USAGE
+  $ sfdx mohanc:hello:jwt
+
+OPTIONS
+  -c, --configfilename=configfilename             JWT config json file
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** JWT flow to get access_token **
+
+       sfdx mohanc:hello:jwt -c jwt.json
+```
+
+### Sample jwt.json
+
+```
+$ cat ~/.props/jwt.json
+```
+
+```json
+{ 
+"consumerKey": "3MVG9Kip4IKAZQEX4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhRJUNK",
+"subject":"<salesforce user id here>",
+"sandbox":false,
+"expiresIn":300,
+"privateKeyFile":"/Users/mchinnappan/.keys/server.key"
+}
+```
+
+#### Demo
+```
+$ sfdx mohanc:hello:jwt -c ~/.props/jwt.json 
+```
+```json
+{
+  access_token: '00D3h000007R1Lu!AR0AQLTCNgMvcSwNZNJv3AH.oJ638c.3XVHJpNtraPPdkkR5N4vCFBzbN5Y3P.fwr8IybqXfpzlL_2s0duVfnqVIskUyJUNK',
+  scope: 'web id api',
+  instance_url: 'https://mohansun-ea-02-dev-ed.my.salesforce.com',
+  id: 'https://login.salesforce.com/id/00D3h000007R1LuEAK/0053h000002xQ5sAAE',
+  token_type: 'Bearer',
+  assertion: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm4iOiJtb2hhbi5jaGlubmFwcGFuLm5fZWEyQGdtYWlsLmNvbSIsImlhdCI6MTYwMDM5NjA0OCwiZXhwIjoxNjAwMzk2MzQ4LCJhdWQiOiJodHRwczovL2xvZ2luLnNhbGVzZm9yY2UuY29tIiwiaXNzIjoiM01WRzlLaXA0SUtBWlFFWDRnWkRRY1VJN2FsYnlyZkhLTzZ5WXFNVzA5ckJmNUppaXFOT3gzamdJWmRQdkJXYXJneXZES2puWGx3clo0dWhSNndtTCJ9.W-F4L_UOdpfAr8Pt2HDFlL0Ms_DJg_ImdLAJRrE0ELQvrtUbLgmKajH7urLFyoc8S8jgp7GqDChylAUU6Se_4rHtO4iaInEUOoZIGWzH1B9uUlYoISFBCVT4fB480yAU-DbUG93V6mV_1hKrNGfXrxCLuLcPqGLNGoGtHjnGI9KqpjbcVF16LNnjhyVlif6O5Mmo_DfJ1dlfRHqyLmHsjq15HlpfL9kB3PYD9OzuFCa3XVKgOlnyNlbLriUO4v5U1J9M9Qi_a0BACs62ikxRlo7uPfOEPzXsES-QI8PZ9EAdBJoAxpT8D8v_38MyExauflnkv7rVYD4zHfH9OJUNK'
+}
+```
+<hr>
 ### Login using JWT flow
 
 ```
+
 $ sfdx force:auth:jwt:grant -h
 authorize an org using the JWT flow
 
