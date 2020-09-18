@@ -522,3 +522,4 @@ java -jar target/jwt-1.0-SNAPSHOT-jar-with-dependencies.jar -p ~/.props/jwt.prop
 ### Connected App
 ![connected app](img/jwt-flow-app-2.png)
 ![connected app manage](img/jwt-flow-app-3.png)
+![usage count](img/jwt-use-count-1.png)
