@@ -642,7 +642,7 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 ### POST
 
-- POST a Chatter Feed for the given user and message
+#### POST a Chatter Feed for the given user and message
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/FeedItem -m POST -f header_ea.json -d feed/fi.json 
 {
@@ -673,7 +673,7 @@ post.Body ='Threshold has reached, take action!' ;
 
 insert post;
 ```
-- Publish a Platform Event *Notification__e*
+#### Publish a Platform Event *Notification__e*
 
 - [Refer Platform Events Slides for the setup](https://mohan-chinnappan-n.github.io/sfdc/pevents.html#/6)
 - [Setting up Process Builder to Subscribe the Event message](https://mohan-chinnappan-n.github.io/sfdc/pevents.html#/18) 
