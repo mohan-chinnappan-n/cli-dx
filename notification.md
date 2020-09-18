@@ -1,5 +1,5 @@
 # Notification notes
-- How I can send a notification to a Salesforce User - using bell icon
+- Question: How I can send a notification to a Salesforce User - using bell icon?
 
 ## Create a custom notification type
 ![custom notification type](img/custom-note-create-1.png )
