@@ -1,0 +1,11 @@
+{ "inputs" :
+  [
+  {
+    "customNotifTypeId" : "0ML3h0000004DhgGAE",
+    "recipientIds" : ["0053h000002xQ5sAAE"],
+    "title" : "Amount Threshold reached!",
+    "body" : "Amount Threshold reached, Take Action",
+    "targetId" : "5003h000006FbJAAA0"
+  }
+  ]
+}
