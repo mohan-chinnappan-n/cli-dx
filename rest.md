@@ -665,7 +665,7 @@ $ cat feed/fi.json
 ```
 ![chatter feed](img/chatter-feed-1.png)
 
-- Apex equivalent [Refer AWS Lamba and Platform Events Example](https://mohan-chinnappan-n2.github.io/2020/sf-aws/sf-aws-pe.html#1)
+- Apex equivalent ::  [Refer AWS Lamba and Platform Events Example](https://mohan-chinnappan-n2.github.io/2020/sf-aws/sf-aws-pe.html#1)
 ```java
 FeedItem post = new FeedItem();
 post.ParentId ='0053h000002xQ5sAAE';
