@@ -34,7 +34,7 @@ FROM CustomNotificationType
 $ cat feed/notification.json 
 ```
 - Note: 
-    - recipientIds in this use case is User Record-Id
+    - recipientIds: Array of Users Record-Ids, to send the message to
     - targetId: Case Record-id
 ```json
 { "inputs" :
