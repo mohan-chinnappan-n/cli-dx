@@ -34,6 +34,7 @@ FROM CustomNotificationType
 $ cat feed/notification.json 
 ```
 - Note: 
+    - **customNotifTypeId**: the id of CustomNotificationType you got from above step
     - **recipientIds**: Array of Users Record-Ids, to send the message to
     - **targetId**: Case Record-id
 ```json
