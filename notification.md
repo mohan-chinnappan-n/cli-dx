@@ -70,3 +70,5 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 ![notification demo](img/notification-1.gif) 
 
+## Links
+- [Get #Buildspiration with Custom Notifications in Summer ’19](https://developer.salesforce.com/blogs/2019/06/get-buildspiration-with-custom-notifications-in-summer-19.html)
