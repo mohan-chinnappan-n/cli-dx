@@ -392,7 +392,7 @@ pear,100
 ```
 
 # Load the downloaded bucket into Einstein Analytics (EA) Dataset
-<a name="download_loadea"></a>
+<a name="loadea"></a>
 
 ## Usage
 ```
@@ -416,7 +416,9 @@ EXAMPLE
               sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert
 
 ``` 
+
 ### Demo
+
 ```
 $ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com  -d /tmp/fruitsdb.csv 
 
