@@ -418,7 +418,12 @@ EXAMPLE
 
 ```
 $ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com  -d /tmp/fruitsdb.csv 
+{ id: '06V3h0000005jgzEAA', success: true, errors: [] }
+Load part: 1
+{ id: '06W3h0000006vAuEAI', success: true, errors: [] }
+Going to process...
 
+Done.
 ```   
 - Job created
 ![job created](img/fruitsdb-j1.png)
