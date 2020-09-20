@@ -11,7 +11,7 @@
 - [Delete S3 Bucket](#rb)
 - [Upload a file into S3 Bucket](#upload)
 - [Download a file from S3 Bucket](#download)
-- [Download a file from S3 Bucket and load that into EA](#download_loadea)
+- [Load the downloaded S3 bucket file into Einstein Analytics (EA) Dataset](#download_loadea)
 
 
 
@@ -304,7 +304,7 @@ $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 <a name='download'></a>
 ## Download a file from the S3 Bucket
 
-## Usage
+### Usage
 ```
 
 $ sfdx mohanc:aws:s3:download -h
@@ -381,6 +381,7 @@ $ sfdx mohanc:aws:s3:download -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f 
 Done.
 
 ## View the downladed file
+```
 $ cat /tmp/fruitsdb.csv 
 name,qty
 fig,2000
@@ -388,7 +389,8 @@ pear,100
 
 ```
 
-<a name=""></a>
+# Load the downloaded bucket into Einstein Analytics (EA) Dataset
+<a name="download_loadea"></a>
 
 ## Usage
 ```
