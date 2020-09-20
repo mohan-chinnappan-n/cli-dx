@@ -393,7 +393,9 @@ pear,100
 
 ## Usage
 ```
-$ sfdx mohanc:ea:dataset:load -hDataset Loader for EA  
+$ sfdx mohanc:ea:dataset:load -h
+
+Dataset Loader for EA  
 
 USAGE
   $ sfdx mohanc:ea:dataset:load
