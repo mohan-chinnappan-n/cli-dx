@@ -388,8 +388,8 @@ pear,100
 
 ```
 
-# Load the downloaded bucket into Einstein Analytics (EA) Dataset
 <a name="loadea"></a>
+# Load the downloaded bucket into Einstein Analytics (EA) Dataset
 
 ## Usage
 ```
