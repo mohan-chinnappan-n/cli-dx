@@ -377,8 +377,10 @@ $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 }
 
 ## Download
+```
 $ sfdx mohanc:aws:s3:download -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata/fruits-2.csv -o /tmp/fruitsdb.csv
 Done.
+```
 
 ## View the downladed file
 ```
