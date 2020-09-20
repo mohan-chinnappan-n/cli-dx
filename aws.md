@@ -11,6 +11,8 @@
 - [Delete S3 Bucket](#rb)
 - [Upload a file into S3 Bucket](#upload)
 - [Download a file from S3 Bucket](#download)
+- [Download a file from S3 Bucket and load that into EA](#download_loadea)
+
 
 
 
@@ -375,13 +377,51 @@ $ sfdx mohanc:aws:s3:ls -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb
 }
 
 ## Download
-$ sfdx mohanc:aws:s3:download -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata/fruits-2.csv -o /tmp/fruits-2.csv
+$ sfdx mohanc:aws:s3:download -b fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb -f mydata/fruits-2.csv -o /tmp/fruitsdb.csv
 Done.
 
 ## View the downladed file
-$ cat /tmp/fruits-2.csv 
+$ cat /tmp/fruitsdb.csv 
 name,qty
 fig,2000
 pear,100
 
 ```
+
+<a name=""></a>
+
+## Usage
+```
+$ sfdx mohanc:ea:dataset:load -hDataset Loader for EA  
+
+USAGE
+  $ sfdx mohanc:ea:dataset:load
+
+OPTIONS
+  -d, --datafile=datafile                         Data file in csv format to load
+  -o, --operation=operation                       Operation to perform : Overwrite|Append|Upsert|Delete
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              Loads the given csv file in EA as a dataset
+
+              sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert
+
+``` 
+### Demo
+```
+$ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com  -d /tmp/fruitsdb.csv 
+
+```   
+- Job created
+![job created](img/fruitsdb-j1.png)
+
+- Dataset created
+![dataset created](img/fruitsdb-ds1.png)
+
+- Recipe 
+![Recipe](img/fruitsdb-r1.png)
