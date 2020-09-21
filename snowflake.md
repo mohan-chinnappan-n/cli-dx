@@ -24,6 +24,7 @@ Password:
 ```
 $  /Applications/SnowSQL.app/Contents/MacOS/snowsql -v
 Version: 1.2.10
+```
 
 ```
 $  /Applications/SnowSQL.app/Contents/MacOS/snowsql -u MOHANCHINNAPPAN
