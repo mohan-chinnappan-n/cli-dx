@@ -1,6 +1,6 @@
 # Snowflake Install Steps
 
-## Get a trail account
+## Sign up for a trial Snowflake  account
 - [Signup](https://signup.snowflake.com/)
 
 - After signup you will receive an email to activate the account
