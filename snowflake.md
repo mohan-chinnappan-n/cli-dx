@@ -69,3 +69,19 @@ MOHANCHINNAPPAN#COMPUTE_WH@FRUITS.PUBLIC>
 
 
 ```
+
+## How to use in nodejs
+
+```
+
+$ node index.js 
+Successfully connected to Snowflake.
+
+Connection ID: a3d479df-bdce-44b5-b309-1794226f58c8
+Successfully executed statement: select * from fruits..dailyyield;  Rows: 2 
+{ NAME: 'fig', QTY: 2000 }
+{ NAME: 'pear', QTY: 100 }
+
+```
+
+- I will publishing the code soon for this here...
