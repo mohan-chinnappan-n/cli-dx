@@ -1,5 +1,15 @@
 # Snowflake Install Steps
 
+## Get a trail account
+- [Signup](https://signup.snowflake.com/)
+
+- After signup you will receive an email to activate the account
+    - After account activation you will receive an email with 
+        - username  (one you entered while signup) - referred as Username in the CLI (snowsql)
+        - your account URL is https://EWA39024.us-east-1.snowflakecomputing.com. 
+            - note **EWA39024.us-east-1** in my example will be referred as Account in the CLI (snowsql)
+     
+
 ## Create Database and table and load data using Snowflake UI
 ![snowflake ui1](img/sflake-load-1.png)
 ![snowflake ui1](img/sflake-load-2.png)
