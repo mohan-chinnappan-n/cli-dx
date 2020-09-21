@@ -1,4 +1,4 @@
-# Snowflake
+# Snowflake Install Steps
 
 ## Create Database and table and load data using Snowflake UI
 ![snowflake ui1](img/sflake-load-1.png)
