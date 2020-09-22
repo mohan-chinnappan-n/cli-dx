@@ -2,7 +2,7 @@
 
 ## Index
 - [Query](#query)
-
+- [Download and load into EA dataset](#loadea)
 
 <a name='query'></a>
 
@@ -69,9 +69,24 @@ $ sfdx mohanc:snowflake:query -q ~/.snowflake/fruits-query.sql -c ~/.snowflake/s
 ```
 
 <a name="loadea"></a>
-# Load the downloaded Snowflake results csv file into Einstein Analytics (EA) Dataset
+## Down Snowflake results into csv file and load that intoEinstein Analytics (EA) Dataset
 
-## Usage
+### Download from Snowflake into a CSV file
+```
+$ sfdx mohanc:snowflake:query -q ~/.snowflake/fruits-query.sql -c ~/.snowflake/sfc-connection.json  -f csv >/tmp/fruitsdbsfc.csv
+```
+```
+$ cat /tmp/fruitsdbsfc.csv 
+```
+
+```csv
+"NAME","QTY"
+"fig",2000
+"pear",100
+~/bulkapi/dx:
+```
+
+### load into EA dataset
 ```
 $ sfdx mohanc:ea:dataset:load -h
 
@@ -99,19 +114,18 @@ EXAMPLE
 ### Demo
 
 ```
-$ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com  -d /tmp/fruitsdb.csv 
-{ id: '06V3h0000005jgzEAA', success: true, errors: [] }
+$ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d  /tmp/fruitsdbsfc.csv 
+{ id: '06V3h0000005kLdEAI', success: true, errors: [] }
 Load part: 1
-{ id: '06W3h0000006vAuEAI', success: true, errors: [] }
+{ id: '06W3h0000006vpdEAA', success: true, errors: [] }
 Going to process...
-
 Done.
 ```   
 - Job created
-![job created](img/fruitsdb-j1.png)
+![job created](img/fruitsdbsfc-j1.png)
 
 - Dataset created
-![dataset created](img/fruitsdb-ds1.png)
+![dataset created](img/fruitsdbsfc-ds1.png)
 
 - Recipe 
-![Recipe](img/fruitsdb-r1.png)
+![Recipe](img/fruitsdbsfc-r1.png)
