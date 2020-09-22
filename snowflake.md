@@ -44,6 +44,14 @@ EXAMPLE
 
 
 ### Demo
+- Query
+```
+$ cat ~/.snowflake/fruits-query.sql 
+```
+```sql
+SELECT * FROM fruits..dailyyield;
+```
+
 - CSV output
 ```
 $ sfdx mohanc:snowflake:query -q ~/.snowflake/fruits-query.sql -c ~/.snowflake/sfc-connection.json  -f csv
