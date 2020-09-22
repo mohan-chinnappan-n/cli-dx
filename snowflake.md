@@ -1,4 +1,4 @@
-# Accessing snowflake using DX
+# Accessing snowflake using DX and load Snowflake data into EA 
 
 ## Index
 - [Query](#query)
