@@ -1,4 +1,7 @@
 # Accessing snowflake using DX and load Snowflake data into EA 
+- Requires 0.0.62 version of the plugin
+    - sfdx-mohanc-plugins@0.0.62
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ## Index
 - [Query](#query)
