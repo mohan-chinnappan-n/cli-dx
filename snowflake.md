@@ -80,7 +80,7 @@ $ sfdx mohanc:snowflake:query -q ~/.snowflake/fruits-query.sql -c ~/.snowflake/s
 ```
 
 <a name="loadea"></a>
-## Down Snowflake results into csv file and load that intoEinstein Analytics (EA) Dataset
+## Download Snowflake results into csv file and load that intoEinstein Analytics (EA) Dataset
 
 ### Download from Snowflake into a CSV file
 ```
