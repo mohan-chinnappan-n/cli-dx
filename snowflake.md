@@ -83,7 +83,6 @@ $ cat /tmp/fruitsdbsfc.csv
 "NAME","QTY"
 "fig",2000
 "pear",100
-~/bulkapi/dx:
 ```
 
 ### load into EA dataset
