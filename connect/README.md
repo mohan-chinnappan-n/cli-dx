@@ -203,7 +203,7 @@ $ cat ~/.chatter/postmsg_atmention.json
 ```
 - ![chatter-msg](img/chatter-msg-atmention-1.png)
 
-<a name='postatmentionmmulti'></a>
+<a name='postatmentionmulti'></a>
 ### Multi @Mention
 ```
 $ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_atmention_multi.json
