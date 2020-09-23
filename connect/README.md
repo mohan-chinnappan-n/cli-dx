@@ -8,7 +8,8 @@
 
 
 <a name='userinfo'></a>
-- Getting about the user: 'me'
+
+## Getting about the user: 'me'
 
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/users/me -m GET -f ~/.headers/header_ea.json > /tmp/chatter-me.json
