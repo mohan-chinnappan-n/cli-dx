@@ -7,6 +7,7 @@
 - [Posting a chatter message to a user](#postmsg)
     - [Plain Text](#postplain)
     - [Rich Text](#postrtf)
+    - [Code block](#postcode)
 - [References](#ref)
 
 
@@ -73,6 +74,43 @@ $ cat ~/.chatter/postmsg_rtf.json
 }
 ```
 - ![chatter-msg](img/chatter-msg-2.png)
+
+<a name='postcode'></a>
+###  Code Block
+```
+$ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_code.json
+
+```
+```
+$ cat ~/.chatter/postmsg_code.json
+```
+- Note: *subjectId* in this case userId
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+
+         {
+            "markupType" : "Code",
+            "type" : "MarkupBegin"
+         },
+         {
+            "type" : "Text",
+            "text" : "console.log(`Now is the time for all good men to go for the aid of the country!`);"
+         },
+
+        {
+            "markupType" : "Code",
+            "type" : "MarkupEnd"
+        }
+      ]
+   },
+   "subjectId" : "0053h000002xQ5s"
+}
+```
+- ![chatter-msg](img/chatter-msg-3.png)
+
 
 <a name='userinfo'></a>
 
