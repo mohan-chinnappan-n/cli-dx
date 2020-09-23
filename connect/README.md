@@ -8,7 +8,9 @@
 - [References](#ref)
 
 
-## Posting a chatter message to a user
+## Posting a chatter message to a user 
+
+### Plain Text
 <a name='postmsg'></a>
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg.json
@@ -32,6 +34,42 @@ $ cat ~/.chatter/postmsg.json
 }
 ```
 - ![chatter-msg](img/chatter-msg-1.png)
+
+###  Rich Text
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_rtf.json
+
+```
+```
+$ cat ~/.chatter/postmsg_rtf.json
+```
+- Note: *subjectId* in this case userId
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+
+         {
+            "markupType" : "Bold",
+            "type" : "MarkupBegin"
+         },
+         {
+            "type" : "Text",
+            "text" : "Now is the time for all good men to go for the aid of the country!"
+         },
+
+        {
+            "markupType" : "Bold",
+            "type" : "MarkupEnd"
+        }
+      ]
+   },
+   "subjectId" : "0053h000002xQ5s"
+}
+```
+- ![chatter-msg](img/chatter-msg-2.png)
+
 <a name='userinfo'></a>
 
 ## Getting about the user: 'me'
