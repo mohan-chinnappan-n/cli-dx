@@ -12,7 +12,7 @@
     - [@Mention](#postatmention)
     - [Multi @Mention](#postatmentionmulti)
     - [Comment](#postcmt)
-
+    - [Search](#search)
 - [References](#ref)
 
 
@@ -249,6 +249,40 @@ $ cat ~/.chatter/postmsg_atmention_multi.json
 ###  @Mention
 ```
 $ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_cmt.json
+
+```
+```
+$ cat ~/.chatter/postmsg_cmt.json
+```
+- Note: *subjectId* in this case userId or me
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+        { 
+           "type": "mention", 
+           "id" : "0053h000003de75" 
+         },
+         { 
+           "type": "text", 
+           "text" : " Did you see the new plans?" 
+         }
+      ]
+   },
+   "subjectId" : "me"
+}
+```
+- ![chatter-msg](img/chatter-msg-cmt-1.png)
+
+
+<a name='search'></a>
+###  Search
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements?q=release -m GET -f ~/.headers/header_ea.json > /tmp/chatter-results.json
+
+$ sfdx mohanc:data:jq -i /tmp/chatter-results.json -f '.elements[].body.text'
+"@Kelly Frazier Did you see the release plans? @Eric Gutierrez"
 
 ```
 ```
