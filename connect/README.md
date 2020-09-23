@@ -13,6 +13,7 @@
     - [Multi @Mention](#postatmentionmulti)
     - [Comment](#postcmt)
     - [Search](#search)
+    - [Chatter activity of a user](#activities)
 - [References](#ref)
 
 
@@ -285,29 +286,22 @@ $ sfdx mohanc:data:jq -i /tmp/chatter-results.json -f '.elements[].body.text'
 "@Kelly Frazier Did you see the release plans? @Eric Gutierrez"
 
 ```
+<a name='activities'></a>
+###  Chatter Activities of the user
 ```
-$ cat ~/.chatter/postmsg_cmt.json
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/users/me?include=/chatterActivity -f ~/.headers/header_ea.json 
 ```
-- Note: *subjectId* in this case userId or me
 ```json
-
-{ 
-   "body" : {
-      "messageSegments" : [
-        { 
-           "type": "mention", 
-           "id" : "0053h000003de75" 
-         },
-         { 
-           "type": "text", 
-           "text" : " Did you see the new plans?" 
-         }
-      ]
-   },
-   "subjectId" : "me"
+{
+    "chatterActivity": {
+        "commentCount": 0,
+        "commentReceivedCount": 0,
+        "likeReceivedCount": 0,
+        "postCount": 12
+    }
 }
 ```
-- ![chatter-msg](img/chatter-msg-cmt-1.png)
+
 
 
 
@@ -449,7 +443,7 @@ $ sfdx mohanc:data:jq  -i /tmp/chatter-me.json -f '.companyName'
 "salesforce"
 ``` 
 <a name='myorg'></a>
-### How to create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
+## How to create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
 
 - If you like to have an automated login use:
     -  **JWT flow** (force:auth:jwt:grant)  as explained here [DX Login via JWT flow](jwt.md)
