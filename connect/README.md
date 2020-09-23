@@ -2,8 +2,8 @@
 
 ## Topics
 
+- [Creating header.json for the connected Salesforce org](#myorg)
 - [Getting the user info](#userinfo)
-
 - [References](#ref)
 
 
@@ -143,6 +143,26 @@ $ sfdx mohanc:data:jq  -i /tmp/chatter-me.json -f '.chatterInfluence'
 $ sfdx mohanc:data:jq  -i /tmp/chatter-me.json -f '.companyName'
 "salesforce"
 ``` 
+<a name='myorg'></a>
+### How to create header.json for the Salesforce org I logged in via sfdx force:auth:web:login ?
+
+- If you like to have an automated login use:
+    -  **JWT flow** (force:auth:jwt:grant)  as explained here [DX Login via JWT flow](jwt.md)
+```
+$ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com > header.json 
+
+cat header.json 
+```
+```json
+{
+    "Content-Type": "application/json",
+    "Authorization": "Bearer 00D3h000007R1Lu!qJUNKSngDojbDmxCVuYF1HFFT6snO5fhQYJy8s.jFlO2oqi9CP3qXKJ1fAzgO",
+    "apiVersion": "49.0",
+    "instanceUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
+    "restAPIUri": "https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/"
+}
+```
+
 
 <a name='ref'></a>
 ## References
