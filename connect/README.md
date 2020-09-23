@@ -8,6 +8,7 @@
 - [References](#ref)
 
 
+## Posting a chatter message to a user
 <a name='postmsg'></a>
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg.json
