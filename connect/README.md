@@ -10,7 +10,9 @@
     - [Code block](#postcode)
     - [Image](#postimg)
     - [@Mention](#postatmention)
+    - [Multi @Mention](#postatmentionmulti)
     - [Comment](#postcmt)
+
 - [References](#ref)
 
 
@@ -200,6 +202,46 @@ $ cat ~/.chatter/postmsg_atmention.json
 }
 ```
 - ![chatter-msg](img/chatter-msg-atmention-1.png)
+
+<a name='postatmentionmmulti'></a>
+### Multi @Mention
+```
+$ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_atmention_multi.json
+
+```
+```
+$ cat ~/.chatter/postmsg_atmention_multi.json
+```
+- Note: *subjectId* in this case userId or me
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+        { 
+           "type": "mention", 
+           "id" : "0053h000003de75" 
+         },
+         { 
+           "type": "text", 
+           "text" : " Did you see the release plans?" 
+         },
+
+         {
+            "type" : "Text",
+            "text" : " "
+         },
+          {
+            "type": "mention",
+            "id":"0053h000003de71"
+          }
+      ]
+   },
+   "subjectId" : "me"
+}
+```
+- ![chatter-msg](img/chatter-msg-atmention-multi-1.png)
+
 
 
 
