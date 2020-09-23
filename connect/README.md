@@ -9,6 +9,7 @@
     - [Rich Text](#postrtf)
     - [Code block](#postcode)
     - [Image](#postimg)
+    - [@Mention](#postatmention)
 -
 - [References](#ref)
 
@@ -157,6 +158,49 @@ $ cat ~/.chatter/postmsg_img.json
 - ![chatter-msg](img/chatter-msg-img-1.png)
 - ![chatter-msg](img/chatter-msg-img-2.png)
 - ![chatter-msg](img/chatter-msg-img-3.png)
+
+
+<a name='postatmention'></a>
+###  @Mention
+```
+$ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_atmention.json
+
+```
+```
+$ cat ~/.chatter/postmsg_atmention.json
+```
+- Note: *subjectId* in this case userId or me
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+
+         {
+            "markupType" : "Bold",
+            "type" : "MarkupBegin"
+         },
+         {
+            "type" : "Text",
+            "text" : "Now is the time for all good men to go for the aid of the country!"
+         },
+
+        {
+            "markupType" : "Bold",
+            "type" : "MarkupEnd"
+        },
+        {   
+            "type" : "Mention",
+            "id" : "0053h000003de75"
+         }
+      ]
+   },
+   "feedElementType" : "FeedItem",
+   "subjectId" : "0053h000002xQ5s"
+}
+```
+- ![chatter-msg](img/chatter-msg-atmention-1.png)
+
 
 
 
