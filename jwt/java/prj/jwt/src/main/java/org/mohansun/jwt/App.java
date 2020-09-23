@@ -112,7 +112,7 @@ public class App {
     HttpClient client = HttpClient.newHttpClient();
     String grantType = "urn:ietf:params:oauth:grant-type:jwt-bearer";
     HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create("https://login.salesforce.com/services/oauth2/token"))
+            .uri(URI.create(claimArray[2] + "/services/oauth2/token"))
             .header("Content-Type", "application/x-www-form-urlencoded")
             //.POST(HttpRequest.BodyPublishers.ofString(requestBody))
             .POST(HttpRequest.BodyPublishers.ofString(
