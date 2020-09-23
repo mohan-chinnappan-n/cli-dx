@@ -8,6 +8,8 @@
     - [Plain Text](#postplain)
     - [Rich Text](#postrtf)
     - [Code block](#postcode)
+    - [Image](#postimg)
+-
 - [References](#ref)
 
 
@@ -110,6 +112,53 @@ $ cat ~/.chatter/postmsg_code.json
 }
 ```
 - ![chatter-msg](img/chatter-msg-3.png)
+
+<a name='postimg'></a>
+### Image posting 
+```
+$ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_img.json
+
+```
+```
+$ cat ~/.chatter/postmsg_img.json
+```
+- Note: *subjectId* in this case userId or me
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+
+         {
+            "markupType" : "Bold",
+            "type" : "MarkupBegin"
+         },
+         {
+            "type" : "Text",
+            "text" : "Now is the time for all good men to go for the aid of the country!"
+         },
+
+        {
+            "markupType" : "Bold",
+            "type" : "MarkupEnd"
+        },
+
+        {
+            "type":"InlineImage",
+            "fileId":"0693h000003ooR2AAI",
+            "altText":"Profile Image"
+         }
+
+      ]
+   },
+   "subjectId" : "me"
+}
+```
+- ![chatter-msg](img/chatter-msg-img-1.png)
+- ![chatter-msg](img/chatter-msg-img-2.png)
+- ![chatter-msg](img/chatter-msg-img-3.png)
+
+
 
 
 <a name='userinfo'></a>
