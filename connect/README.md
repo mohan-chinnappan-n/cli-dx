@@ -1,5 +1,13 @@
 # Using  Connect API
 
+## Topics
+
+- [Getting the user info](#userinfo)
+
+- [References](#ref)
+
+
+<a name='userinfo'></a>
 - Getting about the user: 'me'
 
 ```
@@ -117,4 +125,24 @@ $ sfdx mohanc:data:jq  -i /tmp/chatter-me.json -f '.chatterActivity'
   "postCount": 4
 }
 ```
- 
+### Chattter Influence of the user
+```
+$ sfdx mohanc:data:jq  -i /tmp/chatter-me.json -f '.chatterInfluence'
+```
+
+```json
+{
+  "percentile": "0.0",
+  "rank": 1
+}
+```
+### Company Name of the user
+
+```
+$ sfdx mohanc:data:jq  -i /tmp/chatter-me.json -f '.companyName'
+"salesforce"
+``` 
+
+<a name='ref'></a>
+## References
+- [Connect REST API Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.chatterapi.meta/chatterapi/intro_understanding_chatter_connect_resources.htm)
