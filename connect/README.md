@@ -10,7 +10,7 @@
     - [Code block](#postcode)
     - [Image](#postimg)
     - [@Mention](#postatmention)
--
+    - [Comment](#postcmt)
 - [References](#ref)
 
 
@@ -201,6 +201,37 @@ $ cat ~/.chatter/postmsg_atmention.json
 ```
 - ![chatter-msg](img/chatter-msg-atmention-1.png)
 
+
+
+<a name='postcmt'></a>
+###  @Mention
+```
+$ sfdx mohanc:/s:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_cmt.json
+
+```
+```
+$ cat ~/.chatter/postmsg_cmt.json
+```
+- Note: *subjectId* in this case userId or me
+```json
+
+{ 
+   "body" : {
+      "messageSegments" : [
+        { 
+           "type": "mention", 
+           "id" : "0053h000003de75" 
+         },
+         { 
+           "type": "text", 
+           "text" : " Did you see the new plans?" 
+         }
+      ]
+   },
+   "subjectId" : "me"
+}
+```
+- ![chatter-msg](img/chatter-msg-cmt-1.png)
 
 
 
