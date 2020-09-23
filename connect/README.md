@@ -5,12 +5,15 @@
 - [Creating header.json for the connected Salesforce org](#myorg)
 - [Getting the user info](#userinfo)
 - [Posting a chatter message to a user](#postmsg)
+    - [Plain Text](#postplain)
+    - [Rich Text](#postrtf)
 - [References](#ref)
 
 
 <a name='postmsg'></a>
 ## Posting a chatter message to a user 
 
+<a name='postplain'></a>
 ### Plain Text
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg.json
@@ -35,6 +38,7 @@ $ cat ~/.chatter/postmsg.json
 ```
 - ![chatter-msg](img/chatter-msg-1.png)
 
+<a name='postrtf'></a>
 ###  Rich Text
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/chatter/feed-elements -m POST -f ~/.headers/header_ea.json -d ~/.chatter/postmsg_rtf.json
