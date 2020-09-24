@@ -479,8 +479,9 @@ opportunityB,99.01,01/31/2012
 ```
 - NOTE: Data field should be in the format MM/dd/yyyy
     - Example: 01/31/2012 (note the month has to be zero-padded month (01) as shown in this example)
-```
 - Let us load into EA
+
+```
 $  sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty.csv 
 ```
 ```
