@@ -1,7 +1,7 @@
 # AWS access via DX
 
-- Requires 0.0.61 version of the plugin
-    - sfdx-mohanc-plugins@0.0.61
+- Requires 0.0.63 version of the plugin
+    - sfdx-mohanc-plugins@0.0.63
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ### Topics
@@ -12,6 +12,7 @@
 - [Upload a file into S3 Bucket](#upload)
 - [Download a file from S3 Bucket](#download)
 - [Load the downloaded S3 bucket file into Einstein Analytics (EA) Dataset](#loadea)
+- [Load CSV file into Einstein Analytics (EA) Dataset](#loadcsv)
 
 
 
@@ -435,3 +436,103 @@ Done.
 
 - Recipe 
 ![Recipe](img/fruitsdb-r1.png)
+
+<a name='loadcsvea'</a>
+
+# Load a csv  file into Einstein Analytics (EA) Dataset
+
+## Usage
+```
+$ sfdx mohanc:ea:dataset:load -h
+
+Dataset Loader for EA  
+
+USAGE
+  $ sfdx mohanc:ea:dataset:load
+
+OPTIONS
+  -d, --datafile=datafile                         Data file in csv format to load
+  -o, --operation=operation                       Operation to perform : Overwrite|Append|Upsert|Delete
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              Loads the given csv file in EA as a dataset
+
+              sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert
+
+``` 
+
+### Demo
+
+- Input data
+```
+$ cat ~/.ea/oppty.csv
+```
+```csv
+Name,Amount,CloseDate
+opportunityA,100.99,06/30/2014
+opportunityB,99.01,01/31/2012
+```
+- NOTE: Data field should be in the format MM/dd/yyyy
+    - Example: 01/31/2012 (note the month has to be zero-padded month (01) as shown in this example)
+```
+- Let us load into EA
+$  sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty.csv 
+```
+```json
+[
+  {
+    fullyQualifiedName: 'oppty_csvDataset.Name',
+    label: 'Name',
+    name: 'Name',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.Amount',
+    label: 'Amount',
+    name: 'Amount',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 2
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.CloseDate',
+    label: 'CloseDate',
+    name: 'CloseDate',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Date',
+    format: 'MM/dd/yyyy',
+    fiscalMonthOffset: 0
+  }
+]
+```
+```
+{ id: '06V3h0000005l9TEAQ', success: true, errors: [] }
+Load part: 1
+{ id: '06W3h0000006wdnEAA', success: true, errors: [] }
+Going to process...
+
+Done.
+
+```   
+- Job created
+![job created](img/oppty-j1.png)
+
+- Dataset created
+![dataset created](img/oppty-ds1.png)
+
+- Recipe 
+![Recipe](img/oppty-r1.png)
+
+
