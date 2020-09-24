@@ -477,8 +477,8 @@ Name,Amount,CloseDate
 opportunityA,100.99,06/30/2014
 opportunityB,99.01,01/31/2012
 ```
-- NOTE: Data field should be in the format MM/dd/yyyy
-    - Example: 01/31/2012 (note the month has to be zero-padded month (01) as shown in this example)
+- **NOTE**: Data field should be in the format **MM/dd/yyyy**
+    - Example: *01/31/2012* (note the month has to be zero-padded month (*01*) as shown in this example)
 - Let us load into EA
 
 ```
