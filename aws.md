@@ -437,7 +437,7 @@ Done.
 - Recipe 
 ![Recipe](img/fruitsdb-r1.png)
 
-<a name='loadcsvea'</a>
+<a name='loadcsvea'></a>
 
 # Load a CSV  file into Einstein Analytics (EA) Dataset
 
