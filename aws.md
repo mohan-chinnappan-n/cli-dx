@@ -12,7 +12,7 @@
 - [Upload a file into S3 Bucket](#upload)
 - [Download a file from S3 Bucket](#download)
 - [Load the downloaded S3 bucket file into Einstein Analytics (EA) Dataset](#loadea)
-- [Load CSV file into Einstein Analytics (EA) Dataset](#loadcsv)
+- [Load CSV file into Einstein Analytics (EA) Dataset](#loadcsvea)
 
 
 
@@ -439,7 +439,7 @@ Done.
 
 <a name='loadcsvea'</a>
 
-# Load a csv  file into Einstein Analytics (EA) Dataset
+# Load a CSV  file into Einstein Analytics (EA) Dataset
 
 ## Usage
 ```
@@ -483,7 +483,7 @@ opportunityB,99.01,01/31/2012
 - Let us load into EA
 $  sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty.csv 
 ```
-```json
+```
 [
   {
     fullyQualifiedName: 'oppty_csvDataset.Name',
