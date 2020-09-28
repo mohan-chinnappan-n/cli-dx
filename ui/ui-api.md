@@ -8,7 +8,10 @@
 - [Child Records](#childrecs)
 - [Actions](#actions)
 - [Favorites](#fav)
-
+- [List Views](#listviews)
+- [Apps](#apps)
+- [Nav Iems](#navitems)
+- [Themes](#themes)
 
 
 <a name='objs'></a>
@@ -1992,6 +1995,1501 @@ $ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev
 ```json
 {
     "favorites": []
+}
+```
+<a name='listviews'></a>
+## Listviews
+
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/list-ui/Account
+```
+```json
+{
+    "count": 6,
+    "currentPageToken": "0",
+    "currentPageUrl": "/services/data/v49.0/ui-api/list-ui/Account?pageSize=20&pageToken=0",
+    "eTag": "56c082ef5d1f4366eda96d419dbb8808",
+    "lists": [
+        {
+            "apiName": "AllAccounts",
+            "id": "00B3h000008IZWAEA4",
+            "label": "All Accounts",
+            "listUiUrl": "/services/data/v49.0/ui-api/list-ui/Account/AllAccounts"
+        },
+        {
+            "apiName": "MyAccounts",
+            "id": "00B3h000008IZYAEA4",
+            "label": "My Accounts",
+            "listUiUrl": "/services/data/v49.0/ui-api/list-ui/Account/MyAccounts"
+        },
+        {
+            "apiName": "NewLastWeek",
+            "id": "00B3h000008IZXYEA4",
+            "label": "New Last Week",
+            "listUiUrl": "/services/data/v49.0/ui-api/list-ui/Account/NewLastWeek"
+        },
+        {
+            "apiName": "NewThisWeek",
+            "id": "00B3h000008IZXNEA4",
+            "label": "New This Week",
+            "listUiUrl": "/services/data/v49.0/ui-api/list-ui/Account/NewThisWeek"
+        },
+        {
+            "apiName": "PlatinumandGoldSLACustomers",
+            "id": "00B3h000008IZXoEAO",
+            "label": "Platinum and Gold SLA Customers",
+            "listUiUrl": "/services/data/v49.0/ui-api/list-ui/Account/PlatinumandGoldSLACustomers"
+        },
+        {
+            "apiName": "RecentlyViewedAccounts",
+            "id": "00B3h000008IZY2EAO",
+            "label": "Recently Viewed Accounts",
+            "listUiUrl": "/services/data/v49.0/ui-api/list-ui/Account/RecentlyViewedAccounts"
+        }
+    ],
+    "nextPageToken": null,
+    "nextPageUrl": null,
+    "objectApiName": "Account",
+    "pageSize": 20,
+    "previousPageToken": null,
+    "previousPageUrl": null,
+    "queryString": null,
+    "recentListsOnly": false
+}
+
+```
+<a name='apps'></a>
+## Apps
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/apps?formFactor=Large
+```
+```json
+{
+    "apps": [
+        {
+            "appId": "06m3h000001Mgu8AAC",
+            "description": "Build Einstein Analytics dashboards and apps",
+            "developerName": "Insights",
+            "eTag": "a95008dd47dc870d4f9f644a357af997",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Wave/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Analytics Studio",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Wave/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/wave/wave.app?tsid=02u3h000001Mgu8",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001Mgu9AAC",
+            "description": "Manage your sales process with accounts, leads, opportunities, and more",
+            "developerName": "LightningSales",
+            "eTag": "c4ae4a33eb2f8e8d753c4b2c1f240778",
+            "formFactors": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/SalesCloud/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Sales",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/SalesCloud/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "EF7EAD",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/lightning/page/home",
+                    "custom": false,
+                    "developerName": "standard-home",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/home_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Home",
+                    "objectApiName": "Home",
+                    "objectLabel": null,
+                    "objectLabelPlural": null,
+                    "pageReference": {
+                        "attributes": {
+                            "pageName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__namedPage"
+                    },
+                    "standardType": "Home"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "FCB95B",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/006/o",
+                    "custom": false,
+                    "developerName": "standard-Opportunity",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/opportunity_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Opportunities",
+                    "objectApiName": "Opportunity",
+                    "objectLabel": "Opportunity",
+                    "objectLabelPlural": "Opportunities",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Opportunity",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "F88962",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/00Q/o",
+                    "custom": false,
+                    "developerName": "standard-Lead",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/lead_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Leads",
+                    "objectApiName": "Lead",
+                    "objectLabel": "Lead",
+                    "objectLabelPlural": "Leads",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Lead",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": false,
+                    "availableInLightning": true,
+                    "color": "4BC076",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/00T/o",
+                    "custom": false,
+                    "developerName": "standard-Task",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/task_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Tasks",
+                    "objectApiName": "Task",
+                    "objectLabel": "Task",
+                    "objectLabelPlural": "Tasks",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Task",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": "Tasks"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "BAAC93",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/_ui/core/chatter/files/FileTabPage",
+                    "custom": false,
+                    "developerName": "standard-File",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/file_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Files",
+                    "objectApiName": "ContentDocument",
+                    "objectLabel": null,
+                    "objectLabelPlural": null,
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "ContentDocument",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "7F8DE1",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/001/o",
+                    "custom": false,
+                    "developerName": "standard-Account",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/account_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Accounts",
+                    "objectApiName": "Account",
+                    "objectLabel": "Account",
+                    "objectLabelPlural": "Accounts",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Account",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "A094ED",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/003/o",
+                    "custom": false,
+                    "developerName": "standard-Contact",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/contact_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Contacts",
+                    "objectApiName": "Contact",
+                    "objectLabel": "Contact",
+                    "objectLabelPlural": "Contacts",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Contact",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "F49756",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/701/o",
+                    "custom": false,
+                    "developerName": "standard-Campaign",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/campaign_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Campaigns",
+                    "objectApiName": "Campaign",
+                    "objectLabel": "Campaign",
+                    "objectLabelPlural": "Campaigns",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Campaign",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "EF6E64",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/01Z/o",
+                    "custom": false,
+                    "developerName": "standard-Dashboard",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/dashboard_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Dashboards",
+                    "objectApiName": "Dashboard",
+                    "objectLabel": "Dashboard",
+                    "objectLabelPlural": "Dashboards",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Dashboard",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": "Dashboards"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "2ECBBE",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/00O/o",
+                    "custom": false,
+                    "developerName": "standard-report",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/report_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Reports",
+                    "objectApiName": "Report",
+                    "objectLabel": "Report",
+                    "objectLabelPlural": "Reports",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Report",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": "Reports"
+                },
+                {
+                    "availableInClassic": false,
+                    "availableInLightning": true,
+                    "color": "489DD0",
+                    "content": null,
+                    "custom": false,
+                    "developerName": "standard-Feed",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/feed_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Chatter",
+                    "objectApiName": "Feed",
+                    "objectLabel": null,
+                    "objectLabelPlural": null,
+                    "pageReference": {
+                        "attributes": {
+                            "pageName": "chatter"
+                        },
+                        "state": {},
+                        "type": "standard__namedPage"
+                    },
+                    "standardType": "Feed"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "83B6FF",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/_ui/core/chatter/groups/GroupListPage",
+                    "custom": false,
+                    "developerName": "standard-CollaborationGroup",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/groups_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Groups",
+                    "objectApiName": "CollaborationGroup",
+                    "objectLabel": "Group",
+                    "objectLabelPlural": "Groups",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "CollaborationGroup",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": "Groups"
+                },
+                {
+                    "availableInClassic": false,
+                    "availableInLightning": true,
+                    "color": "EB7092",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/00U/o",
+                    "custom": false,
+                    "developerName": "standard-Event",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/event_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Calendar",
+                    "objectApiName": "Event",
+                    "objectLabel": "Event",
+                    "objectLabelPlural": "Events",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Event",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": "Events"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "65CAE4",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/_ui/core/chatter/people/PeopleListPage",
+                    "custom": false,
+                    "developerName": "standard-OtherUserProfile",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/user_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "People",
+                    "objectApiName": "User",
+                    "objectLabel": "User",
+                    "objectLabelPlural": "People",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "User",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": "People"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "F2CF5B",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/500/o",
+                    "custom": false,
+                    "developerName": "standard-Case",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/case_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "Cases",
+                    "objectApiName": "Case",
+                    "objectLabel": "Case",
+                    "objectLabelPlural": "Cases",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "Case",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "4FBE75",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/_ui/sales/forecasting/ui/ForecastingTabPage",
+                    "custom": false,
+                    "developerName": "standard-Forecasting3",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/forecasts_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Forecasts",
+                    "objectApiName": "Forecasting3",
+                    "objectLabel": null,
+                    "objectLabelPlural": null,
+                    "pageReference": {
+                        "attributes": {
+                            "name": "runtime_sales_forecasting:forecastingTab",
+                            "attributes": {}
+                        },
+                        "state": {},
+                        "type": "standard__directCmpReference"
+                    },
+                    "standardType": "Forecasting3"
+                },
+                {
+                    "availableInClassic": false,
+                    "availableInLightning": true,
+                    "color": "0070D2",
+                    "content": null,
+                    "custom": false,
+                    "developerName": "standard-WaveHomeLightning",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/standard/insightsHome_120.png",
+                    "id": null,
+                    "itemType": "Standard",
+                    "label": "Analytics",
+                    "objectApiName": "WaveHomeLightning",
+                    "objectLabel": null,
+                    "objectLabelPlural": null,
+                    "pageReference": {
+                        "attributes": {
+                            "name": "wave:waveHomeTab",
+                            "attributes": {}
+                        },
+                        "state": {},
+                        "type": "standard__directCmpReference"
+                    },
+                    "standardType": "WaveHomeLightning"
+                },
+                {
+                    "availableInClassic": true,
+                    "availableInLightning": true,
+                    "color": "eb687f",
+                    "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/a02/o",
+                    "custom": true,
+                    "developerName": "MyFilter__c",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/custom/custom31_120.png",
+                    "id": null,
+                    "itemType": "Entity",
+                    "label": "MyFilters",
+                    "objectApiName": "MyFilter__c",
+                    "objectLabel": "MyFilter",
+                    "objectLabelPlural": "MyFilters",
+                    "pageReference": {
+                        "attributes": {
+                            "objectApiName": "MyFilter__c",
+                            "actionName": "home"
+                        },
+                        "state": {},
+                        "type": "standard__objectPage"
+                    },
+                    "standardType": null
+                }
+            ],
+            "selected": true,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgu9",
+            "type": "Lightning",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MgtnAAC",
+            "description": "Allows you to have meaningful training data to do the Wave Trails (=tutorials) on Salesforce Trailhead.",
+            "developerName": "Trailhead_Data_Manager",
+            "eTag": "4e756574b912b59aa2971ec79e6e06c8",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": null,
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Trailhead Data Manager",
+            "logoUrl": "https://mohansun-ea-02-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0153h000001DS8d&oid=00D3h000007R1Lu&lastMod=1594668657000",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/servlet/servlet.Integration?lid=01r3h0000017Acp&ic=1&linkToken=VmpFPSxNakF5TUMweE1DMHdNVlF3TVRvMU5UbzBOaTQzT0RWYSxqaFhHTDNOQVR4ZHpZTWZ5RVpabGtpLFlXWmtNR0po&tsid=02u3h000001Mgtn",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MgtsAAC",
+            "description": "Best-in-class on-demand marketing automation",
+            "developerName": "Marketing",
+            "eTag": "539e4d1aedcb2632bc8e4bfa46f1d956",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/MarketingCloud/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Marketing",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/MarketingCloud/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgts",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MgtyAAC",
+            "description": "Salesforce CRM Communities",
+            "developerName": "Community",
+            "eTag": "60a59c06f40f84ddb4e0bf740aa0da6b",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Community/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Community",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Community/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgty",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MgtrAAC",
+            "description": "Manage customer service with accounts, contacts, cases, and more",
+            "developerName": "Service",
+            "eTag": "a59cd4729d3ad4967291ea842b98970b",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/ServiceCloud/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Service",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/ServiceCloud/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgtr",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MgtzAAC",
+            "description": "Build pixel-perfect, data-rich websites using the drag-and-drop Site.com application, and manage content and published sites.",
+            "developerName": "Sites",
+            "eTag": "6da6211ee6e27bc90bc88ec820cd3abb",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Sites/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Site.com",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/app/00D3h000007R1Lu/02u3h000001MgtzAAC",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgtz",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001Mgu0AAC",
+            "description": "The Salesforce Chatter social network, including profiles and feeds",
+            "developerName": "Chatter",
+            "eTag": "3f653a89469f169f5a025ccc3df39723",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Chatter/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Salesforce Chatter",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Standard/feed/logo.svg",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgu0",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001Mgu5AAC",
+            "description": "Salesforce CRM Content",
+            "developerName": "Content",
+            "eTag": "de3830b970dfb15830c8f0262d495c50",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": null,
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Content",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Standard/file/logo.svg",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgu5",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MguBAAS",
+            "description": "(Lightning Experience) Lets support agents work with multiple records across customer service channels on one screen",
+            "developerName": "LightningService",
+            "eTag": "4a6d777d66926be05abc287e85317fa1",
+            "formFactors": [
+                "Small",
+                "Large"
+            ],
+            "headerColor": "#802ABE",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/LightningService/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Service Console",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/LightningService/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001MguB",
+            "type": "Lightning",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001Mgu6AAC",
+            "description": "View Adoption and Usage Metrics for Lightning Experience",
+            "developerName": "LightningInstrumentation",
+            "eTag": "f881e14d618122e19904b2bda0c97329",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/LightningInstrumentation/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Lightning Usage App",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/LightningInstrumentation/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001Mgu6",
+            "type": "Lightning",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MgtxAAC",
+            "description": "App Launcher tabs",
+            "developerName": "AppLauncher",
+            "eTag": "54f3104b72af0059aefa6163fe59eb1e",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/AppLauncher/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "App Launcher",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/AppLauncher/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/app/mgmt/applauncher/appLauncher.apexp?tsid=02u3h000001Mgtx",
+            "type": "Classic",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000001MguDAAS",
+            "description": "Discover and manage business solutions designed for your industry.",
+            "developerName": "LightningBolt",
+            "eTag": "764a009c330bf331399f08e01996aee0",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/LightningBolt/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Bolt Solutions",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/LightningBolt/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000001MguD",
+            "type": "Lightning",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000000yDpCAAU",
+            "description": "Manage your store&#39;s products, catalogs, and pricebooks.",
+            "developerName": "Commerce",
+            "eTag": "a4126c762c8d81b833227e40c49dccbe",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Commerce/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Commerce",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Commerce/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000000yDpC",
+            "type": "Lightning",
+            "userNavItems": []
+        },
+        {
+            "appId": null,
+            "description": null,
+            "developerName": "selfservice",
+            "eTag": "fdd53c29f13c850547a741361fab53df",
+            "formFactors": [
+                "Large",
+                "Small"
+            ],
+            "headerColor": null,
+            "iconUrl": null,
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "selfservice",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Community/logo.png",
+            "mobileStartUrl": "https://custcomm2020-developer-edition.na111.force.com",
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/servlet/networks/switch?networkId=0DB3h00000021GP",
+            "type": "Community",
+            "userNavItems": []
+        },
+        {
+            "appId": "06m3h000000BFJjAAO",
+            "description": "See how your company uses certain features, and learn ways you can improve your org.",
+            "developerName": "Optimizer",
+            "eTag": "55cc34a478581657122b4f33fdafa34e",
+            "formFactors": [
+                "Large"
+            ],
+            "headerColor": "#0070D2",
+            "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Optimizer/icon.png",
+            "isNavAutoTempTabsDisabled": false,
+            "isNavPersonalizationDisabled": false,
+            "label": "Salesforce Optimizer",
+            "logoUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/logos/Salesforce/Optimizer/logo.png",
+            "mobileStartUrl": null,
+            "navItems": [],
+            "selected": false,
+            "startUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/home/home.jsp?tsid=02u3h000000BFJj",
+            "type": "Lightning",
+            "userNavItems": []
+        }
+    ],
+    "eTag": "e553aa185e5b2429516513e20e016afd"
+}
+```
+<a name='navitems'></a>
+## Nav Items
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/nav-items
+```
+
+```json
+{
+    "currentPageUrl": "/services/data/v49.0/ui-api/nav-items?formFactor=Large",
+    "eTag": "ae841aeffa2b2cddee762d458491f280",
+    "navItems": [
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0TU/o",
+            "custom": false,
+            "developerName": "standard-AccountBrand",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Account Brands",
+            "objectApiName": "AccountBrand",
+            "objectLabel": "Account Brand",
+            "objectLabelPlural": "Account Brands",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "AccountBrand",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/001/o",
+            "custom": false,
+            "developerName": "standard-Account",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Accounts",
+            "objectApiName": "Account",
+            "objectLabel": "Account",
+            "objectLabelPlural": "Accounts",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "Account",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": false,
+            "availableInLightning": true,
+            "color": null,
+            "content": null,
+            "custom": false,
+            "developerName": "standard-WaveHomeLightning",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Standard",
+            "label": "Analytics",
+            "objectApiName": "WaveHomeLightning",
+            "objectLabel": null,
+            "objectLabelPlural": null,
+            "pageReference": {
+                "attributes": {
+                    "name": "wave:waveHomeTab",
+                    "attributes": {}
+                },
+                "state": {},
+                "type": "standard__directCmpReference"
+            },
+            "standardType": "WaveHomeLightning"
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/app/mgmt/applauncher/appLauncher.apexp",
+            "custom": false,
+            "developerName": "standard-AppLauncher",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Standard",
+            "label": "App Launcher",
+            "objectApiName": "AppLauncher",
+            "objectLabel": null,
+            "objectLabelPlural": null,
+            "pageReference": {
+                "attributes": {
+                    "name": "salesforceIdentity:appLauncherDesktopInternal",
+                    "attributes": {}
+                },
+                "state": {},
+                "type": "standard__directCmpReference"
+            },
+            "standardType": "AppLauncher"
+        },
+        {
+            "availableInClassic": false,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/04i/o",
+            "custom": false,
+            "developerName": "standard-ProcessInstanceWorkitem",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Approval Requests",
+            "objectApiName": "ProcessInstanceWorkitem",
+            "objectLabel": "Approval Request",
+            "objectLabelPlural": "Approval Requests",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "ProcessInstanceWorkitem",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/02i/o",
+            "custom": false,
+            "developerName": "standard-Asset",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Assets",
+            "objectApiName": "Asset",
+            "objectLabel": "Asset",
+            "objectLabelPlural": "Assets",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "Asset",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0cI/o",
+            "custom": false,
+            "developerName": "standard-AuthorizationForm",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Authorization Form",
+            "objectApiName": "AuthorizationForm",
+            "objectLabel": "Authorization Form",
+            "objectLabelPlural": "Authorization Form",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "AuthorizationForm",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0cK/o",
+            "custom": false,
+            "developerName": "standard-AuthorizationFormConsent",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Authorization Form Consent",
+            "objectApiName": "AuthorizationFormConsent",
+            "objectLabel": "Authorization Form Consent",
+            "objectLabelPlural": "Authorization Form Consent",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "AuthorizationFormConsent",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0cM/o",
+            "custom": false,
+            "developerName": "standard-AuthorizationFormDataUse",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Authorization Form Data Use",
+            "objectApiName": "AuthorizationFormDataUse",
+            "objectLabel": "Authorization Form Data Use",
+            "objectLabelPlural": "Authorization Form Data Use",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "AuthorizationFormDataUse",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0cN/o",
+            "custom": false,
+            "developerName": "standard-AuthorizationFormText",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Authorization Form Text",
+            "objectApiName": "AuthorizationFormText",
+            "objectLabel": "Authorization Form Text",
+            "objectLabelPlural": "Authorization Form Text",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "AuthorizationFormText",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": false,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/00U/o",
+            "custom": false,
+            "developerName": "standard-Event",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Standard",
+            "label": "Calendar",
+            "objectApiName": "Event",
+            "objectLabel": "Event",
+            "objectLabelPlural": "Events",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "Event",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": "Events"
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/701/o",
+            "custom": false,
+            "developerName": "standard-Campaign",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Campaigns",
+            "objectApiName": "Campaign",
+            "objectLabel": "Campaign",
+            "objectLabelPlural": "Campaigns",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "Campaign",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/03O/o",
+            "custom": false,
+            "developerName": "standard-CardPaymentMethod",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Card Payment Methods",
+            "objectApiName": "CardPaymentMethod",
+            "objectLabel": "Card Payment Method",
+            "objectLabelPlural": "Card Payment Methods",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "CardPaymentMethod",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/500/o",
+            "custom": false,
+            "developerName": "standard-Case",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Cases",
+            "objectApiName": "Case",
+            "objectLabel": "Case",
+            "objectLabelPlural": "Cases",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "Case",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0Pl/o",
+            "custom": false,
+            "developerName": "standard-ChannelProgramLevel",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Channel Program Levels",
+            "objectApiName": "ChannelProgramLevel",
+            "objectLabel": "Channel Program Level",
+            "objectLabelPlural": "Channel Program Levels",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "ChannelProgramLevel",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0Pk/o",
+            "custom": false,
+            "developerName": "standard-ChannelProgram",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Channel Programs",
+            "objectApiName": "ChannelProgram",
+            "objectLabel": "Channel Program",
+            "objectLabelPlural": "Channel Programs",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "ChannelProgram",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": false,
+            "availableInLightning": true,
+            "color": null,
+            "content": null,
+            "custom": false,
+            "developerName": "standard-Feed",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Standard",
+            "label": "Chatter",
+            "objectApiName": "Feed",
+            "objectLabel": null,
+            "objectLabelPlural": null,
+            "pageReference": {
+                "attributes": {
+                    "pageName": "chatter"
+                },
+                "state": {},
+                "type": "standard__namedPage"
+            },
+            "standardType": "Feed"
+        },
+        {
+            "availableInClassic": false,
+            "availableInLightning": true,
+            "color": null,
+            "content": null,
+            "custom": false,
+            "developerName": "standard-CmsAuthorHome",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Standard",
+            "label": "CMS Home",
+            "objectApiName": "CmsAuthorHome",
+            "objectLabel": null,
+            "objectLabelPlural": null,
+            "pageReference": {
+                "attributes": {
+                    "pageName": "home"
+                },
+                "state": {},
+                "type": "standard__cmsPage"
+            },
+            "standardType": "CmsAuthorHome"
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0eB/o",
+            "custom": false,
+            "developerName": "standard-CommSubscriptionChannelType",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Communication Subscription Channel Types",
+            "objectApiName": "CommSubscriptionChannelType",
+            "objectLabel": "Communication Subscription Channel Type",
+            "objectLabelPlural": "Communication Subscription Channel Types",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "CommSubscriptionChannelType",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0dY/o",
+            "custom": false,
+            "developerName": "standard-CommSubscriptionConsent",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Communication Subscription Consents",
+            "objectApiName": "CommSubscriptionConsent",
+            "objectLabel": "Communication Subscription Consent",
+            "objectLabelPlural": "Communication Subscription Consents",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "CommSubscriptionConsent",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0al/o",
+            "custom": false,
+            "developerName": "standard-CommSubscriptionTiming",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Communication Subscription Timings",
+            "objectApiName": "CommSubscriptionTiming",
+            "objectLabel": "Communication Subscription Timing",
+            "objectLabelPlural": "Communication Subscription Timings",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "CommSubscriptionTiming",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0Xl/o",
+            "custom": false,
+            "developerName": "standard-CommSubscription",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Communication Subscriptions",
+            "objectApiName": "CommSubscription",
+            "objectLabel": "Communication Subscription",
+            "objectLabelPlural": "Communication Subscriptions",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "CommSubscription",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0Mh/o",
+            "custom": false,
+            "developerName": "standard-ConsumptionSchedule",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Consumption Schedules",
+            "objectApiName": "ConsumptionSchedule",
+            "objectLabel": "Consumption Schedule",
+            "objectLabelPlural": "Consumption Schedules",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "ConsumptionSchedule",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0ZX/o",
+            "custom": false,
+            "developerName": "standard-ContactPointConsent",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Contact Point Consent",
+            "objectApiName": "ContactPointConsent",
+            "objectLabel": "Contact Point Consent",
+            "objectLabelPlural": "Contact Point Consent",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "ContactPointConsent",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        },
+        {
+            "availableInClassic": true,
+            "availableInLightning": true,
+            "color": null,
+            "content": "https://mohansun-ea-02-dev-ed.my.salesforce.com/0ZY/o",
+            "custom": false,
+            "developerName": "standard-ContactPointTypeConsent",
+            "iconUrl": null,
+            "id": null,
+            "itemType": "Entity",
+            "label": "Contact Point Type Consent",
+            "objectApiName": "ContactPointTypeConsent",
+            "objectLabel": "Contact Point Type Consent",
+            "objectLabelPlural": "Contact Point Type Consent",
+            "pageReference": {
+                "attributes": {
+                    "objectApiName": "ContactPointTypeConsent",
+                    "actionName": "home"
+                },
+                "state": {},
+                "type": "standard__objectPage"
+            },
+            "standardType": null
+        }
+    ],
+    "nextPageUrl": "/services/data/v49.0/ui-api/nav-items?formFactor=Large&page=1"
+}
+```
+<a name='themes'></a>
+## Themes
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/themes/active
+```
+```json
+{
+    "brandColor": "#0070D2",
+    "brandImage": {
+        "largeUrl": "/_slds/images/themes/lightning_blue/lightning_blue_logo_3x.png",
+        "mediumUrl": "/_slds/images/themes/lightning_blue/lightning_blue_logo_2x.png",
+        "smallUrl": "/_slds/images/themes/lightning_blue/lightning_blue_logo_1x.png"
+    },
+    "defaultGroupBanner": {
+        "fullSizeUrl": "/_slds/images/themes/lightning_blue/lightning_blue_group.png"
+    },
+    "defaultGroupImage": {
+        "largeUrl": "/_slds/images/themes/lightning_blue/lightning_blue_group_icon_200.png",
+        "mediumUrl": "/_slds/images/themes/lightning_blue/lightning_blue_group_icon_160.png",
+        "smallUrl": "/_slds/images/themes/lightning_blue/lightning_blue_group_icon_96.png"
+    },
+    "defaultPageBanner": {
+        "fullSizeUrl": "/_slds/images/themes/lightning_blue/lightning_blue_background.png"
+    },
+    "defaultUserBanner": {
+        "fullSizeUrl": "/_slds/images/themes/lightning_blue/lightning_blue_profile.png"
+    },
+    "defaultUserImage": {
+        "largeUrl": "/_slds/images/themes/lightning_blue/lightning_blue_profile_avatar_200.png",
+        "mediumUrl": "/_slds/images/themes/lightning_blue/lightning_blue_profile_avatar_160.png",
+        "smallUrl": "/_slds/images/themes/lightning_blue/lightning_blue_profile_avatar_96.png"
+    },
+    "density": "ViewOne",
+    "headerColor": "#FFFFFF",
+    "linkColor": "rgb(0, 109, 204)",
+    "pageColor": "#B0C4DF"
 }
 ```
 
