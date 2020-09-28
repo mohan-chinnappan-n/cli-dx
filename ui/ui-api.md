@@ -228,6 +228,51 @@ $ sfdx mohanc:data:jq -i /tmp/account.json  -f '.recordTypeInfos'
 ```
 
 <a name='layouts'></a>
+- layoutUserStates
+    - A map of layout user state IDs to user state information for each layout section
+```
+$ sfdx mohanc:data:jq -i /tmp/record-info.json -f '.layoutUserStates'
+```
+```json
+{
+  "00h3h000004upB0AAI": {
+    "id": "00h3h000004upB0AAI",
+    "sectionUserStates": {
+      "01B3h00000GdP74EAF": {
+        "collapsed": false,
+        "id": "01B3h00000GdP74EAF"
+      },
+      "01B3h00000GdP75EAF": {
+        "collapsed": false,
+        "id": "01B3h00000GdP75EAF"
+      },
+      "01B3h00000GdP76EAF": {
+        "collapsed": false,
+        "id": "01B3h00000GdP76EAF"
+      },
+      "01B3h00000GdP78EAF": {
+        "collapsed": false,
+        "id": "01B3h00000GdP78EAF"
+      },
+      "01B3h00000GdP79EAF": {
+        "collapsed": false,
+        "id": "01B3h00000GdP79EAF"
+      },
+      "01B3h00000GdP7AEAV": {
+        "collapsed": false,
+        "id": "01B3h00000GdP7AEAV"
+      }
+    }
+  }
+}
+```
+- layouts
+    - A map of object API names to user type layout information for each object
+- objectInfos
+    - A map of object API names to metadata for each object
+- records
+    - A map of record IDs to data for each record
+
 ```
 $ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/record-ui/0013h00000Fffx3AAB >/tmp/record-info.json
 
@@ -903,6 +948,263 @@ $ sfdx mohanc:data:jq -i /tmp/record-info.json -f '.layouts'
         }
       }
     }
+  }
+}
+
+```
+
+## Get Child Records
+-  Get the Opportunities on an Account record
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/record-ui/0013h00000Fffx3AAB??childRelationships=Account.Opportunities
+```
+```json
+$ sfdx mohanc:data:jq -i /tmp/oppty.json -f '.records'
+{
+  "0013h00000Fffx3AAB": {
+    "apiName": "Account",
+    "childRelationships": {},
+    "eTag": "b87687105fa9db0e2121390ca7fbc098",
+    "fields": {
+      "AccountNumber": {
+        "displayValue": null,
+        "value": null
+      },
+      "Active__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "AnnualRevenue": {
+        "displayValue": "$1,000,000",
+        "value": 1000000
+      },
+      "BillingCity": {
+        "displayValue": null,
+        "value": null
+      },
+      "BillingCountry": {
+        "displayValue": null,
+        "value": "USA"
+      },
+      "BillingPostalCode": {
+        "displayValue": null,
+        "value": null
+      },
+      "BillingState": {
+        "displayValue": null,
+        "value": "HI"
+      },
+      "BillingStreet": {
+        "displayValue": null,
+        "value": null
+      },
+      "CreatedBy": {
+        "displayValue": "Mohan Chinnappan",
+        "value": {
+          "apiName": "User",
+          "childRelationships": {},
+          "eTag": "ba54c78bf72f49799bc7bf6a432edb46",
+          "fields": {
+            "Id": {
+              "displayValue": null,
+              "value": "0053h000002xQ5sAAE"
+            },
+            "Name": {
+              "displayValue": null,
+              "value": "Mohan Chinnappan"
+            }
+          },
+          "id": "0053h000002xQ5sAAE",
+          "lastModifiedById": "0053h000002xQ5sAAE",
+          "lastModifiedDate": "2020-09-25T17:15:30.000Z",
+          "recordTypeId": null,
+          "recordTypeInfo": null,
+          "systemModstamp": "2020-09-28T00:52:53.000Z",
+          "weakEtag": 1601254373000
+        }
+      },
+      "CreatedById": {
+        "displayValue": null,
+        "value": "0053h000002xQ5sAAE"
+      },
+      "CreatedDate": {
+        "displayValue": "7/13/2020, 12:30 PM",
+        "value": "2020-07-13T19:30:57.000Z"
+      },
+      "CustomerPriority__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "Description": {
+        "displayValue": null,
+        "value": null
+      },
+      "Fax": {
+        "displayValue": null,
+        "value": null
+      },
+      "Industry": {
+        "displayValue": "Consulting",
+        "value": "Consulting"
+      },
+      "LastModifiedBy": {
+        "displayValue": "Mohan Chinnappan",
+        "value": {
+          "apiName": "User",
+          "childRelationships": {},
+          "eTag": "ba54c78bf72f49799bc7bf6a432edb46",
+          "fields": {
+            "Id": {
+              "displayValue": null,
+              "value": "0053h000002xQ5sAAE"
+            },
+            "Name": {
+              "displayValue": null,
+              "value": "Mohan Chinnappan"
+            }
+          },
+          "id": "0053h000002xQ5sAAE",
+          "lastModifiedById": "0053h000002xQ5sAAE",
+          "lastModifiedDate": "2020-09-25T17:15:30.000Z",
+          "recordTypeId": null,
+          "recordTypeInfo": null,
+          "systemModstamp": "2020-09-28T00:52:53.000Z",
+          "weakEtag": 1601254373000
+        }
+      },
+      "LastModifiedById": {
+        "displayValue": null,
+        "value": "0053h000002xQ5sAAE"
+      },
+      "LastModifiedDate": {
+        "displayValue": "7/13/2020, 12:30 PM",
+        "value": "2020-07-13T19:30:57.000Z"
+      },
+      "Name": {
+        "displayValue": null,
+        "value": "Abbott372 Inc"
+      },
+      "NumberOfEmployees": {
+        "displayValue": null,
+        "value": 5000
+      },
+      "NumberofLocations__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "Owner": {
+        "displayValue": "Bruce Kennedy",
+        "value": {
+          "apiName": "User",
+          "childRelationships": {},
+          "eTag": "2976a4b28b36d1eb6051b08dfaca48b8",
+          "fields": {
+            "Id": {
+              "displayValue": null,
+              "value": "0053h000003de6yAAA"
+            },
+            "Name": {
+              "displayValue": null,
+              "value": "Bruce Kennedy"
+            }
+          },
+          "id": "0053h000003de6yAAA",
+          "lastModifiedById": "0053h000002xQ5sAAE",
+          "lastModifiedDate": "2020-07-13T19:30:57.000Z",
+          "recordTypeId": null,
+          "recordTypeInfo": null,
+          "systemModstamp": "2020-07-13T19:34:01.000Z",
+          "weakEtag": 1594668841000
+        }
+      },
+      "OwnerId": {
+        "displayValue": null,
+        "value": "0053h000003de6yAAA"
+      },
+      "Ownership": {
+        "displayValue": null,
+        "value": null
+      },
+      "Parent": {
+        "displayValue": null,
+        "value": null
+      },
+      "ParentId": {
+        "displayValue": null,
+        "value": null
+      },
+      "Phone": {
+        "displayValue": null,
+        "value": null
+      },
+      "Rating": {
+        "displayValue": null,
+        "value": null
+      },
+      "SLAExpirationDate__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "SLASerialNumber__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "SLA__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "ShippingCity": {
+        "displayValue": null,
+        "value": null
+      },
+      "ShippingCountry": {
+        "displayValue": null,
+        "value": null
+      },
+      "ShippingPostalCode": {
+        "displayValue": null,
+        "value": null
+      },
+      "ShippingState": {
+        "displayValue": null,
+        "value": null
+      },
+      "ShippingStreet": {
+        "displayValue": null,
+        "value": null
+      },
+      "Sic": {
+        "displayValue": null,
+        "value": "47722"
+      },
+      "Site": {
+        "displayValue": null,
+        "value": null
+      },
+      "TickerSymbol": {
+        "displayValue": null,
+        "value": null
+      },
+      "Type": {
+        "displayValue": "Partner",
+        "value": "Partner"
+      },
+      "UpsellOpportunity__c": {
+        "displayValue": null,
+        "value": null
+      },
+      "Website": {
+        "displayValue": null,
+        "value": null
+      }
+    },
+    "id": "0013h00000Fffx3AAB",
+    "lastModifiedById": "0053h000002xQ5sAAE",
+    "lastModifiedDate": "2020-07-13T19:30:57.000Z",
+    "recordTypeId": "012000000000000AAA",
+    "recordTypeInfo": null,
+    "systemModstamp": "2020-07-13T19:30:57.000Z",
+    "weakEtag": 1594668657000
   }
 }
 
