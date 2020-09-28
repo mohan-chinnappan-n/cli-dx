@@ -959,12 +959,55 @@ $ sfdx mohanc:data:jq -i /tmp/record-info.json -f '.layouts'
 $ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/record-ui/0013h00000Fffx3AAB??childRelationships=Account.Opportunities
 ```
 ```json
-$ sfdx mohanc:data:jq -i /tmp/oppty.json -f '.records'
 {
   "0013h00000Fffx3AAB": {
     "apiName": "Account",
-    "childRelationships": {},
-    "eTag": "b87687105fa9db0e2121390ca7fbc098",
+    "childRelationships": {
+      "Opportunities": {
+        "count": 1,
+        "currentPageToken": "1;5;0013h00000Fffx3AAB;Opportunities;Opportunity.Id,Opportunity.Name;",
+        "currentPageUrl": "/services/data/v49.0/ui-api/records/0013h00000Fffx3AAB/child-relationships/Opportunities?fields=Opportunity.Id%2COpportunity.Name&page=1&pageSize=5",
+        "nextPageToken": null,
+        "nextPageUrl": null,
+        "previousPageToken": null,
+        "previousPageUrl": null,
+        "records": [
+          {
+            "apiName": "Opportunity",
+            "childRelationships": {},
+            "eTag": "08e592dc7c4b278bd257d163937290a1",
+            "fields": {
+              "AccountId": {
+                "displayValue": null,
+                "value": "0013h00000Fffx3AAB"
+              },
+              "Id": {
+                "displayValue": null,
+                "value": "0063h000008wq5kAAA"
+              },
+              "Name": {
+                "displayValue": null,
+                "value": "Opportunity for Kelley1593"
+              }
+            },
+            "id": "0063h000008wq5kAAA",
+            "lastModifiedById": "0053h000002xQ5sAAE",
+            "lastModifiedDate": "2020-07-13T19:30:57.000Z",
+            "recordTypeId": "0123h0000019oOEAAY",
+            "recordTypeInfo": {
+              "available": true,
+              "defaultRecordTypeMapping": true,
+              "master": false,
+              "name": "Record Type",
+              "recordTypeId": "0123h0000019oOEAAY"
+            },
+            "systemModstamp": "2020-07-13T19:30:57.000Z",
+            "weakEtag": 1594668657000
+          }
+        ]
+      }
+    },
+    "eTag": "1f4e39a9c6b55915b1c2b68241fd3618",
     "fields": {
       "AccountNumber": {
         "displayValue": null,
