@@ -6,6 +6,8 @@
 - [Object Field List](#fields)
 - [Layouts](#layouts)
 - [Child Records](#childrecs)
+- [Actions](#actions)
+
 
 <a name='objs'></a>
 ## Get sObjects
