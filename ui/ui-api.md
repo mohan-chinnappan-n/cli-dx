@@ -7,6 +7,8 @@
 - [Layouts](#layouts)
 - [Child Records](#childrecs)
 - [Actions](#actions)
+- [Favorites](#fav)
+
 
 
 <a name='objs'></a>
@@ -1739,7 +1741,259 @@ $ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev
     "url": "/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB"
 }
 ```
+- Filter a record actions request so that it includes only standard button actions, set the actionTypes parameter to StandardButton
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB?actionTypes=StandardButton
+```
+```json
+{
+    "actions": {
+        "0013h00000Fffx3AAB": {
+            "actions": [
+                {
+                    "actionListContext": "Chatter",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "Follow",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Chatter:Desktop:StandardButton:Follow",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/action/follow_120.png",
+                    "id": "0JV3h0000093994GAA",
+                    "isMassAction": "false",
+                    "label": "Follow",
+                    "primaryColor": "31B9F8",
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "SingleActionLinks",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Chatter",
+                    "actionTarget": null,
+                    "actionTargetType": null,
+                    "apiName": "FollowInStream",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Chatter:Desktop:StandardButton:FollowInStream",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/action/follow_120.png",
+                    "id": "0JV3h0000093995GAA",
+                    "isMassAction": "false",
+                    "label": "Follow in Stream",
+                    "primaryColor": "31B9F8",
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "SingleActionLinks",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "Edit",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:Edit",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/action/edit_120.png",
+                    "id": "0JV3h0000093996GAA",
+                    "isMassAction": "false",
+                    "label": "Edit",
+                    "primaryColor": "1DCCBF",
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "ChangeOwnerOne",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:ChangeOwnerOne",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/action/change_owner_120.png",
+                    "id": "0JV3h0000093997GAA",
+                    "isMassAction": "false",
+                    "label": "Change Owner",
+                    "primaryColor": "0070d2",
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "Delete",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:Delete",
+                    "iconUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com/img/icon/t4v35/action/delete_120.png",
+                    "id": "0JV3h0000093998GAA",
+                    "isMassAction": "false",
+                    "label": "Delete",
+                    "primaryColor": "E6717C",
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "AccountHierarchy",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:AccountHierarchy",
+                    "iconUrl": "https://community.hulu.com/img/icon/t4v35/action/new_custom19_120.png",
+                    "id": "0JV3h0000093999GAA",
+                    "isMassAction": "false",
+                    "label": "View Account Hierarchy",
+                    "primaryColor": null,
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "Share",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:Share",
+                    "iconUrl": "https://community.hulu.com/img/icon/t4v35/action/new_custom19_120.png",
+                    "id": "0JV3h0000094000GAA",
+                    "isMassAction": "false",
+                    "label": "Sharing",
+                    "primaryColor": null,
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "IncludeOffline",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:IncludeOffline",
+                    "iconUrl": "https://community.hulu.com/img/icon/t4v35/action/new_custom19_120.png",
+                    "id": "0JV3h0000094001GAA",
+                    "isMassAction": "false",
+                    "label": "Include Offline",
+                    "primaryColor": null,
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "EnableAsPartner",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:EnableAsPartner",
+                    "iconUrl": "https://community.hulu.com/img/icon/t4v35/action/new_custom19_120.png",
+                    "id": "0JV3h0000094002GAA",
+                    "isMassAction": "false",
+                    "label": "Enable As Partner",
+                    "primaryColor": null,
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "XClean",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:XClean",
+                    "iconUrl": "https://community.hulu.com/img/icon/t4v35/action/new_custom19_120.png",
+                    "id": "0JV3h0000094003GAA",
+                    "isMassAction": "false",
+                    "label": "Check for New Data",
+                    "primaryColor": null,
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                },
+                {
+                    "actionListContext": "Record",
+                    "actionTarget": null,
+                    "actionTargetType": "Invoke",
+                    "apiName": "PrintableView",
+                    "externalId": "00D3h000007R1Lu:0013h00000Fffx3AAB::Record:Desktop:StandardButton:PrintableView",
+                    "iconUrl": "https://community.hulu.com/img/icon/t4v35/action/new_custom19_120.png",
+                    "id": "0JV3h0000094004GAA",
+                    "isMassAction": "false",
+                    "label": "Printable View",
+                    "primaryColor": null,
+                    "relatedListRecordId": null,
+                    "relatedSourceObject": null,
+                    "section": "Page",
+                    "sourceObject": "0013h00000Fffx3AAB",
+                    "subtype": null,
+                    "targetObject": "Account",
+                    "targetUrl": null,
+                    "type": "StandardButton"
+                }
+            ],
+            "links": [
+                "/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB/record-edit",
+                "/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB/related-list",
+                "/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB/related-list-record/${relatedRecordId}"
+            ],
+            "url": "/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB?actionTypes=StandardButton"
+        }
+    },
+    "eTag": "2ccf56ed610fc2349cdfabc9c7737ce5",
+    "url": "/services/data/v49.0/ui-api/actions/record/0013h00000Fffx3AAB?actionTypes=StandardButton"
+}
+```
+<a name='fav'></a>
+## Favorites
 
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/favorites
+```
+```json
+{
+    "favorites": []
+}
+```
 
 <a name='ref'></a>
 ## References
