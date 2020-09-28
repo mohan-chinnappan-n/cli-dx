@@ -227,7 +227,7 @@ $ sfdx mohanc:data:jq -i /tmp/account.json  -f '.recordTypeInfos'
 
 ```
 
-<a name='layouts></a>
+<a name='layouts'></a>
 ```
 $ sfdx mohanc:ws:rest -f ~/.headers/header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/ui-api/record-ui/0013h00000Fffx3AAB >/tmp/record-info.json
 
