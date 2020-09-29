@@ -6,7 +6,7 @@
 - [FSC objects](#objs)
 - [Getting fields](#fields)
 - [Record Types](#rts)
-
+- [Optimizer Report](#opt)
 <a name='dmcsv'></a>
 
 ## Getting FSC data model in csv format
@@ -325,4 +325,6 @@ $ sfdx mohanc:data:jq -i  ~/fsc/account.json -f '.recordTypeInfos'
   }
 }
 ```
-
+<a name="opt"></a>
+## Optimizer report
+- [Sample Optimizer Report](data/opt/SalesforceOptimizerReport_V2.7_09-29-2020_19-51-36.pdf)
