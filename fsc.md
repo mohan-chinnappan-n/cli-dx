@@ -6,6 +6,7 @@
 - [FSC objects](#objs)
 - [Getting fields](#fields)
 - [Record Types](#rts)
+- [Triggers](#triggers)
 - [Optimizer Report](#opt)
 <a name='dmcsv'></a>
 
@@ -324,6 +325,567 @@ $ sfdx mohanc:data:jq -i  ~/fsc/account.json -f '.recordTypeInfos'
     "recordTypeId": "0124W000001OEidQAG"
   }
 }
+```
+<a name="triggers"></a>
+## Listing triggers 
+```
+$ sfdx mohanc:tooling:query -u mohan.chinnappan.n-7nte@force.com  -q ~/.tooling/apextrigger.soql  -f json
+```
+```json
+[
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKpQAO'
+    },
+    Id: '01q4W000001QMKpQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'AssetsAndLiabilitiesTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__AssetsAndLiabilities__c',
+    LengthWithoutComments: -1, <---- since it is hidden
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKrQAO'
+    },
+    Id: '01q4W000001QMKrQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'ClaimTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Claim',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKsQAO'
+    },
+    Id: '01q4W000001QMKsQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'ContactContactRelationTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__ContactContactRelation__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: false,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKtQAO'
+    },
+    Id: '01q4W000001QMKtQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'ContactTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Contact',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: false,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKuQAO'
+    },
+    Id: '01q4W000001QMKuQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'EventTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Event',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: false,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKvQAO'
+    },
+    Id: '01q4W000001QMKvQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'FinancialAccountRoleTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__FinancialAccountRole__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKwQAO'
+    },
+    Id: '01q4W000001QMKwQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'FinancialAccountTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__FinancialAccount__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKxQAO'
+    },
+    Id: '01q4W000001QMKxQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'FinancialGoalTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__FinancialGoal__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: false,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKyQAO'
+    },
+    Id: '01q4W000001QMKyQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'FinancialHoldingTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__FinancialHolding__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML0QAO'
+    },
+    Id: '01q4W000001QML0QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'InsurancePolicyTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'InsurancePolicy',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML1QAO'
+    },
+    Id: '01q4W000001QML1QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'LeadTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Lead',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML2QAO'
+    },
+    Id: '01q4W000001QML2QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'RBLFilterCriteriaTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__RollupByLookupFilterCriteria__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML3QAO'
+    },
+    Id: '01q4W000001QML3QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'ReciprocalRoleTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__ReciprocalRole__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML4QAO'
+    },
+    Id: '01q4W000001QML4QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'RevenueTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__Revenue__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: false,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: false,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: false,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: true,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML5QAO'
+    },
+    Id: '01q4W000001QML5QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'RollupByLookupConfigTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__RollupByLookupConfig__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML6QAO'
+    },
+    Id: '01q4W000001QML6QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'SecuritiesTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__Securities__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: false,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: true,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML7QAO'
+    },
+    Id: '01q4W000001QML7QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'TaskTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Task',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: false,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QML8QAO'
+    },
+    Id: '01q4W000001QML8QAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'OpportunityTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Opportunity',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKqQAO'
+    },
+    Id: '01q4W000001QMKqQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'ClaimParticipantTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'ClaimParticipant',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: false,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: false,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKzQAO'
+    },
+    Id: '01q4W000001QMKzQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'InsurancePolicyParticipantTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'InsurancePolicyParticipant',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: false,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: false,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKlQAO'
+    },
+    Id: '01q4W000001QMKlQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'AccountAccountRelationTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__AccountAccountRelation__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKmQAO'
+    },
+    Id: '01q4W000001QMKmQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'AccountContactRelationTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'AccountContactRelation',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: false,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKnQAO'
+    },
+    Id: '01q4W000001QMKnQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'AccountTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'Account',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: true,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: true,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: true,
+    UsageIsBulk: false,
+    UsageAfterUndelete: true,
+    Body: '(hidden)'
+  },
+  {
+    attributes: {
+      type: 'ApexTrigger',
+      url: '/services/data/v49.0/tooling/sobjects/ApexTrigger/01q4W000001QMKoQAO'
+    },
+    Id: '01q4W000001QMKoQAO',
+    NamespacePrefix: 'FinServ',
+    Name: 'AlertTrigger',
+    Status: 'Active',
+    IsValid: false,
+    ApiVersion: 48,
+    TableEnumOrId: 'FinServ__Alert__c',
+    LengthWithoutComments: -1,
+    UsageBeforeInsert: true,
+    UsageAfterInsert: false,
+    UsageBeforeUpdate: true,
+    UsageAfterUpdate: false,
+    UsageBeforeDelete: true,
+    UsageAfterDelete: false,
+    UsageIsBulk: false,
+    UsageAfterUndelete: true,
+    Body: '(hidden)'
+  }
+]
 ```
 <a name="opt"></a>
 ## Optimizer report
