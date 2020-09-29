@@ -331,7 +331,7 @@ $ sfdx mohanc:data:jq -i  ~/fsc/account.json -f '.recordTypeInfos'
 ```
 $ sfdx mohanc:tooling:query -u mohan.chinnappan.n-7nte@force.com  -q ~/.tooling/apextrigger.soql  -f json
 ```
-```json
+```
 [
   {
     attributes: {
