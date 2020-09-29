@@ -1,6 +1,16 @@
-## Financial Service Cloud
+# Financial Service Cloud
 
-### Getting sobjects with **FinServ__** name space
+## Topics
+
+- [FSC objects](#objs)
+- [Getting fields](#fields)
+- [Record Types)(#rts)
+
+<a name='objs'></a>
+
+## Getting sobjects with **FinServ__** name space
+- [FSC data model interactive](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/model-fsc-224.html)
+
 ```
 $ sfdx mohanc:ws:rest -f header_fsc.json -r https://mohansun-fsc-201.my.salesforce.com/services/data/v49.0/sobjects -m GET > fsc_objects.json
 $ sfdx mohanc:data:jq -i fsc_objects.json -f '.sobjects[].name | select ( contains("FinServ__")  )'
@@ -104,6 +114,11 @@ $ sfdx mohanc:data:jq -i fsc_objects.json -f '.sobjects[].name | select ( contai
 
 
 ```
+
+
+<a name='fields'></a>
+
+## Getting object fields
 
 ### Get object fields  for FinServ__AccountAccountRelation__c
 
@@ -246,3 +261,56 @@ SELECT
 FROM 
 FinServ__IndividualRecordTypeMapper__mdt
 ```
+<a name='rts'></a>
+### RecordTypes of Account object
+```
+$ sfdx mohanc:ws:rest -f ~/.headers/header_fsc.json -r https://mohansun-fsc2009.my.salesforce.com/services/data/v49.0/ui-api/object-info/Account > ~/fsc/account.json
+$ sfdx mohanc:data:jq -i  ~/fsc/account.json -f '.recordTypeInfos'
+```
+```json
+{
+  "012000000000000AAA": {
+    "available": true,
+    "defaultRecordTypeMapping": false,
+    "master": true,
+    "name": "Master",
+    "recordTypeId": "012000000000000AAA"
+  },
+  "0124W000001OEiZQAW": {
+    "available": true,
+    "defaultRecordTypeMapping": false,
+    "master": false,
+    "name": "Institution",
+    "recordTypeId": "0124W000001OEiZQAW"
+  },
+  "0124W000001OEiaQAG": {
+    "available": true,
+    "defaultRecordTypeMapping": true,
+    "master": false,
+    "name": "Household",
+    "recordTypeId": "0124W000001OEiaQAG"
+  },
+  "0124W000001OEibQAG": {
+    "available": true,
+    "defaultRecordTypeMapping": false,
+    "master": false,
+    "name": "Business",
+    "recordTypeId": "0124W000001OEibQAG"
+  },
+  "0124W000001OEicQAG": {
+    "available": true,
+    "defaultRecordTypeMapping": false,
+    "master": false,
+    "name": "Person Account",
+    "recordTypeId": "0124W000001OEicQAG"
+  },
+  "0124W000001OEidQAG": {
+    "available": false,
+    "defaultRecordTypeMapping": false,
+    "master": false,
+    "name": "Individual",
+    "recordTypeId": "0124W000001OEidQAG"
+  }
+}
+```
+
