@@ -2,9 +2,21 @@
 
 ## Topics
 
+- [FSC Data model in CSV file](#dmcsv)
 - [FSC objects](#objs)
 - [Getting fields](#fields)
-- [Record Types)(#rts)
+- [Record Types](#rts)
+
+<a name='dmcsv'></a>
+
+## Getting FSC data model in csv format
+- [Model Export Doc](https://mohan-chinnappan-n.github.io/dx/plugins.html#/15)
+
+```
+$ sfdx mohanc:md:describeGlobal -u mohan.chinnappan.n-7nte@force.com > ~/.fsc/ObjectList.txt
+$ sfdx mohanc:md:describe -u mohan.chinnappan.n-7nte@force.com  -i ~/.fsc/ObjectList.txt > ~/.fsc/fsc-md.csv
+```
+- [Exported FSC data model in CSV](data/fsc-md.csv)
 
 <a name='objs'></a>
 
