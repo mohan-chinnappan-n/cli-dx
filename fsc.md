@@ -18,6 +18,8 @@ $ sfdx mohanc:md:describeGlobal -u mohan.chinnappan.n-7nte@force.com > ~/.fsc/Ob
 $ sfdx mohanc:md:describe -u mohan.chinnappan.n-7nte@force.com  -i ~/.fsc/ObjectList.txt > ~/.fsc/fsc-md.csv
 ```
 - [Exported FSC data model in CSV](data/fsc-md.csv)
+- [View FSC data model in CSV](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=fsc-md)
+
 
 <a name='objs'></a>
 
