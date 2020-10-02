@@ -1,6 +1,12 @@
-# Accessing Snowflake data using DX and load Snowflake data into EA dataset
-- Requires 0.0.62 version of the plugin
-    - sfdx-mohanc-plugins@0.0.62
+# Snowflake data integration using DX 
+- Access Snowflake data (Query)
+- Load Snowflake data into EA dataset
+- Insert CSV file Data into Snowflake table  
+    - This CSV data file can be obtained from EA using dataset export tool as explained here: [Dataset Export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/)
+
+
+- Requires 0.0.64 version of the plugin
+    - sfdx-mohanc-plugins@0.0.64
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ## Topics
