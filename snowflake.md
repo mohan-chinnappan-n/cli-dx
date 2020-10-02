@@ -167,7 +167,7 @@ create table fruits..stock (
 <a name='insertdata'></a>
 ## Insert data into table in snowflake
 
-- *NOTE*: This CSV file can come from EA dataset extract utility as explained here: ![Dataset export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/) 
+- *NOTE*: This CSV file can come from EA dataset extract utility as explained here: [Dataset export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/) 
 ```
 $ cat ~/.snowflake/stock.csv
 ```
