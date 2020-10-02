@@ -7,6 +7,7 @@
 - [Query](#query)
 - [Download and load into EA dataset](#loadea)
 - [Create table in Snowflake](#createtable)
+- [Insert data into Snowflake table](#insertdata)
 
 <a name='query'></a>
 
@@ -142,7 +143,7 @@ Done.
 ![Recipe](img/fruitsdbsfc-r1.png)
 
 <a name='createtable'></a>
-## Create table in Snowflake
+## create table in snowflake
 
 ```
 $ sfdx mohanc:snowflake:query -q ~/.snowflake/stock.sql -f json -c ~/.snowflake/sfc-connection.json 
@@ -150,7 +151,7 @@ $ sfdx mohanc:snowflake:query -q ~/.snowflake/stock.sql -f json -c ~/.snowflake/
 ```json
 [
     {
-        "status": "Table STOCK successfully created."
+        "status": "table stock successfully created."
     }
 ]
 ```
@@ -158,11 +159,62 @@ $ sfdx mohanc:snowflake:query -q ~/.snowflake/stock.sql -f json -c ~/.snowflake/
 $ cat ~/.snowflake/stock.sql 
 ```
 ```sql
-CREATE TABLE fruits..stock ( 
-   itemNum VARCHAR(16), 
-   qty INTEGER
+create table fruits..stock ( 
+   itemnum varchar(16), 
+   qty integer
 );
 ```
+<a name='insertdata'></a>
+## Insert data into table in snowflake
 
+```
+$ cat ~/.snowflake/stock.csv
+```
+```csv
+30001,99
+40001,30
+50002,77
+88888,78
+```
 
+```
+$ sfdx mohanc:snowflake:insert -t fruits..stock -f 'itemNum,qty' -c ~/.snowflake/sfc-connection.json -d ~/.snowflake/stock.csv 
+```
+```json
+[
+    {
+        "number of rows inserted": 4
+    }
+]
+```
+
+### Let us query to check the inserts
+```
+$ cat ~/.snowflake/stock-query.sql 
+```
+```sql
+SELECT * FROM fruits..stock;
+```
+```
+$ sfdx mohanc:snowflake:query -q ~/.snowflake/stock-query.sql -f json -c ~/.snowflake/sfc-connection.json [
+```
+```json
+    {
+        "ITEMNUM": "30001",
+        "QTY": 99
+    },
+    {
+        "ITEMNUM": "88888",
+        "QTY": 78
+    },
+    {
+        "ITEMNUM": "50002",
+        "QTY": 77
+    },
+    {
+        "ITEMNUM": "40001",
+        "QTY": 30
+    }
+]
+```
 
