@@ -3,9 +3,10 @@
     - sfdx-mohanc-plugins@0.0.62
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
-## Index
+## Topics
 - [Query](#query)
 - [Download and load into EA dataset](#loadea)
+- [Create table in Snowflake](#createtable)
 
 <a name='query'></a>
 
@@ -139,3 +140,29 @@ Done.
 
 - Recipe 
 ![Recipe](img/fruitsdbsfc-r1.png)
+
+<a name='createtable'></a>
+## Create table in Snowflake
+
+```
+$ sfdx mohanc:snowflake:query -q ~/.snowflake/stock.sql -f json -c ~/.snowflake/sfc-connection.json 
+```
+```json
+[
+    {
+        "status": "Table STOCK successfully created."
+    }
+]
+```
+```
+$ cat ~/.snowflake/stock.sql 
+```
+```sql
+CREATE TABLE fruits..stock ( 
+   itemNum VARCHAR(16), 
+   qty INTEGER
+);
+```
+
+
+
