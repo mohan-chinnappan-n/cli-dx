@@ -1,4 +1,4 @@
-# Snowflake data integration using DX 
+# Snowflake data integration using DX  and Einstein Analytics (EA)
 - Access Snowflake data (Query)
 - Load Snowflake data into EA dataset
 - Insert CSV file Data into Snowflake table  
