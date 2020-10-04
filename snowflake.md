@@ -6,8 +6,8 @@
 
 
 ## Plugin requirements
-- Requires 0.0.64 version of the plugin
-    - sfdx-mohanc-plugins@0.0.64
+- Requires 0.0.65 version of the plugin
+    - sfdx-mohanc-plugins@0.0.65
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ## Topics
@@ -174,11 +174,47 @@ create table fruits..stock (
 <a name='insertdata'></a>
 ## Insert data into table in snowflake
 
-- *NOTE*: This CSV file can come from EA dataset extract utility as explained here: [Dataset export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/) 
+### Usage
 ```
+$ sfdx mohanc:snowflake:insert -h
+Insert data into Snowflake  
+
+USAGE
+  $ sfdx mohanc:snowflake:insert
+
+OPTIONS
+  -b, --bucketsize=bucketsize                     Data file bucket size (insert bulk of this size) - default: 124
+  -c, --connectionfilename=connectionfilename     Connection json file
+  -d, --datafilename=datafilename                 Data file in csv format
+  -f, --fields=fields                             Fields to insert into - comma separated
+  -g, --hasheader=hasheader                       Data file has header y|n (default = n)
+  -o, --overwrite=overwrite                       Truncate and insert  y|n (default = n)
+  -t, --tablename=tablename                       Table to insert data into
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Insert data into Snowflake   **
+       sfdx mohanc:snowflake:inset  -t <tableName> -f <Fields List in csv> -c <connectionPropsJSONFile> -d <dataFile> -g <data file has header? y/[n]> -o 
+  <truncte and insert the data? y/[n]> -b <bucket size [124]>
+       sfdx mohanc:snowflake:insert -t fruits..stock -f 'itemNum,qty' -c ~/.snowflake/sfc-connection.json -d ~/.snowflake/stock_noh.csv -g n -o n -b 2
+       Sample connectionPropsJSONFile
+       {
+        "account" : "myaccount",
+        "username" : "myusername",
+        "password" : "password"
+       }
+```
+
+- *NOTE*: This CSV file can come from EA dataset extract utility as explained here: [Dataset export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/) 
+
+```
+
 $ cat ~/.snowflake/stock.csv
 ```
 ```csv
+itemNum,qty
 30001,99
 40001,30
 50002,77
@@ -186,12 +222,19 @@ $ cat ~/.snowflake/stock.csv
 ```
 
 ```
-$ sfdx mohanc:snowflake:insert -t fruits..stock -f 'itemNum,qty' -c ~/.snowflake/sfc-connection.json -d ~/.snowflake/stock.csv 
+$ sfdx mohanc:snowflake:insert -t fruits..stock -f 'itemNum,qty' -c ~/.snowflake/sfc-connection.json -d ~/.snowflake/stock.csv -g y -o y -b 2
 ```
+- NOTE: here I have given bucket size as 2 records per insert and Overwrite(truncate) as **y** and data file has header ( -g has **y**)
+    - if the data file has no header set -g flag as **n**
 ```json
 [
     {
-        "number of rows inserted": 4
+        "number of rows inserted": 2
+    }
+]
+[
+    {
+        "number of rows inserted": 2
     }
 ]
 ```
