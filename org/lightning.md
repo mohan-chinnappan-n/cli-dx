@@ -8,7 +8,7 @@
 - [EPT, Browser distribution details, for the last 3 months](#EPTdist)
 - [Lightning Usage by FlexiPage](#flexipage)
 - [Standard pages, users viewed most frequently in Lightning Experience](#LightningUsageByPageMetrics)
-- [Top 10 most visited pages and how many times each page was visited](#top10)
+- [Top 10 most visited pages and how many times each page was visited](#top10visitedpages)
 
 <a name="lfswitch"></a>
 ## Details about users who switched between Salesforce Classic and Lightning Experience.
@@ -2024,7 +2024,6 @@ $  sfdx mohanc:data:query -q ../soql/pageEPT_top10.soql -u mohan.chinnappan.n_ea
         "EptBinOver10": 0
     }
 ]
-~/bulkapi/dx/org:
 
 ```
 
