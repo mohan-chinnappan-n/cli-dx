@@ -1,4 +1,13 @@
 # Org Limits
+
+## Topics
+
+- [All Limits](#allLimits)
+- [API requests Limits](#api)
+- [Platform Events Limits](#pe)
+- [EA Dataflow Jobs Limits](#df)
+
+<a name="allLimits"></a>
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/limits -f ~/.headers/header_ea.json -m GET > ~/.org/limits.json
 
@@ -385,6 +394,7 @@ $ cat ~/.org/limits.json
     }
 }
 ```
+<a name="api"></a>
 ### API Requests Limits
 
 ```
@@ -444,6 +454,8 @@ $ sfdx mohanc:data:jq -i ~/.org/limits.json -f '.DailyApiRequests'
   }
 }
 ```
+<a name="pe"></a>
+
 ## DailyStandardVolumePlatformEvents 
 
 ```
@@ -455,7 +467,7 @@ $ sfdx mohanc:data:jq -i ~/.org/limits.json -f '.DailyStandardVolumePlatformEven
   "Remaining": 10000
 }
 ```
-
+<a name="df"></a>
 ##  DailyAnalyticsDataflowJobExecutions
 
 ```
