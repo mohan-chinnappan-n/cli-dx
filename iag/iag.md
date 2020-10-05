@@ -11,7 +11,7 @@
 $ sfdx force:mdapi:listmetadata -m Prompt -u mohan.chinnappan.n_ea2@gmail.com
 ```
 
-```json
+```
 [
   {
     createdById: '0053h000002xQ5sAAE',
