@@ -1,4 +1,4 @@
-# In-app-gudiace
+# In-app-Guidance
 
 ## Topics
 - [References](#ref)
