@@ -6,6 +6,7 @@
 - [What is EPT - Experienced Page Time?](#ept)
 - [Get EPT info](#getEPT)
 - [EPT, Browser distribution details, for the last 3 months](#EPTdist)
+- [Lightning Usage by FlexiPage](#flexipage)
 
 <a name="lfswitch"></a>
 ## Details about users who switched between Salesforce Classic and Lightning Experience.
@@ -1609,6 +1610,179 @@ $ sfdx mohanc:data:query -q ../soql/ept.soql -u mohan.chinnappan.n_ea2@gmail.com
         "EptBin8To10Count": 0,
         "EptBinOver10Count": 0
     }
+]
+
+```
+<a name="flexipage"></a>
+## Lightning Usage by FlexiPage
+### Parameter	Description
+- FlexiPageNameOrId: Namespace and file name, or Page ID of FlexiPage files.
+- FlexiPageType: The FlexiPage type. For example, record details are displayed using RecordPage" type.
+- MetricsDate: The date the metric was recorded.
+- RecordCountEPT: Number of records for a FlexiPage type, where the valid EPT was recorded.
+- SumEPT: Sum of the EPT values for a record
+- TotalCount: Total records for a type.
+
+```
+$ bash ../sh/getObjectRecs.sh LightningUsageByFlexiPageMetrics json
+```
+```json
+[
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fv6QIEAY"
+        },
+        "Id": "7pV3h00000fv6QIEAY",
+        "MetricsDate": "2018-12-10",
+        "FlexiPageType": "HomePage",
+        "FlexiPageNameOrId": "home__desktopDefault",
+        "SystemModstamp": "2020-07-13T19:30:57.000+0000",
+        "RecordCountEPT": 0,
+        "TotalCount": 1,
+        "SumEPT": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fv6QJEAY"
+        },
+        "Id": "7pV3h00000fv6QJEAY",
+        "MetricsDate": "2018-12-14",
+        "FlexiPageType": "HomePage",
+        "FlexiPageNameOrId": "home__desktopDefault",
+        "SystemModstamp": "2020-07-13T19:30:57.000+0000",
+        "RecordCountEPT": 0,
+        "TotalCount": 1,
+        "SumEPT": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fwhVaEAI"
+        },
+        "Id": "7pV3h00000fwhVaEAI",
+        "MetricsDate": "2020-07-13",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "0M03h000003ehOMCAY",
+        "SystemModstamp": "2020-07-14T13:15:01.000+0000",
+        "RecordCountEPT": 4,
+        "TotalCount": 4,
+        "SumEPT": 15709
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fwhVbEAI"
+        },
+        "Id": "7pV3h00000fwhVbEAI",
+        "MetricsDate": "2020-07-13",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "0M03h000003ek3eCAA",
+        "SystemModstamp": "2020-07-14T13:15:01.000+0000",
+        "RecordCountEPT": 2,
+        "TotalCount": 2,
+        "SumEPT": 9645
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fwhVeEAI"
+        },
+        "Id": "7pV3h00000fwhVeEAI",
+        "MetricsDate": "2020-07-13",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "flexipage__default_rec_L",
+        "SystemModstamp": "2020-07-14T13:15:01.000+0000",
+        "RecordCountEPT": 1,
+        "TotalCount": 1,
+        "SumEPT": 1221
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fwhVcEAI"
+        },
+        "Id": "7pV3h00000fwhVcEAI",
+        "MetricsDate": "2020-07-13",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "sfa__Account_rec_L",
+        "SystemModstamp": "2020-07-14T13:15:01.000+0000",
+        "RecordCountEPT": 2,
+        "TotalCount": 2,
+        "SumEPT": 3731
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000fwhVdEAI"
+        },
+        "Id": "7pV3h00000fwhVdEAI",
+        "MetricsDate": "2020-07-13",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "sfa__Opportunity_rec_L",
+        "SystemModstamp": "2020-07-14T13:15:01.000+0000",
+        "RecordCountEPT": 3,
+        "TotalCount": 3,
+        "SumEPT": 3976
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000h14TcEAI"
+        },
+        "Id": "7pV3h00000h14TcEAI",
+        "MetricsDate": "2020-07-14",
+        "FlexiPageType": "HomePage",
+        "FlexiPageNameOrId": "home__desktopDefault",
+        "SystemModstamp": "2020-07-15T13:11:32.000+0000",
+        "RecordCountEPT": 1,
+        "TotalCount": 1,
+        "SumEPT": 1247
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000h14TdEAI"
+        },
+        "Id": "7pV3h00000h14TdEAI",
+        "MetricsDate": "2020-07-14",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "0M03h000003ek3eCAA",
+        "SystemModstamp": "2020-07-15T13:11:32.000+0000",
+        "RecordCountEPT": 23,
+        "TotalCount": 23,
+        "SumEPT": 86055
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000h1XJ9EAM"
+        },
+        "Id": "7pV3h00000h1XJ9EAM",
+        "MetricsDate": "2020-07-15",
+        "FlexiPageType": "HomePage",
+        "FlexiPageNameOrId": "home__desktopDefault",
+        "SystemModstamp": "2020-07-16T13:14:02.000+0000",
+        "RecordCountEPT": 1,
+        "TotalCount": 1,
+        "SumEPT": 2001
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByFlexiPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByFlexiPageMetrics/7pV3h00000h1XJAEA2"
+        },
+        "Id": "7pV3h00000h1XJAEA2",
+        "MetricsDate": "2020-07-15",
+        "FlexiPageType": "RecordPage",
+        "FlexiPageNameOrId": "0M03h000003ek3eCAA",
+        "SystemModstamp": "2020-07-16T13:14:02.000+0000",
+        "RecordCountEPT": 19,
+        "TotalCount": 23,
+        "SumEPT": 69959
+    }
+
 ]
 
 ```

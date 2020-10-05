@@ -1,0 +1,9 @@
+SELECT Id
+    ,MetricsDate
+    ,FlexiPageType
+    ,FlexiPageNameOrId
+    ,SystemModstamp
+    ,RecordCountEPT
+    ,TotalCount
+    ,SumEPT
+FROM LightningUsageByFlexiPageMetrics
