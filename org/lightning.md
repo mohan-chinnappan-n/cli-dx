@@ -2,7 +2,7 @@
 
 ## Topics
 - [Details about users who switched between Salesforce Classic and Lightning Experience](#lfswitch)
-
+- [Return the total number of Lightning Experience and Salesforce Mobile users](#LightningUsageByAppTypeMetrics)
 
 <a name="lfswitch"></a>
 ## Details about users who switched between Salesforce Classic and Lightning Experience.
@@ -184,4 +184,26 @@ $ bash ../sh/getObjectRecs.sh LightningToggleMetrics json
     }
 ]
 
+```
+
+<a name='LightningUsageByAppTypeMetrics'></a>
+## Return the total number of Lightning Experience and Salesforce Mobile users.
+
+```
+$ bash ../sh/getObjectRecs.sh LightningUsageByAppTypeMetrics json
+```
+```json
+[
+    {
+        "attributes": {
+            "type": "LightningUsageByAppTypeMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByAppTypeMetrics/62C3h00000o3rkBEAQ"
+        },
+        "Id": "62C3h00000o3rkBEAQ",
+        "MetricsDate": "2018-10-30",
+        "UserId": "0053h000002xQ5sAAE",
+        "AppExperience": "Lightning Experience",
+        "SystemModstamp": "2020-07-13T19:30:57.000+0000"
+    }
+]
 ```

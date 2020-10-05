@@ -1,0 +1,6 @@
+SELECT Id
+    ,MetricsDate
+    ,UserId
+    ,AppExperience
+    ,SystemModstamp
+FROM LightningUsageByAppTypeMetrics
