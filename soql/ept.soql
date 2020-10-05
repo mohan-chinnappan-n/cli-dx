@@ -1,0 +1,16 @@
+SELECT CALENDAR_MONTH(MetricsDate) MetricsDate, 
+      PageName,
+      Browser , 
+      SUM(EptBinUnder3) EptBinUnder3Count,
+      SUM(EptBin3To5) EptBin3To5Count,
+      SUM(EptBin5To8) EptBin5To8Count ,
+      SUM(EptBin8To10) EptBin8To10Count ,
+      SUM(EptBinOver10) EptBinOver10Count
+
+ FROM LightningUsageByBrowserMetrics
+ 
+  WHERE MetricsDate = Last_N_Months:3 AND (NOT Browser like 'OTHER%') 
+         GROUP BY 
+             CALENDAR_MONTH(MetricsDate),
+             Browser,
+             PageName

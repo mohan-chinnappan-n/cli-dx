@@ -1,0 +1,12 @@
+SELECT CALENDAR_MONTH(MetricsDate) MetricsDate, 
+      PageName,
+      Browser , 
+      SUM(TotalCount) Total 
+    
+ FROM LightningUsageByBrowserMetrics 
+  WHERE MetricsDate = Last_N_Months:3 AND 
+           (NOT Browser like 'OTHER%') 
+         GROUP BY 
+             CALENDAR_MONTH(MetricsDate),
+             Browser,
+             PageName
