@@ -2027,4 +2027,5 @@ $  sfdx mohanc:data:query -q ../soql/pageEPT_top10.soql -u mohan.chinnappan.n_ea
 
 ```
 
-
+## References
+- [REST API Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_lightning_exitbypagemetrics.htm)    
