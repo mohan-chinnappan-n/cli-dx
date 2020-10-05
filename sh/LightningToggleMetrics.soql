@@ -1,0 +1,7 @@
+SELECT Id
+    ,MetricsDate
+    ,UserId
+    ,Action
+    ,SystemModstamp
+    ,RecordCount
+FROM LightningToggleMetrics
