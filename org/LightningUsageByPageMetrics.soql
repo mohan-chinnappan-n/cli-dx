@@ -1,0 +1,14 @@
+SELECT Id
+    ,MetricsDate
+    ,UserId
+    ,PageName
+    ,SystemModstamp
+    ,RecordCountEPT
+    ,TotalCount
+    ,SumEPT
+    ,EptBinUnder3
+    ,EptBin3To5
+    ,EptBin5To8
+    ,EptBin8To10
+    ,EptBinOver10
+FROM LightningUsageByPageMetrics

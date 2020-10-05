@@ -7,6 +7,8 @@
 - [Get EPT info](#getEPT)
 - [EPT, Browser distribution details, for the last 3 months](#EPTdist)
 - [Lightning Usage by FlexiPage](#flexipage)
+- [Standard pages, users viewed most frequently in Lightning Experience](#LightningUsageByPageMetrics)
+- [Top 10 most visited pages and how many times each page was visited](#top10)
 
 <a name="lfswitch"></a>
 ## Details about users who switched between Salesforce Classic and Lightning Experience.
@@ -1614,7 +1616,16 @@ $ sfdx mohanc:data:query -q ../soql/ept.soql -u mohan.chinnappan.n_ea2@gmail.com
 
 ```
 <a name="flexipage"></a>
+
 ## Lightning Usage by FlexiPage
+
+### FlexiPage
+- Represents the metadata associated with a Lightning page. 
+- A Lightning page represents a customizable screen made up of regions containing Lightning components.
+    - A Lightning page region can contain up to 100 components.
+    - These pages are known as FlexiPages in the API, but are referred to as Lightning pages in the rest of the Salesforce documentation and UI.
+    - [FlexiPage](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_flexipage.htm)
+
 ### Parameter	Description
 - FlexiPageNameOrId: Namespace and file name, or Page ID of FlexiPage files.
 - FlexiPageType: The FlexiPage type. For example, record details are displayed using RecordPage" type.
@@ -1786,3 +1797,235 @@ $ bash ../sh/getObjectRecs.sh LightningUsageByFlexiPageMetrics json
 ]
 
 ```
+<a name="LightningUsageByPageMetrics"></a>
+## Standard pages, users viewed most frequently in Lightning Experience.
+### Parameter	Description
+- EptBin3To5: Number of times that a page loaded between 3-5 seconds.
+- EptBin5To8: Number of times that a page loaded between 5-8 seconds.
+- EptBin8To10: Number of times that a page loaded between 8-10 seconds.
+- EptBinOver10: Number of times that a page loaded over 10 seconds.
+- EptBinUnder3: Number of times that a page loaded under 3 seconds.
+- PageName: The name of the page.
+- MetricsDate: The date the metric was recorded.
+- RecordCountEPT: Number of records for a page/user where the valid EPT was recorded.
+- SumEPT: Sum of the EPT values for a page/user.
+- TotalCount: Total records for a page/user.
+- UserId: User ID.
+
+ ```
+$ bash ../sh/getObjectRecs.sh LightningUsageByPageMetrics json
+```
+```json
+[
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001g2JiqCAE"
+        },
+        "Id": "0U53h00001g2JiqCAE",
+        "MetricsDate": "2018-10-30",
+        "UserId": "0053h000002xQ5sAAE",
+        "PageName": "Home",
+        "SystemModstamp": "2020-07-13T19:30:57.000+0000",
+        "RecordCountEPT": 0,
+        "TotalCount": 1,
+        "SumEPT": 0,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001g2JirCAE"
+        },
+        "Id": "0U53h00001g2JirCAE",
+        "MetricsDate": "2018-10-30",
+        "UserId": "0053h000002xQ5sAAE",
+        "PageName": "onesetup:baseHomePage",
+        "SystemModstamp": "2020-07-13T19:30:57.000+0000",
+        "RecordCountEPT": 1,
+        "TotalCount": 1,
+        "SumEPT": 1571,
+        "EptBinUnder3": 1,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001g2JiuCAE"
+        },
+        "Id": "0U53h00001g2JiuCAE",
+        "MetricsDate": "2018-11-27",
+        "UserId": "0053h000002xQ5sAAE",
+        "PageName": "Home",
+        "SystemModstamp": "2020-07-13T19:30:57.000+0000",
+        "RecordCountEPT": 0,
+        "TotalCount": 2,
+        "SumEPT": 0,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    }
+]
+
+```
+<a name="top10visitedpages"></a>
+## Top 10 most visited pages and how many times each page was visited
+```
+$ cat ../soql/pageEPT_top10.soql 
+```
+```sql
+SELECT TotalCount,
+       EptBinUnder3,
+       EptBin3To5,
+       EptBin5To8,
+       EptBin8To10,
+       EptBinOver10
+
+    FROM LightningUsageByPageMetrics 
+       ORDER BY PageName ASC 
+           NULLS FIRST 
+           LIMIT 10
+
+
+```
+```
+$  sfdx mohanc:data:query -q ../soql/pageEPT_top10.soql -u mohan.chinnappan.n_ea2@gmail.com -f json
+```
+
+```json
+[
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001j1JYACA2"
+        },
+        "TotalCount": 2,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001jakb2CAA"
+        },
+        "TotalCount": 1,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001j32qxCAA"
+        },
+        "TotalCount": 1,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001gzRpTCAU"
+        },
+        "TotalCount": 4,
+        "EptBinUnder3": 2,
+        "EptBin3To5": 2,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001jaspeCAA"
+        },
+        "TotalCount": 1,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 0,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001jakayCAA"
+        },
+        "TotalCount": 2,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 1,
+        "EptBin5To8": 0,
+        "EptBin8To10": 1,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001j3eNJCAY"
+        },
+        "TotalCount": 1,
+        "EptBinUnder3": 0,
+        "EptBin3To5": 1,
+        "EptBin5To8": 0,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001j32qnCAA"
+        },
+        "TotalCount": 33,
+        "EptBinUnder3": 2,
+        "EptBin3To5": 25,
+        "EptBin5To8": 5,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001j2Xs4CAE"
+        },
+        "TotalCount": 24,
+        "EptBinUnder3": 3,
+        "EptBin3To5": 16,
+        "EptBin5To8": 1,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    },
+    {
+        "attributes": {
+            "type": "LightningUsageByPageMetrics",
+            "url": "/services/data/v49.0/sobjects/LightningUsageByPageMetrics/0U53h00001j1JY6CAM"
+        },
+        "TotalCount": 23,
+        "EptBinUnder3": 5,
+        "EptBin3To5": 16,
+        "EptBin5To8": 2,
+        "EptBin8To10": 0,
+        "EptBinOver10": 0
+    }
+]
+~/bulkapi/dx/org:
+
+```
+
+

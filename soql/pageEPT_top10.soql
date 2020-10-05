@@ -1,0 +1,8 @@
+SELECT TotalCount
+
+    FROM LightningUsageByPageMetrics 
+       ORDER BY TotalCount DESC 
+           NULLS FIRST 
+           LIMIT 10
+
+

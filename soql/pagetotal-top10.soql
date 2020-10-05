@@ -1,0 +1,14 @@
+SELECT PageName, 
+       TotalCount,
+       EptBinUnder3,
+       EptBin3To5,
+       EptBin5To8,
+       EptBin8To10,
+       EptBinOver10
+
+    FROM LightningUsageByPageMetrics 
+       ORDER BY PageName DESC 
+           NULLS FIRST 
+           LIMIT 10
+
+
