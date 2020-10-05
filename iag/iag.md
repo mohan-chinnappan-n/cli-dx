@@ -1,4 +1,4 @@
-# In-app-Guidance
+# In-App-Guidance (IAG)
 
 ## Topics
 - [References](#ref)
