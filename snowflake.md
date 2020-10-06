@@ -15,6 +15,7 @@
 - [Download and load into EA dataset](#loadea)
 - [Create table in Snowflake](#createtable)
 - [Insert data into Snowflake table](#insertdata)
+- [Need to convert PSV to CSV?](https://github.com/mohan-chinnappan-n/cli-dx/tree/master/dl)
 
 <a name='query'></a>
 
