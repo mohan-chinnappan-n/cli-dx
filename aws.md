@@ -394,8 +394,6 @@ pear,100
 
 ## Usage
 ```
-$ sfdx mohanc:ea:dataset:load -h
-
 Dataset Loader for EA  
 
 USAGE
@@ -403,7 +401,9 @@ USAGE
 
 OPTIONS
   -d, --datafile=datafile                         Data file in csv format to load
+  -m, --mulvalfields=mulvalfields                 Multi Value Field Names in CSV
   -o, --operation=operation                       Operation to perform : Overwrite|Append|Upsert|Delete
+  -s, --mulvalsep=mulvalsep                       multiValue separator: default ','
   -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
   --apiversion=apiversion                         override the api version used for api requests made by this command
   --json                                          format output as json
@@ -413,20 +413,78 @@ EXAMPLE
 
               Loads the given csv file in EA as a dataset
 
-              sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert
+              sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert -m <multiValueFields as CSV> -s <multiValue separator: default ','>
+
 
 ``` 
 
 ### Demo
 
 ```
-$ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com  -d /tmp/fruitsdb.csv 
-{ id: '06V3h0000005jgzEAA', success: true, errors: [] }
+$ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty.csv  -m 'Colors' -s '|'
+```
+```
+[
+  {
+    fullyQualifiedName: 'oppty_csvDataset.Name',
+    label: 'Name',
+    name: 'Name',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.Amount',
+    label: 'Amount',
+    name: 'Amount',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 2
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.Times',
+    label: 'Times',
+    name: 'Times',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 0
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.CloseDate',
+    label: 'CloseDate',
+    name: 'CloseDate',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Date',
+    format: 'MM/dd/yyyy',
+    fiscalMonthOffset: 0
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.Colors',
+    label: 'Colors',
+    name: 'Colors',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: true,
+    multiValueSeparator: '|',
+    type: 'Text'
+  }
+]
+{ id: '06V3h0000005ooyEAA', success: true, errors: [] }
 Load part: 1
-{ id: '06W3h0000006vAuEAI', success: true, errors: [] }
+{ id: '06W3h00000070MWEAY', success: true, errors: [] }
 Going to process...
 
 Done.
+
 ```   
 - Job created
 ![job created](img/fruitsdb-j1.png)
@@ -534,6 +592,6 @@ Done.
 ![dataset created](img/oppty-ds1.png)
 
 - Recipe 
-![Recipe](img/oppty-r1.png)
+![Recipe](img/oppty-r-1.png)
 
 
