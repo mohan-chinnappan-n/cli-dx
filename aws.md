@@ -430,9 +430,9 @@ EXAMPLE
 - Input data
 ```
 $ cat ~/.ea/oppty.csv 
-Name,Amount,Times,CloseDate,Colors
-"opportunity A",100.99,2,06/30/2014,"red|blue"
-"opportunity B",99.01,4,01/31/2012,"yellow|blue"
+Name,Amount,Times,CloseDate,Colors,CreateTime
+"opportunity A",100.99,2,06/30/2014,"red|blue",2010-02-05T10:05:06Z
+"opportunity B",99.01,4,01/31/2012,"yellow|blue",2012-03-07T11:06:07Z 
 
 ```
 
