@@ -10,7 +10,6 @@
 - [Delete S3 Bucket](#rb)
 - [Upload a file into S3 Bucket](#upload)
 - [Download a file from S3 Bucket](#download)
-- [Load the downloaded S3 bucket file into Einstein Analytics (EA) Dataset](#loadea)
 - [Load CSV file into Einstein Analytics (EA) Dataset](#loadcsvea)
 
 
