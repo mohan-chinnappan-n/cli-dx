@@ -422,10 +422,9 @@ EXAMPLE
 - NOTE: Data field should be in the format MM/dd/yyyy
     - Example: 01/31/2012 (note the month has to be zero-padded month (01) as shown in this example)
 
-- Let us load into EA
 
-```
 - Input data
+```
 $ cat ~/.ea/oppty.csv 
 Name,Amount,Times,CloseDate,Colors
 "opportunity A",100.99,2,06/30/2014,"red|blue"
@@ -433,6 +432,7 @@ Name,Amount,Times,CloseDate,Colors
 
 ```
 
+- Let us load into EA
 ```
 $ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty.csv  -m 'Colors' -s '|'
 ```
