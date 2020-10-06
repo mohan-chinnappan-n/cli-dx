@@ -418,8 +418,8 @@ EXAMPLE
 
 ### Demo
 
-- NOTE: Data field should be in the format MM/dd/yyyy
-    - Example: 01/31/2012 (note the month has to be zero-padded month (01) as shown in this example)
+- NOTE: Data field should be in the format **MM/dd/yyyy**
+    - Example: **01/31/2012** (note the month has to be zero-padded month (01) as shown in this example)
 
 
 - Input data
