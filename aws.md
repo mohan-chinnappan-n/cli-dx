@@ -493,8 +493,19 @@ $ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty
     isMultiValue: true,
     multiValueSeparator: '|',
     type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'oppty_csvDataset.CreateTime',
+    label: 'CreateTime',
+    name: 'CreateTime',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Date',
+    format: "yyyy-MM-dd'T'hh:mm:ss'Z'",
+    fiscalMonthOffset: 0
   }
 ]
+
 { id: '06V3h0000005ooyEAA', success: true, errors: [] }
 Load part: 1
 { id: '06W3h00000070MWEAY', success: true, errors: [] }
