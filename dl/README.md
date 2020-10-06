@@ -1,4 +1,4 @@
-# CSV to PSV to CSV
+# CSV to PSV  and PSV to CSV
 
 ## Topics
 - [Convert CSV file to pipe-separated-values (PSV) file](#csv2psv)
