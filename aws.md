@@ -421,6 +421,14 @@ EXAMPLE
 ### Demo
 
 ```
+$ cat ~/.ea/oppty.csv 
+Name,Amount,Times,CloseDate,Colors
+"opportunity A",100.99,2,06/30/2014,"red|blue"
+"opportunity B",99.01,4,01/31/2012,"yellow|blue"
+
+```
+
+```
 $ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/oppty.csv  -m 'Colors' -s '|'
 ```
 ```
