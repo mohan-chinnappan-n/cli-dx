@@ -727,6 +727,7 @@ Total time: 2 seconds
 ```
 
 ### Output
+- ![apex result](img/codescan-apex-1.png)
 - [Apex Test Results](results/result_apex.html)
 
 
