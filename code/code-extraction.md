@@ -3,7 +3,7 @@
 ## Topics
 - [Create project](#cprj)
 - [Retrieve code based on package.xml](#rcode)
-- [Retrieve Apex Related ](#apex)
+- [Retrieve only the selected items](#sel)
 - [Run code scan](#cs) 
 
 <a name="cprj"></a>
@@ -504,12 +504,13 @@ export default class Rower extends LightningElement {
 
 ```
 
-<a name="apex"></a>
-## How to get only Apex related code
+
+<a name="sel"></a>
+## How to get only selected Items 
 ```
-$ sfdx force:project:create -x -n cprojApex
-$ cd cprojApex
-$ sfdx force:source:retrieve -m ApexClass,ApexPage,ApexTrigger -u mohan.chinnappan.n_ea2@gmail.com
+$ sfdx force:project:create -x -n cprojSel
+$ cd cprojSel
+$ sfdx force:source:retrieve -m ApexClass,ApexComponent,ApexPage,ApexTrigger,AuraDefinitionBundle -u mohan.chinnappan.n_ea2@gmail.com
 $ tree force-app/main/default/
 force-app/main/default/
 ├── applications
