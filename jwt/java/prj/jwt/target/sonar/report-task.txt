@@ -1,0 +1,6 @@
+projectKey=jwtjava
+serverUrl=http://localhost:9000
+serverVersion=8.4.2.36762
+dashboardUrl=http://localhost:9000/dashboard?id=jwtjava
+ceTaskId=AXUFPlYQpg9lwA2gNn-k
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXUFPlYQpg9lwA2gNn-k

@@ -1,6 +1,13 @@
-
 # Sonarqube 
 
+## Topics
+
+- [Download and Install](#install)
+- [Code scan java](#java)
+- [Code scan apex](#apex)
+
+
+<a name="install"></a>
 ## Download
 - Download from [CommunityEdition](https://www.sonarqube.org/downloads/)
 - Note: Apex analysis is available as part of the Enterprise Edition and above.
@@ -10,7 +17,7 @@ $   xattr -dr com.apple.quarantine sonarqube-8.4.2.36762
 
 ```
 
-## Set up JAVA_HOME
+### Set up JAVA_HOME
 ```
 $ export JAVA_HOME=`/usr/libexec/java_home -v 11.0.4`
 $ java --version
@@ -19,10 +26,32 @@ OpenJDK Runtime Environment Zulu11.33+15-CA (build 11.0.4+11-LTS)
 OpenJDK 64-Bit Server VM Zulu11.33+15-CA (build 11.0.4+11-LTS, mixed mode)
 ```
 
-## Run sonarqube and sonar-scanner 
+
+### Run sonarqube 
 ```
 $  sonarqube-8.4.2.36762/bin/macosx-universal-64/sonar.sh start
 $ open http://localhost:9000
+```
+
+
+<a name='java'></a>
+## Code scan java
+```
+## Create a project (e.g. jwtjava)
+# cd to the folder maven project
+$  mvn sonar:sonar   -Dsonar.projectKey=jwtjava   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=da2a82e12a6504a69f3aa0b69cad171ed61b7a9a
+# open the sca reports
+$ open http://localhost:9000/dashboard?id=jwtjava
+
+```
+### Results
+![jwt java results](img/sonar-java-results.png)
+
+
+<a name='apex'></a>
+## Code scan Apex
+
+```
 ## Create a project (e.g. eaorg)
 ## Download and install sonar-scanner
 ### Apex analysis is available as part of the Enterprise Edition and above.
