@@ -19,7 +19,7 @@ OpenJDK Runtime Environment Zulu11.33+15-CA (build 11.0.4+11-LTS)
 OpenJDK 64-Bit Server VM Zulu11.33+15-CA (build 11.0.4+11-LTS, mixed mode)
 ```
 
-## Run sonarqube in console mode
+## Run sonarqube and sonar-scanner 
 ```
 $  sonarqube-8.4.2.36762/bin/macosx-universal-64/sonar.sh start
 $ open http://localhost:9000
