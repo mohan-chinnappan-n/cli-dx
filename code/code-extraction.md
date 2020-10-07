@@ -767,6 +767,7 @@ $ jar tvf retrieve_09S3h000004vtXcEAI.zip
 <a name="cs"></a>
 
 ## Let us run code scan on Apex code
+- If you are curious to know about SonarCube for code scan here it is [SonarQube Code Scan](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/code/sonar/sonar.md)
 
 ### Set JDK to 1.8 for our purpose
 - Note: these steps regarding setting JAVA_HOME is for macOS 
