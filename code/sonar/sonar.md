@@ -3,8 +3,8 @@
 ## Topics
 
 - [Download and Install](#install)
-- [Code scan java](#java)
-- [Code scan apex](#apex)
+- [Code scan java](#java) - Maven based
+- [Code scan apex](#apex) - Requires Enterprise or above
 
 
 <a name="install"></a>
