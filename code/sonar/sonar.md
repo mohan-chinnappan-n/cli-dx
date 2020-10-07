@@ -23,7 +23,7 @@ OpenJDK 64-Bit Server VM Zulu11.33+15-CA (build 11.0.4+11-LTS, mixed mode)
 ```
 $  sonarqube-8.4.2.36762/bin/macosx-universal-64/sonar.sh start
 $ open http://localhost:9000
-## Create a project
+## Create a project (e.g. eaorg)
 ## Download and install sonar-scanner
 ### Apex analysis is available as part of the Enterprise Edition and above.
 
