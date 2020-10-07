@@ -2,7 +2,9 @@
 
 ## Topics
 - [Create project](#cprj)
-- [Retrieve the code based on package.xml](#rcode)
+- [Retrieve code based on package.xml](#rcode)
+- [Retrieve Apex Related ](#rapex)
+ 
 
 <a name="cprj"></a>
 ## Create a project  (example: cproj)
@@ -501,3 +503,191 @@ export default class Rower extends LightningElement {
 }
 
 ```
+
+<a name="apex"></a>
+## How to get only Apex related code
+```
+$ sfdx force:project:create -x -n cprojApex
+$ cd cprojApex
+$ sfdx force:source:retrieve -m ApexClass,ApexPage,ApexTrigger -u mohan.chinnappan.n_ea2@gmail.com
+$ tree force-app/main/default/
+force-app/main/default/
+├── applications
+├── aura
+├── classes
+│   ├── ChangePasswordController.cls
+│   ├── ChangePasswordController.cls-meta.xml
+│   ├── ChangePasswordControllerTest.cls
+│   ├── ChangePasswordControllerTest.cls-meta.xml
+│   ├── CommunitiesLandingController.cls
+│   ├── CommunitiesLandingController.cls-meta.xml
+│   ├── CommunitiesLandingControllerTest.cls
+│   ├── CommunitiesLandingControllerTest.cls-meta.xml
+│   ├── CommunitiesLoginController.cls
+│   ├── CommunitiesLoginController.cls-meta.xml
+│   ├── CommunitiesLoginControllerTest.cls
+│   ├── CommunitiesLoginControllerTest.cls-meta.xml
+│   ├── CommunitiesSelfRegConfirmController.cls
+│   ├── CommunitiesSelfRegConfirmController.cls-meta.xml
+│   ├── CommunitiesSelfRegConfirmControllerTest.cls
+│   ├── CommunitiesSelfRegConfirmControllerTest.cls-meta.xml
+│   ├── CommunitiesSelfRegController.cls
+│   ├── CommunitiesSelfRegController.cls-meta.xml
+│   ├── CommunitiesSelfRegControllerTest.cls
+│   ├── CommunitiesSelfRegControllerTest.cls-meta.xml
+│   ├── DataManager_Activity.cls
+│   ├── DataManager_Activity.cls-meta.xml
+│   ├── DataManager_ActivityTest.cls
+│   ├── DataManager_ActivityTest.cls-meta.xml
+│   ├── DataManager_CleanUp.cls
+│   ├── DataManager_CleanUp.cls-meta.xml
+│   ├── DataManager_CleanUpTest.cls
+│   ├── DataManager_CleanUpTest.cls-meta.xml
+│   ├── DataManager_Dataflow.cls
+│   ├── DataManager_Dataflow.cls-meta.xml
+│   ├── DataManager_DataflowTest.cls
+│   ├── DataManager_DataflowTest.cls-meta.xml
+│   ├── DataManager_Opportunity.cls
+│   ├── DataManager_Opportunity.cls-meta.xml
+│   ├── DataManager_OpportunityRelated.cls
+│   ├── DataManager_OpportunityRelated.cls-meta.xml
+│   ├── DataManager_OpportunityRelatedTest.cls
+│   ├── DataManager_OpportunityRelatedTest.cls-meta.xml
+│   ├── DataManager_OpportunityTest.cls
+│   ├── DataManager_OpportunityTest.cls-meta.xml
+│   ├── DataManager_Quota.cls
+│   ├── DataManager_Quota.cls-meta.xml
+│   ├── DataManager_QuotaTest.cls
+│   ├── DataManager_QuotaTest.cls-meta.xml
+│   ├── DataManager_TestUtils.cls
+│   ├── DataManager_TestUtils.cls-meta.xml
+│   ├── DataManager_Utils.cls
+│   ├── DataManager_Utils.cls-meta.xml
+│   ├── DataManager_UtilsTest.cls
+│   ├── DataManager_UtilsTest.cls-meta.xml
+│   ├── DataManager_controller.cls
+│   ├── DataManager_controller.cls-meta.xml
+│   ├── DataManager_controllerTest.cls
+│   ├── DataManager_controllerTest.cls-meta.xml
+│   ├── ForgotPasswordController.cls
+│   ├── ForgotPasswordController.cls-meta.xml
+│   ├── ForgotPasswordControllerTest.cls
+│   ├── ForgotPasswordControllerTest.cls-meta.xml
+│   ├── IdeaController.cls
+│   ├── IdeaController.cls-meta.xml
+│   ├── LightningForgotPasswordController.cls
+│   ├── LightningForgotPasswordController.cls-meta.xml
+│   ├── LightningForgotPasswordControllerTest.cls
+│   ├── LightningForgotPasswordControllerTest.cls-meta.xml
+│   ├── LightningLoginFormController.cls
+│   ├── LightningLoginFormController.cls-meta.xml
+│   ├── LightningLoginFormControllerTest.cls
+│   ├── LightningLoginFormControllerTest.cls-meta.xml
+│   ├── LightningSelfRegisterController.cls
+│   ├── LightningSelfRegisterController.cls-meta.xml
+│   ├── LightningSelfRegisterControllerTest.cls
+│   ├── LightningSelfRegisterControllerTest.cls-meta.xml
+│   ├── MyProfilePageController.cls
+│   ├── MyProfilePageController.cls-meta.xml
+│   ├── MyProfilePageControllerTest.cls
+│   ├── MyProfilePageControllerTest.cls-meta.xml
+│   ├── ServiceWaveConfigurationModifier.cls
+│   ├── ServiceWaveConfigurationModifier.cls-meta.xml
+│   ├── SiteLoginController.cls
+│   ├── SiteLoginController.cls-meta.xml
+│   ├── SiteLoginControllerTest.cls
+│   ├── SiteLoginControllerTest.cls-meta.xml
+│   ├── SiteRegisterController.cls
+│   ├── SiteRegisterController.cls-meta.xml
+│   ├── SiteRegisterControllerTest.cls
+│   ├── SiteRegisterControllerTest.cls-meta.xml
+│   ├── TestApex.cls
+│   ├── TestApex.cls-meta.xml
+│   ├── UploadEMUserNotFoundException.cls
+│   ├── UploadEMUserNotFoundException.cls-meta.xml
+│   ├── Upload_Init_EM.cls
+│   ├── Upload_Init_EM.cls-meta.xml
+│   ├── Upload_Init_EMTest.cls
+│   ├── Upload_Init_EMTest.cls-meta.xml
+│   ├── Upload_ProcessTest_EM.cls
+│   ├── Upload_ProcessTest_EM.cls-meta.xml
+│   ├── Upload_Process_EM.cls
+│   ├── Upload_Process_EM.cls-meta.xml
+│   ├── Upload_controller_EM.cls
+│   ├── Upload_controller_EM.cls-meta.xml
+│   ├── Upload_controller_EMTest.cls
+│   └── Upload_controller_EMTest.cls-meta.xml
+├── contentassets
+├── flexipages
+├── layouts
+├── lwc
+├── objects
+├── pages
+│   ├── AnswersHome.page
+│   ├── AnswersHome.page-meta.xml
+│   ├── BandwidthExceeded.page
+│   ├── BandwidthExceeded.page-meta.xml
+│   ├── ChangePassword.page
+│   ├── ChangePassword.page-meta.xml
+│   ├── CommunitiesLanding.page
+│   ├── CommunitiesLanding.page-meta.xml
+│   ├── CommunitiesLogin.page
+│   ├── CommunitiesLogin.page-meta.xml
+│   ├── CommunitiesSelfReg.page
+│   ├── CommunitiesSelfReg.page-meta.xml
+│   ├── CommunitiesSelfRegConfirm.page
+│   ├── CommunitiesSelfRegConfirm.page-meta.xml
+│   ├── CommunitiesTemplate.page
+│   ├── CommunitiesTemplate.page-meta.xml
+│   ├── DataManager.page
+│   ├── DataManager.page-meta.xml
+│   ├── EMDatasetUpload.page
+│   ├── EMDatasetUpload.page-meta.xml
+│   ├── Exception.page
+│   ├── Exception.page-meta.xml
+│   ├── FileNotFound.page
+│   ├── FileNotFound.page-meta.xml
+│   ├── ForgotPassword.page
+│   ├── ForgotPassword.page-meta.xml
+│   ├── ForgotPasswordConfirm.page
+│   ├── ForgotPasswordConfirm.page-meta.xml
+│   ├── IdeasHome.page
+│   ├── IdeasHome.page-meta.xml
+│   ├── InMaintenance.page
+│   ├── InMaintenance.page-meta.xml
+│   ├── Manager_Overview.page
+│   ├── Manager_Overview.page-meta.xml
+│   ├── MyProfilePage.page
+│   ├── MyProfilePage.page-meta.xml
+│   ├── Opp_disco.page
+│   ├── Opp_disco.page-meta.xml
+│   ├── SiteLogin.page
+│   ├── SiteLogin.page-meta.xml
+│   ├── SiteRegister.page
+│   ├── SiteRegister.page-meta.xml
+│   ├── SiteRegisterConfirm.page
+│   ├── SiteRegisterConfirm.page-meta.xml
+│   ├── SiteTemplate.page
+│   ├── SiteTemplate.page-meta.xml
+│   ├── StdExceptionTemplate.page
+│   ├── StdExceptionTemplate.page-meta.xml
+│   ├── Unauthorized.page
+│   ├── Unauthorized.page-meta.xml
+│   ├── UnderConstruction.page
+│   ├── UnderConstruction.page-meta.xml
+│   ├── atutils.page
+│   ├── atutils.page-meta.xml
+│   ├── colorTest.page
+│   ├── colorTest.page-meta.xml
+│   ├── typeTest.page
+│   └── typeTest.page-meta.xml
+├── permissionsets
+├── staticresources
+├── tabs
+└── triggers
+    ├── TestTooling.trigger
+    └── TestTooling.trigger-meta.xml
+
+13 directories, 162 files
+
+``
