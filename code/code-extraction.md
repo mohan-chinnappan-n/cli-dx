@@ -712,7 +712,7 @@ Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
 ```
 ### Run code scan 
-- Make sure have cloned this repo [https://github.com/mohan-chinnappan-n/pmd-dist](https://github.com/mohan-chinnappan-n/pmd-dist) 
+- Make sure you have cloned this repo [https://github.com/mohan-chinnappan-n/pmd-dist](https://github.com/mohan-chinnappan-n/pmd-dist) 
 - In my case it is cloned to ~/codescan folder
 
 ```
