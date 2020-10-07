@@ -728,7 +728,7 @@ Total time: 2 seconds
 ```
 
 ### Output
-- [CSV Apex](results/pmd_report_apex.csv)
+- [Apex Scan Result - CSV](results/pmd_report_apex.csv)
 
 - HTML
     - ![Apex Scan Result](img/codescan-apex-1.png)
