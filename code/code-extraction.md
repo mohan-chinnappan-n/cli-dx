@@ -513,6 +513,8 @@ $ cd cprojSel
 $ sfdx force:source:retrieve -m ApexClass,ApexComponent,ApexPage,ApexTrigger,AuraDefinitionBundle -u mohan.chinnappan.n_ea2@gmail.com
 ## zip it
 $ zip -r code.zip force-app/main/default/*
+$ ls -l code.zip 
+-rw-r--r--  1 mchinnappan  wheel  152194 Oct  7 16:44 code.zip
 
 $ tree force-app/main/default/
 force-app/main/default/
