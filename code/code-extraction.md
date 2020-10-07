@@ -508,9 +508,12 @@ export default class Rower extends LightningElement {
 <a name="sel"></a>
 ## How to get only selected Items 
 ```
+## login to the org you want to access
 $ sfdx force:auth:web:login
+## create project
 $ sfdx force:project:create -x -n cprojSel
 $ cd cprojSel
+## retrieve
 $ sfdx force:source:retrieve -m ApexClass,ApexComponent,ApexPage,ApexTrigger,AuraDefinitionBundle -u mohan.chinnappan.n_ea2@gmail.com
 ## zip it
 $ zip -r code.zip force-app/main/default/*
