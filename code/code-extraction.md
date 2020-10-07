@@ -64,6 +64,7 @@ $ tree
 └── sfdx-project.json
 ```
 ### Manifest package.xml 
+```
 $ cat manifest/package.xml 
 ```
 
