@@ -729,5 +729,5 @@ Total time: 2 seconds
 ### Output
 - ![apex result](img/codescan-apex-1.png)
 - [Apex Test Results](results/result_apex.html)
-
+- [Apex Test Results Page](https://mohan-chinnappan-n2.github.io/2020/codescan/results/apex/result_apex.html)
 
