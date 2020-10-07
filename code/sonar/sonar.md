@@ -3,7 +3,7 @@
 
 ## Download
 - Download from [CommunityEdition](https://www.sonarqube.org/downloads/)
-
+- Note: Apex analysis is available as part of the Enterprise Edition and above.
 - [Clearing the quarantine extended attribute from downloaded applications](https://community.sonarsource.com/t/sonar-cannot-start-once-updated-to-macos-catalina-error-as-wrapper-cannot-be-opened-because-the-developer-cannot-be-verified/16439/2)
 ```
 $   xattr -dr com.apple.quarantine sonarqube-8.4.2.36762
