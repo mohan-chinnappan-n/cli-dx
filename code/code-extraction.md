@@ -4,8 +4,8 @@
 - [Create project](#cprj)
 - [Retrieve code based on package.xml](#rcode)
 - [Retrieve only the selected items](#sel)
-- [Run code scan](#cs) 
 - [Using workbench to retrieve code](#wrcode)
+- [Run code scan](#cs) 
 
 <a name="cprj"></a>
 ## Create a project  (example: cproj)
