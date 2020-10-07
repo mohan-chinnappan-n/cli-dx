@@ -744,7 +744,7 @@ $ cat MetadataAll.xml
 
 - [Login to Workbench](https://workbench.developerforce.com/login.php)
 - Select Migration > Retrieve from the main Menu
-![wb Demo ](img/wb-mr.gif)
+![wb Demo ](img/wb-mr-2.gif)
 
 - The downloaded zip  has retrieved metadata components 
 ```
