@@ -5,6 +5,7 @@
 - [Retrieve code based on package.xml](#rcode)
 - [Retrieve only the selected items](#sel)
 - [Run code scan](#cs) 
+- [Using workbench to retrieve code](#wrcode)
 
 <a name="cprj"></a>
 ## Create a project  (example: cproj)
@@ -65,8 +66,9 @@ $ tree
 ### Manifest package.xml 
 $ cat manifest/package.xml 
 ```
+
 - This has  selectors for all the code types 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
@@ -699,6 +701,66 @@ force-app/main/default/
     └── TestTooling.trigger-meta.xml
 
 13 directories, 162 files
+
+```
+<a name="wrcode"></a>
+
+## Using Workbench to retrieve code
+- Prepare  Metadata xml
+
+```
+$ cat MetadataAll.xml
+```
+```xml 
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+   
+ <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+ 
+    <version>49.0</version>
+</Package>
+```
+
+- [Login to Workbench](https://workbench.developerforce.com/login.php)
+- Select Migration > Retrieve from the main Menu
+![wb Demo ](img/wb-mr.gif)
+
+- The downloaded zip  has retrieved metadata components 
+```
+$ jar tvf retrieve_09S3h000004vtXcEAI.zip 
+  2950 Wed Oct 07 23:44:14 EDT 2020 aura/loginForm/loginFormController.js
+   403 Wed Oct 07 23:44:14 EDT 2020 aura/FilterTest/FilterTestController.js
+  4098 Wed Oct 07 23:44:14 EDT 2020 aura/loginForm/loginForm.cmp
+   230 Wed Oct 07 23:44:14 EDT 2020 aura/loginForm/loginForm.cmp-meta.xml
+    96 Wed Oct 07 23:44:14 EDT 2020 aura/setStartUrl/setStartUrl.evt
+   228 Wed Oct 07 23:44:14 EDT 2020 aura/setStartUrl/setStartUrl.evt-meta.xml
+    96 Wed Oct 07 23:44:14 EDT 2020 aura/setExpId/setExpId.evt
+   225 Wed Oct 07 23:44:14 EDT 2020 aura/setExpId/setExpId.evt-meta.xml
+   831 Wed Oct 07 23:44:14 EDT 2020 aura/FilterTest/FilterTest.cmp
+   228 Wed Oct 07 23:44:14 EDT 2020 aura/FilterTest/FilterTest.cmp-meta.xml
+  1043 Wed Oct 07 23:44:14 EDT 2020 aura/forgotPassword/forgotPasswordHelper.js
+   953 Wed Oct 07 23:44:14 EDT 2020 aura/WaveTest/WaveTest.cmp
+...
 
 ```
 <a name="cs"></a>
