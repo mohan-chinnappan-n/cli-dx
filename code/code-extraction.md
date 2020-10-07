@@ -1,4 +1,4 @@
-# How to retrieve the code in your Org using DX?
+# How to retrieve the code in your Org using DX and perform Code Scan?
 
 ## Topics
 - [Create project](#cprj)
@@ -696,6 +696,7 @@ force-app/main/default/
 ## Let us run code scan on Apex code
 
 ### Set JDK to 1.8 for our purpose
+- Note: these steps regarding setting JAVA_HOME is for macOS 
 ```
 $ /usr/libexec/java_home -V
 Matching Java Virtual Machines (4):
