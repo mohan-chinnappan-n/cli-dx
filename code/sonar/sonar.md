@@ -2,7 +2,7 @@
 
 ## Topics
 
-- [Download and Install](#install)
+- [Download and Install](#install) - Community edition
 - [Code scan java](#java) - Maven based
 - [Code scan apex](#apex) - Requires Enterprise or above
 
