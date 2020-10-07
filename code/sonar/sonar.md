@@ -40,7 +40,17 @@ $ open http://localhost:9000
 ## Create a project (e.g. jwtjava)
 # cd to the folder maven project
 $  mvn sonar:sonar   -Dsonar.projectKey=jwtjava   -Dsonar.host.url=http://localhost:9000   -Dsonar.login=da2a82e12a6504a69f3aa0b69cad171ed61b7a9a
-# open the sca reports
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building jwt 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.7.0.1746:sonar (default-cli) @ jwt ---
+[INFO] User cache: /Users/mchinnappan/.sonar/cache
+[INFO] SonarQube version: 8.4.2
+...
+# open the scan reports
 $ open http://localhost:9000/dashboard?id=jwtjava
 
 ```
