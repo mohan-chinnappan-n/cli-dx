@@ -5,14 +5,14 @@
 - [Retrieve the code based on package.xml](#rcode)
 
 <a name="cprj"></a>
-## Create a project 
+## Create a project  (example: cproj)
 ```
 $ sfdx force:project:create -x -n cproj
 target dir = /Users/mchinnappan/code-extract
    create cproj/config/project-scratch-def.json
    create cproj/README.md
    create cproj/sfdx-project.json
-   create cproj/manifest/package.xml
+   create cproj/manifest/package.xml <------
    create cproj/.vscode/extensions.json
    create cproj/.vscode/launch.json
    create cproj/.vscode/settings.json
@@ -63,7 +63,7 @@ $ tree
 ### Manifest package.xml 
 $ cat manifest/package.xml 
 ```
-
+- This has  selectors for all the code types 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
