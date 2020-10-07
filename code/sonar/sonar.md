@@ -49,7 +49,7 @@ $ open http://localhost:9000/dashboard?id=jwtjava
 
 
 <a name='apex'></a>
-## Code scan Apex
+## Code scan Apex (requires Enterprise Edition and above)
 
 ```
 ## Create a project (e.g. eaorg)
