@@ -4,7 +4,7 @@
 - [Create project](#cprj)
 - [Retrieve code based on package.xml](#rcode)
 - [Retrieve Apex Related ](#apex)
- 
+- [Run code scan](#cs) 
 
 <a name="cprj"></a>
 ## Create a project  (example: cproj)
@@ -690,4 +690,43 @@ force-app/main/default/
 
 13 directories, 162 files
 
-``
+```
+<a name="cs"></a>
+
+## Let us run code scan on Apex code
+
+### Set JDK to 1.8 for our purpose
+```
+$ /usr/libexec/java_home -V
+Matching Java Virtual Machines (4):
+    11.0.8, x86_64:	"GraalVM CE 20.2.0"	/Library/Java/JavaVirtualMachines/graalvm-ce-java11-20.2.0/Contents/Home
+    11.0.4-zulu-11.33+15, x86_64:	"Zulu 11"	/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+    1.8.0_111, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home
+    1.7.0_79, x86_64:	"Java SE 7"	/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+
+$ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+$ java -version
+java version "1.8.0_111"
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+```
+### Run code scan 
+- Make sure have cloned this repo [https://github.com/mohan-chinnappan-n/pmd-dist](https://github.com/mohan-chinnappan-n/pmd-dist) 
+- In my case it is cloned to ~/codescan folder
+
+```
+$  bash run_apex_scan_ant.sh 
+Buildfile: /Users/mchinnappan/codescan/pmd-dist/test-apex.xml
+
+pmd:
+      [pmd] Oct 07, 2020 8:59:07 AM apex.jorje.parser.impl.BaseApexLexer dedupe
+      [pmd] INFO: Deduped array ApexLexer.DFA23_transition. Found 7927114 shorts which is 15MB not including array overhead. Removed 7204963 shorts which is 13MB not counting array overhead. Took 9ms.
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+```
+
+### Output
+- [Apex Test Results](results/result_apex.html)
+
+
