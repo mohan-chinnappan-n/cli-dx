@@ -511,6 +511,9 @@ export default class Rower extends LightningElement {
 $ sfdx force:project:create -x -n cprojSel
 $ cd cprojSel
 $ sfdx force:source:retrieve -m ApexClass,ApexComponent,ApexPage,ApexTrigger,AuraDefinitionBundle -u mohan.chinnappan.n_ea2@gmail.com
+## zip it
+$ zip -r code.zip force-app/main/default/*
+
 $ tree force-app/main/default/
 force-app/main/default/
 ├── applications
