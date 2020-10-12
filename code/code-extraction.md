@@ -7,7 +7,14 @@
 - [Using workbench to retrieve code](#wrcode)
 - [Run code scan](#cs) 
 
+## References
+- [Running PMD using ANT tasks](https://github.com/mohan-chinnappan-n/pmd-dist)
+- [VS Code Option](https://marketplace.visualstudio.com/items?itemName=mohanChinnappan.apex-pmd-code-scanner)
+
+## Flow
 ![code-scan](img/code-scan-1.png)
+
+
 <a name="cprj"></a>
 ## Create a project  (example: cproj)
 ```
