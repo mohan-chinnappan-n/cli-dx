@@ -10,7 +10,7 @@
 
 ## References
 - [Running PMD using ANT tasks](https://github.com/mohan-chinnappan-n/pmd-dist)
-- [VS Code Option](https://marketplace.visualstudio.com/items?itemName=mohanChinnappan.apex-pmd-code-scanner)
+- [VS Code Option](#vsc)
 - [User Profile permission descriptions](https://help.salesforce.com/articleView?id=000332385&type=1&mode=1)
 - [User Permissions and Access](https://help.salesforce.com/articleView?id=permissions_about_users_access.htm&type=5)
 
@@ -821,4 +821,11 @@ Total time: 2 seconds
     - ![Apex Scan Result](img/codescan-apex-1.png)
     - [Apex Test Results](results/result_apex.html)
     - [Apex Test Results Page](https://mohan-chinnappan-n2.github.io/2020/codescan/results/apex/result_apex.html)
+
+
+<a name='vsc'></a>
+- [Top](#topics)
+## VS Code Option
+![VS code Extension](https://github.com/mohan-chinnappan-n/vscode-apex-pmd/raw/master/images/code-scan-vscode-6.gif)
+- [VSCode Apex PMD](https://marketplace.visualstudio.com/items?itemName=mohanChinnappan.apex-pmd-code-scanner)
 
