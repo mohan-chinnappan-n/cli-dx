@@ -1,5 +1,6 @@
 # How to retrieve the code in your Org using DX and perform Code Scan?
 
+<a name='topics'></a>
 ## Topics
 - [Create project](#cprj)
 - [Retrieve code based on package.xml](#rcode)
@@ -119,6 +120,7 @@ $ cat manifest/package.xml
 </Package>
 ```
 <a name="rcode"></a>
+- [Topics](#topics)
 
 ### Retrieve the code based on this package.xml
 ```
