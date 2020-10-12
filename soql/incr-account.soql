@@ -1,0 +1,2 @@
+SELECT Id, Name,LastModifiedDate	 FROM Account
+               WHERE LastModifiedDate > YESTERDAY

@@ -7,6 +7,7 @@
 - [Using workbench to retrieve code](#wrcode)
 - [Run code scan](#cs) 
 
+![code-scan](img/code-scan-1.png)
 <a name="cprj"></a>
 ## Create a project  (example: cproj)
 ```

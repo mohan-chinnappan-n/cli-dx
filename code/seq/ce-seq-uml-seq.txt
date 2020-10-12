@@ -1,0 +1,11 @@
+Title: Code Scan
+Admin->DX: Create Project
+Note Right of DX:Creates project with folders\n including package.xml
+DX->Admin: Project with\n Manifest package.xml
+Admin->DX: Retrieve code \ncomponents based  package.xml
+DX->Org: Extracts code and \nstore into \n force-app folder
+Admin->CodeScanner:Run code scan\n (run_apex_scan_ant.sh)
+CodeScanner->Admin:Code Scan Report
+Admin->Dev Team: Share the report
+Dev->Org: Provide fixes
+
