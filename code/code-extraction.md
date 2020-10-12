@@ -10,6 +10,9 @@
 ## References
 - [Running PMD using ANT tasks](https://github.com/mohan-chinnappan-n/pmd-dist)
 - [VS Code Option](https://marketplace.visualstudio.com/items?itemName=mohanChinnappan.apex-pmd-code-scanner)
+- [User Profile permission descriptions](https://help.salesforce.com/articleView?id=000332385&type=1&mode=1)
+- [User Permissions and Access](https://help.salesforce.com/articleView?id=permissions_about_users_access.htm&type=5)
+
 
 ## Flow
 ![code-scan](img/code-scan-1.png)
