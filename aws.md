@@ -529,6 +529,14 @@ Done.
 
 ### Another example
 ```
+
+$ cat ~/.ea/CityEA.csv 
+City,Postcode,Date,Number,DateTime
+Aarhus C,8000,01/02/2020,10.0,2019-05-10T04:10:00.000Z
+Brabrand,8220,02/01/2020,20.0,2019-03-17T05:20:00.000Z
+Åbyhøj,8230,03/01/2020,30.0,2019-01-09T06:40:00.000Z
+
+
 sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/CityEA.csv    -f 'Postcode'
 [
   {
