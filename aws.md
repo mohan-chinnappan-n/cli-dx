@@ -399,6 +399,7 @@ USAGE
 
 OPTIONS
   -d, --datafile=datafile                         Data file in csv format to load
+  -f, --dimfields=dimfields                       Dimension Field Names in CSV
   -m, --mulvalfields=mulvalfields                 Multi Value Field Names in CSV
   -o, --operation=operation                       Operation to perform : Overwrite|Append|Upsert|Delete
   -s, --mulvalsep=mulvalsep                       multiValue separator: default ','
@@ -411,8 +412,9 @@ EXAMPLE
 
               Loads the given csv file in EA as a dataset
 
-              sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert -m <multiValueFields as CSV> -s <multiValue separator: default ','>
-
+              sfdx mohanc:ea:dataset:load  -u <username> -d <datafile.csv> -o Upsert
+               -m <multiValueFields as CSV> -s <multiValue separator: default ','>
+               -f <DimFields as CSV >
 
 ``` 
 
@@ -524,4 +526,66 @@ Done.
 ![Recipe](img/oppty-r-2.png)
 
 
+### Another example
+```
+sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/CityEA.csv    -f 'Postcode'
+[
+  {
+    fullyQualifiedName: 'CityEA_csvDataset.City',
+    label: 'City',
+    name: 'City',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'CityEA_csvDataset.Postcode',
+    label: 'Postcode',
+    name: 'Postcode',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Text' <-----
+  },
+  {
+    fullyQualifiedName: 'CityEA_csvDataset.Date',
+    label: 'Date',
+    name: 'Date',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Date',
+    format: 'MM/dd/yyyy',
+    fiscalMonthOffset: 0
+  },
+  {
+    fullyQualifiedName: 'CityEA_csvDataset.Number',
+    label: 'Number',
+    name: 'Number',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 0
+  },
+  {
+    fullyQualifiedName: 'CityEA_csvDataset.DateTime',
+    label: 'DateTime',
+    name: 'DateTime',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  }
+]
+{ id: '06V3h0000005r5EEAQ', success: true, errors: [] }
+Load part: 1
+{ id: '06W3h00000072eDEAQ', success: true, errors: [] }
+Going to process...
 
+Done.
+```
+- Loaded data
+![Loaded data](img/ea-dataload-dim-1.png)
