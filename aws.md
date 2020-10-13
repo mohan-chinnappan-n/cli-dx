@@ -11,7 +11,8 @@
 - [Upload a file into S3 Bucket](#upload)
 - [Download a file from S3 Bucket](#download)
 - [Load CSV file into Einstein Analytics (EA) Dataset](#loadea)
-
+- [Looking for Snowflake integration](./snowflake.md)
+- [Need to convert PSV to CSV?](https://github.com/mohan-chinnappan-n/cli-dx/tree/master/dl)
 
 
 
