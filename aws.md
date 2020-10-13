@@ -1,6 +1,6 @@
 # AWS access via DX
-- Requires 0.0.67 version of the plugin
-    - sfdx-mohanc-plugins@0.0.67
+- Requires 0.0.69 version of the plugin
+    - sfdx-mohanc-plugins@0.0.69
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ### Topics

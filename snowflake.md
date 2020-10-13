@@ -6,13 +6,14 @@
 
 
 ## Plugin requirements
-- Requires 0.0.67 version of the plugin
-    - sfdx-mohanc-plugins@0.0.67
+- Requires 0.0.69 version of the plugin
+    - sfdx-mohanc-plugins@0.0.69
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ## Topics
 - [Query](#query)
 - [Download and load into EA dataset](#loadea)
+    - [More examples for Loading Data in to EA](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/aws.md#loadea)
 - [Create table in Snowflake](#createtable)
 - [Insert data into Snowflake table](#insertdata)
 - [Need to convert PSV to CSV?](https://github.com/mohan-chinnappan-n/cli-dx/tree/master/dl)
