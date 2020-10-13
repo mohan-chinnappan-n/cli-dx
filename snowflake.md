@@ -17,7 +17,7 @@
 - [Create table in Snowflake](#createtable)
 - [Insert data into Snowflake table](#insertdata)
 - [Need to convert PSV to CSV?](https://github.com/mohan-chinnappan-n/cli-dx/tree/master/dl)
-- [Looking for AWS S3 integration](./aws.md)
+- [Looking for AWS S3 integration?](./aws.md)
 
 
 <a name='query'></a>
