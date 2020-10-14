@@ -12,5 +12,8 @@ $ sfdx plugins:install sfdx-mohanc-plugins
 
 ```
 
+## node_modules folder in Linux
+~/.local/share/sfdx/node_modules/
+
 
 
