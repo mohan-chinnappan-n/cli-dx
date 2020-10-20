@@ -13,7 +13,7 @@ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com  > header.json
 - Get the Id and version  for the dashboard you want to work with
 ```
 
-# get all datasets
+# get all dashboards
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/dashboards -m GET   -f header.json > dashboards.json
 
 
