@@ -10,7 +10,7 @@ You may now close the browser
 sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com  > header.json 
 
 ```
-- Get the Id and version  for the dataset you want to work with
+- Get the Id and version  for the dashboard you want to work with
 ```
 
 # get all datasets
