@@ -1,7 +1,32 @@
+
+## Look at the dataflows
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflows  -m GET -f header.json   > dataflows.json
+
+$ sfdx mohanc:data:jq -i dataflows.json -f '.[][] | .name, .id'
+"exportOppty2"
+"02K3h000000Mu1oEAC"
+"exportOppty"
+"02K3h000000Mu0vEAC"
+"ExportCustomers"
+"02K3h000000MtyuEAC"
+"fruitsdf"
+"02K3h000000MrxWEAS"
+"The_Motivator"
+"02K3h000000Mr7JEAS"
+"SalesEdgeEltWorkflow"
+"02K3h000000Mr7KEAS"
+~/EA-Automation:
+```
+### Pick The_Motivator dataflow with id: 02K3h000000Mr7JEAS
+
+sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflows/02K3h000000Mr7JEAS  -m GET -f header.json > The_Motivator-df.json
+
+```
 ## 1. Get the aliases for the sfdcRegister
 
 ```
-$ sfdx mohanc:data:jq -i The_Motivator.json -f '.[] | select(.action=="sfdcRegister") |  .parameters.alias'
+$ sfdx mohanc:data:jq -i The_Motivator-df.json -f '.definition[] | select(.action=="sfdcRegister") |  .parameters.alias'
 "user"
 "activity"
 ```
