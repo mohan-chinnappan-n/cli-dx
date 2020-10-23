@@ -83,6 +83,7 @@ $ sfdx mohanc:data:jq -i user-ds-cv_dep-dashboards.json -f '.[].url'
 
 ``` 
 - get json for these dashboards
+
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dashboards/0FK3h0000001yCdGAI -m GET -f header.json  > user-ds-cv_dep-dashboards-1.json 
 
@@ -105,7 +106,8 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dashboards/0FK3h000000FexZGAS -m GET -f header.json  > user-ds-cv_dep-dashboards-3.json
 ```
  
-###- for **activity** dataset 
+### for **activity** dataset 
+
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/datasets/activity  -m GET -f header.json  >activity-ds.json
 
