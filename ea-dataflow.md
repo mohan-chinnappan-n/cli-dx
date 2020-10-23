@@ -85,7 +85,7 @@ $   sfdx mohanc:data:jq -i user-ds-cv.json  -f '.xmdMain.measures[].field'
 
 ```
 
-    - get dataset id
+- get dataset id
 ```
 $ sfdx mohanc:data:jq -i user-ds-cv.json  -f '.dataset.id'
 "0Fb3h0000008ryUCAQ"
