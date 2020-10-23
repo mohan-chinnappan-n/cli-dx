@@ -2,8 +2,6 @@
 ## Look at the dataflows
 ```
 $ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com
-```
-### Pick The_Motivator dataflow with id: 02K3h000000Mr7JEAS
 Id,Label
 02K3h000000Mu1oEAC,exportOppty2
 02K3h000000Mu0vEAC,exportOppty
@@ -12,6 +10,8 @@ Id,Label
 02K3h000000Mr7JEAS,The_Motivator
 02K3h000000Mr7KEAS,Default Salesforce Dataflow
 
+```
+### Pick The_Motivator dataflow with id: 02K3h000000Mr7JEAS
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflows/02K3h000000Mr7JEAS  -m GET -f header.json > The_Motivator-df.json
 
