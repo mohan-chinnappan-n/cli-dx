@@ -7,22 +7,23 @@ $ sfdx mohanc:data:jq -i The_Motivator.json -f '.[] | select(.action=="sfdcRegis
 ```
 
 ## 2. Get the Dataset JSON
-- for: **user** dataset
+### for: **user** dataset
+
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/datasets/user  -m GET -f header.json  >user-ds.json
 
 ``` 
-    - get currentVersionrl for this dataset
+- get currentVersionrl for this dataset
 ```
 $ sfdx mohanc:data:jq -i user-ds.json  -f '.currentVersionUrl'
 "/services/data/v50.0/wave/datasets/0Fb3h0000008ryUCAQ/versions/0Fc3h000003nCMLCA2"
 ```
-    - get currentVersion dataset json
+ - get currentVersion dataset json
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/datasets/0Fb3h0000008ryUCAQ/versions/0Fc3h000003nCMLCA2  -m GET -f header.json  >user-ds-cv.json
 
 ```
-    - get dimensions fields
+ - get dimensions fields
 ```
 $   sfdx mohanc:data:jq -i user-ds-cv.json  -f '.xmdMain.dimensions[].field'
 "Role.RoleNames"
@@ -52,12 +53,49 @@ $   sfdx mohanc:data:jq -i user-ds-cv.json  -f '.xmdMain.dimensions[].field'
 "ManagerId"
 
 ```
-    - get measure fields 
+ - get measure fields 
 ```
 $   sfdx mohanc:data:jq -i user-ds-cv.json  -f '.xmdMain.measures[].field'
 
 ```
-- for **activity** dataset 
+
+    - get dataset id
+```
+$ sfdx mohanc:data:jq -i user-ds-cv.json  -f '.dataset.id'
+"0Fb3h0000008ryUCAQ"
+
+```
+ - get dependencies for this dataset
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dependencies/0Fb3h0000008ryUCAQ -m GET -f header.json > user-ds-cv_dep.json 
+
+```
+
+#### get dashboards depending on this dataset
+```
+$ sfdx mohanc:data:jq -i user-ds-cv_dep.json -f '.dashboards.dependencies' > user-ds-cv_dep-dashboards.json
+
+$ sfdx mohanc:data:jq -i user-ds-cv_dep-dashboards.json -f '.[].url'
+"/services/data/v50.0/wave/dashboards/0FK3h0000001yCdGAI"
+"/services/data/v50.0/wave/dashboards/0FK3h0000001yCcGAI"
+"/services/data/v50.0/wave/dashboards/0FK3h000000FexZGAS
+
+
+``` 
+- get json for these dashboards
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dashboards/0FK3h0000001yCdGAI -m GET -f header.json  > user-ds-cv_dep-dashboards-1.json 
+
+# this field: UniqueUserName is mentioned in this dashboard?
+$ grep 'UniqueUserName'  user-ds-cv_dep-dashboards-1.json 
+
+
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dashboards/0FK3h0000001yCcGAI -m GET -f header.json  > user-ds-cv_dep-dashboards-2.json
+
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dashboards/0FK3h000000FexZGAS -m GET -f header.json  > user-ds-cv_dep-dashboards-3.json
+```
+ 
+###- for **activity** dataset 
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/datasets/activity  -m GET -f header.json  >activity-ds.json
 
@@ -188,4 +226,9 @@ $ sfdx mohanc:data:jq -i activity-ds-cv.json  -f '.xmdMain.measures[].field'
 "Opportunity.CloseDate_sec_epoch"
 "Opportunity.CreatedDate_day_epoch"
 "Opportunity.CreatedDate_sec_epoch"
+
+
+$ sfdx mohanc:data:jq -i activity-ds-cv.json  -f '.dataset.id'
+"0Fb3h0000008ryTCAQ"
+
 
