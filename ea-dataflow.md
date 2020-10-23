@@ -19,10 +19,11 @@ $ sfdx mohanc:data:jq -i dataflows.json -f '.[][] | .name, .id'
 ~/EA-Automation:
 ```
 ### Pick The_Motivator dataflow with id: 02K3h000000Mr7JEAS
-
-sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflows/02K3h000000Mr7JEAS  -m GET -f header.json > The_Motivator-df.json
+```
+$ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflows/02K3h000000Mr7JEAS  -m GET -f header.json > The_Motivator-df.json
 
 ```
+
 ## 1. Get the aliases for the sfdcRegister
 
 ```
