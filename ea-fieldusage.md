@@ -246,8 +246,6 @@ No field usage can be obtained for this dataflow!
 
 - [Dashboard json](ea/dashboard.json)
 
-
-```
 <a name="outputjson"></a>
 
 ### Output JSON
