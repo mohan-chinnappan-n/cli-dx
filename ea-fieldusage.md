@@ -203,11 +203,13 @@ Going to process...
 Done.
 ```
 
+
+![loaded-1](ea/fldusage-2.png)
+
 - Dataflow job created details
     - [View Dataflow jobs](./ea-dataflow-jobs.md)
 
 
-![loaded-1](ea/fldusage-2.png)
 ![loaded-2](ea/fldusage-3.png)
 
 <a name='db'></a>
