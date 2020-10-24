@@ -6,13 +6,19 @@
 
 
 ## Topics
-- [Usage](#usage)
 - [Demo](#demo)
+- [Usage](#usage)
 - [Steps](#steps)
 - [Output CSV](#outputcsv)
 - [Output JSON](#outputjson)
 - [Load Field Usage CSV into EA](#load)
 - [Field Usage Dashboard](#db)
+
+<a name="demo"></a>
+## Demo
+
+![dataflow fieldUsage Demo](ea/fieldUsage-2.gif)
+
 
 <a name="usage"></a>
 ## Usage
@@ -47,11 +53,6 @@ EXAMPLE
 
 
 ```
-
-<a name="demo"></a>
-## Demo
-
-![dataflow fieldUsage Demo](ea/fieldUsage-2.gif)
 
 
 <a name="steps"></a>
