@@ -11,7 +11,6 @@
 - [Steps](#steps)
 - [Output CSV](#outputcsv)
 - [Output JSON](#outputjson)
--
 - [Load Field Usage CSV into EA](#load)
 - [Field Usage Dashboard](#db)
 
@@ -97,7 +96,7 @@ Done.
 ### Output CSV
 - [Field Usage in CSV](ea/02K3h000000Mr7JEAS.csv)
 
-<a name-'load'></a>
+<a name='load'></a>
 ### Load CSV file into EA
 ```
 $ cp ea/02K3h000000Mr7JEAS.csv /tmp/fieldusage.csv
@@ -206,7 +205,7 @@ Done.
 ![loaded-1](ea/fldusage-2.png)
 ![loaded-2](ea/fldusage-3.png)
 
-<a name='dashboard'></a>
+<a name='db'></a>
 ### Dashboard
 ![Dashboard](ea-fldusage-32.gif)
 
