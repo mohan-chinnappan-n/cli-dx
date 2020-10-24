@@ -1,7 +1,7 @@
 # Get FieldUsage info for a given Dataflow using DX
 
-- Requires 0.0.72 version of the plugin
-    - sfdx-mohanc-plugins@0.0.72
+- Requires 0.0.73 version of the plugin
+    - sfdx-mohanc-plugins@0.0.73
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
@@ -216,8 +216,19 @@ Done.
 
 <a name='nofinfo'></a>
 
-## Dataflow with out field usage info
+## Dataflow without field usage info
 ```
+$ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com 
+Id,Label
+02K3h000000Mu1oEAC,exportOppty2
+02K3h000000Mu0vEAC,exportOppty
+02K3h000000MtyuEAC,ExportCustomers
+02K3h000000MrxWEAS,fruitsdf
+02K3h000000Mr7JEAS,The_Motivator
+02K3h000000Mr7KEAS,Default Salesforce Dataflow
+
+# let us look at  02K3h000000MrxWEAS,fruitsdf
+
 $ sfdx mohanc:ea:dataflow:fieldUsage -u mohan.chinnappan.n_ea2@gmail.com -d 02K3h000000MrxWEAS
 === Looking at the dataflow 02K3h000000MrxWEAS ...
 === Looking at the dataflow sfdcRegister Actions ...
