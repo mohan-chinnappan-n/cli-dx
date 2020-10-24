@@ -207,7 +207,7 @@ Done.
 
 <a name='db'></a>
 ### Dashboard
-![Dashboard](fieldUsage-3.gif)
+![Dashboard](ea/fieldUsage-3.gif)
 
 - [Dashboard json](ea/dashboard.json)
 ```json
