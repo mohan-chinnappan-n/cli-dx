@@ -81,6 +81,114 @@ Done.
 
 ### Output CSV
 - [Field Usage in CSV](ea/02K3h000000Mr7JEAS.csv)
+    - Load CSV file into EA
+```
+$ cp ea/02K3h000000Mr7JEAS.csv /tmp/fieldusage.csv
+
+$ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com  -d /tmp/fieldusage.csv 
+[
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.type',
+    label: 'type',
+    name: 'type',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.name',
+    label: 'name',
+    name: 'name',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.dataflowName',
+    label: 'dataflowName',
+    name: 'dataflowName',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.datasetName',
+    label: 'datasetName',
+    name: 'datasetName',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.dashboardName',
+    label: 'dashboardName',
+    name: 'dashboardName',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.lensName',
+    label: 'lensName',
+    name: 'lensName',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.InSecurityPredicate',
+    label: 'InSecurityPredicate',
+    name: 'InSecurityPredicate',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.usageCount',
+    label: 'usageCount',
+    name: 'usageCount',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 0
+  },
+  {
+    fullyQualifiedName: 'fieldusage_csvDataset.inUse',
+    label: 'inUse',
+    name: 'inUse',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  }
+]
+{ id: '06V3h0000005uEOEAY', success: true, errors: [] }
+Load part: 1
+{ id: '06W3h00000075pdEAA', success: true, errors: [] }
+Going to process...
+
+Done.
+```
+![loaded-1](ea/fldusage-2.png)
+![loaded-2](ea/fldusage-3.png)
+
 
 ### Output JSON
 ```json
