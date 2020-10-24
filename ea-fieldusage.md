@@ -1,5 +1,10 @@
 # Get FieldUsage info for a given Dataflow using DX
 
+- Requires 0.0.72 version of the plugin
+    - sfdx-mohanc-plugins@0.0.72
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
 ## Usage
 ```
 $ sfdx mohanc:ea:dataflow:fieldUsage -h
