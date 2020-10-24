@@ -1,0 +1,360 @@
+{
+    "label": "Field Usage for Dataflow  - The_Motivator",
+    "mobileDisabled": false,
+    "state": {
+        "dataSourceLinks": [],
+        "filters": [
+            {
+                "dataset": {
+                    "id": "0Fb3h0000005aojCAA",
+                    "name": "fieldusage_csvDataset",
+                    "url": "/services/data/v50.0/wave/datasets/0Fb3h0000005aojCAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "datasetName"
+                ],
+                "locked": false,
+                "operator": "in"
+            },
+            {
+                "dataset": {
+                    "id": "0Fb3h0000005aojCAA",
+                    "name": "fieldusage_csvDataset",
+                    "url": "/services/data/v50.0/wave/datasets/0Fb3h0000005aojCAA"
+                },
+                "dependent": true,
+                "fields": [
+                    "type"
+                ],
+                "locked": false,
+                "operator": "in"
+            }
+        ],
+        "gridLayouts": [
+            {
+                "name": "Default",
+                "numColumns": 12,
+                "pages": [
+                    {
+                        "label": "Usage",
+                        "name": "0baee173-4dfa-4ccd-9c28-e0670806026c",
+                        "navigationHidden": false,
+                        "widgets": [
+                            {
+                                "colspan": 6,
+                                "column": 0,
+                                "name": "chart_1",
+                                "row": 3,
+                                "rowspan": 6,
+                                "widgetStyle": {}
+                            },
+                            {
+                                "colspan": 3,
+                                "column": 0,
+                                "name": "filterpanel_1",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            },
+                            {
+                                "colspan": 3,
+                                "column": 3,
+                                "name": "filterpanel_2",
+                                "row": 1,
+                                "rowspan": 1,
+                                "widgetStyle": {
+                                    "backgroundColor": "#FFFFFF",
+                                    "borderColor": "#E6ECF2",
+                                    "borderEdges": [
+                                        "all"
+                                    ],
+                                    "borderRadius": 4,
+                                    "borderWidth": 1
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "rowHeight": "normal",
+                "selectors": [],
+                "style": {
+                    "alignmentX": "left",
+                    "alignmentY": "top",
+                    "backgroundColor": "#F2F6FA",
+                    "cellSpacingX": 8,
+                    "cellSpacingY": 8,
+                    "fit": "original",
+                    "gutterColor": "#C5D3E0"
+                },
+                "version": 1
+            }
+        ],
+        "layouts": [],
+        "steps": {
+            "inUse_1": {
+                "broadcastFacet": true,
+                "datasets": [
+                    {
+                        "id": "0Fb3h0000005aojCAA",
+                        "label": "fieldusage_csvDataset",
+                        "name": "fieldusage_csvDataset",
+                        "url": "/services/data/v50.0/wave/datasets/0Fb3h0000005aojCAA"
+                    }
+                ],
+                "isGlobal": false,
+                "query": {
+                    "measures": [
+                        [
+                            "count",
+                            "*"
+                        ]
+                    ],
+                    "groups": [
+                        "inUse"
+                    ]
+                },
+                "receiveFacetSource": {
+                    "mode": "all",
+                    "steps": []
+                },
+                "selectMode": "single",
+                "type": "aggregateflex",
+                "useGlobal": true,
+                "visualizationParameters": {
+                    "parameters": {
+                        "autoFitMode": "keepLabels",
+                        "showValues": true,
+                        "bins": {
+                            "breakpoints": {
+                                "high": 100,
+                                "low": 0
+                            },
+                            "bands": {
+                                "high": {
+                                    "color": "#008000",
+                                    "label": ""
+                                },
+                                "low": {
+                                    "color": "#B22222",
+                                    "label": ""
+                                },
+                                "medium": {
+                                    "color": "#ffa500",
+                                    "label": ""
+                                }
+                            }
+                        },
+                        "legend": {
+                            "descOrder": false,
+                            "showHeader": true,
+                            "show": true,
+                            "customSize": "auto",
+                            "position": "right-top",
+                            "inside": false
+                        },
+                        "axisMode": "multi",
+                        "tooltip": {
+                            "showBinLabel": true,
+                            "measures": "",
+                            "showNullValues": true,
+                            "showPercentage": true,
+                            "showDimensions": true,
+                            "showMeasures": true,
+                            "customizeTooltip": false,
+                            "dimensions": ""
+                        },
+                        "visualizationType": "hbar",
+                        "title": {
+                            "fontSize": 14,
+                            "subtitleFontSize": 11,
+                            "label": "",
+                            "align": "center",
+                            "subtitleLabel": ""
+                        },
+                        "binValues": false,
+                        "trellis": {
+                            "flipLabels": false,
+                            "showGridLines": true,
+                            "size": [
+                                100,
+                                100
+                            ],
+                            "enable": false,
+                            "type": "x",
+                            "chartsPerLine": 4
+                        },
+                        "columnMap": {
+                            "trellis": [],
+                            "dimensionAxis": [
+                                "inUse"
+                            ],
+                            "plots": [
+                                "count"
+                            ]
+                        },
+                        "showActionMenu": true,
+                        "measureAxis2": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "measureAxis1": {
+                            "sqrtScale": false,
+                            "showTitle": true,
+                            "showAxis": true,
+                            "title": "",
+                            "customDomain": {
+                                "showDomain": false
+                            }
+                        },
+                        "theme": "wave",
+                        "dimensionAxis": {
+                            "showTitle": true,
+                            "customSize": "auto",
+                            "showAxis": true,
+                            "title": "",
+                            "icons": {
+                                "useIcons": false,
+                                "iconProps": {
+                                    "fit": "cover",
+                                    "column": "",
+                                    "type": "round"
+                                }
+                            }
+                        },
+                        "applyConditionalFormatting": true
+                    },
+                    "type": "chart",
+                    "options": {}
+                }
+            }
+        },
+        "widgetStyle": {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#E6ECF2",
+            "borderEdges": [],
+            "borderRadius": 0,
+            "borderWidth": 1
+        },
+        "widgets": {
+            "filterpanel_2": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "fieldusage_csvDataset"
+                            },
+                            "field": "type"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "filterpanel_1": {
+                "parameters": {
+                    "filterItemOptions": {
+                        "propertyColor": "#54698D",
+                        "valueColor": "#16325C"
+                    },
+                    "filters": [
+                        {
+                            "dataset": {
+                                "name": "fieldusage_csvDataset"
+                            },
+                            "field": "datasetName"
+                        }
+                    ],
+                    "showAllFilters": false
+                },
+                "type": "filterpanel"
+            },
+            "chart_1": {
+                "parameters": {
+                    "centerText": "",
+                    "legend": {
+                        "descOrder": false,
+                        "showHeader": true,
+                        "show": true,
+                        "customSize": "auto",
+                        "position": "right-top",
+                        "inside": false
+                    },
+                    "showMeasureTitle": true,
+                    "tooltip": {
+                        "showBinLabel": true,
+                        "measures": "",
+                        "showNullValues": true,
+                        "showPercentage": true,
+                        "showDimensions": true,
+                        "showMeasures": true,
+                        "customizeTooltip": false,
+                        "dimensions": ""
+                    },
+                    "visualizationType": "pie",
+                    "title": {
+                        "fontSize": 14,
+                        "subtitleFontSize": 11,
+                        "label": "",
+                        "align": "center",
+                        "subtitleLabel": ""
+                    },
+                    "trellis": {
+                        "flipLabels": false,
+                        "showGridLines": true,
+                        "size": [
+                            100,
+                            100
+                        ],
+                        "enable": false,
+                        "type": "x",
+                        "chartsPerLine": 4
+                    },
+                    "inner": 60,
+                    "columnMap": {
+                        "trellis": [],
+                        "dimension": [
+                            "inUse"
+                        ],
+                        "plots": [
+                            "count"
+                        ]
+                    },
+                    "showActionMenu": true,
+                    "centerValueType": "number",
+                    "valueType": "compactNumber",
+                    "theme": "wave",
+                    "step": "inUse_1",
+                    "applyConditionalFormatting": true,
+                    "exploreLink": true
+                },
+                "type": "chart"
+            }
+        }
+    },
+    "datasets": [
+        {
+            "id": "0Fb3h0000005aojCAA",
+            "label": "fieldusage_csvDataset",
+            "name": "fieldusage_csvDataset",
+            "url": "/services/data/v50.0/wave/datasets/0Fb3h0000005aojCAA"
+        }
+    ]
+}
