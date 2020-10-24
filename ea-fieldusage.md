@@ -34,6 +34,12 @@ EXAMPLE
 ```
 
 ## Demo
+
+![dataflow fieldUsage Demo](ea/fieldUsage-2.gif)
+
+
+## Steps
+
 ### List the dataflows in the org
 ```
 $ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com 
