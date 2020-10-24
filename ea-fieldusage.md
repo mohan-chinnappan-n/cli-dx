@@ -13,7 +13,7 @@
 - [Output JSON](#outputjson)
 - [Load Field Usage CSV into EA](#load)
 - [Field Usage Dashboard](#db)
-
+- [Dataflows without field usage info](#nofinfo)
 <a name="demo"></a>
 ## Demo
 
@@ -212,6 +212,22 @@ Done.
 
 
 ![loaded-2](ea/fldusage-3.png)
+
+
+<a name='nofinfo'></a>
+
+## Dataflow with out field usage info
+```
+$ sfdx mohanc:ea:dataflow:fieldUsage -u mohan.chinnappan.n_ea2@gmail.com -d 02K3h000000MrxWEAS
+=== Looking at the dataflow 02K3h000000MrxWEAS ...
+=== Looking at the dataflow sfdcRegister Actions ...
+_________________________________________________
+=== Looking at the dataset regFruitYield ...
+Error: getting dataset for the currentVersion!
+No field usage can be obtained for this dataflow!
+
+```
+
 
 <a name='db'></a>
 ### Dashboard
