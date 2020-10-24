@@ -17,7 +17,7 @@
 <a name="demo"></a>
 ## Demo
 
-![dataflow fieldUsage Demo](ea/fieldUsage-2.gif)
+![dataflow fieldUsage Demo](ea/fieldUsage-4.gif)
 
 
 <a name="usage"></a>
@@ -242,7 +242,7 @@ No field usage can be obtained for this dataflow!
 
 <a name='db'></a>
 ### Dashboard
-![Dashboard](ea/fieldUsage-4.gif)
+![Dashboard](ea/fieldUsage-3.gif)
 
 - [Dashboard json](ea/dashboard.json)
 ```json
