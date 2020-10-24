@@ -97,7 +97,7 @@ Done.
 - [Field Usage in CSV](ea/02K3h000000Mr7JEAS.csv)
 
 <a name='load'></a>
-### Load CSV file into EA
+### Load Field Usage CSV file into EA
 ```
 $ cp ea/02K3h000000Mr7JEAS.csv /tmp/fieldusage.csv
 
