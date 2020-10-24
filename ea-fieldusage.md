@@ -89,8 +89,10 @@ _________________________________________________
 === Looking at Security Predicate of the dataset activity ...
 === Looking at WHERE USED details of the dataset activity ...
 === Looking at Dashboards using this dataset activity ...
+_________________________________________________
 Writing output files in 02K3h000000Mr7JEAS.json and 02K3h000000Mr7JEAS.csv 
 Done.
+
 ```
 
 <a name='outputcsv'></a>
