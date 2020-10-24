@@ -219,6 +219,7 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
     "url": "/services/data/v50.0/wave/dataflowjobs"
 }
 ```
+```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflowjobs/03C3h000002pSSeEAM -m GET -f ~/.headers/header_ea.json 
 ```
 ```json
@@ -240,6 +241,8 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/wave/dataflowjobs/03C3h000002pSSeEAM/nodes -m GET -f ~/.headers/header_ea.json 
+```
+
 ```json
 {
     "nodes": [
