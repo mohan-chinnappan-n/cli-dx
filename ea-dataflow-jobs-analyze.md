@@ -2,6 +2,10 @@
 ```
 $ sfdx mohanc:ea:dataflow:jobs:analyze -u mohan.chinnappan.n_ea2@gmail.com -j 03C3h000002pLrXEAU -d 02K3h000000Mr7JEAS
 ```
+## Dataflow Viz 
+![df viz](ea/03C3h000002pLrXEAU.svg)
+
+
 ```json
 {
     "createdDate": "2020-10-23T02:06:50.000Z",
