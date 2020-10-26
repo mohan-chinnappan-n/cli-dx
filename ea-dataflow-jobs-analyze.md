@@ -1,4 +1,35 @@
 # Dataflow job analyze
+
+## List dataflow jobs
+```
+$ sfdx mohanc:ea:dataflow:jobs:list -u mohan.chinnappan.n_ea2@gmail.com  
+Id,Label,Status,startDate,executedDate, duration(secs)
+03C3h000002pSSeEAM,fieldusage_csvDataset Upload flow - Overwrite,Success,2020-10-24T03:28:19.000Z,2020-10-24T03:28:20.000Z,23
+03C3h000002pLrNEAU,Default Salesforce Dataflow,Failure,2020-10-23T02:05:41.000Z,2020-10-23T02:05:41.000Z,4
+0303h0000027E82AAE,The_Motivator,Failure,2020-10-23T02:06:23.000Z,undefined,undefined
+03C3h000002pLrXEAU,The_Motivator,Success,2020-10-23T02:06:50.000Z,2020-10-23T02:06:51.000Z,72 <===============
+03C3h000002pLoREAU,UserRole (Replication),Success,2020-10-23T02:06:03.000Z,2020-10-23T02:06:06.000Z,46
+03C3h000002pLoSEAU,Event (Replication),Success,2020-10-23T02:06:03.000Z,2020-10-23T02:06:07.000Z,37
+03C3h000002pLoQEAU,Task (Replication),Success,2020-10-23T02:06:03.000Z,2020-10-23T02:06:04.000Z,35
+03C3h000002pL9VEAU,Default Salesforce Dataflow,Failure,2020-10-23T00:22:47.000Z,2020-10-23T00:22:47.000Z,3
+03C3h000002pL0UEAU,PricebookEntry (Replication),Success,2020-10-23T00:21:35.000Z,2020-10-23T00:22:13.000Z,71
+03C3h000002pKwIEAU,OpportunityLineItem (Replication),Success,2020-10-23T00:21:35.000Z,2020-10-23T00:22:12.000Z,71
+03C3h000002pL9LEAU,Opportunity (SFDC_LOCAL),Success,2020-10-23T00:21:35.000Z,2020-10-23T00:22:12.000Z,71
+03C3h000002pKzTEAU,Product2 (Replication),Success,2020-10-23T00:21:35.000Z,2020-10-23T00:21:39.000Z,37
+03C3h000002pKzREAU,Account (SFDC_LOCAL),Success,2020-10-23T00:21:34.000Z,2020-10-23T00:21:37.000Z,36
+03C3h000002pKzSEAU,User (SFDC_LOCAL),Success,2020-10-23T00:21:35.000Z,2020-10-23T00:21:38.000Z,36
+```
+## List dataflows
+$ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com  
+Id,Label
+02K3h000000Mu1oEAC,exportOppty2
+02K3h000000Mu0vEAC,exportOppty
+02K3h000000MtyuEAC,ExportCustomers
+02K3h000000MrxWEAS,fruitsdf
+02K3h000000Mr7JEAS,The_Motivator  <===============
+02K3h000000Mr7KEAS,Default Salesforce Dataflow
+```
+
 ```
 $ sfdx mohanc:ea:dataflow:jobs:analyze -u mohan.chinnappan.n_ea2@gmail.com -j 03C3h000002pLrXEAU -d 02K3h000000Mr7JEAS
 ```
