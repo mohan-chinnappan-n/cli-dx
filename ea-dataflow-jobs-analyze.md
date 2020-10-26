@@ -3,7 +3,7 @@
 $ sfdx mohanc:ea:dataflow:jobs:analyze -u mohan.chinnappan.n_ea2@gmail.com -j 03C3h000002pLrXEAU -d 02K3h000000Mr7JEAS
 ```
 ## Dataflow Viz 
-![df viz](ea/03C3h000002pLrXEAU.svg)
+![df viz](https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/ea/03C3h000002pLrXEAU.svg)
 
 
 ```json
