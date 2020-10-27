@@ -38,6 +38,8 @@ $ sfdx mohanc:ea:dataflow:jobs:analyze -u mohan.chinnappan.n_ea2@gmail.com -j 03
 ## Dataflow Viz in SVG
 ![df viz](https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/ea/03C3h000002pLrXEAU.svg)
 
+### Sample Register Node with field usage info
+![Sample reg node](ea/dfjob-1.png)
 ## Dataflow Viz in PDF
 [PDF](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/ea/03C3h000002pLrXEAU.pdf)
 
