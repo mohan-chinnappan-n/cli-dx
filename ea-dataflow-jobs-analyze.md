@@ -1,8 +1,49 @@
 # Dataflow job analyze
 
+- Requires 0.0.75 version of the plugin
+    - sfdx-mohanc-plugins@0.0.75
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
+## Topics
+- [Demo](#demo)
+- [Usage](#usage)
+- [Steps](#steps)
+
+<a name='demo'></a>
 ## Demo
 ![Demo of dfja](ea/dfa-1.gif)
 
+<a name='usage'></a>
+## Usage
+```
+$ sfdx mohanc:ea:dataflow:jobs:analyze -h
+Analyze the given dataflow job id and dataflow id
+
+USAGE
+  $ sfdx mohanc:ea:dataflow:jobs:analyze
+
+OPTIONS
+  -d, --dataflowid=dataflowid                     Dataflow Id to analyzed
+  -j, --jobid=jobid                               Dataflow job Id to analyzed
+
+  -u, --targetusername=targetusername             username or alias for the target org; overrides 
+                                                  default target org
+
+  --apiversion=apiversion                         override the api version used for api requests made 
+                                                  by this command
+
+  --json                                          format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              sfdx mohanc:ea:dataflow:jobs:analyze  -u <username> -j <dataflowJobId> -d <dataflowId>
+
+      
+```
+<a name='steps'></a>
 ## Steps
 ### List dataflow jobs
 ```
