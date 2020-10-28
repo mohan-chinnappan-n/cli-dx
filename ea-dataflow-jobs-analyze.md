@@ -1,6 +1,10 @@
 # Dataflow job analyze
 
-## List dataflow jobs
+## Demo
+![Demo of dfja](ea/dfa-1.gif)
+
+## Steps
+### List dataflow jobs
 ```
 $ sfdx mohanc:ea:dataflow:jobs:list -u mohan.chinnappan.n_ea2@gmail.com  
 Id,Label,Status,startDate,executedDate, duration(secs)
@@ -19,7 +23,7 @@ Id,Label,Status,startDate,executedDate, duration(secs)
 03C3h000002pKzREAU,Account (SFDC_LOCAL),Success,2020-10-23T00:21:34.000Z,2020-10-23T00:21:37.000Z,36
 03C3h000002pKzSEAU,User (SFDC_LOCAL),Success,2020-10-23T00:21:35.000Z,2020-10-23T00:21:38.000Z,36
 ```
-## List dataflows
+### List dataflows
 ```
 $ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com  
 Id,Label
@@ -31,17 +35,21 @@ Id,Label
 02K3h000000Mr7KEAS,Default Salesforce Dataflow
 ```
 
-## Start the dataflow job analyze
+### Start the dataflow job analyze
 ```
 $ sfdx mohanc:ea:dataflow:jobs:analyze -u mohan.chinnappan.n_ea2@gmail.com -j 03C3h000002pLrXEAU -d 02K3h000000Mr7JEAS
 ```
-## Dataflow Viz in SVG
+
+### Open the Visualization SVG in browser
+```
+$ open  03C3h000002pLrXEAU.svg 
+```
+
+## Dataflow Visualization in SVG
 ![df viz](https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/ea/03C3h000002pLrXEAU.svg)
 
 ### Sample Register Node with field usage info
 ![Sample reg node](ea/dfjob-1.png)
-## Dataflow Viz in PDF
-[PDF](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/ea/03C3h000002pLrXEAU.pdf)
 
 
 ```json
