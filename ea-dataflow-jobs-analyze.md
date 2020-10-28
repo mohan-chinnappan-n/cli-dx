@@ -49,7 +49,7 @@ $ open  03C3h000002pLrXEAU.svg
 ![df viz](https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/ea/03C3h000002pLrXEAU.svg)
 
 ### Sample Register Node with field usage info
-![Sample reg node](ea/dfjob-1.png)
+![Sample reg node](ea/dfjob-2.png)
 
 
 ```json
