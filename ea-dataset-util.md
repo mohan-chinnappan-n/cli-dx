@@ -7,6 +7,27 @@
 
 ## List Datasets
 ```
+# Usage
+$ sfdx mohanc:ea:dataset:list -h
+Lists Datasets
+
+USAGE
+  $ sfdx mohanc:ea:dataset:list
+
+OPTIONS
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              List Datasets
+              sfdx mohanc:ea:dataset:list  -u <username>
+
+```
+
+```
 $ sfdx mohanc:ea:dataset:list -u  mohan.chinnappan.n_ea2@gmail.com 
 Id,Name,Label
 0Fb3h0000008spECAQ,mycustomers,mycustomers
@@ -33,6 +54,32 @@ Id,Name,Label
 0Fb3h0000008sotCAA,myfruits,myfruits
 ```
 ## Get the fields in the given dataset
+```
+$ sfdx mohanc:ea:dataset:fieldUsage -h
+Get Field Usage Info for the given dataset
+
+USAGE
+  $ sfdx mohanc:ea:dataset:fieldUsage
+
+OPTIONS
+  -d, --datasetname=datasetname                   Datasfset name to analyzed
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              Get Field Usage data for the given dataflow
+              sfdx mohanc:ea:dataset:fieldUsage  -u <username> -d <datasetname> 
+
+              Note: You can use this command to see the list of datasets in the org:
+              sfdx mohanc:ea:dataset:list  -u <username> 
+
+
+
+```
+
 ```
 $ sfdx mohanc:ea:dataset:fieldUsage -u  mohan.chinnappan.n_ea2@gmail.com -d DTC_Opportunity_SAMPLE
 === Looking at the dataset: DTC_Opportunity_SAMPLE ...
