@@ -92,6 +92,11 @@ $ open  03C3h000002pLrXEAU.svg
 ### Sample Register Node with field usage info
 ![Sample reg node](ea/dfjob-2.png)
 
+### Sample ComputeExpression Node 
+![Sample reg node](ea/df-ce-node-1.png)
+
+
+
 
 ```json
 {

@@ -1,0 +1,10 @@
+'sfdcDigest',  
+'sfdcRegister',
+'augment', 
+'computeExpression', 
+'append', 
+'filter', 
+'computeRelative', 
+'flatten',
+'edgemart',
+'sliceDataset'
