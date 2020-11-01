@@ -62,7 +62,7 @@ USAGE
   $ sfdx mohanc:ea:dataset:fieldUsage
 
 OPTIONS
-  -d, --datasetname=datasetname                   Datasfset name to analyzed
+  -d, --datasetname=datasetname                   Dataset name to analyzed
   -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
   --apiversion=apiversion                         override the api version used for api requests made by this command
   --json                                          format output as json
