@@ -108,3 +108,5 @@ $ head 02K3h000000Mr7JEAS.fs.csv
 "dimension","Role.DeveloperName","The_Motivator","user","augment.Join_ActivityOwner"
 
 ```
+### Sample fieldSource output CSV file
+[02K3h000000Mr7JEAS.fs.csv](ea/02K3h000000Mr7JEAS.fs.csv)
