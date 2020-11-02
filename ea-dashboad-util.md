@@ -39,6 +39,8 @@ EXAMPLE
               sfdx mohanc:ea:dashboard:list  -u <username>
 
 ```
+
+```
 $ sfdx mohanc:ea:dashboard:list  -u mohan.chinnappan.n_ea2@gmail.com Id,Name,Label
 0FK3h0000001yCcGAI,The_Motivator_1,The Motivator 1 <------------
 0FK3h0000001yCdGAI,The_Motivator_2,The Motivator 2
