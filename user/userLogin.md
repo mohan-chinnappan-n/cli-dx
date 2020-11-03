@@ -1,7 +1,7 @@
 # Using UserLogin sObject
 
 ## ERD
-<iframe src="https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=UserLogin" frameborder="0"></iframe>
+![UserLogin ERD](img//userlogin-1.png)
 
 ## How to Freeze or unfreeze multiple Users at once:
 - [Knowledge Article](https://help.salesforce.com/articleView?id=000337702&type=1&mode=1)
