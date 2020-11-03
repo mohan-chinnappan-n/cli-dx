@@ -18,7 +18,7 @@ FROM UserLogin
 ```
 $ sfdx mohanc:data:query -q ~/.ea/userLogin.soql -u  mohan.chinnappan.n_ea2@gmail.com -f JSON
 ```
-```json
+```
 [
   {
     attributes: {
