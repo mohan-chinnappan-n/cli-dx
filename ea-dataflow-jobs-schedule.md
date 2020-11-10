@@ -1,5 +1,7 @@
 # Get the dataflow job schedule info
 
+- Plugin version - 0.0.93
+
 ## Get the list of dataflows
 ```
 $ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com
