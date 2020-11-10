@@ -1,8 +1,8 @@
 # Data util commands
 
 ## Topics
-[Split](#split)
-[Head](#head)
+- [Split](#split)
+- [Head](#head)
 
 <a name='split'></a>
 ## Split the given data file into multiple files based on given field (dimension)
