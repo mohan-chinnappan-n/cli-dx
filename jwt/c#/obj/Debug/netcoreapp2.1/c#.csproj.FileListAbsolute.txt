@@ -1,0 +1,11 @@
+/Users/mchinnappan/bulkapi/dx/jwt/c#/bin/Debug/netcoreapp2.1/c#.deps.json
+/Users/mchinnappan/bulkapi/dx/jwt/c#/bin/Debug/netcoreapp2.1/c#.runtimeconfig.json
+/Users/mchinnappan/bulkapi/dx/jwt/c#/bin/Debug/netcoreapp2.1/c#.runtimeconfig.dev.json
+/Users/mchinnappan/bulkapi/dx/jwt/c#/bin/Debug/netcoreapp2.1/c#.dll
+/Users/mchinnappan/bulkapi/dx/jwt/c#/bin/Debug/netcoreapp2.1/c#.pdb
+/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/Debug/netcoreapp2.1/c#.csprojAssemblyReference.cache
+/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/Debug/netcoreapp2.1/c#.csproj.CoreCompileInputs.cache
+/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/Debug/netcoreapp2.1/c#.AssemblyInfoInputs.cache
+/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/Debug/netcoreapp2.1/c#.AssemblyInfo.cs
+/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/Debug/netcoreapp2.1/c#.dll
+/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/Debug/netcoreapp2.1/c#.pdb

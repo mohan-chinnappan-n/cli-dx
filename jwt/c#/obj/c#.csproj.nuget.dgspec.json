@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mchinnappan/bulkapi/dx/jwt/c#/c#.csproj": {}
+  },
+  "projects": {
+    "/Users/mchinnappan/bulkapi/dx/jwt/c#/c#.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mchinnappan/bulkapi/dx/jwt/c#/c#.csproj",
+        "projectName": "c#",
+        "projectPath": "/Users/mchinnappan/bulkapi/dx/jwt/c#/c#.csproj",
+        "packagesPath": "/Users/mchinnappan/.nuget/packages/",
+        "outputPath": "/Users/mchinnappan/bulkapi/dx/jwt/c#/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mchinnappan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+type,name,dataflowName,datasetName,dashboardName,lensName,InSecurityPredicate,usageCount,inUse
+measure,Quantity,Playground,Product_Opportunities,,,false,0,false
+measure,Discount,Playground,NewRetail,,,false,0,false
+measure,DailyQuantity,Playground,NewRetail,,,false,0,false
+measure,DateNew_day_epoch,Playground,NewRetail,,,false,0,false
+measure,DateNew_sec_epoch,Playground,NewRetail,,,false,0,false
+measure,Date_day_epoch,Playground,NewRetail,,,false,0,false
+measure,Date_sec_epoch,Playground,NewRetail,,,false,0,false
+measure,Amount,Playground,Oppty,Map_Toggle_Complete,,false,3,true
+measure,CloseDate_day_epoch,Playground,Oppty,,,false,0,false
+measure,CloseDate_sec_epoch,Playground,Oppty,,,false,0,false
+measure,CreatedDate_day_epoch,Playground,Oppty,,,false,0,false
+measure,CreatedDate_sec_epoch,Playground,Oppty,,,false,0,false
