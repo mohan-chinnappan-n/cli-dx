@@ -1,6 +1,6 @@
 # Data util commands
 
-# Split the given data file into multiple files based on given field (dimension)
+## Split the given data file into multiple files based on given field (dimension)
 
 ## Usage (requires plugin version 0.0.91)
 ```
