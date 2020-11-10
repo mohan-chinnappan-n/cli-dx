@@ -1,5 +1,10 @@
 # Data util commands
 
+## Topics
+[Split](#split)
+[Head](#head)
+
+<a name='split'></a>
 ## Split the given data file into multiple files based on given field (dimension)
 
 ## Usage (requires plugin version 0.0.91)
@@ -146,5 +151,42 @@ dimension,DateNew_Month,Playground,NewRetail,,,false,0,false
 dimension,CreatedDate_Second,Playground,Oppty,,,false,0,false
 dimension,Id,Playground,Oppty,Map_Toggle_Complete,,false,3,true
 ...
+```
+
+<a name='head'></a>
+## How get the few rows of the  given CSV file
+### Usage
+```
+$ sfdx mohanc:data:util:head  -h  
+Get first few rows of the given csv file
+
+USAGE
+  $ sfdx mohanc:data:util:head
+
+OPTIONS
+  -d, --dlim=dlim                                 CSV field delimiter: default: ','
+  -i, --inputfilename=inputfilename               Input Data file in CSV format
+  -n, --ncount=ncount                             Number of lines/records to get
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Get first few rows of the given csv file **
+       sfdx mohanc:data:head -i <Input CSV file> -n <line count> -d <CSV field delimiter: default is ','>
+    
+```
+
+### Demo
+```
+$ sfdx mohanc:data:util:head  -i ~/.ea/pgfu.csv -n 5 -d ','  
+```
+```
+"type","name","dataflowName","datasetName","dashboardName","lensName","InSecurityPredicate","usageCount","inUse"
+"dimension","OpportunityId.Name","Playground","Product_Opportunities","","","false","0","false"
+"dimension","OpportunityId","Playground","Product_Opportunities","","","false","0","false"
+"dimension","Id","Playground","Product_Opportunities","Map_Toggle_Complete","","false","3","true"
+"dimension","Name","Playground","Product_Opportunities","Map_Toggle_Complete","","false","3","true"
+"dimension","Item","Playground","NewRetail","","","false","0","false"
 ```
 
