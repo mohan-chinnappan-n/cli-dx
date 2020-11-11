@@ -3,6 +3,7 @@
 ## Topics
 - [Split](#split)
 - [Head](#head)
+- [Sample Data Generator](#fake)
 
 <a name='split'></a>
 ## Split the given data file into multiple files based on given field (dimension)
@@ -188,5 +189,73 @@ $ sfdx mohanc:data:util:head  -i ~/.ea/pgfu.csv -n 5 -d ','
 "dimension","Id","Playground","Product_Opportunities","Map_Toggle_Complete","","false","3","true"
 "dimension","Name","Playground","Product_Opportunities","Map_Toggle_Complete","","false","3","true"
 "dimension","Item","Playground","NewRetail","","","false","0","false"
+```
+
+<a name='fake'></a>
+
+## Usage
+```
+ sfdx mohanc:data:util:gen:fake -h
+Fake Data Generator
+
+USAGE
+  $ sfdx mohanc:data:util:gen:fake
+
+OPTIONS
+  -d, --dataspec=dataspec                         Data Spec in JSON
+  -n, --count=count                               Number of records to create
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+       ** Fake Data Generator **
+       sfdx mohanc:data:gen:fake -d <Data Spec JSON> -n <Count of records>
+```
+
+## Demo
+
+```
+$ cat ~/.ea/DataSpec.json
+
+```
+```json
+
+{
+    "phone": [
+        "phoneNumber"
+    ],
+    "name": [
+        "firstName"
+    ],
+    "address": [
+        "city"
+    ],
+    "company": [
+        "companyName"
+    ],
+    "date": [
+        "recent"
+    ],
+    "finance": [
+        "account"
+    ]
+}
+```
+- [ Data Spec fields spec](https://github.com/marak/Faker.js/)
+
+```
+$ sfdx mohanc:data:util:gen:fake -d ~/.ea/dataSpec.json -n 10
+"phone","name","address","company","date","finance"
+"363-747-7528","Hudson","Mrazside","Wehner - Morissette","2020-11-10T01:27:41.598Z","85514824"
+"363-622-5734 x868","Sarina","DuBuqueberg","Altenwerth Group","2020-11-10T13:27:48.516Z","59600448"
+"855-722-2675","Krystina","West Adrielland","Schimmel Group","2020-11-10T02:01:26.272Z","09700836"
+"1-210-211-4645","Tillman","West Pinkshire","Nikolaus, Hegmann and Reynolds","2020-11-10T23:23:38.001Z","60147175"
+"749-863-5189","Reginald","New Renee","Veum - Gibson","2020-11-10T05:48:13.444Z","16340821"
+"470.306.7772","Violette","South Royal","O'Hara, Kertzmann and Gutkowski","2020-11-10T14:39:35.520Z","78063817"
+"610-358-0615 x31628","Elbert","Dickinsonside","Borer Inc","2020-11-10T02:54:02.152Z","10687657"
+"520.916.4000","Jazmyne","Katherineland","Kozey, Botsford and Prohaska","2020-11-10T17:11:38.151Z","86263449"
+"1-938-746-6431 x104","Nannie","East Rubieshire","Marquardt and Sons","2020-11-10T06:14:18.772Z","15917440"
+"(367) 453-7256","Shawna","Kirstenmouth","Koepp - Reynolds","2020-11-10T16:50:41.545Z","25920281"
 ```
 
