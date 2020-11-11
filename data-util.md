@@ -4,6 +4,7 @@
 - [Split](#split)
 - [Head](#head)
 - [Sample Data Generator](#fake)
+- [Load Sample Data Generated into EA](#eaload)
 
 <a name='split'></a>
 ## Split the given data file into multiple files based on given field (dimension)
@@ -251,3 +252,88 @@ phone,name,address,company,finance
 951.448.7119,Linda,New Nellieborough,Spencer, Lang and Hagenes,79280748
 ```
 
+<a name="eaload"></a>
+## Loading into EA
+```
+#  Generate 10K records
+$ sfdx mohanc:data:util:gen:fake -d ~/.ea/dataSpec.json -n 10000 > ~/.ea/sampleData.csv
+```
+```
+$ sfdx mohanc:ea:dataset:loadLarge  -u mohan.chinnappan.n_ea2@gmail.com -d ~/.ea/sampleData.csv -c 2 -a SampleData
+=== Finding the data types based on the sample data ...
+
+[ 'phone', 'name', 'address', 'company', 'finance' ]
+[
+  '(783) 293-1737 x6657',
+  'Sage',
+  'North Rheaberg',
+  'Schimmel and Sons',
+  '48336191'
+]
+[
+  {
+    fullyQualifiedName: 'SampleData1.phone',
+    label: 'phone',
+    name: 'phone',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'SampleData1.name',
+    label: 'name',
+    name: 'name',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'SampleData1.address',
+    label: 'address',
+    name: 'address',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'SampleData1.company',
+    label: 'company',
+    name: 'company',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'SampleData1.finance',
+    label: 'finance',
+    name: 'finance',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 0
+  }
+]
+=== Preparing for the loading chunkSize: 2097152 ...
+{ id: '06V3h000000DgppEAC', success: true, errors: [] }
+=== Loading part 1 of size: 1013468 ...
+=== Loading Complete.
+Going to process...
+
+Done.
+open https://mohansun-ea-02-dev-ed.my.salesforce.com/analytics/dataManager in a web browser to view this job
+```
+
+### EA Dataflow Monitoring 
+![Loaded 1](util-img/ea-util-1.png)
+![Loaded 2](util-img/ea-util-2.png)
+![Loaded 3](util-img/ea-util-3.png)
