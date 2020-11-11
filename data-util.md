@@ -334,6 +334,6 @@ open https://mohansun-ea-02-dev-ed.my.salesforce.com/analytics/dataManager in a 
 ```
 
 ### EA Dataflow Monitoring 
-![Loaded 1](util-img/ea-util-1.png)
-![Loaded 2](util-img/ea-util-2.png)
-![Loaded 3](util-img/ea-util-3.png)
+![Loaded 1](util-img/ea-load-1.png)
+![Loaded 2](util-img/ea-load-2.png)
+![Loaded 3](util-img/ea-load-3.png)
