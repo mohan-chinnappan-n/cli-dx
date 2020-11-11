@@ -234,9 +234,6 @@ $ cat ~/.ea/DataSpec.json
     "company": [
         "companyName"
     ],
-    "date": [
-        "recent"
-    ],
     "finance": [
         "account"
     ]
@@ -245,17 +242,12 @@ $ cat ~/.ea/DataSpec.json
 - [ Data Spec fields spec](https://github.com/marak/Faker.js/)
 
 ```
-$ sfdx mohanc:data:util:gen:fake -d ~/.ea/dataSpec.json -n 10
-"phone","name","address","company","date","finance"
-"363-747-7528","Hudson","Mrazside","Wehner - Morissette","2020-11-10T01:27:41.598Z","85514824"
-"363-622-5734 x868","Sarina","DuBuqueberg","Altenwerth Group","2020-11-10T13:27:48.516Z","59600448"
-"855-722-2675","Krystina","West Adrielland","Schimmel Group","2020-11-10T02:01:26.272Z","09700836"
-"1-210-211-4645","Tillman","West Pinkshire","Nikolaus, Hegmann and Reynolds","2020-11-10T23:23:38.001Z","60147175"
-"749-863-5189","Reginald","New Renee","Veum - Gibson","2020-11-10T05:48:13.444Z","16340821"
-"470.306.7772","Violette","South Royal","O'Hara, Kertzmann and Gutkowski","2020-11-10T14:39:35.520Z","78063817"
-"610-358-0615 x31628","Elbert","Dickinsonside","Borer Inc","2020-11-10T02:54:02.152Z","10687657"
-"520.916.4000","Jazmyne","Katherineland","Kozey, Botsford and Prohaska","2020-11-10T17:11:38.151Z","86263449"
-"1-938-746-6431 x104","Nannie","East Rubieshire","Marquardt and Sons","2020-11-10T06:14:18.772Z","15917440"
-"(367) 453-7256","Shawna","Kirstenmouth","Koepp - Reynolds","2020-11-10T16:50:41.545Z","25920281"
+$  sfdx mohanc:data:util:gen:fake -d ~/.ea/dataSpec.json -n 5
+phone,name,address,company,finance
+411-853-5139 x18753,Weston,Bennettmouth,Jakubowski Inc,81159937
+(319) 814-7304 x0512,Marilie,Port Elinorstad,Rodriguez and Sons,76187083
+887.495.8534 x648,Genevieve,Port Trinityborough,Adams Inc,48837685
+1-656-306-5780 x8402,Ellis,Hesselview,Greenfelder Inc,59406342
+951.448.7119,Linda,New Nellieborough,Spencer, Lang and Hagenes,79280748
 ```
 
