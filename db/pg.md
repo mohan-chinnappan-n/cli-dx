@@ -28,7 +28,7 @@ rum1# \d customer
 ```
 
 ## Create data 
-- [Data generator](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/data-util.md#eaload)
+- [Use Data generator](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/data-util.md#eaload)
 
 ## Load data into customer table 
  COPY customer FROM '/tmp/sampleData.csv' DELIMITER ',' CSV HEADER;
