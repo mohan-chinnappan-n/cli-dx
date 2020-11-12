@@ -14,6 +14,8 @@ rum1=#CREATE TABLE customer (
 );
 
 ```
+
+```
 rum1# \d customer 
               Table "public.customer"
  Column  |  Type   | Collation | Nullable | Default 
