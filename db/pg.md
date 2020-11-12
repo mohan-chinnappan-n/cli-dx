@@ -97,8 +97,6 @@ SELECT
 ```
 - Run query
 ```
-
-```
 ```
 $ sfdx mohanc:data:db:pg:query -q ~/.sql/customer.sql -c ~/.sql/pg.json -f csv
 ```
