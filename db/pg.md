@@ -31,9 +31,13 @@ rum1# \d customer
 - [Use Data generator](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/data-util.md#eaload)
 
 ## Load data into customer table 
+```
  COPY customer FROM '/tmp/sampleData.csv' DELIMITER ',' CSV HEADER;
  COPY 10000
 
+```
+
+```
 rum1=# SELECT COUNT(*) FROM customer ;
  count 
 -------
