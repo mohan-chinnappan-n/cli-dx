@@ -96,9 +96,11 @@ SELECT
   LIMIT 10 
 ```
 - Run query
-```
+
 ```
 $ sfdx mohanc:data:db:pg:query -q ~/.sql/customer.sql -c ~/.sql/pg.json -f csv
+```
+
 ```
 phone,name,address,company,finance
 (783) 293-1737 x6657,Sage,North Rheaberg,Schimmel and Sons,48336191
