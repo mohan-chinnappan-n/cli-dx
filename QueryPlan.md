@@ -131,10 +131,12 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 - To determine if an index should be used to drive a query, the Force.com query optimizer checks the **number of records targeted by the filter** against **selectivity thresholds**
 - 
 ## Cheat sheets
+
 - [Query & Search Optimization Cheat Sheet](qp/salesforce_query_search_optimization_developer_cheatsheet.pdf)
 - [Query Index Thresholds Spreadsheet](qp/std-threshold.csv)
 - ![QP TH Sheet](qp//qp-th-sheet-1.png)
 - ![QP Index threshold](qp/qp-index-thresholds-1.png)
+
 ## References
 - [Query Plan FAQ](https://help.salesforce.com/articleView?id=000334796&type=1&mode=1)
 - [Make SOQL query selective](https://help.salesforce.com/articleView?id=000325257&type=1&mode=1)
