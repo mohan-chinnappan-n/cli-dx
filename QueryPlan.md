@@ -132,6 +132,7 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 - 
 ## Cheat sheets
 - [Query & Search Optimization Cheat Sheet](qp/salesforce_query_search_optimization_developer_cheatsheet.pdf)
+- ![QP TH Sheet](qp//qp-th-sheet-1.png)
 - ![QP Index threshold](qp/qp-index-thresholds-1.png)
 - [Query Index Thresholds Spreadsheet](qp/std-threshold.csv)
 ## References
