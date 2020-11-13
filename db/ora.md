@@ -21,9 +21,6 @@ SQL> DESCRIBE customer
 
 ```
 
-
-```
-
 ## sample data 
 ```
 name,amount
@@ -51,6 +48,8 @@ amount
 ```
 ```
 $ ./sqlldr un/pwd@//localhost:1521/xe control=~/.ora/customer_load.ctl log=customer.log
+```
+```
 SQL*Loader: Release 19.0.0.0.0 - Production on Thu Nov 12 19:24:59 2020
 Version 19.8.0.0.0
 
