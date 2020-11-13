@@ -102,5 +102,38 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
     "sourceQuery": "SELECT Id \n FROM Account \n LIMIT 10"
 }
 ```
-### Query Plan Results
+
+## Fields having indexes
+- Standard fields having index
+    - Primary Key
+        - Id
+        - Name
+        - OwnerId
+    - Foreign Key
+        - CreatedById
+        - LastModifiedById
+        - lookup
+        - master-detail relationship
+    - Audit fields
+        - CreatedDate
+        - SystemModstamp
+
+- Custom fields
+    - If they are marked as Unique or External Id
+
+## Filter
+- If the filter doesn't have an index, 
+    - it won't be considered for optimization.
+- If the filter has an index, 
+    - determine how many records it would return:
+
+## Query Optimizer
+- To determine if an index should be used to drive a query, the Force.com query optimizer checks the **number of records targeted by the filter** against **selectivity thresholds**
+- 
+## Cheat sheets
+- [Query & Search Optimization Cheat Sheet](qp/salesforce_query_search_optimization_developer_cheatsheet.pdf)
+
+## References
 - [Query Plan FAQ](https://help.salesforce.com/articleView?id=000334796&type=1&mode=1)
+- [Make SOQL query selective](https://help.salesforce.com/articleView?id=000325257&type=1&mode=1)
+
