@@ -205,6 +205,11 @@ SELECT Id, NumberOfEmployees, CleanStatus
 ## Query Optimizer
 - To determine if an index should be used to drive a query, the Force.com query optimizer checks the **number of records targeted by the filter** against **selectivity thresholds**
 
+## FAQ
+![faq1](qp/qp-faq.png)
+![faq2](qp/qp-faq-2.png)
+
+
 ## Cheat sheets
 
 - [Query & Search Optimization Cheat Sheet](qp/salesforce_query_search_optimization_developer_cheatsheet.pdf)
