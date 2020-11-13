@@ -118,7 +118,7 @@ SELECT * FROM customer
 sfdx mohanc:data:db:ora:query -q ~/.sql/customerall.sql -c ~/.sql/ora.json -f json
 ```
 
-```json
+```
 [
   { NAME: 'john', AMOUNT: 100.2 },
   { NAME: 'ken', AMOUNT: 20.3 },
