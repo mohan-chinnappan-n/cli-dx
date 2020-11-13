@@ -101,6 +101,7 @@ $ sfdx mohanc:data:queryPlan -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.co
     "sourceQuery": "SELECT Id \n FROM Account \n LIMIT 10"
 }
 ```
+ - ![qp strategies](qp/qp-strat-1.png)
 
 ## Example - 2 - Filtering on a Non-indexed field
 ```
