@@ -52,7 +52,7 @@ $ ./sqlldr un/pwd@//localhost:1521/xe control=~/.ora/customer_load.ctl log=custo
 ```
 
 ```
-SQL*Loader: Release 19.0.0.0.0 - Production on Thu Nov 12 19:24:59 2020
+SQLLoader: Release 19.0.0.0.0 - Production on Thu Nov 12 19:24:59 2020
 Version 19.8.0.0.0
 
 Copyright (c) 1982, 2020, Oracle and/or its affiliates.  All rights reserved.
@@ -159,5 +159,17 @@ sfdx mohanc:data:db:ora:query -q ~/.sql/customerall.sql -c ~/.sql/ora.json -f js
     }
 ]
 ```
+- CSV output
+```
+$ sfdx mohanc:data:db:ora:query -q ~/.sql/customerall.sql -c ~/.sql/ora.json -f csv
+```
 
+```
+"NAME","AMOUNT"
+"john","100.2"
+"ken","20.3"
+"ritchie","33.43"
+"don","77"
+"james","80.9"
+```
 
