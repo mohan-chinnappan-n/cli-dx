@@ -37,39 +37,70 @@ SELECT Id
  LIMIT 10
 
 ```
+### Query Results
+```
+$ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
+```
+```
+"attributes","Id"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwFAAR""}","0013h00000FffwFAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwGAAR""}","0013h00000FffwGAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwHAAR""}","0013h00000FffwHAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwIAAR""}","0013h00000FffwIAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwJAAR""}","0013h00000FffwJAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwKAAR""}","0013h00000FffwKAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwLAAR""}","0013h00000FffwLAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwMAAR""}","0013h00000FffwMAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwNAAR""}","0013h00000FffwNAAR"
+"{""type"":""Account"",""url"":""/services/data/v50.0/sobjects/Account/0013h00000FffwOAAR""}","0013h00000FffwOAAR"
 
+```
 ### Query Plan
 ```
   $ sfdx mohanc:data:queryPlan -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 
 ```
 
+```json
+{
+    "plans": [
+        {
+            "cardinality": 10,
+            "fields": [],
+            "leadingOperationType": "Other",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Account"
+                }
+            ],
+            "relativeCost": 0.03333333333333333,
+            "sobjectCardinality": 1001,
+            "sobjectType": "Account"
+        },
+        {
+            "cardinality": 501,
+            "fields": [],
+            "leadingOperationType": "TableScan",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Account"
+                }
+            ],
+            "relativeCost": 1.7521666666666669,
+            "sobjectCardinality": 1001,
+            "sobjectType": "Account"
+        }
+    ],
+    "sourceQuery": "SELECT Id \n FROM Account \n LIMIT 10"
+}
+```
 ### Query Plan Results
 - [Query Plan FAQ](https://help.salesforce.com/articleView?id=000334796&type=1&mode=1)
-```
-{
-  plans: [
-    {
-      cardinality: 10,
-      fields: [],
-      leadingOperationType: 'Other',
-      notes: [Array],
-      relativeCost: 0.03333333333333333,
-      sobjectCardinality: 1002,
-      sobjectType: 'Account'
-    },
-    {
-      cardinality: 501,
-      fields: [],
-      leadingOperationType: 'TableScan',
-      notes: [Array],
-      relativeCost: 1.7521666666666669,
-      sobjectCardinality: 1002,
-      sobjectType: 'Account'
-    }
-  ],
-  sourceQuery: 'SELECT Id \n FROM Account \n LIMIT 10'
-}
-
-
-```
