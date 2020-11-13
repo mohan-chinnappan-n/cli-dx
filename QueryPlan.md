@@ -167,15 +167,140 @@ $ sfdx mohanc:data:queryPlan -q /tmp/qp3.soql  -u mohan.chinnappan.n_ea2@gmail.c
     "sourceQuery": "SELECT Id, NumberOfEmployees, CleanStatus\n FROM Account \n WHERE Name != NULL"
 }
 ```
+
+### isDeleted
+```
+$ sfdx mohanc:data:queryPlan -q ~/.qp/oppty1.soql  -u mohan.chinnappan.n_ea2@gmail.com
+{
+    "plans": [
+        {
+            "cardinality": 53,
+            "fields": [],
+            "leadingOperationType": "TableScan",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                },
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "StageName"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                }
+            ],
+            "relativeCost": 0.8237089201877934,
+            "sobjectCardinality": 706,
+            "sobjectType": "Opportunity"
+        }
+    ],
+    "sourceQuery": "SELECT name FROM Opportunity\n  WHERE StageName = 'Closed Won'"
+}
+```
+
+```
+$ sfdx mohanc:data:queryPlan -q ~/.qp/oppty1.soql  -u mohan.chinnappan.n_ea2@gmail.com
+{
+    "plans": [
+        {
+            "cardinality": 40,
+            "fields": [],
+            "leadingOperationType": "TableScan",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                },
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "StageName"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                },
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                }
+            ],
+            "relativeCost": 0.784037558685446,
+            "sobjectCardinality": 706,
+            "sobjectType": "Opportunity"
+        }
+    ],
+    "sourceQuery": "SELECT name FROM Opportunity\n  WHERE StageName = 'Closed Won' AND\n     isDeleted = false"
+}
+```
+
+```
+$ sfdx mohanc:data:queryPlan -q ~/.qp/oppty2.soql  -u mohan.chinnappan.n_ea2@gmail.com
+{
+    "plans": [
+        {
+            "cardinality": 363,
+            "fields": [],
+            "leadingOperationType": "TableScan",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                },
+                {
+                    "description": "Not considering filter for optimization because the operator is not optimizable and the filter is not owner-optimizable",
+                    "fields": [
+                        "StageName"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                },
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Opportunity"
+                }
+            ],
+            "relativeCost": 1.7697183098591551,
+            "sobjectCardinality": 706,
+            "sobjectType": "Opportunity"
+        }
+    ],
+    "sourceQuery": "SELECT name FROM Opportunity\n  WHERE StageName != 'Closed Won' AND\n     isDeleted = false"
+}
+```
+
 ### TIPS
 ```
-$ /tmp/qp3.soql.tips.txt
+$ cat /tmp/qp3.soql.tips.txt
 
 SELECT Id, NumberOfEmployees, CleanStatus
  FROM Account 
  WHERE Name != NULL
-,Has != in WHERE clause filter, Index will not be used to drive the query
+/qp-strat-1.png,Has != in WHERE clause filter, Index will not be used to drive the query
 ,Has NULL in WHERE clause filter, Index will not be used to drive the query
+```
+
+```
+$ cat ~/.qp/oppty2.soql.tips.txt
+
+SELECT name FROM Opportunity
+  WHERE StageName != 'Closed Won' AND
+     isDeleted = false
+
+,Has != in WHERE clause filter, Index will not be used to drive the query
 ```
 ![tip1](qp/qp-r-1.png)
 ![tip2](qp/qp-r-2.png)
@@ -188,7 +313,7 @@ SELECT Id, NumberOfEmployees, CleanStatus
 
 
 
-
+![query optimizer](img/qop-1.png)
 
 
 
@@ -224,6 +349,9 @@ SELECT Id, NumberOfEmployees, CleanStatus
 ## FAQs
 ![faq1](qp/qp-faq.png)
 ![faq2](qp/qp-faq-2.png)
+
+## Index Skew
+![index skew](qp/index-skew.png)
 
 
 ## Cheat sheets
