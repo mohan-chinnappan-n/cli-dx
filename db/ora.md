@@ -26,17 +26,31 @@ SQL> DESCRIBE customer
 
 ## sample data 
 ```
-
 name,amount
 john,100.20
 ken,20.30
 ritchie,33.43
 don,77,29.30
 james,80.90
+```
 
 ## Load data into customer table  using sqlLoader
 ```
-$ ./sqlldr un/pwd@//localhost:1521/xe control=~/.ora/cusomter_load.ctl log=customer.log
+$ cat ~/.ora/customer_load.ctl
+
+
+LOAD DATA
+INFILE '/tmp/customers.csv'
+INSERT INTO TABLE customer
+FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+TRAILING NULLCOLS
+(
+name,
+amount
+)
+```
+```
+$ ./sqlldr un/pwd@//localhost:1521/xe control=~/.ora/customer_load.ctl log=customer.log
 SQL*Loader: Release 19.0.0.0.0 - Production on Thu Nov 12 19:24:59 2020
 Version 19.8.0.0.0
 
