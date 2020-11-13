@@ -103,6 +103,7 @@ $ sfdx mohanc:data:queryPlan -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.co
 ```
  - ![qp strategies](qp/qp-strat-1.png)
 
+
 ## Example - 2 - Filtering on a Non-indexed field
 ```
 $ sfdx mohanc:data:queryPlan -q /tmp/qp2.soql  -u mohan.chinnappan.n_ea2@gmail.com
@@ -176,6 +177,21 @@ SELECT Id, NumberOfEmployees, CleanStatus
 ,Has != in WHERE clause filter, Index will not be used to drive the query
 ,Has NULL in WHERE clause filter, Index will not be used to drive the query
 ```
+![tip1](qp/qp-r-1.png)
+![tip2](qp/qp-r-2.png)
+![tip3](qp/qp-r-3.png)
+![tip4](qp/qp-rb-1.png)
+
+![tip5](qp/qp-2.png)
+![tip6](qp/qp-3.png)
+![tip7](qp/qp-4.png)
+
+
+
+
+
+
+
 
 
 ## Fields having indexes
@@ -205,7 +221,7 @@ SELECT Id, NumberOfEmployees, CleanStatus
 ## Query Optimizer
 - To determine if an index should be used to drive a query, the Force.com query optimizer checks the **number of records targeted by the filter** against **selectivity thresholds**
 
-## FAQ
+## FAQs
 ![faq1](qp/qp-faq.png)
 ![faq2](qp/qp-faq-2.png)
 
