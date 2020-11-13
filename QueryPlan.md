@@ -117,7 +117,7 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
     - Audit fields
         - CreatedDate
         - SystemModstamp
-
+    - Email
 - Custom fields
     - If they are marked as Unique or External Id
 
