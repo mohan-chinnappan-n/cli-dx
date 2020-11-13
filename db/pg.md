@@ -64,7 +64,7 @@ EXAMPLE
 
        ** Execute SQL Query on Postgres DB **
 
-       sfdx mohanc:data:db:pg:query -q <SQL query File> -c <PG connection JSON file> 
+       sfdx mohanc:data:db:pg:query -q <SQL query File> -c <PG connection JSON file>  -f <Output json|csv>
 
 ```
 - Connection info
