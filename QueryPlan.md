@@ -132,7 +132,7 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 - 
 ## Cheat sheets
 - [Query & Search Optimization Cheat Sheet](qp/salesforce_query_search_optimization_developer_cheatsheet.pdf)
-
+- [Query Index Thresholds](qp/std-threshold.csv)
 ## References
 - [Query Plan FAQ](https://help.salesforce.com/articleView?id=000334796&type=1&mode=1)
 - [Make SOQL query selective](https://help.salesforce.com/articleView?id=000325257&type=1&mode=1)
