@@ -28,6 +28,7 @@ EXAMPLE
       $ sfdx mohanc:data:queryPlan -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 ```
 
+## Example - 1 with LIMIT clause
 ### Query file
 
 ``` 
@@ -57,10 +58,8 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 ```
 ### Query Plan
 ```
-  $ sfdx mohanc:data:queryPlan -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
-
+$ sfdx mohanc:data:queryPlan -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 ```
-
 ```json
 {
     "plans": [
@@ -102,6 +101,81 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
     "sourceQuery": "SELECT Id \n FROM Account \n LIMIT 10"
 }
 ```
+
+## Example - 2 - Filtering on a Non-indexed field
+```
+$ sfdx mohanc:data:queryPlan -q /tmp/qp2.soql  -u mohan.chinnappan.n_ea2@gmail.com
+```
+
+```json
+{
+    "plans": [
+        {
+            "cardinality": 450,
+            "fields": [],
+            "leadingOperationType": "TableScan",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Account"
+                },
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "NumberOfEmployees"
+                    ],
+                    "tableEnumOrId": "Account"
+                }
+            ],
+            "relativeCost": 1.6416666666666666,
+            "sobjectCardinality": 1001,
+            "sobjectType": "Account"
+        }
+    ],
+    "sourceQuery": "SELECT Id, NumberOfEmployees\n FROM Account \n WHERE NumberOfEmployees != NULL"
+}
+```
+
+## Example - 3 - Filtering on an indexed field with !=NULL
+```
+$ sfdx mohanc:data:queryPlan -q /tmp/qp3.soql  -u mohan.chinnappan.n_ea2@gmail.com
+{
+    "plans": [
+        {
+            "cardinality": 501,
+            "fields": [],
+            "leadingOperationType": "TableScan",
+            "notes": [
+                {
+                    "description": "Not considering filter for optimization because unindexed",
+                    "fields": [
+                        "IsDeleted"
+                    ],
+                    "tableEnumOrId": "Account"
+                }
+            ],
+            "relativeCost": 1.7521666666666669,
+            "sobjectCardinality": 1001,
+            "sobjectType": "Account"
+        }
+    ],
+    "sourceQuery": "SELECT Id, NumberOfEmployees, CleanStatus\n FROM Account \n WHERE Name != NULL"
+}
+```
+### TIPS
+```
+$ /tmp/qp3.soql.tips.txt
+
+SELECT Id, NumberOfEmployees, CleanStatus
+ FROM Account 
+ WHERE Name != NULL
+,Has != in WHERE clause filter, Index will not be used to drive the query
+,Has NULL in WHERE clause filter, Index will not be used to drive the query
+```
+
 
 ## Fields having indexes
 - Standard fields having index
