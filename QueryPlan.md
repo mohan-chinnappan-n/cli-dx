@@ -134,10 +134,27 @@ $ sfdx mohanc:data:query -q /tmp/qp.soql  -u mohan.chinnappan.n_ea2@gmail.com
 
 - [Query & Search Optimization Cheat Sheet](qp/salesforce_query_search_optimization_developer_cheatsheet.pdf)
 - [Query Index Thresholds Spreadsheet](qp/std-threshold.csv)
+- 30/15 for Standard Index Fields and 10/5 for Custom Index Fields
+- Force.com query optimizer will use the standard and custom indexes to drive the query:
+    -  when number of targeted records falls below the appropriate selectivity threshold. 
+- Force.com query optimizer will NOT use the standard and custom indexes to drive the query:
+    -   when the number of targeted records exceeds an **index’s selectivity threshold**
+- A LIKE condition with a leading % wildcard does not use an index.
+- When your filter uses != or NOT—which includes using NOT EQUALS/CONTAINS for reports, even if the field is indexed—the Force.com query optimizer can’t use the index to drive the query. 
+    - For better performance, filter using = or IN, and the reciprocal values.
+
+### Key Points
+- Understand your schema and have proper indexes created.
+- Apply as many filters as possible to reduce the result set.
+- Minimize the amount of records in the Recycle Bin.
+- Remember that NOT operations and LIKE conditions with a leading % wildcard do not use indexes, and complex joins might perform better as separate queries.
+
+
 - ![QP TH Sheet](qp//qp-th-sheet-1.png)
 - ![QP Index threshold](qp/qp-index-thresholds-1.png)
 
 ## References
 - [Query Plan FAQ](https://help.salesforce.com/articleView?id=000334796&type=1&mode=1)
 - [Make SOQL query selective](https://help.salesforce.com/articleView?id=000325257&type=1&mode=1)
-
+- [Slides: Inside the Force.com Query Optimizer](https://www.slideshare.net/developerforce/inside-the-forcecom-query-optimizer-webinar)
+- [Video: SOQL Query Performance Tips and Tricks](https://www.youtube.com/watch?v=uyyXdEIieN4)
