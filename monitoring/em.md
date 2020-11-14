@@ -1,7 +1,7 @@
 # Viewing Event Log file using DX
 
 ## Listing the Event Types
-
+- Plugin version need : 0.0.108 
 ### Usage
 ```
 USAGE
