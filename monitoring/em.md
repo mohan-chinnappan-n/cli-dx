@@ -1,7 +1,12 @@
 # Viewing Event Log file using DX
 
+## Topics
+- [Listing Event Types](#types)
+- [Get the log files](#get)
+
+<a name="types"></a>
 ## Listing the Event Types
-- Plugin version need : 0.0.108 
+- Plugin version needed : 0.0.108 
 ### Usage
 ```
 USAGE
@@ -42,7 +47,7 @@ WaveInteraction
 WavePerformance
 
 ```
-
+<a name="get"></a>
 ## Get the Event files for given Event Type
 
 ### Usage
