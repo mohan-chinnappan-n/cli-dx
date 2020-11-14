@@ -81,5 +81,5 @@ $ sfdx mohanc:monitoring:em:get -t API  -u mohan.chinnappan.n_ea2@gmail.com -o /
 ........................
 === Opening /tmp/API.csv ...
 ```
-![fields map](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/event_monitoring/event_monitoring_download/images/34f05d6f9de436049c6c33d6131829af_elf_solved_case.png)
 ![Event file](img/event-out-1.png)
+![fields map](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/event_monitoring/event_monitoring_download/images/34f05d6f9de436049c6c33d6131829af_elf_solved_case.png)
