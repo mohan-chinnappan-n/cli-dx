@@ -1,4 +1,4 @@
-# Viewing Event Log file using DX
+# Viewing and Visualizing Event Log file using DX
 
 ## Topics
 - [Listing Event Types](#types)
