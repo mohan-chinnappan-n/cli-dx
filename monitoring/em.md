@@ -1,4 +1,4 @@
-# Viewing and Visualizing Event Log file using DX
+# Viewing and Visualizing Event Log files using DX
 
 ## Topics
 - [Listing Event Types](#types)
@@ -8,7 +8,9 @@
 
 <a name="types"></a>
 ## Listing the Event Types
-- Plugin version needed : 0.0.108 
+- Requires 0.0.108 version of the plugin
+    - sfdx-mohanc-plugins@0.0.108
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 ### Usage
 ```
 USAGE
