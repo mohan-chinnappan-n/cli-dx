@@ -3,6 +3,8 @@
 ## Topics
 - [Listing Event Types](#types)
 - [Get the log files](#get)
+- [Charts](#charts)
+
 
 <a name="types"></a>
 ## Listing the Event Types
@@ -83,3 +85,7 @@ $ sfdx mohanc:monitoring:em:get -t API  -u mohan.chinnappan.n_ea2@gmail.com -o /
 ```
 ![Event file](img/event-out-1.png)
 ![fields map](https://res.cloudinary.com/hy4kyit2a/f_auto,fl_lossy,q_70/learn/modules/event_monitoring/event_monitoring_download/images/34f05d6f9de436049c6c33d6131829af_elf_solved_case.png)
+
+<a name="charts"></a>
+### Charts
+![chart-1](img//api-chart-1.png)
