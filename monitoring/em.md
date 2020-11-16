@@ -8,8 +8,8 @@
 
 <a name="types"></a>
 ## Listing the Event Types
-- Requires 0.0.108 version of the plugin
-    - sfdx-mohanc-plugins@0.0.108
+- Requires 0.0.110 version of the plugin
+    - sfdx-mohanc-plugins@0.0.110
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 ### Usage
 ```
@@ -81,7 +81,7 @@ EXAMPLE
 
 ### Demo
 ```
- sfdx mohanc:monitoring:em:get -t API  -u mohan.chinnappan.n_ea2@gmail.com -o API2d.csv -s 2020-11-12 -e 2020-11-13
+$ sfdx mohanc:monitoring:em:get -t API  -u mohan.chinnappan.n_ea2@gmail.com -o API2d.csv -s 2020-11-12 -e 2020-11-13
 === Collecting logs for the EventType: API ...
 === Getting log file for LogDate: 2020-11-13T00:00:00.000+0000 ...
 === Getting log file for LogDate: 2020-11-12T00:00:00.000+0000 ...
@@ -94,9 +94,10 @@ EXAMPLE
 <a name="charts"></a>
 ### Charts
 ```
-sfdx mohanc:data:viz:barChart  -d ./API2d.csv -e ./API.csv.encoding-2.json -m bar -o ./APIbarchart.html -p ./apiChart.json
+$ sfdx mohanc:data:viz:barChart  -d ./API2d.csv -e ./API.csv.encoding-2.json -m bar -o ./APIbarchart.html -p ./apiChart.json
 
 === Opening ./APIbarchart.html via Local Web Server on port :7020 ...
 
 ```
 ![chart-2](img//api-chart-2.png)
+![chart-1](img//api-chart-1.png)
