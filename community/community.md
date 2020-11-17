@@ -1,11 +1,15 @@
 # Community Related CLI command
 
+- Requires 0.0.116 version of the plugin
+    - sfdx-mohanc-plugins@0.0.116
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 ## List a community
 ```
 # All
 $ sfdx mohanc:community:list -u mohan.chinnappan.n_ea2@gmail.com 
 ```
-```json
+```
 {
   communities: [
     {
@@ -39,7 +43,7 @@ $ sfdx mohanc:community:list -u mohan.chinnappan.n_ea2@gmail.com
 ```
 $ sfdx mohanc:community:list -u mohan.chinnappan.n_ea2@gmail.com -i 0DB3h00000021GPGAY
 ```
-```json
+```
 {
   allowChatterAccessWithoutLogin: false,
   allowMembersToFlag: false,
@@ -68,7 +72,7 @@ $ sfdx mohanc:community:list -u mohan.chinnappan.n_ea2@gmail.com -i 0DB3h0000002
 ```
 $ sfdx mohanc:community:publish -u mohan.chinnappan.n_ea2@gmail.com -i 0DB3h00000021GPGAY
 ```
-```json
+```
 {
   id: '0DB3h00000021GPGAY',
   message: 'We are publishing your changes now. You will receive an email confirmation when your changes are live.',
@@ -81,7 +85,7 @@ $ sfdx mohanc:community:publish -u mohan.chinnappan.n_ea2@gmail.com -i 0DB3h0000
 ```
 $ sfdx mohanc:community:templates -u mohan.chinnappan.n_ea2@gmail.com 
 ```
-```json
+```
 {
   templates: [
     { publisher: 'Salesforce', templateName: 'Build Your Own' },
