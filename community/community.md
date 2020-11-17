@@ -132,7 +132,7 @@ EXAMPLE
 ```
 $ sfdx mohanc:community:ema -u mohan.chinnappan.n_ea2@gmail.com -i 0DB3h00000021GPGAY
 ```
-```json
+```
 [
   {
     errorCode: 'INSUFFICIENT_ACCESS_OR_READONLY',
