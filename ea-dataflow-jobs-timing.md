@@ -41,4 +41,5 @@ EXAMPLE
 === Writing to 03C3h000002qB0gEAE.timing.csv ...
 ```
 
-![timing info](img/df-timing-1.png)
+![timing info](img/df-timing-1.gif)
+
