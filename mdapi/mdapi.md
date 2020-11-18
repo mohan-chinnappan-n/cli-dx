@@ -5,6 +5,15 @@
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
+## Topics
+
+- [List Metadata](#listMetadata)
+- [retrieve Metadata](#retrieve)
+- [checkRetrieveStatus](#checkRetrieveStatus)
+- [deploy](#deploy)
+- [checkDeployStatus](#checkDeployStatus)
+
+<a name="listMetadata"></a>
 ## List Metadata
 
 - Usage
