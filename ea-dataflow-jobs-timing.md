@@ -5,7 +5,6 @@
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
-
 ## Usage
 ```
 $ sfdx mohanc:ea:dataflow:jobs:timing -h
