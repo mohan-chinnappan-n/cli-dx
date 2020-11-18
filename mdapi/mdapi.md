@@ -26,6 +26,8 @@ EXAMPLE
            
 
 ```
+
+```
 $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t ExperienceBundle
 {
   result: [
@@ -121,7 +123,7 @@ $ cat ~/.ea/options.json
 
 }
 ```
-
+```
 $ sfdx mohanc:mdapi:deploy -u mohan.chinnappan.n_ea2@gmail.com -z 09S3h000005TucsEAC.zip.txt -o  ~/.ea/options.json 
 { checkOnly: true }
 {
