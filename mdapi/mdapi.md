@@ -1,5 +1,10 @@
 # Meatadata API related commands
 
+- Requires 0.0.117 version of the plugin
+    - sfdx-mohanc-plugins@0.0.117
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
 ## List Metadata
 
 - Usage
