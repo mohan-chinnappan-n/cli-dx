@@ -43,3 +43,8 @@ EXAMPLE
 
 ![timing info](img/df-timing-1.gif)
 
+![arc-1](img/df-timing-arc-1.png)
+![arc-2](img/df-timing-arc-2.png)
+![line-1](img/df-timiing-line-1.png)
+
+
