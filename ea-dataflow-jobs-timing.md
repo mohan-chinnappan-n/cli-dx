@@ -1,7 +1,7 @@
 # Provide Dataflow job nodes timing
 
-- Requires 0.0.120 version of the plugin
-    - sfdx-mohanc-plugins@0.0.120
+- Requires 0.0.121 version of the plugin
+    - sfdx-mohanc-plugins@0.0.121
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
@@ -41,7 +41,7 @@ sfdx mohanc:ea:dataflow:jobs:timing -u mohan.chinnappan.n_ea2@gmail.com -j 03C3h
 === Writing to DFTiming.csv  for loading into EA Dataset ...
 === Writing to 03C3h000002qB0gEAE.timing.csv ...
 ```
-## Load the timing file into EA
+## Load the timing data file into EA
 
 ```
 $ sfdx mohanc:ea:dataset:load -u mohan.chinnappan.n_ea2@gmail.com -d DFTiming.csv -a DFTiming
