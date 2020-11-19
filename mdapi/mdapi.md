@@ -6,7 +6,6 @@
 
 
 ## Topics
-
 - [List Metadata](#listMetadata)
 - [retrieve Metadata](#retrieve)
 - [checkRetrieveStatus](#checkRetrieveStatus)
@@ -16,7 +15,7 @@
 - [References](#ref)
 
 
-- ExperienceBundle based examples
+## ExperienceBundle based examples
 <a name="listMetadata"></a>
 ## List Metadata
 
