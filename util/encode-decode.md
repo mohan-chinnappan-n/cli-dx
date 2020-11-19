@@ -1,5 +1,10 @@
 # File Encode and Decode utils
 
+- Requires 0.0.123 version of the plugin
+    - sfdx-mohanc-plugins@0.0.123
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
 ## Topics
 - [Encode a given binary file using base64](#encode)
 - [decode a given base64 encoded file ](#decode)
