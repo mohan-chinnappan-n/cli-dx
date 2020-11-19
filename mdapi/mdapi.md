@@ -60,6 +60,27 @@ $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t ExperienceBundle
   ]
 }
 ```
+
+```
+$ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t SiteDotCom
+{
+  result: [
+    {
+      createdById: '0053h000002xQ5sAAE',
+      createdByName: 'Mohan Chinnappan',
+      createdDate: 2020-07-25T10:44:15.000Z,
+      fileName: 'siteDotComSites/selfservice1.site',
+      fullName: 'selfservice1',
+      id: '0DM3h000000227lGAA',
+      lastModifiedById: '0053h000002xQ5sAAE',
+      lastModifiedByName: 'Mohan Chinnappan',
+      lastModifiedDate: 2020-07-25T10:44:15.000Z,
+      type: 'SiteDotCom'
+    }
+  ]
+}
+```
+
 <a name="retrieve"></a>
 ## Retrieve
 ```
