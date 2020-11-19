@@ -12,7 +12,7 @@
 - [checkRetrieveStatus](#checkRetrieveStatus)
 - [deploy](#deploy)
 - [checkDeployStatus](#checkDeployStatus)
-- [SiteDotDom Examples](#sitdotcom)
+- [SiteDotDom Examples](#sitedotcom)
 
 - ExperienceBundle based examples
 <a name="listMetadata"></a>
