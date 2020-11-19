@@ -110,14 +110,13 @@ $ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "CustomSite,
         ]
     }
 }
-{ result: { done: false, id: '09S3h000005TucsEAC', state: 'Queued' } }
+{ result: { done: false, id: '09S3h000005TvddEAC', state: 'Queued' } }
 ```
 
 <a name="checkRetrieveStatus"></a>
 ## checkRetrieveStatus
-
-``` 
-$ sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i 09S3h000005TucsEAC
+```
+$  sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i 09S3h000005TvddEAC
 [
   {
     createdById: '0053h000002xQ5sAAE',
@@ -134,19 +133,28 @@ $ sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i 0
   {
     createdById: '0053h000002xQ5sAAE',
     createdByName: 'Mohan Chinnappan',
-    createdDate: 2020-11-18T13:12:45.559Z,
+    createdDate: 2020-11-19T19:07:50.312Z,
     fileName: 'unpackaged/package.xml',
     fullName: 'unpackaged/package.xml',
     id: '',
     lastModifiedById: '0053h000002xQ5sAAE',
     lastModifiedByName: 'Mohan Chinnappan',
-    lastModifiedDate: 2020-11-18T13:12:45.559Z,
+    lastModifiedDate: 2020-11-19T19:07:50.312Z,
     manageableState: 'unmanaged',
     type: 'Package'
   }
 ]
-=== Writing zipFile content to 09S3h000005TucsEAC.zip.txt 
+=== Writing zipFile base64 content to 09S3h000005TvddEAC.zip.txt ...
+=== Writing zipFile binary content to 09S3h000005TvddEAC.zip ... 
 ```
+```
+## Zip file contents
+$ jar tvf 09S3h000005TvddEAC.zip
+  2653 Thu Nov 19 19:07:50 EST 2020 unpackaged/networks/selfservice.network
+   219 Thu Nov 19 19:07:50 EST 2020 unpackaged/package.xml
+
+```
+
 
 <a name="deploy"></a>
 ## Deploy
@@ -174,41 +182,33 @@ $ sfdx mohanc:mdapi:deploy -u mohan.chinnappan.n_ea2@gmail.com -z 09S3h000005Tuc
 <a name="checkDeployStatus"></a>
 ## checkDeployStatus
 ```
-$ sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i  09S3h000005TuqWEAS
-[
-  {
-    createdById: '0053h000002xQ5sAAE',
+
+$  sfdx mohanc:mdapi:checkDeployStatus -u mohan.chinnappan.n_ea2@gmail.com -i 0Af3h00000GAz8UCAT
+{
+  result: {
+    checkOnly: true,
+    completedDate: 2020-11-19T19:02:46.000Z,
+    createdBy: '0053h000002xQ5s',
     createdByName: 'Mohan Chinnappan',
-    createdDate: 2020-07-25T10:44:15.000Z,
-    fileName: 'unpackaged/networks/selfservice.network',
-    fullName: 'selfservice',
-    id: '0DB3h00000021GPGAY',
-    lastModifiedById: '0053h000002xQ5sAAE',
-    lastModifiedByName: 'Mohan Chinnappan',
-    lastModifiedDate: 2020-07-25T10:44:21.000Z,
-    type: 'Network'
-  },
-  {
-    createdById: '0053h000002xQ5sAAE',
-    createdByName: 'Mohan Chinnappan',
-    createdDate: 2020-11-18T18:18:59.706Z,
-    fileName: 'unpackaged/package.xml',
-    fullName: 'unpackaged/package.xml',
-    id: '',
-    lastModifiedById: '0053h000002xQ5sAAE',
-    lastModifiedByName: 'Mohan Chinnappan',
-    lastModifiedDate: 2020-11-18T18:18:59.706Z,
-    manageableState: 'unmanaged',
-    type: 'Package'
+    createdDate: 2020-11-19T19:02:45.000Z,
+    details: null,
+    done: true,
+    id: '0Af3h00000GAz8UCAT',
+    ignoreWarnings: false,
+    lastModifiedDate: 2020-11-19T19:02:46.000Z,
+    numberComponentErrors: 0,
+    numberComponentsDeployed: 1,
+    numberComponentsTotal: 1,
+    numberTestErrors: 0,
+    numberTestsCompleted: 0,
+    numberTestsTotal: 0,
+    rollbackOnError: false,
+    runTestsEnabled: false,
+    startDate: 2020-11-19T19:02:45.000Z,
+    status: 'Succeeded',
+    success: true
   }
-]
-=== Writing zipFile base64 content to 09S3h000005TuqWEAS.zip.txt ...
-=== Writing zipFile binary content to 09S3h000005TuqWEAS.zip ... 
-```
-```
-$ jar tvf 09S3h000005TuqWEAS.zip
-  2653 Wed Nov 18 18:18:58 EST 2020 unpackaged/networks/selfservice.network
-   219 Wed Nov 18 18:18:58 EST 2020 unpackaged/package.xml
+}
 ```
 
 
