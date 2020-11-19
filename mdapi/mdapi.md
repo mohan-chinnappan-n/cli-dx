@@ -13,6 +13,8 @@
 - [deploy](#deploy)
 - [checkDeployStatus](#checkDeployStatus)
 - [SiteDotDom Examples](#sitedotcom)
+- [References](#ref)
+
 
 - ExperienceBundle based examples
 <a name="listMetadata"></a>
@@ -255,3 +257,7 @@ $ jar tvf 09S3h000005TvdiEAC.zip
    222 Thu Nov 19 19:13:30 EST 2020 unpackaged/package.xml
 
 ```
+<a name="ref"></a>
+## References
+- [ExperenceBundle metadata](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_experiencebundle.htm?search_text=ExperienceBundle)
+- [SiteDotCom metadata ](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_sitedotcom.htm)
