@@ -256,6 +256,8 @@ $ jar tvf 09S3h000005TvdiEAC.zip
    222 Thu Nov 19 19:13:30 EST 2020 unpackaged/package.xml
 
 ```
+## File encoding or decoding
+- [File Encode and Decode utils](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/util/encode-decode.md)
 <a name="ref"></a>
 ## References
 - [ExperenceBundle metadata](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_experiencebundle.htm?search_text=ExperienceBundle)
