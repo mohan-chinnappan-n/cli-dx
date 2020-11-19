@@ -7,7 +7,7 @@
 
 ## Topics
 - [Encode a given binary file using base64](#encode)
-- [decode a given base64 encoded file ](#decode)
+- [Decode a given base64 encoded file ](#decode)
 
 <a name="encode"></a>
 ## Encode
