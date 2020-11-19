@@ -204,7 +204,8 @@ $ sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i  
 ]
 === Writing zipFile base64 content to 09S3h000005TuqWEAS.zip.txt ...
 === Writing zipFile binary content to 09S3h000005TuqWEAS.zip ... 
-~/sfdx/sfdx-mohanc-plugins:
+```
+```
 $ jar tvf 09S3h000005TuqWEAS.zip
   2653 Wed Nov 18 18:18:58 EST 2020 unpackaged/networks/selfservice.network
    219 Wed Nov 18 18:18:58 EST 2020 unpackaged/package.xml
