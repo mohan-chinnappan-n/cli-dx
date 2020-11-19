@@ -12,7 +12,9 @@
 - [checkRetrieveStatus](#checkRetrieveStatus)
 - [deploy](#deploy)
 - [checkDeployStatus](#checkDeployStatus)
+- [SiteDotDom Examples](#sitdotcom)
 
+- ExperienceBundle based examples
 <a name="listMetadata"></a>
 ## List Metadata
 
@@ -61,25 +63,6 @@ $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t ExperienceBundle
 }
 ```
 
-```
-$ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t SiteDotCom
-{
-  result: [
-    {
-      createdById: '0053h000002xQ5sAAE',
-      createdByName: 'Mohan Chinnappan',
-      createdDate: 2020-07-25T10:44:15.000Z,
-      fileName: 'siteDotComSites/selfservice1.site',
-      fullName: 'selfservice1',
-      id: '0DM3h000000227lGAA',
-      lastModifiedById: '0053h000002xQ5sAAE',
-      lastModifiedByName: 'Mohan Chinnappan',
-      lastModifiedDate: 2020-07-25T10:44:15.000Z,
-      type: 'SiteDotCom'
-    }
-  ]
-}
-```
 
 <a name="retrieve"></a>
 ## Retrieve
@@ -209,5 +192,66 @@ $  sfdx mohanc:mdapi:checkDeployStatus -u mohan.chinnappan.n_ea2@gmail.com -i 0A
   }
 }
 ```
+<a name="sitedotcom"></a>
+## SiteDotCom Examples
+- retrieve
+```
+$ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "SiteDotCom"
+{
+    "RetrieveRequest": {
+        "apiVersion": "50.0",
+        "unpackaged": [
+            {
+                "types": {
+                    "members": "*",
+                    "name": "SiteDotCom"
+                }
+            }
+        ]
+    }
+}
+{ result: { done: false, id: '09S3h000005TvdiEAC', state: 'Queued' } }
+```
 
+- checkRetrieveStatus
+```
+$ sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i 09S3h000005TvdiEAC
+[
+  {
+    createdById: '0053h000002xQ5sAAE',
+    createdByName: 'Mohan Chinnappan',
+    createdDate: 2020-07-25T10:44:15.000Z,
+    fileName: 'unpackaged/siteDotComSites/selfservice1.site',
+    fullName: 'selfservice1',
+    id: '0DM3h000000227lGAA',
+    lastModifiedById: '0053h000002xQ5sAAE',
+    lastModifiedByName: 'Mohan Chinnappan',
+    lastModifiedDate: 2020-07-25T10:44:15.000Z,
+    type: 'SiteDotCom'
+  },
+  {
+    createdById: '0053h000002xQ5sAAE',
+    createdByName: 'Mohan Chinnappan',
+    createdDate: 2020-11-19T19:13:30.733Z,
+    fileName: 'unpackaged/package.xml',
+    fullName: 'unpackaged/package.xml',
+    id: '',
+    lastModifiedById: '0053h000002xQ5sAAE',
+    lastModifiedByName: 'Mohan Chinnappan',
+    lastModifiedDate: 2020-11-19T19:13:30.733Z,
+    manageableState: 'unmanaged',
+    type: 'Package'
+  }
+]
+=== Writing zipFile base64 content to 09S3h000005TvdiEAC.zip.txt ...
+=== Writing zipFile binary content to 09S3h000005TvdiEAC.zip ... 
+```
 
+- ZIP file contents
+```
+$ jar tvf 09S3h000005TvdiEAC.zip
+ 38702 Thu Nov 19 19:13:30 EST 2020 unpackaged/siteDotComSites/selfservice1.site
+   192 Thu Nov 19 19:13:30 EST 2020 unpackaged/siteDotComSites/selfservice1.site-meta.xml
+   222 Thu Nov 19 19:13:30 EST 2020 unpackaged/package.xml
+
+```
