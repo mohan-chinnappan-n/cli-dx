@@ -41,6 +41,20 @@ EXAMPLE
 
 
 ```
+## Query and connection files
+
+```
+$ cat ~/.sql/fruitsall.sql
+SELECT * FROM fruits
+```
+```
+$ cat   ~/.sql/ora.json
+{
+    "user"          : "username",
+    "password"      : "password",
+    "connectString" : "localhost:1521/xe"
+}
+```
 
 ## Demo 
 ```
