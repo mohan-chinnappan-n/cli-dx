@@ -97,6 +97,20 @@ $ tree
 └── resources.md
 ```
 
+## Oracle Version Data
+```
+
+SQL> select banner from v$version;
+
+BANNER
+--------------------------------------------------------------------------------
+Oracle Database 12c Standard Edition Release 12.1.0.2.0 - 64bit Production
+PL/SQL Release 12.1.0.2.0 - Production
+CORE	12.1.0.2.0	Production
+TNS for Linux: Version 12.1.0.2.0 - Production
+NLSRTL Version 12.1.0.2.0 - Production
+
+```
 ## Make symbolic link to libclntsh.dylib.11.1  
 
 ```
