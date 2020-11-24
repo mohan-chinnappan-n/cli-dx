@@ -1,4 +1,4 @@
-cryptography==2.9
+cryptography==3.0
 PyJWT==1.7.1
 requests==2.23.0
 requests-oauthlib==1.0.0
