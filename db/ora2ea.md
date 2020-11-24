@@ -1,4 +1,6 @@
 # Loading Oracle SQL Query Results into EA Dataset
+- Plugin  will be released soon...
+
 
 ## Usage
 ```
