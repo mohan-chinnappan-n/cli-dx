@@ -55,7 +55,39 @@ $ cat   ~/.sql/ora.json
     "connectString" : "localhost:1521/xe"
 }
 ```
+```
+SQL> select banner from v$version;
 
+BANNER
+--------------------------------------------------------------------------------
+Oracle Database 12c Standard Edition Release 12.1.0.2.0 - 64bit Production
+PL/SQL Release 12.1.0.2.0 - Production
+CORE	12.1.0.2.0	Production
+TNS for Linux: Version 12.1.0.2.0 - Production
+NLSRTL Version 12.1.0.2.0 - Production
+
+SQL> 
+SQL> select count(*) from fruits;
+
+  COUNT(*)
+----------
+	 7
+
+SQL> SELECT name, location FROM fruits;
+
+NAME				 LOCATION
+-------------------------------- --------------------------------
+apple				 MA
+peach				 NH
+pear				 NY
+plum				 NH
+cherry				 NH
+pineapple			 FL
+lime				 FL
+
+7 rows selected.
+
+````
 ## Demo 
 ```
 $  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/.sql/fruitsall.sql -o ~/.sql/ora.json -a oraload14 -c 2
