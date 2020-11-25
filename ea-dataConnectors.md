@@ -790,3 +790,14 @@ $  sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/servic
 }
 ```
 
+```
+ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/dataConnectors/0It3h000000bnGUCAY/sourceObjects/Account/dataPreview -m POST   -f ~/.headers/header_ea.json -d ~/.ea/fields.json 
+```
+```
+$ cat ~/.ea/fields.json 
+```
+```json
+{
+  "sourceObjectFields": ["Id", "Name"]
+}
+```
