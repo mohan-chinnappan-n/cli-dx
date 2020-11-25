@@ -1,6 +1,6 @@
 # Loading Oracle SQL Query Results into EA Dataset
-- Requires 0.0.126 version of the plugin
-    - sfdx-mohanc-plugins@0.0.126
+- Requires 0.0.127 version of the plugin
+    - sfdx-mohanc-plugins@0.0.127
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
@@ -141,6 +141,7 @@ $ sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/.
 ==== Last Chunk ====
 
 Done.
+Time taken: 40.679 seconds
 
 
 ```
