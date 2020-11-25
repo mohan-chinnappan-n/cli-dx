@@ -1,9 +1,13 @@
 # Loading Oracle SQL Query Results into EA Dataset
-- Plugin  will be released soon...
+- Requires 0.0.126 version of the plugin
+    - sfdx-mohanc-plugins@0.0.126
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
 
 ## Usage
 ```
-$  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -h
+$ sfdx mohanc:ea:dataset:loadFromOra -h
 Dataset Loader for EA from Oracle Query  
 
 USAGE
@@ -13,9 +17,9 @@ OPTIONS
   -a, --datasetname=datasetname                   Dataset Name
   -c, --chunksize=chunksize                       Chunk size in number of records default: 10000 records
   -f, --dimfields=dimfields                       Dimension Field Names in CSV
+  -l, --oraconnfilename=oraconnfilename           Oracle DB connection JSON file
   -m, --mulvalfields=mulvalfields                 Multi Value Field Names in CSV
   -o, --operation=operation                       Operation to perform : Overwrite|Append|Upsert|Delete
-  -o, --oraconnfilename=oraconnfilename           Oracle DB connection JSON file
   -q, --sqlfilename=sqlfilename                   Input file having SQL query
   -s, --mulvalsep=mulvalsep                       multiValue separator: default ','
   -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
@@ -27,18 +31,22 @@ EXAMPLE
 
               Loads from given SQL Query results from Oracle DB to EA dataset
 
-              sfdx mohanc:ea:dataset:loadLarge  -u <username>  -o Upsert
+              sfdx mohanc:ea:dataset:loadFromOra
+               -u <username> 
+               -o operation (Overwrite|Append|Upsert|Delete)
                -m <multiValueFields as CSV> -s <multiValue separator: default ','>
                -f <DimFields as CSV>
-               -c <Chunk Size in number of records, default: 10000>
-               -a <Dataset Name or datafile name will be used>
+               -c <Chunk Size in number of records, default: 10000, make sure to give this less than the total rows>
+               -a <Dataset Name>
 
-               -o <ORA connection JSON file>
+               -l <ORA connection JSON file> (note: l is selected to honor Larry Ellison!)
                -q <SQL query File>
 
 
              NOTE: If you are using proxy: set the environment variable like this:
              export HTTPS_PROXY=https://your.proxy:proxyPort
+
+
 
 
 ```
@@ -91,13 +99,13 @@ lime				 FL
 ````
 ## Demo 
 ```
-$  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/.sql/fruitsall.sql -o ~/.sql/ora.json -a oraload14 -c 2
+$ sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/.sql/fruitsall.sql -l ~/.sql/ora.json -a datafromOra -c 6 
 === Finding the data types based on the sample data ...
 [ 'NAME', 'LOCATION', 'WEIGHT' ]
 [ 'apple', 'MA', 10.200000000000001 ]
 [
   {
-    fullyQualifiedName: 'ORAData.NAME',
+    fullyQualifiedName: 'datafromOra.NAME',
     label: 'NAME',
     name: 'NAME',
     isSystemField: false,
@@ -107,7 +115,7 @@ $  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/
     type: 'Text'
   },
   {
-    fullyQualifiedName: 'ORAData.LOCATION',
+    fullyQualifiedName: 'datafromOra.LOCATION',
     label: 'LOCATION',
     name: 'LOCATION',
     isSystemField: false,
@@ -117,7 +125,7 @@ $  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/
     type: 'Text'
   },
   {
-    fullyQualifiedName: 'ORAData.WEIGHT',
+    fullyQualifiedName: 'datafromOra.WEIGHT',
     label: 'WEIGHT',
     name: 'WEIGHT',
     isSystemField: false,
@@ -128,14 +136,14 @@ $  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/
     scale: 4
   }
 ]
-{ id: '06V3h0000005xtEEAQ', success: true, errors: [] }
-==== Chunk 1 of Chunk Size: 2 records ==== 
-==== Chunk 2 of Chunk Size: 2 records ==== 
-==== Chunk 3 of Chunk Size: 2 records ==== 
+{ id: '06V3h0000005yBrEAI', success: true, errors: [] }
+==== Chunk 1 of Chunk Size: 6 records ==== 
 ==== Last Chunk ====
+
+Done.
 
 
 ```
 
 ## Job
-![upload job](img/loadFromOra-1.png)
+![upload job](img/loadFromOra-2.png)
