@@ -108,6 +108,16 @@ $  sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/servic
 }
 ```
 ```
+$  sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/dataConnectors/0It3h000000L1r6CAC/status -m GET   -f ~/.headers/header_ea.json 
+```json
+{
+    "message": "Connection Successful",
+    "status": "Success",
+    "url": "/services/data/v49.0/wave/dataConnectors/0It3h000000L1r6CAC/status"
+}
+```
+- [doc](https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_rest.meta/bi_dev_guide_rest/bi_resources_dataconnectors_connectorid_status.htm?search_text=dataConnectors)
+```
 $  sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/dataConnectors/0It3h000000bnGUCAY/sourceObjects -m GET   -f ~/.headers/header_ea.json 
 ```
 ```json
@@ -801,3 +811,8 @@ $ cat ~/.ea/fields.json
   "sourceObjectFields": ["Id", "Name"]
 }
 ```
+
+```
+ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/wave/dataConnectorTypes -m GET   -f ~/.headers/header_ea.json
+```
+
