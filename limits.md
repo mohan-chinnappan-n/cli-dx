@@ -13,7 +13,7 @@ You may now close the browser
 $ sfdx mohanc:hello:myorg -u mohan.chinnappan.n_ea2@gmail.com
 {
     "Content-Type": "application/json",
-    "Authorization": "Bearer 00D3h000007R1Lu!AR0AQLeksTPDpFnoMAzeS35jXcuxDQFRDs8oipxmWMHnY6H02FaPr3Tp.dXxf4jJMnhULEOv9zdWl_cWvp_MdWl_UnTDhMoi",
+    "Authorization": "Bearer 00D3h000007R1Lu!FakeTPDpFnoMAzeS35jXcuxDQFRDs8oipxmWMHnY6H02FaPr3Tp.dXxf4jJMnhULEOv9zdWl_cWvp_MdWl_UnTDhMoi",
     "apiVersion": "50.0",
     "instanceUrl": "https://mohansun-ea-02-dev-ed.my.salesforce.com",
     "restAPIUri": "https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v50.0/"
