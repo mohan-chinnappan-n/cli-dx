@@ -325,6 +325,31 @@ $ cat header.json
 
 ``` 
 
+## JWT on Ubuntu
+
+```
+mohan@kovai:~/jwt$ cat clientid.txt
+3MVG9Kip4IKAZQEX4gZDQcUI7ahCsDth_bO..bl7_1n5.5qnhvA.XeflKIXxVt0r0K.l9jeco1.BQrV_VZ.D4
+
+mohan@kovai:~/jwt$ uname -a
+Linux kovai.mohanc.com 5.4.0-59-generic #65~18.04.1-Ubuntu SMP Mon Dec 14 15:59:40 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+mohan@kovai:~/jwt$ ls -l
+total 20
+-rw-r--r-- 1 mohan mohan   87 Jan  8 11:25 clientid.txt
+-rw-r--r-- 1 mohan mohan 1204 Jan  8 11:07 server.crt
+-rw-r--r-- 1 mohan mohan  997 Jan  8 11:04 server.csr
+-rw------- 1 mohan mohan 1679 Jan  8 11:02 server.key
+-rw------- 1 mohan mohan 1751 Jan  8 11:00 server.pass.key
+mohan@kovai:~/jwt$ sfdx force:auth:jwt:grant -u mohan.chinnappan.n_ea2@gmail.com -f server.key -i 3MVG9Kip4IKAZQEX4gZDQcUI7ahCsDth_bO..bl7_1n5.5qnhvA.XeflKIXxVt0r0K.l9jeco1.BQrV_VZ.D4
+Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
+```
+
+### What happens if you pass wrong user to grant command
+```
+mohan@kovai:~/jwt$ sfdx force:auth:jwt:grant -u wronguser@gmail.com -f server.key -i 3MVG9Kip4IKAZQEX4gZDQcUI7ahCsDth_bO..bl7_1n5.5qnhvA.XeflKIXxVt0r0K.l9jeco1.BQrV_VZ.D4
+ERROR running force:auth:jwt:grant:  We encountered a JSON web token error, which is likely not an issue with Salesforce CLI. Here’s the error: user hasn't approved this consumer
+
+```
 
 ### References
 - [Creating a Self-Signed SSL Certificate](https://devcenter.heroku.com/articles/ssl-certificate-self#generate-private-key-and-certificate-signing-request)
