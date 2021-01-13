@@ -336,12 +336,19 @@ $ mkdir sfdx
 $ tar xJf sfdx-linux-amd64.tar.xz -C sfdx --strip-components 1
 $ ./sfdx/install
 
-## sfdx will be installed under  /usr/local/bin/sfdx ( If you receive permission or access errors that you can’t address by using sudo or chmod)
-
-## if you do not have nodejs installed, you use the node binary installed at  /usr/local/bin by sfdx by setting the path to that binary 
- 
 ```
+### Notes
+- sfdx will be installed under  /usr/local/bin/sfdx ( If you receive permission or access errors that you can’t address by using sudo or chmod)
+- If you do not have nodejs installed in the system, you use the node binary installed at  /usr/local/bin by sfdx by setting the path to that binary 
+ 
 
+### Plugin install on Linux
+
+```
+$ export NODE_JQ_SKIP_INSTALL_BINARY=true
+$ sfdx plugins:install sfdx-mohanc-plugins
+
+```
 ### Example Usage
 
 ```
