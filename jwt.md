@@ -327,7 +327,25 @@ $ cat header.json
 
 ## JWT on Ubuntu
 
+### Install
+- [Install url](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm)
+
 ```
+$ wget https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
+$ mkdir sfdx
+$ tar xJf sfdx-linux-amd64.tar.xz -C sfdx --strip-components 1
+$ ./sfdx/install
+
+## sfdx will be installed under  /usr/local/bin/sfdx ( If you receive permission or access errors that you can’t address by using sudo or chmod)
+
+## if you do not have nodejs installed, you use the node binary installed at  /usr/local/bin by sfdx by setting the path to that binary 
+ 
+```
+
+### Example Usage
+
+```
+
 mohan@kovai:~/jwt$ cat clientid.txt
 3MVG9Kip4IKAZQEX4gZDQcUI7ahCsDth_bO..bl7_1n5.5qnhvA.XeflKIXxVt0r0K.l9jeco1.BQrV_VZ.D4
 
@@ -342,6 +360,12 @@ total 20
 -rw------- 1 mohan mohan 1751 Jan  8 11:00 server.pass.key
 mohan@kovai:~/jwt$ sfdx force:auth:jwt:grant -u mohan.chinnappan.n_ea2@gmail.com -f server.key -i 3MVG9Kip4IKAZQEX4gZDQcUI7ahCsDth_bO..bl7_1n5.5qnhvA.XeflKIXxVt0r0K.l9jeco1.BQrV_VZ.D4
 Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
+
+# Note if you are access a sandbox the above command should include -r https://test.salesforce.com
+## format: 
+##     $ sfdx force:auth:jwt:grant -u me@acme.org -f <path to jwt key file> -i <OAuth client id> -r https://acme.my.salesforce.com  
+
+
 ```
 
 ### What happens if you pass wrong user to grant command
