@@ -383,9 +383,13 @@ ERROR running force:auth:jwt:grant:  We encountered a JSON web token error, whic
 ```
 
 ## How to perform logout
-```
 
-sfdx force:auth logout -a -p
+### Examples
+```
+## log out of all authenticated orgs
+$ sfdx force:auth logout -a -p
+## log out only a particular org
+$ sfdx force:auth logout -u mohan.chinnappan.n_ea2@gmail.com
 ```
 
 ### Help info for logout
