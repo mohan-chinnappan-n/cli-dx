@@ -382,6 +382,37 @@ ERROR running force:auth:jwt:grant:  We encountered a JSON web token error, whic
 
 ```
 
+## How to perform logout
+```
+
+sfdx force:auth logout -a -p
+```
+
+### Help info for logout
+```
+$ sfdx force:auth:logout -h
+log out from authorized orgs
+
+USAGE
+  $ sfdx force:auth:logout [-a] [-p] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
+
+OPTIONS
+  -a, --all                                                                         include all authenticated orgs
+  -p, --noprompt                                                                    do not prompt for confirmation
+  -u, --targetusername=targetusername                                               username or alias for the target org; overrides default target org
+  --apiversion=apiversion                                                           override the api version used for api requests made by this command
+  --json                                                                            format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for this command invocation
+
+DESCRIPTION
+  By default, this command logs you out from your default scratch org.
+  Examples:
+      $ sfdx force:auth:logout -u me@my.org
+      $ sfdx force:auth:logout -a
+      $ sfdx force:auth:logout -p
+```
+
+
 ### References
 - [Creating a Self-Signed SSL Certificate](https://devcenter.heroku.com/articles/ssl-certificate-self#generate-private-key-and-certificate-signing-request)
 - [Using the OAuth 2.0 JWT Bearer Flow to Support the Salesforce DX CLI](http://www.wadewegner.com/2017/04/using-the-oauth-2-jwt-bearer-flow-to-support-the-salesforcedx-cli/)
