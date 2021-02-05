@@ -1,8 +1,17 @@
 # Using crontab
-```
-root@jitsi:~/py# vi hw.py
 
-root@jitsi:~/py# sfdx mohanc:py:run -h
+## Create a py script
+```
+# vi hw.py
+
+# cat hw.py 
+print('hw')
+
+```
+## Command to run py script
+
+```
+# sfdx mohanc:py:run -h
 Runs python script
 
 USAGE
@@ -21,20 +30,27 @@ EXAMPLE
     
  ›   Error: EEXIT: 0
  ›   Code: EEXIT
-root@jitsi:~/py# sfdx mohanc:py:run -s hw.py 
+
+# sfdx mohanc:py:run -s hw.py 
 [ 'hw' ]
 Done.
 
- 
-root@jitsi:~/py# crontab -e
-crontab: installing new crontab
- 
-root@jitsi:~/py# crontab -e
+```
+
+## Setup Cron Job
+
+```
+
+# crontab -e
 crontab: installing new crontab
 
+# crontab -l
 2 4 * * * /usr/local/bin/sfdx mohanc:py:run -s /root/py/hw.py 
- 
-root@jitsi:~/py# mail
+```
+
+## Check the results
+```
+# mail
 "/var/mail/root": 1 message 1 new
 >N   1 Cron Daemon        Fri Feb  5 04:02  20/672   Cron <root@jitsi> /usr/local/bin/sfdx mohanc:py:run -s /root/py/hw.py 
 ? 1
