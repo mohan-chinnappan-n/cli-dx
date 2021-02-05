@@ -1,0 +1,1 @@
+SELECT userRole.Name, COUNT(id) roleCount FROM user WHERE userRole.Name != null  GROUP BY userRole.Name  ORDER BY COUNT(id) DESC  LIMIT 100
