@@ -48,4 +48,4 @@ New York,Dennis Ritchie,NY,75
 Nashua,Johnny Seed,NH,87
 ```
 ## Download
-- [csv_col_reorder.py](https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/py/csv_col_reorder.py)
+- [csv_col_reorder.py](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/py/csv_col_reorder.py)
