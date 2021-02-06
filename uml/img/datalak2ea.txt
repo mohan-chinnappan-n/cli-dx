@@ -1,0 +1,6 @@
+Title: Integration Example - Datalake to EA
+ERP->Datalake:Daily load
+Note right of Datalake: e.g Snowflake
+DX->Datalake: Query and extract \n (and transfer if needed)
+DX->EA:Load
+DX->EA:Start Dataflow
