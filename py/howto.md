@@ -34,7 +34,7 @@ optional arguments:
 ```
 ### Demo
 
-``
+```
 $ python csv_col_reorder.py in.csv cols.txt output.csv
 ```
 
