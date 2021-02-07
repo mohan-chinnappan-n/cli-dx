@@ -19,7 +19,7 @@ Johnny Seed,87,Nashua,NH
 
 ### Usage
 ```
-$ python3 csv_col_reorder.py in.csv -h
+$ python3 csv_col_reorder.py  -h
 usage: csv_col_reorder.py [-h] i c o
 
 Reorder columns in the given CSV file
