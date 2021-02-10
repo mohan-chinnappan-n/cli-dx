@@ -468,3 +468,6 @@ executed?: true
 }
 ```
 ![Limits](img/limits-1.png)
+
+## References
+- [Platform Events Limits](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_event_limits.htm)0
