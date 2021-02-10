@@ -673,6 +673,8 @@ post.Body ='Threshold has reached, take action!' ;
 
 insert post;
 ```
+
+<a name='pe'></a>
 #### Publish a Platform Event *Notification__e*
 
 - [Refer Platform Events Slides for the setup](https://mohan-chinnappan-n.github.io/sfdc/pevents.html#/6)
