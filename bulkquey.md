@@ -3,6 +3,15 @@
 - Requires plugin 0.0.132 or above
 
 ### Demo
+#### Query file
+```
+$ cat ~/tmp/acr.soql
+SELECT Id, AccountId, ContactId 
+FROM 
+AccountContactRelation
+
+```
+#### Executing query command
 ```
 $ sfdx mohanc:data:bulkapi:query -u mchinnappan@fsc-gs0.com -q ~/tmp/acr.soql
 SELECT Id, AccountId, ContactId 
