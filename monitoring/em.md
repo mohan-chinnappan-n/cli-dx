@@ -56,7 +56,8 @@ WavePerformance
 
 ### Usage
 ```
-$ sfdx mohanc:monitoring:em:get -hEvent Files for the given Event Type 
+$ sfdx mohanc:monitoring:em:get -h
+Event Files for the given Event Type 
 
 USAGE
   $ sfdx mohanc:monitoring:em:get
