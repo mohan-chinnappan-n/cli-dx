@@ -148,3 +148,76 @@ Time taken: 40.679 seconds
 
 ## Job
 ![upload job](img/loadFromOra-2.png)
+
+### Another example
+
+```
+
+SQL> SELECT name, location, Weight FROM fruits; 
+
+NAME				 LOCATION			      WEIGHT
+-------------------------------- -------------------------------- ----------
+apple				 MA					10.2
+peach				 NH					20.3
+pear				 NY				       23.42
+plum				 NH				       77.33
+cherry				 NH				       88.23
+pineapple			 FL				       66.32
+lime				 FL				       23.45
+Jack Fruit			 FL					20.3
+
+8 rows selected.
+
+
+```
+
+
+```
+$  sfdx mohanc:ea:dataset:loadFromOra -u mohan.chinnappan.n_ea2@gmail.com  -q ~/.sql/fruitsall.sql -l ~/.sql/ora.json -a datafromOra -c 6 
+=== Finding the data types based on the sample data ...
+[ 'NAME', 'LOCATION', 'WEIGHT' ]
+[ 'apple', 'MA', 10.200000000000001 ]
+[
+  {
+    fullyQualifiedName: 'datafromOra.NAME',
+    label: 'NAME',
+    name: 'NAME',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'datafromOra.LOCATION',
+    label: 'LOCATION',
+    name: 'LOCATION',
+    isSystemField: false,
+    isUniqueId: false,
+    isMultiValue: false,
+    multiValueSeparator: 'null',
+    type: 'Text'
+  },
+  {
+    fullyQualifiedName: 'datafromOra.WEIGHT',
+    label: 'WEIGHT',
+    name: 'WEIGHT',
+    isSystemField: false,
+    isUniqueId: false,
+    type: 'Numeric',
+    defaultValue: '0',
+    precision: 18,
+    scale: 4
+  }
+]
+{ id: '06V3h0000006NDTEA2', success: true, errors: [] }
+==== Chunk 1 of Chunk Size: 6 records ==== 
+==== Last Chunk ====
+
+Done.
+Time taken: 30.616 seconds
+open https://mohansun-ea-02-dev-ed.my.salesforce.com/analytics/dataManager
+ in a web browser to view this job
+
+```
+![ora2ea 4](img/ora2ea-4.png)
