@@ -221,3 +221,5 @@ open https://mohansun-ea-02-dev-ed.my.salesforce.com/analytics/dataManager
 
 ```
 ![ora2ea 4](img/ora2ea-4.png)
+![ora2ea 5](img/loadOra-Quoutes-1.png)
+
