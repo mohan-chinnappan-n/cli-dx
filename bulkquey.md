@@ -1,6 +1,6 @@
-## How Query using BulkAPI 2.0
+## How to Query using BulkAPI 2.0?
 
-- Requires plugin 0.0.132 or above
+- Requires plugin 0.0.137 or above
 
 ### Demo
 #### Query file
