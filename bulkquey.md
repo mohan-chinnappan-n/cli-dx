@@ -1,6 +1,7 @@
 ## How to Query using BulkAPI 2.0?
 
 - Requires plugin 0.0.137 or above
+- [How to install plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ### Demo
 #### Query file
