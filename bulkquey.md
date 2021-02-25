@@ -14,6 +14,11 @@ AccountContactRelation
 ```
 #### Executing query command
 ```
+## Make sure that you have logged in
+
+$ sfdx force:auth:web:login
+
+## Run the query command
 $ sfdx mohanc:data:bulkapi:query -u mchinnappan@fsc-gs0.com -q ~/tmp/acr.soql
 SELECT Id, AccountId, ContactId 
 FROM 
