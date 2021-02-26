@@ -3,6 +3,31 @@
 - Requires plugin 0.0.137 or above
 - [How to install plugin?](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
+### Usage
+
+```
+$ sfdx mohanc:data:bulkapi:query -h
+Data Query using BulkAPI 2  
+
+USAGE
+  $ sfdx mohanc:data:bulkapi:query
+
+OPTIONS
+  -q, --queryfile=queryfile                       SOQL query file
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              sfdx mohanc:bulkapi:query  -u <username>  -q queryFile [input.soql]
+
+              Executes the given SOQL query in the given queryFile (example: input.soql) and writes the CSV output to  
+  queryFile.csv (example: input.soql.csv)
+```
+
+
 ### Demo
 #### Query file
 ```
