@@ -127,3 +127,47 @@ $ head ~/tmp/acr.soql.csv
 "07kB00000039aAVIAY","001B000001KYvQzIAL","003B000000HcGJhIAN"
 
 ```
+
+### Listing bulk query jobs
+```
+$ sfdx mohanc:data:bulkapi:listJobs -u mchinnappan@fsc-gs0.com -o query
+
+```
+```
+$ sfdx mohanc:data:bulkapi:listJobs -u mchinnappan@fsc-gs0.com -o query
+{
+  done: true,
+  records: [
+    {
+      id: '750B000000BqgfeIAB',
+      operation: 'query',
+      object: 'AccountContactRelation',
+      createdById: '005B0000006pysJIAQ',
+      createdDate: '2021-02-22T15:47:48.000+0000',
+      systemModstamp: '2021-02-22T15:47:49.000+0000',
+      state: 'JobComplete',
+      concurrencyMode: 'Parallel',
+      contentType: 'CSV',
+      apiVersion: 51,
+      jobType: 'V2Query',
+      lineEnding: 'LF',
+      columnDelimiter: 'COMMA'
+    },
+    {
+      id: '750B000000Br2OSIAZ',
+      operation: 'query',
+      object: 'AccountContactRelation',
+      createdById: '005B0000006pysJIAQ',
+      createdDate: '2021-02-24T16:30:31.000+0000',
+      systemModstamp: '2021-02-24T16:30:31.000+0000',
+      state: 'JobComplete',
+      concurrencyMode: 'Parallel',
+      contentType: 'CSV',
+      apiVersion: 51,
+      jobType: 'V2Query',
+      lineEnding: 'LF',
+      columnDelimiter: 'COMMA'
+    }...
+]
+}
+```

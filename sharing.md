@@ -615,3 +615,70 @@ $ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q soql/userQuery.s
 attributes,Id,IsActive,ProfileId,Profile,UserRoleId,UserRole,Username,Email,Name,LastLoginDate,CreatedBy,CreatedDate,LastModifiedBy,LastModifiedDate,PermissionSetAssignments
 {type:User,url:/services/data/v49.0/sobjects/User/0053h000002xQ5sAAE},0053h000002xQ5sAAE,true,00e3h000001kqJMAAY,{attributes:{type:Profile,url:/services/data/v49.0/sobjects/Profile/00e3h000001kqJMAAY},Name:System Administrator,UserLicense:{attributes:{type:UserLicense,url:/services/data/v49.0/sobjects/UserLicense/1003h000001GeewAAC},Name:Salesforce}},00E3h000001JaqUEAS,{attributes:{type:UserRole,url:/services/data/v49.0/sobjects/UserRole/00E3h000001JaqUEAS},DeveloperName:CEO},mohan.chinnappan.n_ea2@gmail.com,mohan.chinnappan.n@gmail.com,Mohan Chinnappan,2020-08-27T10:25:03.000+0000,{attributes:{type:User,url:/services/data/v49.0/sobjects/User/0053h000002xQ5sAAE},Name:Mohan Chinnappan},2020-07-13T19:30:57.000+0000,{attributes:{type:User,url:/services/data/v49.0/sobjects/User/0053h000002xQ5sAAE},Name:Mohan Chinnappan},2020-08-23T22:09:49.000+0000,{totalSize:4,done:true,records:[{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000002cLFBCA2},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000001i9aKGAQ},Name:EinsteinAnalyticsPlusAdmin}},{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000001BwoBCAS},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000001iHPpGAM},Name:EA_Plus}},{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000002cLF1CAM},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwO7GAK},Name:Wave_Analytics_Trailhead_Admin}},{attributes:{type:PermissionSetAssignment,url:/services/data/v49.0/sobjects/PermissionSetAssignment/0Pa3h000002cLF3CAM},PermissionSet:{attributes:{type:PermissionSet,url:/services/data/v49.0/sobjects/PermissionSet/0PS3h000002PwO9GAK},Name:EventMonitoringWaveAdmin}}]}
 ```
+
+## Group
+[User ERD](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=User)
+[Group ERD](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=Group)
+[GroupMember ERD](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=GroupMember)
+
+
+```
+$ cat ~/tmp/group.soql 
+SELECT 
+Id,
+DeveloperName,
+RelatedId,
+Type,
+Email,
+DoesSendEmailToMembers,
+DoesIncludeBosses
+
+FROM Group
+```
+```
+$ sfdx mohanc:data:query -u  mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/group.soql  -f json
+$ sfdx mohanc:data:query -u  mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/group.soql  -f json 
+[
+    {
+        "attributes": {
+            "type": "Group",
+            "url": "/services/data/v51.0/sobjects/Group/00G3h000001rhf6EAA"
+        },
+        "Id": "00G3h000001rhf6EAA",
+        "DeveloperName": "Sales_WW",
+        "RelatedId": "00E3h000001JaqREAS",
+        "Type": "Role",
+        "Email": null,
+        "DoesSendEmailToMembers": false,
+        "DoesIncludeBosses": true
+    },
+...
+]
+```
+## GroupMember
+```
+$ cat ~/tmp/groupMember.soql
+SELECT
+Id,
+GroupId,
+UserOrGroupId
+
+FROM GroupMember
+```
+
+```
+$ sfdx mohanc:data:query -u  mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/groupMember.soql  -f json 
+[
+    {
+        "attributes": {
+            "type": "GroupMember",
+            "url": "/services/data/v51.0/sobjects/GroupMember/0113h0000002627AAA"
+        },
+        "Id": "0113h0000002627AAA",
+        "GroupId": "00G3h000000OtiAEAS",
+        "UserOrGroupId": "00G3h000001rhf7EAA"
+    }
+]
+```
+
+
