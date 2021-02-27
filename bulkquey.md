@@ -29,6 +29,9 @@ EXAMPLE
 
 
 ### Demo
+
+![Demo-1](img/bq-1.gif)
+
 #### Query file
 ```
 $ cat ~/tmp/acr.soql
