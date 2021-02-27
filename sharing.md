@@ -3,6 +3,10 @@
 - Chrome Extension version 
 ![sd](img/sd-1.png)
 
+### Demo
+![sd-demo](img/sd-2.gif)
+
+### Plans
 - Planning to port Chrome Extension version to DX ( Work-in-progress)
 - Requires 0.0.54 version of the plugin
     - sfdx-mohanc-plugins@0.0.54

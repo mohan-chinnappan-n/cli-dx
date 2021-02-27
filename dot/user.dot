@@ -1,0 +1,12 @@
+digraph user {
+   
+ user -> profile 
+ profile -> admin
+ user -> permissionSet
+ permissionSet->p1
+ permissionSet->p2
+ user -> group
+ group -> g1
+ group -> g2
+}
+
