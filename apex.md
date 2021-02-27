@@ -1,4 +1,4 @@
-## How to get Apex Classes using DX ?
+## How to get Apex Classes and checking the sharing using DX ?
 
 ```
 ## content of apexClasses.soql
