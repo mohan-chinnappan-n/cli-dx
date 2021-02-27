@@ -42,7 +42,7 @@ WHERE RefMetadataComponentType = 'ApexClass'
 $ sfdx mohanc:tooling:query -u mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/mcd.soql  -f json
 
 ```
-```json
+```
 [
   {
     attributes: {
