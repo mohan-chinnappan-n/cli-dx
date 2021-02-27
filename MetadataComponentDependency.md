@@ -2,7 +2,10 @@
 
 ### Describe
 ```
-sfdx mohanc:tooling:describe -u mohan.chinnappan.n_ea2@gmail.com -s MetadataComponentDependency
+$ sfdx mohanc:tooling:describe -u mohan.chinnappan.n_ea2@gmail.com -s MetadataComponentDependency
+```
+
+```
 Label : Metadata Component Dependency
 Num of Fields : 9
 Id

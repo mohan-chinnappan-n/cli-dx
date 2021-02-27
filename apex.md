@@ -54,5 +54,5 @@ $ sfdx mohanc:data:jq -i ~/tmp/apexClasses.soql.json -f '.[].Body'  | grep -irn 
 ```
 #### Notes
 -  Apex classes can be written using the without sharing keyword should be taken care before going live (community cloud...)
-
+- [Apex class dependency info](MetadataComponentDependency.md)
 
