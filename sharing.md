@@ -50,20 +50,6 @@ ____________PermSets____________
 "Id","Label","PermissionsViewAllData","PermissionsModifyAllData","PermissionsManageDataIntegrations"
 "0PS3h000002PwNZGA0","00ex00000018ozh_128_09_04_12_1",true,true,true
 ____________AccountShare____________
-=== None found ===
-____________OpportunityShare____________
-=== None found ===
-~/sfdx/sfdx-mohanc-plugins:
-$ sfdx mohanc:sharing:debug -u mohan.chinnappan.n_ea2@gmail.com -e mohan.chinnappan.n@gmail.com
-____________Profile____________
-profileId : 00e3h000001kqJMAAY
-____________Permissions____________
-"Id","Name","PermissionsViewAllData","PermissionsModifyAllData","PermissionsManageDataIntegrations"
-"00e3h000001kqJMAAY","System Administrator",true,true,true
-____________PermSets____________
-"Id","Label","PermissionsViewAllData","PermissionsModifyAllData","PermissionsManageDataIntegrations"
-"0PS3h000002PwNZGA0","00ex00000018ozh_128_09_04_12_1",true,true,true
-____________AccountShare____________
 "Id","AccountId","AccountAccessLevel","OpportunityAccessLevel","CaseAccessLevel","ContactAccessLevel","RowCause"
 "00r3h000033f9xzAAA","0013h00000FfgCMAAZ","All","Edit","Edit","Edit","Owner"
 "00r3h000033fA4bAAE","0013h00000FfgCNAAZ","All","Edit","Edit","Edit","Owner"
