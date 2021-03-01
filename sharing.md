@@ -8,8 +8,8 @@
 
 ### Plans
 - Planning to port Chrome Extension version to DX ( Work-in-progress)
-- Requires 0.0.54 version of the plugin
-    - sfdx-mohanc-plugins@0.0.54
+- Requires 0.0.142 version of the plugin
+    - sfdx-mohanc-plugins@0.0.142
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ![viz-1](img/userInfo.svg)
