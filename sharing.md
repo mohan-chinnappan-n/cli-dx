@@ -12,9 +12,10 @@
     - sfdx-mohanc-plugins@0.0.54
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
+![viz-1](img/userInfo.svg)
 
 - Login using  sfdx force:auth:web:login 
-### Usge
+### Usage
 ```
 $ sfdx mohanc:sharing:debug -h
 Run Sharing Debugger on the given org for the given user
@@ -690,5 +691,69 @@ $ sfdx mohanc:data:query -u  mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/groupMemb
     }
 ]
 ```
+## Object Permissions
+```
+$ cat  ~/tmp/obj-perm.soql
+SELECT Id, ParentId, SObjectType,PermissionsCreate,PermissionsRead,PermissionsEdit,PermissionsDelete,PermissionsViewAllRecords,PermissionsModifyAllRecords,Parent.label, Parent.IsOwnedByProfile  FROM ObjectPermissions 
+```
 
+```
+
+$ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/obj-perm.soql  -f json
+[
+...
+ {
+        "attributes": {
+            "type": "ObjectPermissions",
+            "url": "/services/data/v51.0/sobjects/ObjectPermissions/00000001i9aL801AAC"
+        },
+        "Id": "00000001i9aL801AAC",
+        "ParentId": "0PS3h000001i9aLGAQ",
+        "SobjectType": "Order",
+        "PermissionsCreate": true,
+        "PermissionsRead": true,
+        "PermissionsEdit": true,
+        "PermissionsDelete": true,
+        "PermissionsViewAllRecords": true,
+        "PermissionsModifyAllRecords": true,
+        "Parent": {
+            "attributes": {
+                "type": "PermissionSet",
+                "url": "/services/data/v51.0/sobjects/PermissionSet/0PS3h000001i9aLGAQ"
+            },
+            "Label": "Salesforce CMS Integration Admin",
+            "IsOwnedByProfile": false
+        }
+    },
+...
+]
+```
+
+## Field Permissions
+```
+$ cat  ~/tmp/field-perm.soql
+SELECT id,SobjectType, Field, PermissionsRead, PermissionsEdit FROM FieldPermissions
+
+```
+
+```
+$ sfdx mohanc:data:query -u mohan.chinnappan.n_ea2@gmail.com -q ~/tmp/field-perm.soql  -f json
+[
+...
+
+ {
+        "attributes": {
+            "type": "FieldPermissions",
+            "url": "/services/data/v51.0/sobjects/FieldPermissions/01k3h0000Iu7ytcAQA"
+        },
+        "Id": "01k3h0000Iu7ytcAQA",
+        "SobjectType": "Event",
+        "Field": "Event.Description",
+        "PermissionsRead": true,
+        "PermissionsEdit": true
+    },
+...
+]
+
+```
 
