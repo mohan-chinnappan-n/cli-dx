@@ -6,4 +6,5 @@
 - [Sharing Model Notes](https://mohan-chinnappan-n2.github.io/2020/sharing/sharing.html)
 - [Sharing Debugger tool](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/sharing.md)
 - [Salesforce Data Model Interactive](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/model-sfdc.html)
+- [FSC Data Model Interactive](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/model-fsc-224.html)
 - [Deployment using Experience Bundle](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/mdapi/mdapi.md)
