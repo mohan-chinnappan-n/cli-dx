@@ -38,6 +38,10 @@ EXAMPLE
        USAGE
        sfdx mohanc:sharing:debug -u <username> -e <UserEmailId> 
 
+       writes userInfo.json and userInfo.svg files in the current directory
+
+       -----------
+
 ```
 ### Demo
 ```
