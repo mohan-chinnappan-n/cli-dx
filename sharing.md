@@ -8,8 +8,8 @@
 
 ### Plans
 - Planning to port Chrome Extension version to DX ( Work-in-progress)
-- Requires 0.0.142 version of the plugin
-    - sfdx-mohanc-plugins@0.0.142
+- Requires 0.0.144 version of the plugin
+    - sfdx-mohanc-plugins@0.0.144
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ![viz-1](img/userInfo.svg)
@@ -23,8 +23,13 @@ Run Sharing Debugger on the given org for the given user
 USAGE
   $ sfdx mohanc:sharing:debug
 
+Run Sharing Debugger on the given org for the given user
+
+USAGE
+  $ sfdx mohanc:sharing:debug
+
 OPTIONS
-  -e, --email=email                                User Email Id
+  -n, --username=username                          User Name to Debug
   -u, --targetusername=targetusername              username or alias for the target org; overrides default target org
   -v, --targetdevhubusername=targetdevhubusername  username or alias for the dev hub org; overrides default dev hub org
   --apiversion=apiversion                          override the api version used for api requests made by this command
@@ -36,11 +41,12 @@ EXAMPLE
        ** Run Sharing Debugger on the given org for the given user **
 
        USAGE
-       sfdx mohanc:sharing:debug -u <username> -e <UserEmailId> 
+       sfdx mohanc:sharing:debug -u <username>  -n <userNameToDebug>
 
        writes userInfo.json and userInfo.svg files in the current directory
 
        -----------
+    
 
 ```
 ### Demo
