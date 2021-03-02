@@ -1,10 +1,10 @@
 ## Notes of DataPrep
 
 
-<table> 
 ![dp-1](img/dp/dp-1.png)
+<table> 
 <tr><td>
-```json
+<textarea>
 
 {
     "version": "51.0",
@@ -96,13 +96,11 @@
         "hiddenColumns": []
     }
 }
+</textarea>
 
-```
 </td>
-</td>
-![dataflow](img/fruits-df-1.png)
-### Dataflow
-```json
+<td>
+<textarea>
 { 
   "getFruitYield": {
     "action": "edgemart",
@@ -127,7 +125,9 @@
   }
 }
 
-```
+</textarea>
 </td>
 </tr>
 </table>
+
+![dataflow](img/fruits-df-1.png)
