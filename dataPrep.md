@@ -1,7 +1,9 @@
 ## Notes of DataPrep
 
-![dp-1](img/dp/dp-1.png)
 
+<table> 
+![dp-1](img/dp/dp-1.png)
+<tr><td>
 ```json
 
 {
@@ -96,6 +98,8 @@
 }
 
 ```
+</td>
+</td>
 ![dataflow](img/fruits-df-1.png)
 ### Dataflow
 ```json
@@ -124,3 +128,6 @@
 }
 
 ```
+</td>
+</tr>
+</table>
