@@ -4,7 +4,7 @@
 ![dp-1](img/dp/dp-1.png)
 <table> 
 <tr><td>
-<textarea>
+<pre>
 
 {
     "version": "51.0",
@@ -96,11 +96,11 @@
         "hiddenColumns": []
     }
 }
-</textarea>
+</pre>
 
 </td>
 <td>
-<textarea>
+<pre>
 { 
   "getFruitYield": {
     "action": "edgemart",
@@ -125,7 +125,7 @@
   }
 }
 
-</textarea>
+</pre>
 </td>
 </tr>
 </table>
