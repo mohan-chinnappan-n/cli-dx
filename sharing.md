@@ -51,7 +51,7 @@ EXAMPLE
 ```
 ### Demo
 ```
-$ sfdx mohanc:sharing:debug -u mohan.chinnappan.n_ea2@gmail.com -e mohan.chinnappan.n@gmail.com
+$ sfdx mohanc:sharing:debug -u mohan.chinnappan.n_ea2@gmail.com -n mohan.chinnappan.n_ea2@gmail.com
 ____________Profile____________
 profileId : 00e3h000001kqJMAAY
 ____________Permissions____________
