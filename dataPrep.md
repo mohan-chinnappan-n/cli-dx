@@ -3,7 +3,7 @@
 
 <table width="1200"> 
 <tr valign='top'><td>
-<img src="img/dp/dp-1.png" alt="">
+<img width="800" src="img/dp/dp-1.png" alt="">
 <pre>
 
 {
@@ -100,7 +100,7 @@
 
 </td>
 <td>
-<img src='img/fruits-df-1.png'/>
+<img width="800" src='img/fruits-df-1.png'/>
 <pre>
 { 
   "getFruitYield": {
