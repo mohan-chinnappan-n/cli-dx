@@ -1,9 +1,9 @@
 ## Notes of DataPrep
 
 
-<table width="1200"> 
+<table width="2400"> 
 <tr valign='top'><td>
-<img width="800" src="img/dp/dp-1.png" alt="">
+<img width="1200" src="img/dp/dp-1.png" alt="">
 <pre>
 
 {
@@ -100,7 +100,7 @@
 
 </td>
 <td>
-<img width="800" src='img/fruits-df-1.png'/>
+<img width="1200" src='img/fruits-df-1.png'/>
 <pre>
 { 
   "getFruitYield": {
