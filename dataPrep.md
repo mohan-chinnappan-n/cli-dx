@@ -2,7 +2,7 @@
 
 
 <table width="2400"> 
-<tr valign='top'><td>
+<tr valign='top' width="2400"><td>
 <img width="1200" src="img/dp/dp-1.png" alt=""/>
 <pre>
 
