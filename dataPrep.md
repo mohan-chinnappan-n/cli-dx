@@ -96,3 +96,31 @@
 }
 
 ```
+![dataflow](img/fruits-df-1.png)
+### Dataflow
+```json
+{ 
+  "getFruitYield": {
+    "action": "edgemart",
+    "parameters": {
+      "alias": "fruit_yield"
+    }
+  },
+  "filterForApple": {
+    "action": "filter",
+    "parameters": {
+      "source": "getFruitYield",
+      "saqlFilter": "fruit==\"apple\""
+    }
+  },
+  "registerAppleFruits": {
+    "action": "sfdcRegister",
+    "parameters": {
+      "source": "filterForApple",
+      "name": "regFruits",
+      "alias": "regFruits"
+    }
+  }
+}
+
+```
