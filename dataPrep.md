@@ -1,7 +1,7 @@
 ## Notes of DataPrep
 
 
-<table> 
+<table width="1200"> 
 <tr valign='top'><td>
 <img src="img/dp/dp-1.png" alt="">
 <pre>
