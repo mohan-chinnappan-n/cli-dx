@@ -1,4 +1,8 @@
 # Notes of DataPrep
+- Requires 0.0.146 version of the plugin
+    - sfdx-mohanc-plugins@0.0.146
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 
 
 ## Topics
