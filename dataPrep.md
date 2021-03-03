@@ -1,6 +1,12 @@
-## Notes of DataPrep
+# Notes of DataPrep
 
 
+## Topics
+- [Compare](#compare)
+- [Converter](#convertor)
+
+## Comparing Dataflow and DataPrep for a simple Dataflow
+<a name="compare"></a>
 <table width="2400"> 
 <tr valign='top' width="2400"><td>
 <img width="1200" src="img/dp/dp-1.png" alt=""/>
@@ -131,3 +137,84 @@
 </tr>
 </table>
 
+<a name='convertor'></a>
+
+###  Dataflow to DataPrep - dataflow2dataPrep 
+
+- List dataflows
+```
+$ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com 
+Id,Label
+02K3h000000jqv1EAA,filterFruits <-----
+02K3h000000Mr7JEAS,The_Motivator
+02K3h000000Mu1oEAC,exportOppty2
+02K3h000000Mu0vEAC,exportOppty
+02K3h000000MtyuEAC,ExportCustomers
+02K3h000000MrxWEAS,fruitsdf
+02K3h000000Mr7KEAS,Default Salesforce Dataflow
+
+```
+- Run converter
+
+```
+$ sfdx mohanc:ea:dataflow:dataflow2dataPrep -u mohan.chinnappan.n_ea2@gmail.com  -d 02K3h000000jqv1EAA > ~/tmp/dp-1.json
+
+```
+$ cat ~/tmp/dp-1.json 
+
+```
+
+```json
+
+{
+    "version": "51.0",
+    "nodes": {
+        "getFruitYield": {
+            "parameters": {
+                "dataset": {
+                    "label": "fruit_yield",
+                    "name": "fruit_yield",
+                    "type": "analyticsDataset"
+                },
+                "fields": []
+            },
+            "action": "load",
+            "sources": []
+        },
+        "filterForApple": {
+            "parameters": {
+                "filterExpressions": [
+                    {
+                        "field": "fruit",
+                        "operands": [
+                            "apple"
+                        ],
+                        "operator": "EQUAL"
+                    }
+                ]
+            },
+            "action": "filter",
+            "sources": [
+                "getFruitYield"
+            ]
+        },
+        "registerAppleFruits": {
+            "parameters": {
+                "dataset": {
+                    "label": "regFruits",
+                    "name": "regFruits",
+                    "type": "analyticsDataset"
+                },
+                "fields": []
+            },
+            "action": "save",
+            "sources": [
+                "filterForApple"
+            ]
+        }
+    }
+}
+```
+
+- Demo
+![Demo of the converter](img/dp/df2dp-1.gif)
