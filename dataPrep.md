@@ -1,7 +1,7 @@
 # DataPrep / Recipes
 
-- Requires 0.0.147 version of the plugin
-    - sfdx-mohanc-plugins@0.0.147
+- Requires 0.0.148 version of the plugin
+    - sfdx-mohanc-plugins@0.0.148
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
