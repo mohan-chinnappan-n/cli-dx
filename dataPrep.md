@@ -288,6 +288,7 @@ EXAMPLE
 ```
 
 
+```
 $ sfdx mohanc:ea:recipe:definition -u mohan.chinnappan.n_ea2@gmail.com -r 05v3h000000CctIAAS -f R3  
 ```
 
