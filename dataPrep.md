@@ -384,4 +384,3 @@ $ sfdx mohanc:ea:recipe:definition -u mohan.chinnappan.n_ea2@gmail.com -r 05v3h0
     "version": "51.0"
 }
 ```
-```
