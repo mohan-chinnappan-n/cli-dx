@@ -11,6 +11,9 @@
 - [Converter](#convertor)
 - [Recipe List](#recipeList)
 - [Recipe Definition](#recipeDef)
+- [Dataflow list](#dfList)
+- [Dataflow definition](#dfDef)
+
 
 
 ## Comparing Dataflow and DataPrep for a simple Dataflow
@@ -382,5 +385,101 @@ $ sfdx mohanc:ea:recipe:definition -u mohan.chinnappan.n_ea2@gmail.com -r 05v3h0
         "hiddenColumns": []
     },
     "version": "51.0"
+}
+```
+
+<a name='dfList'></a>
+### Dataflow list
+```
+$ sfdx mohanc:ea:dataflow:list -h
+Lists Dataflows  
+
+USAGE
+  $ sfdx mohanc:ea:dataflow:list
+
+OPTIONS
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              List Dataflows
+              sfdx mohanc:ea:dataflow:list  -u <username> 
+
+```
+
+
+```
+$ sfdx mohanc:ea:dataflow:list -u mohan.chinnappan.n_ea2@gmail.com
+```
+
+```
+Id,Label
+02K3h000000jqv1EAA,filterFruits
+02K3h000000Mr7JEAS,The_Motivator
+02K3h000000Mu1oEAC,exportOppty2
+02K3h000000Mu0vEAC,exportOppty
+02K3h000000MtyuEAC,ExportCustomers
+02K3h000000MrxWEAS,fruitsdf
+02K3h000000Mr7KEAS,Default Salesforce Dataflow
+```
+
+<a name='dfDef'></a>
+### Dataflow definition
+
+
+```
+
+$ sfdx mohanc:ea:dataflow:definition -h 
+Get Definition of the given Dataflow
+
+USAGE
+  $ sfdx mohanc:ea:dataflow:definition
+
+OPTIONS
+  -d, --dataflowid=dataflowid                     Dataflow Id for which we need definition
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              Get Definition of the given dataflow
+              sfdx mohanc:ea:dataflow:definition  -u <username> -d <dataflowId>
+
+      
+
+```
+
+```
+$ sfdx mohanc:ea:dataflow:definition -u mohan.chinnappan.n_ea2@gmail.com -d 02K3h000000jqv1EAA
+```
+
+```json
+{
+    "getFruitYield": {
+        "action": "edgemart",
+        "parameters": {
+            "alias": "fruit_yield"
+        }
+    },
+    "filterForApple": {
+        "action": "filter",
+        "parameters": {
+            "source": "getFruitYield",
+            "saqlFilter": "fruit==&quot;apple&quot;"
+        }
+    },
+    "registerAppleFruits": {
+        "action": "sfdcRegister",
+        "parameters": {
+            "source": "filterForApple",
+            "name": "regFruits",
+            "alias": "regFruits"
+        }
+    }
 }
 ```
