@@ -1,6 +1,7 @@
-# DataPrep
-- Requires 0.0.146 version of the plugin
-    - sfdx-mohanc-plugins@0.0.146
+# DataPrep / Recipes
+
+- Requires 0.0.147 version of the plugin
+    - sfdx-mohanc-plugins@0.0.147
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 
@@ -8,6 +9,9 @@
 ## Topics
 - [Compare](#compare)
 - [Converter](#convertor)
+- [Recipe List](#recipeList)
+- [Recipe Definition](#recipeDef)
+
 
 ## Comparing Dataflow and DataPrep for a simple Dataflow
 <a name="compare"></a>
@@ -224,3 +228,159 @@ $ cat ~/tmp/dp-1.json
 
 - Demo
 ![Demo of the converter](img/dp/df2dp-1.gif)
+
+<a name='recipelist'></a>
+
+### Getting Recipe List
+
+```
+$ sfdx mohanc:ea:recipe:list -u mohan.chinnappan.n_ea2@gmail.com  -h
+Lists Recipes
+
+USAGE
+  $ sfdx mohanc:ea:recipe:list
+
+OPTIONS
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              List Recipes
+              sfdx mohanc:ea:recipe:list  -u <username>
+
+```
+
+
+```
+$ sfdx mohanc:ea:recipe:list -u mohan.chinnappan.n_ea2@gmail.com  
+Id,Name,Format
+"05v3h000000CctIAAS","fruits","R3"
+"05v3h000000CcpaAAC","ea_s3_r","undefined"
+
+```
+<a name='recipedef'></a>
+### Getting Recipe Definition
+
+
+```
+$ sfdx mohanc:ea:recipe:definition  -h
+Get Definition of the given Recipe
+
+USAGE
+  $ sfdx mohanc:ea:recipe:definition
+
+OPTIONS
+  -f, --format=format                             Format R3 or none
+  -r, --recipeid=recipeid                         Recipe Id for which we need definition
+  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
+  --apiversion=apiversion                         override the api version used for api requests made by this command
+  --json                                          format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+
+EXAMPLE
+
+              Get Definition of the given Recipe
+              sfdx mohanc:ea:recipe:definition  -u <username> -r <recipeId> -f <format>
+
+```
+
+
+$ sfdx mohanc:ea:recipe:definition -u mohan.chinnappan.n_ea2@gmail.com -r 05v3h000000CctIAAS -f R3  
+```
+
+```json
+{
+    "nodes": {
+        "LOAD_DATASET0": {
+            "action": "load",
+            "parameters": {
+                "dataset": {
+                    "label": "fruit-yield-acct",
+                    "name": "fruit_yield_acct",
+                    "type": "analyticsDataset"
+                },
+                "fields": [
+                    "date",
+                    "act",
+                    "fruit",
+                    "qty"
+                ]
+            },
+            "sources": []
+        },
+        "FILTER0": {
+            "action": "filter",
+            "parameters": {
+                "filterExpressions": [
+                    {
+                        "field": "fruit",
+                        "operands": [
+                            "apple"
+                        ],
+                        "operator": "EQUAL",
+                        "type": "TEXT"
+                    }
+                ]
+            },
+            "sources": [
+                "LOAD_DATASET0"
+            ]
+        },
+        "OUTPUT0": {
+            "action": "save",
+            "parameters": {
+                "dataset": {
+                    "label": "apples",
+                    "name": "apples",
+                    "type": "analyticsDataset"
+                },
+                "fields": []
+            },
+            "sources": [
+                "FILTER0"
+            ]
+        }
+    },
+    "ui": {
+        "nodes": {
+            "LOAD_DATASET0": {
+                "label": "fruit-yield-acct",
+                "type": "LOAD_DATASET",
+                "top": 112,
+                "left": 112,
+                "parameters": {
+                    "sampleSize": 2000
+                }
+            },
+            "FILTER0": {
+                "label": "Filter",
+                "type": "FILTER",
+                "top": 112,
+                "left": 252
+            },
+            "OUTPUT0": {
+                "label": "Output",
+                "type": "OUTPUT",
+                "top": 112,
+                "left": 392
+            }
+        },
+        "connectors": [
+            {
+                "source": "LOAD_DATASET0",
+                "target": "FILTER0"
+            },
+            {
+                "source": "FILTER0",
+                "target": "OUTPUT0"
+            }
+        ],
+        "hiddenColumns": []
+    },
+    "version": "51.0"
+}
+```
+```
