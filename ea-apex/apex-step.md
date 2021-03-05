@@ -4,19 +4,39 @@
 - [Refer](https://trailhead.salesforce.com/en/content/learn/modules/apex_integration_services/apex_integration_webservices)
 ```java
 
+
 @RestResource(urlMapping='/Cases/*')
 global with sharing class CaseManager {
+
+    @HttpGet
+    global static List<Case> getCaseBySubject() {
+        RestRequest request = RestContext.request;
+        // grab the caseId from the end of the URL
+        String subject = '%' + request.requestURI.substring(
+          request.requestURI.lastIndexOf('/')+1) + '%';
+        List<Case> result =  [SELECT Id, CaseNumber,Subject,Status,Origin,Priority
+                        FROM Case
+                        WHERE Subject LIKE :subject LIMIT 2];
+
+                        
+                        
+
+        return result;
+    }
+    
+    /*
     @HttpGet
     global static Case getCaseById() {
         RestRequest request = RestContext.request;
         // grab the caseId from the end of the URL
-:        String caseId = request.requestURI.substring(
+        String caseId = request.requestURI.substring(
           request.requestURI.lastIndexOf('/')+1);
         Case result =  [SELECT CaseNumber,Subject,Status,Origin,Priority
                         FROM Case
                         WHERE Id = :caseId];
         return result;
     }
+    */
     @HttpPost
     global static ID createCase(String subject, String status,
         String origin, String priority) {
@@ -75,18 +95,58 @@ global with sharing class CaseManager {
 $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/apexrest/Cases/5003h000006f6jXAAQ 
 ```
 ```json
-{
-    "attributes": {
-        "type": "Case",
-        "url": "/services/data/v51.0/sobjects/Case/5003h000006f6jXAAQ"
+$ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/apexrest/Cases/Engine
+[
+    {
+        "attributes": {
+            "type": "Case",
+            "url": "/services/data/v51.0/sobjects/Case/5003h000005VRefAAG"
+        },
+        "Id": "5003h000005VRefAAG",
+        "CaseNumber": "00028665",
+        "Subject": "Engine cylinder has knocking",
+        "Status": "New",
+        "Priority": "High"
     },
-    "CaseNumber": "00028693",
-    "Subject": "Engine cylinder has knocking",
-    "Status": "New",
-    "Priority": "High",
-    "Id": "5003h000006f6jXAAQ"
-}
-
+    {
+        "attributes": {
+            "type": "Case",
+            "url": "/services/data/v51.0/sobjects/Case/5003h000005VRdIAAW"
+        },
+        "Id": "5003h000005VRdIAAW",
+        "CaseNumber": "00028653",
+        "Subject": "Engine cylinder has knocking",
+        "Status": "New",
+        "Priority": "High"
+   
+```
+```
+$ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/apexrest/Cases/cylinder
+```json
+[
+    {
+        "attributes": {
+            "type": "Case",
+            "url": "/services/data/v51.0/sobjects/Case/5003h000005VRefAAG"
+        },
+        "Id": "5003h000005VRefAAG",
+        "CaseNumber": "00028665",
+        "Subject": "Engine cylinder has knocking",
+        "Status": "New",
+        "Priority": "High"
+    },
+    {
+        "attributes": {
+            "type": "Case",
+            "url": "/services/data/v51.0/sobjects/Case/5003h000005VRdIAAW"
+        },
+        "Id": "5003h000005VRdIAAW",
+        "CaseNumber": "00028653",
+        "Subject": "Engine cylinder has knocking",
+        "Status": "New",
+        "Priority": "High"
+    }
+]
 ```
 
 ## Resources

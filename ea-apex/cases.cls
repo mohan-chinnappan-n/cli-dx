@@ -1,5 +1,23 @@
 @RestResource(urlMapping='/Cases/*')
 global with sharing class CaseManager {
+
+    @HttpGet
+    global static List<Case> getCaseBySubject() {
+        RestRequest request = RestContext.request;
+        // grab the caseId from the end of the URL
+        String subject = '%' + request.requestURI.substring(
+          request.requestURI.lastIndexOf('/')+1) + '%';
+        List<Case> result =  [SELECT Id, CaseNumber,Subject,Status,Origin,Priority
+                        FROM Case
+                        WHERE Subject LIKE :subject LIMIT 2];
+
+                        
+                        
+
+        return result;
+    }
+    
+    /*
     @HttpGet
     global static Case getCaseById() {
         RestRequest request = RestContext.request;
@@ -11,6 +29,7 @@ global with sharing class CaseManager {
                         WHERE Id = :caseId];
         return result;
     }
+    */
     @HttpPost
     global static ID createCase(String subject, String status,
         String origin, String priority) {
