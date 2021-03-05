@@ -122,6 +122,8 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
 ```
 ```
 $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/apexrest/Cases/cylinder
+```
+
 ```json
 [
     {
