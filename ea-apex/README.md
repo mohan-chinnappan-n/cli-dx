@@ -404,6 +404,10 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
     ]
 }
 ```
+## Steps
+![Steps-1](img/apex-step-1.png)
+![Steps-2](img/apex-step-2.png)
+
 
 ## Demo of the dashboard
 ![demo-1](img/apexStep-1.gif)
