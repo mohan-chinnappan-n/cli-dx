@@ -460,7 +460,13 @@ $  sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/fruit -m POST -d fr
 ]
 
 ```
+
+## Remote Site Setting
+
+![remote site setting](img/remote-site-settings-1.png)
 ## Apex class for the /fruitinv service
+
+
 
 ```java
 @RestResource(urlMapping='/fruitinv')
@@ -472,6 +478,7 @@ global with sharing class FuritsInv {
     
         HttpRequest request = new HttpRequest();
         Http http = new Http();
+        // make sure that your remote-site setting has this entry: https://mohansun-rum.herokuapp.com
         request.setEndpoint('https://mohansun-rum.herokuapp.com/fruit');
         request.setMethod('POST');
         String body = '{"name": "' + name + '"}';
