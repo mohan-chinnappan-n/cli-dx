@@ -459,10 +459,10 @@ $  sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/fruit -m POST -d fr
     }
 ]
 
-```java
+```
 ## Apex class for the /fruitinv service
 
-```
+```java
 @RestResource(urlMapping='/fruitinv')
 
 global with sharing class FuritsInv {
