@@ -1,7 +1,7 @@
 # How to use Apex Step in EA (Tableau CRM)
 
 ## Use case
-- We have a REST API (```/fruits```) takes  given a fruit name via HTTP POST, provides its qty (also uppercase the fruit name)
+- We have a REST API (```/fruits```) takes  given fruit name (item)  via HTTP POST, provides its qty (also uppercases the fruit name)
 - In the dashboard when the user selects the item in the list box or the pillbox this apex REST service will be called to get the qty (it our case it is a random number between 0 to 100)
 
 ## Apex code for  FruitsManager.cls
