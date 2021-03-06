@@ -450,6 +450,11 @@ cat header.json
 <a name='remote'></a>
 
 ## Testing REST API at heroku
+
+### Use case
+- We have a REST API (```/fruitsinv```) takes  given fruit name (name)  via HTTP POST, provides its qty (by calling a fruit inventory REST service: https://mohansun-rum.herokuapp.com/fruit )
+- In the dashboard when the user selects the item in the list box or the pillbox this apex REST service will be called to get the qty 
+
 ```
 $  sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/fruit -m POST -d fruitData.json  -f header.json 
 [
