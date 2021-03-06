@@ -424,3 +424,140 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
 
 ## Demo of the dashboard
 ![demo-1](img/apexStep-1.gif)
+
+
+# Another example
+
+```
+cat fruitData.json
+{ "name": "apple" }
+```
+
+```
+cat header.json
+
+{
+    "Content-Type": "application/json"
+}
+```
+
+## Testing REST API at heroku
+```
+$  sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/fruit -m POST -d fruitData.json  -f header.json 
+[
+    {
+        "name": "apple",
+        "qty": 0
+    }
+]
+
+```
+## Apex class for the /fruitinv service
+
+```
+@RestResource(urlMapping='/fruitinv')
+
+global with sharing class FuritsInv {
+
+    @HttpPost
+    global static String getFruits(String name) {
+    
+        HttpRequest request = new HttpRequest();
+        Http http = new Http();
+        request.setEndpoint('https://mohansun-rum.herokuapp.com/fruit');
+        request.setMethod('POST');
+        String body = '{"name": "' + name + '"}';
+        System.debug('body: ' + body);
+
+        request.setBody(body);
+        request.setHeader('Content-Type', 'application/json');
+        
+        try {
+            HTTPResponse response = http.send(request);
+            String resBody = response.getBody();
+            System.debug('resBody: ' + resBody);
+             
+            JSONParser parser = JSON.createParser(resBody);
+          
+            List<Fruit> fruits = new List<Fruit>();
+    
+            while (parser.nextToken() != null) {
+            if (parser.getCurrentToken() == JSONToken.START_ARRAY) {
+                while (parser.nextToken() != null) {
+                   
+                    if (parser.getCurrentToken() == JSONToken.START_OBJECT) {
+                        Fruit fruit = (Fruit)parser.readValueAs(Fruit.class);
+                        fruits.add(fruit);
+                
+                        parser.skipChildren();
+                    }
+                }
+              }
+           }
+           return JSON.serialize(new PackagedReturnItem(fruits));
+         }
+         catch(Exception exp) {
+            System.debug('exception '+exp);
+         }
+         return '';
+  
+   
+  }
+  
+     // Metadata Structure returns alongside Data
+    public class ReturnMetadata {
+        
+        public List<String> strings; // Name of all the columns returned that is considered as text
+        public List<String> numbers; // Name of all the columns returned that is considered as numeric
+        public List<String> groups;  // Name of all the columns returned that is considered as groups
+        
+        public ReturnMetadata(List<String> strings, List<String> numbers, List<String> groups) {
+            this.strings = strings;
+            this.numbers = numbers;
+            this.groups = groups;
+        }
+    }
+    
+    // Combined Structure of Data and Metadata
+    public class PackagedReturnItem {
+        
+        public List<Fruit> data;
+        public ReturnMetadata metadata;
+        
+        public PackagedReturnItem(List<Fruit> data) {
+            this.data = data;
+            this.metadata = new ReturnMetadata(new List<String>{'name'}, new List<String>{'qty'}, new List<String>());
+        }   
+    }  
+    
+    
+ }
+```
+
+### Testing the Apex REST API
+
+```
+$ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/apexrest/fruitinv -m POST -d fruitData.json 
+"{\"metadata\":{\"strings\":[\"name\"],\"numbers\":[\"qty\"],\"groups\":[]},\"data\":[{\"qty\":97.0,\"name\":\"apple\"}]}"
+
+
+```
+
+### Step code
+
+```json
+ "GetFruitInv": {
+    "query": {
+        "body": {
+            "name": "{{cell(lens_1.selection, 0, \"fruit\").asString()}}"
+        },
+        "path": "fruitinv"
+    },
+    "type": "apex"
+ }
+
+```
+## Demo of the dashboard
+![demo-2](img/apexStep-2.gif)
+
+
