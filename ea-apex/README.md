@@ -1,5 +1,12 @@
 # How to use Apex Step in EA (Tableau CRM)
 
+## Topics
+- [Using Apex Local REST Service](#local)
+- [Using Apex Remote REST Service](#remote)
+
+
+<a name='local'></a>
+
 ## Use case
 - We have a REST API (```/fruits```) takes  given fruit name (item)  via HTTP POST, provides its qty (also uppercases the fruit name)
 - In the dashboard when the user selects the item in the list box or the pillbox this apex REST service will be called to get the qty (it our case it is a random number between 0 to 100)
@@ -440,6 +447,7 @@ cat header.json
     "Content-Type": "application/json"
 }
 ```
+<a name='remote'></a>
 
 ## Testing REST API at heroku
 ```
@@ -451,7 +459,7 @@ $  sfdx mohanc:ws:rest -r https://mohansun-rum.herokuapp.com/fruit -m POST -d fr
     }
 ]
 
-```
+```java
 ## Apex class for the /fruitinv service
 
 ```
