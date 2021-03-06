@@ -12,14 +12,17 @@ global with sharing class FuritsManager {
 
     @HttpPost
     global static String getFruits(String item) {
-     
+    
+        // here you can make an REST API Call out get the results for the given item
+        // for this example we assume we got the result  as shown below in the result String 
         Integer qty = Integer.valueof(Math.random() * 100);
-        
-        String result = '[ {"name": "' + item.toUpperCase()  + '", "qty" : ' + qty + '}]';
-        JSONParser parser = JSON.createParser(result);
-        
-        List<Fruit> fruits = new List<Fruit>();
+        String result = '[ {"name": "' + item.toUpperCase()  + '", "qty" : ' + qty + '}]'; // this can be external API callout result
 
+        // let us parse the result string
+        JSONParser parser = JSON.createParser(result);
+       
+        // we are going to get list of Fruits 
+        List<Fruit> fruits = new List<Fruit>();
         
         while (parser.nextToken() != null) {
         if (parser.getCurrentToken() == JSONToken.START_ARRAY) {
@@ -27,14 +30,24 @@ global with sharing class FuritsManager {
                
                 if (parser.getCurrentToken() == JSONToken.START_OBJECT) {
                     Fruit fruit = (Fruit)parser.readValueAs(Fruit.class);
-                    fruits.add(fruit);
+                    fruits.add(fruit); // add it to the list
             
                     parser.skipChildren();
                 }
             }
         }
     }
-  
+
+    // Apex requires, metadata and data
+    /* example
+
+      {"metadata":{"strings":["name"],"numbers":["qty"],"groups":[]},
+       "data\":[{"qty":54.0,"name":"MANGO"}]
+      }"
+
+    */
+
+   
     return JSON.serialize(new PackagedReturnItem(fruits));
   }
   
