@@ -38,7 +38,7 @@ global with sharing class FuritsManager {
         }
     }
 
-    // Apex requires, metadata and data
+    // Apex Step in EA requires, metadata and data
     /* example
 
       {"metadata":{"strings":["name"],"numbers":["qty"],"groups":[]},
