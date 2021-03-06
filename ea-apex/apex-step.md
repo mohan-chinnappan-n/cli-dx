@@ -150,6 +150,20 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
     }
 ]
 ```
+```
+ "text_2": {
+                "type": "text",
+                "parameters": {
+                    "content": {
+                        "displayTemplate": "{{cell(lens_1.selection, 0, \"fruit\").asString()}}"
+                    },
+                    "textAlignment": "left",
+                    "textColor": "#091A3E",
+                    "fontSize": 16,
+                    "showActionMenu": true
+                }
+            }
+```
 
 ## Resources
 [apex Step Type Properties](https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_json.meta/bi_dev_guide_json/bi_dbjson_steps_types_apex.htm)
