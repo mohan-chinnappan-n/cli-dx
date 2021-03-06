@@ -119,7 +119,7 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
 
 ### Full Dashboard JSON
 
-```
+```json
 {
     "label": "ApexStepTest2",
     "mobileDisabled": false,
