@@ -8,7 +8,7 @@
 <a name='local'></a>
 
 ## Use case
-- We have a REST API (```/fruits```) takes  given fruit name (item)  via HTTP POST, provides its qty (also uppercases the fruit name)
+- We have a REST API (```/fruits```) takes in the given fruit name (item)  via HTTP POST, provides its qty (also uppercases the fruit name)
 - In the dashboard when the user selects the item in the list box or the pillbox this apex REST service will be called to get the qty (it our case it is a random number between 0 to 100)
 
 ## Apex code for  FruitsManager.cls
@@ -20,7 +20,7 @@ global with sharing class FuritsManager {
     @HttpPost
     global static String getFruits(String item) {
     
-        // here you can make an REST API Call out get the results for the given item
+        // here you can make an REST API Call out to get the results for the given item
         // for this example we assume we got the result  as shown below in the result String 
         Integer qty = Integer.valueof(Math.random() * 100);
         String result = '[ {"name": "' + item.toUpperCase()  + '", "qty" : ' + qty + '}]'; // this can be external API callout result
