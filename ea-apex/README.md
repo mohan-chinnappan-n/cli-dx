@@ -3,7 +3,7 @@
 ## Topics
 - [Using Apex Local REST Service](#local)
 - [Using Apex Remote REST Service](#remote)
-
+- [Demo showing how to build this dashboard](#dashboard)
 
 <a name='local'></a>
 
@@ -577,7 +577,9 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
  }
 
 ```
-## Demo of the dashboard
+### Demo of the dashboard
 ![demo-2](img/apexStep-2.gif)
 
-
+<a name='dashboard'></a>
+## Demo:How to build this dashboard
+![dashboard creation](img/apexStep-creation.gif)
