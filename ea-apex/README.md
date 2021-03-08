@@ -583,3 +583,7 @@ $ sfdx mohanc:ws:rest -f ~/.ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
 <a name='dashboard'></a>
 ## Demo:How to build this dashboard
 ![dashboard creation](img/apexStep-creation.gif)
+
+
+## References
+- [apex Step Type Properties](https://developer.salesforce.com/docs/atlas.en-us.bi_dev_guide_json.meta/bi_dev_guide_json/bi_dbjson_steps_types_apex.htm)
