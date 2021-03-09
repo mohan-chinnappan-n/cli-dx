@@ -29,7 +29,7 @@
     </lightning-card>
 </template>
 ```
-
+![contact record](https://resources.docs.salesforce.com/images/78eaec710ca146705cea8e5509b39ec6.png)
 
 ```js
 import { LightningElement, api, wire } from 'lwc';
