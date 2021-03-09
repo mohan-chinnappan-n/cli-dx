@@ -41,4 +41,4 @@ sfdx mohanc:ws:rest -f ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.sale
 
 
 ## Resources
-- [Get Started with User Interface API] (https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started.htm)
+- [Get Started with User Interface API](https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started.htm)
