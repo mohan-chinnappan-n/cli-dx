@@ -1,5 +1,7 @@
 # Using UI-API (LDS is built on top of this) 
-
+- Gives data and metadata in a single response.
+- Respects CRUD access, field-level security settings, and sharing settings
+    - displays only records and fields for which users have CRUD access and FLS visibility.
 
 ## Performs the following:
 - Checks field-level security settings, sharing settings, and perms.
@@ -10,6 +12,62 @@
 ### LDS (Lightning Data Services)
 ![arch](https://resources.docs.salesforce.com/images/96c6c99f3a530fbd2600a734ee804326.png)
 
+```html
+<template>
+    <lightning-card title="My Contact Record" icon-name="standard:contact">
+        <template if:true={contact.data}>
+            <div class="slds-m-around_medium">
+                <p>{name}</p>
+                <p>{title}</p>
+                <p><lightning-formatted-phone value={phone}></lightning-formatted-phone></p>
+                <p><lightning-formatted-email value={email}></lightning-formatted-email></p>
+            </div>
+        </template>
+        <template if:true={contact.error}>
+            <c-error-panel errors={contact.error}></c-error-panel>
+        </template>
+    </lightning-card>
+</template>
+```
+
+
+```js
+import { LightningElement, api, wire } from 'lwc';
+import { getRecord } from 'lightning/uiRecordApi';
+
+const FIELDS = [
+    'Contact.Name',
+    'Contact.Title',
+    'Contact.Phone',
+    'Contact.Email',
+];
+
+export default class WireGetRecordDynamicContact extends LightningElement {
+    @api recordId;
+
+    // Let’s use the wire service to get record data and display some field names.
+
+    @wire(getRecord, { recordId: '$recordId', fields: FIELDS })
+    contact;
+
+    get name() {
+        return this.contact.data.fields.Name.value;
+    }
+
+    get title() {
+        return this.contact.data.fields.Title.value;
+    }
+
+    get phone() {
+        return this.contact.data.fields.Phone.value;
+    }
+
+    get email() {
+        return this.contact.data.fields.Email.value;
+    }
+}
+
+```
 
 ## Get results for the given record-id
 ```
