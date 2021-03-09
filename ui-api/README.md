@@ -7,6 +7,9 @@
 - Gets object metadata and theme information.
 - Gets layout information
 
+### LDS (Lightning Data Services)
+![arch](https://resources.docs.salesforce.com/images/96c6c99f3a530fbd2600a734ee804326.png)
+
 
 ## Get results for the given record-id
 ```
