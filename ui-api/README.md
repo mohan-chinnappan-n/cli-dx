@@ -101,5 +101,12 @@ sfdx mohanc:ws:rest -f ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.sale
 - [Result JSON](./Account.json)
 
 
+## Get Child Relations
+```
+sfdx mohanc:ws:rest -f ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v51.0/ui-api/record-ui/0013h00000Ffg1qAAB?childRelationships=Account.Opportunities
+
+```
+- [Result JSON](./Account.Opportunities.json)
+
 ## Resources
 - [Get Started with User Interface API](https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started.htm)
