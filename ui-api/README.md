@@ -108,5 +108,12 @@ sfdx mohanc:ws:rest -f ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.sale
 ```
 - [Result JSON](./Account.Opportunities.json)
 
+## Getting picklists for a given RecordTypeId (e.g: 012000000000000AAA)
+
+```
+sfdx mohanc:ws:rest -f ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v51.0/ui-api/object-info/Account/picklist-values/012000000000000AAA 
+
+```
+- [Result JSON](./012000000000000AAA.json)
 ## Resources
 - [Get Started with User Interface API](https://developer.salesforce.com/docs/atlas.en-us.uiapi.meta/uiapi/ui_api_get_started.htm)
