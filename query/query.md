@@ -7,6 +7,37 @@
 
 <a name='queryApi'></a>
 ## Query request
+
+### Get the Dataset Id and versionId
+```
+$ sfdx mohanc:ea:dataset:list  -u mohan.chinnappan.n_ea2@gmail.com  
+Id,Version,Name,Label
+0Fb3h0000008s9kCAA,0Fc3h0000026QBWCA2,fruit_yield,fruit-yield <-------
+0Fb3h0000008sAECAY,0Fc3h0000026QMACA2,fruit_yield_acct,fruit-yield-acct
+0Fb3h0000005Yz0CAE,0Fc3h000002umTfCAI,ea_s3_r,ea-s3-r
+0Fb3h000000Yea2CAC,0Fc3h0000052auxCAA,regFruits,regFruits
+0Fb3h0000005eTmCAI,0Fc3h0000059UJfCAM,apples,apples
+0Fb3h0000008ryVCAQ,0Fc3h0000026KlGCAU,DTC_Opportunity_SAMPLE,DTC Opportunity
+0Fb3h0000005bIQCAY,0Fc3h00000592zOCAQ,datafromOra,datafromOra
+0Fb3h0000005eG4CAI,0Fc3h00000592DeCAI,SampleFruitData,SampleFruitData
+0Fb3h0000005bILCAY,0Fc3h000003ojoFCAQ,oraload49,oraload49
+0Fb3h0000008zhFCAQ,0Fc3h000004951eCAA,a536087,a536087
+0Fb3h0000008zIdCAI,0Fc3h000003F7tgCAC,a536087_csvDataset,a536087_csvDataset
+0Fb3h0000008zLXCAY,0Fc3h000003FK6NCAW,a536087_DS,a536087_DS
+0Fb3h0000008ryTCAQ,0Fc3h000004lVIBCA2,activity,Activities
+0Fb3h0000008zSECAY,0Fc3h0000048AYjCAM,CityEA,CityEA
+0Fb3h0000008zS9CAI,0Fc3h0000048AY0CAM,CityEA_c,CityEA_c
+0Fb3h0000008zMBCAY,0Fc3h000003FK2aCAG,CityEA_cDS,CityEA_cDS
+0Fb3h0000005aTZCAY,0Fc3h000003dhKkCAI,CityEA_csvDataset,CityEA_csvDataset
+0Fb3h0000008zimCAA,0Fc3h00000493pgCAA,CustomerData,CustomerData
+0Fb3h0000005b3LCAQ,0Fc3h000003o71oCAA,DFTiming,dftiming
+0Fb3h0000005bAqCAI,0Fc3h000003oX5cCAE,dsname,dsname
+0Fb3h0000005bCSCAY,0Fc3h000003obeqCAA,dsname10,dsname10
+0Fb3h0000005bCXCAY,undefined,dsname11,dsname11
+0Fb3h0000005bCwCAI,undefined,dsname12,dsname12
+0Fb3h0000005bD1CAI,0Fc3h000003obqJCAQ,dsname13,dsname13
+0Fb3h0000005bD6CAI,0Fc3h000003ocTjCAI,dsname14,dsname14
+```        
 ![query](img/fruits-query.png)
 
 ```json
