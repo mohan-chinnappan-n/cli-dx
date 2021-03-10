@@ -1,0 +1,74 @@
+{
+    "action": "query",
+    "responseId": "4afvO34cyG6UW40fHnmgZ-",
+    "results": {
+        "metadata": [
+            {
+                "lineage": {
+                    "type": "foreach",
+                    "projections": [
+                        {
+                            "field": {
+                                "id": "q.fruit",
+                                "type": "string"
+                            },
+                            "inputs": [
+                                {
+                                    "id": "q.fruit"
+                                }
+                            ]
+                        },
+                        {
+                            "field": {
+                                "id": "q.qty",
+                                "type": "numeric"
+                            },
+                            "inputs": [
+                                {
+                                    "id": "q.qty"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "queryLanguage": "SAQL"
+            }
+        ],
+        "records": [
+            {
+                "fruit": "apple",
+                "qty": 30
+            },
+            {
+                "fruit": "mango",
+                "qty": 78
+            },
+            {
+                "fruit": "jackfruit",
+                "qty": 70
+            },
+            {
+                "fruit": "peach",
+                "qty": 2222
+            },
+            {
+                "fruit": "apple",
+                "qty": 130
+            },
+            {
+                "fruit": "mango",
+                "qty": 278
+            },
+            {
+                "fruit": "jackfruit",
+                "qty": 270
+            },
+            {
+                "fruit": "peach",
+                "qty": 266
+            }
+        ]
+    },
+    "query": "q = load \"0Fb3h0000008s9kCAA/0Fc3h0000026QBWCA2\"; q = foreach q generate fruit as 'fruit', qty as 'qty'; q = limit q 2000;",
+    "responseTime": 3
+}

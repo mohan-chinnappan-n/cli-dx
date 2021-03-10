@@ -1,5 +1,11 @@
 # Querying a Dataset
 
+- Requires 0.0.151 version of the plugin
+    - sfdx-mohanc-plugins@0.0.151
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
+
 ## Topics
 - [Using Query API](#queryApi)
 - [Using Apex](#queryInApex)
@@ -48,12 +54,34 @@ Id,Version,Name,Label
 
 ## Run the query
 ```
-$ sfdx mohanc:ws:rest -f  ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v51.0/wave/query -m POST -d queryRequest.json```
+$ sfdx mohanc:ea:dataset:query  -u mohan.chinnappan.n_ea2@gmail.com  -q queryRequest.json 
+=== Writing the JSON into file : queryRequest.json.json ===
+=== Writing the csv into file : queryRequest.json.csv ===
 
-```json 
+```
+
+### Query Results
+```
+$ cat queryRequest.json.csv
+
+"fruit","qty"
+"apple",30
+"mango",78
+"jackfruit",70
+"peach",2222
+"apple",130
+"mango",278
+"jackfruit",270
+"peach",266
+```
+
+```
+$ cat queryRequest.json.json
+```
+```json
 {
     "action": "query",
-    "responseId": "4afrh_tE9FBCGVF8RxkEg-",
+    "responseId": "4afvO34cyG6UW40fHnmgZ-",
     "results": {
         "metadata": [
             {
