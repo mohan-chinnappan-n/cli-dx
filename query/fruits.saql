@@ -1,0 +1,3 @@
+q = load "fruit_yield";
+q = foreach q generate fruit as 'fruit', qty as 'qty';
+q = limit q 2000;
