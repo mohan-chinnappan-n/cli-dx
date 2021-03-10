@@ -93,7 +93,7 @@ $ sfdx mohanc:ws:rest -f  ~/ea/header.json -r https://mohansun-ea-02-dev-ed.my.s
     "responseTime": 3
 }
 ```
-<a name='queryApi'></a>
+<a name='queryInApex'></a>
 
 ## Querying a dataset in Apex
 
