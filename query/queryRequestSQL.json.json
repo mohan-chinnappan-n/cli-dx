@@ -1,0 +1,6 @@
+[
+    {
+        "errorCode": "JSON_PARSER_ERROR",
+        "message": "Can not deserialize: unexpected array at [line:1, column:2]"
+    }
+]

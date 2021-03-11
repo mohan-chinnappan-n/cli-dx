@@ -1,3 +1,5 @@
 {
-   "queryString": "SELECT fruit, qty FROM 0Fb3h0000008s9kCAA/0Fc3h0000026QBWCA2"
+    "name" :"Fruits query", 
+    "query":"SELECT fruit, qty FROM em/regFruits",
+    "queryLanguage" : "SQL"
 }
