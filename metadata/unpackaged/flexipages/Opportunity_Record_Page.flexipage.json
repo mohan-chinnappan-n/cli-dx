@@ -1,0 +1,233 @@
+{
+    "FlexiPage": {
+        "flexiPageRegions": [
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentInstanceProperties": [
+                            {
+                                "name": "collapsed",
+                                "value": false
+                            },
+                            {
+                                "name": "hideChatterActions",
+                                "value": false
+                            },
+                            {
+                                "name": "numVisibleActions",
+                                "value": 3
+                            }
+                        ],
+                        "componentName": "force:highlightsPanel"
+                    }
+                },
+                "mode": "Replace",
+                "name": "header",
+                "type": "Region"
+            },
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentInstanceProperties": [
+                            {
+                                "name": "hideUpdateButton",
+                                "value": false
+                            },
+                            {
+                                "name": "variant",
+                                "value": "linear"
+                            }
+                        ],
+                        "componentName": "runtime_sales_pathassistant:pathAssistant"
+                    }
+                },
+                "mode": "Replace",
+                "name": "subheader",
+                "type": "Region"
+            },
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentName": "runtime_sales_activities:activityPanel"
+                    }
+                },
+                "mode": "Replace",
+                "name": "activityTabContent",
+                "type": "Facet"
+            },
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentName": "force:detailPanel"
+                    }
+                },
+                "mode": "Replace",
+                "name": "detailTabContent",
+                "type": "Facet"
+            },
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentName": "forceChatter:recordFeedContainer"
+                    }
+                },
+                "mode": "Replace",
+                "name": "feedTabContent",
+                "type": "Facet"
+            },
+            {
+                "itemInstances": [
+                    {
+                        "componentInstance": {
+                            "componentInstanceProperties": [
+                                {
+                                    "name": "active",
+                                    "value": true
+                                },
+                                {
+                                    "name": "body",
+                                    "value": "activityTabContent"
+                                },
+                                {
+                                    "name": "title",
+                                    "value": "Standard.Tab.activity"
+                                }
+                            ],
+                            "componentName": "flexipage:tab"
+                        }
+                    },
+                    {
+                        "componentInstance": {
+                            "componentInstanceProperties": [
+                                {
+                                    "name": "body",
+                                    "value": "detailTabContent"
+                                },
+                                {
+                                    "name": "title",
+                                    "value": "Standard.Tab.detail"
+                                }
+                            ],
+                            "componentName": "flexipage:tab"
+                        }
+                    },
+                    {
+                        "componentInstance": {
+                            "componentInstanceProperties": [
+                                {
+                                    "name": "body",
+                                    "value": "feedTabContent"
+                                },
+                                {
+                                    "name": "title",
+                                    "value": "Standard.Tab.collaborate"
+                                }
+                            ],
+                            "componentName": "flexipage:tab"
+                        }
+                    }
+                ],
+                "mode": "Replace",
+                "name": "tabs",
+                "type": "Facet"
+            },
+            {
+                "itemInstances": [
+                    {
+                        "componentInstance": {
+                            "componentInstanceProperties": {
+                                "name": "tabs",
+                                "value": "tabs"
+                            },
+                            "componentName": "flexipage:tabset"
+                        }
+                    },
+                    {
+                        "componentInstance": {
+                            "componentName": "FilterTest"
+                        }
+                    }
+                ],
+                "mode": "Replace",
+                "name": "main",
+                "type": "Region"
+            },
+            {
+                "itemInstances": [
+                    {
+                        "componentInstance": {
+                            "componentName": "cooper:companyInsightTeaserCard"
+                        }
+                    },
+                    {
+                        "componentInstance": {
+                            "componentInstanceProperties": [
+                                {
+                                    "name": "relatedListComponentOverride",
+                                    "value": "NONE"
+                                },
+                                {
+                                    "name": "rowsToDisplay",
+                                    "value": 10
+                                },
+                                {
+                                    "name": "showActionBar",
+                                    "value": true
+                                }
+                            ],
+                            "componentName": "force:relatedListContainer"
+                        }
+                    }
+                ],
+                "mode": "Replace",
+                "name": "relatedListTabContent",
+                "type": "Facet"
+            },
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentInstanceProperties": [
+                            {
+                                "name": "active",
+                                "value": true
+                            },
+                            {
+                                "name": "body",
+                                "value": "relatedListTabContent"
+                            },
+                            {
+                                "name": "title",
+                                "value": "Standard.Tab.relatedLists"
+                            }
+                        ],
+                        "componentName": "flexipage:tab"
+                    }
+                },
+                "mode": "Replace",
+                "name": "sidebartabs",
+                "type": "Facet"
+            },
+            {
+                "itemInstances": {
+                    "componentInstance": {
+                        "componentInstanceProperties": {
+                            "name": "tabs",
+                            "value": "sidebartabs"
+                        },
+                        "componentName": "flexipage:tabset"
+                    }
+                },
+                "mode": "Replace",
+                "name": "sidebar",
+                "type": "Region"
+            }
+        ],
+        "masterLabel": "Opportunity Record Page",
+        "parentFlexiPage": "sfa__Opportunity_rec_L",
+        "sobjectType": "Opportunity",
+        "template": {
+            "name": "flexipage:recordHomeWithSubheaderTemplateDesktop"
+        },
+        "type": "RecordPage"
+    }
+}
