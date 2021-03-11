@@ -714,10 +714,6 @@ $ cat unpackaged/flexipages/Opportunity_Record_Page.flexipage.json
     }
 }
 ```
-#### Counting flexiPageRegions
+#### flexiPage viz
 
-```
-$ sfdx mohanc:data:jq -i unpackaged/flexipages/Opportunity_Record_Page.flexipage.json -f '.FlexiPage.flexiPageRegions | (.[], length)'
-
-10
-```
+![flexipage viz](img/flexipage-viz-1.png)
