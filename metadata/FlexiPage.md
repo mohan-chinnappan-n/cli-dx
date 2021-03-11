@@ -15,7 +15,7 @@
 $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t FlexiPage
 ```
 
-```json
+```
 {
   result: [
     {
@@ -108,7 +108,7 @@ $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t FlexiPage
 $ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "FlexiPage"
 ```
 
-```json
+```
 {
     "RetrieveRequest": {
         "apiVersion": "51.0",
@@ -130,7 +130,7 @@ $ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "FlexiPage"
 $ sfdx mohanc:mdapi:checkRetrieveStatus  -u mohan.chinnappan.n_ea2@gmail.com -i 09S3h000005gexeEAA
 
 ```
-```json
+```
 [
   {
     createdById: '0053h000002xQ5sAAE',
