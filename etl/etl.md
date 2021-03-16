@@ -60,8 +60,18 @@ $ sfdx mohanc:etl:filter -i ~/datasets/netflix_titles.csv -f ~/tmp/filter-4.txt
   description: "In this documentary, South African rapper Nasty C hits the stage and streets of Tokyo, introducing himself to the city's sights, sounds and culture.\r\n"
 }
 ...
+```
+
+### Other example filters
+```
+type === 'Movie'
+```
 
 ```
+duration === '90 min' && rating === 'TV-14'
+```
+
+
 <a name='transform'></a>
 
 ## Transform
