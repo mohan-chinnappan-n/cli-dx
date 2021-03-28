@@ -78,4 +78,4 @@ $ sfdx mohanc:tooling:query  -u mohan.chinnappan.n_ea2@gmail.com -q mda.soql  -f
 
 ```
 
-
+<table> <tr><td> <img src='img/comp-1.png'> Refers <td> <img src='img/ref-comp-1.png'> </td> </tr> </table>
