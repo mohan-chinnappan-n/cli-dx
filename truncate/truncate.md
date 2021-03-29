@@ -1,4 +1,4 @@
-# How to truncate a custom object
+# How to truncate a custom object?
 
 ## Demo
 
