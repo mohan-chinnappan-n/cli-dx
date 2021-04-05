@@ -2,6 +2,14 @@
 
 - Requires plugin version 0.46 (not yet published!)
 
+
+### Topics
+- [Usage of blukapi load](#load)
+- [Loading Platform Events object records](#pe)
+
+
+
+<a name='load'></a>
 ### How use mohanc:data:bulkapi:load?
 
 ```
@@ -177,4 +185,157 @@ WAITING...
 === JOB getUnprocessedRecords STATUS for job: 7503h000003pgNYAAY ===
 Subject,Priority
 
+```
+
+<a name='pe'></a>
+### Loading Platform Events via Bulk API 2.0
+
+- [via REST API](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/rest.md#post)
+- [Platform Events Fields](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_define_ui.htm)
+
+- [Platform Events Slides](https://mohan-chinnappan-n.github.io/sfdc/pevents.html#/home)
+- [Using CLI to find the platform events limits](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/limits.md)
+- [Platform Events limits](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_event_limits.htm)
+
+
+```
+$ cat ~/tmp/pe_msg.csv
+
+message__c
+Power Off
+
+```
+
+```
+$ sfdx mohanc:data:bulkapi:load -u mohan.chinnappan.n_ea2@gmail.com -f ~/tmp/pe_msg.csv -e LF -o Notification__e
+=== CREATE JOB === 
+{
+  id: '7503h000009XNPkAAO',
+  operation: 'insert',
+  object: 'Notification__e',
+  createdById: '0053h000002xQ5sAAE',
+  createdDate: '2021-04-05T22:40:39.000+0000',
+  systemModstamp: '2021-04-05T22:40:39.000+0000',
+  state: 'Open',
+  concurrencyMode: 'Parallel',
+  contentType: 'CSV',
+  apiVersion: 51,
+  contentUrl: 'services/data/v51.0/jobs/ingest/7503h000009XNPkAAO/batches',
+  lineEnding: 'LF',
+  columnDelimiter: 'COMMA'
+}
+jobId: 7503h000009XNPkAAO
+=== JOB STATUS === 
+=== JOB STATUS for job: 7503h000009XNPkAAO ===
+{
+  id: '7503h000009XNPkAAO',
+  operation: 'insert',
+  object: 'Notification__e',
+  createdById: '0053h000002xQ5sAAE',
+  createdDate: '2021-04-05T22:40:39.000+0000',
+  systemModstamp: '2021-04-05T22:40:39.000+0000',
+  state: 'Open',
+  concurrencyMode: 'Parallel',
+  contentType: 'CSV',
+  apiVersion: 51,
+  jobType: 'V2Ingest',
+  contentUrl: 'services/data/v51.0/jobs/ingest/7503h000009XNPkAAO/batches',
+  lineEnding: 'LF',
+  columnDelimiter: 'COMMA',
+  retries: 0,
+  totalProcessingTime: 0,
+  apiActiveProcessingTime: 0,
+  apexProcessingTime: 0
+}
+=== PUT DATA === 
+result: status: 201, statusText: Created
+=== JOB STATUS === 
+=== JOB STATUS for job: 7503h000009XNPkAAO ===
+{
+  id: '7503h000009XNPkAAO',
+  operation: 'insert',
+  object: 'Notification__e',
+  createdById: '0053h000002xQ5sAAE',
+  createdDate: '2021-04-05T22:40:39.000+0000',
+  systemModstamp: '2021-04-05T22:40:39.000+0000',
+  state: 'Open',
+  concurrencyMode: 'Parallel',
+  contentType: 'CSV',
+  apiVersion: 51,
+  jobType: 'V2Ingest',
+  contentUrl: 'services/data/v51.0/jobs/ingest/7503h000009XNPkAAO/batches',
+  lineEnding: 'LF',
+  columnDelimiter: 'COMMA',
+  numberRecordsProcessed: 0,
+  numberRecordsFailed: 0,
+  retries: 0,
+  totalProcessingTime: 0,
+  apiActiveProcessingTime: 0,
+  apexProcessingTime: 0
+}
+=== PATCH STATE === 
+{
+  id: '7503h000009XNPkAAO',
+  operation: 'insert',
+  object: 'Notification__e',
+  createdById: '0053h000002xQ5sAAE',
+  createdDate: '2021-04-05T22:40:39.000+0000',
+  systemModstamp: '2021-04-05T22:40:39.000+0000',
+  state: 'UploadComplete',
+  concurrencyMode: 'Parallel',
+  contentType: 'CSV',
+  apiVersion: 51
+}
+=== JOB STATUS === 
+=== JOB STATUS for job: 7503h000009XNPkAAO ===
+jobStatus {
+  id: '7503h000009XNPkAAO',
+  operation: 'insert',
+  object: 'Notification__e',
+  createdById: '0053h000002xQ5sAAE',
+  createdDate: '2021-04-05T22:40:39.000+0000',
+  systemModstamp: '2021-04-05T22:40:41.000+0000',
+  state: 'InProgress',
+  concurrencyMode: 'Parallel',
+  contentType: 'CSV',
+  apiVersion: 51,
+  jobType: 'V2Ingest',
+  lineEnding: 'LF',
+  columnDelimiter: 'COMMA',
+  numberRecordsProcessed: 1,
+  numberRecordsFailed: 0,
+  retries: 0,
+  totalProcessingTime: 61,
+  apiActiveProcessingTime: 12,
+  apexProcessingTime: 0
+}
+WAITING...
+{
+  id: '7503h000009XNPkAAO',
+  operation: 'insert',
+  object: 'Notification__e',
+  createdById: '0053h000002xQ5sAAE',
+  createdDate: '2021-04-05T22:40:39.000+0000',
+  systemModstamp: '2021-04-05T22:40:42.000+0000',
+  state: 'JobComplete',
+  concurrencyMode: 'Parallel',
+  contentType: 'CSV',
+  apiVersion: 51,
+  jobType: 'V2Ingest',
+  lineEnding: 'LF',
+  columnDelimiter: 'COMMA',
+  numberRecordsProcessed: 1,
+  numberRecordsFailed: 0,
+  retries: 0,
+  totalProcessingTime: 61,
+  apiActiveProcessingTime: 12,
+  apexProcessingTime: 0
+}
+=== JOB Failure STATUS === 
+=== JOB Failure STATUS for job: 7503h000009XNPkAAO ===
+"sf__Id","sf__Error",message__c
+
+=== JOB getUnprocessedRecords STATUS === 
+=== JOB getUnprocessedRecords STATUS for job: 7503h000009XNPkAAO ===
+message__c
 ```
