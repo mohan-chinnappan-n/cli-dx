@@ -190,6 +190,8 @@ Subject,Priority
 <a name='pe'></a>
 ### Loading Platform Events via Bulk API 2.0
 
+#### Resources
+
 - [via REST API](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/rest.md#post)
 - [Platform Events Fields](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_define_ui.htm)
 
