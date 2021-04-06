@@ -195,9 +195,12 @@ Subject,Priority
 - [via REST API](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/rest.md#post)
 - [Platform Events Fields](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_define_ui.htm)
 
+- [Platform Events and AWS Lambda](https://mohan-chinnappan-n2.github.io/2020/sf-aws/sf-aws-pe.html#0)
+
 - [Platform Events Slides](https://mohan-chinnappan-n.github.io/sfdc/pevents.html#/home)
 - [Using CLI to find the platform events limits](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/limits.md)
 - [Platform Events limits](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_event_limits.htm)
+
 
 
 ```
