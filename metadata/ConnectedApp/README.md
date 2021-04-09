@@ -151,6 +151,7 @@ Archive:  09S3h000005hBB5EAM.zip
   inflating: unpackaged/package.xml  
 ```
 
+```
 $ cat unpackaged/connectedApps/MohansunLInux.connectedApp 
 <?xml version="1.0" encoding="UTF-8"?>
 <ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
