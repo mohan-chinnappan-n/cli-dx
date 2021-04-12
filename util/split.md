@@ -1,5 +1,8 @@
 # Splitting a large CSV into a splits of given size and load into S3
-- Plugin version 0.0.156 is required
+- Requires 0.0.156 version of the plugin
+    - sfdx-mohanc-plugins@0.0.156
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 
 ## Topics
 - [Usage](#usage)
