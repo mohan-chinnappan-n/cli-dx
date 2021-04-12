@@ -1,4 +1,4 @@
-# Splitting a large CSV into a splits of given size
+# Splitting a large CSV into a splits of given size and load into S3
 - Plugin version 0.0.156 is required
 
 ## Topics
