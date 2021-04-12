@@ -42,6 +42,9 @@ EXAMPLE
 
 ```
 
+<a name='split'></a>
+
+## Split files only
 ```
 $ sfdx mohanc:data:util:splitLines -i input.csv -s 4
 
