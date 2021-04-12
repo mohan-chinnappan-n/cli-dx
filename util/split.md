@@ -22,7 +22,7 @@ EXAMPLE
 ```
 
 ```
-sfdx mohanc:data:util:splitLines -i input.csv -s 4
+$ sfdx mohanc:data:util:splitLines -i input.csv -s 4
 
 ```
 
@@ -33,7 +33,7 @@ SplitLines completed. { totalChunks: 5, options: { delimiter: '\n', lineLimit: '
 
 
 ```
-cat input.csv
+$ cat input.csv
 "sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "ActionPlan","Action Plan","Id","Action Plan ID","id",18,false,"[]",,false,false,,"[]",false
 "ActionPlan","Action Plan","OwnerId","Owner ID","reference",18,false,"[""Group"",""User""]","Owner",false,true,,"[]",false
@@ -55,7 +55,7 @@ cat input.csv
 ```
 
 ```
-cat input.csv-0.csv
+$ cat input.csv-0.csv
 ```
 ```
 "sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
@@ -65,7 +65,7 @@ cat input.csv-0.csv
 "ActionPlan","Action Plan","Name","Name","string",255,false,"[]",,false,true,,"[]",false
 ```
 ```
-cat input.csv-1.csv
+$ cat input.csv-1.csv
 ```
 ```
 
