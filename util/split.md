@@ -99,7 +99,6 @@ $ cat input.csv-1.csv
 
 - ...
 
-## Split and 
 <a name='fsplits3'></a>
 ## Split files and load into S3
 ```
@@ -112,7 +111,7 @@ SplitLines and loading into S3 : succeeded. { totalChunks: 5, options: { delimit
 ```
 ![s3 view](img/s3-1.png)
 
-<a name='hsplits3'</a>
+<a name='hsplits3'></a>
 ## Read file from web and Split files and load into s3
 ```
 $ sfdx mohanc:data:util:splitLines -i input.csv -s 4 -b actionplan-b6bada96-077e-44d4-a17f-f59cd8ab1850 -r  http://localhost:7010/csv-utils/input.csv -h
