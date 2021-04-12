@@ -42,7 +42,7 @@ EXAMPLE
 
 ```
 
-<a name='split'></a>
+<a name='fsplit'></a>
 
 ## Split files only
 ```
