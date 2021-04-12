@@ -4,6 +4,10 @@
 ## Topics
 - [Usage](#usage)
 - [Split files only](#fsplit)
+
+- [Bucket Create](#createb)
+- [List Bucket](#lsb)
+
 - [Split files and load into S3](#fsplits3)
 - [Read file from web and Split files and load into s3](#hsplits3)
 
@@ -101,6 +105,42 @@ $ cat input.csv-1.csv
 ```
 
 - ...
+
+
+<a name='createb'></a>
+[More S3 comands](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/aws.md)
+
+## Create S3 Bucket
+```
+ sfdx mohanc:aws:s3:mb -b actionplan
+
+```
+<a name='lsb'></a>
+## List S3 Buckets
+```
+$ sfdx mohanc:aws:s3:ls 
+```
+
+```
+[
+  {
+    Name: 'actionplan-b6bada96-077e-44d4-a17f-f59cd8ab1850',
+    CreationDate: 2021-04-12T20:51:20.000Z
+  },
+  { Name: 'bucketea1', CreationDate: 2020-08-27T21:12:09.000Z },
+  { Name: 'bucketea2', CreationDate: 2020-09-02T15:48:14.000Z },
+  {
+    Name: 'fruits-790f15af-0986-48f3-8c61-fb5f84a9f9eb',
+    CreationDate: 2020-09-05T12:54:54.000Z
+  },
+  {
+    Name: 'trees-e40790c1-a951-4814-9fb1-2c46446081f4',
+    CreationDate: 2020-09-06T01:01:08.000Z
+  }
+]
+
+```
+
 
 <a name='fsplits3'></a>
 ## Split files and load into S3
