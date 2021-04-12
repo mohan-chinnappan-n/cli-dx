@@ -1,0 +1,2995 @@
+
+    digraph "EA DF" {
+        graph [
+          rankdir="RL"
+          bgcolor="#efeffd"
+          label="EA Dataflow Viz - created by:  Ramanujan version 0.11"
+          labeljust="r"
+          nodesep="0.18"
+          ranksep="0.46"
+          fontname="Courier"
+          fontsize="9"
+        ];
+        node [
+          fontname="Courier"
+          fontsize="11"
+          shape="plaintext"
+          color="#99ccff"
+        ];
+        edge [ arrowsize="0.8"   ];
+    
+
+            Extract_Account [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Extract_Account - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 1 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 1001</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 1001</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcDigest</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>object</b></td>
+                            <td bgcolor="lightblue"><b>Account</b></td>
+                        </tr>
+                        <tr>
+                           <td>fields</td>
+                           <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+            
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+            
+                <tr> <td port="Type">Type</td> </tr>
+            
+                <tr> <td port="Industry">Industry</td> </tr>
+            
+                <tr> <td port="BillingCountry">BillingCountry</td> </tr>
+            
+                <tr> <td port="CreatedDate">CreatedDate</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+
+            Extract_Event [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Extract_Event - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 1 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 241</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 241</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcDigest</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>object</b></td>
+                            <td bgcolor="lightblue"><b>Event</b></td>
+                        </tr>
+                        <tr>
+                           <td>fields</td>
+                           <td> <table>
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+            
+                <tr> <td port="CreatedDate">CreatedDate</td> </tr>
+            
+                <tr> <td port="LastModifiedDate">LastModifiedDate</td> </tr>
+            
+                <tr> <td port="ActivityDate">ActivityDate</td> </tr>
+            
+                <tr> <td port="Subject">Subject</td> </tr>
+            
+                <tr> <td port="DurationInMinutes">DurationInMinutes</td> </tr>
+            
+                <tr> <td port="EventSubtype">EventSubtype</td> </tr>
+            
+                <tr> <td port="WhatId">WhatId</td> </tr>
+            
+                <tr> <td port="AccountId">AccountId</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+
+            Extract_Opportunity [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Extract_Opportunity - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 2 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 706</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 706</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcDigest</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>object</b></td>
+                            <td bgcolor="lightblue"><b>Opportunity</b></td>
+                        </tr>
+                        <tr>
+                           <td>fields</td>
+                           <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+            
+                <tr> <td port="AccountId">AccountId</td> </tr>
+            
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+            
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="StageName">StageName</td> </tr>
+            
+                <tr> <td port="IsWon">IsWon</td> </tr>
+            
+                <tr> <td port="Type">Type</td> </tr>
+            
+                <tr> <td port="IsClosed">IsClosed</td> </tr>
+            
+                <tr> <td port="CreatedDate">CreatedDate</td> </tr>
+            
+                <tr> <td port="CloseDate">CloseDate</td> </tr>
+            
+                <tr> <td port="Amount">Amount</td> </tr>
+            
+                <tr> <td port="LastActivityDate">LastActivityDate</td> </tr>
+            
+                <tr> <td port="RecordTypeId">RecordTypeId</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+
+            Extract_Task [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Extract_Task - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 1 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2079</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2079</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcDigest</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>object</b></td>
+                            <td bgcolor="lightblue"><b>Task</b></td>
+                        </tr>
+                        <tr>
+                           <td>fields</td>
+                           <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+            
+                <tr> <td port="CallDurationInSeconds">CallDurationInSeconds</td> </tr>
+            
+                <tr> <td port="CallDisposition">CallDisposition</td> </tr>
+            
+                <tr> <td port="CallType">CallType</td> </tr>
+            
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+            
+                <tr> <td port="Status">Status</td> </tr>
+            
+                <tr> <td port="Priority">Priority</td> </tr>
+            
+                <tr> <td port="IsClosed">IsClosed</td> </tr>
+            
+                <tr> <td port="TaskSubtype">TaskSubtype</td> </tr>
+            
+                <tr> <td port="CreatedDate">CreatedDate</td> </tr>
+            
+                <tr> <td port="ActivityDate">ActivityDate</td> </tr>
+            
+                <tr> <td port="LastModifiedDate">LastModifiedDate</td> </tr>
+            
+                <tr> <td port="Subject">Subject</td> </tr>
+            
+                <tr> <td port="WhatId">WhatId</td> </tr>
+            
+                <tr> <td port="AccountId">AccountId</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+
+            Extract_User [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Extract_User - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 1 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 30</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 30</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcDigest</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>object</b></td>
+                            <td bgcolor="lightblue"><b>User</b></td>
+                        </tr>
+                        <tr>
+                           <td>fields</td>
+                           <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+            
+                <tr> <td port="Username">Username</td> </tr>
+            
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="FirstName">FirstName</td> </tr>
+            
+                <tr> <td port="LastName">LastName</td> </tr>
+            
+                <tr> <td port="UserRoleId">UserRoleId</td> </tr>
+            
+                <tr> <td port="UserType">UserType</td> </tr>
+            
+                <tr> <td port="IsActive">IsActive</td> </tr>
+            
+                <tr> <td port="FullPhotoUrl">FullPhotoUrl</td> </tr>
+            
+                <tr> <td port="SmallPhotoUrl">SmallPhotoUrl</td> </tr>
+            
+                <tr> <td port="ManagerId">ManagerId</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+
+            Extract_UserRole [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Extract_UserRole - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 1 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 5</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 5</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcDigest</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>object</b></td>
+                            <td bgcolor="lightblue"><b>UserRole</b></td>
+                        </tr>
+                        <tr>
+                           <td>fields</td>
+                           <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+            
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="DeveloperName">DeveloperName</td> </tr>
+            
+                <tr> <td port="ParentRoleId">ParentRoleId</td> </tr>
+            
+                <tr> <td port="LastModifiedDate">LastModifiedDate</td> </tr>
+            
+                <tr> <td port="LastModifiedById">LastModifiedById</td> </tr>
+            
+                <tr> <td port="SystemModstamp">SystemModstamp</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+
+            Add_Fields_To_Event [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Add_Fields_To_Event - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 241</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 241</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="Extract_Event"><b>Extract_Event</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>CallDisposition</td>
+                     <td>Text</td>
+                     <td>&quot;Event&quot;</td>
+            </tr>
+                <tr> <td>CallType</td>
+                     <td>Text</td>
+                     <td>&quot;Event&quot;</td>
+            </tr>
+                <tr> <td>Status</td>
+                     <td>Text</td>
+                     <td>&quot;Event&quot;</td>
+            </tr>
+                <tr> <td>Priority</td>
+                     <td>Text</td>
+                     <td>&quot;Event&quot;</td>
+            </tr>
+                <tr> <td>TaskSubtype</td>
+                     <td>Text</td>
+                     <td>EventSubtype</td>
+            </tr>
+                <tr> <td>CallDurationInSeconds</td>
+                     <td>Numeric</td>
+                     <td>0</td>
+            </tr>
+                <tr> <td>IsClosed</td>
+                     <td>Text</td>
+                     <td>case when daysBetween(toDate(ActivityDate_sec_epoch), now()) &gt;= 0 then &quot;true&quot; else &quot;false&quot; end</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Add_Fields_To_Event":"Extract_Event":w -> "Extract_Event":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Add_Fields_To_Task [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Add_Fields_To_Task - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2079</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2079</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="Extract_Task"><b>Extract_Task</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>EventSubtype</td>
+                     <td>Text</td>
+                     <td>TaskSubtype</td>
+            </tr>
+                <tr> <td>DurationInMinutes</td>
+                     <td>Numeric</td>
+                     <td>0</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Add_Fields_To_Task":"Extract_Task":w -> "Extract_Task":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Filter_User [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Filter_User - filter</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 30</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 30</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>filter</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>filter</b></td>
+                            <td><b>UserType:EQ:Standard|PowerPartner</b></td>
+                        </tr>
+                        <tr>
+                           <td>source</td>
+                           <td port="Extract_User">Extract_User</td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+            "Filter_User":"Extract_User":w -> "Extract_User":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+            
+
+            Flatten_UserRole [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Flatten_UserRole - flatten</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 5</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 5</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>flatten</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>include_self_id</b></td>
+                            <td bgcolor="lightblue"><b>undefined</b></td>
+                        </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>self_field</b></td>
+                                <td bgcolor="lightblue"><b>Id</b></td>
+                        </tr>
+
+                        <tr>
+                                <td bgcolor="lightblue"><b>multi_field</b></td>
+                                <td bgcolor="lightblue"><b>Roles</b></td>
+                        </tr>  
+                        <tr>
+                                <td bgcolor="lightblue"><b>parent_field</b></td>
+                                <td bgcolor="lightblue"><b>ParentRoleId</b></td>
+                         </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>path_field</b></td>
+                                <td bgcolor="lightblue"><b>RolePath</b></td>
+                         </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>source</b></td>
+                                <td port="Extract_UserRole" bgcolor="lightblue"><b>
+                                        Extract_UserRole</b></td></tr>
+                        </table>
+                    </td>
+            </tr>
+            
+       </table>
+       >
+     ]
+     
+        "Flatten_UserRole":"Extract_UserRole":w -> "Extract_UserRole":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Append_TaskEvent [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Append_TaskEvent - append</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>append</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>enableDisjointedSchemaMerge</b></td>
+                            <td><b>true</b></td>
+                        </tr>
+                        <tr>
+                           <td>sources</td>
+                           <td> <table>
+                <tr> <td port="Add_Fields_To_Task">Add_Fields_To_Task</td> </tr>
+            
+                <tr> <td port="Add_Fields_To_Event">Add_Fields_To_Event</td> </tr>
+            </table></td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+            "Append_TaskEvent":"Add_Fields_To_Task":w -> "Add_Fields_To_Task":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+            
+            "Append_TaskEvent":"Add_Fields_To_Event":w -> "Add_Fields_To_Event":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+            
+
+            Compute_Manager_Unique [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Compute_Manager_Unique - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 24</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 24</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="Filter_User"><b>Filter_User</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>UniqueUserName</td>
+                     <td>Text</td>
+                     <td>&#39;Name&#39;</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Compute_Manager_Unique":"Filter_User":w -> "Filter_User":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Augment_ParentName [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Augment_ParentName - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 5</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 5</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>ParentRole</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="Flatten_UserRole"> Flatten_UserRole</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="ParentRoleId">ParentRoleId</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="Extract_UserRole"> Extract_UserRole</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="DeveloperName">DeveloperName</td> </tr>
+            
+                <tr> <td port="ParentRoleId">ParentRoleId</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> operation</td>
+                        <td>  LookupMultiValue</td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Augment_ParentName":"Flatten_UserRole":w -> "Flatten_UserRole":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "Augment_ParentName":"Extract_UserRole":w -> "Extract_UserRole":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Flatten_ParentName [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Flatten_ParentName - flatten</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 5</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 5</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>flatten</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>include_self_id</b></td>
+                            <td bgcolor="lightblue"><b>true</b></td>
+                        </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>self_field</b></td>
+                                <td bgcolor="lightblue"><b>DeveloperName</b></td>
+                        </tr>
+
+                        <tr>
+                                <td bgcolor="lightblue"><b>multi_field</b></td>
+                                <td bgcolor="lightblue"><b>RoleNames</b></td>
+                        </tr>  
+                        <tr>
+                                <td bgcolor="lightblue"><b>parent_field</b></td>
+                                <td bgcolor="lightblue"><b>ParentRole.DeveloperName</b></td>
+                         </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>path_field</b></td>
+                                <td bgcolor="lightblue"><b>RoleNamesPath</b></td>
+                         </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>source</b></td>
+                                <td port="Augment_ParentName" bgcolor="lightblue"><b>
+                                        Augment_ParentName</b></td></tr>
+                        </table>
+                    </td>
+            </tr>
+            
+       </table>
+       >
+     ]
+     
+        "Flatten_ParentName":"Augment_ParentName":w -> "Augment_ParentName":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Flatten_Hierarchy_Grouping [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Flatten_Hierarchy_Grouping - flatten</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 5</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 5</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>flatten</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>include_self_id</b></td>
+                            <td bgcolor="lightblue"><b>true</b></td>
+                        </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>self_field</b></td>
+                                <td bgcolor="lightblue"><b>DeveloperName</b></td>
+                        </tr>
+
+                        <tr>
+                                <td bgcolor="lightblue"><b>multi_field</b></td>
+                                <td bgcolor="lightblue"><b>Hierarchy_RoleNames</b></td>
+                        </tr>  
+                        <tr>
+                                <td bgcolor="lightblue"><b>parent_field</b></td>
+                                <td bgcolor="lightblue"><b>ParentRole.DeveloperName</b></td>
+                         </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>path_field</b></td>
+                                <td bgcolor="lightblue"><b>Hierarchy_RoleNamesPath</b></td>
+                         </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>source</b></td>
+                                <td port="Flatten_ParentName" bgcolor="lightblue"><b>
+                                        Flatten_ParentName</b></td></tr>
+                        </table>
+                    </td>
+            </tr>
+            
+       </table>
+       >
+     ]
+     
+        "Flatten_Hierarchy_Grouping":"Flatten_ParentName":w -> "Flatten_ParentName":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            User_with_Roles [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>User_with_Roles - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 24</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 24</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>Role</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="Compute_Manager_Unique"> Compute_Manager_Unique</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="UserRoleId">UserRoleId</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="Flatten_Hierarchy_Grouping"> Flatten_Hierarchy_Grouping</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="DeveloperName">DeveloperName</td> </tr>
+            
+                <tr> <td port="Roles">Roles</td> </tr>
+            
+                <tr> <td port="RolePath">RolePath</td> </tr>
+            
+                <tr> <td port="ParentRoleId">ParentRoleId</td> </tr>
+            
+                <tr> <td port="ParentRole.Name">ParentRole.Name</td> </tr>
+            
+                <tr> <td port="ParentRole.DeveloperName">ParentRole.DeveloperName</td> </tr>
+            
+                <tr> <td port="RoleNames">RoleNames</td> </tr>
+            
+                <tr> <td port="Hierarchy_RoleNames">Hierarchy_RoleNames</td> </tr>
+            
+                <tr> <td port="RoleNamesPath">RoleNamesPath</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> </td>
+                        <td>  </td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "User_with_Roles":"Compute_Manager_Unique":w -> "Compute_Manager_Unique":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "User_with_Roles":"Flatten_Hierarchy_Grouping":w -> "Flatten_Hierarchy_Grouping":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Join_ActivityOwner [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Join_ActivityOwner - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>Owner</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="Append_TaskEvent"> Append_TaskEvent</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="User_with_Roles"> User_with_Roles</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="Username">Username</td> </tr>
+            
+                <tr> <td port="UserRoleId">UserRoleId</td> </tr>
+            
+                <tr> <td port="UniqueUserName">UniqueUserName</td> </tr>
+            
+                <tr> <td port="FullPhotoUrl">FullPhotoUrl</td> </tr>
+            
+                <tr> <td port="SmallPhotoUrl">SmallPhotoUrl</td> </tr>
+            
+                <tr> <td port="Role.Name">Role.Name</td> </tr>
+            
+                <tr> <td port="Role.DeveloperName">Role.DeveloperName</td> </tr>
+            
+                <tr> <td port="Role.Roles">Role.Roles</td> </tr>
+            
+                <tr> <td port="Role.RolePath">Role.RolePath</td> </tr>
+            
+                <tr> <td port="Role.ParentRoleId">Role.ParentRoleId</td> </tr>
+            
+                <tr> <td port="Role.ParentRole.Name">Role.ParentRole.Name</td> </tr>
+            
+                <tr> <td port="Role.ParentRole.DeveloperName">Role.ParentRole.DeveloperName</td> </tr>
+            
+                <tr> <td port="Role.RoleNames">Role.RoleNames</td> </tr>
+            
+                <tr> <td port="Role.RoleNamesPath">Role.RoleNamesPath</td> </tr>
+            
+                <tr> <td port="Role.Hierarchy_RoleNames">Role.Hierarchy_RoleNames</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> </td>
+                        <td>  </td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Join_ActivityOwner":"Append_TaskEvent":w -> "Append_TaskEvent":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "Join_ActivityOwner":"User_with_Roles":w -> "User_with_Roles":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            User_with_Roles_with_Opportunities [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>User_with_Roles_with_Opportunities - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 24</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 24</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>Opportunity</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="User_with_Roles"> User_with_Roles</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="Extract_Opportunity"> Extract_Opportunity</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Name">Name</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> </td>
+                        <td>  </td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "User_with_Roles_with_Opportunities":"User_with_Roles":w -> "User_with_Roles":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "User_with_Roles_with_Opportunities":"Extract_Opportunity":w -> "Extract_Opportunity":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Join_ActivityOwner_Product_Opp [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Join_ActivityOwner_Product_Opp - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>Opportunity</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="Join_ActivityOwner"> Join_ActivityOwner</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="WhatId">WhatId</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="Extract_Opportunity"> Extract_Opportunity</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+            
+                <tr> <td port="StageName">StageName</td> </tr>
+            
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="Type">Type</td> </tr>
+            
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+            
+                <tr> <td port="AccountId">AccountId</td> </tr>
+            
+                <tr> <td port="CloseDate">CloseDate</td> </tr>
+            
+                <tr> <td port="CreatedDate">CreatedDate</td> </tr>
+            
+                <tr> <td port="RecordTypeId">RecordTypeId</td> </tr>
+            
+                <tr> <td port="IsClosed">IsClosed</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> </td>
+                        <td>  </td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Join_ActivityOwner_Product_Opp":"Join_ActivityOwner":w -> "Join_ActivityOwner":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "Join_ActivityOwner_Product_Opp":"Extract_Opportunity":w -> "Extract_Opportunity":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Users_Custom_Filter_Flag [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Users_Custom_Filter_Flag - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 24</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 24</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="User_with_Roles_with_Opportunities"><b>User_with_Roles_with_Opportunities</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>hasOpportunity</td>
+                     <td>Text</td>
+                     <td>case when &#39;Opportunity.Name&#39; is null then &quot;false&quot; else &quot;true&quot; end</td>
+            </tr>
+                <tr> <td>CustomFilter</td>
+                     <td>Text</td>
+                     <td>case when &#39;Opportunity.Name&#39; is null &amp;&amp; &#39;IsActive&#39; == &quot;false&quot; then &quot;false&quot; else &quot;true&quot; end</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Users_Custom_Filter_Flag":"User_with_Roles_with_Opportunities":w -> "User_with_Roles_with_Opportunities":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Join_ActivityOwner_Product_Opp_User [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Join_ActivityOwner_Product_Opp_User - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>AssignedTo</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="Join_ActivityOwner_Product_Opp"> Join_ActivityOwner_Product_Opp</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="Compute_Manager_Unique"> Compute_Manager_Unique</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="UniqueUserName">UniqueUserName</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> </td>
+                        <td>  </td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Join_ActivityOwner_Product_Opp_User":"Join_ActivityOwner_Product_Opp":w -> "Join_ActivityOwner_Product_Opp":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "Join_ActivityOwner_Product_Opp_User":"Compute_Manager_Unique":w -> "Compute_Manager_Unique":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Filter_UserManager [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Filter_UserManager - filter</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 24</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 24</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>filter</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>filter</b></td>
+                            <td><b>CustomFilter:EQ:true</b></td>
+                        </tr>
+                        <tr>
+                           <td>source</td>
+                           <td port="Users_Custom_Filter_Flag">Users_Custom_Filter_Flag</td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+            "Filter_UserManager":"Users_Custom_Filter_Flag":w -> "Users_Custom_Filter_Flag":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+            
+
+            Join_ActivityOwner_Product_Opp_User_Account [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Join_ActivityOwner_Product_Opp_User_Account - augment</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>augment</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>relationship</b></td>
+                            <td><b>Account</b></td>
+                        </tr>
+
+                        <tr>
+                            <td>left</td>
+                            <td port="Join_ActivityOwner_Product_Opp_User"> Join_ActivityOwner_Product_Opp_User</td>
+                        </tr>
+                        <tr>
+                            <td>left_key</td>
+                            <td> <table>
+                <tr> <td port="AccountId">AccountId</td> </tr>
+        </table></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td port="Extract_Account"> Extract_Account</td>
+                         </tr>
+                        <tr>
+                            <td>right_key</td>
+                            <td> <table>
+                <tr> <td port="Id">Id</td> </tr>
+        </table></td>
+                        </tr>
+                        <tr>
+                           <td>right_select</td>
+                           <td> <table>
+                <tr> <td port="Name">Name</td> </tr>
+            
+                <tr> <td port="OwnerId">OwnerId</td> </tr>
+            
+                <tr> <td port="Type">Type</td> </tr>
+            
+                <tr> <td port="Industry">Industry</td> </tr>
+            
+                <tr> <td port="BillingCountry">BillingCountry</td> </tr>
+            </table></td>
+                        </tr>
+                        <tr>
+                        <td> </td>
+                        <td>  </td>
+                     </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Join_ActivityOwner_Product_Opp_User_Account":"Join_ActivityOwner_Product_Opp_User":w -> "Join_ActivityOwner_Product_Opp_User":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        "Join_ActivityOwner_Product_Opp_User_Account":"Extract_Account":w -> "Extract_Account":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            optimize_Register_User [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>optimize_Register_User - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                        
+            
+       </table>
+       >
+     ]
+     
+
+            Compute_Activity_IsOverdue [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Compute_Activity_IsOverdue - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="Join_ActivityOwner_Product_Opp_User_Account"><b>Join_ActivityOwner_Product_Opp_User_Account</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>IsOverdue</td>
+                     <td>Text</td>
+                     <td>case when (&#39;IsClosed&#39; == &quot;false&quot;) &amp;&amp; (daysBetween(toDate(substr(&#39;ActivityDate&#39;, 1, 10), &quot;yyyy-MM-dd&quot;), now()) &gt; 0) then &quot;true&quot; else &quot;false&quot; end</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Compute_Activity_IsOverdue":"Join_ActivityOwner_Product_Opp_User_Account":w -> "Join_ActivityOwner_Product_Opp_User_Account":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Register_User [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Register_User - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 7 second(s)</b></td> 
+                        </tr>
+                        
+                        
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcRegister</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>name</b></td>
+                            <td bgcolor="lightblue"><b>Users</b></td>
+                        </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>alias</b></td>
+                                <td bgcolor="lightblue"><b>user</b></td>
+                        </tr>
+
+                        <tr>
+                                <td bgcolor="lightblue"><b>source</b></td>
+                                <td port="Filter_UserManager" bgcolor="lightblue"><b>
+        Filter_UserManager</b></td></tr>
+
+                    </table>
+                </td>
+        </tr>
+       <tr>
+                      <td  bgcolor="#eeffee">Field</td>
+                      <td  bgcolor="#eeffee">Usage Count</td>
+                      <td  bgcolor="#eeffee">Type</td>
+                    </tr>
+                    <tr>
+                     <td port="Role.RoleNames">Role.RoleNames</td>
+                    <td > 6</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="UniqueUserName">UniqueUserName</td>
+                    <td > 6</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="UserRoleId">UserRoleId</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="IsActive">IsActive</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Role.ParentRoleId">Role.ParentRoleId</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.RolePath">Role.RolePath</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Name">Name</td>
+                    <td > 6</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Opportunity.Name">Opportunity.Name</td>
+                    <td > 4</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.DeveloperName">Role.DeveloperName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="SmallPhotoUrl">SmallPhotoUrl</td>
+                    <td > 4</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="FirstName">FirstName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="hasOpportunity">hasOpportunity</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.ParentRole.Name">Role.ParentRole.Name</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.RoleNamesPath">Role.RoleNamesPath</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CustomFilter">CustomFilter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="FullPhotoUrl">FullPhotoUrl</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Username">Username</td>
+                    <td > 6</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.Name">Role.Name</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.Roles">Role.Roles</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Id">Id</td>
+                    <td > 7</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastName">LastName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.Hierarchy_RoleNames">Role.Hierarchy_RoleNames</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Role.ParentRole.DeveloperName">Role.ParentRole.DeveloperName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="UserType">UserType</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ManagerId">ManagerId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+       </table>
+       >
+     ]
+     
+        "Register_User":"Filter_UserManager":w -> "Filter_UserManager":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Compute_Activity_Days_Overdue [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Compute_Activity_Days_Overdue - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="Compute_Activity_IsOverdue"><b>Compute_Activity_IsOverdue</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>DaysOverdue</td>
+                     <td>Numeric</td>
+                     <td>case when &#39;IsOverdue&#39; == &quot;true&quot; then daysBetween(toDate(substr(&#39;ActivityDate&#39;, 1, 10), &quot;yyyy-MM-dd&quot;), now()) else 0 end</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Compute_Activity_Days_Overdue":"Compute_Activity_IsOverdue":w -> "Compute_Activity_IsOverdue":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Activity_Custom_Filter_Flag [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Activity_Custom_Filter_Flag - computeExpression</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#efefef" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#efefef"> <b>computeExpression</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>source</b></td>
+                            <td port="Compute_Activity_Days_Overdue"><b>Compute_Activity_Days_Overdue</b></td>
+                        </tr>
+                        <tr>
+                           <td>mergeWithSource</td>
+                           <td>true</td>
+                        </tr>
+
+                        <tr>
+                            <td>computedFields</td>
+                            <td><table><tr><td bgcolor="lightblue">name</td>
+                         <td bgcolor="lightblue">type</td>
+                         <td bgcolor="lightblue">saqlExpression</td>
+                    </tr>
+                <tr> <td>CustomFilter</td>
+                     <td>Text</td>
+                     <td>&quot;true&quot;</td>
+            </tr></table></td>
+                         </tr>
+                    </table>
+                </td>
+        </tr>
+
+       
+       </table>
+       >
+     ]
+     
+        "Activity_Custom_Filter_Flag":"Compute_Activity_Days_Overdue":w -> "Compute_Activity_Days_Overdue":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+        
+
+            Filter_Activity [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Filter_Activity - filter</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>InputRows</b> </td>
+                              <td bgcolor="#ccff99" ><b> 2320</b></td> 
+                        </tr>
+                
+                        
+                         <tr> <td bgcolor="#ccff99" align="left"><b>outputRows</b> </td> 
+                              <td bgcolor="#ccff99" ><b> 2320</b></td>
+                        </tr>
+                
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>filter</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td><b>filter</b></td>
+                            <td><b>CustomFilter:EQ:true</b></td>
+                        </tr>
+                        <tr>
+                           <td>source</td>
+                           <td port="Activity_Custom_Filter_Flag">Activity_Custom_Filter_Flag</td>
+                        </tr>
+                    </table>
+                </td>
+        </tr>
+       
+       </table>
+       >
+     ]
+     
+            "Filter_Activity":"Activity_Custom_Filter_Flag":w -> "Activity_Custom_Filter_Flag":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+            
+
+            optimize_Register_Activity [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>optimize_Register_Activity - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 0 second(s)</b></td> 
+                        </tr>
+                        
+                        
+            
+       </table>
+       >
+     ]
+     
+
+            Register_Activity [shape=none, margin=5, label=< 
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="seashell2">
+                        <tr> <td colspan="3" bgcolor="seashell2"><b>Register_Activity - internal</b></td> 
+                        </tr>
+                        <tr> <td bgcolor="#ff99cc" port="action" align="left"><b>Duration</b> </td> 
+                        <td bgcolor="#ff99cc" ><b> 15 second(s)</b></td> 
+                        </tr>
+                        
+                        
+            
+                                <tr> <td bgcolor="#e66465" port="action" align="left"><b>action</b>
+                                    </td> <td bgcolor="#e66465"> <b>sfdcRegister</b></td>
+                                </tr>
+                    
+        <tr>
+                <td port="parameters" align="left">parameters</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td bgcolor="lightblue"><b>name</b></td>
+                            <td bgcolor="lightblue"><b>Activities</b></td>
+                        </tr>
+                        <tr>
+                                <td bgcolor="lightblue"><b>alias</b></td>
+                                <td bgcolor="lightblue"><b>activity</b></td>
+                        </tr>
+
+                        <tr>
+                                <td bgcolor="lightblue"><b>source</b></td>
+                                <td port="Filter_Activity" bgcolor="lightblue"><b>
+        Filter_Activity</b></td></tr>
+
+                    </table>
+                </td>
+        </tr>
+       <tr>
+                      <td  bgcolor="#eeffee">Field</td>
+                      <td  bgcolor="#eeffee">Usage Count</td>
+                      <td  bgcolor="#eeffee">Type</td>
+                    </tr>
+                    <tr>
+                     <td port="LastModifiedDate">LastModifiedDate</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Year">LastModifiedDate_Year</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Quarter">LastModifiedDate_Quarter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Month">LastModifiedDate_Month</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Week">LastModifiedDate_Week</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Day">LastModifiedDate_Day</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Hour">LastModifiedDate_Hour</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Minute">LastModifiedDate_Minute</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Second">LastModifiedDate_Second</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Year_Fiscal">LastModifiedDate_Year_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Quarter_Fiscal">LastModifiedDate_Quarter_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Month_Fiscal">LastModifiedDate_Month_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_Week_Fiscal">LastModifiedDate_Week_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Account.Type">Account.Type</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="AccountId">AccountId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CallDisposition">CallDisposition</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.RecordTypeId">Opportunity.RecordTypeId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.ParentRole.Name">Owner.Role.ParentRole.Name</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.Hierarchy_RoleNames">Owner.Role.Hierarchy_RoleNames</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.Name">Owner.Role.Name</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.StageName">Opportunity.StageName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Username">Owner.Username</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="AssignedTo.UniqueUserName">AssignedTo.UniqueUserName</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.DeveloperName">Owner.Role.DeveloperName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Status">Status</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="IsOverdue">IsOverdue</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.RoleNamesPath">Owner.Role.RoleNamesPath</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="ActivityDate">ActivityDate</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="ActivityDate_Year">ActivityDate_Year</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Quarter">ActivityDate_Quarter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Month">ActivityDate_Month</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="ActivityDate_Week">ActivityDate_Week</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Day">ActivityDate_Day</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Hour">ActivityDate_Hour</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Minute">ActivityDate_Minute</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Second">ActivityDate_Second</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Year_Fiscal">ActivityDate_Year_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Quarter_Fiscal">ActivityDate_Quarter_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Month_Fiscal">ActivityDate_Month_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_Week_Fiscal">ActivityDate_Week_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Priority">Priority</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.RolePath">Owner.Role.RolePath</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.Id">Opportunity.Id</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.IsClosed">Opportunity.IsClosed</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="TaskSubtype">TaskSubtype</td>
+                    <td > 1</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Account.BillingCountry">Account.BillingCountry</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="CreatedDate">CreatedDate</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Year">CreatedDate_Year</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Quarter">CreatedDate_Quarter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Month">CreatedDate_Month</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Week">CreatedDate_Week</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Day">CreatedDate_Day</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Hour">CreatedDate_Hour</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Minute">CreatedDate_Minute</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Second">CreatedDate_Second</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Year_Fiscal">CreatedDate_Year_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Quarter_Fiscal">CreatedDate_Quarter_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Month_Fiscal">CreatedDate_Month_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_Week_Fiscal">CreatedDate_Week_Fiscal</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Account.OwnerId">Account.OwnerId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Id">Id</td>
+                    <td > 3</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="EventSubtype">EventSubtype</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.AccountId">Opportunity.AccountId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Owner.Role.RoleNames">Owner.Role.RoleNames</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Owner.UniqueUserName">Owner.UniqueUserName</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="WhatId">WhatId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.FullPhotoUrl">Owner.FullPhotoUrl</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="CallType">CallType</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="AssignedTo.Name">AssignedTo.Name</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="IsClosed">IsClosed</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Owner.SmallPhotoUrl">Owner.SmallPhotoUrl</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.ParentRoleId">Owner.Role.ParentRoleId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Account.Industry">Account.Industry</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Opportunity.Type">Opportunity.Type</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="OwnerId">OwnerId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.UserRoleId">Owner.UserRoleId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Opportunity.Name">Opportunity.Name</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Owner.Name">Owner.Name</td>
+                    <td > 1</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate">Opportunity.CloseDate</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Year">Opportunity.CloseDate_Year</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Quarter">Opportunity.CloseDate_Quarter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Month">Opportunity.CloseDate_Month</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Week">Opportunity.CloseDate_Week</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Day">Opportunity.CloseDate_Day</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Hour">Opportunity.CloseDate_Hour</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Minute">Opportunity.CloseDate_Minute</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_Second">Opportunity.CloseDate_Second</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate">Opportunity.CreatedDate</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Year">Opportunity.CreatedDate_Year</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Quarter">Opportunity.CreatedDate_Quarter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Month">Opportunity.CreatedDate_Month</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Week">Opportunity.CreatedDate_Week</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Day">Opportunity.CreatedDate_Day</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Hour">Opportunity.CreatedDate_Hour</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Minute">Opportunity.CreatedDate_Minute</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_Second">Opportunity.CreatedDate_Second</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Subject">Subject</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.Roles">Owner.Role.Roles</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CustomFilter">CustomFilter</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Owner.Role.ParentRole.DeveloperName">Owner.Role.ParentRole.DeveloperName</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.OwnerId">Opportunity.OwnerId</td>
+                
+                    <td > 0</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="Account.Name">Account.Name</td>
+                    <td > 2</td>
+                    <td>dim</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_day_epoch">LastModifiedDate_day_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="LastModifiedDate_sec_epoch">LastModifiedDate_sec_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                     <td port="DaysOverdue">DaysOverdue</td>
+                    <td > 2</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_day_epoch">ActivityDate_day_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="ActivityDate_sec_epoch">ActivityDate_sec_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CallDurationInSeconds">CallDurationInSeconds</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_day_epoch">CreatedDate_day_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="CreatedDate_sec_epoch">CreatedDate_sec_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="DurationInMinutes">DurationInMinutes</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_day_epoch">Opportunity.CloseDate_day_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CloseDate_sec_epoch">Opportunity.CloseDate_sec_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_day_epoch">Opportunity.CreatedDate_day_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+                    <tr>
+                    
+                <td bgcolor="#ff99cc" color="white" port="Opportunity.CreatedDate_sec_epoch">Opportunity.CreatedDate_sec_epoch</td>
+                
+                    <td > 0</td>
+                    <td>mea</td>
+                    </tr>
+            
+       </table>
+       >
+     ]
+     
+        "Register_Activity":"Filter_Activity":w -> "Filter_Activity":"action":e    [arrowhead=none dir=back  color="#ff99cc"  fontname="Monaco" fontsize="9" ];
+          } 

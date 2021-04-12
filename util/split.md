@@ -1,4 +1,5 @@
 # Splitting a large CSV into a splits of given size
+- Plugin version 0.0.155 is required
 
 ```
 Split the given data file into multiple files based on given  split size
