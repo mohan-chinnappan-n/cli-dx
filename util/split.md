@@ -9,7 +9,7 @@
 - [Split files only](#fsplit)
 
 - [Bucket Create](#createb)
-- [List Bucket](#lsb)
+- [List Buckets](#lsb)
 
 - [Split files and load into S3](#fsplits3)
 - [Read file from web and Split files and load into s3](#hsplits3)
