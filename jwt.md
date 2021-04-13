@@ -417,6 +417,13 @@ DESCRIPTION
 ```
 
 
+### How to check the given server.key (private key) matches a certificate?
+```
+openssl rsa -check -noout -in ~/key-gen/server.key 
+RSA key ok
+
+```
+
 ### References
 - [Creating a Self-Signed SSL Certificate](https://devcenter.heroku.com/articles/ssl-certificate-self#generate-private-key-and-certificate-signing-request)
 - [Using the OAuth 2.0 JWT Bearer Flow to Support the Salesforce DX CLI](http://www.wadewegner.com/2017/04/using-the-oauth-2-jwt-bearer-flow-to-support-the-salesforcedx-cli/)
