@@ -21,7 +21,7 @@ OPTIONS
 
 EXAMPLE
 
-              sfdx mohanc:bulkapi:query  -u <username>  -q queryFile [input.soql]
+              sfdx mohanc:data:bulkapi:query  -u <username>  -q queryFile [input.soql]
 
               Executes the given SOQL query in the given queryFile (example: input.soql) and writes the CSV output to  
   queryFile.csv (example: input.soql.csv)
