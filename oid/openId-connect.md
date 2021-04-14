@@ -1,4 +1,4 @@
-# How to use Google as OpenID Connect provider for Salesforce
+# How to use Google as OpenID Connect provider for Salesforce?
 
 ## Demo
 ![Demo oid](img/openIdconnect-SF-Google-1.gif)
@@ -31,3 +31,10 @@ global void updateUser(Id userId, Id portalId, Auth.UserData data){
 }
 }
 ```
+
+## Resources
+
+- [RegistrationHandler Interface](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_auth_plugin.htm)
+- [Configure an OpenID Connect Authentication Provider](https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/sso_provider_openid_connect.htm)
+
+
