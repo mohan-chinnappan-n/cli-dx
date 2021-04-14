@@ -1,7 +1,7 @@
 # How to use Google as OpenID Connect provider for Salesforce
 
 ## Demo
-[Demo oid](img/openIdconnect-SF-Google-1.gif)
+![Demo oid](img/openIdconnect-SF-Google-1.gif)
 
 ## Sample AutocreatedRegHandler class
 
