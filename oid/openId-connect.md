@@ -85,12 +85,17 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 - [Configure an OpenID Connect Authentication Provider](https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/sso_provider_openid_connect.htm)
 
 - [OpenID Connect](https://openid.net/connect/)
+- [Spec](https://openid.net/specs/openid-connect-basic-1_0.html)
 
 - Okta specific
     - [OpenID Connect & OAuth 2.0 API - Endpoints ](https://developer.okta.com/docs/reference/api/oidc/)
 
 - Videos
     - [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
+- Playgrounds
+    - [Salesforce as OpenID Connect - Playground](https://openidconnect.herokuapp.com/)
+    - [Auth0 - OpenID Connect Playground](https://openidconnect.net/)
+    - [Google OAuth2 Playground](https://developers.google.com/oauthplayground/)
 
 
 ## About OpenID connect
