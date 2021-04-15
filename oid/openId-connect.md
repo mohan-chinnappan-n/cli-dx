@@ -84,5 +84,9 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 - [RegistrationHandler Interface](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_auth_plugin.htm)
 - [Configure an OpenID Connect Authentication Provider](https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/sso_provider_openid_connect.htm)
 
-- [](https://developers.google.com/identity/protocols/oauth2/openid-connect)
+- [OpenID Connect](https://openid.net/connect/)
 
+## About OpenID connect
+- Simple Identity layer on top of the OAuth 2.0 protocol
+- Allows Clients (like service providers) to verify the identity of the End-User based on the authentication performed by an Authorization Server
+- ![oid-1](img/oid-1.png)  
