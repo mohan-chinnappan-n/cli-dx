@@ -1,8 +1,50 @@
 # How to use Google as OpenID Connect provider for Salesforce?
 
+## Topics
+
+- [Demo](#demo)
+- [Auth. Provider Settings](#ap)
+- [Open ID Provider client secret](#cs)
+- [Auth.RegistrationHandler](#rh)
+- [References](#ref)
+
+<a name='demo'></a>
+
 ## Demo
 ![Demo oid](img/openIdconnect-SF-Google-1.gif)
 
+
+<a name='ap'></a>
+
+## Auth. Provider settings
+![auth provide settings](img/auth-provide-google-1.png)
+<a name='cs'></a>
+
+## OID provider client secret details
+- Note: Content is mangled here to protect the idenity
+```json
+
+{
+  "web": {
+    "project_id": "oidtest-310720",
+    
+    "client_id": "113225562349-fqktafcJUNK.apps.googleusercontent.com",
+    "client_secret": "6VIgVAz8NlJUNKIk4INu4",
+
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+   
+     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+
+
+    "redirect_uris": [
+      "https://mohansun-ea-02-dev-ed.my.salesforce.com/services/authcallback/Google"
+    ]
+  }
+}
+
+```
+<a name='rh'></a>
 ## Sample AutocreatedRegHandler class
 
 ```java 
@@ -36,9 +78,11 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 }
 ```
 
+<a name='ref'></a>
 ## Resources
 
 - [RegistrationHandler Interface](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_auth_plugin.htm)
 - [Configure an OpenID Connect Authentication Provider](https://developer.salesforce.com/docs/atlas.en-us.mobile_sdk.meta/mobile_sdk/sso_provider_openid_connect.htm)
 
+- [](https://developers.google.com/identity/protocols/oauth2/openid-connect)
 
