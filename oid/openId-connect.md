@@ -86,6 +86,9 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 
 - [OpenID Connect](https://openid.net/connect/)
 
+- Videos
+    - [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
+
 ## About OpenID connect
 - Simple Identity layer on top of the OAuth 2.0 protocol
 - Allows Clients (like service providers) to verify the identity of the End-User based on the authentication performed by an Authorization Server
