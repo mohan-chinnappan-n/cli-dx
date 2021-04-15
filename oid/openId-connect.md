@@ -92,6 +92,8 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 
 - Videos
     - [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
+    - [OpenId Connect in Salesforce | SSO Between Google and Salesforce](https://www.youtube.com/watch?v=0qNQ_YEIM8s)
+
 - Playgrounds
     - [Salesforce as OpenID Connect - Playground](https://openidconnect.herokuapp.com/)
     - [Auth0 - OpenID Connect Playground](https://openidconnect.net/)
