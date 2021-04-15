@@ -86,8 +86,12 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 
 - [OpenID Connect](https://openid.net/connect/)
 
+- Okta specific
+    - [OpenID Connect & OAuth 2.0 API - Endpoints ](https://developer.okta.com/docs/reference/api/oidc/)
+
 - Videos
     - [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
+
 
 ## About OpenID connect
 - Simple Identity layer on top of the OAuth 2.0 protocol
