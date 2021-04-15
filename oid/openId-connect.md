@@ -89,7 +89,7 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 
 - Okta specific
     - [OpenID Connect & OAuth 2.0 API - Endpoints ](https://developer.okta.com/docs/reference/api/oidc/)
-
+    - [Configure Okta for use as an OpenID Connect (OIDC) identity provide](https://auth0.com/docs/protocols/configure-okta-as-oauth2-identity-provider)
 - Videos
     - [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996OiexHze0)
     - [OpenId Connect in Salesforce | SSO Between Google and Salesforce](https://www.youtube.com/watch?v=0qNQ_YEIM8s)
