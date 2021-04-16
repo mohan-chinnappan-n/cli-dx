@@ -6,6 +6,7 @@
 - [Auth. Provider Settings](#ap)
 - [Open ID Provider client secret](#cs)
 - [Auth.RegistrationHandler](#rh)
+- [Using Metadata API](#mdapi)
 - [References](#ref)
 
 <a name='demo'></a>
@@ -76,6 +77,129 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 
 
 }
+```
+
+<a name='mdapi'></a>
+
+```
+$ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t AuthProvider
+
+```
+
+```
+{
+  result: [
+    {
+      createdById: '0053h000002xQ5sAAE',
+      createdByName: 'Mohan Chinnappan',
+      createdDate: 2020-12-11T17:06:31.000Z,
+      fileName: 'authproviders/Google.authprovider',
+      fullName: 'Google',
+      id: '0SO3h000000CwxxGAC',
+      lastModifiedById: '0053h000002xQ5sAAE',
+      lastModifiedByName: 'Mohan Chinnappan',
+      lastModifiedDate: 1970-01-01T00:00:00.000Z,
+      type: 'AuthProvider'
+    }
+  ]
+}
+
+```
+
+```
+$ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t AuthProvider
+```
+
+```
+{
+    "RetrieveRequest": {
+        "apiVersion": "51.0",
+        "unpackaged": [
+            {
+                "types": {
+                    "members": "*",
+                    "name": "AuthProvider"
+                }
+            }
+        ]
+    }
+}
+{ result: { done: false, id: '09S3h000005hIRGEA2', state: 'Queued' } }
+```
+
+```
+$ sfdx mohanc:mdapi:checkRetrieveStatus  -u mohan.chinnappan.n_ea2@gmail.com -i 09S3h000005hIRGEA2
+
+```
+```
+[
+  {
+    createdById: '',
+    createdByName: '',
+    createdDate: 2020-12-11T17:06:31.000Z,
+    fileName: 'unpackaged/authproviders/Google.authprovider',
+    fullName: 'Google',
+    id: '0SO3h000000CwxxGAC',
+    lastModifiedById: '',
+    lastModifiedByName: '',
+    lastModifiedDate: 1970-01-01T00:00:00.000Z,
+    type: 'AuthProvider'
+  },
+  {
+    createdById: '0053h000002xQ5sAAE',
+    createdByName: 'Mohan Chinnappan',
+    createdDate: 2021-04-16T01:12:48.036Z,
+    fileName: 'unpackaged/package.xml',
+    fullName: 'unpackaged/package.xml',
+    id: '',
+    lastModifiedById: '0053h000002xQ5sAAE',
+    lastModifiedByName: 'Mohan Chinnappan',
+    lastModifiedDate: 2021-04-16T01:12:48.036Z,
+    manageableState: 'unmanaged',
+    type: 'Package'
+  }
+]
+=== Writing zipFile base64 content to 09S3h000005hIRGEA2.zip.txt ...
+=== Writing zipFile binary content to 09S3h000005hIRGEA2.zip ... 
+
+```
+```
+$ jar tvf 09S3h000005hIRGEA2.zip
+  1054 Fri Apr 16 01:12:48 EDT 2021 unpackaged/authproviders/Google.authprovider
+   224 Fri Apr 16 01:12:48 EDT 2021 unpackaged/package.xml
+```
+
+```
+$ unzip 09S3h000005hIRGEA2.zip
+Archive:  09S3h000005hIRGEA2.zip
+  inflating: unpackaged/authproviders/Google.authprovider  
+  inflating: unpackaged/package.xml  
+
+```
+```
+$ cat authproviders/Google.authprovider 
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://accounts.google.com/o/oauth2/auth</authorizeUrl>
+    <consumerKey>113225562349-fqktafcmesni74spapbj1ep0pvja4oor.apps.googleusercontent.com</consumerKey>
+    <consumerSecret>+Za8U3gPxgIJUNK49yR1Z7va0cEEY92ILatc=</consumerSecret>
+    <defaultScopes>email openid  profile</defaultScopes>
+    <executionUser>mohan.chinnappan@email.com</executionUser>
+    <friendlyName>Google</friendlyName>
+    <includeOrgIdInIdentifier>false</includeOrgIdInIdentifier>
+    <providerType>Google</providerType>
+    <registrationHandler>AutocreatedRegHandler1618428423355</registrationHandler>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://accounts.google.com/o/oauth2/token</tokenUrl>
+    <userInfoUrl>https://www.googleapis.com/oauth2/v3/userinfo</userInfoUrl>
+</AuthProvider>
+
+
 ```
 
 <a name='ref'></a>

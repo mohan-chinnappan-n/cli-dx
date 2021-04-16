@@ -1,0 +1,1 @@
+curl -X POST "https://accounts.google.com/o/oauth2/auth?client_id=113225562349-fqktafcmesni74spapbj1ep0pvja4oor.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fmohansun-ea-02-dev-ed.my.salesforce.com%2Fservices%2Fauthcallback%2FGoogle&scope=openid%20email&response_type=code&response_mode=form_post&nonce=4vilt0ef41l"
