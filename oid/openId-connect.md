@@ -6,6 +6,7 @@
 - [Auth. Provider Settings](#ap)
 - [Open ID Provider client secret](#cs)
 - [Auth.RegistrationHandler](#rh)
+- [Auth.RegistrationHandler Log](#lrh)
 - [Using Metadata API](#mdapi)
 - [References](#ref)
 
@@ -66,7 +67,8 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
     }
 
     global User createUser(Id portalId, Auth.UserData data){
-        
+        System.debug(data);       
+    
         User u = [Select Id From User WHERE federationidentifier = :data.email LIMIT 1];
         return u;
     }
@@ -78,6 +80,10 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 
 }
 ```
+
+<a name='lrh'></a>
+## Log from the RegHandler
+![log regHandler](img/oid-log-1.png)
 
 <a name='mdapi'></a>
 ## Metadata details of this AuthProvider

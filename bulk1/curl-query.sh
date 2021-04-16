@@ -1,0 +1,1 @@
+curl https://mohansun-ea-02-dev-ed.my.salesforce.com/services/async/51.0/job -H 'X-SFDC-Session: 00D3h000007R1Lu!AR0AQANla55KQmgW5FYTW1LS63HHEJmU7c2615_IQZD2IRxBFuEwacKhWmas8Vb6GDxRIhGOaKMfgirDz8BQIrX2Xzd5Izby' -H "Content-Type: application/xml; charset=UTF-8" -d @queryJob.xml
