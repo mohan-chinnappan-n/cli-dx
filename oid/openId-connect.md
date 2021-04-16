@@ -80,6 +80,7 @@ global class AutocreatedRegHandler1618428423355 implements Auth.RegistrationHand
 ```
 
 <a name='mdapi'></a>
+## Metadata details of this AuthProvider
 
 ```
 $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t AuthProvider
