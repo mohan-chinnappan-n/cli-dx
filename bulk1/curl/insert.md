@@ -59,7 +59,7 @@ $ curl https://mohansun-ea-02-dev-ed.my.salesforce.com/services/async/51.0/job -
  <apexProcessingTime>0</apexProcessingTime>
 </jobInfo>
 ```
-![Create Job](img/bulk-1.png)
+![Create Job](img/bulk1-1.png)
 
 <a name='addBatchToJob'></a>
 ## 2.  Add batch to the created job
@@ -139,8 +139,8 @@ $ curl https://mohansun-ea-02-dev-ed.my.salesforce.com/services/async/51.0/job/7
 </jobInfo>
 
 ```
-![close Job](img/bulk-2.png)
+![close Job](img/bulk1-2.png)
 
 
 ### Data Inserted
--![data inserted](img/bulk-5.png)
+-![data inserted](img/bulk1-5.png)
