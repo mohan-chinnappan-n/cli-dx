@@ -57,6 +57,7 @@ Name,replicated
 ```
 $ cat newDC.json
 ```
+
 ```json
 
 {
@@ -91,6 +92,7 @@ $ cat newDC.json
 
 ```
 
+```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v51.0/wave/dataconnectors -m POST -f ~/.headers/header_ea.json -d ./newDC.json 
 ```
 ```json
@@ -140,9 +142,11 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 ```
 
 ### List the data connectors
+
 ```
 $ sfdx mohanc:ea:dataConnector:list -u mohan.chinnappan.n_ea2@gmail.com  
 ```
+
 ```
 Id,Name,Label,connectorType
 "0It3h000000bnGUCAY","SFDC_LOCAL","SFDC_LOCAL","SfdcLocal"
