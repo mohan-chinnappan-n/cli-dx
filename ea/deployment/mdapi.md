@@ -309,6 +309,7 @@ $ cat ~/.ea/options.json
 $ sfdx mohanc:mdapi:deploy -u mohan.chinnappan.n_ea2@gmail.com -z 09S3h000005hXVrEAM.zip.txt   -o  ~/.ea/options.json
 ```
 
+```
 { checkOnly: true }
 {
     "zipFile": "Zip file content",
