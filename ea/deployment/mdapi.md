@@ -5,7 +5,7 @@
 - [List for the given metadata type](#list)
 - [Retrieve the metadata zip file for the given metadata type from the source org](#retrieve)
 - [Deploy the metadata zip file into the target org](#deploy)
-
+- [References](#ref)
 
 <a name="list"></a>
 
@@ -378,3 +378,8 @@ $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t WaveXmd
 ```
 
 ![Deployment status](img/deploymentStatus_1.png)
+
+<a name="ref"></a>
+## References
+- [mdap](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/mdapi/mdapi.md)
+- [Uncovering Deployment Techniques for Tableau CRM](https://www.salesforceblogger.com/2020/06/15/uncovering-deployment-techniques-for-einstein-analytics/)
