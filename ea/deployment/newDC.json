@@ -1,0 +1,30 @@
+{
+  "label": "Another S3Connection",
+  "name" : "anotherS3Connection",
+  "description" : "S3 Connection Test",
+  "connectorType" : "AmazonS3",
+  "connectionProperties": [
+                {
+                    "name": "AccessKey",
+                    "value": "******"
+                },
+                {
+                    "name": "FolderPath",
+                    "value": "bucketea2"
+                },
+                {
+                    "name": "MasterSymmetricKey",
+                    "value": "******"
+                },
+                {
+                    "name": "RegionName",
+                    "value": "US East(N. Virginia)"
+                },
+                {
+                    "name": "SecretKey",
+                    "value": "******"
+                }
+            ]
+
+}
+
