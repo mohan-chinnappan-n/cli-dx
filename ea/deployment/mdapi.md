@@ -319,7 +319,10 @@ $ sfdx mohanc:mdapi:deploy -u mohan.chinnappan.n_ea2@gmail.com -z 09S3h000005hXV
 { result: { done: false, id: '0Af3h00000JeyprCAB', state: 'Queued' } }
 ```
 
+```
 $ sfdx mohanc:mdapi:checkDeployStatus -u mohan.chinnappan.n_ea2@gmail.com -i 0Af3h00000JeyprCAB
+```
+
 ```
 {
   result: {
