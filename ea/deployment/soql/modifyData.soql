@@ -1,0 +1,2 @@
+SELECT Id, Label, Name FROM PermissionSet WHERE PermissionsModifyAllData = true
+

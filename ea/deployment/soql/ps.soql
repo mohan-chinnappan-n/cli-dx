@@ -1,0 +1,2 @@
+SELECT Id, Name, Label FROM PermissionSet WHERE PermissionsInsightsAppAdmin = true
+

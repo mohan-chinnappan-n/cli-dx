@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WaveDashboard xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <content xsi:nil="true"/>
+    <application>My_DTC_Sales</application>
+    <description>Analyze opportunities by sales rep, stage, product family, and amount. View the total value of their open, won, and lost opportunities. Look at the individual opportunity records. Get it all in this interactive dashboard!</description>
+    <masterLabel>Sales Performance with Selectable Measures</masterLabel>
+</WaveDashboard>

@@ -1,0 +1,2 @@
+SELECT Id,Name FROM Profile WHERE PermissionsApiEnabled = true
+
