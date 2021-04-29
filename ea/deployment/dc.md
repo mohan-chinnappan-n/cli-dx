@@ -51,7 +51,7 @@ Name,replicated
 "AcquiredAccount__c","false"
 ```
 
-<a href="newDC"></a>
+<a name="newDC"></a>
 ## Adding new Data Connection
 
 ```
