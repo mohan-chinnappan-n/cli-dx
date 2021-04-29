@@ -381,5 +381,5 @@ $ sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t WaveXmd
 
 <a name="ref"></a>
 ## References
-- [mdap](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/mdapi/mdapi.md)
+- [Metadata API using CLI](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/mdapi/mdapi.md)
 - [Uncovering Deployment Techniques for Tableau CRM](https://www.salesforceblogger.com/2020/06/15/uncovering-deployment-techniques-for-einstein-analytics/)
