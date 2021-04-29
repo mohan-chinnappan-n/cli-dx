@@ -296,8 +296,9 @@ $ jar xvf 09S3h000005hXVrEAM.zip
 ```
 <a name="deploy"></a>
 ```
-
 $ cat ~/.ea/options.json 
+```
+
 ```json
 {
   "checkOnly": true
