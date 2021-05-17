@@ -26,6 +26,13 @@
         -  anyone in the org to authorize the app after **successfully signing in**. 
 
 ![CApp oauth policies](img/capp-oauth-policies-1.png)
+
+
+### Connected App references
+- [Security Guide](https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/connected_apps.htm)
+- [Manage OAuth-Enabled Connected Apps Access to Your Data](https://help.salesforce.com/articleView?id=sf.remoteaccess_request_manage.htm&type=5)
+
+
 ### Create required files (server.key and server.crt)
 
 - Generate Private Key and CSR (Certificate Signing Request)
