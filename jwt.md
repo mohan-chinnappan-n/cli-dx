@@ -19,13 +19,15 @@
 
 
 ###  Define Which Users Can Access the Connected App 
+![CApp oauth policies](img/capp-oauth-policies-1.png)
 - The **Permitted Users policy** defines whether users are pre-authorized to run the connected app. 
     - The **Admin approved users** are pre-authorized option allows:
         -  only users with the associated profile to access the app without first authorizing it. 
     -  The **All Users may self-authorize** option enables:
         -  anyone in the org to authorize the app after **successfully signing in**. 
+        - Successfully signed in user will be asked the confirmation using "Allow Access" form as shown below:
 
-![CApp oauth policies](img/capp-oauth-policies-1.png)
+![CApp oauth policies - Allow Access](img/capp-oauth-policies-2.png)
 
 
 ### Connected App references
