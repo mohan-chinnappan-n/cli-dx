@@ -31,9 +31,10 @@
 
 ####  Admin approved users option
 - When you select Admin approved users option
-![admin-approved users](img/capp-oauth-policies-3a.png)
-![admin-approved users](img/capp-oauth-policies-3b.png)
-![admin-approved users](img/capp-oauth-policies-3c.png)
+![admin-approved users - alert](img/capp-oauth-policies-3a.png)
+![admin-approved users - Policy](img/capp-oauth-policies-3.png)
+![admin-approved users - profile](img/capp-oauth-policies-3b.png)
+![admin-approved users - permset](img/capp-oauth-policies-3c.png)
 
 
 
