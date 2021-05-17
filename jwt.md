@@ -5,6 +5,27 @@
     - Connected App
         - server.crt  (self-signed cert file in creating Connected App in Salesforce)  
 
+<a name='capp'></a>:
+## What is a connected App?
+- A connected app is a framework that enables an external application to integrate with Salesforce using APIs and standard protocols, such as SAML, OAuth, and OpenID Connect. Connected apps use these protocols to authenticate, authorize, and provide single sign-on (SSO) for external apps. 
+- The external apps that are integrated with Salesforce can run on the customer success platform, other platforms, devices, or SaaS subscriptions. 
+    - For example, when you log in to your Salesforce mobile app and see your data from your Salesforce org, you’re using a connected app.
+
+
+### Main use cases for a connected app
+- You can use a connected app to integrate external applications with the Salesforce API, such as a web-based app that pulls in order status data from your Salesforce org. 
+- You can also use connected apps to integrate service providers with your Salesforce org, and to set security policies to control what data a third-party app can access from your org. 
+- You can configure a connected app to provide authorization for external API gateways, such as API gateways hosted on MuleSoft’s Anypoint Platform.
+
+
+###  Define Which Users Can Access the Connected App 
+- The **Permitted Users policy** defines whether users are pre-authorized to run the connected app. 
+    - The **Admin approved users** are pre-authorized option allows:
+        -  only users with the associated profile to access the app without first authorizing it. 
+    -  The **All Users may self-authorize** option enables:
+        -  anyone in the org to authorize the app after **successfully signing in**. 
+
+![CApp oauth policies](img/capp-oauth-policies-1.png)
 ### Create required files (server.key and server.crt)
 
 - Generate Private Key and CSR (Certificate Signing Request)
