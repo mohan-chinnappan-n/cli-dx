@@ -14,11 +14,6 @@ CREATE SECURITY INTEGRATION tcrmwb_oauth_integration
 ;
 ```
 
-- https://docs.snowflake.com/en/sql-reference/sql/create-security-integration.html
-- https://snowflakecommunity.force.com/s/article/HOW-TO-OAUTH-TOKEN-GENERATION-USING-SNOWFLAKE-CUSTOM-OAUTH
-- https://community.snowflake.com/s/article/How-To-Create-User-Security-Integration-In-Snowflake-To-Use-Okta-OAuth-Service-Flow
-
-
 - view the integration details
 ```sql
 use role ACCOUNTADMIN;
@@ -87,7 +82,7 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8
 > --data-urlencode "redirect_uri=https://mohansun-myea.herokuapp.com/" \
 > https://mwa76434.us-east-1.snowflakecomputing.com/oauth/token-request
 ```
-
+```json
 {
   "access_token" : "ETMsDgAAAXmzy5dnABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAEL1tiwcVLh9PK6Wd6Np+4UcAAABwXpoRpv9QnTmPY4JO8NKzWQiUedt+OUjZQC4hqHsiLtpH7iBpizTBZ6wjC/5HsJWesezVwwb7WYLD/YBdhy2G67ffTE2HN+aKmkcbSuGcjTkxcGbebw/yZwH5WmjeJc3Cwp6krLue6wjMLKt5iT6c7gAU89Mq0ku2KqmKSm1XDQJy/jWnDTI=",
   "refresh_token" : "ETMsDgAAAXmzy5dnABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAECsQMrIU6AiytpfqkFlrpLAAAACAkTmgh+yKhAjF1r01K9hSEAJ89OV3O2y7itJVgT4kGBL1/m0BC4I5VtFXuXUQv8t91OMLzwm5NNG49c1pf+GPzwZXAvKf4fTVnRPl0oq4S5vjlL2aNW/nlJU0IWXOXYRC7V5RZ4AMHVYRzdfv/BIcNNS/gkctnnMjsHRdp8Nw6yYAFMTHKrjHTYf76Dd7gTN6sRpKDP5Y",
@@ -128,6 +123,8 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8
 > --data-urlencode "refresh_token=ETMsDgAAAXmzy5dnABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAECsQMrIU6AiytpfqkFlrpLAAAACAkTmgh+yKhAjF1r01K9hSEAJ89OV3O2y7itJVgT4kGBL1/m0BC4I5VtFXuXUQv8t91OMLzwm5NNG49c1pf+GPzwZXAvKf4fTVnRPl0oq4S5vjlL2aNW/nlJU0IWXOXYRC7V5RZ4AMHVYRzdfv/BIcNNS/gkctnnMjsHRdp8Nw6yYAFMTHKrjHTYf76Dd7gTN6sRpKDP5Y" \
 > --data-urlencode "redirect_uri=https://mohansun-myea.herokuapp.com/" \
 > https://mwa76434.us-east-1.snowflakecomputing.com/oauth/token-request
+```
+```json
 {
   "access_token" : "ETMsDgAAAXmz2OszABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAEKpFjJkrmCoSvgeR/ZH9kEAAAABwTEEcOfiXAI3NsAEfvk9JLQBgfmCKorAoeCarmQ8r3KaK6foXeLqtCOWnQzfHSJJjnvfCPYgEh61Iq23xILiGOm10Zos3EnVgrmUV4lFtiLUz64FNfEP+S56bdF7kbADmNDOCmLqhu7oN47p1Ltzd/QAUXS7cEVu0onUyPmb2x4bGbGP8lxY=",
   "token_type" : "Bearer",
@@ -143,7 +140,6 @@ $ cat sf-oauth.sh
 
 
 ```
-
 ```
 $ bash sf-oauth.sh 
 * SnowSQL * v1.2.14
