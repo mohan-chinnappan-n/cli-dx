@@ -1,4 +1,8 @@
 # Snowflake data integration using DX  and Einstein Analytics (EA)
+
+![snowflake arch1](img/snowflake/snowflake-arch-1.png) 
+![snowflake arch2](img/snowflake/snowflake-arch-2.png) 
+-
 - Access Snowflake data (Query)
 - Load Snowflake data into EA dataset
 - Insert CSV file Data into Snowflake table  
