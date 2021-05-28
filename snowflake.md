@@ -1,6 +1,6 @@
 # Snowflake data integration using DX  and Einstein Analytics (EA)
 
-![snowflake arch3](img/snowflake/snowflake-arch-3.png) 
+![snowflake arch3](img/snowflake/snowflake-arch-0.png) 
 ![snowflake arch1](img/snowflake/snowflake-arch-1.png) 
 ![snowflake arch2](img/snowflake/snowflake-arch-2.png) 
 -
