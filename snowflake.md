@@ -310,4 +310,27 @@ $ sfdx mohanc:snowflake:query -q ~/.snowflake/stock-query.sql -f json -c ~/.snow
     }
 ]
 ```
+## OAuth2 setup
+![oauth2-1](img/snowflake/oauth2/sf-oauth2-1.png)
+![oauth2-2](img/snowflake/oauth2/sf-oauth2-2.png)
+![oauth2-3](img/snowflake/oauth2/sf-oauth2-3.png)
+![oauth2-4](img/snowflake/oauth2/sf-oauth2-4.png)
+![oauth2-5](img/snowflake/oauth2/sf-oauth2-5.png)
+![oauth2-6](img/snowflake/oauth2/sf-oauth2-6.png)
+![oauth2-7](img/snowflake/oauth2/sf-oauth2-7.png)
+![oauth2-8](img/snowflake/oauth2/sf-oauth2-8.png)
+![oauth2-9](img/snowflake/oauth2/sf-oauth2-9.png)
+![oauth2-10](img/snowflake/oauth2/sf-oauth2-10.png)
+![oauth2-11](img/snowflake/oauth2/sf-oauth2-11.png)
+
+
+
+
+
+
+
+
+
+
+
 
