@@ -29,7 +29,7 @@ use role ACCOUNTADMIN;
 desc integration tcrmwb_oauth_integration;
 ```
 
-- note: values for mangled in the below list!
+- note: values are mangled in the below list!
 ```csv
 property,property_type,property_value,property_default
 ENABLED,Boolean,true,false
