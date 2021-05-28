@@ -1,3 +1,12 @@
+# Setting up OAuth2 for snowflake and using it in snowsql and DX
+
+## Topics
+- [Setting up](#setup)
+- [Using DX with OAuth](#dx)
+
+## Setup
+<a name='setup'></a>
+
 ```sql
 USE role ACCOUNTADMIN;
 
@@ -20,6 +29,7 @@ use role ACCOUNTADMIN;
 desc integration tcrmwb_oauth_integration;
 ```
 
+- note: values for mangled in the below list!
 ```csv
 property,property_type,property_value,property_default
 ENABLED,Boolean,true,false
@@ -28,7 +38,7 @@ OAUTH_CLIENT_TYPE,String,CONFIDENTIAL,CONFIDENTIAL
 OAUTH_ISSUE_REFRESH_TOKENS,Boolean,true,true
 OAUTH_REFRESH_TOKEN_VALIDITY,Integer,86400,7776000
 OAUTH_ENFORCE_PKCE,Boolean,false,false
-OAUTH_CLIENT_ID,String,1KdLLFjx1bjx0bMlzHWsf5FAR+0=,
+OAUTH_CLIENT_ID,String,1KdLsssFjx1bjx0bMlzHWsf5FAR+0=,
 OAUTH_AUTHORIZATION_ENDPOINT,String,https://mwa76434.us-east-1.snowflakecomputing.com/oauth/authorize,
 OAUTH_TOKEN_ENDPOINT,String,https://mwa76434.us-east-1.snowflakecomputing.com/oauth/token-request,
 PRE_AUTHORIZED_ROLES_LIST,List,,[]
@@ -46,10 +56,10 @@ use role ACCOUNTADMIN;
 show INTEGRATIONS;
 select system$show_oauth_client_secrets('TCRMWB_OAUTH_INTEGRATION');
 
-
 ```
+- You will get the client secret here 
 
-
+### Getting auth code
 ```
 <OAUTH_AUTHORIZATION_ENDPOINT>?client_id=<encoded value of Client ID>&response_type=code&redirect_uri=<OAUTH_REDIRECT_URI>
 
@@ -61,6 +71,7 @@ https://mwa76434.us-east-1.snowflakecomputing.com/oauth/authorize?client_id=1KdL
 https://mohansun-myea.herokuapp.com/?code=119E674315AE3FE9EA55B4686695C99FE57DB8BB
 
 ```
+### Exchange the code for the auth token
 
 ```
 
@@ -95,7 +106,7 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8
 
 ```
 
-### Refresh token
+### Using Refresh token to get access token
 
 ```
 curl -X POST -H "Content-Type: application/x-www-form-urlencoded;charset=UTF-8" \
@@ -162,6 +173,42 @@ MOHANCHINNAPPAN#COMPUTE_WH@FRUIT.PUBLIC>select * from
 +-------+-----+------------------+
 3 Row(s) produced. Time Elapsed: 1.188s
 MOHANCHINNAPPAN#COMPUTE_WH@FRUIT.PUBLIC>
+
+```
+<a name='dx'></a>
+## Using DX with OAuth
+```
+$  sfdx mohanc:snowflake:query -q ~/.snowflake/fruits-query-new.sql -c ~/.snowflake/sfc-connection-new-oauth2.json  -f csv
+```
+```csv
+"NAME","QTY","COMMENTS"
+"apple",100,"yellow delicious"
+"mango",77,"sweetie"
+"peach",24,"eastern"
+```
+
+```
+$ cat  ~/.snowflake/fruits-query-new.sql 
+
+```
+
+```sql
+
+SELECT name,qty,comments FROM fruit..yield;
+```
+
+```
+$ cat ~/.snowflake/sfc-connection-new-oauth2.json 
+```
+
+- Note: access token here is mangled here
+```json
+ {
+     "username" : "MOHANCHINNAPPAN", 
+     "account" : "mwa76434.us-east-1",
+     "authenticator" : "OAuth",
+     "token" : "ETMsDgAAAXm0+SFwABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAEI83/GtDEz8iVicYLnA+7QEAAABwYV4Wq5zqybpZ5lep1R4Jq/zzdEKegNSN4jyXIzJm+SSUDS4dz5UDQCrGsB1UnnHNoPvYO2F/lwKzHiNCHTfqwhOpsUj8DLMhs0Qnj3ILSRcL8Kzu2lfmfbnYFeTiOSLfidfsdffdfsf7YvJb0eG60jCrs2ny9rl7wAUT4lkUwONKuymjKvGjSzyXXqdOms="
+}
 
 ```
 
