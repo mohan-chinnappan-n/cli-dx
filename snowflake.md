@@ -19,6 +19,30 @@ apple,100,yellow delicious
 mango,77,sweetie
 peach,24,eastern
 ```
+
+## Using CLI to query
+
+
+### Query SQL fruits-query-new.sql
+
+```
+$ cat ~/.snowflake/fruits-query-new.sql 
+```
+```sql
+
+SELECT name,qty,comments FROM fruit..yield;
+```
+
+```
+$  sfdx mohanc:snowflake:query -q ~/.snowflake/fruits-query-new.sql -c ~/.snowflake/sfc-connection-new.json  -f csv
+```
+
+```csv
+"NAME","QTY","COMMENTS"
+"apple",100,"yellow delicious"
+"mango",77,"sweetie"
+"peach",24,"eastern"
+```
 ## Plugin requirements
 - Requires 0.0.69 version of the plugin
     - sfdx-mohanc-plugins@0.0.69
