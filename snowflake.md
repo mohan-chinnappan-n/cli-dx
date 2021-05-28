@@ -10,6 +10,15 @@
     - This CSV data file can be obtained from EA using dataset export tool as explained here: [Dataset Export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/)
 
 
+## Usage demo
+![snowflake usage demo](img/snowflake/sf-demo-1.gif)
+
+### Input data file
+```csv
+apple,100,yellow delicious
+mango,77,sweetie
+peach,24,eastern
+```
 ## Plugin requirements
 - Requires 0.0.69 version of the plugin
     - sfdx-mohanc-plugins@0.0.69
