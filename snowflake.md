@@ -9,9 +9,11 @@
 - Insert CSV file Data into Snowflake table  
     - This CSV data file can be obtained from EA using dataset export tool as explained here: [Dataset Export](https://www.salesforceblogger.com/2020/08/19/export-your-einstein-analytics-datasets/)
 
-
+- Looking for OAuth2 setup? [Oauth2](#oauth2-setup)
 ## Usage demo
 ![snowflake usage demo](img/snowflake/sf-demo-1.gif)
+
+
 
 ### Input data file
 ```csv
@@ -310,13 +312,15 @@ $ sfdx mohanc:snowflake:query -q ~/.snowflake/stock-query.sql -f json -c ~/.snow
     }
 ]
 ```
+<a name='oauth2-setup'></a>
 ## OAuth2 setup
 ![oauth2-1](img/snowflake/oauth2/sf-oauth2-1.png)
 ![oauth2-8](img/snowflake/oauth2/sf-oauth2-8.png)
 ![oauth2-9](img/snowflake/oauth2/sf-oauth2-9.png)
 ![oauth2-10](img/snowflake/oauth2/sf-oauth2-10.png)
 ![oauth2-11](img/snowflake/oauth2/sf-oauth2-11.png)
-
+### Getting access token
+- [Accesstoken](snowflake-oauth2.md)
 
 
 
