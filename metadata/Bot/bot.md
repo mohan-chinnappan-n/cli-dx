@@ -1,5 +1,6 @@
 # Bot Metadata type
 - [Metadata - Bot](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_bot.htm)
+- [bot cookbook](https://resources.docs.salesforce.com/latest/latest/en-us/sfdc/pdf/bot_cookbook.pdf)
 ## Listing the Bot type
 ```
 sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t Bot
