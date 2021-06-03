@@ -5,7 +5,7 @@
 sfdx mohanc:mdapi:list -u mohan.chinnappan.n_ea2@gmail.com -t Bot
 
 ```
-```json
+```
 {
   result: [
     {
@@ -30,7 +30,7 @@ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t Bot
 
 ```
 
-```json
+```
 {
     "RetrieveRequest": {
         "apiVersion": "51.0",
@@ -52,7 +52,7 @@ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t Bot
 ```
 sfdx mohanc:mdapi:checkRetrieveStatus  -u mohan.chinnappan.n_ea2@gmail.com -i 09S3h000005iAfiEAE 
 ```
-```json
+```
 [
   {
     createdById: '0053h000002xQ5sAAE',
