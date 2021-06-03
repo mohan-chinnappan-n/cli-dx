@@ -7,4 +7,6 @@
 ## Handover protocol
 
 ![Handover protocol](img/fb-m-handover-protocol-1.gif)
+
+### Video
 [F8 2019: Walkthrough of the Handover Protocol in the Messenger Platform](https://www.youtube.com/watch?v=OFSyLkyPwQM)
