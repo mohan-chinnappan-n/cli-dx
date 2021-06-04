@@ -10,3 +10,10 @@
 
 ### Video
 [F8 2019: Walkthrough of the Handover Protocol in the Messenger Platform](https://www.youtube.com/watch?v=OFSyLkyPwQM)
+
+- [Einstein Bot : Transfer Bot Conversations](https://help.salesforce.com/articleView?id=sf.bots_service_transfer_bot_conversations.htm&type=5)
+
+
+## Bots on App Cloud
+- [Building BOTS on App Cloud](https://www.youtube.com/watch?v=H9DKSRbuVYw)
+- [Dreamhouse app ](http://www.dreamhouseapp.io/)
