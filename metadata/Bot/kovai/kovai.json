@@ -1,0 +1,317 @@
+{
+    "Bot": {
+        "botMlDomain": {
+            "label": "kovai",
+            "mlIntents": {
+                "developerName": "Transfer_To_Agent",
+                "label": "Transfer To Agent"
+            },
+            "mlSlotClasses": {
+                "dataType": "Text",
+                "description": "Memory size",
+                "developerName": "Memory_size",
+                "extractionRegex": "[1-9][0-9]*",
+                "extractionType": "Pattern",
+                "label": "Memory size"
+            },
+            "name": "kovai"
+        },
+        "botVersions": {
+            "fullName": "v1",
+            "botDialogs": [
+                {
+                    "botSteps": [
+                        {
+                            "conversationRecordLookup": {
+                                "SObjectType": "Contact",
+                                "conditions": {
+                                    "leftOperand": "Contact.LastName",
+                                    "operatorType": "Contains",
+                                    "rightOperandName": "LastName",
+                                    "rightOperandType": "ConversationVariable",
+                                    "sortOrder": 1
+                                },
+                                "filterLogic": "And",
+                                "lookupFields": {
+                                    "fieldName": "Contact.Birthdate"
+                                },
+                                "maxLookupResults": 3,
+                                "targetVariableName": "ListVar"
+                            },
+                            "type": "RecordLookup"
+                        },
+                        {
+                            "type": "Wait"
+                        }
+                    ],
+                    "developerName": "Check_My_Order",
+                    "label": "Find  Birth Date",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "We will fix it"
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "type": "Wait"
+                        }
+                    ],
+                    "developerName": "Printer_not_working",
+                    "label": "Printer not working",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botVariableOperation": {
+                                "askCollectIfSet": false,
+                                "botMessages": {
+                                    "message": "How much memory"
+                                },
+                                "botVariableOperands": {
+                                    "disableAutoFill": true,
+                                    "sourceName": "Memory_size",
+                                    "sourceType": "MlSlotClass",
+                                    "targetName": "Memory_Size",
+                                    "targetType": "ConversationVariable"
+                                },
+                                "optionalCollect": false,
+                                "quickReplyWidgetType": "Buttons",
+                                "type": "Collect"
+                            },
+                            "type": "VariableOperation"
+                        },
+                        {
+                            "type": "Wait"
+                        }
+                    ],
+                    "developerName": "Find_a_MacBook_Pro",
+                    "label": "Find a MacBook Pro",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "Hi, I’m &apos;kovai&apos;, a digital assistant."
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "botNavigation": {
+                                "botNavigationLinks": {
+                                    "targetBotDialog": "Main_Menu"
+                                },
+                                "type": "Redirect"
+                            },
+                            "type": "Navigation"
+                        }
+                    ],
+                    "developerName": "Welcome",
+                    "label": "Welcome",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": {
+                        "botNavigation": {
+                            "botNavigationLinks": [
+                                {
+                                    "label": "Check My Order",
+                                    "targetBotDialog": "Check_My_Order"
+                                },
+                                {
+                                    "label": "Printer not working",
+                                    "targetBotDialog": "Printer_not_working"
+                                },
+                                {
+                                    "label": "Find a MacBook Pro",
+                                    "targetBotDialog": "Find_a_MacBook_Pro"
+                                }
+                            ],
+                            "type": "Redirect"
+                        },
+                        "type": "Navigation"
+                    },
+                    "developerName": "Main_Menu",
+                    "label": "Main Menu",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "Transferring to the  Agent"
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "conversationSystemMessage": {
+                                "type": "Transfer"
+                            },
+                            "type": "SystemMessage"
+                        }
+                    ],
+                    "developerName": "Transfer_To_Agent",
+                    "label": "Transfer To Agent",
+                    "mlIntent": "Transfer_To_Agent",
+                    "mlIntentTrainingEnabled": false,
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "Goodbye! Click the &quot;End Chat&quot; button to end this chat"
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "type": "Wait"
+                        }
+                    ],
+                    "developerName": "End_Chat",
+                    "label": "End Chat",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "Sorry, I didn&apos;t understand that."
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "type": "Wait"
+                        }
+                    ],
+                    "developerName": "Confused",
+                    "label": "Confused",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "Unfortunately, there are no agents available at the moment"
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "type": "Wait"
+                        }
+                    ],
+                    "developerName": "No_Agent_Available",
+                    "label": "No Agent",
+                    "showInFooterMenu": false
+                },
+                {
+                    "botSteps": [
+                        {
+                            "botMessages": {
+                                "message": "Unfortunately, a system error occurred. I&apos;ll connect you to an agent who can help."
+                            },
+                            "type": "Message"
+                        },
+                        {
+                            "conversationSystemMessage": {
+                                "type": "Transfer"
+                            },
+                            "type": "SystemMessage"
+                        }
+                    ],
+                    "developerName": "Error_Handling",
+                    "label": "Error Handler",
+                    "showInFooterMenu": false
+                }
+            ],
+            "conversationSystemDialogs": [
+                {
+                    "dialog": "Error_Handling",
+                    "type": "ErrorHandling"
+                },
+                {
+                    "dialog": "No_Agent_Available",
+                    "type": "TransferFailed"
+                }
+            ],
+            "conversationVariables": [
+                {
+                    "dataType": "Text",
+                    "developerName": "LastName",
+                    "label": "LastName"
+                },
+                {
+                    "collectionType": "List",
+                    "dataType": "Object",
+                    "developerName": "ListVar",
+                    "label": "ListVar"
+                },
+                {
+                    "dataType": "Text",
+                    "developerName": "Memory_Size",
+                    "label": "Memory Size"
+                }
+            ],
+            "entryDialog": "Welcome",
+            "mainMenuDialog": "Main_Menu",
+            "nlpProviders": {
+                "language": "en_US",
+                "nlpProviderType": "EinsteinAi"
+            }
+        },
+        "contextVariables": [
+            {
+                "contextVariableMappings": {
+                    "SObjectType": "LiveChatTranscript",
+                    "fieldName": "LiveChatTranscript.ChatKey",
+                    "messageType": "WebChat"
+                },
+                "dataType": "Text",
+                "developerName": "ChatKey",
+                "label": "Chat Key"
+            },
+            {
+                "contextVariableMappings": {
+                    "SObjectType": "LiveChatTranscript",
+                    "fieldName": "LiveChatTranscript.ContactId",
+                    "messageType": "WebChat"
+                },
+                "dataType": "Id",
+                "developerName": "ContactId",
+                "label": "Contact Id"
+            },
+            {
+                "contextVariableMappings": {
+                    "SObjectType": "LiveChatTranscript",
+                    "fieldName": "LiveChatTranscript.LiveChatVisitorId",
+                    "messageType": "WebChat"
+                },
+                "dataType": "Id",
+                "developerName": "EndUserId",
+                "label": "End User Id"
+            },
+            {
+                "contextVariableMappings": {
+                    "SObjectType": "LiveChatTranscript",
+                    "fieldName": "LiveChatTranscript.Id",
+                    "messageType": "WebChat"
+                },
+                "dataType": "Id",
+                "developerName": "RoutableId",
+                "label": "Routable Id"
+            }
+        ],
+        "conversationChannelProviders": {
+            "agentRequired": false,
+            "chatButtonName": "botQueueGroup"
+        },
+        "description": "A bot from scratch.",
+        "label": "kovai",
+        "logPrivateConversationData": false
+    }
+}
