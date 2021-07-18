@@ -215,7 +215,7 @@ $ cat ~/.snowflake/sfc-connection-new-oauth2.json
 <a name='tcrm-sflake-oauth'></a>
 
 ## TCRM Workbench Snowflake OAuth2 Demo
-![Oauth2 Demo - TCRM Workbench](snowflake/img/sflake-oauth2-1.gif)
+![Oauth2 Demo - TCRM Workbench](snowflake/img/sflake-oauth2-2.gif)
 
 ### References
 - [Guide](https://snowflakecommunity.force.com/s/article/HOW-TO-OAUTH-TOKEN-GENERATION-USING-SNOWFLAKE-CUSTOM-OAUTH)
