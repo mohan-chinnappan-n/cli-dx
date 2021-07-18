@@ -1,0 +1,148 @@
+2021-07-17 12:19:20,369 (35862/MainThread) snowflake.cli.common.util_cli DEBUG       util_cli:645  - Initialized logging. Log file '../snowsql_rt.log', Namespaces: ['snowflake.cli', 'snowflake.connector', 'botocore', 'azure', '__main__', 'eventloop', 'sqlexecute']
+2021-07-17 12:19:20,370 (35862/MainThread) snowflake.cli.common.util_cli INFO       util_cli:681  - REQUESTS_CA_BUNDLE is already set to /var/folders/k0/cdwjm16d2vx037lf06ch8fqr81jqk6/T/_MEIYtePeS/certifi/cacert.pem
+2021-07-17 12:19:20,370 (35862/MainThread) __main__ DEBUG      eventloop:209  - is_terminal: True, is_interactive: True
+2021-07-17 12:19:20,371 (35862/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:163  - starting sqlexecute
+2021-07-17 12:19:20,372 (35862/MainThread) snowflake.cli.common.config DEBUG         config:85   - Reading cnf: /Users/mchinnappan/.snowsql/1.2.14/snowsql.cnf
+2021-07-17 12:19:20,372 (35862/MainThread) snowflake.cli.common.config DEBUG         config:85   - Reading cnf: /etc/snowsql.cnf
+2021-07-17 12:19:20,372 (35862/MainThread) snowflake.cli.common.config DEBUG         config:85   - Reading cnf: /etc/snowflake/snowsql.cnf
+2021-07-17 12:19:20,373 (35862/MainThread) snowflake.cli.common.config DEBUG         config:85   - Reading cnf: /usr/local/etc/snowsql.cnf
+2021-07-17 12:19:20,373 (35862/MainThread) snowflake.cli.common.config DEBUG         config:85   - Reading cnf: /Users/mchinnappan/.snowsql.cnf
+2021-07-17 12:19:20,373 (35862/MainThread) snowflake.cli.common.config DEBUG         config:85   - Reading cnf: /Users/mchinnappan/.snowsql/config
+2021-07-17 12:19:20,374 (35862/MainThread) __main__ DEBUG      eventloop:353  - [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2021-07-17 12:19:20,374 (35862/MainThread) __main__ DEBUG      eventloop:359  - fallback to config values only if user did not specify a value and sqlexecute is connecting for the first time.
+2021-07-17 12:19:20,374 (35862/MainThread) __main__ DEBUG      eventloop:407  - host=None, port: + None
+2021-07-17 12:19:20,374 (35862/MainThread) __main__ DEBUG      eventloop:446  - prompting user, password and account if still missing
+2021-07-17 12:19:20,375 (35862/MainThread) __main__ DEBUG      eventloop:501  - init sqlexecute
+2021-07-17 12:19:20,375 (35862/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:254  - Connection DB Params: database: None, warehouse: None, user: MOHANCHINNAPPAN, host: mwa76434.us-east-1.snowflakecomputing.com, port: 443, region: None, account: mwa76434.us-east-1, protocol: https, schema: None, role: None, ocsp_fail_open: True, insecure_mode: None, proxy_host: None, proxy_port: None, proxy_user: None, authenticator: oauth, session_parameters: {'ABORT_DETACHED_QUERY': False}, login_timeout: 120, client_session_keep_alive: False, disable_request_pooling: None, client_store_temporary_credential: None
+2021-07-17 12:19:20,375 (35862/MainThread) snowflake.connector.connection INFO     connection:222  - Snowflake Connector for Python Version: 2.4.1, Python Version: 3.6.8, Platform: Darwin-20.5.0-x86_64-i386-64bit
+2021-07-17 12:19:20,376 (35862/MainThread) snowflake.connector.connection DEBUG     connection:421  - connect
+2021-07-17 12:19:20,376 (35862/MainThread) snowflake.connector.connection DEBUG     connection:656  - __config
+2021-07-17 12:19:20,376 (35862/MainThread) snowflake.connector.connection INFO     connection:774  - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2021-07-17 12:19:20,376 (35862/MainThread) snowflake.connector.connection INFO     connection:790  - Setting use_openssl_only mode to False
+2021-07-17 12:19:20,377 (35862/MainThread) snowflake.connector.converter DEBUG      converter:135  - use_numpy: False
+2021-07-17 12:19:20,377 (35862/MainThread) snowflake.connector.connection DEBUG     connection:572  - REST API object was created: mwa76434.us-east-1.snowflakecomputing.com:443
+2021-07-17 12:19:20,377 (35862/MainThread) snowflake.connector.auth DEBUG           auth:129  - authenticate
+2021-07-17 12:19:20,378 (35862/MainThread) snowflake.connector.auth DEBUG           auth:157  - assertion content: ver:1-hint:344293859333-ETMsDgAAAXq0ZcpfABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAEJhIj8eTb7xzUTJ8rfofrJcAAABQqnr15AFz0ejnzO0tbe8ZmGv+SIDEWs8cTbiK3vJQ1jEAt8S3jbB67FN/mRYZTya7QKKEvQf7ltou00AHhCiR33oDMe/1IfOwZs4/oK6jt3MAFBxLQx2yEqO+ZFPzO82U6/Mo/Muy
+2021-07-17 12:19:20,378 (35862/MainThread) snowflake.connector.auth DEBUG           auth:169  - account=mwa76434, user=MOHANCHINNAPPAN, database=None, schema=None, warehouse=None, role=None, request_id=0e1eb175-e744-400a-9f45-56ef197da328
+2021-07-17 12:19:20,378 (35862/MainThread) snowflake.connector.auth DEBUG           auth:195  - body['data']: {'CLIENT_APP_ID': 'SnowSQL', 'CLIENT_APP_VERSION': '1.2.14', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'mwa76434', 'LOGIN_NAME': 'MOHANCHINNAPPAN', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'SnowSQL', 'OS': 'Darwin', 'OS_VERSION': 'Darwin-20.5.0-x86_64-i386-64bit', 'PYTHON_VERSION': '3.6.8', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': 120, 'NETWORK_TIMEOUT': None}, 'AUTHENTICATOR': 'OAUTH', 'TOKEN': 'ver:1-hint:344293859333-ETMsDgAAAXq0ZcpfABRBRVMvQ0JDL1BLQ1M1UGFkZGluZwEAABAAEJhIj8eTb7xzUTJ8rfofrJcAAABQqnr15AFz0ejnzO0tbe8ZmGv+SIDEWs8cTbiK3vJQ1jEAt8S3jbB67FN/mRYZTya7QKKEvQf7ltou00AHhCiR33oDMe/1IfOwZs4/oK6jt3MAFBxLQx2yEqO+ZFPzO82U6/Mo/Muy', 'SESSION_PARAMETERS': {'ABORT_DETACHED_QUERY': False, 'AUTOCOMMIT': True, 'CLIENT_SESSION_KEEP_ALIVE_HEARTBEAT_FREQUENCY': 900, 'CLIENT_PREFETCH_THREADS': 4}}
+2021-07-17 12:19:20,379 (35862/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:230  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-07-17 12:19:20,379 (35862/MainThread) snowflake.connector.vendored.urllib3.util.retry DEBUG          retry:230  - Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-07-17 12:19:20,380 (35862/MainThread) snowflake.connector.network DEBUG        network:951  - Active requests sessions: 1, idle: 0
+2021-07-17 12:19:20,380 (35862/MainThread) snowflake.connector.network DEBUG        network:651  - remaining request timeout: 120, retry cnt: 1
+2021-07-17 12:19:20,380 (35862/MainThread) snowflake.connector.network DEBUG        network:638  - Request guid: 725bfbea-b42b-4187-b0f6-88385ba88ee0
+2021-07-17 12:19:20,380 (35862/MainThread) snowflake.connector.network DEBUG        network:794  - socket timeout: 60
+2021-07-17 12:19:20,390 (35862/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:943  - Starting new HTTPS connection (1): mwa76434.us-east-1.snowflakecomputing.com:443
+2021-07-17 12:19:20,979 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:446  - cache directory: /Users/mchinnappan/Library/Caches/Snowflake
+2021-07-17 12:19:21,099 (35862/MainThread) snowflake.connector.ssl_wrap_socket DEBUG ssl_wrap_socket:80   - OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+2021-07-17 12:19:21,099 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:484  - ocsp_response_cache_uri: file:///Users/mchinnappan/Library/Caches/Snowflake/ocsp_response_cache.json
+2021-07-17 12:19:21,099 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:486  - OCSP_VALIDATION_CACHE size: 0
+2021-07-17 12:19:21,100 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:284  - OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2021-07-17 12:19:21,100 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:318  - OCSP dynamic cache server RETRY URL: None
+2021-07-17 12:19:21,103 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:615  - The cache is older than 1 day. Deleted the cache file: /Users/mchinnappan/Library/Caches/Snowflake/ocsp_response_cache.json
+2021-07-17 12:19:21,103 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:522  - Failed to locate OCSP response cache file. No worry. It will validate with OCSP server: /Users/mchinnappan/Library/Caches/Snowflake/ocsp_response_cache.json
+2021-07-17 12:19:21,104 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1014 - validating certificate: mwa76434.us-east-1.snowflakecomputing.com
+2021-07-17 12:19:21,104 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:387  - # of certificates: 4
+2021-07-17 12:19:21,105 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:394  - subject: OrderedDict([('common_name', '*.us-east-1.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')])
+2021-07-17 12:19:21,106 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:394  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2021-07-17 12:19:21,129 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:394  - subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2021-07-17 12:19:21,130 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:394  - subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2021-07-17 12:19:21,133 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:106  - reading certificate bundle: /var/folders/k0/cdwjm16d2vx037lf06ch8fqr81jqk6/T/_MEIYtePeS/certifi/cacert.pem
+2021-07-17 12:19:21,147 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:414  - not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+2021-07-17 12:19:21,148 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:665  - not hit cache for subject: OrderedDict([('common_name', '*.us-east-1.snowflakecomputing.com')])
+2021-07-17 12:19:21,148 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:348  - started downloading OCSP response cache file: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2021-07-17 12:19:21,857 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2021-07-17 12:19:21,859 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:43:45+00:00
+2021-07-17 12:19:21,861 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:47:38+00:00
+2021-07-17 12:19:21,863 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-12-14 07:00:00+00:00
+2021-07-17 12:19:21,869 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2021-07-17 12:19:21,872 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-05-12 23:58:59+00:00
+2021-07-17 12:19:21,877 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,878 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,882 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,883 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 20:12:03+00:00
+2021-07-17 12:19:21,885 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,887 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 20:12:03+00:00
+2021-07-17 12:19:21,889 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,891 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,892 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,894 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 20:12:03+00:00
+2021-07-17 12:19:21,895 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 20:12:03+00:00
+2021-07-17 12:19:21,903 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,906 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 20:12:03+00:00
+2021-07-17 12:19:21,910 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 19:58:13+00:00
+2021-07-17 12:19:21,911 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2022-02-02 20:12:03+00:00
+2021-07-17 12:19:21,921 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:373  - ended downloading OCSP response cache file. elapsed time: 0.7725200653076172s
+2021-07-17 12:19:21,922 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:331  - downloaded OCSP response cache file from http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+2021-07-17 12:19:21,922 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:332  - # of certificates: 139
+2021-07-17 12:19:21,924 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:640  - hit cache for subject: OrderedDict([('common_name', '*.us-east-1.snowflakecomputing.com')])
+2021-07-17 12:19:21,925 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1171 - using OCSP response cache
+2021-07-17 12:19:21,925 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:289  - Certificate is NOT attached in Basic OCSP Response. Using issuer's certificate
+2021-07-17 12:19:21,926 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:295  - Verifying the OCSP response is signed by the issuer.
+2021-07-17 12:19:22,040 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:43:45+00:00
+2021-07-17 12:19:22,041 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:640  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('organizational_unit_name', 'Server CA 1B'), ('common_name', 'Amazon')])
+2021-07-17 12:19:22,042 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1171 - using OCSP response cache
+2021-07-17 12:19:22,044 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:258  - Certificate is attached in Basic OCSP Response
+2021-07-17 12:19:22,044 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:260  - Verifying the attached certificate is signed by the issuer
+2021-07-17 12:19:22,044 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:264  - Valid Not After: 2024-05-12 02:43:45+00:00
+2021-07-17 12:19:22,046 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:295  - Verifying the OCSP response is signed by the issuer.
+2021-07-17 12:19:22,050 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-05-12 02:47:38+00:00
+2021-07-17 12:19:22,051 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:640  - hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+2021-07-17 12:19:22,052 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1171 - using OCSP response cache
+2021-07-17 12:19:22,054 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:258  - Certificate is attached in Basic OCSP Response
+2021-07-17 12:19:22,054 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:260  - Verifying the attached certificate is signed by the issuer
+2021-07-17 12:19:22,054 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:264  - Valid Not After: 2024-05-12 02:47:38+00:00
+2021-07-17 12:19:22,056 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:295  - Verifying the OCSP response is signed by the issuer.
+2021-07-17 12:19:22,061 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:203  - Verifying the attached certificate is signed by the issuer. Valid Not After: 2021-12-14 07:00:00+00:00
+2021-07-17 12:19:22,061 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:640  - hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+2021-07-17 12:19:22,063 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1171 - using OCSP response cache
+2021-07-17 12:19:22,064 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:258  - Certificate is attached in Basic OCSP Response
+2021-07-17 12:19:22,065 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:260  - Verifying the attached certificate is signed by the issuer
+2021-07-17 12:19:22,065 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:264  - Valid Not After: 2021-12-14 07:00:00+00:00
+2021-07-17 12:19:22,068 (35862/MainThread) snowflake.connector.ocsp_asn1crypto DEBUG ocsp_asn1crypto:295  - Verifying the OCSP response is signed by the issuer.
+2021-07-17 12:19:22,070 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:573  - writing OCSP response cache file to /Users/mchinnappan/Library/Caches/Snowflake/ocsp_response_cache.json
+2021-07-17 12:19:22,070 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1561 - encoding OCSP response cache to JSON
+2021-07-17 12:19:22,091 (35862/MainThread) snowflake.connector.ocsp_snowflake DEBUG ocsp_snowflake:1058 - ok
+2021-07-17 12:19:22,343 (35862/MainThread) snowflake.connector.vendored.urllib3.connectionpool DEBUG connectionpool:442  - https://mwa76434.us-east-1.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=0e1eb175-e744-400a-9f45-56ef197da328&request_guid=725bfbea-b42b-4187-b0f6-88385ba88ee0 HTTP/1.1" 200 553
+2021-07-17 12:19:22,344 (35862/MainThread) snowflake.connector.network DEBUG        network:824  - SUCCESS
+2021-07-17 12:19:22,344 (35862/MainThread) snowflake.connector.network DEBUG        network:964  - Active requests sessions: 0, idle: 1
+2021-07-17 12:19:22,344 (35862/MainThread) snowflake.connector.network DEBUG        network:547  - ret[code] = 390913, after post request
+2021-07-17 12:19:22,344 (35862/MainThread) snowflake.connector.auth DEBUG           auth:292  - completed authentication
+2021-07-17 12:19:22,345 (35862/MainThread) __main__ ERROR      eventloop:547  - Database connection failed: 250001 (08001): None: Failed to connect to DB: mwa76434.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features..
+Traceback (most recent call last):
+  File "snowflake/cli/eventloop.py", line 540, in connect
+  File "snowflake/cli/sqlexecute.py", line 291, in push_connection
+  File "snowflake/connector/__init__.py", line 50, in Connect
+  File "snowflake/connector/connection.py", line 232, in __init__
+  File "snowflake/connector/connection.py", line 426, in connect
+  File "snowflake/connector/connection.py", line 638, in __open_connection
+  File "snowflake/connector/connection.py", line 875, in _authenticate
+  File "snowflake/connector/connection.py", line 905, in __authenticate
+  File "snowflake/connector/auth.py", line 326, in authenticate
+  File "snowflake/connector/errors.py", line 239, in errorhandler_wrapper
+  File "snowflake/connector/errors.py", line 176, in default_errorhandler
+snowflake.connector.errors.DatabaseError: 250001 (08001): None: Failed to connect to DB: mwa76434.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2021-07-17 12:19:22,347 (35862/MainThread) __main__ INFO      eventloop:567  - rollback
+2021-07-17 12:19:22,347 (35862/MainThread) snowflake.cli.sqlexecute INFO     sqlexecute:363  - rollback
+2021-07-17 12:19:22,348 (35862/MainThread) __main__ ERROR      eventloop:1237 - 250001 (08001): None: Failed to connect to DB: mwa76434.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+Traceback (most recent call last):
+  File "snowflake/cli/eventloop.py", line 1172, in cli
+  File "snowflake/cli/eventloop.py", line 554, in connect
+  File "snowflake/cli/eventloop.py", line 540, in connect
+  File "snowflake/cli/sqlexecute.py", line 291, in push_connection
+  File "snowflake/connector/__init__.py", line 50, in Connect
+  File "snowflake/connector/connection.py", line 232, in __init__
+  File "snowflake/connector/connection.py", line 426, in connect
+  File "snowflake/connector/connection.py", line 638, in __open_connection
+  File "snowflake/connector/connection.py", line 875, in _authenticate
+  File "snowflake/connector/connection.py", line 905, in __authenticate
+  File "snowflake/connector/auth.py", line 326, in authenticate
+  File "snowflake/connector/errors.py", line 239, in errorhandler_wrapper
+  File "snowflake/connector/errors.py", line 176, in default_errorhandler
+snowflake.connector.errors.DatabaseError: 250001 (08001): None: Failed to connect to DB: mwa76434.us-east-1.snowflakecomputing.com:443. Your free trial has ended and all of your virtual warehouses have been suspended. Add billing information in the Snowflake web UI to continue using the full set of Snowflake features.
+2021-07-17 12:19:22,349 (35862/MainThread) __main__ DEBUG      eventloop:581  - closing sessions
+2021-07-17 12:19:22,350 (35862/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:344  - closing connections
+2021-07-17 12:19:22,350 (35862/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:311  - joining async exec
+2021-07-17 12:19:22,350 (35862/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:319  - waiting for async exec to finish...
+2021-07-17 12:19:22,350 (35862/MainThread) snowflake.cli.sqlexecute DEBUG     sqlexecute:336  - all async queries finished.
+2021-07-17 12:19:22,373 (35862/MainThread) snowflake.connector.connection INFO     connection:441  - closed
+2021-07-17 12:19:22,373 (35862/MainThread) snowflake.connector.connection DEBUG     connection:455  - Exception encountered in closing connection. ignoring...: 'SnowflakeConnection' object has no attribute '_telemetry'
