@@ -1,7 +1,7 @@
 # Using JQuery based [Datatable](https://datatables.net/) in lwc
 
 ## Demo
-![Demo jdatable in lwc](lwc-jq-datatable-1.gif)
+![Demo jdatable in lwc](img/lwc-jq-datatable-1.gif)
 
 
 ## Code
@@ -24,7 +24,7 @@
 ```
 
 ### jdt.js
-```
+```js
 import { LightningElement } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 
