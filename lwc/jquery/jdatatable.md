@@ -121,7 +121,7 @@ export default class Jdt extends LightningElement {
 
 ```java
 public with sharing class Jdt {
-    @AuraEnabled 
+    @AuraEnabled(cacheable=true) 
     public static list <Opportunity> getOpptys() {
        return [SELECT Name,Type,StageName,Amount,CloseDate
                FROM Opportunity LIMIT 500];
