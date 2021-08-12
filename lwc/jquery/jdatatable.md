@@ -32,20 +32,23 @@ import { LightningElement } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 
 // import jquery & dataTables library from static resource
+// get via: curl -O  https://code.jquery.com/jquery-3.6.0.min.js
+// store it as jquery360 in static resoures
+
 import jquery360 from '@salesforce/resourceUrl/jquery360';
-// get via  curl -O https://datatables.net/releases/DataTables-1.10.24.zip and
+
+/
+// get via:  curl -O https://datatables.net/releases/DataTables-1.10.24.zip and
 // store it in static resources as jdatatable
+import jdataTable from '@salesforce/resourceUrl/jdataTable';
 
 // credits:  based on the example:
 // https://lwcfactory.com/jquery-datatable-salesforce-lightning-web-component/
 
-import jdataTable from '@salesforce/resourceUrl/jdataTable';
 
 import getOpptys from '@salesforce/apex/Jdt.getOpptys';
 
 const columnHeaders = ['Name' ,'StageName','Amount', 'CloseDate' , 'Type'];
-
-
 
 
 export default class Jdt extends LightningElement {
