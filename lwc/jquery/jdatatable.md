@@ -4,6 +4,9 @@
 ![Demo jdatable in lwc](img/lwc-jq-datatable-1.gif)
 
 
+## Static resources
+
+![staticresources](img/staticresources.png)
 ## Code
 ### Markup: jdt.html
 ```html
