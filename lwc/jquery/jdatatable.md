@@ -141,8 +141,13 @@ public with sharing class Jdt {
 ### deploy
 
 ```bash
+# login
+sfdx force:auth:web:login
 
-sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/lwc/jdt
+# deploy class
 sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/classes/Jdt.cls
+
+# deploy lwc
+sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/lwc/jdt
 ```
 
