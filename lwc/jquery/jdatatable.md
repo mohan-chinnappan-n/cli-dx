@@ -121,7 +121,6 @@ export default class Jdt extends LightningElement {
 </LightningComponentBundle>
 
 ```
-
 ### Apex class Jdt.cls
 
 ```java
@@ -138,3 +137,12 @@ public with sharing class Jdt {
 
 
 ```
+
+### deploy
+
+```bash
+
+sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/lwc/jdt
+sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/classes/
+```
+
