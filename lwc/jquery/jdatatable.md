@@ -143,6 +143,6 @@ public with sharing class Jdt {
 ```bash
 
 sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/lwc/jdt
-sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/classes/
+sfdx force:source:deploy -u mohan.chinnappan.n_ea2@gmail.com  -p force-app/main/default/classes/Jdt.cls
 ```
 
