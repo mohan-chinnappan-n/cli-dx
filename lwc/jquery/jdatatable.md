@@ -37,7 +37,6 @@ import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 
 import jquery360 from '@salesforce/resourceUrl/jquery360';
 
-/
 // get via:  curl -O https://datatables.net/releases/DataTables-1.10.24.zip and
 // store it in static resources as jdatatable
 import jdataTable from '@salesforce/resourceUrl/jdataTable';
