@@ -1,4 +1,4 @@
-# JQuery Datatable in LWC  with Expand Details
+# JQuery Datatable in LWC  with Close/Expand Details
 
 ## Demo - Screenshots
 ### Closed state
