@@ -1,4 +1,4 @@
-# JQuery Datatable in LWC with Modal Dialog
+# JQuery Datatable in LWC with Modal Dialog for Record Details
 
 ## Demo
 - ![Demo jdt lwc modal dialog -1 ](img/jdt-lwc-md-1.png)
