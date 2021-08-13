@@ -1,0 +1,58 @@
+<template>
+  <template if:true={openModal}>
+    <div class="slds-modal slds-fade-in-open slds-backdrop">
+      <div class="slds-modal__container">
+        <div class="slds-modal__header">
+          <lightning-button-icon
+            icon-name="utility:close"
+            alternative-text="Close this window"
+            size="large"
+            variant="bare-inverse"
+            onclick={closeModal}
+            class="slds-modal__close"
+          >
+          </lightning-button-icon>
+          <h2 class="slds-card__header-title">Details for {detailsData.Name}</h2>
+        </div>
+        <div class="slds-modal__content slds-p-around_medium">
+          <lightning-card title="">
+            <h3 slot="title">
+              <lightning-icon
+                icon-name="standard:opportunity"
+                size="small"
+              ></lightning-icon>
+              <span> &nbsp;</span>{detailsData.Name}
+            </h3>
+            <!-- customize this to your needs-->
+            <p><b>Name</b>: {detailsData.Name}</p>
+            <p><b>Stage Name</b>: {detailsData.StageName}</p>
+            <p><b>Amount</b>: {detailsData.Amount}</p>
+            <p><b>Close Date</b>: {detailsData.CloseDate}</p>
+            <p><b>Type</b>: {detailsData.Type}</p>
+          </lightning-card>
+        </div>
+        <div class="slds-modal__footer">
+          <lightning-button
+            icon-name="utility:close"
+            label="Close"
+            variant="brand"
+            onclick={closeModal}
+          >
+          </lightning-button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <lightning-card title="Opportunity Data using JQuery Datatable">
+    <div class="slds-m-around_medium">
+      <!--- lwc:dom="manual" allows us query this dom element-->
+      <table
+        lwc:dom="manual"
+        class="tableCls slds-table slds-table_cell-buffer slds-table_bordered"
+        style="width: 100%"
+      ></table>
+    </div>
+  </lightning-card>
+</template>
+
