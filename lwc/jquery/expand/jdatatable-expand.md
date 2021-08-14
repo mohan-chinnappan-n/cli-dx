@@ -11,3 +11,5 @@
 ![lwc jdt expand - 5](img/lwc-jdt-expand-5.png)
 
 
+## References
+- [Jquery datatable example](https://datatables.net/examples/api/row_details.html)
