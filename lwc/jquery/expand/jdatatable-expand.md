@@ -1,5 +1,9 @@
 # JQuery Datatable in LWC  with Close/Expand Details
 
+
+## Demo
+![Demo](img/lwc-jdt-expand-1.gif)
+
 ## Demo - Screenshots
 ### Closed state
 ![lwc jdt expand - 2](img/lwc-jdt-expand-2.png)
