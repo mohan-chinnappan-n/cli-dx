@@ -6,6 +6,9 @@
 ### Demo
 ![sd-demo](img/sd-2.gif)
 
+- [FAQ](#faq)
+
+
 ### Plans
 - Planning to port Chrome Extension version to DX ( Work-in-progress)
 - Requires 0.0.144 version of the plugin
@@ -67,6 +70,13 @@ ____________AccountShare____________
 ____________OpportunityShare____________
 === None found ===
 ```
+
+<a name='faq></a>
+
+### FAQ
+- Why this user has access to this Account record, as per org security settings, this user should not have access to?
+![Why this access](sharing/img/why-user-A-has-RO-to-userB-Account.png)
+
 
 ### Listing share sObjects
 ```
