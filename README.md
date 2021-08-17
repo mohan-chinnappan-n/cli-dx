@@ -2,8 +2,7 @@
 
 - Requires plugin version 0.46 (not yet published!)
 
-
-### Topics
+## Topics
 - [Usage of blukapi load](#load)
 - [Loading Platform Events object records](#pe)
 
