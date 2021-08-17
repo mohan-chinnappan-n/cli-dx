@@ -78,6 +78,17 @@ ____________OpportunityShare____________
 ![Why this access](sharing/img/why-user-A-has-RO-to-userB-Account-2.png)
 - [Refer: Users can view records which are not shared to them ](https://help.salesforce.com/s/articleView?id=000325230&type=1)
 
+
+### How to query AccoutShare object
+```sql
+SELECT Id ,AccountId,
+      UserOrGroupId,AccountAccessLevel,OpportunityAccessLevel,CaseAccessLevel,ContactAccessLevel,RowCause 
+      FROM AccountShare
+      WHERE AccountId ='YOUR ACOUNT ID'
+
+```
+![query account share object](sharing/img/accountShare.gif)
+
 ### Listing share sObjects
 ```
 $ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects -m GET  >  sobjects.json 
