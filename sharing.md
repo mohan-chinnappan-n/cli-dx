@@ -87,7 +87,7 @@ SELECT Id ,AccountId,
       WHERE AccountId ='YOUR ACOUNT ID'
 
 ```
-![query account share object](sharing/img/accountShare.gif)
+![query account share object](sharing/img/accountShare.webm.gif)
 
 ### Listing share sObjects
 ```
