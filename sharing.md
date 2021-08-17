@@ -76,7 +76,7 @@ ____________OpportunityShare____________
 ### FAQ
 - Why this user has access to this Account record, as per org security settings, this user should not have access to?
 ![Why this access](sharing/img/why-user-A-has-RO-to-userB-Account.png)
-
+- [Refer: Users can view records which are not shared to them ](https://help.salesforce.com/s/articleView?id=000325230&type=1)
 
 ### Listing share sObjects
 ```
