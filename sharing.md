@@ -89,6 +89,39 @@ SELECT Id ,AccountId,
 ```
 ![query account share object](sharing/img/accountShare.webm.gif)
 
+### How to query UserRecordAccess object
+```
+sfdx mohanc:data:query -q ~/.query/userRecordAccess.soql -u mohan.chinnappan.n_ea2@gmail.com -f json
+```
+```json
+[
+    {
+        "attributes": {
+            "type": "UserRecordAccess",
+            "url": "/services/data/v52.0/sobjects/UserRecordAccess/0013h00000FfgCMAAZ"
+        },
+        "RecordId": "0013h00000FfgCMAAZ",
+        "HasReadAccess": true,
+        "HasEditAccess": true,
+        "HasDeleteAccess": true,
+        "HasTransferAccess": true,
+        "HasAllAccess": true
+    }
+]
+```
+
+```
+cat ~/.query/userRecordAccess.soql 
+```
+```sql
+SELECT  RecordId,
+HasReadAccess,HasEditAccess,HasDeleteAccess,
+HasTransferAccess,HasAllAccess
+FROM UserRecordAccess
+WHERE UserId='0053h000002xQ5sAAE' AND
+      RecordId = '0013h00000FfgCMAAZ'
+```
+![User Record Access](sharing/img/userRecord-access.png')
 ### Listing share sObjects
 ```
 $ sfdx mohanc:ws:rest -f header_ea.json -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects -m GET  >  sobjects.json 
