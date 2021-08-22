@@ -26,6 +26,6 @@ ID jobID = System.enqueueJob(new AsyncExecutionExample());
 
 ```
 
-![Query Results](img/async-query-1.png)
+![Query Results](./img/async-query-1.png)
 
 `
