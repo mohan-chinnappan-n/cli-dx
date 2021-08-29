@@ -2,7 +2,7 @@
 ## Demos
 
 ### Inside tabs with TODOs
-![Demo 0 ](img/tbs-caro-2.webm.gif)
+![Demo 0 ](img/tabs-caro-2.webm.gif)
 
 
 ### Inside tabs
