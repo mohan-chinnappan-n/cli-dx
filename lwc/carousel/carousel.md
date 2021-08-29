@@ -1,6 +1,10 @@
 # Carousel in LWC
 ## Demos
 
+### Inside tabs with TODOs
+![Demo 0 ](img/tbs-caro-2.webm.gif)
+
+
 ### Inside tabs
 ![Demo 1](img/tbs-caro-1.webm.gif)
 
