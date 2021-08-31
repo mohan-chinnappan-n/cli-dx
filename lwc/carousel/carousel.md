@@ -16,4 +16,4 @@
 ![Demo 2](img/carosuel-1.webm.gif)
 
 ### Multiple Slides in the view
-![Demo cm](img/caro-m-1.webm)
+![Demo cm](img/caro-m-1.webm.gif)
