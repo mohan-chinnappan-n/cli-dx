@@ -8,6 +8,7 @@
 
 - If the data file size is bigger than 100 MB, split that large file into 100 MB files using this utility:
 	- [CSV split utility](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/util/split.md)
+	- Load each 100 MB piece using this tool
 ```
 cat accounts-update-2.csv
 ```
