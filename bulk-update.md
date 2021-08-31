@@ -4,6 +4,7 @@
 - [How to install plugin?](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
 ## Data file (Max size: 100 MB)
+- [Data Size Limit](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/upload_job_data.htm)
 
 ```
 cat accounts-update-2.csv
