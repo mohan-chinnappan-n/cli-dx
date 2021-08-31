@@ -6,7 +6,8 @@
 ## Data file (Max size: 100 MB)
 - [Data Size Limit](https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/upload_job_data.htm)
 
-- If the data file size is bigger than 100 MB, split that large file into 100 MB files.[CSV split utility](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/util/split.md)
+- If the data file size is bigger than 100 MB, split that large file into 100 MB files using this utility:
+	- [CSV split utility](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/util/split.md)
 ```
 cat accounts-update-2.csv
 ```
