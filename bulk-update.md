@@ -237,13 +237,14 @@ https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v52.0/jobs/query/7
 === JOB Failure STATUS for job: 7503h00000CV7KdAAL === "sf__Id","sf__Error","Id","Name","Phone"
  ===
 "sf__Id","sf__Error","Id","Name","Phone"
+```
 
 ### View the output file
+
 ```
 cat /Users/mchinnappan/.query/accts.soql.csv 
 ```
-
-```
+```csv
 "Id","Name","Phone"
 "0013h00000Ffg18AAB","Boone625 Inc",""
 "0013h00000Ffg19AAB","Rodriquez626 Inc","881-222-2391"
