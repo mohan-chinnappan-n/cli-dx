@@ -3,7 +3,7 @@
 ## PB2F-1
 
 ### Choose Object and Specify When to Start the Process
-	- Account (only one active record-change process per object is recommeded, if multiple active record-change processes are defined for an object, you can't control what **order** process start in)
+- Account (only one active record-change process per object is recommeded, if multiple active record-change processes are defined for an object, you can't control what **order** process start in)
 - Start the process
  	- only when a record is created <-- 
 	- when a record is created or edited
