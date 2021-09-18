@@ -75,7 +75,7 @@ sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com  -t Flow
 sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com  -i 09S3h000005jymPEAQ
 ```
 
-```json
+```
 [
   {
     createdById: '0053h000002xQ5sAAE',
