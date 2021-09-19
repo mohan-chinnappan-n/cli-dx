@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSLT</title>
+</head>
+<body>
+
+  <div id="cd">
+
+    
+
+  </div>
+  
+
+
+<script>
+
+const xmlUrl = 'https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/pa/xml/cd.xml';
+const xslUrl = 'https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/pa/xml/cd.xsl';
+
+const xsltProcessor = new XSLTProcessor();
+
+function init(){
+
+  // load the xslt file
+  try {
+
+      const xslStylesheet = `
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html> 
+<body>
+  <h2>My CD Collection</h2>
+  <table border="1">
+    <tr bgcolor="#99ccff">
+      <th style="text-align:center">Title</th>
+      <th style="text-align:center">Artist</th>
+      <th style="text-align:center">Price</th>
+
+    </tr>
+    <xsl:for-each select="catalog/cd">
+    <tr>
+      <td><xsl:value-of select="title"/></td>
+      <td><xsl:value-of select="artist"/></td>
+      <td><xsl:value-of select="price"/></td>
+
+     
+    </tr>
+    </xsl:for-each>
+  </table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
+`;
+
+     
+      xsltProcessor.importStylesheet(xslStylesheet);
+
+      
+      
+      const xmlDoc = `
+      <?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+  <cd>
+    <title>Empire Burlesque</title>
+    <artist>Bob Dylan</artist>
+    <country>USA</country>
+    <company>Columbia</company>
+    <price>10.90</price>
+    <year>1985</year>
+  </cd>
+  <cd>
+    <title>Hide your heart</title>
+    <artist>Bonnie Tyler</artist>
+    <country>UK</country>
+    <company>CBS Records</company>
+    <price>9.90</price>
+    <year>1988</year>
+  </cd>
+  <cd>
+    <title>Greatest Hits</title>
+    <artist>Dolly Parton</artist>
+    <country>USA</country>
+    <company>RCA</company>
+    <price>9.90</price>
+    <year>1982</year>
+  </cd>
+</catalog>
+
+      `;
+
+      const fragment = xsltProcessor.transformToFragment(xmlDoc, document);
+
+      document.getElementById("cd").textContent = "";
+
+      const myDOM = fragment;
+      document.getElementById("cd").appendChild(fragment);
+  } catch(err) {
+    console.log(err);
+  }
+}
+
+// call init
+init();
+</script>
+
+
+</body>
+</html>

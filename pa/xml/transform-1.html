@@ -1,35 +1,62 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XSLT</title>
+</head>
+<body>
+
+  <div id="cd">
+
+
+
+  </div>
+  
 
 
 <script>
-var xslStylesheet;
-var xsltProcessor = new XSLTProcessor();
-var myDOM;
 
-var xmlDoc;
+const xmlUrl = 'cd.xml';
+const xslUrl = 'cd.xsl';
 
-function Init(){
+const xsltProcessor = new XSLTProcessor();
 
-  // load the xslt file, example1.xsl
-  var myXMLHTTPRequest = new XMLHttpRequest();
-  myXMLHTTPRequest.open("GET", "example1.xsl", false);
-  myXMLHTTPRequest.send(null);
 
-  xslStylesheet = myXMLHTTPRequest.responseXML;
-  xsltProcessor.importStylesheet(xslStylesheet);
+function transform(xmlUrl, xslUrl, eleId) {
 
-  // load the xml file, example1.xml
-  myXMLHTTPRequest = new XMLHttpRequest();
-  myXMLHTTPRequest.open("GET", "example1.xml", false);
-  myXMLHTTPRequest.send(null);
+  // load the xslt file
+  try {
+      var myXMLHTTPRequest = new XMLHttpRequest();
+      myXMLHTTPRequest.open("GET", xslUrl, false);
+      myXMLHTTPRequest.send(null);
 
-  xmlDoc = myXMLHTTPRequest.responseXML;
+      xslStylesheet = myXMLHTTPRequest.responseXML;
+      xsltProcessor.importStylesheet(xslStylesheet);
 
-  var fragment = xsltProcessor.transformToFragment(xmlDoc, document);
+      // load the xml file
+      myXMLHTTPRequest = new XMLHttpRequest();
+      myXMLHTTPRequest.open("GET", xmlUrl, false);
+      myXMLHTTPRequest.send(null);
+      
+      const xmlDoc = myXMLHTTPRequest.responseXML;
 
-  document.getElementById("example").textContent = "";
+      const fragment = xsltProcessor.transformToFragment(xmlDoc, document);
 
-  myDOM = fragment;
-  document.getElementById("example").appendChild(fragment);
+      document.getElementById(eleId).textContent = "";
+
+      myDOM = fragment;
+      document.getElementById(eleId).appendChild(fragment);
+  } catch(err) {
+    console.log(err);
+  }
 }
+
+// call init
+transform( xmlUrl, xslUrl, 'cd');
 </script>
+
+
+</body>
+</html>
