@@ -26,31 +26,35 @@
     <p>status :  <xsl:value-of select="status"/> </p>
 
     <p>processType :  <xsl:value-of select="processType"/> </p>
-    <p>startElementReference :  <xsl:value-of select="startElementReference"/> </p>
 
 
-    <xsl:apply-templates select="assignments"/>
+    <xsl:apply-templates select="start"/>
     <xsl:apply-templates select="processMetadataValues"/>
-    <xsl:apply-templates select="variables"/>
+    
+    <xsl:apply-templates select="actionCalls"/>
 
     <xsl:apply-templates select="decisions"/>
 
    </xsl:template>
 
 
-  <xsl:template match="assignments">
-    <h3>Assignments</h3>
-      <p>Name :  <xsl:value-of select="name"/> </p>
-      <p>Label :  <xsl:value-of select="label"/> </p>
-      <xsl:apply-templates select="assignmentItems"/>
+  <xsl:template match="start">
+    <h3>start</h3>
+      <p>filterLogic :  <xsl:value-of select="filterLogic"/> </p>
+      <p>object :  <xsl:value-of select="object"/> </p>
+      <p>recordTriggerType :  <xsl:value-of select="recordTriggerType"/> </p>
+      <p>triggerType :  <xsl:value-of select="triggerType"/> </p>
+
+      <xsl:apply-templates select="filters"/>
   </xsl:template>
 
 
-  <xsl:template match="assignmentItems">
+  <xsl:template match="filters">
 
-      <h3>Assignment Items</h3>
+      <h3>filters</h3>
+        <p>field :  <xsl:value-of select="field"/> </p>
         <p>operator :  <xsl:value-of select="operator"/> </p>
-        <p>value :  stringValue:  <xsl:value-of select="value/stringValue"/> </p>
+        <p>value  <xsl:value-of select="value/*"/> </p>
 
   </xsl:template>
 
@@ -63,62 +67,26 @@
   </xsl:template>
 
 
-  <xsl:template match="variables">
-  <h3>variables</h3>
-          <p>name :  <xsl:value-of select="name"/> </p>
-          <p>dataType :  <xsl:value-of select="dataType"/> </p>
+  <xsl:template match="actionCalls">
+  <h3>actionCalls</h3>
+          <p>description :  <xsl:value-of select="description"/> </p>
+          <p>label :  <xsl:value-of select="label"/> </p>
+          <p>actionName :  <xsl:value-of select="actionName"/> </p>
 
-          <p>isCollection :  <xsl:value-of select="isCollection"/> </p>
-          <p>isInput :  <xsl:value-of select="isInput"/> </p>
-          <p>isOutput :  <xsl:value-of select="isOutput"/> </p>
-          <p>objectType :  <xsl:value-of select="objectType"/> </p>
-
-
-
+          <p>actionType :  <xsl:value-of select="actionType"/> </p>
+          <p>flowTransactionModel :  <xsl:value-of select="flowTransactionModel"/> </p>
+           <xsl:apply-templates select="inputParameters"/>
 
   </xsl:template>
 
 
-  <xsl:template match="decisions">
-  <h3>decisions</h3>
+  <xsl:template match="inputParameters">
+  <h3>inputParameters</h3>
   <p>name :  <xsl:value-of select="name"/> </p>
-  <p>label :  <xsl:value-of select="label"/> </p>
-  <p>defaultConnectorLabel :  <xsl:value-of select="defaultConnectorLabel"/> </p>
-
- 
-  <xsl:apply-templates select="processMetadataValues"/>
-
-  <xsl:apply-templates select="rules"/>
-
-
+  <p>value :  <xsl:value-of select="value/*"/> </p>
   </xsl:template>
 
 
-<xsl:template match="rules">
-
-  <h3>rules</h3>
-  <p>name :  <xsl:value-of select="name"/> </p>    
-  <p>label :  <xsl:value-of select="label"/> </p>
-
-
-  <p>conditionLogic :  <xsl:value-of select="conditionLogic"/> </p>
-
-  <xsl:apply-templates select="processMetadataValues"/>
-
-
-  <xsl:apply-templates select="conditions"/>
-
-
-</xsl:template>
-
-
-<xsl:template match="conditions">
-  <h3>conditions</h3>
-   <p>operator :  <xsl:value-of select="operator"/> </p>    
-    <p>leftValueReference :  <xsl:value-of select="leftValueReference"/> </p>  
-    <p>rightValue :  <xsl:value-of select="rightValue/*"/> </p>    
-   <xsl:apply-templates select="processMetadataValues"/>
-</xsl:template>
 
 
 

@@ -34,6 +34,7 @@
     <xsl:apply-templates select="variables"/>
 
     <xsl:apply-templates select="decisions"/>
+    <xsl:apply-templates select="actionCalls"/>
 
    </xsl:template>
 
@@ -119,6 +120,31 @@
     <p>rightValue :  <xsl:value-of select="rightValue/*"/> </p>    
    <xsl:apply-templates select="processMetadataValues"/>
 </xsl:template>
+
+
+
+  <xsl:template match="actionCalls">
+  <h3>actionCalls</h3>
+     <xsl:apply-templates select="processMetadataValues"/>
+
+
+          <p>name :  <xsl:value-of select="name"/> </p>
+          <p>label :  <xsl:value-of select="label"/> </p>
+          <p>actionName :  <xsl:value-of select="actionName"/> </p>
+
+          <p>actionType :  <xsl:value-of select="actionType"/> </p>
+          <p>flowTransactionModel :  <xsl:value-of select="flowTransactionModel"/> </p>
+           <xsl:apply-templates select="inputParameters"/>
+
+  </xsl:template>
+
+  <xsl:template match="inputParameters">
+    <h3>inputParameters</h3>
+    <p>name :  <xsl:value-of select="name"/> </p>
+    <p>value :  <xsl:value-of select="value/*"/> </p>
+  </xsl:template>
+
+
 
 
 

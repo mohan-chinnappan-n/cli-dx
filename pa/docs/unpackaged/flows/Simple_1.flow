@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <processMetadataValues>
+            <name>emailAlertSelection</name>
+            <value>
+                <stringValue>Notify_Supervisor_on_Power_Down</stringValue>
+            </value>
+        </processMetadataValues>
+        <name>myRule_1_A1</name>
+        <label>qty</label>
+        <locationX>100</locationX>
+        <locationY>200</locationY>
+        <actionName>Asset.Notify_Supervisor_on_Power_Down</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>myVariable_current.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
     <apiVersion>52.0</apiVersion>
     <decisions>
         <processMetadataValues>
@@ -47,6 +68,9 @@
                     <numberValue>0.0</numberValue>
                 </rightValue>
             </conditions>
+            <connector>
+                <targetReference>myRule_1_A1</targetReference>
+            </connector>
             <label>Check Asset Qty for  zero</label>
         </rules>
     </decisions>
