@@ -20,7 +20,7 @@
 
 
    <xsl:template match="Flow">
-    <h2>PB Process :  <xsl:value-of select="interviewLabel"/> </h2>
+    <h2>Flow :  <xsl:value-of select="interviewLabel"/> </h2>
     <p>description :  <xsl:value-of select="description"/> </p>
     <p>API Version :  <xsl:value-of select="apiVersion"/> </p>
     <p>status :  <xsl:value-of select="status"/> </p>
@@ -33,7 +33,6 @@
     
     <xsl:apply-templates select="actionCalls"/>
 
-    <xsl:apply-templates select="decisions"/>
 
    </xsl:template>
 
