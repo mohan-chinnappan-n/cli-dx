@@ -18,7 +18,6 @@ SELECT Id,DeveloperName,BatchSize,PlatformEventConsumerId,UserId FROM PlatformEv
 ```
 sfdx mohanc:tooling:query -q ~/.soql/pe.soql -u mohan.chinnappan.n_ea2@gmail.com -f json
 ```
-![pe-2](img/pe-config-2.png)
 
 
 ```json
@@ -38,5 +37,8 @@ sfdx mohanc:tooling:query -q ~/.soql/pe.soql -u mohan.chinnappan.n_ea2@gmail.com
 ```
 
 
+![pe-2](img/pe-config-2.png)
 
-
+## Docs
+- [Configure the User and Batch Size for Your Platform Event Trigger](https://developer.salesforce.com/docs/atlas.en-us.platform_events.meta/platform_events/platform_events_trigger_config.htm)
+- [PlatformEventSubscriberConfig](https://developer.salesforce.com/docs/atlas.en-us.234.0.api_tooling.meta/api_tooling/tooling_api_objects_platformeventsubscriberconfig.htm)
