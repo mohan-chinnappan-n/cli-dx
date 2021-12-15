@@ -14,7 +14,7 @@
 sfdx mohanc:ida:ocr -h
 ```
 
-```bash
+```
 
 OCR a given document in the given language  
 
