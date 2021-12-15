@@ -54,6 +54,10 @@ EXAMPLE
 ### Input images
 ![Input image](https://tesseract.projectnaptha.com/img/eng_bw.png)
 
+![Input Image Tamil](img/tam.png)
+
+
+
 
 ### From an image URL
 ```
