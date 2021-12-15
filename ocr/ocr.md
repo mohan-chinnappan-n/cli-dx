@@ -4,8 +4,8 @@
     - sfdx-mohanc-plugins@0.0.163
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
-## UI version
-[OCR app](https://mohan-chinnappan-n2.github.io/2021/ai/ocr/ocr.html)
+## UI version (click to launch)
+![[OCR app](https://mohan-chinnappan-n2.github.io/2021/ai/ocr/ocr.html)](img/ocr-app.png)
 
 ## Usage
 ```bash
