@@ -5,5 +5,6 @@
 - Get startElementReference (e.g. myDecision)
 - processType
 	- Workflow to AutoLaunchedFlow
+- remove decisions node
 
 
