@@ -96,8 +96,8 @@ Thy placid lightning o’er the awaken’d sky.
 
 ...
 
-===== writing text into ./out.txt... ======
-===== writing text into ./out.txt completed. ======
+===== writing text into ./img/eng_bw.png.txt... ======
+===== writing text into ./img/eng_bw.png completed. ======
 
 ```
 
