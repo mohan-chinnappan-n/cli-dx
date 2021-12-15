@@ -102,7 +102,7 @@ Thy placid lightning o’er the awaken’d sky.
 ```
 
 ```
-cat out.txt
+cat ./img/eng_bw.png.txt
 Mild Splendour of the various-vested Night!
 Mother of wildly-working visions! haill
 I watch thy gliding, while with watery light
