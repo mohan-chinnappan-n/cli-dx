@@ -54,8 +54,11 @@ EXAMPLE
 ## Example
 
 ### Input images
+
+### English
 ![Input image](https://tesseract.projectnaptha.com/img/eng_bw.png)
 
+### Tamil
 ![Input Image Tamil](img/tam.png)
 
 
