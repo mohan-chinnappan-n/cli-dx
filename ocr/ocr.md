@@ -11,7 +11,7 @@
 
 ## Usage
 ```bash
-sfdx-mohanc-plugins % sfdx mohanc:ida:ocr -h
+sfdx mohanc:ida:ocr -h
 
 OCR a given document in the given language  
 
