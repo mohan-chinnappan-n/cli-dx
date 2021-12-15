@@ -52,7 +52,7 @@ EXAMPLE
 ## Example
 
 ### Input images
-![Input image](tesseract.projectnaptha.com/img/eng_bw.png)
+![Input image](https://tesseract.projectnaptha.com/img/eng_bw.png)
 
 
 ### From an image URL
