@@ -1,10 +1,10 @@
-# How to OCR a given image 
+# How to OCR a given image using SFDX CLI?
 
 - Requires 0.0.163 version of the plugin
     - sfdx-mohanc-plugins@0.0.163
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
-## UI version (click to launch)
+## Want to use Web App version?  (click to launch)
 [![OCR app](img/ocr-app.png)](https://mohan-chinnappan-n2.github.io/2021/ai/ocr/ocr.html)
 
 
