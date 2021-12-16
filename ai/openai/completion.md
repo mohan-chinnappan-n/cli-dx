@@ -239,6 +239,8 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a socia
 sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a social network for writing a book on cooking" -o i
 ```
 
+```
+
 ====== Idea option selected ======
 {
   id: 'cmpl-4Fnbw7ickGxn4i4QYicsyN0iye9qc',
