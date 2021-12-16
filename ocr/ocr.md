@@ -133,7 +133,7 @@ Thy placid lightning o’er the awaken’d sky.
 
 ```
 
-<a name='tamil'></a>
+<a name='tam'></a>
 ### Tamil -  From an image file - language  
 ```
  sfdx mohanc:ida:ocr -i img/tam.png -l tam
