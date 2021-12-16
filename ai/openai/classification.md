@@ -26,8 +26,8 @@ OpenAI’s API provides access to GPT-3, which performs a wide variety of natura
 
 
 <a name='install'></a>
-- Requires 0.0.163 version of the plugin
-    - sfdx-mohanc-plugins@0.0.163
+- Requires 0.0.164 version of the plugin
+    - sfdx-mohanc-plugins@0.0.164
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
  
