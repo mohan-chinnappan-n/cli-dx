@@ -12,6 +12,7 @@
 - [Examples](#examples)
     - [Sentence Completion](#completion)
     - [Summary of a paragraph](#tldr)
+    - [Idea Generation](#ideagen)
 
 <a name='signup'></a>
 
@@ -58,15 +59,14 @@ sfdx mohanc:ai:openai:completion -h
 
 ```
 
-U   ** Using OpenAI given a prompt, tool will return one or more predicted completions. Also summary of the prompt if summary flag is true **
- 
-
 USAGE
   $ sfdx mohanc:ai:openai:completion
 
 OPTIONS
   -k, --keyfilename=keyfilename                    Your OpenAI key file json, containing: OpenAI-Organization  and API 
                                                    Key
+
+  -o, --op=op                                      op flag ( s for summary, i for ideas)
 
   -p, --prompt=prompt                              Your prompt, tool will complete your prompt
 
@@ -80,10 +80,9 @@ OPTIONS
 
 EXAMPLE
 
-     ** Using OpenAI given a prompt, tool will return one or more predicted completions, and can also return the 
-  probabilities of alternative tokens at each position.   **
+     ** Using OpenAI given a prompt, tool will return one or more predicted completions. Also summary of the prompt if op flag is set to 's'. Also generates Ideas if op flag is to 'i' **
 
-      sfdx mohanc:ai:openai:completion -k keyfile.json  -p 'prompt'
+      sfdx mohanc:ai:openai:completion -k keyfile.json  -p 'prompt' -o 's or i'
 
    
 
@@ -91,6 +90,14 @@ EXAMPLE
 
            # Let us complete the given prompt (sentence)
            sfdx mohanc:ai:openai:completion -k myKeyfile.json -p "Once upon a time"
+        
+           # Let us get Summary the given prompt (sentence)
+           sfdx mohanc:ai:openai:completion -k myKeyfile.json -p "Once upon a time...." -o s 
+
+           # Let us get Ideas the given prompt (sentence)
+           sfdx mohanc:ai:openai:completion -k myKeyfile.json -p "Once upon a time...." -o i 
+
+  
 ```
 
 <a name='examples'></a>
@@ -159,11 +166,12 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Albert Einstein was 
 
 ```
 
-sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined. Jupiter is one of the brightest objects visible to the naked eye in the night sky, and has been known to ancient civilizations since before recorded history. It is named after the Roman god Jupiter.[19] When viewed from Earth, Jupiter can be bright enough for its reflected light to cast visible shadows,[20] and is on average the third-brightest natural object in the night sky after the Moon and Venus.\n\nJupiter is primarily composed of hydrogen with a quarter of its mass being helium, though helium comprises only about a tenth of the number of molecules. It may also have a rocky core of heavier elements,[21] but like the other giant planets, Jupiter lacks a well-defined solid surface. Because of its rapid rotation, the planet's shape is that of an oblate spheroid (it has a slight but noticeable bulge around the equator)" -s true
+sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined. Jupiter is one of the brightest objects visible to the naked eye in the night sky, and has been known to ancient civilizations since before recorded history. It is named after the Roman god Jupiter.[19] When viewed from Earth, Jupiter can be bright enough for its reflected light to cast visible shadows,[20] and is on average the third-brightest natural object in the night sky after the Moon and Venus.\n\nJupiter is primarily composed of hydrogen with a quarter of its mass being helium, though helium comprises only about a tenth of the number of molecules. It may also have a rocky core of heavier elements,[21] but like the other giant planets, Jupiter lacks a well-defined solid surface. Because of its rapid rotation, the planet's shape is that of an oblate spheroid (it has a slight but noticeable bulge around the equator)" -o s
 
 ```
 
 ```
+====== Summary option selected ======
 {
   id: 'cmpl-4FmjrxWlen6Jg4xtaLMwYHySWcCVX',
   object: 'text_completion',
@@ -183,6 +191,61 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Jupiter is the fifth
 }
 ```
 
+<a name="ideagen"></a>
+### Ideas generation
 
+- Garage Sales
+```
+sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a social network that connects people either looking for or hosting garage sales:" -o i
 
 ```
+
+
+````
+====== Idea option selected ======
+{
+  id: 'cmpl-4FnZ2gqsCAMc9fyXg56Xf0z8Ce9tN',
+  object: 'text_completion',
+  created: 1639670792,
+  model: 'davinci:2020-05-03',
+  choices: [
+    {
+      text: 'Taglines for a social network that connects people either looking for or hosting garage sales:\n' +
+        '\n' +
+        '1. Startup. Live better',
+      index: 0,
+      logprobs: null,
+      finish_reason: 'length'
+    }
+  ]
+}
+```
+
+- Writing a book on cooking
+
+```
+sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a social network for writing a book on cooking" -o i
+```
+
+====== Idea option selected ======
+{
+  id: 'cmpl-4Fnbw7ickGxn4i4QYicsyN0iye9qc',
+  object: 'text_completion',
+  created: 1639670972,
+  model: 'davinci:2020-05-03',
+  choices: [
+    {
+      text: 'Taglines for a social network for writing a book on cooking\n' +
+        '\n' +
+        '1. Post your favourite recipes and',
+      index: 0,
+      logprobs: null,
+      finish_reason: 'length'
+    }
+  ]
+}
+```
+
+
+
+
