@@ -101,6 +101,7 @@ EXAMPLE
 
 ### Sentence Completion
 
+
 ```
 sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "This is the time for all good men"
 ```
@@ -125,7 +126,36 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "This is the time for
 
 <a name='tldr'></a>
 
-### Summary 
+### Summary
+
+
+- About Albert Einstein  
+```
+sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics" -s true
+
+```
+
+```
+{
+  id: 'cmpl-4Fn2xEypwcfLayuteP85aUAcE0eYo',
+  object: 'text_completion',
+  created: 1639668803,
+  model: 'davinci:2020-05-03',
+  choices: [
+    {
+      text: 'Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics\n' +
+        '\n' +
+        'tl;dr: He contributed to pretty much',
+      index: 0,
+      logprobs: null,
+      finish_reason: 'length'
+    }
+  ]
+}
+
+```
+
+- About Jupiter 
 
 ```
 
