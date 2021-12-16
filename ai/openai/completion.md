@@ -265,6 +265,8 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a socia
 ``` bash
 sfdx mohanc:ai:openai:completion  -k ~/.openai/keys.json  -o py_bug_fix -i ~/.openai/buggy.py -m 200
 ```
+
+```
 ====== Python bug fixed option selected ======
 {
   prompt: '##### Fix bugs in the below function\n' +
