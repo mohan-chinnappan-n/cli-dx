@@ -147,7 +147,7 @@ sfdx mohanc:ida:ocr -i https://docplayer.dk/docs-images/41/7040540/images/page_1
 ```
 
 ```
-cat  cat ./out.txt 
+cat ./out.txt 
 
 ```
 ```
