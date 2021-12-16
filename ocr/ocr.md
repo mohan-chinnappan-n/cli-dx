@@ -159,7 +159,7 @@ cat img/tam.png.txt
 
 ![Danish Poem](https://docplayer.dk/docs-images/41/7040540/images/page_1.jpg)
 
-- Thanks to [Rikke](https://www.linkedin.com/in/rikkehovgaard/)  for this example!
+#### Thanks to [Rikke](https://www.linkedin.com/in/rikkehovgaard/)  for this example!
 
 ```
 sfdx mohanc:ida:ocr -i https://docplayer.dk/docs-images/41/7040540/images/page_1.jpg -l dan
