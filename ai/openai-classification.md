@@ -1,4 +1,4 @@
-# Using [openAI] GPT-3  in Classification in SFDX CLI
+# Using [openAI](https://openai.com/) GPT-3  in Classification in SFDX CLI
 
 
 
