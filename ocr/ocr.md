@@ -1,13 +1,27 @@
 # How to OCR a given image using SFDX CLI?
 
+## Topics
+
+- [Plugin install](#install)
+- [Web App](#webapp)
+- [Usage](#usage)
+- [Examples](#examples) 
+  - [English](#en)
+  - [Tamil](#tam)
+  - [Danish](#dan)
+
+<a name='install'></a>
 - Requires 0.0.163 version of the plugin
     - sfdx-mohanc-plugins@0.0.163
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+<a name='webapp'></a>
 
 ## Want to use Web App version?  (click to launch)
 [![OCR app](img/ocr-app.png)](https://mohan-chinnappan-n2.github.io/2021/ai/ocr/ocr.html)
 
 
+<a name='usage'></a>
 
 ## Usage
 ```bash
@@ -54,7 +68,8 @@ EXAMPLE
            sfdx mohanc:ida:ocr -i img/tam.png -l tam
 ```
 
-## Example
+<a name='examples'></a>
+## Examples
 
 ### Input images
 
@@ -65,9 +80,10 @@ EXAMPLE
 ![Input Image Tamil](img/tam.png)
 
 
+<a name='eng'></a>
+### English
 
-
-### From an image URL
+- From an image URL
 ```
  sfdx mohanc:ida:ocr -i https://tesseract.projectnaptha.com/img/eng_bw.png
 
@@ -92,7 +108,7 @@ Thy placid lightning o’er the awaken’d sky.
 
 ```
 
-### From an image file
+- From an image file
 ```
  sfdx mohanc:ida:ocr -i img/eng_bw.png
 
@@ -116,7 +132,9 @@ And when thou dartest from the wind-rent cloud
 Thy placid lightning o’er the awaken’d sky.
 
 ```
-### From an image file - language = Tamil
+
+<a name='tamil'></a>
+### Tamil -  From an image file - language  
 ```
  sfdx mohanc:ida:ocr -i img/tam.png -l tam
 
@@ -135,8 +153,9 @@ cat img/tam.png.txt
 
 
 ```
+<a name='dan'></a>
 
-## Danish Example
+### Danish Example from URL
 
 ![Danish Poem](https://docplayer.dk/docs-images/41/7040540/images/page_1.jpg)
 
