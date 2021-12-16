@@ -14,6 +14,7 @@
     - [Summary of a paragraph](#tldr)
     - [Idea Generation](#ideagen)
     - [Python code bug fix](#pyfix)
+    - [Python code explain](#pyexplain)
 
 <a name='signup'></a>
 
@@ -326,6 +327,72 @@ sfdx mohanc:ai:openai:completion  -k ~/.openai/keys.json  -o py_bug_fix -i ~/.op
       index: 0,
       logprobs: null,
       finish_reason: 'stop'
+    }
+  ]
+}
+```
+<a name='pyexplain'></a>
+
+```
+sfdx mohanc:ai:openai:completion  -k ~/.openai/keys.json  -o py_explain -i ~/.openai/log.py -m 200   
+```
+
+```
+====== Python code explain option selected, max_tokens: 200 ====== 
+{
+  id: 'cmpl-4FpCHYASt04J3tIlCAar5VCONLPd9',
+  object: 'text_completion',
+  created: 1639677069,
+  model: 'davinci:2020-05-03',
+  choices: [
+    {
+      text: 'class Log:\n' +
+        '    def __init__(self, path):\n' +
+        '        dirname = os.path.dirname(path)\n' +
+        '        os.makedirs(dirname, exist_ok=True)\n' +
+        '        f = open(path, "a+")\n' +
+        '\n' +
+        '        # Check that the file is newline-terminated\n' +
+        '        size = os.path.getsize(path)\n' +
+        '        if size > 0:\n' +
+        '            f.seek(size - 1)\n' +
+        '            end = f.read(1)\n' +
+        '            if end != "\\n":\n' +
+        '                f.write("\\n")\n' +
+        '        self.f = f\n' +
+        '        self.path = path\n' +
+        '\n' +
+        '    def log(self, event):\n' +
+        '        event["_event_id"] = str(uuid.uuid4())\n' +
+        '        json.dump(event, self.f)\n' +
+        '        self.f.write("\\n")\n' +
+        '\n' +
+        '    def state(self):\n' +
+        '        state = {"complete": set(), "last": None}\n' +
+        '        for line in open(self.path):\n' +
+        '            event = json.loads(line)\n' +
+        '            if event["type"] == "submit" and event["success"]:\n' +
+        '                state["complete"].add(event["id"])\n' +
+        '                state["last"] = event\n' +
+        '        return state\n' +
+        '\n' +
+        '\n' +
+        '"""\n' +
+        "Here's what the above class is doing:\n" +
+        '1. Define a custom JSON data type (Line 32)\n' +
+        '2. Decorate each log message (keys and values) with a unique identifier (Line 48)\n' +
+        '3. Enforce that each loger instance only catches its own correct event types (Line 55)\n' +
+        '4. Accept loger instances as inputs (Line 58)\n' +
+        '5. Serialize JSON strings to a file (Write) (Line 64)\n' +
+        '6. Check for log truncation before listen to only the tail of a file (Line 72)\n' +
+        '7. Automatically load a log file in the binary, via state init (Line 79)\n' +
+        '8. If any error has occurred during the file loading, close the input file (Line 83)\n' +
+        '9. On each log event, check if this instance of the Logger class already has the log event (Line 91)\n' +
+        '10. Otherwise, serialize the event to the output log file as JSON data (Line 96)\n' +
+        '11. Log an event type as',
+      index: 0,
+      logprobs: null,
+      finish_reason: 'length'
     }
   ]
 }
