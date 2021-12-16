@@ -6,7 +6,7 @@
 - [Web App](#webapp)
 - [Usage](#usage)
 - [Examples](#examples) 
-  - [English](#en)
+  - [English](#eng)
   - [Tamil](#tam)
   - [Danish](#dan)
 
