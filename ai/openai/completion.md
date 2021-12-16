@@ -1,4 +1,4 @@
-# Using [openAI](https://openai.com/) GPT-3  based Sentence Completion in SFDX CLI
+# Using [openAI](https://openai.com/) GPT-3  based Sentence Completion, Summary, Idea Generation in SFDX CLI
 
 
 
