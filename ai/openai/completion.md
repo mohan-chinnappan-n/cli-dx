@@ -334,6 +334,11 @@ sfdx mohanc:ai:openai:completion  -k ~/.openai/keys.json  -o py_bug_fix -i ~/.op
 <a name='pyexplain'></a>
 
 - input python code 
+
+```bash
+cat ~/.openai/log.py
+```
+
 ```py
 class Log:
     def __init__(self, path):
