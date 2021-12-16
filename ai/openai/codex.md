@@ -1,5 +1,5 @@
 # openAI Codex
-Codex can now interpret simple commands in **natural language** and execute them on the user’s behalf—making it possible to build a **natural language interface** to existing applications. 
+[Codex](https://openai.com/blog/openai-codex/) can now interpret simple commands in **natural language** and execute them on the user’s behalf—making it possible to build a **natural language interface** to existing applications. 
 
 
 ## Paper
