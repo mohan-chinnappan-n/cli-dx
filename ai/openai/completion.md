@@ -13,6 +13,7 @@
     - [Sentence Completion](#completion)
     - [Summary of a paragraph](#tldr)
     - [Idea Generation](#ideagen)
+    - [Python code bug fix](#pyfix)
 
 <a name='signup'></a>
 
@@ -59,14 +60,21 @@ sfdx mohanc:ai:openai:completion -h
 
 ```
 
+ Using OpenAI given a prompt, tool will return one or more predicted completions. Also summary of the prompt if op flag is set to 's'. Also generates Ideas if op flag is to 'i'. Provides the fix for the given python code if op flag is set to 'py_bug_fix
+
 USAGE
   $ sfdx mohanc:ai:openai:completion
 
 OPTIONS
+  -i, --inputfilename=inputfilename                Input file name where we have stored to code
+
   -k, --keyfilename=keyfilename                    Your OpenAI key file json, containing: OpenAI-Organization  and API 
                                                    Key
 
-  -o, --op=op                                      op flag ( s for summary, i for ideas)
+  -m, --maxtoken=maxtoken                          Max Token parameter to the engine
+
+  -o, --op=op                                      op flag ( s for summary, i for ideas, py_bug_fix for fixing the given 
+                                                   python code)
 
   -p, --prompt=prompt                              Your prompt, tool will complete your prompt
 
@@ -80,11 +88,13 @@ OPTIONS
 
 EXAMPLE
 
-     ** Using OpenAI given a prompt, tool will return one or more predicted completions. Also summary of the prompt if op flag is set to 's'. Also generates Ideas if op flag is to 'i' **
+     ** Using OpenAI given a prompt, tool will return one or more predicted completions. Also summary of the prompt if 
+  op flag is set to 's'. Also generates Ideas if op flag is to 'i'. Provides the fix for the given python code if op 
+  flag is set to 'py_bug_fix **
 
-      sfdx mohanc:ai:openai:completion -k keyfile.json  -p 'prompt' -o 's or i'
+      sfdx mohanc:ai:openai:completion -k keyfile.json  -p 'prompt' -o 's or i or py_bug_fix' -m 'max tokens 
+  (default:8)'
 
-   
 
       Example:
 
@@ -97,7 +107,9 @@ EXAMPLE
            # Let us get Ideas the given prompt (sentence)
            sfdx mohanc:ai:openai:completion -k myKeyfile.json -p "Once upon a time...." -o i 
 
-  
+           # Let us correct given buggy pythong code file in -i option with 200 max tokens
+           sfdx mohanc:ai:openai:completion  -k ~/.openai/keys.json  -o py_bug_fix -i ~/.openai/buggy.py -m 200
+
 ```
 
 <a name='examples'></a>
@@ -241,6 +253,75 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a socia
       index: 0,
       logprobs: null,
       finish_reason: 'length'
+    }
+  ]
+}
+```
+
+<a name='pyfix'></a>
+
+``` bash
+sfdx mohanc:ai:openai:completion  -k ~/.openai/keys.json  -o py_bug_fix -i ~/.openai/buggy.py -m 200
+```
+====== Python bug fixed option selected ======
+{
+  prompt: '##### Fix bugs in the below function\n' +
+    '\n' +
+    '### Buggy Python\n' +
+    'import Random\n' +
+    'a = random.randint(1,12)\n' +
+    'b = random.randint(1,12)\n' +
+    'for i in range(10):\n' +
+    '    question = "What is "+a+" x "+b+"? "\n' +
+    '    answer = input(question)\n' +
+    '    if answer = a*b\n' +
+    '        print (Well done!)\n' +
+    '    else:\n' +
+    '        print("No.")\n' +
+    '\n' +
+    '\n' +
+    '        ### Fixed Python\n' +
+    '        ',
+  max_tokens: 200,
+  echo: true,
+  stop: [ '###' ]
+}
+{
+  id: 'cmpl-4FoQMYSnRewjypfMgeNFfsi6fZCXc',
+  object: 'text_completion',
+  created: 1639674098,
+  model: 'davinci-codex:2021-08-03',
+  choices: [
+    {
+      text: '##### Fix bugs in the below function\n' +
+        '\n' +
+        '### Buggy Python\n' +
+        'import Random\n' +
+        'a = random.randint(1,12)\n' +
+        'b = random.randint(1,12)\n' +
+        'for i in range(10):\n' +
+        '    question = "What is "+a+" x "+b+"? "\n' +
+        '    answer = input(question)\n' +
+        '    if answer = a*b\n' +
+        '        print (Well done!)\n' +
+        '    else:\n' +
+        '        print("No.")\n' +
+        '\n' +
+        '\n' +
+        '        ### Fixed Python\n' +
+        '        import random\n' +
+        'a = random.randint(1,9)\n' +
+        'b = random.randint(1,9)\n' +
+        'for i in range(10):\n' +
+        '    question = "What is",str(a),"x",str(b) +"? "\n' +
+        '    answer = input(question)\n' +
+        '    if a*b == answer:\n' +
+        `        print ("That's correct")\n` +
+        '    else:\n' +
+        '        print ("Make sure you use a * for multiplication")',
+      index: 0,
+      logprobs: null,
+      finish_reason: 'stop'
     }
   ]
 }
