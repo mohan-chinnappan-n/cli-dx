@@ -22,6 +22,7 @@ OpenAI’s API provides access to GPT-3, which performs a wide variety of natura
 - Make sure you have signed up for OpenAI and have 
     - API Key
     - Org Id
+- This can be found at [Developer quickstart](https://beta.openai.com/docs/developer-quickstart)
 
 
 <a name='install'></a>
