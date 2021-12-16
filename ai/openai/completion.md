@@ -213,7 +213,7 @@ sfdx mohanc:ai:openai:completion -k ~/.openai/keys.json -p "Taglines for a socia
 ```
 
 
-````
+```
 ====== Idea option selected ======
 {
   id: 'cmpl-4FnZ2gqsCAMc9fyXg56Xf0z8Ce9tN',
