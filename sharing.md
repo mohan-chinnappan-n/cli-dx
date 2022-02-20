@@ -71,7 +71,7 @@ ____________OpportunityShare____________
 === None found ===
 ```
 
-<a name='faq></a>
+<a name='faq'></a>
 
 ### FAQ
 - Why this user has access to this Account record, as per org security settings, this user should not have access to?
