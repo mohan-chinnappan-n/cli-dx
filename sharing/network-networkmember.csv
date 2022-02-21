@@ -1,0 +1,94 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
+"Network","Network","Id","Network ID","id",18,false,"[]",,false,false,,"[]",false
+"Network","Network","SystemModstamp","System Modstamp","datetime",0,false,"[]",,false,false,,"[]",false
+"Network","Network","CreatedDate","Created Date","datetime",0,false,"[]",,false,false,,"[]",false
+"Network","Network","CreatedById","Created By ID","reference",18,false,"[""User""]","CreatedBy",false,false,,"[]",false
+"Network","Network","LastModifiedDate","Last Modified Date","datetime",0,false,"[]",,false,false,,"[]",false
+"Network","Network","LastModifiedById","Last Modified By ID","reference",18,false,"[""User""]","LastModifiedBy",false,false,,"[]",false
+"Network","Network","Name","Name","string",40,false,"[]",,false,true,,"[]",false
+"Network","Network","Description","Description","string",255,true,"[]",,false,true,,"[]",false
+"Network","Network","Status","Status","picklist",40,false,"[]",,false,true,,"[""Preview"",""Published"",""Offline""]",false
+"Network","Network","OptionsInvitationsEnabled","Invitations Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsSendWelcomeEmail","Send Welcome Email","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsSelfRegistrationEnabled","Self Registration Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsAllowMembersToFlag","Allow Members To Flag","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsSiteAsContainerEnabled","Site.com as Experience Container Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsPrivateMessagesEnabled","Private Messages Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsKnowledgeableEnabled","Knowledgeable Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsReputationEnabled","Reputation Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsEinsteinAnswersSnippetEnabled","EinsteinAnswersSnippetEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsGuestChatterEnabled","Guest Chatter Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsNicknameDisplayEnabled","NicknameDisplayEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsShowAllNetworkSettings","ShowAllNetworkSettings","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsAllowInternalUserLogin","Allow Employee Login","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsDirectMessagesEnabled","Direct Messages Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsReputationRecordConversationsDisabled","ReputationRecordConversationsDisabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsGuestFileAccessEnabled","Guest File Access Enabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsGatherCustomerSentimentData","Gather Customer Insights Data","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsNetworkSentimentAnalysis","Sentiment Analysis on Feed Posts and Comments","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsEnableTopicAssignmentRules","EnableTopicAssignmentRules","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsEinsteinAnswersEnabled","EinsteinAnswersEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsCWBannerState","CWBannerState","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsTopicSuggestionsEnabled","TopicSuggestionsEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsEnableTalkingAboutStats","EnableTalkingAboutStats","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsUpDownVoteEnabled","UpDownVoteEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsDisableWorkspaceInfo","DisableWorkspaceInfo","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsEinsteinAnswersQAEnabled","EinsteinAnswersQAEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsEinsteinAnswersKAEnabled","EinsteinAnswersKAEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsRecognitionBadgingEnabled","​Recognition badging for Lightning Experiences","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsThreadedDiscussionsEnabled","ThreadedDiscussionsEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsMemberVisibility","MemberVisibility","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsMobileImageOptimizationEnabled","MobileImageOptimizationEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsGuestMemberVisibility","GuestMemberVisibility","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsActionOverrideEnabled","ActionOverrideEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsProfileBasedLayoutsForKnowledgeSearchEnabled","ProfileBasedLayoutsForKnowledgeSearchEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","OptionsExperienceBundleBasedSnaOverrideEnabled","ExperienceBundleBasedSnaOverrideEnabled","boolean",0,false,"[]",,false,true,,"[]",false
+"Network","Network","WelcomeEmailTemplateId","Email Template ID","reference",18,false,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","ChangePasswordEmailTemplateId","Email Template ID","reference",18,false,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","ForgotPasswordEmailTemplateId","Email Template ID","reference",18,false,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","LockoutEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","VerificationEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","ChgEmailVerOldEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","ChgEmailVerNewEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","DeviceActEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","SelfRegMicroBatchSubErrorEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","EmailSenderName","From Email Name","string",80,false,"[]",,false,true,,"[]",false
+"Network","Network","EmailSenderAddress","From Email Address","email",80,false,"[]",,false,false,,"[]",false
+"Network","Network","NewSenderAddress","Unverified Sender Email Address","email",80,true,"[]",,false,true,,"[]",false
+"Network","Network","EmailFooterLogoId","Document ID","reference",18,true,"[""Document""]",,false,true,,"[]",false
+"Network","Network","EmailFooterText","Email Footer Text","string",1000,true,"[]",,false,true,,"[]",false
+"Network","Network","UrlPathPrefix","Experience URL Prefix","string",40,true,"[]",,false,true,,"[]",false
+"Network","Network","CaseCommentEmailTemplateId","Email Template ID","reference",18,true,"[""EmailTemplate""]",,false,true,,"[]",false
+"Network","Network","SelfRegProfileId","Profile ID","reference",18,true,"[""Profile""]",,false,true,,"[]",false
+"Network","Network","FirstActivationDate","First Date Active","date",0,true,"[]",,false,false,,"[]",false
+"Network","Network","MaxFileSizeKb","Max File Size KB","int",0,true,"[]",,false,true,,"[]",false
+"Network","Network","AllowedExtensions","Allowed Extensions","textarea",1000,true,"[]",,false,true,,"[]",false
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
+"NetworkMember","Network Member","Id","Network Member ID","id",18,false,"[]",,false,false,,"[]",false
+"NetworkMember","Network Member","SystemModstamp","System Modstamp","datetime",0,false,"[]",,false,false,,"[]",false
+"NetworkMember","Network Member","CreatedDate","Created Date","datetime",0,false,"[]",,false,false,,"[]",false
+"NetworkMember","Network Member","CreatedById","Created By ID","reference",18,false,"[""User""]","CreatedBy",false,false,,"[]",false
+"NetworkMember","Network Member","NetworkId","Network ID","reference",18,false,"[""Network""]","Network",false,false,,"[]",false
+"NetworkMember","Network Member","MemberId","User ID","reference",18,false,"[""User""]","Member",false,false,,"[]",false
+"NetworkMember","Network Member","DigestFrequency","Chatter Email Highlights Frequency","picklist",40,false,"[]",,false,true,,"[""Daily"",""Weekly"",""Never""]",false
+"NetworkMember","Network Member","DefaultGroupNotificationFrequency","Default Notification Frequency when Joining Groups","picklist",40,false,"[]",,false,true,,"[""Email on Each Post"",""Daily Digests"",""Weekly Digests"",""Never""]",false
+"NetworkMember","Network Member","PreferencesDisableAllFeedsEmail","DisableAllFeedsEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableFollowersEmail","DisableFollowersEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableProfilePostEmail","DisableProfilePostEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableChangeCommentEmail","DisableChangeCommentEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableLaterCommentEmail","DisableLaterCommentEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisProfPostCommentEmail","DisProfPostCommentEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableMentionsPostEmail","DisableMentionsPostEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisMentionsCommentEmail","DisMentionsCommentEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableLikeEmail","DisableLikeEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisCommentAfterLikeEmail","DisCommentAfterLikeEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableBookmarkEmail","DisableBookmarkEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableSharePostEmail","DisableSharePostEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableItemFlaggedEmail","DisableItemFlaggedEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableMessageEmail","DisableMessageEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableEndorsementEmail","DisableEndorsementEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisablePendingReviewEmail","DisablePendingReviewEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableDirectMessageEmail","DisableDirectMessageEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","PreferencesDisableBestAnswerEmail","DisableBestAnswerEmail","boolean",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","ReputationPoints","Reputation Points","double",0,false,"[]",,false,true,,"[]",false
+"NetworkMember","Network Member","LastChatterActivityDate","Last Chatter Activity Date","date",0,true,"[]",,false,false,,"[]",false

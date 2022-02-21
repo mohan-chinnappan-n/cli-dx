@@ -1,0 +1,548 @@
+
+        digraph "Salesforce+ ERD" {  
+            graph [  
+              rankdir="RL"  
+              bgcolor="#efeffd"  
+              label="Salesforce ERD "  
+              labeljust="r"  
+              nodesep="0.18"  
+              ranksep="0.46"        
+              fontname="Courier"  
+              fontsize="9"  
+            ];  
+            node [  
+              fontname="Courier"  
+              fontsize="11"  
+              shape="plaintext"  
+              color="#99ccff"  
+            ];  
+            edge [ arrowsize="0.8"   ];
+        
+            Network [shape=none, margin=0, label=<
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="#ffeeff" >   
+                  <tr><td colspan="3" bgcolor="lightblue"><b>Network</b></td></tr>
+             <tr>
+                                        <td  bgcolor="#99ccff" port="Id" align="left">
+                                           <b>Id</b>
+                                        </td><td>id(18)</td></tr> <tr>
+                                         <td port="LastModifiedById" align="left">
+                                         LastModifiedById
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="Name" align="left">
+                                         Name
+                                       </td><td>string(40)</td></tr> <tr>
+                                         <td port="Description" align="left">
+                                         Description
+                                       </td><td>string(255)</td></tr> <tr>
+                                         <td port="Status" align="left">
+                                         Status
+                                       </td><td>picklist(40)</td></tr> <tr>
+                                         <td port="OptionsInvitationsEnabled" align="left">
+                                         OptionsInvitationsEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsSendWelcomeEmail" align="left">
+                                         OptionsSendWelcomeEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsSelfRegistrationEnabled" align="left">
+                                         OptionsSelfRegistrationEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsAllowMembersToFlag" align="left">
+                                         OptionsAllowMembersToFlag
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsSiteAsContainerEnabled" align="left">
+                                         OptionsSiteAsContainerEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsPrivateMessagesEnabled" align="left">
+                                         OptionsPrivateMessagesEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsKnowledgeableEnabled" align="left">
+                                         OptionsKnowledgeableEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsReputationEnabled" align="left">
+                                         OptionsReputationEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsEinsteinAnswersSnippetEnabled" align="left">
+                                         OptionsEinsteinAnswersSnippetEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsGuestChatterEnabled" align="left">
+                                         OptionsGuestChatterEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsNicknameDisplayEnabled" align="left">
+                                         OptionsNicknameDisplayEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsShowAllNetworkSettings" align="left">
+                                         OptionsShowAllNetworkSettings
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsAllowInternalUserLogin" align="left">
+                                         OptionsAllowInternalUserLogin
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsDirectMessagesEnabled" align="left">
+                                         OptionsDirectMessagesEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsReputationRecordConversationsDisabled" align="left">
+                                         OptionsReputationRecordConversationsDisabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsGuestFileAccessEnabled" align="left">
+                                         OptionsGuestFileAccessEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsGatherCustomerSentimentData" align="left">
+                                         OptionsGatherCustomerSentimentData
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsNetworkSentimentAnalysis" align="left">
+                                         OptionsNetworkSentimentAnalysis
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsEnableTopicAssignmentRules" align="left">
+                                         OptionsEnableTopicAssignmentRules
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsEinsteinAnswersEnabled" align="left">
+                                         OptionsEinsteinAnswersEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsCWBannerState" align="left">
+                                         OptionsCWBannerState
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsTopicSuggestionsEnabled" align="left">
+                                         OptionsTopicSuggestionsEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsEnableTalkingAboutStats" align="left">
+                                         OptionsEnableTalkingAboutStats
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsUpDownVoteEnabled" align="left">
+                                         OptionsUpDownVoteEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsDisableWorkspaceInfo" align="left">
+                                         OptionsDisableWorkspaceInfo
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsEinsteinAnswersQAEnabled" align="left">
+                                         OptionsEinsteinAnswersQAEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsEinsteinAnswersKAEnabled" align="left">
+                                         OptionsEinsteinAnswersKAEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsRecognitionBadgingEnabled" align="left">
+                                         OptionsRecognitionBadgingEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsThreadedDiscussionsEnabled" align="left">
+                                         OptionsThreadedDiscussionsEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsMemberVisibility" align="left">
+                                         OptionsMemberVisibility
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsMobileImageOptimizationEnabled" align="left">
+                                         OptionsMobileImageOptimizationEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsGuestMemberVisibility" align="left">
+                                         OptionsGuestMemberVisibility
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsActionOverrideEnabled" align="left">
+                                         OptionsActionOverrideEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsProfileBasedLayoutsForKnowledgeSearchEnabled" align="left">
+                                         OptionsProfileBasedLayoutsForKnowledgeSearchEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="OptionsExperienceBundleBasedSnaOverrideEnabled" align="left">
+                                         OptionsExperienceBundleBasedSnaOverrideEnabled
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="WelcomeEmailTemplateId" align="left">
+                                         WelcomeEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="ChangePasswordEmailTemplateId" align="left">
+                                         ChangePasswordEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="ForgotPasswordEmailTemplateId" align="left">
+                                         ForgotPasswordEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="LockoutEmailTemplateId" align="left">
+                                         LockoutEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="VerificationEmailTemplateId" align="left">
+                                         VerificationEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="ChgEmailVerOldEmailTemplateId" align="left">
+                                         ChgEmailVerOldEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="ChgEmailVerNewEmailTemplateId" align="left">
+                                         ChgEmailVerNewEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="DeviceActEmailTemplateId" align="left">
+                                         DeviceActEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="SelfRegMicroBatchSubErrorEmailTemplateId" align="left">
+                                         SelfRegMicroBatchSubErrorEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="EmailSenderName" align="left">
+                                         EmailSenderName
+                                       </td><td>string(80)</td></tr> <tr>
+                                         <td port="EmailSenderAddress" align="left">
+                                         EmailSenderAddress
+                                       </td><td>email(80)</td></tr> <tr>
+                                         <td port="NewSenderAddress" align="left">
+                                         NewSenderAddress
+                                       </td><td>email(80)</td></tr> <tr>
+                                         <td port="EmailFooterLogoId" align="left">
+                                         EmailFooterLogoId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="EmailFooterText" align="left">
+                                         EmailFooterText
+                                       </td><td>string(1000)</td></tr> <tr>
+                                         <td port="UrlPathPrefix" align="left">
+                                         UrlPathPrefix
+                                       </td><td>string(40)</td></tr> <tr>
+                                         <td port="CaseCommentEmailTemplateId" align="left">
+                                         CaseCommentEmailTemplateId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="SelfRegProfileId" align="left">
+                                         SelfRegProfileId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="FirstActivationDate" align="left">
+                                         FirstActivationDate
+                                       </td><td>date</td></tr> <tr>
+                                         <td port="MaxFileSizeKb" align="left">
+                                         MaxFileSizeKb
+                                       </td><td>int</td></tr> <tr>
+                                         <td port="AllowedExtensions" align="left">
+                                         AllowedExtensions
+                                       </td><td>textarea(1000)</td></tr>            
+                </table>
+                >
+                  URL="#"
+                  tooltip=" Network "
+                ];
+            
+                            "Network" : "LastModifiedById": w -> 
+                                  "User" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label="LastModifiedBy"
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "WelcomeEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "ChangePasswordEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "ForgotPasswordEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "LockoutEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "VerificationEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "ChgEmailVerOldEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "ChgEmailVerNewEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "DeviceActEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "SelfRegMicroBatchSubErrorEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "EmailFooterLogoId": w -> 
+                                  "Document" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "CaseCommentEmailTemplateId": w -> 
+                                  "EmailTemplate" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "Network" : "SelfRegProfileId": w -> 
+                                  "Profile" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+            NetworkMember [shape=none, margin=0, label=<
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="#ffeeff" >   
+                  <tr><td colspan="3" bgcolor="lightblue"><b>NetworkMember</b></td></tr>
+             <tr>
+                                        <td  bgcolor="#99ccff" port="Id" align="left">
+                                           <b>Id</b>
+                                        </td><td>id(18)</td></tr> <tr>
+                                         <td port="NetworkId" align="left">
+                                         NetworkId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="MemberId" align="left">
+                                         MemberId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="DigestFrequency" align="left">
+                                         DigestFrequency
+                                       </td><td>picklist(40)</td></tr> <tr>
+                                         <td port="DefaultGroupNotificationFrequency" align="left">
+                                         DefaultGroupNotificationFrequency
+                                       </td><td>picklist(40)</td></tr> <tr>
+                                         <td port="PreferencesDisableAllFeedsEmail" align="left">
+                                         PreferencesDisableAllFeedsEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableFollowersEmail" align="left">
+                                         PreferencesDisableFollowersEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableProfilePostEmail" align="left">
+                                         PreferencesDisableProfilePostEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableChangeCommentEmail" align="left">
+                                         PreferencesDisableChangeCommentEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableLaterCommentEmail" align="left">
+                                         PreferencesDisableLaterCommentEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisProfPostCommentEmail" align="left">
+                                         PreferencesDisProfPostCommentEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableMentionsPostEmail" align="left">
+                                         PreferencesDisableMentionsPostEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisMentionsCommentEmail" align="left">
+                                         PreferencesDisMentionsCommentEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableLikeEmail" align="left">
+                                         PreferencesDisableLikeEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisCommentAfterLikeEmail" align="left">
+                                         PreferencesDisCommentAfterLikeEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableBookmarkEmail" align="left">
+                                         PreferencesDisableBookmarkEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableSharePostEmail" align="left">
+                                         PreferencesDisableSharePostEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableItemFlaggedEmail" align="left">
+                                         PreferencesDisableItemFlaggedEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableMessageEmail" align="left">
+                                         PreferencesDisableMessageEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableEndorsementEmail" align="left">
+                                         PreferencesDisableEndorsementEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisablePendingReviewEmail" align="left">
+                                         PreferencesDisablePendingReviewEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableDirectMessageEmail" align="left">
+                                         PreferencesDisableDirectMessageEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="PreferencesDisableBestAnswerEmail" align="left">
+                                         PreferencesDisableBestAnswerEmail
+                                       </td><td>boolean</td></tr> <tr>
+                                         <td port="ReputationPoints" align="left">
+                                         ReputationPoints
+                                       </td><td>double</td></tr> <tr>
+                                         <td port="LastChatterActivityDate" align="left">
+                                         LastChatterActivityDate
+                                       </td><td>date</td></tr>            
+                </table>
+                >
+                  URL="#"
+                  tooltip=" NetworkMember "
+                ];
+            
+                            "NetworkMember" : "NetworkId": w -> 
+                                  "Network" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label="Network"
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "NetworkMember" : "MemberId": w -> 
+                                  "User" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label="Member"
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+            NetworkMemberGroup [shape=none, margin=0, label=<
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="#ffeeff" >   
+                  <tr><td colspan="3" bgcolor="lightblue"><b>NetworkMemberGroup</b></td></tr>
+             <tr>
+                                        <td  bgcolor="#99ccff" port="Id" align="left">
+                                           <b>Id</b>
+                                        </td><td>id(18)</td></tr> <tr>
+                                         <td port="LastModifiedById" align="left">
+                                         LastModifiedById
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="NetworkId" align="left">
+                                         NetworkId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="ParentId" align="left">
+                                         ParentId
+                                       </td><td>reference(18)</td></tr> <tr>
+                                         <td port="AssignmentStatus" align="left">
+                                         AssignmentStatus
+                                       </td><td>picklist(40)</td></tr>            
+                </table>
+                >
+                  URL="#"
+                  tooltip=" NetworkMemberGroup "
+                ];
+            
+                            "NetworkMemberGroup" : "LastModifiedById": w -> 
+                                  "User" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label="LastModifiedBy"
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "NetworkMemberGroup" : "NetworkId": w -> 
+                                  "Network" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "NetworkMemberGroup" : "ParentId": w -> 
+                                  "PermissionSet" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      
+                            "NetworkMemberGroup" : "ParentId": w -> 
+                                  "Profile" : "Id" 
+                                           : e 
+                                          [arrowhead=none 
+                                           dir=back 
+                                           arrowtail=crowodot 
+                                           color="#ff99cc"
+                                           label=""
+                                           fontname="Monaco"
+                                           fontsize="9"
+                                          ];
+                      }
