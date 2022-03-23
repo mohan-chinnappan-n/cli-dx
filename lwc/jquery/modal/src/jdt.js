@@ -21,7 +21,7 @@ export default class Jdt extends LightningElement {
 
     detailsData = {};
 
-    // model realted attributes
+    // model related attributes
     @track openModal = false;
     showModal() {
         this.openModal = true;

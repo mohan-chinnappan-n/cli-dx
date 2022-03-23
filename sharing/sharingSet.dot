@@ -1,0 +1,48 @@
+digraph Metadata {
+        graph [  
+            bgcolor="#fefefe"  
+            label="Salesforce Metadata "  
+        ]
+            edge [fontsize=24]
+            node [  
+            fontname="Arial"  
+            fontsize="15"  
+            shape="rectangle"  
+            color="#99ccff"
+            style=filled
+            width=1.5
+          ];
+            ranksep = 1.5
+            nodesep = .25
+            edge [style="setlinewidth(3)"]
+            
+               SharingSet [shape=none, margin=0, label=<
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="#ffeeff" >   
+                  <tr><td colspan="3" bgcolor="lightblue"><b>SharingSet</b></td></tr> <tr><td  bgcolor="#99ccff" port="Id" align="left"><b>Id</b> </td><td>id(18)</td></tr> <tr><td port="accessMappings" align="left">accessMappings</td><td>AccessMapping[]</td></tr> <tr><td port="description" align="left">description</td><td>string(255)</td></tr>  
+                  <tr><td port="name" align="left">name</td><td>string(40)</td></tr> 
+                  <tr><td port="profiles" align="left">profiles</td><td>string[]</td></tr>
+                  
+                  
+                </table>
+                >
+                    URL="#"
+                  tooltip=" SharingSet "
+                
+];
+
+  AccessMapping [shape=none, margin=0, label=<
+                <table border="1" cellborder="1" cellspacing="0" bgcolor="#ffeeff" >  
+                
+                  <tr><td colspan="3" bgcolor="lightblue"><b>AccessMapping</b></td></tr> <tr><td  bgcolor="#99ccff" port="accessLevel" align="left"><b>accessLevel</b> </td><td>string</td></tr> <tr><td port="object" align="left">object</td><td>string</td></tr> <tr><td port="objectField" align="left">objectField</td><td>string</td></tr>  
+                  <tr><td port="userField" align="left">userField</td><td>string</td></tr>  
+                  
+                </table>
+                >
+                    URL="#"
+                  tooltip=" SharingSet "
+                
+];
+            "AccessMapping":"accessLevel":w -> "SharingSet":"AccessMappings":e    [arrowhead=none dir=back arrowtail=crowodot color="#ff99cc" label="AccessMapping" fontname="Monaco" fontsize="9" ];
+
+
+}
