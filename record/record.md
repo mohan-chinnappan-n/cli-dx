@@ -1,4 +1,4 @@
-# How to record your iPhone Screen with QuickTime:
+# How to record your iPhone Screen with QuickTime in your Mac
 
 - Plug your iPhone into your Mac using a USB Lightning cable.
 - Open QuickTime, then go to File > New Movie Recording.
