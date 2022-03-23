@@ -7,4 +7,10 @@
 - Click stop to end the recording, then save it wherever you’d like.
 
 ## Demo
-- [QT recording](img/QT-RecordInput.gif)
+- ![QT recording](img/QT-RecordInput.gif)
+
+
+## Credits and References
+
+- [QuickTime Player User Guide](https://support.apple.com/guide/quicktime-player/welcome/mac)
+- [Here’s how to record your iPhone Screen with QuickTime](https://www.appdemovideos.com/how-to-record-iphone-screen/#:~:text=Plug%20your%20iPhone%20into%20your,is%20on%20your%20iPhone's%20screen.)
