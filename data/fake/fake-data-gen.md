@@ -44,3 +44,26 @@ sfdx mohanc:data:util:gen:fake -d spec2.json -n 10
 ```
 
 ![Sample Data](img/genData.png)
+
+## Type of data supported
+
+```
+names
+addresses
+images
+animal
+vehicle
+phone
+lorem
+internet
+git
+finance
+date
+company
+commerce
+database
+datatype
+helpers
+
+```
+
