@@ -2,6 +2,7 @@
 
 ## [Woke](https://docs.getwoke.tech/installation/)
 
+- Install
 ```
 # on macOs
 
