@@ -1,10 +1,7 @@
 # Inclusive language scanning
 
-```
+- Inclusive language is language that is free from words, phrases or tones that reflect prejudiced, stereotyped or discriminatory views of particular people or groups. It is also language that doesn’t deliberately or inadvertently exclude people from being seen as part of a group.
 
-Inclusive language is language that is free from words, phrases or tones that reflect prejudiced, stereotyped or discriminatory views of particular people or groups. It is also language that doesn’t deliberately or inadvertently exclude people from being seen as part of a group.
-
-```
 
 ## [Woke](https://docs.getwoke.tech/installation/)
 
