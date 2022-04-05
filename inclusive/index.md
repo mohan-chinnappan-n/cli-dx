@@ -42,6 +42,6 @@ whitelisting ip address will solve this issue
 
 ## Similar Tools
 - [es-lint plugin](https://www.npmjs.com/package/eslint-plugin-inclusive-language)
-- [Woke VS Code extension]()
+- [Woke VS Code extension](https://marketplace.visualstudio.com/items?itemName=get-woke.vscode-woke)
 ![woke in VS Code](img/woke-in-vscode.png)
 
