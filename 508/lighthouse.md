@@ -266,7 +266,7 @@ lighthouse https://mohan-chinnappan-n5.github.io/2021/ai/book/ml/book/chapter_1.
   LH:ChromeLauncher Killing Chrome instance 18054 +0ms
 ```
 
-## View the Report
+## View the Report - Demo
 
 - ![Demo](img/508-lh-1.webm.gif)
 
