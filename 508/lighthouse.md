@@ -282,6 +282,8 @@ lighthouse https://mohan-chinnappan-n5.github.io/2021/ai/book/ml/book/chapter_1.
 
 <hr>
 <a name="inDevTools"><a>
+
+
 # Using Lighthouse in Dev Tools
 
 - ![Demo - lighthouse in dev tools](img/lex-508-lh-1.webm.gif)
