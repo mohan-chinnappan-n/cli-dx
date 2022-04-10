@@ -266,6 +266,6 @@ lighthouse https://mohan-chinnappan-n5.github.io/2021/ai/book/ml/book/chapter_1.
 
 ## View the Report
 
-- [Demo](img/508-lh-1.webm.gif)
+- ![Demo](img/508-lh-1.webm.gif)
 
 
