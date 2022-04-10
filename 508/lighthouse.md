@@ -4,6 +4,7 @@
 
 - [Using Lighthouse npm](#npm)
 - [Using Lighthouse in Chrome Dev Tools](#inDevTools)
+- [Salesforce Accessibility](./508.md)
 
 <hr>
 <a name="npm"><a>
