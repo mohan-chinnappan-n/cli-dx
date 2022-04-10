@@ -9,6 +9,8 @@ sudo npm install -g lighthouse
 ## Run it
 ```
 lighthouse https://mohan-chinnappan-n5.github.io/2021/ai/book/ml/book/chapter_1.html
+```
+```
   LH:ChromeLauncher Waiting for browser. +0ms
   LH:ChromeLauncher Waiting for browser... +1ms
   LH:ChromeLauncher Waiting for browser..... +505ms
