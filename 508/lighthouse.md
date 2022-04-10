@@ -1,6 +1,14 @@
-# Using [Lighthouse](https://www.npmjs.com/package/lighthouse) to check 508
+# Using [Lighthouse](https://developers.google.com/web/tools/lighthouse)  to check 508
 
-## Install
+## Topics
+
+- [Using Lighthouse npm](#npm)
+- [Using Lighthouse in Chrome Dev Tools](#inDevTools)
+
+<hr>
+<a name="npm"><a>
+
+## Install [Lighthouse npm](https://www.npmjs.com/package/lighthouse)
 
 ```
 sudo npm install -g lighthouse
@@ -271,6 +279,9 @@ lighthouse https://mohan-chinnappan-n5.github.io/2021/ai/book/ml/book/chapter_1.
 - ![Demo](img/508-lh-1.webm.gif)
 
 
+
+<hr>
+<a name="inDevTools"><a>
 # Using Lighthouse in Dev Tools
 
 - ![Demo - lighthouse in dev tools](img/lex-508-lh-1.webm.gif)
