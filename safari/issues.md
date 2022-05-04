@@ -10,7 +10,15 @@
 - ![main](img/iframe-source-1.png)
 - ![iframe](img/iframe.png)
 
+## Use of Enhanced Domain option
 
+- Setup Enhanced Domain
+- ![Enhanced Domain](img/enhanced-domain-1.png)
+
+- Enhanced Domain does not solve this cross domain cookie issue
+    - Enhanced Domain helps to make: **Domain names that meet the latest browser requirements and remain stabilized when your org is moved to another Salesforce instance.**
+
+- ![Demo](img/enhanceDomain-1.webm.gif)
 
 ## Help Docs
 - [Considerations for Apple Safari
