@@ -14,6 +14,7 @@
 
 - Setup Enhanced Domain
 - ![Enhanced Domain](img/enhanced-domain-1.png)
+- It takes 15 minutes wait time to provision
 
 - Enhanced Domain does not solve this cross domain cookie issue
     - Enhanced Domain helps to make: **Domain names that meet the latest browser requirements and remain stabilized when your org is moved to another Salesforce instance.**
