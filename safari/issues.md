@@ -24,3 +24,9 @@
 ## Help Docs
 - [Considerations for Apple Safari
 ](https://help.salesforce.com/s/articleView?id=sf.getstart_browser_considerations_safari.htm&type=5)
+
+
+## Toggling Prevent cross-site tracking
+
+- ![toggle](img/safari-cross-domain-toggle.png)
+- ![Demo](img/safari-cross-domain-toggle.webm.gif)
