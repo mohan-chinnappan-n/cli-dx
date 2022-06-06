@@ -20,6 +20,7 @@
 
 - Response:  Salesforce Signature Support cannot activate an inactive user for a customer in any situation. Typically these are activities performed by the administrator of the org.  [Please refer to the user account reactivation process](https://help.salesforce.com/s/articleView?id=000330190&type=1) that article outlines the process 
 
+<hr/>
 
 - Question: How to restrict using System Admin standard profile and still manage admin function through custom profiles.
 
