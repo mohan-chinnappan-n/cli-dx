@@ -34,6 +34,4 @@
 - [Require Users to Log In with SSO](https://help.salesforce.com/s/articleView?id=sf.sso_enforce_sso_login.htm&type=5)
 - [Best Practices and Tips for Implementing Single Sign-On](https://developer.salesforce.com/docs/atlas.en-us.214.0.securityImplGuide.meta/securityImplGuide/sso_tips.htm)
 - [Configure Salesforce for Delegated Authentication](https://help.salesforce.com/s/articleView?id=sf.sso_delauthentication_configuring.htm&type=5)
-- [Define Delegate Administrators](https://help.salesforce.com/s/articleView?id=sf.delegating_user_administration.htm&type=5)
-- [Delegate Administrative Duties](https://help.salesforce.com/s/articleView?id=sf.admin_delegate.htm&type=5)
 
