@@ -1,4 +1,4 @@
-# How to use DX to valdate a deployment before final deployment
+# How to use DX to validate a deployment before final deployment
 
 ## Login into the org
 ```
