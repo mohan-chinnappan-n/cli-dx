@@ -1,4 +1,8 @@
-# Using DX to retrieve Wave resources  
+# Using DX to retrieve  Wave resources  and validate deployment  
+
+## Use case
+- Retrieve Wave assets from one org
+- Deploy validation on another org or on same org
 
 ## Wave Assets
 - WaveApplication
@@ -16,9 +20,7 @@ sfdx force:auth:web:login
 Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
 ```
 
-## Use case
-- Retrieve Wave assets from one org
-- Deploy validation on another org or on same org
+
 
 
 ## retrieve resource WaveApplication
