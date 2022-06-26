@@ -1,0 +1,2 @@
+- [Restriction Rule Considerations](https://help.salesforce.com/s/articleView?id=sf.security_restriction_rule_considerations.htm&type=5)
+- [Restriction Rule Example Scenarios](https://help.salesforce.com/s/articleView?id=sf.security_restriction_rule_examples.htm&type=5)
