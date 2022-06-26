@@ -75,6 +75,6 @@ Visualization done. "open  /Users/mchinnappan/.vega/bar.json.html" in Chrome Bro
 
 ## Chart
 
-- ![viz][img/visualization.svg)
+- ![viz](img/visualization.svg)
 
 
