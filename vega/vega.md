@@ -176,4 +176,5 @@ Visualization done. "open  /Users/mchinnappan/.vega/wc.json.html" in Chrome Brow
 
 ### Word Cloud
 - ![wc](img/wc.svg)
+----------------------
 - ![sfdc](img/sfdc.svg)
