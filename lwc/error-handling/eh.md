@@ -189,3 +189,47 @@ Execute Anonymous: System.debug('Sum of a and b is ' + teach1.add(10,70)) ;
 
 ```
 
+## Apex uncompiled code
+```
+sfdx  mohanc:tooling:execute -u mohan.chinnappan.n_ea2@gmail.com -a  ~/.apex/test2.cls  
+apexCode: public with sharing class Teaching {
+
+   public Integer add(Integer a, Integer b) {
+     try {
+     	return a + b;
+     } catch (Exception e) {
+	throw new AuraHandledException('Error : ' + e.getMessage() );
+
+    }
+   } 
+
+   // no error handling here
+   public Integer mul(Integer a, Integer b) {
+     	return a *  b;
+
+   } 
+
+
+
+}
+
+Teaching teach1 = new Teaching();
+
+System.debug('Sum of a and b is ' + teach1.add(10,'mango')) ;
+System.debug('Mul of a and b is ' + teach1.mul(10,'mango')) ;
+
+compiled?: false
+executed?: false
+{
+  line: 24,
+  column: 44,
+  compiled: false,
+  success: false,
+  compileProblem: 'Method does not exist or incorrect signature: void add(Integer, String) from the type Teaching',
+  exceptionStackTrace: null,
+  exceptionMessage: null
+}
+
+```
+
+
