@@ -57,7 +57,7 @@ cat ~/.xml/article.xml
 
 
 ```
-cat ~/.xml/article.xml
+cat ~/.xml/article.xsl
 
 ```
 
