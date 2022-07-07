@@ -1,0 +1,7 @@
+<file original="Salesforce" source-language="en_US" target-language="es" translation-type="metadata" datatype="xml">
+<trans-unit id="CustomField.Account.Nickname.FieldLabel" maxwidth="40" size-unit="char">
+    <source>Nickname</source>
+    <target>Apodo</target>
+    <note>The person’s nickname, or what they prefer to be called.</note>
+</trans-unit>
+</file>
