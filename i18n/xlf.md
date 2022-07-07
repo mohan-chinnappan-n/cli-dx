@@ -1,4 +1,4 @@
-# xliff file from Translation Workbench
+# xliff (XML Localization Interchange File Format) file from Translation Workbench
 
 ![FR](img/en-fr1.png)
 
