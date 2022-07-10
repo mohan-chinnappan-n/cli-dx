@@ -172,3 +172,21 @@ total 104
 ## View Deployment status in the ORG
 
 ![Deployment Status](img/deploy-checkOnly.png)
+
+## How about a single script to all these steps
+- Note this validate against the same org it retrived from
+- To validate against a differnent you need to change the user name in the  deploy command
+
+- Here is the bash command (run-all.sh)
+- run it like for 4 min wait time:	``` bash run-all.sh 4 ```
+```
+echo =====running retrieve====
+sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "FlexiPage" > run2.sh
+echo ----going to sleep for $1 min.----
+sleep $1m
+echo =====running checkRetrieveStatus====
+bash run2.sh
+echo =====running validation for the SAME org====
+bash run-validation.sh
+
+```
