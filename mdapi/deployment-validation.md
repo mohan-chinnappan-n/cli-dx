@@ -122,7 +122,7 @@ total 104
 { "checkOnly": true }
 ```
 
-### If you like run Apex Test Coverage check
+### If you like to run Apex Test Coverage check
 
 ```
 cat options.json 
@@ -133,8 +133,6 @@ cat options.json
 }
 ```
 
-
-```
 ## Deploy this Zip file with ```checkOnly```
 ```
 ~/deployment-validate  > sfdx mohanc:mdapi:deploy -u mohan.chinnappan.n_ea2@gmail.com -z 09S3h000006Ce1dEAC.zip.txt -o options.json 
