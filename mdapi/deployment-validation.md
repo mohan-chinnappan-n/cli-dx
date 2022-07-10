@@ -122,6 +122,19 @@ total 104
 { "checkOnly": true }
 ```
 
+### If you like run Apex Test Coverage check
+
+```
+cat options.json 
+```
+```json
+{ "checkOnly": true,
+  "runAllTests": true
+}
+```
+
+
+```
 ## Deploy this Zip file with ```checkOnly```
 ```
 ~/deployment-validate  > sfdx mohanc:mdapi:deploy -u mohan.chinnappan.n_ea2@gmail.com -z 09S3h000006Ce1dEAC.zip.txt -o options.json 
@@ -173,6 +186,9 @@ total 104
 
 ![Deployment Status](img/deploy-checkOnly.png)
 
+### With Apex Test Coverage 
+
+![Deployment Status - Apex Code Coverage](img/deply-checkOnly-with-apextest.png)
 ## How about a single script to all these steps
 - Note this validate against the same org it retrived from
 - To validate against a differnent you need to change the user name in the  deploy command
