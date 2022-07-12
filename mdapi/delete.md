@@ -1,4 +1,4 @@
-# How to delete a Apex Class using DX
+# How to delete  Apex Class using DX
 
 - [Refer](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/mdapi/deployment-validation.md)
 
