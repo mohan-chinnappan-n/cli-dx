@@ -76,7 +76,7 @@ open /tmp/apex/pmd-results.csv
 ```
 - [Sample CSV Ouput](img/pmd-results_s.csv)
 
-
+-----------------
 ## Run pmd html output
 - your apex class files are at: /tmp/apex/unpackaged/classes/
 - html output
