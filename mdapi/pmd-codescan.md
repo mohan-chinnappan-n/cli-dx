@@ -61,7 +61,23 @@ jar xvf  09S3h000006DK3lEAG.zip
 
 -----------------
 
-## Run pmd
+## Run pmd csv output
+- your apex class files are at: /tmp/apex/unpackaged/classes/
+- csv output
+```
+pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f csv > /tmp/apex/pmd-results.csv
+```
+
+## Open the results html file
+
+```
+open /tmp/apex/pmd-results.csv
+
+```
+- Sample Ouput
+
+
+## Run pmd html output
 - your apex class files are at: /tmp/apex/unpackaged/classes/
 - html output
 ```
