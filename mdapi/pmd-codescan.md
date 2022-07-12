@@ -1,4 +1,4 @@
-# PMD code scan using DX 
+# PMD Apex code scan using DX 
 
 
 ## Make sure you have java installed
