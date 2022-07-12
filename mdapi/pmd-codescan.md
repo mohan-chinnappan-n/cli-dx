@@ -74,7 +74,7 @@ pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f cs
 open /tmp/apex/pmd-results.csv
 
 ```
-- Sample Ouput
+- [Sample CSV Ouput](img/pmd-results_s.csv)
 
 
 ## Run pmd html output
