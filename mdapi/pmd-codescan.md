@@ -29,7 +29,7 @@ cp run.sh pmd-run.sh
 ```
 
 - put this folder: ```pmd-bin-6.47.0/bin``` in your PATH (```~/.zshrc or ~/.bashrc```)
-
+- make it executable ```chmod +x pmd-run.sh```
 
 ## Extract Apex Classes from your Org
 
