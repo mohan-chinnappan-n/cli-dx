@@ -68,7 +68,7 @@ jar xvf  09S3h000006DK3lEAG.zip
 pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f csv > /tmp/apex/pmd-results.csv
 ```
 
-## Open the results html file
+### Open the results csv file
 
 ```
 open /tmp/apex/pmd-results.csv
@@ -84,7 +84,7 @@ open /tmp/apex/pmd-results.csv
 pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f html > /tmp/apex/pmd-results.html
 ```
 
-## Open the results html file
+### Open the results html file
 
 ```
 open /tmp/apex/pmd-results.html
