@@ -1,4 +1,4 @@
-# Using PMD code scan using DX and command line 
+# PMD code scan using DX 
 
 
 ## Make sure you have java installed
