@@ -80,3 +80,6 @@ Deploy ID: 0Af3h00000QZQtSCAX
  MyHelloWorld ApexClass ../unpackaged/classes/MyHelloWorld.cls-meta.xml 
 Deploy Succeeded.
 ```
+## Deployment status
+
+![Delete status](img/delete-deploy-status.png)
