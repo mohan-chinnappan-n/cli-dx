@@ -39,13 +39,14 @@ sfdx force:auth:web:login
 Successfully authorized mohan.chinnappan.n_ea2@gmail.com with org ID 00D3h000007R1LuEAK
 
 ```
-
+### Get the Apex Classes using DX
 ```
 sfdx mohanc:mdapi:retrieve -u mohan.chinnappan.n_ea2@gmail.com -t "ApexClass"
-sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i "09S3h000006DK3lEAG"
+
 cd /tmp/
 /tmp  >mkdir apex
 /tmp  >cd apex
+
 /tmp/apex  >sfdx mohanc:mdapi:checkRetrieveStatus -u mohan.chinnappan.n_ea2@gmail.com -i "09S3h000006DK3lEAG"
 jar xvf  09S3h000006DK3lEAG.zip
 
@@ -53,8 +54,12 @@ jar xvf  09S3h000006DK3lEAG.zip
 ```
 
 ## Download the apex_ruleset.xml to your ~/.pmd folder 
-[apex_ruleset.xml](pmd-rules/apex_ruleset.xml)
+- create folder ```mkdir ~/.pmd```
+- copy the apex_ruleset.xml from:
+	- [apex_ruleset.xml](pmd-rules/apex_ruleset.xml)
+	- to the folder ~/.pmd
 
+-----------------
 
 ## Run pmd
 - your apex class files are at: /tmp/apex/unpackaged/classes/
