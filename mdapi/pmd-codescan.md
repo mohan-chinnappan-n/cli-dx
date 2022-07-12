@@ -75,4 +75,4 @@ open /tmp/apex/pmd-results.html
 
 ```
 
-![img/pmd-result:xs-1.png]
+![Sample html results](img/pmd-result:xs-1.png)
