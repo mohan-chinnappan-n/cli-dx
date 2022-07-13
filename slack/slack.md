@@ -85,6 +85,6 @@ Successfully send message 1657753210.210029 in conversation: devops
 
 ```
 
-- ![Slack ui-2](inmg/slack-2.png)
+- ![Slack ui-2](img/slack-2.png)
 
 
