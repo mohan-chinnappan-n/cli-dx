@@ -38,7 +38,13 @@ sfdx mohanc:data:util:gen:fake -d ls-spec.json -n 10
 
 ```
 
-
-
+## Next steps
+- Redirect it to a csv file
+- Align the headers to this: 
+```
+Name,Company,Phone ,Email,Zip/Postal Code,Industry,End Customer Type
+Mrs. Dennis Ritchie,test,1234567890,test1000@testleads.com,12345,tested,tested
+...
+```
 
 
