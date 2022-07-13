@@ -102,6 +102,8 @@ cat ~/.xml/article.xmlarticle.xml.out.xml.html
     - Mr. Bar
 ```
 
+## XML2CSV tool
+- [xml2csv](https://mohan-chinnappan-n2.github.io/data/util/xml2csv.html)
 
 ## References
 
