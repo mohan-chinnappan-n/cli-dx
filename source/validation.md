@@ -441,3 +441,11 @@ Opening org 00D3h000007R1LuEAK as user mohan.chinnappan.n_ea2@gmail.com
 Waiting to resolve the Lightning Experience-enabled custom domain...... done
 ```
 ![deploy-validation-2](img/deploy-validation-2.png)
+
+----------------
+
+
+## Deploy using this ID: mohan.chinnappan.n_ea2@gmail.com 
+```
+sfdx force:source:deploy -q -0Af3h00000QZoegCAD - u  mohan.chinnappan.n_ea2@gmail.com
+```
