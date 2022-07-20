@@ -445,7 +445,7 @@ Waiting to resolve the Lightning Experience-enabled custom domain...... done
 ----------------
 
 
-## Deploy using this ID: mohan.chinnappan.n_ea2@gmail.com 
+## Deploy using this ID: 0Af3h00000QZoegCAD
 ```
-sfdx force:source:deploy -q -0Af3h00000QZoegCAD - u  mohan.chinnappan.n_ea2@gmail.com
+sfdx force:source:deploy -q 0Af3h00000QZoegCAD - u  mohan.chinnappan.n_ea2@gmail.com
 ```
