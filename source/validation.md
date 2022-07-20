@@ -70,7 +70,8 @@ Successfully validated the deployment. 105 components deployed and 0 tests run.
 - Yes
 
 ### Bash script
-
+- [Script](./validate.sh)
+- make it executable ```chmod +x validate.sh```
 ```bash
 
 #!/bin/bash
