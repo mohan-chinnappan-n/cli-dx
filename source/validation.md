@@ -1,4 +1,4 @@
-# Deployment validations fource source commands
+# Deployment validations using force:source commands
 
 
 ## Login into the org
