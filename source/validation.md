@@ -65,7 +65,7 @@ Successfully validated the deployment. 105 components deployed and 0 tests run.
 - ![Deployment Valiation](img//deploy-validation-1.png)
 
 
-## Can I Do it in a single script
+## Can I Do it in a single script?
 
 - Yes
 
