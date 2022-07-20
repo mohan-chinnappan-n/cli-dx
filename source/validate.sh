@@ -68,7 +68,7 @@ echo  "=== Validating the source for the quick deployment ... ==="
 sfdx force:source:deploy -u $tun  -m $mt -c -l RunLocalTests
 
 echo "=== Opening the org for checking the deployment status ... ==="
-sfdx force:org:open -u $un  -p lightning/setup/DeployStatus/home
+sfdx force:org:open -u $tun  -p lightning/setup/DeployStatus/home
 
 
 
