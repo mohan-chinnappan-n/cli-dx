@@ -74,6 +74,7 @@ Successfully validated the deployment. 105 components deployed and 0 tests run.
 - make it executable ```chmod +x validate.sh```
 ```bash
 
+
 #!/bin/bash
 ##--------------------------------------##
 # validate.sh
@@ -96,6 +97,7 @@ sf_login() {
 		echo "=== login into a PROD or Dev Edition ... ==="
 		sfdx force:auth:web:login -r https://login.salesforce.com
 		;;
+	esac
 
 }
 
@@ -131,6 +133,10 @@ tun=$6
 
 echo "=== Login into the Source org ==="
 sf_login $sbx_prod
+
+# Remove the validate2 folder if it is already there
+[ -e ~/.prj/validate2 ] && rm  ~/.prj/validate2
+
 
 echo "=== Creating the the project $project ... ==="
 sfdx force:project:create -n $project 
