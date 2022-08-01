@@ -1,0 +1,1613 @@
+{
+    "user": {
+        "userId": "0053h000002xQ5sAAE",
+        "name": "Mohan Chinnappan",
+        "userName": "mohan.chinnappan.n_ea2@gmail.com",
+        "smallPhotoUrl": "https://mohansun-ea-02-dev-ed.file.force.com/profilephoto/7293h000000DuZq/T",
+        "fullPhotoUrl": "https://mohansun-ea-02-dev-ed.file.force.com/profilephoto/7293h000000DuZq/F"
+    },
+    "profile": {
+        "profileId": "00e3h000001kqJMAAY",
+        "name": "System Administrator"
+    },
+    "role": {
+        "data": {
+            "attributes": {
+                "type": "UserRole",
+                "url": "/services/data/v55.0/sobjects/UserRole/00E3h000001JaqUEAS"
+            },
+            "Id": "00E3h000001JaqUEAS",
+            "Name": "CEO",
+            "ParentRoleId": null,
+            "RollupDescription": "CEO",
+            "OpportunityAccessForAccountOwner": "Edit",
+            "CaseAccessForAccountOwner": "Edit",
+            "ContactAccessForAccountOwner": "Edit",
+            "ForecastUserId": null,
+            "MayForecastManagerShare": false,
+            "DeveloperName": "CEO",
+            "PortalAccountId": null,
+            "PortalType": "None",
+            "PortalAccountOwnerId": null
+        }
+    },
+    "perms": {
+        "PermissionsViewAllData": true,
+        "PermissionsModifyAllData": true,
+        "PermissionsManageDataIntegrations": true,
+        "data": {
+            "attributes": {
+                "type": "Profile",
+                "url": "/services/data/v55.0/sobjects/Profile/00e3h000001kqJMAAY"
+            },
+            "Id": "00e3h000001kqJMAAY",
+            "Name": "System Administrator",
+            "PermissionsViewAllData": true,
+            "PermissionsModifyAllData": true,
+            "PermissionsManageDataIntegrations": true
+        }
+    },
+    "permset": {
+        "data": [
+            {
+                "attributes": {
+                    "type": "PermissionSet",
+                    "url": "/services/data/v55.0/sobjects/PermissionSet/0PS3h000002PwNZGA0"
+                },
+                "Id": "0PS3h000002PwNZGA0",
+                "Label": "00ex00000018ozh_128_09_04_12_1",
+                "PermissionsViewAllData": true,
+                "PermissionsModifyAllData": true,
+                "PermissionsManageDataIntegrations": true
+            }
+        ]
+    },
+    "share": {
+        "account": [
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033f9xzAAA"
+                },
+                "Id": "00r3h000033f9xzAAA",
+                "AccountId": "0013h00000FfgCMAAZ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "All",
+                "OpportunityAccessLevel": "Edit",
+                "CaseAccessLevel": "Edit",
+                "ContactAccessLevel": "Edit",
+                "RowCause": "Owner"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fA4bAAE"
+                },
+                "Id": "00r3h000033fA4bAAE",
+                "AccountId": "0013h00000FfgCNAAZ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "All",
+                "OpportunityAccessLevel": "Edit",
+                "CaseAccessLevel": "Edit",
+                "ContactAccessLevel": "Edit",
+                "RowCause": "Owner"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAe4AAE"
+                },
+                "Id": "00r3h000033fAe4AAE",
+                "AccountId": "0013h00000Ffg4aAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h00004R4gqfAAB"
+                },
+                "Id": "00r3h00004R4gqfAAB",
+                "AccountId": "0013h000018ziseAAA",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "All",
+                "OpportunityAccessLevel": "Edit",
+                "CaseAccessLevel": "Edit",
+                "ContactAccessLevel": "Edit",
+                "RowCause": "Owner"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h00004luUr9AAE"
+                },
+                "Id": "00r3h00004luUr9AAE",
+                "AccountId": "0013h00001C1KE0AAN",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "All",
+                "OpportunityAccessLevel": "Edit",
+                "CaseAccessLevel": "Edit",
+                "ContactAccessLevel": "Edit",
+                "RowCause": "Owner"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAIGAA2"
+                },
+                "Id": "00r3h000033fAIGAA2",
+                "AccountId": "0013h00000FffwFAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAHvAAM"
+                },
+                "Id": "00r3h000033fAHvAAM",
+                "AccountId": "0013h00000FffyGAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAHZAA2"
+                },
+                "Id": "00r3h000033fAHZAA2",
+                "AccountId": "0013h00000FffzCAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAINAA2"
+                },
+                "Id": "00r3h000033fAINAA2",
+                "AccountId": "0013h00000FffwLAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAJEAA2"
+                },
+                "Id": "00r3h000033fAJEAA2",
+                "AccountId": "0013h00000Ffg0jAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAOaAAM"
+                },
+                "Id": "00r3h000033fAOaAAM",
+                "AccountId": "0013h00000FffwXAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAOmAAM"
+                },
+                "Id": "00r3h000033fAOmAAM",
+                "AccountId": "0013h00000FffyeAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fADhAAM"
+                },
+                "Id": "00r3h000033fADhAAM",
+                "AccountId": "0013h00000FffwqAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAhqAAE"
+                },
+                "Id": "00r3h000033fAhqAAE",
+                "AccountId": "0013h00000FffwrAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAhyAAE"
+                },
+                "Id": "00r3h000033fAhyAAE",
+                "AccountId": "0013h00000FffxbAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAUgAAM"
+                },
+                "Id": "00r3h000033fAUgAAM",
+                "AccountId": "0013h00000Fffx0AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAUzAAM"
+                },
+                "Id": "00r3h000033fAUzAAM",
+                "AccountId": "0013h00000FffxAAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAUmAAM"
+                },
+                "Id": "00r3h000033fAUmAAM",
+                "AccountId": "0013h00000FffzYAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAUKAA2"
+                },
+                "Id": "00r3h000033fAUKAA2",
+                "AccountId": "0013h00000Ffg2DAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAJXAA2"
+                },
+                "Id": "00r3h000033fAJXAA2",
+                "AccountId": "0013h00000FffxGAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAJeAAM"
+                },
+                "Id": "00r3h000033fAJeAAM",
+                "AccountId": "0013h00000FffzPAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAK3AAM"
+                },
+                "Id": "00r3h000033fAK3AAM",
+                "AccountId": "0013h00000Ffg4KAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAeBAAU"
+                },
+                "Id": "00r3h000033fAeBAAU",
+                "AccountId": "0013h00000FffxuAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAdzAAE"
+                },
+                "Id": "00r3h000033fAdzAAE",
+                "AccountId": "0013h00000FffyrAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAdNAAU"
+                },
+                "Id": "00r3h000033fAdNAAU",
+                "AccountId": "0013h00000Fffz7AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAe6AAE"
+                },
+                "Id": "00r3h000033fAe6AAE",
+                "AccountId": "0013h00000Ffg1EAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAd8AAE"
+                },
+                "Id": "00r3h000033fAd8AAE",
+                "AccountId": "0013h00000Ffg37AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAe8AAE"
+                },
+                "Id": "00r3h000033fAe8AAE",
+                "AccountId": "0013h00000Ffg3wAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAbkAAE"
+                },
+                "Id": "00r3h000033fAbkAAE",
+                "AccountId": "0013h00000FffxzAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAbTAAU"
+                },
+                "Id": "00r3h000033fAbTAAU",
+                "AccountId": "0013h00000FffzOAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fALRAA2"
+                },
+                "Id": "00r3h000033fALRAA2",
+                "AccountId": "0013h00000Fffy2AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAeZAAU"
+                },
+                "Id": "00r3h000033fAeZAAU",
+                "AccountId": "0013h00000FffyCAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAgzAAE"
+                },
+                "Id": "00r3h000033fAgzAAE",
+                "AccountId": "0013h00000FffyLAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAgaAAE"
+                },
+                "Id": "00r3h000033fAgaAAE",
+                "AccountId": "0013h00000FffyZAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAh7AAE"
+                },
+                "Id": "00r3h000033fAh7AAE",
+                "AccountId": "0013h00000Ffg0HAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAZXAA2"
+                },
+                "Id": "00r3h000033fAZXAA2",
+                "AccountId": "0013h00000FffyQAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAa2AAE"
+                },
+                "Id": "00r3h000033fAa2AAE",
+                "AccountId": "0013h00000Ffg2gAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAZMAA2"
+                },
+                "Id": "00r3h000033fAZMAA2",
+                "AccountId": "0013h00000Ffg3RAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fASpAAM"
+                },
+                "Id": "00r3h000033fASpAAM",
+                "AccountId": "0013h00000FffylAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fASNAA2"
+                },
+                "Id": "00r3h000033fASNAA2",
+                "AccountId": "0013h00000Ffg1fAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fASxAAM"
+                },
+                "Id": "00r3h000033fASxAAM",
+                "AccountId": "0013h00000Ffg1kAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAXnAAM"
+                },
+                "Id": "00r3h000033fAXnAAM",
+                "AccountId": "0013h00000FffzXAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAXmAAM"
+                },
+                "Id": "00r3h000033fAXmAAM",
+                "AccountId": "0013h00000Ffg1BAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAXwAAM"
+                },
+                "Id": "00r3h000033fAXwAAM",
+                "AccountId": "0013h00000Ffg3pAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAMgAAM"
+                },
+                "Id": "00r3h000033fAMgAAM",
+                "AccountId": "0013h00000FffzqAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAZ7AAM"
+                },
+                "Id": "00r3h000033fAZ7AAM",
+                "AccountId": "0013h00000FffzuAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAC9AAM"
+                },
+                "Id": "00r3h000033fAC9AAM",
+                "AccountId": "0013h00000Ffg0JAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAC4AAM"
+                },
+                "Id": "00r3h000033fAC4AAM",
+                "AccountId": "0013h00000Ffg4WAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAL4AAM"
+                },
+                "Id": "00r3h000033fAL4AAM",
+                "AccountId": "0013h00000Ffg0aAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAKtAAM"
+                },
+                "Id": "00r3h000033fAKtAAM",
+                "AccountId": "0013h00000Ffg0hAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAKiAAM"
+                },
+                "Id": "00r3h000033fAKiAAM",
+                "AccountId": "0013h00000Ffg3eAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAKwAAM"
+                },
+                "Id": "00r3h000033fAKwAAM",
+                "AccountId": "0013h00000Ffg44AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fACcAAM"
+                },
+                "Id": "00r3h000033fACcAAM",
+                "AccountId": "0013h00000Ffg0cAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAFDAA2"
+                },
+                "Id": "00r3h000033fAFDAA2",
+                "AccountId": "0013h00000Ffg0oAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fABFAA2"
+                },
+                "Id": "00r3h000033fABFAA2",
+                "AccountId": "0013h00000Ffg0wAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fATIAA2"
+                },
+                "Id": "00r3h000033fATIAA2",
+                "AccountId": "0013h00000Ffg1AAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAbEAAU"
+                },
+                "Id": "00r3h000033fAbEAAU",
+                "AccountId": "0013h00000Ffg1CAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAanAAE"
+                },
+                "Id": "00r3h000033fAanAAE",
+                "AccountId": "0013h00000Ffg2rAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAR7AAM"
+                },
+                "Id": "00r3h000033fAR7AAM",
+                "AccountId": "0013h00000Ffg2TAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fARJAA2"
+                },
+                "Id": "00r3h000033fARJAA2",
+                "AccountId": "0013h00000Ffg46AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAVMAA2"
+                },
+                "Id": "00r3h000033fAVMAA2",
+                "AccountId": "0013h00000Ffg2vAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAW0AAM"
+                },
+                "Id": "00r3h000033fAW0AAM",
+                "AccountId": "0013h00000Ffg35AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAfmAAE"
+                },
+                "Id": "00r3h000033fAfmAAE",
+                "AccountId": "0013h00000Ffg4JAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAE2AAM"
+                },
+                "Id": "00r3h000033fAE2AAM",
+                "AccountId": "0013h00000Ffg4bAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAOJAA2"
+                },
+                "Id": "00r3h000033fAOJAA2",
+                "AccountId": "0013h00000Ffg54AAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fARAAA2"
+                },
+                "Id": "00r3h000033fARAAA2",
+                "AccountId": "0013h00000Ffg5CAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fASFAA2"
+                },
+                "Id": "00r3h000033fASFAA2",
+                "AccountId": "0013h00000Ffg5DAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fABKAA2"
+                },
+                "Id": "00r3h000033fABKAA2",
+                "AccountId": "0013h00000Ffg5FAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAJwAAM"
+                },
+                "Id": "00r3h000033fAJwAAM",
+                "AccountId": "0013h00000Ffg5MAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAf3AAE"
+                },
+                "Id": "00r3h000033fAf3AAE",
+                "AccountId": "0013h00000Ffg5OAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAFGAA2"
+                },
+                "Id": "00r3h000033fAFGAA2",
+                "AccountId": "0013h00000Ffg5hAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAS7AAM"
+                },
+                "Id": "00r3h000033fAS7AAM",
+                "AccountId": "0013h00000Ffg5mAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fATDAA2"
+                },
+                "Id": "00r3h000033fATDAA2",
+                "AccountId": "0013h00000Ffg5nAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fARBAA2"
+                },
+                "Id": "00r3h000033fARBAA2",
+                "AccountId": "0013h00000Ffg6VAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAakAAE"
+                },
+                "Id": "00r3h000033fAakAAE",
+                "AccountId": "0013h00000Ffg6aAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAXxAAM"
+                },
+                "Id": "00r3h000033fAXxAAM",
+                "AccountId": "0013h00000Ffg7dAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAbaAAE"
+                },
+                "Id": "00r3h000033fAbaAAE",
+                "AccountId": "0013h00000Ffg7eAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fALyAAM"
+                },
+                "Id": "00r3h000033fALyAAM",
+                "AccountId": "0013h00000Ffg8AAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAIEAA2"
+                },
+                "Id": "00r3h000033fAIEAA2",
+                "AccountId": "0013h00000Ffg8PAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAeMAAU"
+                },
+                "Id": "00r3h000033fAeMAAU",
+                "AccountId": "0013h00000Ffg8aAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fARRAA2"
+                },
+                "Id": "00r3h000033fARRAA2",
+                "AccountId": "0013h00000Ffg9BAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAYtAAM"
+                },
+                "Id": "00r3h000033fAYtAAM",
+                "AccountId": "0013h00000Ffg9WAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAIIAA2"
+                },
+                "Id": "00r3h000033fAIIAA2",
+                "AccountId": "0013h00000Ffg9ZAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAasAAE"
+                },
+                "Id": "00r3h000033fAasAAE",
+                "AccountId": "0013h00000FfgA6AAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAdwAAE"
+                },
+                "Id": "00r3h000033fAdwAAE",
+                "AccountId": "0013h00000FfgAcAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fASgAAM"
+                },
+                "Id": "00r3h000033fASgAAM",
+                "AccountId": "0013h00000FfgAdAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAaSAAU"
+                },
+                "Id": "00r3h000033fAaSAAU",
+                "AccountId": "0013h00000FfgAkAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAdYAAU"
+                },
+                "Id": "00r3h000033fAdYAAU",
+                "AccountId": "0013h00000FfgApAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAKpAAM"
+                },
+                "Id": "00r3h000033fAKpAAM",
+                "AccountId": "0013h00000FfgBGAAZ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAY1AAM"
+                },
+                "Id": "00r3h000033fAY1AAM",
+                "AccountId": "0013h00000FfgBLAAZ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAMGAA2"
+                },
+                "Id": "00r3h000033fAMGAA2",
+                "AccountId": "0013h00000FfgBhAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAXYAA2"
+                },
+                "Id": "00r3h000033fAXYAA2",
+                "AccountId": "0013h00000FfgBmAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAVpAAM"
+                },
+                "Id": "00r3h000033fAVpAAM",
+                "AccountId": "0013h00000FfgBuAAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAafAAE"
+                },
+                "Id": "00r3h000033fAafAAE",
+                "AccountId": "0013h00000FfgC1AAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fALVAA2"
+                },
+                "Id": "00r3h000033fALVAA2",
+                "AccountId": "0013h00000FfgC5AAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAG5AAM"
+                },
+                "Id": "00r3h000033fAG5AAM",
+                "AccountId": "0013h00000Ffg8mAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fANXAA2"
+                },
+                "Id": "00r3h000033fANXAA2",
+                "AccountId": "0013h00000Ffg4dAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAcrAAE"
+                },
+                "Id": "00r3h000033fAcrAAE",
+                "AccountId": "0013h00000Ffg5aAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033wF3RAAU"
+                },
+                "Id": "00r3h000033wF3RAAU",
+                "AccountId": "0013h00000Ffg6kAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAQlAAM"
+                },
+                "Id": "00r3h000033fAQlAAM",
+                "AccountId": "0013h00000Ffg7TAAR",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAWIAA2"
+                },
+                "Id": "00r3h000033fAWIAA2",
+                "AccountId": "0013h00000Ffg8bAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAWOAA2"
+                },
+                "Id": "00r3h000033fAWOAA2",
+                "AccountId": "0013h00000Ffg9bAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAPIAA2"
+                },
+                "Id": "00r3h000033fAPIAA2",
+                "AccountId": "0013h00000Ffg8kAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAPJAA2"
+                },
+                "Id": "00r3h000033fAPJAA2",
+                "AccountId": "0013h00000Ffg9mAAB",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            },
+            {
+                "attributes": {
+                    "type": "AccountShare",
+                    "url": "/services/data/v55.0/sobjects/AccountShare/00r3h000033fAPVAA2"
+                },
+                "Id": "00r3h000033fAPVAA2",
+                "AccountId": "0013h00000FfgA0AAJ",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "AccountAccessLevel": "Read",
+                "OpportunityAccessLevel": "None",
+                "CaseAccessLevel": "None",
+                "ContactAccessLevel": "None",
+                "RowCause": "ImplicitParent"
+            }
+        ],
+        "oppty": [
+            {
+                "attributes": {
+                    "type": "OpportunityShare",
+                    "url": "/services/data/v55.0/sobjects/OpportunityShare/00t3h00001VnMzVAAV"
+                },
+                "Id": "00t3h00001VnMzVAAV",
+                "OpportunityId": "0063h000008wq3kAAA",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "OpportunityAccessLevel": "Read",
+                "RowCause": "Team"
+            },
+            {
+                "attributes": {
+                    "type": "OpportunityShare",
+                    "url": "/services/data/v55.0/sobjects/OpportunityShare/00t3h00003FnsCeAAJ"
+                },
+                "Id": "00t3h00003FnsCeAAJ",
+                "OpportunityId": "0063h00000IXyjrAAD",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "OpportunityAccessLevel": "All",
+                "RowCause": "Owner"
+            },
+            {
+                "attributes": {
+                    "type": "OpportunityShare",
+                    "url": "/services/data/v55.0/sobjects/OpportunityShare/00t3h00003Fo1YoAAJ"
+                },
+                "Id": "00t3h00003Fo1YoAAJ",
+                "OpportunityId": "0063h00000IXyzVAAT",
+                "UserOrGroupId": "0053h000002xQ5sAAE",
+                "OpportunityAccessLevel": "All",
+                "RowCause": "Owner"
+            }
+        ]
+    },
+    "org": [
+        {
+            "attributes": {
+                "type": "Organization",
+                "url": "/services/data/v55.0/sobjects/Organization/00D3h000007R1LuEAK"
+            },
+            "Id": "00D3h000007R1LuEAK",
+            "Name": "salesforce",
+            "NamespacePrefix": null,
+            "OrganizationType": "Developer Edition",
+            "DefaultAccountAccess": "None",
+            "DefaultCampaignAccess": "All",
+            "DefaultCaseAccess": "None",
+            "DefaultContactAccess": "ControlledByParent",
+            "DefaultLeadAccess": "ReadEditTransfer",
+            "DefaultOpportunityAccess": "None",
+            "DefaultPricebookAccess": "ReadSelect",
+            "InstanceName": "NA111",
+            "IsSandbox": false,
+            "MonthlyPageViewsEntitlement": 0,
+            "MonthlyPageViewsUsed": 0
+        }
+    ],
+    "teams": {
+        "oppty": [
+            {
+                "attributes": {
+                    "type": "OpportunityTeamMember",
+                    "url": "/services/data/v55.0/sobjects/OpportunityTeamMember/00q3h000000FMRdAAO"
+                },
+                "Id": "00q3h000000FMRdAAO",
+                "Name": "Mohan Chinnappan",
+                "OpportunityAccessLevel": "Read",
+                "OpportunityId": "0063h000008wq3kAAA",
+                "TeamMemberRole": "Account Manager",
+                "Title": null
+            }
+        ]
+    }
+}

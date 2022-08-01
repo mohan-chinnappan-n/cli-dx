@@ -1,0 +1,2278 @@
+{
+    "objects": {
+        "Account": {
+            "apiName": "Account",
+            "keyPrefix": "001",
+            "label": "Account",
+            "labelPlural": "Accounts",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Account"
+        },
+        "AccountBrand": {
+            "apiName": "AccountBrand",
+            "keyPrefix": "0TU",
+            "label": "Account Brand",
+            "labelPlural": "Account Brands",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AccountBrand"
+        },
+        "AccountHistory": {
+            "apiName": "AccountHistory",
+            "keyPrefix": null,
+            "label": "Account History",
+            "labelPlural": "Account History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AccountHistory"
+        },
+        "AccountPartner": {
+            "apiName": "AccountPartner",
+            "keyPrefix": "00I",
+            "label": "Account Partner",
+            "labelPlural": "Account Partner",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AccountPartner"
+        },
+        "AccountTeamMember": {
+            "apiName": "AccountTeamMember",
+            "keyPrefix": "01M",
+            "label": "Account Team Member",
+            "labelPlural": "Account Team",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AccountTeamMember"
+        },
+        "AcquiredAccount__c": {
+            "apiName": "AcquiredAccount__c",
+            "keyPrefix": "a01",
+            "label": "Acquired Account",
+            "labelPlural": "Acquired Accounts",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AcquiredAccount__c"
+        },
+        "ActiveScratchOrg": {
+            "apiName": "ActiveScratchOrg",
+            "keyPrefix": "2AS",
+            "label": "Active Scratch Org",
+            "labelPlural": "Active Scratch Orgs",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ActiveScratchOrg"
+        },
+        "ActiveScratchOrgHistory": {
+            "apiName": "ActiveScratchOrgHistory",
+            "keyPrefix": null,
+            "label": "Active Scratch Org History",
+            "labelPlural": "Active Scratch Org History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ActiveScratchOrgHistory"
+        },
+        "AlternativePaymentMethod": {
+            "apiName": "AlternativePaymentMethod",
+            "keyPrefix": "8Z7",
+            "label": "Alternative Payment Method",
+            "labelPlural": "Alternative Payment Methods",
+            "nameFields": [
+                "AlternativePaymentMethodNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AlternativePaymentMethod"
+        },
+        "ApiAnomalyEventStore": {
+            "apiName": "ApiAnomalyEventStore",
+            "keyPrefix": "0j6",
+            "label": "API Anomaly Event Store",
+            "labelPlural": "API Anomaly Event Stores",
+            "nameFields": [
+                "ApiAnomalyEventNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ApiAnomalyEventStore"
+        },
+        "AppAnalyticsQueryRequest": {
+            "apiName": "AppAnalyticsQueryRequest",
+            "keyPrefix": "0XI",
+            "label": "App Analytics Query Request",
+            "labelPlural": "App Analytics Query Requests",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AppAnalyticsQueryRequest"
+        },
+        "AppMenuItem": {
+            "apiName": "AppMenuItem",
+            "keyPrefix": "0DS",
+            "label": "AppMenuItem",
+            "labelPlural": "AppMenuItems",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AppMenuItem"
+        },
+        "AppUsageAssignment": {
+            "apiName": "AppUsageAssignment",
+            "keyPrefix": "0j8",
+            "label": "Application Usage Assignment",
+            "labelPlural": "Application Usage Assignments",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AppUsageAssignment"
+        },
+        "Asset": {
+            "apiName": "Asset",
+            "keyPrefix": "02i",
+            "label": "Asset",
+            "labelPlural": "Assets",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Asset"
+        },
+        "AssetAction": {
+            "apiName": "AssetAction",
+            "keyPrefix": "4nL",
+            "label": "Asset Action",
+            "labelPlural": "Asset Actions",
+            "nameFields": [
+                "AssetActionNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssetAction"
+        },
+        "AssetActionSource": {
+            "apiName": "AssetActionSource",
+            "keyPrefix": "4nM",
+            "label": "Asset Action Source",
+            "labelPlural": "Asset Action Sources",
+            "nameFields": [
+                "AssetActionSourceNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssetActionSource"
+        },
+        "AssetHistory": {
+            "apiName": "AssetHistory",
+            "keyPrefix": null,
+            "label": "Asset History",
+            "labelPlural": "Asset History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssetHistory"
+        },
+        "AssetRelationship": {
+            "apiName": "AssetRelationship",
+            "keyPrefix": "1AR",
+            "label": "Asset Relationship",
+            "labelPlural": "Asset Relationships",
+            "nameFields": [
+                "AssetRelationshipNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssetRelationship"
+        },
+        "AssetRelationshipHistory": {
+            "apiName": "AssetRelationshipHistory",
+            "keyPrefix": null,
+            "label": "Asset Relationship History",
+            "labelPlural": "Asset Relationship History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssetRelationshipHistory"
+        },
+        "AssetStatePeriod": {
+            "apiName": "AssetStatePeriod",
+            "keyPrefix": "4nK",
+            "label": "Asset State Period",
+            "labelPlural": "Asset State Periods",
+            "nameFields": [
+                "AssetStatePeriodNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssetStatePeriod"
+        },
+        "AssociatedLocation": {
+            "apiName": "AssociatedLocation",
+            "keyPrefix": "0Kt",
+            "label": "Associated Location",
+            "labelPlural": "Associated Locations",
+            "nameFields": [
+                "AssociatedLocationNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssociatedLocation"
+        },
+        "AssociatedLocationHistory": {
+            "apiName": "AssociatedLocationHistory",
+            "keyPrefix": null,
+            "label": "Associated Location History",
+            "labelPlural": "Associated Location History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AssociatedLocationHistory"
+        },
+        "AuthorizationForm": {
+            "apiName": "AuthorizationForm",
+            "keyPrefix": "0cI",
+            "label": "Authorization Form",
+            "labelPlural": "Authorization Forms",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationForm"
+        },
+        "AuthorizationFormConsent": {
+            "apiName": "AuthorizationFormConsent",
+            "keyPrefix": "0cK",
+            "label": "Authorization Form Consent",
+            "labelPlural": "Authorization Form Consents",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormConsent"
+        },
+        "AuthorizationFormConsentHistory": {
+            "apiName": "AuthorizationFormConsentHistory",
+            "keyPrefix": null,
+            "label": "Authorization Form Consent History",
+            "labelPlural": "Authorization Form Consent History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormConsentHistory"
+        },
+        "AuthorizationFormDataUse": {
+            "apiName": "AuthorizationFormDataUse",
+            "keyPrefix": "0cM",
+            "label": "Authorization Form Data Use",
+            "labelPlural": "Authorization Form Data Uses",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormDataUse"
+        },
+        "AuthorizationFormDataUseHistory": {
+            "apiName": "AuthorizationFormDataUseHistory",
+            "keyPrefix": null,
+            "label": "Authorization Form Data Use History",
+            "labelPlural": "Authorization Form Data Use History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormDataUseHistory"
+        },
+        "AuthorizationFormHistory": {
+            "apiName": "AuthorizationFormHistory",
+            "keyPrefix": null,
+            "label": "Authorization Form History",
+            "labelPlural": "Authorization Form History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormHistory"
+        },
+        "AuthorizationFormText": {
+            "apiName": "AuthorizationFormText",
+            "keyPrefix": "0cN",
+            "label": "Authorization Form Text",
+            "labelPlural": "Authorization Form Texts",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormText"
+        },
+        "AuthorizationFormTextHistory": {
+            "apiName": "AuthorizationFormTextHistory",
+            "keyPrefix": null,
+            "label": "Authorization Form Text History",
+            "labelPlural": "Authorization Form Text History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/AuthorizationFormTextHistory"
+        },
+        "BackgroundOperation": {
+            "apiName": "BackgroundOperation",
+            "keyPrefix": "08P",
+            "label": "Background Operation",
+            "labelPlural": "Background Operations",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/BackgroundOperation"
+        },
+        "Broker__c": {
+            "apiName": "Broker__c",
+            "keyPrefix": "a0B",
+            "label": "Broker",
+            "labelPlural": "Brokers",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Broker__c"
+        },
+        "BusinessHours": {
+            "apiName": "BusinessHours",
+            "keyPrefix": "01m",
+            "label": "Business Hours",
+            "labelPlural": "Business Hours",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/BusinessHours"
+        },
+        "Campaign": {
+            "apiName": "Campaign",
+            "keyPrefix": "701",
+            "label": "Campaign",
+            "labelPlural": "Campaigns",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Campaign"
+        },
+        "CampaignHistory": {
+            "apiName": "CampaignHistory",
+            "keyPrefix": null,
+            "label": "Campaign Field History",
+            "labelPlural": "Campaign Field History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CampaignHistory"
+        },
+        "CampaignMember": {
+            "apiName": "CampaignMember",
+            "keyPrefix": "00v",
+            "label": "Campaign Member",
+            "labelPlural": "Campaign Members",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CampaignMember"
+        },
+        "CampaignMemberStatus": {
+            "apiName": "CampaignMemberStatus",
+            "keyPrefix": "01Y",
+            "label": "Campaign Member Status",
+            "labelPlural": "Campaign Member Statuses",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CampaignMemberStatus"
+        },
+        "CardPaymentMethod": {
+            "apiName": "CardPaymentMethod",
+            "keyPrefix": "03O",
+            "label": "Card Payment Method",
+            "labelPlural": "Card Payment Methods",
+            "nameFields": [
+                "CardPaymentMethodNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CardPaymentMethod"
+        },
+        "Case": {
+            "apiName": "Case",
+            "keyPrefix": "500",
+            "label": "Case",
+            "labelPlural": "Cases",
+            "nameFields": [
+                "CaseNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Case"
+        },
+        "CaseComment": {
+            "apiName": "CaseComment",
+            "keyPrefix": "00a",
+            "label": "Case Comment",
+            "labelPlural": "Case Comments",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CaseComment"
+        },
+        "CaseContactRole": {
+            "apiName": "CaseContactRole",
+            "keyPrefix": "03j",
+            "label": "Case Contact Role",
+            "labelPlural": "Case Contact Role",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CaseContactRole"
+        },
+        "CaseHistory": {
+            "apiName": "CaseHistory",
+            "keyPrefix": null,
+            "label": "Case History",
+            "labelPlural": "Case History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CaseHistory"
+        },
+        "ChannelProgram": {
+            "apiName": "ChannelProgram",
+            "keyPrefix": "0Pk",
+            "label": "Channel Program",
+            "labelPlural": "Channel Programs",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ChannelProgram"
+        },
+        "ChannelProgramHistory": {
+            "apiName": "ChannelProgramHistory",
+            "keyPrefix": null,
+            "label": "Channel Program History",
+            "labelPlural": "Channel Program History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ChannelProgramHistory"
+        },
+        "ChannelProgramLevel": {
+            "apiName": "ChannelProgramLevel",
+            "keyPrefix": "0Pl",
+            "label": "Channel Program Level",
+            "labelPlural": "Channel Program Levels",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ChannelProgramLevel"
+        },
+        "ChannelProgramLevelHistory": {
+            "apiName": "ChannelProgramLevelHistory",
+            "keyPrefix": null,
+            "label": "Channel Program Level History",
+            "labelPlural": "Channel Program Level History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ChannelProgramLevelHistory"
+        },
+        "ChannelProgramMember": {
+            "apiName": "ChannelProgramMember",
+            "keyPrefix": "0Pm",
+            "label": "Channel Program Member",
+            "labelPlural": "Channel Program Members",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ChannelProgramMember"
+        },
+        "ChannelProgramMemberHistory": {
+            "apiName": "ChannelProgramMemberHistory",
+            "keyPrefix": null,
+            "label": "Channel Program Member History",
+            "labelPlural": "Channel Program Member History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ChannelProgramMemberHistory"
+        },
+        "CommSubscription": {
+            "apiName": "CommSubscription",
+            "keyPrefix": "0Xl",
+            "label": "Communication Subscription",
+            "labelPlural": "Communication Subscriptions",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscription"
+        },
+        "CommSubscriptionChannelType": {
+            "apiName": "CommSubscriptionChannelType",
+            "keyPrefix": "0eB",
+            "label": "Communication Subscription Channel Type",
+            "labelPlural": "Communication Subscription Channel Types",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionChannelType"
+        },
+        "CommSubscriptionChannelTypeHistory": {
+            "apiName": "CommSubscriptionChannelTypeHistory",
+            "keyPrefix": null,
+            "label": "Communication Subscription Channel Type  History",
+            "labelPlural": "Communication Subscription Channel Type  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionChannelTypeHistory"
+        },
+        "CommSubscriptionConsent": {
+            "apiName": "CommSubscriptionConsent",
+            "keyPrefix": "0dY",
+            "label": "Communication Subscription Consent",
+            "labelPlural": "Communication Subscription Consents",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionConsent"
+        },
+        "CommSubscriptionConsentHistory": {
+            "apiName": "CommSubscriptionConsentHistory",
+            "keyPrefix": null,
+            "label": "Communication Subscription Consent  History",
+            "labelPlural": "Communication Subscription Consent  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionConsentHistory"
+        },
+        "CommSubscriptionHistory": {
+            "apiName": "CommSubscriptionHistory",
+            "keyPrefix": null,
+            "label": "Communication Subscription  History",
+            "labelPlural": "Communication Subscription  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionHistory"
+        },
+        "CommSubscriptionTiming": {
+            "apiName": "CommSubscriptionTiming",
+            "keyPrefix": "0al",
+            "label": "Communication Subscription Timing",
+            "labelPlural": "Communication Subscription Timings",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionTiming"
+        },
+        "CommSubscriptionTimingHistory": {
+            "apiName": "CommSubscriptionTimingHistory",
+            "keyPrefix": null,
+            "label": "Communication Subscription Timing  History",
+            "labelPlural": "Communication Subscription Timing  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CommSubscriptionTimingHistory"
+        },
+        "ConsumptionRate": {
+            "apiName": "ConsumptionRate",
+            "keyPrefix": "0Mo",
+            "label": "Consumption Rate",
+            "labelPlural": "Consumption Rates",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ConsumptionRate"
+        },
+        "ConsumptionRateHistory": {
+            "apiName": "ConsumptionRateHistory",
+            "keyPrefix": null,
+            "label": "Consumption Rate History ID",
+            "labelPlural": "Consumption Rate History ID",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ConsumptionRateHistory"
+        },
+        "ConsumptionSchedule": {
+            "apiName": "ConsumptionSchedule",
+            "keyPrefix": "0Mh",
+            "label": "Consumption Schedule",
+            "labelPlural": "Consumption Schedules",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ConsumptionSchedule"
+        },
+        "ConsumptionScheduleHistory": {
+            "apiName": "ConsumptionScheduleHistory",
+            "keyPrefix": null,
+            "label": "Consumption Schedule History ID",
+            "labelPlural": "Consumption Schedule History ID",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ConsumptionScheduleHistory"
+        },
+        "Contact": {
+            "apiName": "Contact",
+            "keyPrefix": "003",
+            "label": "Contact",
+            "labelPlural": "Contacts",
+            "nameFields": [
+                "FirstName",
+                "LastName",
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Contact"
+        },
+        "ContactHistory": {
+            "apiName": "ContactHistory",
+            "keyPrefix": null,
+            "label": "Contact History",
+            "labelPlural": "Contact History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactHistory"
+        },
+        "ContactPointAddress": {
+            "apiName": "ContactPointAddress",
+            "keyPrefix": "8lW",
+            "label": "Contact Point Address",
+            "labelPlural": "Contact Point Addresses",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointAddress"
+        },
+        "ContactPointAddressHistory": {
+            "apiName": "ContactPointAddressHistory",
+            "keyPrefix": null,
+            "label": "Contact Point Address History",
+            "labelPlural": "Contact Point Address History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointAddressHistory"
+        },
+        "ContactPointConsent": {
+            "apiName": "ContactPointConsent",
+            "keyPrefix": "0ZX",
+            "label": "Contact Point Consent",
+            "labelPlural": "Contact Point Consents",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointConsent"
+        },
+        "ContactPointConsentHistory": {
+            "apiName": "ContactPointConsentHistory",
+            "keyPrefix": null,
+            "label": "Contact Point Consent  History",
+            "labelPlural": "Contact Point Consent  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointConsentHistory"
+        },
+        "ContactPointEmail": {
+            "apiName": "ContactPointEmail",
+            "keyPrefix": "9Vl",
+            "label": "Contact Point Email",
+            "labelPlural": "Contact Point Emails",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointEmail"
+        },
+        "ContactPointEmailHistory": {
+            "apiName": "ContactPointEmailHistory",
+            "keyPrefix": null,
+            "label": "Contact Point Email History",
+            "labelPlural": "Contact Point Email History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointEmailHistory"
+        },
+        "ContactPointPhone": {
+            "apiName": "ContactPointPhone",
+            "keyPrefix": "0Ow",
+            "label": "Contact Point Phone",
+            "labelPlural": "Contact Point Phones",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointPhone"
+        },
+        "ContactPointPhoneHistory": {
+            "apiName": "ContactPointPhoneHistory",
+            "keyPrefix": null,
+            "label": "Contact Point Phone History",
+            "labelPlural": "Contact Point Phone History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointPhoneHistory"
+        },
+        "ContactPointTypeConsent": {
+            "apiName": "ContactPointTypeConsent",
+            "keyPrefix": "0ZY",
+            "label": "Contact Point Type Consent",
+            "labelPlural": "Contact Point Type Consents",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointTypeConsent"
+        },
+        "ContactPointTypeConsentHistory": {
+            "apiName": "ContactPointTypeConsentHistory",
+            "keyPrefix": null,
+            "label": "Contact Point Type Consent  History",
+            "labelPlural": "Contact Point Type Consent  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactPointTypeConsentHistory"
+        },
+        "ContactRequest": {
+            "apiName": "ContactRequest",
+            "keyPrefix": "0Tz",
+            "label": "Contact Request",
+            "labelPlural": "Contact Requests",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContactRequest"
+        },
+        "ContentDocument": {
+            "apiName": "ContentDocument",
+            "keyPrefix": "069",
+            "label": "File",
+            "labelPlural": "Files",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContentDocument"
+        },
+        "ContentDocumentHistory": {
+            "apiName": "ContentDocumentHistory",
+            "keyPrefix": null,
+            "label": "Content Document History",
+            "labelPlural": "Content Document History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContentDocumentHistory"
+        },
+        "ContentDocumentLink": {
+            "apiName": "ContentDocumentLink",
+            "keyPrefix": "06A",
+            "label": "Content Document Link",
+            "labelPlural": "Content Document Link",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContentDocumentLink"
+        },
+        "ContentVersion": {
+            "apiName": "ContentVersion",
+            "keyPrefix": "068",
+            "label": "File",
+            "labelPlural": "Files",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContentVersion"
+        },
+        "ContentVersionHistory": {
+            "apiName": "ContentVersionHistory",
+            "keyPrefix": null,
+            "label": "Content Version History",
+            "labelPlural": "Content Version History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContentVersionHistory"
+        },
+        "ContentWorkspace": {
+            "apiName": "ContentWorkspace",
+            "keyPrefix": "058",
+            "label": "Library",
+            "labelPlural": "Libraries",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContentWorkspace"
+        },
+        "Contract": {
+            "apiName": "Contract",
+            "keyPrefix": "800",
+            "label": "Contract",
+            "labelPlural": "Contracts",
+            "nameFields": [
+                "ContractNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Contract"
+        },
+        "ContractContactRole": {
+            "apiName": "ContractContactRole",
+            "keyPrefix": "02a",
+            "label": "Contract Contact Role",
+            "labelPlural": "Contract Contact Role",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContractContactRole"
+        },
+        "ContractHistory": {
+            "apiName": "ContractHistory",
+            "keyPrefix": null,
+            "label": "Contract History",
+            "labelPlural": "Contract History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ContractHistory"
+        },
+        "CredentialStuffingEventStore": {
+            "apiName": "CredentialStuffingEventStore",
+            "keyPrefix": "0fj",
+            "label": "Credential Stuffing Event Store",
+            "labelPlural": "Credential Stuffing Event Stores",
+            "nameFields": [
+                "CredentialStuffingEventNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CredentialStuffingEventStore"
+        },
+        "CreditMemo": {
+            "apiName": "CreditMemo",
+            "keyPrefix": "50g",
+            "label": "Credit Memo",
+            "labelPlural": "Credit Memos",
+            "nameFields": [
+                "DocumentNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CreditMemo"
+        },
+        "CreditMemoHistory": {
+            "apiName": "CreditMemoHistory",
+            "keyPrefix": null,
+            "label": "Credit Memo  History",
+            "labelPlural": "Credit Memo  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CreditMemoHistory"
+        },
+        "CreditMemoInvApplication": {
+            "apiName": "CreditMemoInvApplication",
+            "keyPrefix": "4sF",
+            "label": "Credit Memo Invoice Application",
+            "labelPlural": "Credit Memo Invoice Applications",
+            "nameFields": [
+                "CreditMemoInvoiceNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CreditMemoInvApplication"
+        },
+        "CreditMemoInvApplicationHistory": {
+            "apiName": "CreditMemoInvApplicationHistory",
+            "keyPrefix": null,
+            "label": "Credit Memo Invoice Application  History",
+            "labelPlural": "Credit Memo Invoice Application  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CreditMemoInvApplicationHistory"
+        },
+        "CreditMemoLine": {
+            "apiName": "CreditMemoLine",
+            "keyPrefix": "9yx",
+            "label": "Credit Memo Line",
+            "labelPlural": "Credit Memo Lines",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CreditMemoLine"
+        },
+        "CreditMemoLineHistory": {
+            "apiName": "CreditMemoLineHistory",
+            "keyPrefix": null,
+            "label": "Credit Memo Line  History",
+            "labelPlural": "Credit Memo Line  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CreditMemoLineHistory"
+        },
+        "CspTrustedSite": {
+            "apiName": "CspTrustedSite",
+            "keyPrefix": "08y",
+            "label": "Content Security Policy Trusted Site",
+            "labelPlural": "Content Security Policy Trusted Sites",
+            "nameFields": [
+                "DeveloperName"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/CspTrustedSite"
+        },
+        "DandBCompany": {
+            "apiName": "DandBCompany",
+            "keyPrefix": "06E",
+            "label": "D&amp;B Company",
+            "labelPlural": "D&amp;B Companies",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DandBCompany"
+        },
+        "DataUseLegalBasis": {
+            "apiName": "DataUseLegalBasis",
+            "keyPrefix": "0ZT",
+            "label": "Data Use Legal Basis",
+            "labelPlural": "Data Use Legal Bases",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DataUseLegalBasis"
+        },
+        "DataUseLegalBasisHistory": {
+            "apiName": "DataUseLegalBasisHistory",
+            "keyPrefix": null,
+            "label": "Data Use Legal Basis  History",
+            "labelPlural": "Data Use Legal Basis  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DataUseLegalBasisHistory"
+        },
+        "DataUsePurpose": {
+            "apiName": "DataUsePurpose",
+            "keyPrefix": "0ZW",
+            "label": "Data Use Purpose",
+            "labelPlural": "Data Use Purposes",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DataUsePurpose"
+        },
+        "DataUsePurposeHistory": {
+            "apiName": "DataUsePurposeHistory",
+            "keyPrefix": null,
+            "label": "Data Use Purpose  History",
+            "labelPlural": "Data Use Purpose  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DataUsePurposeHistory"
+        },
+        "DelegatedAccount": {
+            "apiName": "DelegatedAccount",
+            "keyPrefix": "0du",
+            "label": "External Managed Account",
+            "labelPlural": "External Managed Accounts",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DelegatedAccount"
+        },
+        "DelegatedAccountHistory": {
+            "apiName": "DelegatedAccountHistory",
+            "keyPrefix": null,
+            "label": "External Managed Account History",
+            "labelPlural": "External Managed Account History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DelegatedAccountHistory"
+        },
+        "DeleteEvent": {
+            "apiName": "DeleteEvent",
+            "keyPrefix": "00C",
+            "label": "Recycle Bin Item",
+            "labelPlural": "Recycle Bin",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DeleteEvent"
+        },
+        "DigitalWallet": {
+            "apiName": "DigitalWallet",
+            "keyPrefix": "1DW",
+            "label": "Digital Wallet",
+            "labelPlural": "Digital Wallets",
+            "nameFields": [
+                "DigitalWalletNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DigitalWallet"
+        },
+        "DuplicateRecordItem": {
+            "apiName": "DuplicateRecordItem",
+            "keyPrefix": "0GL",
+            "label": "Duplicate Record Item",
+            "labelPlural": "Duplicate Record Items",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DuplicateRecordItem"
+        },
+        "DuplicateRecordSet": {
+            "apiName": "DuplicateRecordSet",
+            "keyPrefix": "0GK",
+            "label": "Duplicate Record Set",
+            "labelPlural": "Duplicate Record Sets",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/DuplicateRecordSet"
+        },
+        "EngagementChannelType": {
+            "apiName": "EngagementChannelType",
+            "keyPrefix": "0eF",
+            "label": "Engagement Channel Type",
+            "labelPlural": "Engagement Channel Types",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/EngagementChannelType"
+        },
+        "EngagementChannelTypeHistory": {
+            "apiName": "EngagementChannelTypeHistory",
+            "keyPrefix": null,
+            "label": "Engagement Channel Type  History",
+            "labelPlural": "Engagement Channel Type  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/EngagementChannelTypeHistory"
+        },
+        "EnhancedLetterhead": {
+            "apiName": "EnhancedLetterhead",
+            "keyPrefix": "0Rn",
+            "label": "Enhanced Letterhead",
+            "labelPlural": "Enhanced Letterheads",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/EnhancedLetterhead"
+        },
+        "FinanceBalanceSnapshot": {
+            "apiName": "FinanceBalanceSnapshot",
+            "keyPrefix": "2kA",
+            "label": "Finance Balance Snapshot",
+            "labelPlural": "Finance Balance Snapshots",
+            "nameFields": [
+                "FinanceBalanceSnapshotNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/FinanceBalanceSnapshot"
+        },
+        "FinanceTransaction": {
+            "apiName": "FinanceTransaction",
+            "keyPrefix": "0n3",
+            "label": "Finance Transaction",
+            "labelPlural": "Finance Transactions",
+            "nameFields": [
+                "FinanceTransactionNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/FinanceTransaction"
+        },
+        "FlowInterview": {
+            "apiName": "FlowInterview",
+            "keyPrefix": "0Fo",
+            "label": "Flow Interview",
+            "labelPlural": "Flow Interviews",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/FlowInterview"
+        },
+        "GanttLink__c": {
+            "apiName": "GanttLink__c",
+            "keyPrefix": "a09",
+            "label": "GanttLink",
+            "labelPlural": "GanttLinks",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/GanttLink__c"
+        },
+        "GanttTask__c": {
+            "apiName": "GanttTask__c",
+            "keyPrefix": "a0A",
+            "label": "GanttTask",
+            "labelPlural": "GanttTasks",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/GanttTask__c"
+        },
+        "Group": {
+            "apiName": "Group",
+            "keyPrefix": "00G",
+            "label": "Group",
+            "labelPlural": "Group",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Group"
+        },
+        "Holiday": {
+            "apiName": "Holiday",
+            "keyPrefix": "0C0",
+            "label": "Holiday",
+            "labelPlural": "Holidays",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Holiday"
+        },
+        "IPAddressRange": {
+            "apiName": "IPAddressRange",
+            "keyPrefix": "9s4",
+            "label": "IP Address Range",
+            "labelPlural": "IP Address Ranges",
+            "nameFields": [
+                "DeveloperName"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/IPAddressRange"
+        },
+        "Image": {
+            "apiName": "Image",
+            "keyPrefix": "4YL",
+            "label": "Image",
+            "labelPlural": "Images",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Image"
+        },
+        "ImageHistory": {
+            "apiName": "ImageHistory",
+            "keyPrefix": null,
+            "label": "Image History",
+            "labelPlural": "Image History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ImageHistory"
+        },
+        "Individual": {
+            "apiName": "Individual",
+            "keyPrefix": "0PK",
+            "label": "Individual",
+            "labelPlural": "Individuals",
+            "nameFields": [
+                "FirstName",
+                "LastName",
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Individual"
+        },
+        "IndividualHistory": {
+            "apiName": "IndividualHistory",
+            "keyPrefix": null,
+            "label": "Individual History",
+            "labelPlural": "Individual History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/IndividualHistory"
+        },
+        "InsightsExternalData": {
+            "apiName": "InsightsExternalData",
+            "keyPrefix": "06V",
+            "label": "External Data",
+            "labelPlural": "External Data",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/InsightsExternalData"
+        },
+        "InsightsExternalDataPart": {
+            "apiName": "InsightsExternalDataPart",
+            "keyPrefix": "06W",
+            "label": "External Data Part",
+            "labelPlural": "External Data Parts",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/InsightsExternalDataPart"
+        },
+        "Invoice": {
+            "apiName": "Invoice",
+            "keyPrefix": "3tt",
+            "label": "Invoice",
+            "labelPlural": "Invoices",
+            "nameFields": [
+                "DocumentNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Invoice"
+        },
+        "InvoiceHistory": {
+            "apiName": "InvoiceHistory",
+            "keyPrefix": null,
+            "label": "Invoice  History",
+            "labelPlural": "Invoice  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/InvoiceHistory"
+        },
+        "InvoiceLine": {
+            "apiName": "InvoiceLine",
+            "keyPrefix": "5TV",
+            "label": "Invoice Line",
+            "labelPlural": "Invoice Lines",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/InvoiceLine"
+        },
+        "InvoiceLineHistory": {
+            "apiName": "InvoiceLineHistory",
+            "keyPrefix": null,
+            "label": "Invoice Line  History",
+            "labelPlural": "Invoice Line  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/InvoiceLineHistory"
+        },
+        "Lead": {
+            "apiName": "Lead",
+            "keyPrefix": "00Q",
+            "label": "Lead",
+            "labelPlural": "Leads",
+            "nameFields": [
+                "FirstName",
+                "LastName",
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Lead"
+        },
+        "LeadHistory": {
+            "apiName": "LeadHistory",
+            "keyPrefix": null,
+            "label": "Lead History",
+            "labelPlural": "Lead History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LeadHistory"
+        },
+        "LegalEntity": {
+            "apiName": "LegalEntity",
+            "keyPrefix": "0fw",
+            "label": "Legal Entity",
+            "labelPlural": "Legal Entities",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LegalEntity"
+        },
+        "LegalEntityHistory": {
+            "apiName": "LegalEntityHistory",
+            "keyPrefix": null,
+            "label": "Legal Entity  History",
+            "labelPlural": "Legal Entity  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LegalEntityHistory"
+        },
+        "ListEmail": {
+            "apiName": "ListEmail",
+            "keyPrefix": "0XB",
+            "label": "List Email",
+            "labelPlural": "List Emails",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ListEmail"
+        },
+        "LiveAgentSession": {
+            "apiName": "LiveAgentSession",
+            "keyPrefix": "0HK",
+            "label": "Chat Session",
+            "labelPlural": "Chat Sessions",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LiveAgentSession"
+        },
+        "LiveAgentSessionHistory": {
+            "apiName": "LiveAgentSessionHistory",
+            "keyPrefix": null,
+            "label": "Chat Session History",
+            "labelPlural": "Chat Session History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LiveAgentSessionHistory"
+        },
+        "LiveChatSensitiveDataRule": {
+            "apiName": "LiveChatSensitiveDataRule",
+            "keyPrefix": "0GO",
+            "label": "Sensitive Data Rule",
+            "labelPlural": "Sensitive Data Rules",
+            "nameFields": [
+                "DeveloperName"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LiveChatSensitiveDataRule"
+        },
+        "LiveChatTranscript": {
+            "apiName": "LiveChatTranscript",
+            "keyPrefix": "570",
+            "label": "Chat Transcript",
+            "labelPlural": "Chat Transcripts",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LiveChatTranscript"
+        },
+        "LiveChatTranscriptHistory": {
+            "apiName": "LiveChatTranscriptHistory",
+            "keyPrefix": null,
+            "label": "Chat Transcript History",
+            "labelPlural": "Chat Transcript History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LiveChatTranscriptHistory"
+        },
+        "LiveChatVisitor": {
+            "apiName": "LiveChatVisitor",
+            "keyPrefix": "571",
+            "label": "Chat Visitor",
+            "labelPlural": "Chat Visitors",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LiveChatVisitor"
+        },
+        "Location": {
+            "apiName": "Location",
+            "keyPrefix": "131",
+            "label": "Location",
+            "labelPlural": "Locations",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Location"
+        },
+        "LocationGroup": {
+            "apiName": "LocationGroup",
+            "keyPrefix": "0gh",
+            "label": "Location Group",
+            "labelPlural": "Location Groups",
+            "nameFields": [
+                "LocationGroupName"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LocationGroup"
+        },
+        "LocationGroupHistory": {
+            "apiName": "LocationGroupHistory",
+            "keyPrefix": null,
+            "label": "Location Group History",
+            "labelPlural": "Location Group History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LocationGroupHistory"
+        },
+        "LocationHistory": {
+            "apiName": "LocationHistory",
+            "keyPrefix": null,
+            "label": "Location History",
+            "labelPlural": "Location History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/LocationHistory"
+        },
+        "Macro": {
+            "apiName": "Macro",
+            "keyPrefix": "0JZ",
+            "label": "Macro",
+            "labelPlural": "Macros",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Macro"
+        },
+        "MacroHistory": {
+            "apiName": "MacroHistory",
+            "keyPrefix": null,
+            "label": "Macro History",
+            "labelPlural": "Macro History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/MacroHistory"
+        },
+        "ManagedContentVariant": {
+            "apiName": "ManagedContentVariant",
+            "keyPrefix": "9Ps",
+            "label": "Managed Content Variant",
+            "labelPlural": "Managed Content Variants",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ManagedContentVariant"
+        },
+        "MyFilter__c": {
+            "apiName": "MyFilter__c",
+            "keyPrefix": "a05",
+            "label": "MyFilter",
+            "labelPlural": "MyFilters",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/MyFilter__c"
+        },
+        "NamespaceRegistry": {
+            "apiName": "NamespaceRegistry",
+            "keyPrefix": "1NR",
+            "label": "Namespace Registry",
+            "labelPlural": "Namespace Registries",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/NamespaceRegistry"
+        },
+        "NamespaceRegistryHistory": {
+            "apiName": "NamespaceRegistryHistory",
+            "keyPrefix": null,
+            "label": "Namespace Registry History",
+            "labelPlural": "Namespace Registry History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/NamespaceRegistryHistory"
+        },
+        "Note": {
+            "apiName": "Note",
+            "keyPrefix": "002",
+            "label": "Note",
+            "labelPlural": "Notes",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Note"
+        },
+        "Opportunity": {
+            "apiName": "Opportunity",
+            "keyPrefix": "006",
+            "label": "Opportunity",
+            "labelPlural": "Opportunities",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Opportunity"
+        },
+        "OpportunityContactRole": {
+            "apiName": "OpportunityContactRole",
+            "keyPrefix": "00K",
+            "label": "Opportunity Contact Role",
+            "labelPlural": "Opportunity Contact Role",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityContactRole"
+        },
+        "OpportunityFieldHistory": {
+            "apiName": "OpportunityFieldHistory",
+            "keyPrefix": null,
+            "label": "Opportunity Field History",
+            "labelPlural": "Opportunity Field History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityFieldHistory"
+        },
+        "OpportunityHistory": {
+            "apiName": "OpportunityHistory",
+            "keyPrefix": "008",
+            "label": "Opportunity History",
+            "labelPlural": "Opportunity History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityHistory"
+        },
+        "OpportunityHistory__c": {
+            "apiName": "OpportunityHistory__c",
+            "keyPrefix": "a00",
+            "label": "Opportunity History",
+            "labelPlural": "Opportunity Histories",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityHistory__c"
+        },
+        "OpportunityLineItem": {
+            "apiName": "OpportunityLineItem",
+            "keyPrefix": "00k",
+            "label": "Opportunity Product",
+            "labelPlural": "Opportunity Product",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityLineItem"
+        },
+        "OpportunityPartner": {
+            "apiName": "OpportunityPartner",
+            "keyPrefix": "00I",
+            "label": "Opportunity Partner",
+            "labelPlural": "Opportunity Partner",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityPartner"
+        },
+        "OpportunityTeamMember": {
+            "apiName": "OpportunityTeamMember",
+            "keyPrefix": "00q",
+            "label": "Opportunity Team Member",
+            "labelPlural": "Opportunity Team",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OpportunityTeamMember"
+        },
+        "Order": {
+            "apiName": "Order",
+            "keyPrefix": "801",
+            "label": "Order",
+            "labelPlural": "Orders",
+            "nameFields": [
+                "OrderNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Order"
+        },
+        "OrderHistory": {
+            "apiName": "OrderHistory",
+            "keyPrefix": null,
+            "label": "Order History",
+            "labelPlural": "Order History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OrderHistory"
+        },
+        "OrderItem": {
+            "apiName": "OrderItem",
+            "keyPrefix": "802",
+            "label": "Order Product",
+            "labelPlural": "Order Products",
+            "nameFields": [
+                "OrderItemNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OrderItem"
+        },
+        "OrderItemHistory": {
+            "apiName": "OrderItemHistory",
+            "keyPrefix": null,
+            "label": "Order Product History",
+            "labelPlural": "Order Product History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OrderItemHistory"
+        },
+        "OrgMetric": {
+            "apiName": "OrgMetric",
+            "keyPrefix": "3v1",
+            "label": "Org Metric",
+            "labelPlural": "Org Metrics",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OrgMetric"
+        },
+        "OrgMetricScanResult": {
+            "apiName": "OrgMetricScanResult",
+            "keyPrefix": "9aM",
+            "label": "Org Metric Scan Result",
+            "labelPlural": "Org Metric Scan Results",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OrgMetricScanResult"
+        },
+        "OrgMetricScanSummary": {
+            "apiName": "OrgMetricScanSummary",
+            "keyPrefix": "6mX",
+            "label": "Org Metric Scan Summary",
+            "labelPlural": "Org Metric Scan Summaries",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/OrgMetricScanSummary"
+        },
+        "Partner": {
+            "apiName": "Partner",
+            "keyPrefix": "00I",
+            "label": "Partner",
+            "labelPlural": "Partner",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Partner"
+        },
+        "PartnerFundAllocation": {
+            "apiName": "PartnerFundAllocation",
+            "keyPrefix": "0R8",
+            "label": "Partner Fund Allocation",
+            "labelPlural": "Partner Fund Allocations",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerFundAllocation"
+        },
+        "PartnerFundAllocationHistory": {
+            "apiName": "PartnerFundAllocationHistory",
+            "keyPrefix": null,
+            "label": "Partner Fund Allocation History",
+            "labelPlural": "Partner Fund Allocation History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerFundAllocationHistory"
+        },
+        "PartnerFundClaim": {
+            "apiName": "PartnerFundClaim",
+            "keyPrefix": "0RB",
+            "label": "Partner Fund Claim",
+            "labelPlural": "Partner Fund Claims",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerFundClaim"
+        },
+        "PartnerFundClaimHistory": {
+            "apiName": "PartnerFundClaimHistory",
+            "keyPrefix": null,
+            "label": "Partner Fund Claim History",
+            "labelPlural": "Partner Fund Claim History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerFundClaimHistory"
+        },
+        "PartnerFundRequest": {
+            "apiName": "PartnerFundRequest",
+            "keyPrefix": "0RJ",
+            "label": "Partner Fund Request",
+            "labelPlural": "Partner Fund Requests",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerFundRequest"
+        },
+        "PartnerFundRequestHistory": {
+            "apiName": "PartnerFundRequestHistory",
+            "keyPrefix": null,
+            "label": "Partner Fund Request History",
+            "labelPlural": "Partner Fund Request History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerFundRequestHistory"
+        },
+        "PartnerMarketingBudget": {
+            "apiName": "PartnerMarketingBudget",
+            "keyPrefix": "0Cw",
+            "label": "Partner Marketing Budget",
+            "labelPlural": "Partner Marketing Budgets",
+            "nameFields": [
+                "Title"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerMarketingBudget"
+        },
+        "PartnerMarketingBudgetHistory": {
+            "apiName": "PartnerMarketingBudgetHistory",
+            "keyPrefix": null,
+            "label": "Partner Marketing Budget History",
+            "labelPlural": "Partner Marketing Budget History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartnerMarketingBudgetHistory"
+        },
+        "PartyConsent": {
+            "apiName": "PartyConsent",
+            "keyPrefix": "0g8",
+            "label": "Party Consent",
+            "labelPlural": "Party Consents",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartyConsent"
+        },
+        "PartyConsentHistory": {
+            "apiName": "PartyConsentHistory",
+            "keyPrefix": null,
+            "label": "Party Consent  History",
+            "labelPlural": "Party Consent  History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PartyConsentHistory"
+        },
+        "PaymentAuthAdjustment": {
+            "apiName": "PaymentAuthAdjustment",
+            "keyPrefix": "9tv",
+            "label": "Payment Authorization Adjustment",
+            "labelPlural": "Payment Authorization Adjustments",
+            "nameFields": [
+                "PaymentAuthAdjustmentNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PaymentAuthAdjustment"
+        },
+        "PaymentGateway": {
+            "apiName": "PaymentGateway",
+            "keyPrefix": "0b0",
+            "label": "Payment Gateway",
+            "labelPlural": "Payment Gateways",
+            "nameFields": [
+                "PaymentGatewayName"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PaymentGateway"
+        },
+        "PaymentGatewayLog": {
+            "apiName": "PaymentGatewayLog",
+            "keyPrefix": "0Xt",
+            "label": "Payment Gateway Log",
+            "labelPlural": "Payment Gateway Logs",
+            "nameFields": [
+                "PaymentGatewayLogNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PaymentGatewayLog"
+        },
+        "PaymentGatewayProvider": {
+            "apiName": "PaymentGatewayProvider",
+            "keyPrefix": "0cJ",
+            "label": "Payment Gateway Provider",
+            "labelPlural": "Payment Gateway Providers",
+            "nameFields": [
+                "MasterLabel"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PaymentGatewayProvider"
+        },
+        "PaymentLineInvoice": {
+            "apiName": "PaymentLineInvoice",
+            "keyPrefix": "1PL",
+            "label": "Payment Line Invoice",
+            "labelPlural": "Payment Line Invoices",
+            "nameFields": [
+                "PaymentLineInvoiceNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PaymentLineInvoice"
+        },
+        "Pricebook2": {
+            "apiName": "Pricebook2",
+            "keyPrefix": "01s",
+            "label": "Price Book",
+            "labelPlural": "Price Books",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Pricebook2"
+        },
+        "Pricebook2History": {
+            "apiName": "Pricebook2History",
+            "keyPrefix": null,
+            "label": "Price Book History",
+            "labelPlural": "Price Book History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Pricebook2History"
+        },
+        "PricebookEntry": {
+            "apiName": "PricebookEntry",
+            "keyPrefix": "01u",
+            "label": "Price Book Entry",
+            "labelPlural": "Price Book Entries",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PricebookEntry"
+        },
+        "PricebookEntryHistory": {
+            "apiName": "PricebookEntryHistory",
+            "keyPrefix": null,
+            "label": "Price Book Entry History",
+            "labelPlural": "Price Book Entry History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/PricebookEntryHistory"
+        },
+        "ProcessDefinition": {
+            "apiName": "ProcessDefinition",
+            "keyPrefix": "04a",
+            "label": "Process Definition",
+            "labelPlural": "Process Definition",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ProcessDefinition"
+        },
+        "ProcessInstance": {
+            "apiName": "ProcessInstance",
+            "keyPrefix": "04g",
+            "label": "Process Instance",
+            "labelPlural": "Process Instance",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ProcessInstance"
+        },
+        "Product2": {
+            "apiName": "Product2",
+            "keyPrefix": "01t",
+            "label": "Product",
+            "labelPlural": "Products",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Product2"
+        },
+        "Product2History": {
+            "apiName": "Product2History",
+            "keyPrefix": null,
+            "label": "Product History",
+            "labelPlural": "Product History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Product2History"
+        },
+        "ProductConsumptionSchedule": {
+            "apiName": "ProductConsumptionSchedule",
+            "keyPrefix": "0Mq",
+            "label": "Product Consumption Schedule",
+            "labelPlural": "Product Consumption Schedules",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ProductConsumptionSchedule"
+        },
+        "Property__History": {
+            "apiName": "Property__History",
+            "keyPrefix": null,
+            "label": "History: Property",
+            "labelPlural": "History: Property",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Property__History"
+        },
+        "Property__c": {
+            "apiName": "Property__c",
+            "keyPrefix": "a0C",
+            "label": "Property",
+            "labelPlural": "Properties",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Property__c"
+        },
+        "QuickText": {
+            "apiName": "QuickText",
+            "keyPrefix": "574",
+            "label": "Quick Text",
+            "labelPlural": "Quick Text",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/QuickText"
+        },
+        "QuickTextHistory": {
+            "apiName": "QuickTextHistory",
+            "keyPrefix": null,
+            "label": "Quick Text History",
+            "labelPlural": "Quick Text History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/QuickTextHistory"
+        },
+        "Recommendation": {
+            "apiName": "Recommendation",
+            "keyPrefix": "0pr",
+            "label": "Recommendation",
+            "labelPlural": "Recommendations",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Recommendation"
+        },
+        "RecordAction": {
+            "apiName": "RecordAction",
+            "keyPrefix": "0Rw",
+            "label": "RecordAction",
+            "labelPlural": "RecordActions",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/RecordAction"
+        },
+        "RecordType": {
+            "apiName": "RecordType",
+            "keyPrefix": "012",
+            "label": "Record Type",
+            "labelPlural": "Record Types",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/RecordType"
+        },
+        "RefundLinePayment": {
+            "apiName": "RefundLinePayment",
+            "keyPrefix": "0dR",
+            "label": "Refund Line Payment",
+            "labelPlural": "Refund Line Payments",
+            "nameFields": [
+                "RefundLinePaymentNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/RefundLinePayment"
+        },
+        "ReportAnomalyEventStore": {
+            "apiName": "ReportAnomalyEventStore",
+            "keyPrefix": "0Z7",
+            "label": "Report Anomaly Event Store",
+            "labelPlural": "Report Anomaly Event Stores",
+            "nameFields": [
+                "ReportAnomalyEventNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ReportAnomalyEventStore"
+        },
+        "ScratchOrgInfoHistory": {
+            "apiName": "ScratchOrgInfoHistory",
+            "keyPrefix": null,
+            "label": "Scratch Org Info History",
+            "labelPlural": "Scratch Org Info History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ScratchOrgInfoHistory"
+        },
+        "SearchPromotionRule": {
+            "apiName": "SearchPromotionRule",
+            "keyPrefix": "0MD",
+            "label": "Promoted Search Term",
+            "labelPlural": "Promoted Search Terms",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SearchPromotionRule"
+        },
+        "ServiceResource": {
+            "apiName": "ServiceResource",
+            "keyPrefix": "0Hn",
+            "label": "Service Resource",
+            "labelPlural": "Service Resources",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ServiceResource"
+        },
+        "ServiceResourceHistory": {
+            "apiName": "ServiceResourceHistory",
+            "keyPrefix": null,
+            "label": "Service Resource History",
+            "labelPlural": "Service Resource History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ServiceResourceHistory"
+        },
+        "SessionHijackingEventStore": {
+            "apiName": "SessionHijackingEventStore",
+            "keyPrefix": "0Zj",
+            "label": "Session Hijacking Event Store",
+            "labelPlural": "Session Hijacking Event Stores",
+            "nameFields": [
+                "SessionHijackingEventNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SessionHijackingEventStore"
+        },
+        "SetupAssistantStep": {
+            "apiName": "SetupAssistantStep",
+            "keyPrefix": "3Ys",
+            "label": "Setup Assistant Step",
+            "labelPlural": "Setup Assistant Steps",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SetupAssistantStep"
+        },
+        "SiteHistory": {
+            "apiName": "SiteHistory",
+            "keyPrefix": null,
+            "label": "Site History",
+            "labelPlural": "Site History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SiteHistory"
+        },
+        "Skill": {
+            "apiName": "Skill",
+            "keyPrefix": "0C5",
+            "label": "Skill",
+            "labelPlural": "Skills",
+            "nameFields": [
+                "MasterLabel"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Skill"
+        },
+        "SolutionHistory": {
+            "apiName": "SolutionHistory",
+            "keyPrefix": null,
+            "label": "Solution History",
+            "labelPlural": "Solution History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SolutionHistory"
+        },
+        "StaticResource": {
+            "apiName": "StaticResource",
+            "keyPrefix": "081",
+            "label": "Static Resource",
+            "labelPlural": "Static Resources",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/StaticResource"
+        },
+        "Stock_Position__c": {
+            "apiName": "Stock_Position__c",
+            "keyPrefix": "a04",
+            "label": "Stock Position",
+            "labelPlural": "Stock Positions",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Stock_Position__c"
+        },
+        "StreamingChannel": {
+            "apiName": "StreamingChannel",
+            "keyPrefix": "0M6",
+            "label": "Streaming Channel",
+            "labelPlural": "Streaming Channels",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/StreamingChannel"
+        },
+        "Survey": {
+            "apiName": "Survey",
+            "keyPrefix": "0Kd",
+            "label": "Survey",
+            "labelPlural": "Surveys",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Survey"
+        },
+        "SurveyInvitation": {
+            "apiName": "SurveyInvitation",
+            "keyPrefix": "0Ki",
+            "label": "Survey Invitation",
+            "labelPlural": "Survey Invitations",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SurveyInvitation"
+        },
+        "SurveyQuestionResponse": {
+            "apiName": "SurveyQuestionResponse",
+            "keyPrefix": "0Kr",
+            "label": "Survey Question Response",
+            "labelPlural": "Survey Question Responses",
+            "nameFields": [
+                "ResponseShortText"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SurveyQuestionResponse"
+        },
+        "SurveyResponse": {
+            "apiName": "SurveyResponse",
+            "keyPrefix": "0My",
+            "label": "Survey Response",
+            "labelPlural": "Survey Responses",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SurveyResponse"
+        },
+        "SurveySubject": {
+            "apiName": "SurveySubject",
+            "keyPrefix": "0Vk",
+            "label": "Survey Subject",
+            "labelPlural": "Survey Subjects",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/SurveySubject"
+        },
+        "Teacher__c": {
+            "apiName": "Teacher__c",
+            "keyPrefix": "a03",
+            "label": "Teacher",
+            "labelPlural": "Teachers",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Teacher__c"
+        },
+        "Territory2ModelHistory": {
+            "apiName": "Territory2ModelHistory",
+            "keyPrefix": null,
+            "label": "Territory Model History",
+            "labelPlural": "Territory Model History",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Territory2ModelHistory"
+        },
+        "ThreatDetectionFeedback": {
+            "apiName": "ThreatDetectionFeedback",
+            "keyPrefix": "0hY",
+            "label": "Threat Detection Feedback",
+            "labelPlural": "Threat Detection Feedback",
+            "nameFields": [
+                "ThreatDetectionFeedbackNumber"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/ThreatDetectionFeedback"
+        },
+        "Topic": {
+            "apiName": "Topic",
+            "keyPrefix": "0TO",
+            "label": "Topic",
+            "labelPlural": "Topics",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Topic"
+        },
+        "TopicAssignment": {
+            "apiName": "TopicAssignment",
+            "keyPrefix": "0FT",
+            "label": "Topic Assignment",
+            "labelPlural": "Topic Assignments",
+            "nameFields": [],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/TopicAssignment"
+        },
+        "TruncateTest__c": {
+            "apiName": "TruncateTest__c",
+            "keyPrefix": "a02",
+            "label": "TruncateTest",
+            "labelPlural": "TruncateTest",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/TruncateTest__c"
+        },
+        "User": {
+            "apiName": "User",
+            "keyPrefix": "005",
+            "label": "User",
+            "labelPlural": "People",
+            "nameFields": [
+                "FirstName",
+                "LastName",
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/User"
+        },
+        "UserRole": {
+            "apiName": "UserRole",
+            "keyPrefix": "00E",
+            "label": "Role",
+            "labelPlural": "Role",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/UserRole"
+        },
+        "WaveAutoInstallRequest": {
+            "apiName": "WaveAutoInstallRequest",
+            "keyPrefix": "0UZ",
+            "label": "Wave Auto Install Request",
+            "labelPlural": "Wave Auto Install Requests",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/WaveAutoInstallRequest"
+        },
+        "WrikeAccountSettings__c": {
+            "apiName": "WrikeAccountSettings__c",
+            "keyPrefix": "a06",
+            "label": "Wrike Account Settings",
+            "labelPlural": "Wrike Account Settings",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/WrikeAccountSettings__c"
+        },
+        "Wrike_API__c": {
+            "apiName": "Wrike_API__c",
+            "keyPrefix": "a07",
+            "label": "Wrike API",
+            "labelPlural": "Wrike API",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Wrike_API__c"
+        },
+        "Wrike_Bindings__c": {
+            "apiName": "Wrike_Bindings__c",
+            "keyPrefix": "a08",
+            "label": "Wrike_Bindings",
+            "labelPlural": "Wrike_Bindings",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/Wrike_Bindings__c"
+        },
+        "sf_devops__Async_Operation_Result__c": {
+            "apiName": "sf_devops__Async_Operation_Result__c",
+            "keyPrefix": "a0D",
+            "label": "Async Operation Result",
+            "labelPlural": "Async Operation Results",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Async_Operation_Result__c"
+        },
+        "sf_devops__Back_Sync__c": {
+            "apiName": "sf_devops__Back_Sync__c",
+            "keyPrefix": "a0E",
+            "label": "Back Sync",
+            "labelPlural": "Back Synchs",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Back_Sync__c"
+        },
+        "sf_devops__Branch__c": {
+            "apiName": "sf_devops__Branch__c",
+            "keyPrefix": "a0U",
+            "label": "Branch",
+            "labelPlural": "Branches",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Branch__c"
+        },
+        "sf_devops__Change_Bundle_Install__c": {
+            "apiName": "sf_devops__Change_Bundle_Install__c",
+            "keyPrefix": "a0F",
+            "label": "Change Bundle Install",
+            "labelPlural": "Change Bundle Installs",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Change_Bundle_Install__c"
+        },
+        "sf_devops__Change_Bundle__c": {
+            "apiName": "sf_devops__Change_Bundle__c",
+            "keyPrefix": "a0G",
+            "label": "Change Bundle",
+            "labelPlural": "Change Bundles",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Change_Bundle__c"
+        },
+        "sf_devops__Change_Submission__c": {
+            "apiName": "sf_devops__Change_Submission__c",
+            "keyPrefix": "a0H",
+            "label": "Change Submission",
+            "labelPlural": "Change Submissions",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Change_Submission__c"
+        },
+        "sf_devops__Deploy_Component__c": {
+            "apiName": "sf_devops__Deploy_Component__c",
+            "keyPrefix": "a0V",
+            "label": "Deploy Component",
+            "labelPlural": "Deploy Components",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Deploy_Component__c"
+        },
+        "sf_devops__Deployment_Result__c": {
+            "apiName": "sf_devops__Deployment_Result__c",
+            "keyPrefix": "a0W",
+            "label": "Deployment Result",
+            "labelPlural": "Deployment Results",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Deployment_Result__c"
+        },
+        "sf_devops__Environment__c": {
+            "apiName": "sf_devops__Environment__c",
+            "keyPrefix": "a0I",
+            "label": "Environment",
+            "labelPlural": "Environments",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Environment__c"
+        },
+        "sf_devops__Hidden_Remote_Change__c": {
+            "apiName": "sf_devops__Hidden_Remote_Change__c",
+            "keyPrefix": "a0J",
+            "label": "Hidden Remote Change",
+            "labelPlural": "Hidden Remote Changes",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Hidden_Remote_Change__c"
+        },
+        "sf_devops__Merge_Result__c": {
+            "apiName": "sf_devops__Merge_Result__c",
+            "keyPrefix": "a0X",
+            "label": "Merge Result",
+            "labelPlural": "Merge Results",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Merge_Result__c"
+        },
+        "sf_devops__Object_Activity__c": {
+            "apiName": "sf_devops__Object_Activity__c",
+            "keyPrefix": "a0K",
+            "label": "Object Activity",
+            "labelPlural": "Object Activities",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Object_Activity__c"
+        },
+        "sf_devops__Pipeline_Stage__c": {
+            "apiName": "sf_devops__Pipeline_Stage__c",
+            "keyPrefix": "a0L",
+            "label": "Pipeline Stage",
+            "labelPlural": "Pipeline Stages",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Pipeline_Stage__c"
+        },
+        "sf_devops__Pipeline__c": {
+            "apiName": "sf_devops__Pipeline__c",
+            "keyPrefix": "a0M",
+            "label": "Pipeline",
+            "labelPlural": "Pipelines",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Pipeline__c"
+        },
+        "sf_devops__Project__c": {
+            "apiName": "sf_devops__Project__c",
+            "keyPrefix": "a0N",
+            "label": "Project",
+            "labelPlural": "Projects",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Project__c"
+        },
+        "sf_devops__Remote_Change__c": {
+            "apiName": "sf_devops__Remote_Change__c",
+            "keyPrefix": "a0O",
+            "label": "Remote Change",
+            "labelPlural": "Remote Changes",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Remote_Change__c"
+        },
+        "sf_devops__Repository__c": {
+            "apiName": "sf_devops__Repository__c",
+            "keyPrefix": "a0P",
+            "label": "Repository",
+            "labelPlural": "Repositories",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Repository__c"
+        },
+        "sf_devops__Source_Member_Reference__c": {
+            "apiName": "sf_devops__Source_Member_Reference__c",
+            "keyPrefix": "a0Q",
+            "label": "Source Member Reference",
+            "labelPlural": "Source Member References",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Source_Member_Reference__c"
+        },
+        "sf_devops__Submit_Component__c": {
+            "apiName": "sf_devops__Submit_Component__c",
+            "keyPrefix": "a0Y",
+            "label": "Submit Component",
+            "labelPlural": "Submit Components",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Submit_Component__c"
+        },
+        "sf_devops__Vcs_Event__c": {
+            "apiName": "sf_devops__Vcs_Event__c",
+            "keyPrefix": "a0R",
+            "label": "VCS Event",
+            "labelPlural": "VCS Events",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Vcs_Event__c"
+        },
+        "sf_devops__Work_Item_Promote__c": {
+            "apiName": "sf_devops__Work_Item_Promote__c",
+            "keyPrefix": "a0S",
+            "label": "Work Item Promote",
+            "labelPlural": "Work Item Promotes",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Work_Item_Promote__c"
+        },
+        "sf_devops__Work_Item__c": {
+            "apiName": "sf_devops__Work_Item__c",
+            "keyPrefix": "a0T",
+            "label": "Work Item",
+            "labelPlural": "Work Items",
+            "nameFields": [
+                "Name"
+            ],
+            "objectInfoUrl": "/services/data/v55.0/ui-api/object-info/sf_devops__Work_Item__c"
+        }
+    }
+}
