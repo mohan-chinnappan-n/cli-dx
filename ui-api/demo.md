@@ -19,6 +19,10 @@ sfdx mohanc:ui:uiapi -u mohan.chinnappan.n_ea2@gmail.com -r object-info/Account 
 sfdx mohanc:ui:uiapi -u mohan.chinnappan.n_ea2@gmail.com -r record-ui/0013h00000FfgB5AAJ > record-ui_0013h00000FfgB5AAJ.json
 ```
 
+- [record-ui_0013h00000FfgB5AAJ.json](./record-ui_0013h00000FfgB5AAJ.json)
+
+
+
 
 
 
