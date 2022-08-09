@@ -28,7 +28,7 @@ sfdx mohanc:ui:uiapi -u mohan.chinnappan.n_ea2@gmail.com -r record-ui/0013h00000
 ```
 sfdx mohanc:ui:uiapi -u mohan.chinnappan.n_ea2@gmail.com -r list-records/00B3h000008IZY2EAO > Account_listView.json
 ```
-- [ Account_listViews.json](./ Account_listViews.json)
+- [Account_listViews.json](./Account_listViews.json)
 
 ### List views records for an  Account list view
 ```
