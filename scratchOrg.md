@@ -26,6 +26,7 @@ FROM ScratchOrgInfo
 sfdx mohanc:data:query -q ~/.soql/scratchOrg.soql -u mohan.chinnappan.n_ea2@gmail.com -f json
 ```
 
+```json
 [
     {
         "attributes": {
