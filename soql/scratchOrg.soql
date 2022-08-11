@@ -1,0 +1,10 @@
+SELECT
+Name ,
+IsDeleted,
+CreatedDate,
+LastViewedDate,
+LastReferencedDate,
+Edition,
+OrgName,
+DurationDays 
+FROM ScratchOrgInfo
