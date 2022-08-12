@@ -4,6 +4,7 @@
 # Purpose: Validating the given metadata type(s) from a source org against a target org
 
 # - mohan chinnappan jul-19-2022 - creation
+# - mohan chinnappan aug-12-2022 - added apiversion support
 # - <your_name> date - <your contributions>
 ##-------------------------------------##
 

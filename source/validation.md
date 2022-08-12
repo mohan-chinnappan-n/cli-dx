@@ -75,12 +75,14 @@ Successfully validated the deployment. 105 components deployed and 0 tests run.
 ```bash
 
 
+
 #!/bin/bash
 ##--------------------------------------##
 # validate.sh
 # Purpose: Validating the given metadata type(s) from a source org against a target org
 
 # - mohan chinnappan jul-19-2022 - creation
+# - mohan chinnappan aug-12-2022 - added apiversion support
 # - <your_name> date - <your contributions>
 ##-------------------------------------##
 
@@ -103,11 +105,11 @@ sf_login() {
 
 
 help() {
-	if [[ "$1" -ne 6 ]] 
+	if [[ "$1" -ne 7 ]] 
 	then
 	     echo "=== Validate script ==="
-	     echo "usage: ./validate.sh  <SRC PROD|SBX> <PRJ_Name> <SRC_UserName> <MetadataTypes - in command separated> <TARGET PROD|SBX> <TARGET_UserName>"
-	     echo "Example: usage: ./validate.sh  PROD validate2 mohan.chinnappan.n_ea2@gmail.com ApexClass PROD mohan.chinnappan.n_ea2@gmail.com "
+	     echo "usage: ./validate.sh  <SRC PROD|SBX> <PRJ_Name> <SRC_UserName> <MetadataTypes - in command separated> <TARGET PROD|SBX> <TARGET_UserName> <apiversion>"
+	     echo "Example: usage: ./validate.sh  PROD validate2 mohan.chinnappan.n_ea2@gmail.com ApexClass PROD mohan.chinnappan.n_ea2@gmail.com 55.0"
 	     exit 0 
 	fi
 }
@@ -128,6 +130,7 @@ mt=$4
 
 tsbx_prod=$5
 tun=$6
+apiversion=$7
 
 
 
@@ -157,7 +160,7 @@ sf_login $tsbx_prod
 
 echo  "=== Validating the source for the quick deployment ... ==="
 
-sfdx force:source:deploy -u $tun  -m $mt -c -l RunLocalTests
+sfdx force:source:deploy -u $tun  -m $mt -c -l RunLocalTests --apiversion $apiversion
 
 echo "=== Opening the org for checking the deployment status ... ==="
 sfdx force:org:open -u $tun  -p lightning/setup/DeployStatus/home
@@ -463,5 +466,5 @@ Waiting to resolve the Lightning Experience-enabled custom domain...... done
 
 ## Deploy using this ID: 0Af3h00000QZoegCAD
 ```
-sfdx force:source:deploy -q 0Af3h00000QZoegCAD -u  mohan.chinnappan.n_ea2@gmail.com
+sfdx force:source:deploy -q 0Af3h00000QZoegCAD -u  mohan.chinnappan.n_ea2@gmail.com --apiversion 55.0
 ```
