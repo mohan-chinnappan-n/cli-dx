@@ -26,11 +26,11 @@ sf_login() {
 
 
 help() {
-	if [[ "$1" -ne 6 ]] 
+	if [[ "$1" -ne 7 ]] 
 	then
 	     echo "=== Validate script ==="
-	     echo "usage: ./validate.sh  <SRC PROD|SBX> <PRJ_Name> <SRC_UserName> <MetadataTypes - in command separated> <TARGET PROD|SBX> <TARGET_UserName>"
-	     echo "Example: usage: ./validate.sh  PROD validate2 mohan.chinnappan.n_ea2@gmail.com ApexClass PROD mohan.chinnappan.n_ea2@gmail.com "
+	     echo "usage: ./validate.sh  <SRC PROD|SBX> <PRJ_Name> <SRC_UserName> <MetadataTypes - in command separated> <TARGET PROD|SBX> <TARGET_UserName> <apiversion>"
+	     echo "Example: usage: ./validate.sh  PROD validate2 mohan.chinnappan.n_ea2@gmail.com ApexClass PROD mohan.chinnappan.n_ea2@gmail.com 55.0"
 	     exit 0 
 	fi
 }
@@ -51,6 +51,7 @@ mt=$4
 
 tsbx_prod=$5
 tun=$6
+apiversion=$7
 
 
 
@@ -80,7 +81,7 @@ sf_login $tsbx_prod
 
 echo  "=== Validating the source for the quick deployment ... ==="
 
-sfdx force:source:deploy -u $tun  -m $mt -c -l RunLocalTests
+sfdx force:source:deploy -u $tun  -m $mt -c -l RunLocalTests --apiversion $apiversion
 
 echo "=== Opening the org for checking the deployment status ... ==="
 sfdx force:org:open -u $tun  -p lightning/setup/DeployStatus/home
