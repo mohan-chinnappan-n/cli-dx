@@ -1,4 +1,6 @@
 # How to visualize the Enterprise Territory Management (ETM) hierachy using DX
+
+![etm hierarchy](etm-0.png)
 ```
 sfdx mohanc:security:etmh -u mohan.chinnappan.n_ea2@gmail.com 
 
