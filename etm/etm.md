@@ -1,4 +1,4 @@
-# How to visualize the Enterprise Territory Management (ETM) hierachy using DX
+# How to visualize the Enterprise Territory Management (ETM) hierarchy using DX
 
 ![etm hierarchy](etm-0.png)
 ```
