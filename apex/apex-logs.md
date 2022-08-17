@@ -38,6 +38,8 @@ executed?: true
 ```
 sfdx force:apex:log:list -u mohan.chinnappan.n_ea2@gmail.com                         
 ```
+
+```
 APPLICATION  DURATION (MS)  ID                  LOCATION   SIZE (B)  LOG USER          OPERATION                                       REQUEST  START TIME                STATUS                               
 ───────────  ─────────────  ──────────────────  ─────────  ────────  ────────────────  ──────────────────────────────────────────────  ───────  ────────────────────────  ─────────────────────────────────────
 Unknown      94             07L3h000009Kf7TEAS  SystemLog  4104      Mohan Chinnappan  /services/data/v55.0/tooling/executeAnonymous/  Api      2022-08-17T00:50:12+0000  Success                              
