@@ -224,3 +224,9 @@ Execute Anonymous: System.debug('Sum of a and b is ' + teach1.add(10,70)) ;
 18:02:58.10 (30931988)|CODE_UNIT_FINISHED|execute_anonymous_apex
 18:02:58.10 (30964834)|EXECUTION_FINISHED
 ```
+
+## Apex Replay Debugger for Visual Studio Code
+- Apex Replay Debugger simulates a live debugging session using a debug log that is a recording of all interactions in a transaction.
+- Presents the logged information similarly to an interactive debugger, so you can debug your Apex code. 
+- [Install from MarketPlace](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode-apex-replay-debugger)
+- [Video: Platform Services: Apex Replay Debugger](https://www.youtube.com/watch?v=8GVuMT4MHWc)
