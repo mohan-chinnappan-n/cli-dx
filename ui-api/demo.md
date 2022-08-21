@@ -37,6 +37,7 @@ sfdx mohanc:ui:uiapi -u mohan.chinnappan.n_ea2@gmail.com -r list-records/00B3h00
 ```
 sfdx mohanc:ui:uiapi -u mohan.chinnappan.n_ea2@gmail.com -r list-ui/Account            
 ```
+```json
 {
     "count": 6,
     "currentPageToken": "0",
