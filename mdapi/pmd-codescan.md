@@ -92,3 +92,18 @@ open /tmp/apex/pmd-results.html
 ```
 
 ![Sample html results](img/pmd-results-1.png)
+
+-------
+## Run pmd enhanced html output
+
+```
+pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d ./unpackaged/classes -f xslt -property xsltFilename=pmd-report-v2.xslt > pmd-report.html
+
+```
+- [pmd-report-v2.xslt](https://raw.githubusercontent.com/mohan-chinnappan-n/pmd/master/pmd-core/etc/xslt/pmd-report-v2.xslt)
+
+
+### Demo
+![New HTML Report demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/new_pmd-report-1.gif)
+
+
