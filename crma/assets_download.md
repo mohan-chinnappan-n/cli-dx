@@ -19,6 +19,9 @@
 /analytics/download/dashboard/0FK3h000000d8lTGAQ.pdf
 
 ```
+![Sample PNG](img/0FK3h000000d8lTGAQ.png)
+----
+![Sample PDF](img/0FK3h000000d8lTGAQ.pdf)
 
 
 ### References
