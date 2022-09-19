@@ -20,8 +20,6 @@
 
 ```
 
-### Demo
-![Asset Download Demo](img/crma-dashboards-download-demo-1.webm.gif)
 
 ### References
 - [Download a CRM Analytics lens as an image](https://developer.salesforce.com/docs/atlas.en-us.api_analytics.meta/api_analytics/analytics_api_download_example_crma_lens_png.htm)
