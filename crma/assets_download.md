@@ -1,4 +1,4 @@
-## How I can download CRMA Assets like (Lens, Dashboard, Report) in Modern Browsers like Chrome and Safari ?
+## How I can download CRMA Assets like (Lens, Dashboard, Report) in Modern Browsers like Chrome, Firefox and Safari ?
 
 ### Steps involved
 
