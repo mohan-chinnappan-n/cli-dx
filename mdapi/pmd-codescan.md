@@ -103,6 +103,10 @@ pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d ./unpackaged/classes -f xslt -prope
 - [pmd-report-v2.xslt](https://raw.githubusercontent.com/mohan-chinnappan-n/pmd/master/pmd-core/etc/xslt/pmd-report-v2.xslt)
 
 
+### Screenshot
+- ![PMD report screenshot](img/pmd-report-2.1.png )
+
+
 ### Demo
 ![New HTML Report demo](https://raw.githubusercontent.com/mohan-chinnappan-n/kural-docs/master/img/new_pmd-report-1.gif)
 
