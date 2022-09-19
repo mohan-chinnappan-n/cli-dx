@@ -4,7 +4,8 @@
 
 1. Setup Slack for Saleforce
     - Note: You **do not have use Slack** to enable this feature. This Slack setup enables this Download feature
-2. Assign **Slack Service User** to user
+2. Assign **Slack Service User** to user - **Connect Salesforce with Slack**
+
 3. Build Button with URL link to the asset PNG and PDF
 - format:
 ```
