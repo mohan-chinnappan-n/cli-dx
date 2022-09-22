@@ -87,6 +87,6 @@ sfdx mohanc:mdapi:update -u mohan.chinnappan.n.sel@gmail.com -i account.fieldLab
 ![Before Update](img/update-picklist-before-1.png)
 
 ## After
-![After Update](img/update-after-1.png)
+![After Update](img/update-after-2.png)
 
 
