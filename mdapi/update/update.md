@@ -1,5 +1,18 @@
 # How to use DX to update a metadata type
 
+## Plugin version 0.0.203
+-  sfdx-mohanc-plugins@0.0.203
+- Update it with:
+```
+sfdx plugins:update
+```
+
+## Sample Input JSON file
+- Can have multiple updates 
+- Example here has 
+	- Changing Label of a Text Field 
+	- Changing Label of a Picklist Field
+
 ```
 cat account.fieldLabels.rename.json
 ```
