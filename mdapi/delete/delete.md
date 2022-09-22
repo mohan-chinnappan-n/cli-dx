@@ -77,9 +77,50 @@ sfdx mohanc:mdapi:del -u mohan.chinnappan.n.sel@gmail.com -i delete.account.fiel
 
 ```
 ## Before
-![Before Delete](img/delete-field-before-1.png)
+![Before Delete](img/delete-field-before.png)
 
 ## After
-![After Delete](img/delete-field-after-1.png)
+![After Delete](img/delete-field-after.png)
 
+<a name='listViewDel'></a>
+## Deleting ListViews
+
+```
+cat delete.oppty.listview.json 
+```
+
+```json
+
+[
+  "Opportunity.ClosingNextMonth"
+
+]
+
+```
+
+```
+sfdx mohanc:mdapi:del -u mohan.chinnappan.n.sel@gmail.com -i delete.oppty.listview.json -t ListView 
+```
+
+```
+{ fullName: 'Opportunity.ClosingNextMonth', success: true }
+
+```
+## List to confirm the deletion
+- [More about listing](../ls/list.md)
+
+```
+
+sfdx mohanc:mdapi:ls -u mohan.chinnappan.n.sel@gmail.com -i  ../ls/list.json -t ListView
+[ 'Account.AllAccounts', 'Opportunity.ClosingNextMonth' ]
+[
+    {
+        "fullName": "Account.AllAccounts",
+        "filterScope": "Everything",
+        "label": "All Accounts"
+    },
+    {}
+]
+
+```
 
