@@ -40,6 +40,34 @@ sfdx mohanc:mdapi:ls -u mohan.chinnappan.n.sel@gmail.com -i listall.json -t Cust
 
 ```
 
+## Let us find the details for this Custom Label: 'Greeting'
+
+```
+cat listCL.json
+```
+
+```
+["Greeting"]
+```
+
+```
+sfdx mohanc:mdapi:ls -u mohan.chinnappan.n.sel@gmail.com -i listCL.json -t CustomLabel 
+```
+
+```
+[ 'Greeting' ]
+```
+
+```json
+{
+    "fullName": "Greeting",
+    "language": "en_US",
+    "protected": "true",
+    "shortDescription": "Greeting",
+    "value": "Hello World From LWC"
+}
+
+```
 ---
 <a name='list'></a>
 #
