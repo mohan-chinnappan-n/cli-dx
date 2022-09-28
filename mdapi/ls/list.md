@@ -1,5 +1,49 @@
 # Listing Metadata type
 
+## Topics
+- [List All](#listall)
+- [List only the required items](#list)
+
+----
+
+<a name='listall'></a>
+## Listing all in a given metadata type
+
+```
+cat listall.json
+```
+```
+[]
+```
+
+## Let us get all the custom lablels in the org
+```
+sfdx mohanc:mdapi:ls -u mohan.chinnappan.n.sel@gmail.com -i listall.json -t CustomLabel
+```
+
+```
+[]
+{
+    "createdById": "0054x000006Riv4AAC",
+    "createdByName": "mohan chinnappan",
+    "createdDate": "2022-09-20T20:49:07.000Z",
+    "fileName": "labels/CustomLabels.labels",
+    "fullName": "Greeting",
+    "id": "1014x00000aiRxGAAU",
+    "lastModifiedById": "0054x000006Riv4AAC",
+    "lastModifiedByName": "mohan chinnappan",
+    "lastModifiedDate": "2022-09-20T20:49:07.000Z",
+    "manageableState": "unmanaged",
+    "type": "CustomLabel"
+}
+
+
+```
+
+---
+<a name='list'></a>
+#
+## List only required ones
 ```
 cat list.json
 ```
