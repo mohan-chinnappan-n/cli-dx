@@ -29,6 +29,15 @@ cp run.sh pmd-run.sh
 ```
 
 - put this folder: ```pmd-bin-6.47.0/bin``` in your PATH (```~/.zshrc or ~/.bashrc```)
+- example in ~/.zshrc
+```
+
+# PMD env var holds the location of your PMD install
+export PMD="/Users/mchinnappan/node-pmd/pmd-bin-6.47.0"
+# let us put the bin folder of the PMD in path
+export PATH="$PATH:$PMD/bin"
+
+```
 - make it executable ```chmod +x pmd-run.sh```
 
 ## Extract Apex Classes from your Org
