@@ -145,7 +145,7 @@ Deploy Succeeded.
 ```
 - For slient delete use
 ```
-sfdx force:source:delete -m ApexClass:Greeter -u mohan.chinnappan.n.sel@gmail.com
+sfdx force:source:delete -m ApexClass:Greeter -u mohan.chinnappan.n.sel@gmail.com -r
 
 ```
 
