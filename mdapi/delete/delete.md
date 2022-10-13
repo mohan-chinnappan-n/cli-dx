@@ -125,6 +125,7 @@ sfdx mohanc:mdapi:ls -u mohan.chinnappan.n.sel@gmail.com -i  ../ls/list.json -t 
 ```
 <a name='apexDelete'></a>
 ## How to delete an Apex Class
+- Make sure you are executing this command inside a SFDX Project
 ```
 sfdx force:source:delete -m ApexClass:Greeter -u mohan.chinnappan.n.sel@gmail.com
 This operation will delete the following metadata in your org: 
@@ -146,6 +147,6 @@ Deploy Succeeded.
 ```
 sfdx force:source:delete -m ApexClass:Greeter -u mohan.chinnappan.n.sel@gmail.com
 
-``
+```
 
 
