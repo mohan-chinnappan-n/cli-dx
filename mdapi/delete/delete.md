@@ -123,4 +123,29 @@ sfdx mohanc:mdapi:ls -u mohan.chinnappan.n.sel@gmail.com -i  ../ls/list.json -t 
 ]
 
 ```
+<a name='apexDelete'></a>
+## How to delete an Apex Class
+```
+sfdx force:source:delete -m ApexClass:Greeter -u mohan.chinnappan.n.sel@gmail.com
+This operation will delete the following metadata in your org: 
+ApexClass:Greeter
+
+Are you sure you want to proceed (y/n)?: y
+*** Deleting with SOAP API ***
+Deploy ID: 0Af4x00000VobpDCAR
+
+=== Deleted Source
+
+ FULL NAME TYPE      PROJECT PATH 
+ ───────── ───────── ──────────── 
+ Greeter   ApexClass              
+Deploy Succeeded.
+
+```
+- For slient delete use
+```
+sfdx force:source:delete -m ApexClass:Greeter -u mohan.chinnappan.n.sel@gmail.com
+
+``
+
 
