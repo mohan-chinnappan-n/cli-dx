@@ -80,6 +80,9 @@ grep -irn '@SuppressWarnings' unpackaged/classes
 unpackaged/classes/GeocodingService.cls:1:@SuppressWarnings('PMD.ExcessiveParameterList')
 
 ```
+
+### Using VS Code
+![VSCode PMD Suppress](img/pmd-supress-1.png)
 ------------------
 ## Run pmd csv output
 - your apex class files are at: /tmp/apex/unpackaged/classes/
