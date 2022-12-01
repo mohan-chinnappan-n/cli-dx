@@ -70,6 +70,17 @@ jar xvf  09S3h000006DK3lEAG.zip
 
 -----------------
 
+<a name='suppress'></a>
+## Check for @SuppressWarning annotations in the code 
+
+```bash
+grep -irn '@SuppressWarnings' unpackaged/classes 
+```
+```
+unpackaged/classes/GeocodingService.cls:1:@SuppressWarnings('PMD.ExcessiveParameterList')
+
+```
+------------------
 ## Run pmd csv output
 - your apex class files are at: /tmp/apex/unpackaged/classes/
 - csv output
