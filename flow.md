@@ -67,6 +67,7 @@ DeveloperName
 ## Deactivate the flow
 
 - 3004x000000hFYrAAM in below url is flowId to be deactivated
+- [How to get header.json for the logged Org](https://github.com/mohan-chinnappan-n/cli-dx/blob/master/rest.md#myorg)
 
 ```
 sfdx mohanc:ws:rest -r https://d4x000007rxogeaq-dev-ed.my.salesforce.com/services/data/v56.0/tooling/sobjects/FlowDefinition/3004x000000hFYrAAM/  -m PATCH -f header.json -d flow_data.json
