@@ -118,4 +118,3 @@ FLAGS
 
 ### Demo
 
-![Flow Toggle Demo](img/flow-toggle-2.webm.gif)
