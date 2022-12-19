@@ -9,3 +9,16 @@ sfdx mohanc:recording:createScript -r https://d4x000007rxogeaq-dev-ed.my.salesfo
 
 ### Demo
 ![OpptyTeamEnableTeamSharing](img/OpptyTeamEnableTeamSharing.webm.gif)
+
+
+------
+
+## Run Optimizer
+
+```
+sfdx mohanc:recording:createScript -r https://d4x000007rxogeaq-dev-ed.lightning.force.com -s RunOptimizer.json > ~/Desktop/ro.json
+```
+- Load the  ~/Desktop/ro.json into Chrome Recorder to play it
+
+### Demo Screenshot
+-![Run Optimizer](img/run-Optimizer.png)
