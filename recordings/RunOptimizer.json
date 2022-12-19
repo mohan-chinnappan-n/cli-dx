@@ -1,0 +1,45 @@
+{
+  "title": "RunOptimizer",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 833,
+      "height": 926,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "__URL__/lightning/o/OrgMetric/home",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "__URL__/lightning/o/OrgMetric/home",
+          "title": "Org Metrics | Salesforce"
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Run Optimizer"
+        ],
+        [
+          "#brandBand_1 > div > div > div > runtime_platform_optimizer-org-metric-list-header > div > div.slds-grid > div.slds-col.slds-no-flex.slds-grid.slds-align-top.slds-p-bottom--xx-small > lightning-button > button"
+        ],
+        [
+          "xpath///*[@id=\"brandBand_1\"]/div/div/div/runtime_platform_optimizer-org-metric-list-header/div/div[1]/div[2]/lightning-button/button"
+        ],
+        [
+          "text/Run Optimizer"
+        ]
+      ],
+      "offsetY": 13,
+      "offsetX": 83.953125
+    }
+  ]
+}
