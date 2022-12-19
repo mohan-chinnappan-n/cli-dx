@@ -1,0 +1,128 @@
+{
+  "title": "OpptyTeamEnableTeamSelling",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 833,
+      "height": 926,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "__URL__/opp/oppteam.apexp",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "__URL__/opp/oppteam.apexp"
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Content Starts Here Team Selling Setup Help for this Page Opportunity Teams help multiple users to better collaborate on opportunities by defining a role for each team member, setting record-level access individually, and viewing teams in list views and reports. When enabled, the opportunity teams are available in Salesforce Lightning, Salesforce Classic, and the mobile app. Users may prepare default opportunity teams for speedy setup of new opportunities. Opportunity Teams are not the same as account teams. If you’d like to use opportunity splits, enable team selling first, then enable opportunity splits. Enable Team Selling   Save Cancel"
+        ],
+        [
+          "#bodyCell"
+        ],
+        [
+          "xpath///*[@id=\"bodyCell\"]"
+        ]
+      ],
+      "offsetY": 310,
+      "offsetX": 117
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Enable Team Selling"
+        ],
+        [
+          "#j_id0\\:form\\:thePageBlock\\:enable"
+        ],
+        [
+          "xpath///*[@id=\"j_id0:form:thePageBlock:enable\"]"
+        ]
+      ],
+      "offsetY": 7.5,
+      "offsetX": 5
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Save"
+        ],
+        [
+          "#j_id0\\:form\\:thePageBlock\\:j_id60\\:saveEnable"
+        ],
+        [
+          "xpath///*[@id=\"j_id0:form:thePageBlock:j_id60:saveEnable\"]"
+        ],
+        [
+          "text/Save"
+        ]
+      ],
+      "offsetY": 14.5,
+      "offsetX": 14.703125,
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "__URL__/opp/addoppteamrelatedlist.apexp?setupid=OpportunityTeamMemberSettings",
+          "title": "Salesforce - Developer Edition"
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Opportunity (Sales) Layout[role=\"checkbox\"]"
+        ],
+        [
+          "#j_id0\\:j_id5\\:pageBlock1\\:pageLayoutList\\:1\\:layout"
+        ],
+        [
+          "xpath///*[@id=\"j_id0:j_id5:pageBlock1:pageLayoutList:1:layout\"]"
+        ]
+      ],
+      "offsetY": 5.5,
+      "offsetX": 7
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Save"
+        ],
+        [
+          "#j_id0\\:j_id5\\:pageBlock2\\:j_id13\\:save"
+        ],
+        [
+          "xpath///*[@id=\"j_id0:j_id5:pageBlock2:j_id13:save\"]"
+        ],
+        [
+          "text/Save"
+        ]
+      ],
+      "offsetY": 8.5,
+      "offsetX": 17.703125,
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "__URL__/opp/oppteam.apexp"
+        }
+      ]
+    }
+  ]
+}
