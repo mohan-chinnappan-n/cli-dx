@@ -2,16 +2,17 @@
 
 ## Input
 ```
-cat fruits.csv.psv 
+cat fruits.csv
 
-name|qty|store
-Mango|100|NY's fruits
-Apple|200|NY's fruits
-Peach|300|FL
+name,qty,store
+Mango,100,"NY's fruits"
+Apple,200,"NY's fruits"
+Peach,300,FL
 ```
 
 ## Run
 
+```
 python csv2psv.py -i fruits.csv -o fruits.csv.psv
 ```
 
