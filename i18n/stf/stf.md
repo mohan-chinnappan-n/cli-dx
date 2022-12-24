@@ -1,13 +1,12 @@
-# Using CLI to fill-in Salesforce translation file 
+# Using CLI to fill-in Salesforce translation file (STF)
 
 ## Update the plugin
 - [Refer: Plugin install and update](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 ```
  sfdx plugins:update
-
 ```
-
-- NOTE: [Kural CLI]((https://github.com/mohan-chinnappan-n/kural-docs)) provides free translation
+### NOTE: You can use [Kural CLI]((https://github.com/mohan-chinnappan-n/kural-docs)) to get free translations
+-------
 
 ### CLI allows progressive filling of stf with translated files
 - STEPS
@@ -46,6 +45,8 @@ sfdx mohanc:i18n:stf:fill -i batch-1.stf -t  translated-2.psv > batch-2.stf
 8. If you export again you will see the results of your translations:
 
 ![Checking Import](img/exported-2.png)
+
+-----------
 
 ## Using Kural to translate
 - [Kural Docs](https://github.com/mohan-chinnappan-n/kural-docs)
