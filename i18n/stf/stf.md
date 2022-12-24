@@ -9,7 +9,9 @@
 -------
 
 ### CLI allows progressive filling of stf with translated files
-- STEPS
+#### STEPS
+----
+
 
 - [Demo showing how to do the export - PDF](img/exportSTF.pdf)
 
