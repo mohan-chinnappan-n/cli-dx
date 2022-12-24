@@ -5,9 +5,9 @@
 ```
  sfdx plugins:update
 ```
-### NOTE: You can use [Kural CLI]((https://github.com/mohan-chinnappan-n/kural-docs)) to get free translations
-
-### NOTE: You can use the [csv2psv](py/README.md) for CSV to PSV conversions
+### NOTES
+- You can use [Kural CLI]((https://github.com/mohan-chinnappan-n/kural-docs)) to get free translations
+- You can use the [csv2psv](py/README.md) for CSV to PSV conversions
 -------
 
 ### CLI allows progressive filling of stf with translated files
