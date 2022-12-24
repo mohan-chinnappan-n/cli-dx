@@ -7,6 +7,8 @@
 
 ```
 
+- NOTE: [Kural CLI]((https://github.com/mohan-chinnappan-n/kural-docs)) provides free translation
+
 ### CLI allows progressive filling of stf with translated files
 - STEPS
 
