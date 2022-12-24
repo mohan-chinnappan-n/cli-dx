@@ -24,6 +24,8 @@ sfdx mohanc:i18n:stf:fill -i exported.stf -t  translated-1.psv > batch-1.stf
 1|ButtonOrLink.Account.Billing|Billing|Facturation
 2|CustomField.Account.CustomerPriority.FieldLabel|Customer Priority|Priorité du client
 ```
+####  batch-1.stf 
+
 ![batch-1](img/batch-1.png)
 
 4. Now another translation team has provided you [translated-2.psv](img/translated-2.psv)
@@ -35,6 +37,8 @@ sfdx mohanc:i18n:stf:fill -i batch-1.stf -t  translated-2.psv > batch-2.stf
 1|ButtonOrLink.Opportunity.DeliveryStatus|Delivery Status|Statut de livraison
 2|CustomField.Account.NumberofLocations.FieldLabel|Number of Locations|Nombre d'emplacements
 ```
+
+####  batch-1.stf 
 
 ![batch-2](img/batch-2.png)
 
