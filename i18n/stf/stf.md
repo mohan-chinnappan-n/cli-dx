@@ -48,6 +48,9 @@ sfdx mohanc:i18n:stf:fill -i batch-1.stf -t  translated-2.psv > batch-2.stf
 
 8. If you export again you will see the results of your translations:
 
+
+####  exported-2.stf 
+
 ![Checking Import](img/exported-2.png)
 
 -----------
