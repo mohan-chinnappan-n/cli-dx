@@ -1,5 +1,8 @@
 # Using CLI to fill-in Salesforce translation file (STF)
 
+## Like to know to prepare input file for Translation ?
+- [How to prep for translation from a STF file?](./prep.md)
+
 ## Update the plugin
 - [Refer: Plugin install and update](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 ```
