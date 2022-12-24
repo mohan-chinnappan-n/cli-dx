@@ -10,8 +10,10 @@
 ### CLI allows progressive filling of stf with translated files
 - STEPS
 
+- [Demo showing how to do the export - PDF](img/exportSTF.pdf)
+
 1. Export STF file for a bilingual (using Translation workbench) - say our case it is French (FR) 
-    - Our file say: exported.stf
+    - Our file say: [exported.stf](img/exported.stf)
 2. You have translated the keys in this STF file and have the translated-1.psv (Pipe Separated Value file)
 3. Create the filled value stf file (batch-1.stf) using this command:
 ```
