@@ -15,9 +15,7 @@
 2. You have translated the keys in this STF file and have the translated-1.psv (Pipe Separated Value file)
 3. Create the filled value stf file (batch-1.stf) using this command:
 ```
-
 sfdx mohanc:i18n:stf:fill -i exported.stf -t  translated-1.psv > batch-1.stf
-
 
 ```
 
@@ -26,7 +24,6 @@ sfdx mohanc:i18n:stf:fill -i exported.stf -t  translated-1.psv > batch-1.stf
 
 ```
 sfdx mohanc:i18n:stf:fill -i batch-1.stf -t  translated-2.psv > batch-2.stf
-
 
 ```
 6. and so on...
