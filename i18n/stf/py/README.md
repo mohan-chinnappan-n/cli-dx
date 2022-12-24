@@ -12,6 +12,8 @@ Peach,300,FL
 
 ## Run
 
+- [csv2psv.py](./csv2psv.py)
+
 ```
 python csv2psv.py -i fruits.csv -o fruits.csv.psv
 ```
