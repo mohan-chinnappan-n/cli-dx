@@ -1,0 +1,1496 @@
+# Use the Bilingual file to review translations, edit labels that have already been translated, and add translations for labels that haven't been translated.
+# - The TRANSLATED section of the file contains the text that has been translated and needs to be reviewed.
+# - The OUTDATED AND UNTRANSLATED section of the file contains text that hasn't been translated. You can replace untranslated labels in the LABEL column with translated values.
+
+# The Out of Date indicators are:
+# - An asterisk (*): The label is out of date. A change was made to the default language label and the translation hasn't been updated.
+# - A dash (-): The translation is current.
+
+# Notes:
+# Don't add columns to or remove columns from this file.
+# Tabs (\t), new lines (\n) and carriage returns (\r) are represented by special characters in this file. These characters should be preserved in the import file to maintain formatting.
+# Lines that begin with the # symbol are ignored during import.
+# Salesforce translation files are exported in the UTF-8 encoding to support extended and double-byte characters. This encoding cannot be changed.
+
+# Language: French
+Language code: fr
+Type: Bilingual
+Translation type: Metadata
+
+------------------OUTDATED AND UNTRANSLATED-----------------
+
+# KEY	LABEL
+
+ButtonOrLink.Account.Billing	Facturation
+ButtonOrLink.Campaign.ViewCampaignInfluenceReport	View Campaign Influence Report
+ButtonOrLink.Case.UpsellCrosssellOpportunity	Up-sell / Cross-sell Opportunity
+ButtonOrLink.Opportunity.DeliveryStatus	Statut de livraison
+CustomField.Account.Active.FieldLabel	Active
+CustomField.Account.CustomerPriority.FieldLabel	Priorité du client
+CustomField.Account.NumberofLocations.FieldLabel	Nombre d'emplacements
+CustomField.Account.SLA.FieldLabel	SLA
+CustomField.Account.SLAExpirationDate.FieldLabel	SLA Expiration Date
+CustomField.Account.SLASerialNumber.FieldLabel	SLA Serial Number
+CustomField.Account.UpsellOpportunity.FieldLabel	Upsell Opportunity
+CustomField.Account.count.FieldLabel	count
+CustomField.Case.EngineeringReqNumber.FieldLabel	Engineering Req Number
+CustomField.Case.PotentialLiability.FieldLabel	Potential Liability
+CustomField.Case.Product.FieldLabel	Product
+CustomField.Case.SLAViolation.FieldLabel	SLA Violation
+CustomField.Contact.Languages.FieldLabel	Languages
+CustomField.Contact.Level.FieldLabel	Level
+CustomField.Goal.OrigGoalId.FieldLabel	OrigGoalId
+CustomField.Lead.CurrentGenerators.FieldLabel	Current Generator(s)
+CustomField.Lead.NumberofLocations.FieldLabel	Number of Locations
+CustomField.Lead.Primary.FieldLabel	Primary
+CustomField.Lead.ProductInterest.FieldLabel	Product Interest
+CustomField.Lead.SICCode.FieldLabel	SIC Code
+CustomField.Metric.OrigMetricId.FieldLabel	OrigMetricId
+CustomField.Opportunity.CurrentGenerators.FieldLabel	Current Generator(s)
+CustomField.Opportunity.DeliveryInstallationStatus.FieldLabel	Delivery/Installation Status
+CustomField.Opportunity.MainCompetitors.FieldLabel	Main Competitor(s)
+CustomField.Opportunity.OrderNumber.FieldLabel	Order Number
+CustomField.Opportunity.TrackingNumber.FieldLabel	Tracking Number
+CustomReportType.screen_flows_prebuilt_crt.Name	Screen Flows
+CustomReportType.screen_flows_prebuilt_crt.Description	Find out which flows get executed and how long users take to complete each flow screen.
+CrtLayoutSection.screen_flows_prebuilt_crt_1	Flow Interview Logs
+CrtLayoutSection.screen_flows_prebuilt_crt_2	Flow Interview Log Entries
+LayoutSection.AlternativePaymentMethod.Alternative Payment Method Layout.Alternative Payment Method_0	Alternative Payment Method
+LayoutSection.ApiAnomalyEventStore.API Anomaly Event Store Layout.System Information_2	System Information
+LayoutSection.CardPaymentMethod.Card Payment Method Layout.Card Payment Method_0	Card Payment Method
+LayoutSection.CommunityMemberLayout.Community Member Layout.Basic Information_0	Basic Information
+LayoutSection.CommunityMemberLayout.Community Member Layout.Chatter Settings_2	Chatter Settings
+LayoutSection.CommunityMemberLayout.Community Member Layout.Language And Locale Settings_1	Language And Locale Settings
+LayoutSection.CredentialStuffingEventStore.Credential Stuffing Event Store Layout.System Information_2	System Information
+LayoutSection.DigitalWallet.Digital Wallet Layout.Digital Wallet_0	Digital Wallet
+LayoutSection.FulfillmentOrder.Fulfillment Order Layout.Fulfillment Order Information_0	Fulfillment Order Information
+LayoutSection.FulfillmentOrderItemAdjustment.Fulfillment Order Item Adjustment Layout.Fulfillment Order Item Adjustment Information_0	Fulfillment Order Item Adjustment Information
+LayoutSection.FulfillmentOrderItemTax.Fulfillment Order Item Tax Layout.Fulfillment Order Item Tax Information_0	Fulfillment Order Item Tax Information
+LayoutSection.OrderAdjustmentGroup.Order Adjustment Group Layout.Order Adjustment Group Information_0	Order Adjustment Group Information
+LayoutSection.OrderAdjustmentGroupSummary.Order Adjustment Group Summary Layout.Order Adjustment Group Summary Information_0	Order Adjustment Group Summary Information
+LayoutSection.OrderDeliveryGroup.Order Delivery Group Layout.Financial Information_1	Financial Information
+LayoutSection.OrderDeliveryGroup.Order Delivery Group Layout.Order Delivery Group Information_0	Order Delivery Group Information
+LayoutSection.OrderDeliveryGroupSummary.Order Delivery Group Summary Layout.Order Delivery Group Summary Information_0	Order Delivery Group Summary Information
+LayoutSection.OrderDeliveryMethod.Order Delivery Method Layout.Order Delivery Method Information_0	Order Delivery Method Information
+LayoutSection.OrderItemAdjustmentLineItem.Order Product Adjustment Line Item Layout.Order Product Adjustment Line Item Information_0	Order Product Adjustment Line Item Information
+LayoutSection.OrderItemSummary.Order Product Summary Layout.Order Product Summary_0	Order Product Summary
+LayoutSection.OrderItemTaxLineItem.Order Product Tax Line Item Layout.Order Product Tax Line Item Information_0	Order Product Tax Line Item Information
+LayoutSection.OrderPaymentSummary.Order Payment Summary Layout.Order Payment Summary Amounts_1	Order Payment Summary Amounts
+LayoutSection.OrderPaymentSummary.Order Payment Summary Layout.Order Payment Summary Information_0	Order Payment Summary Information
+LayoutSection.PaymentGateway.Payment Gateway Layout.Payment Gateway_0	Payment Gateway
+LayoutSection.PaymentGroup.Payment Group Layout.Payment Group_0	Payment Group
+LayoutSection.ReportAnomalyEventStore.Report Anomaly Event Store Layout.System Information_2	System Information
+LayoutSection.ReturnOrderItemAdjustment.Return Order Item Adjustment Layout.Return Order Item Adjustment Information_0	Return Order Item Adjustment Information
+LayoutSection.ReturnOrderItemAdjustment.Return Order Item Adjustment Layout.Return Order Item Adjustment Totals_1	Return Order Item Adjustment Totals
+LayoutSection.ReturnOrderItemTax.Return Order Item Tax Layout.Return Order Item Tax Information_0	Return Order Item Tax Information
+LayoutSection.SalesChannel.Sales Channel Layout.Sales Channel Information_0	Sales Channel Information
+LayoutSection.SessionHijackingEventStore.Session Hijacking Event Store Layout.System Information_2	System Information
+LayoutSection.WorkCoaching.Coaching Layout.Coaching Information_0	Coaching Information
+PicklistValue.Account.Active.No	No
+PicklistValue.Account.Active.Yes	Yes
+PicklistValue.Account.CustomerPriority.High	High
+PicklistValue.Account.CustomerPriority.Low	Low
+PicklistValue.Account.CustomerPriority.Medium	Medium
+PicklistValue.Account.SLA.Bronze	Bronze
+PicklistValue.Account.SLA.Gold	Gold
+PicklistValue.Account.SLA.Platinum	Platinum
+PicklistValue.Account.SLA.Silver	Silver
+PicklistValue.Account.UpsellOpportunity.Maybe	Maybe
+PicklistValue.Account.UpsellOpportunity.No	No
+PicklistValue.Account.UpsellOpportunity.Yes	Yes
+PicklistValue.Case.PotentialLiability.No	No
+PicklistValue.Case.PotentialLiability.Yes	Yes
+PicklistValue.Case.Product.GC1020	GC1020
+PicklistValue.Case.Product.GC1040	GC1040
+PicklistValue.Case.Product.GC1060	GC1060
+PicklistValue.Case.Product.GC3020	GC3020
+PicklistValue.Case.Product.GC3040	GC3040
+PicklistValue.Case.Product.GC3060	GC3060
+PicklistValue.Case.Product.GC5020	GC5020
+PicklistValue.Case.Product.GC5040	GC5040
+PicklistValue.Case.Product.GC5060	GC5060
+PicklistValue.Case.SLAViolation.No	No
+PicklistValue.Case.SLAViolation.Yes	Yes
+PicklistValue.Contact.Level.Primary	Primary
+PicklistValue.Contact.Level.Secondary	Secondary
+PicklistValue.Contact.Level.Tertiary	Tertiary
+PicklistValue.Lead.Primary.No	No
+PicklistValue.Lead.Primary.Yes	Yes
+PicklistValue.Lead.ProductInterest.GC1000 series	GC1000 series
+PicklistValue.Lead.ProductInterest.GC3000 series	GC3000 series
+PicklistValue.Lead.ProductInterest.GC5000 series	GC5000 series
+PicklistValue.Opportunity.DeliveryInstallationStatus.Completed	Completed
+PicklistValue.Opportunity.DeliveryInstallationStatus.In progress	In progress
+PicklistValue.Opportunity.DeliveryInstallationStatus.Yet to begin	Yet to begin
+PicklistValue.Standard.accountOwnership.Other	Other
+PicklistValue.Standard.accountOwnership.Private	Private
+PicklistValue.Standard.accountOwnership.Public	Public
+PicklistValue.Standard.accountOwnership.Subsidiary	Subsidiary
+PicklistValue.Standard.opportunityType.Existing Customer - Downgrade	Existing Customer - Downgrade
+PicklistValue.Standard.opportunityType.Existing Customer - Replacement	Existing Customer - Replacement
+PicklistValue.Standard.opportunityType.Existing Customer - Upgrade	Existing Customer - Upgrade
+PicklistValue.Standard.opportunityType.New Customer	New Customer
+PicklistValue.Standard.returnOrderStatus.Approved	Approved
+PicklistValue.Standard.returnOrderStatus.Canceled	Canceled
+PicklistValue.Standard.returnOrderStatus.Closed	Closed
+PicklistValue.Standard.returnOrderStatus.Draft	Draft
+PicklistValue.Standard.returnOrderStatus.Submitted	Submitted
+PicklistValue.Standard.returnOrderShipmentType.Next Business Day	Next Business Day
+PicklistValue.Standard.returnOrderShipmentType.Overnight	Overnight
+PicklistValue.Standard.returnOrderShipmentType.Pick Up	Pick Up
+PicklistValue.Standard.returnOrderShipmentType.Rush	Rush
+PicklistValue.Standard.returnOrderShipmentType.Standard	Standard
+PicklistValue.Standard.ageOver.13 or Older	13 or Older
+PicklistValue.Standard.ageOver.16 or Older	16 or Older
+PicklistValue.Standard.contactRole.Business User	Business User
+PicklistValue.Standard.contactRole.Decision Maker	Decision Maker
+PicklistValue.Standard.contactRole.Economic Buyer	Economic Buyer
+PicklistValue.Standard.contactRole.Economic Decision Maker	Economic Decision Maker
+PicklistValue.Standard.contactRole.Evaluator	Evaluator
+PicklistValue.Standard.contactRole.Executive Sponsor	Executive Sponsor
+PicklistValue.Standard.contactRole.Influencer	Influencer
+PicklistValue.Standard.contactRole.Other	Other
+PicklistValue.Standard.contactRole.Technical Buyer	Technical Buyer
+PicklistValue.Standard.returnOrderLineItemProcessPlan.Discard	Discard
+PicklistValue.Standard.returnOrderLineItemProcessPlan.Repair	Repair
+PicklistValue.Standard.returnOrderLineItemProcessPlan.Restock	Restock
+PicklistValue.Standard.returnOrderLineItemProcessPlan.Salvage	Salvage
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Damaged	Damaged
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Defective	Defective
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Duplicate Order	Duplicate Order
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Not Satisfied	Not Satisfied
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Other	Other
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Outdated	Outdated
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Wrong Item	Wrong Item
+PicklistValue.Standard.returnOrderLineItemReasonForReturn.Wrong Quantity	Wrong Quantity
+PicklistValue.Standard.returnOrderLineItemRepaymentMethod.Credit	Credit
+PicklistValue.Standard.returnOrderLineItemRepaymentMethod.Refund	Refund
+PicklistValue.Standard.returnOrderLineItemRepaymentMethod.Replace	Replace
+PicklistValue.Standard.returnOrderLineItemRepaymentMethod.Return	Return
+PicklistValue.Standard.caseType.Electrical	Electrical
+PicklistValue.Standard.caseType.Electronic	Electronic
+PicklistValue.Standard.caseType.Mechanical	Mechanical
+PicklistValue.Standard.caseType.Other	Other
+PicklistValue.Standard.caseType.Structural	Structural
+PicklistValue.Standard.contactRequestStatus.Abandoned	Abandoned
+PicklistValue.Standard.contactRequestStatus.Attempted	Attempted
+PicklistValue.Standard.contactRequestStatus.Contacted	Contacted
+PicklistValue.Standard.contactRequestStatus.New	New
+PicklistValue.Standard.contactRequestRequestedChannel.Phone	Phone
+PicklistValue.Standard.caseOrigin.Email	Email
+PicklistValue.Standard.caseOrigin.Phone	Phone
+PicklistValue.Standard.caseOrigin.Web	Web
+PicklistValue.Standard.contactRequestReason.Account	Account
+PicklistValue.Standard.contactRequestReason.Billing	Billing
+PicklistValue.Standard.contactRequestReason.Case	Case
+PicklistValue.Standard.contactRequestReason.General	General
+PicklistValue.Standard.contactRequestReason.Order	Order
+PicklistValue.Standard.contactRequestReason.Other	Other
+PicklistValue.Standard.contactRequestReason.Product	Product
+PicklistValue.Standard.caseReason.Breakdown	Breakdown
+PicklistValue.Standard.caseReason.Equipment Complexity	Equipment Complexity
+PicklistValue.Standard.caseReason.Equipment Design	Equipment Design
+PicklistValue.Standard.caseReason.Feedback	Feedback
+PicklistValue.Standard.caseReason.Installation	Installation
+PicklistValue.Standard.caseReason.Other	Other
+PicklistValue.Standard.caseReason.Performance	Performance
+PicklistValue.Standard.partnerRole.Advertiser	Advertiser
+PicklistValue.Standard.partnerRole.Agency	Agency
+PicklistValue.Standard.partnerRole.Broker	Broker
+PicklistValue.Standard.partnerRole.Consultant	Consultant
+PicklistValue.Standard.partnerRole.Contractor	Contractor
+PicklistValue.Standard.partnerRole.Dealer	Dealer
+PicklistValue.Standard.partnerRole.Developer	Developer
+PicklistValue.Standard.partnerRole.Distributor	Distributor
+PicklistValue.Standard.partnerRole.Institution	Institution
+PicklistValue.Standard.partnerRole.Lender	Lender
+PicklistValue.Standard.partnerRole.Supplier	Supplier
+PicklistValue.Standard.partnerRole.System Integrator	System Integrator
+PicklistValue.Standard.partnerRole.VAR/Reseller	VAR/Reseller
+PicklistValue.Standard.securityClassification.Confidential	Confidential
+PicklistValue.Standard.securityClassification.Internal	Internal
+PicklistValue.Standard.securityClassification.MissionCritical	MissionCritical
+PicklistValue.Standard.securityClassification.Public	Public
+PicklistValue.Standard.securityClassification.Restricted	Restricted
+PicklistValue.Standard.leadStatus.Closed - Converted	Closed - Converted
+PicklistValue.Standard.leadStatus.Closed - Not Converted	Closed - Not Converted
+PicklistValue.Standard.leadStatus.Open - Not Contacted	Open - Not Contacted
+PicklistValue.Standard.leadStatus.Working - Contacted	Working - Contacted
+PicklistValue.Standard.caseStatus.Closed	Closed
+PicklistValue.Standard.caseStatus.Escalated	Escalated
+PicklistValue.Standard.caseStatus.New	New
+PicklistValue.Standard.caseStatus.Working	Working
+PicklistValue.Standard.accountRating.Cold	Cold
+PicklistValue.Standard.accountRating.Hot	Hot
+PicklistValue.Standard.accountRating.Warm	Warm
+PicklistValue.Standard.casePriority.High	High
+PicklistValue.Standard.casePriority.Low	Low
+PicklistValue.Standard.casePriority.Medium	Medium
+PicklistValue.Standard.solutionStatus.Draft	Draft
+PicklistValue.Standard.solutionStatus.Duplicate	Duplicate
+PicklistValue.Standard.solutionStatus.Reviewed	Reviewed
+PicklistValue.Standard.taskStatus.Completed	Completed
+PicklistValue.Standard.taskStatus.Deferred	Deferred
+PicklistValue.Standard.taskStatus.In Progress	In Progress
+PicklistValue.Standard.taskStatus.Not Started	Not Started
+PicklistValue.Standard.taskStatus.Waiting on someone else	Waiting on someone else
+PicklistValue.Standard.opportunityStage.Closed Lost	Closed Lost
+PicklistValue.Standard.opportunityStage.Closed Won	Closed Won
+PicklistValue.Standard.opportunityStage.Id. Decision Makers	Id. Decision Makers
+PicklistValue.Standard.opportunityStage.Needs Analysis	Needs Analysis
+PicklistValue.Standard.opportunityStage.Negotiation/Review	Negotiation/Review
+PicklistValue.Standard.opportunityStage.Perception Analysis	Perception Analysis
+PicklistValue.Standard.opportunityStage.Proposal/Price Quote	Proposal/Price Quote
+PicklistValue.Standard.opportunityStage.Prospecting	Prospecting
+PicklistValue.Standard.opportunityStage.Qualification	Qualification
+PicklistValue.Standard.opportunityStage.Value Proposition	Value Proposition
+PicklistValue.Standard.militaryService.No	No
+PicklistValue.Standard.militaryService.Unknown	Unknown
+PicklistValue.Standard.militaryService.Yes	Yes
+PicklistValue.Standard.fulfillmentType.Download	Download
+PicklistValue.Standard.fulfillmentType.Email	Email
+PicklistValue.Standard.fulfillmentType.In Store Pickup	In Store Pickup
+PicklistValue.Standard.fulfillmentType.Retail Store	Retail Store
+PicklistValue.Standard.fulfillmentType.Supplier	Supplier
+PicklistValue.Standard.fulfillmentType.Warehouse	Warehouse
+PicklistValue.Standard.fulfillmentStatus.Allocated	Allocated
+PicklistValue.Standard.fulfillmentStatus.Assigned	Assigned
+PicklistValue.Standard.fulfillmentStatus.Cancelled	Cancelled
+PicklistValue.Standard.fulfillmentStatus.Draft	Draft
+PicklistValue.Standard.fulfillmentStatus.Fulfilled	Fulfilled
+PicklistValue.Standard.fulfillmentStatus.Pick Complete	Pick Complete
+PicklistValue.Standard.fulfillmentStatus.Pickpack	Pickpack
+PicklistValue.Standard.fulfillmentStatus.Printed	Printed
+PicklistValue.Standard.fulfillmentStatus.Rejected	Rejected
+PicklistValue.Standard.orderItemType.Delivery Charge	Delivery Charge
+PicklistValue.Standard.orderItemType.Order Product	Order Product
+PicklistValue.Standard.campaignType.Advertisement	Advertisement
+PicklistValue.Standard.campaignType.Banner Ads	Banner Ads
+PicklistValue.Standard.campaignType.Conference	Conference
+PicklistValue.Standard.campaignType.Direct Mail	Direct Mail
+PicklistValue.Standard.campaignType.Email	Email
+PicklistValue.Standard.campaignType.Other	Other
+PicklistValue.Standard.campaignType.Partners	Partners
+PicklistValue.Standard.campaignType.Public Relations	Public Relations
+PicklistValue.Standard.campaignType.Referral Program	Referral Program
+PicklistValue.Standard.campaignType.Telemarketing	Telemarketing
+PicklistValue.Standard.campaignType.Trade Show	Trade Show
+PicklistValue.Standard.campaignType.Webinar	Webinar
+PicklistValue.Standard.campaignStatus.Aborted	Aborted
+PicklistValue.Standard.campaignStatus.Completed	Completed
+PicklistValue.Standard.campaignStatus.In Progress	In Progress
+PicklistValue.Standard.campaignStatus.Planned	Planned
+PicklistValue.Standard.buyerAccountStatus.Active	Active
+PicklistValue.Standard.buyerAccountStatus.Inactive	Inactive
+PicklistValue.Standard.buyerAccountStatus.On Hold	On Hold
+PicklistValue.Standard.buyerAccountStatus.Pending	Pending
+PicklistValue.Standard.buyerAccountCreditStatus.Bad Credit	Bad Credit
+PicklistValue.Standard.buyerAccountCreditStatus.Delinquent	Delinquent
+PicklistValue.Standard.buyerAccountCreditStatus.Good Credit	Good Credit
+PicklistValue.Standard.buyerAccountCreditStatus.On Hold	On Hold
+PicklistValue.Standard.contractStatus.Activated	Activated
+PicklistValue.Standard.contractStatus.Draft	Draft
+PicklistValue.Standard.contractStatus.In Approval Process	In Approval Process
+PicklistValue.Standard.buyerAccountCommerceType.Buyer	Buyer
+PicklistValue.Standard.buyerAccountCommerceType.Reseller	Reseller
+PicklistValue.Standard.buyerAccountCommerceType.Seller	Seller
+PicklistValue.Standard.shiftStatus.Confirmed	Confirmed
+PicklistValue.Standard.shiftStatus.Published	Published
+PicklistValue.Standard.shiftStatus.Tentative	Tentative
+PicklistValue.Standard.accountType.Channel Partner / Reseller	Channel Partner / Reseller
+PicklistValue.Standard.accountType.Customer - Channel	Customer - Channel
+PicklistValue.Standard.accountType.Customer - Direct	Customer - Direct
+PicklistValue.Standard.accountType.Installation Partner	Installation Partner
+PicklistValue.Standard.accountType.Other	Other
+PicklistValue.Standard.accountType.Prospect	Prospect
+PicklistValue.Standard.accountType.Technology Partner	Technology Partner
+PicklistValue.Standard.eventType.Call	Call
+PicklistValue.Standard.eventType.Email	Email
+PicklistValue.Standard.eventType.Meeting	Meeting
+PicklistValue.Standard.eventType.Other	Other
+PicklistValue.Standard.taskType.Call	Call
+PicklistValue.Standard.taskType.Email	Email
+PicklistValue.Standard.taskType.Meeting	Meeting
+PicklistValue.Standard.taskType.Other	Other
+PicklistValue.Standard.salesTeamRole.Account Manager	Account Manager
+PicklistValue.Standard.salesTeamRole.Channel Manager	Channel Manager
+PicklistValue.Standard.salesTeamRole.Executive Sponsor	Executive Sponsor
+PicklistValue.Standard.salesTeamRole.Lead Qualifier	Lead Qualifier
+PicklistValue.Standard.salesTeamRole.Pre-Sales Consultant	Pre-Sales Consultant
+PicklistValue.Standard.salesTeamRole.Sales Manager	Sales Manager
+PicklistValue.Standard.salesTeamRole.Sales Rep	Sales Rep
+PicklistValue.Standard.snippetType.Date	Date
+PicklistValue.Standard.snippetType.Image	Image
+PicklistValue.Standard.snippetType.Link	Link
+PicklistValue.Standard.snippetType.Text	Text
+PicklistValue.Standard.orderStatus.Activated	Activated
+PicklistValue.Standard.orderStatus.Draft	Draft
+PicklistValue.Standard.orgMetricCategory.Custom Code	Custom Code
+PicklistValue.Standard.orgMetricCategory.Custom Layouts	Custom Layouts
+PicklistValue.Standard.orgMetricCategory.Fields	Fields
+PicklistValue.Standard.orgMetricCategory.Improve Org Security	Improve Org Security
+PicklistValue.Standard.orgMetricCategory.Improve User Experience	Improve User Experience
+PicklistValue.Standard.orgMetricCategory.Increase User Adoption	Increase User Adoption
+PicklistValue.Standard.orgMetricCategory.Object Limits	Object Limits
+PicklistValue.Standard.orgMetricCategory.Org Limits	Org Limits
+PicklistValue.Standard.orgMetricCategory.Reports And Dashboards	Reports And Dashboards
+PicklistValue.Standard.orgMetricCategory.Usage	Usage
+PicklistValue.Standard.orgMetricCategory.User Management	User Management
+PicklistValue.Standard.orgMetricCategory.Workflow	Workflow
+PicklistValue.Standard.orgMetricType.API Versions	API Versions
+PicklistValue.Standard.orgMetricType.Active Sharing Rule Limits	Active Sharing Rule Limits
+PicklistValue.Standard.orgMetricType.Active Validation Rule Limits	Active Validation Rule Limits
+PicklistValue.Standard.orgMetricType.Active Workflow Rule Limits	Active Workflow Rule Limits
+PicklistValue.Standard.orgMetricType.Case Feed	Case Feed
+PicklistValue.Standard.orgMetricType.Convert Attachment to Files	Convert Attachment to Files
+PicklistValue.Standard.orgMetricType.Critical Permission Assignments	Critical Permission Assignments
+PicklistValue.Standard.orgMetricType.Custom Field Limits	Custom Field Limits
+PicklistValue.Standard.orgMetricType.Custom Profiles with a Low Number of Users	Custom Profiles with a Low Number of Users
+PicklistValue.Standard.orgMetricType.Data Storage Limits	Data Storage Limits
+PicklistValue.Standard.orgMetricType.Details Tab on Record Pages	Details Tab on Record Pages
+PicklistValue.Standard.orgMetricType.Disable Debug Mode	Disable Debug Mode
+PicklistValue.Standard.orgMetricType.Duplicate Management	Duplicate Management
+PicklistValue.Standard.orgMetricType.Field Usage	Field Usage
+PicklistValue.Standard.orgMetricType.Fields on Page Layouts	Fields on Page Layouts
+PicklistValue.Standard.orgMetricType.File Storage Limits	File Storage Limits
+PicklistValue.Standard.orgMetricType.Files Adoption	Files Adoption
+PicklistValue.Standard.orgMetricType.Formula Fields with JavaScript Code	Formula Fields with JavaScript Code
+PicklistValue.Standard.orgMetricType.Hard-Coded URLs	Hard-Coded URLs
+PicklistValue.Standard.orgMetricType.Inactive Chatter Users	Inactive Chatter Users
+PicklistValue.Standard.orgMetricType.Inactive Validation Rules	Inactive Validation Rules
+PicklistValue.Standard.orgMetricType.Inactive Workflow Rules	Inactive Workflow Rules
+PicklistValue.Standard.orgMetricType.Incomplete Chatter Profiles	Incomplete Chatter Profiles
+PicklistValue.Standard.orgMetricType.Keyboard Shortcuts	Keyboard Shortcuts
+PicklistValue.Standard.orgMetricType.Lightning Components on Record Lightning Pages	Lightning Components on Record Lightning Pages
+PicklistValue.Standard.orgMetricType.Lightning Sales Console	Lightning Sales Console
+PicklistValue.Standard.orgMetricType.Lightning Service Console	Lightning Service Console
+PicklistValue.Standard.orgMetricType.Macros	Macros
+PicklistValue.Standard.orgMetricType.Migrating Workflow Rules to Flow Builder	Migrating Workflow Rules to Flow Builder
+PicklistValue.Standard.orgMetricType.Multiple Apex Triggers per Object	Multiple Apex Triggers per Object
+PicklistValue.Standard.orgMetricType.New Code Using Old API Versions	New Code Using Old API Versions
+PicklistValue.Standard.orgMetricType.News and Twitter	News and Twitter
+PicklistValue.Standard.orgMetricType.Notes and Attachments Related List	Notes and Attachments Related List
+PicklistValue.Standard.orgMetricType.Omni-Channel	Omni-Channel
+PicklistValue.Standard.orgMetricType.Out-of-Date Browsers	Out-of-Date Browsers
+PicklistValue.Standard.orgMetricType.Page Layouts per Object	Page Layouts per Object
+PicklistValue.Standard.orgMetricType.Path	Path
+PicklistValue.Standard.orgMetricType.Permission Sets with a Low Number of Users	Permission Sets with a Low Number of Users
+PicklistValue.Standard.orgMetricType.Record Types per Object	Record Types per Object
+PicklistValue.Standard.orgMetricType.Replacing Related Lists with the Related List Quick Links Component	Replacing Related Lists with the Related List Quick Links Component
+PicklistValue.Standard.orgMetricType.S-Controls	S-Controls
+PicklistValue.Standard.orgMetricType.Static Resource Limits	Static Resource Limits
+PicklistValue.Standard.orgMetricType.Unassigned Custom Profiles	Unassigned Custom Profiles
+PicklistValue.Standard.orgMetricType.Unassigned Page Layouts	Unassigned Page Layouts
+PicklistValue.Standard.orgMetricType.Unassigned Permission Sets	Unassigned Permission Sets
+PicklistValue.Standard.orgMetricType.Unassigned Record Types	Unassigned Record Types
+PicklistValue.Standard.orgMetricType.Unassigned Roles	Unassigned Roles
+PicklistValue.Standard.orgMetricType.Unsupported Browsers	Unsupported Browsers
+PicklistValue.Standard.orgMetricType.Unused Dashboards	Unused Dashboards
+PicklistValue.Standard.orgMetricType.Unused Reports	Unused Reports
+PicklistValue.Standard.orgMetricType.User Logins	User Logins
+PicklistValue.Standard.orgMetricStatus.Action Required	Action Required
+PicklistValue.Standard.orgMetricStatus.Immediate Action Required	Immediate Action Required
+PicklistValue.Standard.orgMetricStatus.No Action Required	No Action Required
+PicklistValue.Standard.orgMetricStatus.Not Currently Enabled	Not Currently Enabled
+PicklistValue.Standard.orgMetricStatus.Review Required	Review Required
+PicklistValue.Standard.orgMetricStatus.Unable to Analyze	Unable to Analyze
+PicklistValue.Standard.orgMetricImplEffort.1 - 2 hours	1 - 2 hours
+PicklistValue.Standard.orgMetricImplEffort.30 - 60 minutes	30 - 60 minutes
+PicklistValue.Standard.orgMetricImplEffort.< 30 minutes	< 30 minutes
+PicklistValue.Standard.orgMetricImplEffort.> 2 hours	> 2 hours
+PicklistValue.Standard.campaignMemberStatus.Planned	Planned
+PicklistValue.Standard.campaignMemberStatus.Received	Received
+PicklistValue.Standard.campaignMemberStatus.Responded	Responded
+PicklistValue.Standard.campaignMemberStatus.Sent	Sent
+PicklistValue.Standard.product2Family.None	None
+PicklistValue.Standard.complianceGroup.CCPA	CCPA
+PicklistValue.Standard.complianceGroup.COPPA	COPPA
+PicklistValue.Standard.complianceGroup.GDPR	GDPR
+PicklistValue.Standard.complianceGroup.HIPAA	HIPAA
+PicklistValue.Standard.complianceGroup.PCI	PCI
+PicklistValue.Standard.complianceGroup.PII	PII
+PicklistValue.Standard.contactPointAddressType.Billing	Billing
+PicklistValue.Standard.contactPointAddressType.Shipping	Shipping
+PicklistValue.Standard.orderItemSummaryChgRsn.Unknown	Unknown
+PicklistValue.Standard.orderSummaryRoutingSchdRsn.Unknown	Unknown
+PicklistValue.Standard.accountContactRole.Business User	Business User
+PicklistValue.Standard.accountContactRole.Decision Maker	Decision Maker
+PicklistValue.Standard.accountContactRole.Economic Buyer	Economic Buyer
+PicklistValue.Standard.accountContactRole.Economic Decision Maker	Economic Decision Maker
+PicklistValue.Standard.accountContactRole.Evaluator	Evaluator
+PicklistValue.Standard.accountContactRole.Executive Sponsor	Executive Sponsor
+PicklistValue.Standard.accountContactRole.Influencer	Influencer
+PicklistValue.Standard.accountContactRole.Other	Other
+PicklistValue.Standard.accountContactRole.Technical Buyer	Technical Buyer
+PicklistValue.Standard.orderSummaryStatus.Created	Created
+PicklistValue.Standard.contractContactRole.Business User	Business User
+PicklistValue.Standard.contractContactRole.Decision Maker	Decision Maker
+PicklistValue.Standard.contractContactRole.Economic Buyer	Economic Buyer
+PicklistValue.Standard.contractContactRole.Economic Decision Maker	Economic Decision Maker
+PicklistValue.Standard.contractContactRole.Evaluator	Evaluator
+PicklistValue.Standard.contractContactRole.Executive Sponsor	Executive Sponsor
+PicklistValue.Standard.contractContactRole.Influencer	Influencer
+PicklistValue.Standard.contractContactRole.Other	Other
+PicklistValue.Standard.contractContactRole.Technical Buyer	Technical Buyer
+PicklistValue.Standard.cardType.American Express	American Express
+PicklistValue.Standard.cardType.Diners Club	Diners Club
+PicklistValue.Standard.cardType.JCB	JCB
+PicklistValue.Standard.cardType.Maestro	Maestro
+PicklistValue.Standard.cardType.Master Card	Master Card
+PicklistValue.Standard.cardType.Visa	Visa
+PicklistValue.Standard.callResolution.Resolved	Resolved
+PicklistValue.Standard.industry.Agriculture	Agriculture
+PicklistValue.Standard.industry.Apparel	Apparel
+PicklistValue.Standard.industry.Banking	Banking
+PicklistValue.Standard.industry.Biotechnology	Biotechnology
+PicklistValue.Standard.industry.Chemicals	Chemicals
+PicklistValue.Standard.industry.Communications	Communications
+PicklistValue.Standard.industry.Construction	Construction
+PicklistValue.Standard.industry.Consulting	Consulting
+PicklistValue.Standard.industry.Education	Education
+PicklistValue.Standard.industry.Electronics	Electronics
+PicklistValue.Standard.industry.Energy	Energy
+PicklistValue.Standard.industry.Engineering	Engineering
+PicklistValue.Standard.industry.Entertainment	Entertainment
+PicklistValue.Standard.industry.Environmental	Environmental
+PicklistValue.Standard.industry.Finance	Finance
+PicklistValue.Standard.industry.Food & Beverage	Food & Beverage
+PicklistValue.Standard.industry.Government	Government
+PicklistValue.Standard.industry.Healthcare	Healthcare
+PicklistValue.Standard.industry.Hospitality	Hospitality
+PicklistValue.Standard.industry.Insurance	Insurance
+PicklistValue.Standard.industry.Machinery	Machinery
+PicklistValue.Standard.industry.Manufacturing	Manufacturing
+PicklistValue.Standard.industry.Media	Media
+PicklistValue.Standard.industry.Not For Profit	Not For Profit
+PicklistValue.Standard.industry.Other	Other
+PicklistValue.Standard.industry.Recreation	Recreation
+PicklistValue.Standard.industry.Retail	Retail
+PicklistValue.Standard.industry.Shipping	Shipping
+PicklistValue.Standard.industry.Technology	Technology
+PicklistValue.Standard.industry.Telecommunications	Telecommunications
+PicklistValue.Standard.industry.Transportation	Transportation
+PicklistValue.Standard.industry.Utilities	Utilities
+PicklistValue.Standard.assetStatus.Installed	Installed
+PicklistValue.Standard.assetStatus.Obsolete	Obsolete
+PicklistValue.Standard.assetStatus.Purchased	Purchased
+PicklistValue.Standard.assetStatus.Registered	Registered
+PicklistValue.Standard.assetStatus.Shipped	Shipped
+PicklistValue.Standard.fiscalYearQuarterPrefix.FQ	FQ
+PicklistValue.Standard.fiscalYearQuarterPrefix.Q	Q
+PicklistValue.Standard.fiscalYearQuarterPrefix.Quarter	Quarter
+PicklistValue.Standard.fiscalYearQuarterPrefix.Trimester	Trimester
+PicklistValue.Standard.assetActionCategory.Cancellations	Cancellations
+PicklistValue.Standard.assetActionCategory.Cross-Sells	Cross-Sells
+PicklistValue.Standard.assetActionCategory.Downsells	Downsells
+PicklistValue.Standard.assetActionCategory.Initial Sale	Initial Sale
+PicklistValue.Standard.assetActionCategory.Other	Other
+PicklistValue.Standard.assetActionCategory.Renewals	Renewals
+PicklistValue.Standard.assetActionCategory.Terms And Conditions Changes	Terms And Conditions Changes
+PicklistValue.Standard.assetActionCategory.Transfers	Transfers
+PicklistValue.Standard.assetActionCategory.Upsells	Upsells
+PicklistValue.Standard.digitalAssetStatus.Error	Error
+PicklistValue.Standard.digitalAssetStatus.Off	Off
+PicklistValue.Standard.digitalAssetStatus.On	On
+PicklistValue.Standard.digitalAssetStatus.Warning	Warning
+PicklistValue.Standard.fiscalYearPeriodPrefix.FP	FP
+PicklistValue.Standard.fiscalYearPeriodPrefix.Month	Month
+PicklistValue.Standard.fiscalYearPeriodPrefix.P	P
+PicklistValue.Standard.fiscalYearPeriodPrefix.Period	Period
+PicklistValue.Standard.statusReason.Not Ready	Not Ready
+PicklistValue.Standard.statusReason.Off	Off
+PicklistValue.Standard.statusReason.Offline	Offline
+PicklistValue.Standard.statusReason.Online	Online
+PicklistValue.Standard.statusReason.Paused	Paused
+PicklistValue.Standard.statusReason.Standby	Standby
+PicklistValue.Standard.fiscalYearQuarterName.Fall	Fall
+PicklistValue.Standard.fiscalYearQuarterName.Spring	Spring
+PicklistValue.Standard.fiscalYearQuarterName.Summer	Summer
+PicklistValue.Standard.fiscalYearQuarterName.Winter	Winter
+PicklistValue.Standard.workStepStatus.Completed	Completed
+PicklistValue.Standard.workStepStatus.In Progress	In Progress
+PicklistValue.Standard.workStepStatus.New	New
+PicklistValue.Standard.workStepStatus.Not Applicable	Not Applicable
+PicklistValue.Standard.workStepStatus.Paused	Paused
+PicklistValue.Standard.caseContactRole.Business Contact	Business Contact
+PicklistValue.Standard.caseContactRole.Decision Maker	Decision Maker
+PicklistValue.Standard.caseContactRole.Other	Other
+PicklistValue.Standard.caseContactRole.Technical Contact	Technical Contact
+PicklistValue.Standard.finTrxReferenceEntityType.Credit memo	Credit memo
+PicklistValue.Standard.finTrxReferenceEntityType.Credit memo line	Credit memo line
+PicklistValue.Standard.finTrxReferenceEntityType.Credit memo line invoice application	Credit memo line invoice application
+PicklistValue.Standard.finTrxReferenceEntityType.Credit memo line invoice line application	Credit memo line invoice line application
+PicklistValue.Standard.finTrxReferenceEntityType.Credit memo line tax	Credit memo line tax
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo	Debit memo
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo line	Debit memo line
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo line credit memo application	Debit memo line credit memo application
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo line credit memo line application	Debit memo line credit memo line application
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo line invoice application	Debit memo line invoice application
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo line invoice line application	Debit memo line invoice line application
+PicklistValue.Standard.finTrxReferenceEntityType.Debit memo line tax	Debit memo line tax
+PicklistValue.Standard.finTrxReferenceEntityType.Invoice	Invoice
+PicklistValue.Standard.finTrxReferenceEntityType.Invoice line	Invoice line
+PicklistValue.Standard.finTrxReferenceEntityType.Invoice line tax	Invoice line tax
+PicklistValue.Standard.finTrxReferenceEntityType.Other	Other
+PicklistValue.Standard.finTrxReferenceEntityType.Payment	Payment
+PicklistValue.Standard.finTrxReferenceEntityType.Payment debit memo application	Payment debit memo application
+PicklistValue.Standard.finTrxReferenceEntityType.Payment debit memo line application	Payment debit memo line application
+PicklistValue.Standard.finTrxReferenceEntityType.Payment invoice application	Payment invoice application
+PicklistValue.Standard.finTrxReferenceEntityType.Payment invoice line application	Payment invoice line application
+PicklistValue.Standard.finTrxReferenceEntityType.Refund	Refund
+PicklistValue.Standard.finTrxReferenceEntityType.Refund credit memo application	Refund credit memo application
+PicklistValue.Standard.finTrxReferenceEntityType.Refund credit memo line application	Refund credit memo line application
+PicklistValue.Standard.finTrxReferenceEntityType.Refund payment application	Refund payment application
+PicklistValue.Standard.finTrxReferenceEntityType.Sub invoice line	Sub invoice line
+PicklistValue.Standard.finTrxReferenceEntityType.Sub invoice line tax	Sub invoice line tax
+PicklistValue.Standard.financeEventType.Allocated	Allocated
+PicklistValue.Standard.financeEventType.Canceled	Canceled
+PicklistValue.Standard.financeEventType.Changed	Changed
+PicklistValue.Standard.financeEventType.Other	Other
+PicklistValue.Standard.financeEventType.Posted	Posted
+PicklistValue.Standard.financeEventType.Unallocated	Unallocated
+PicklistValue.Standard.financeEventType.Void	Void
+PicklistValue.Standard.financeEventAction.Cancel & rebill	Cancel & rebill
+PicklistValue.Standard.financeEventAction.Convert negative invoice lines	Convert negative invoice lines
+PicklistValue.Standard.financeEventAction.Credit invoice header	Credit invoice header
+PicklistValue.Standard.financeEventAction.Credit invoice line	Credit invoice line
+PicklistValue.Standard.financeEventAction.Currency change on sub invoice line	Currency change on sub invoice line
+PicklistValue.Standard.financeEventAction.Debit credit memo header	Debit credit memo header
+PicklistValue.Standard.financeEventAction.Debit credit memo line	Debit credit memo line
+PicklistValue.Standard.financeEventAction.Debit invoice header	Debit invoice header
+PicklistValue.Standard.financeEventAction.Debit invoice line	Debit invoice line
+PicklistValue.Standard.financeEventAction.Invoice line reference changed on sub invoice line	Invoice line reference changed on sub invoice line
+PicklistValue.Standard.financeEventAction.Issue a standalone credit	Issue a standalone credit
+PicklistValue.Standard.financeEventAction.Issue a standalone debit	Issue a standalone debit
+PicklistValue.Standard.financeEventAction.Issue a standalone refund	Issue a standalone refund
+PicklistValue.Standard.financeEventAction.Other	Other
+PicklistValue.Standard.financeEventAction.Pay debit memo header	Pay debit memo header
+PicklistValue.Standard.financeEventAction.Pay debit memo line	Pay debit memo line
+PicklistValue.Standard.financeEventAction.Pay invoice header	Pay invoice header
+PicklistValue.Standard.financeEventAction.Pay invoice line	Pay invoice line
+PicklistValue.Standard.financeEventAction.Post a standalone payment	Post a standalone payment
+PicklistValue.Standard.financeEventAction.Post an invoice	Post an invoice
+PicklistValue.Standard.financeEventAction.Refund a credit memo header	Refund a credit memo header
+PicklistValue.Standard.financeEventAction.Refund a credit memo line	Refund a credit memo line
+PicklistValue.Standard.financeEventAction.Refund a payment	Refund a payment
+PicklistValue.Standard.financeEventAction.Subtotal change on sub invoice line	Subtotal change on sub invoice line
+PicklistValue.Standard.financeEventAction.Tax change on sub invoice line	Tax change on sub invoice line
+PicklistValue.Standard.financeEventAction.Unallocate credit from invoice header	Unallocate credit from invoice header
+PicklistValue.Standard.financeEventAction.Unallocate credit from invoice line	Unallocate credit from invoice line
+PicklistValue.Standard.financeEventAction.Unallocate debit from credit memo header	Unallocate debit from credit memo header
+PicklistValue.Standard.financeEventAction.Unallocate debit from credit memo line	Unallocate debit from credit memo line
+PicklistValue.Standard.financeEventAction.Unallocate debit from invoice header	Unallocate debit from invoice header
+PicklistValue.Standard.financeEventAction.Unallocate debit from invoice line	Unallocate debit from invoice line
+PicklistValue.Standard.financeEventAction.Unallocate payment from debit line	Unallocate payment from debit line
+PicklistValue.Standard.financeEventAction.Unallocate payment from debit memo header	Unallocate payment from debit memo header
+PicklistValue.Standard.financeEventAction.Unallocate payment from invoice header	Unallocate payment from invoice header
+PicklistValue.Standard.financeEventAction.Unallocate payment from invoice line	Unallocate payment from invoice line
+PicklistValue.Standard.financeEventAction.Unallocate refund from credit memo header	Unallocate refund from credit memo header
+PicklistValue.Standard.financeEventAction.Unallocate refund from credit memo line	Unallocate refund from credit memo line
+PicklistValue.Standard.financeEventAction.Unallocate refund from payment	Unallocate refund from payment
+PicklistValue.Standard.financeEventAction.Void a standalone credit	Void a standalone credit
+PicklistValue.Standard.financeEventAction.Void a standalone debit	Void a standalone debit
+PicklistValue.Standard.financeEventAction.Void a standalone payment	Void a standalone payment
+PicklistValue.Standard.financeEventAction.Void a standalone refund	Void a standalone refund
+PicklistValue.Standard.financeEventAction.Void an invoice	Void an invoice
+PicklistValue.Standard.processExceptionStatus.Ignored	Ignored
+PicklistValue.Standard.processExceptionStatus.New	New
+PicklistValue.Standard.processExceptionStatus.Paused	Paused
+PicklistValue.Standard.processExceptionStatus.Resolved	Resolved
+PicklistValue.Standard.processExceptionStatus.Triaged	Triaged
+PicklistValue.Standard.processExceptionStatus.Voided	Voided
+PicklistValue.Standard.processExceptionCategory.Fulfillment	Fulfillment
+PicklistValue.Standard.processExceptionCategory.Invoicing	Invoicing
+PicklistValue.Standard.processExceptionCategory.Order Activation	Order Activation
+PicklistValue.Standard.processExceptionCategory.Order Approval	Order Approval
+PicklistValue.Standard.processExceptionCategory.Payment	Payment
+PicklistValue.Standard.forecastCategoryName.Best Case	Best Case
+PicklistValue.Standard.forecastCategoryName.Closed	Closed
+PicklistValue.Standard.forecastCategoryName.Commit	Commit
+PicklistValue.Standard.forecastCategoryName.Omitted	Omitted
+PicklistValue.Standard.forecastCategoryName.Pipeline	Pipeline
+PicklistValue.Standard.processExceptionSeverity.High	High
+PicklistValue.Standard.processExceptionSeverity.Low	Low
+PicklistValue.Standard.processExceptionPriority.High	High
+PicklistValue.Standard.processExceptionPriority.Low	Low
+PicklistValue.Standard.exceptionType.OM Apply Failed	OM Apply Failed
+PicklistValue.Standard.exceptionType.OM Capture Failed	OM Capture Failed
+PicklistValue.Standard.exceptionType.OM Refund Failed	OM Refund Failed
+PicklistValue.Standard.contactPointUsageType.Home	Home
+PicklistValue.Standard.contactPointUsageType.Inactive	Inactive
+PicklistValue.Standard.contactPointUsageType.Temporary	Temporary
+PicklistValue.Standard.contactPointUsageType.Work	Work
+PicklistValue.Standard.returnOrderLineItemReasonForRejection.Damaged Item	Damaged Item
+PicklistValue.Standard.returnOrderLineItemReasonForRejection.Expired Warranty	Expired Warranty
+PicklistValue.Standard.returnOrderLineItemReasonForRejection.Missing Item or Part	Missing Item or Part
+PicklistValue.Standard.returnOrderLineItemReasonForRejection.Wrong Item	Wrong Item
+PicklistValue.Standard.eventSubject.Call	Call
+PicklistValue.Standard.eventSubject.Email	Email
+PicklistValue.Standard.eventSubject.Meeting	Meeting
+PicklistValue.Standard.eventSubject.Other	Other
+PicklistValue.Standard.eventSubject.Send Letter/Quote	Send Letter/Quote
+PicklistValue.Standard.entitlementType.Phone Support	Phone Support
+PicklistValue.Standard.entitlementType.Web Support	Web Support
+PicklistValue.Standard.serviceContractApprovalStatus.Activated	Activated
+PicklistValue.Standard.serviceContractApprovalStatus.Draft	Draft
+PicklistValue.Standard.serviceContractApprovalStatus.In Approval Process	In Approval Process
+PicklistValue.Standard.quickTextCategory.Closings	Closings
+PicklistValue.Standard.quickTextCategory.FAQ	FAQ
+PicklistValue.Standard.quickTextCategory.Greetings	Greetings
+PicklistValue.Standard.taskPriority.High	High
+PicklistValue.Standard.taskPriority.Low	Low
+PicklistValue.Standard.taskPriority.Normal	Normal
+PicklistValue.Standard.quickTextChannel.Email	Email
+PicklistValue.Standard.quickTextChannel.Event	Event
+PicklistValue.Standard.quickTextChannel.Internal	Internal
+PicklistValue.Standard.quickTextChannel.Phone	Phone
+PicklistValue.Standard.quickTextChannel.Portal	Portal
+PicklistValue.Standard.quickTextChannel.Task	Task
+PicklistValue.Standard.salesChannelType.B2B	B2B
+PicklistValue.Standard.salesChannelType.B2C	B2C
+PicklistValue.Standard.salesChannelType.Other	Other
+PicklistValue.Standard.problemStatus.Closed	Closed
+PicklistValue.Standard.problemStatus.Fix In Progress	Fix In Progress
+PicklistValue.Standard.problemStatus.Known Error	Known Error
+PicklistValue.Standard.problemStatus.New	New
+PicklistValue.Standard.problemStatus.Open	Open
+PicklistValue.Standard.problemStatus.Pending Change	Pending Change
+PicklistValue.Standard.problemStatus.Resolved	Resolved
+PicklistValue.Standard.problemStatus.Root Case Analysis	Root Case Analysis
+PicklistValue.Standard.problemStatus.Work In Progress	Work In Progress
+PicklistValue.Standard.problemImpact.High	High
+PicklistValue.Standard.problemImpact.Low	Low
+PicklistValue.Standard.problemImpact.Medium	Medium
+PicklistValue.Standard.problemUrgency.High	High
+PicklistValue.Standard.problemUrgency.Low	Low
+PicklistValue.Standard.problemUrgency.Medium	Medium
+PicklistValue.Standard.problemPriority.Critical	Critical
+PicklistValue.Standard.problemPriority.High	High
+PicklistValue.Standard.problemPriority.Low	Low
+PicklistValue.Standard.problemPriority.Moderate	Moderate
+PicklistValue.Standard.incidentStatus.Closed	Closed
+PicklistValue.Standard.incidentStatus.Completed	Completed
+PicklistValue.Standard.incidentStatus.In Progress	In Progress
+PicklistValue.Standard.incidentStatus.New	New
+PicklistValue.Standard.incidentStatus.Open	Open
+PicklistValue.Standard.incidentStatus.Problem Created	Problem Created
+PicklistValue.Standard.incidentStatus.Resolved	Resolved
+PicklistValue.Standard.socialPostEngagementLevel.Commented	Commented
+PicklistValue.Standard.socialPostEngagementLevel.Resolved	Resolved
+PicklistValue.Standard.socialPostEngagementLevel.Reviewed	Reviewed
+PicklistValue.Standard.socialPostEngagementLevel.Submitted	Submitted
+PicklistValue.Standard.incidentImpact.High	High
+PicklistValue.Standard.incidentImpact.Low	Low
+PicklistValue.Standard.incidentImpact.Medium	Medium
+PicklistValue.Standard.incidentUrgency.High	High
+PicklistValue.Standard.incidentUrgency.Low	Low
+PicklistValue.Standard.incidentUrgency.Medium	Medium
+PicklistValue.Standard.incidentPriority.Critical	Critical
+PicklistValue.Standard.incidentPriority.High	High
+PicklistValue.Standard.incidentPriority.Low	Low
+PicklistValue.Standard.incidentPriority.Moderate	Moderate
+PicklistValue.Standard.changeRequestStatus.Approved	Approved
+PicklistValue.Standard.changeRequestStatus.Canceled	Canceled
+PicklistValue.Standard.changeRequestStatus.Closed	Closed
+PicklistValue.Standard.changeRequestStatus.Implementing	Implementing
+PicklistValue.Standard.changeRequestStatus.New	New
+PicklistValue.Standard.changeRequestStatus.Open	Open
+PicklistValue.Standard.changeRequestStatus.Planning	Planning
+PicklistValue.Standard.changeRequestStatus.Rejected	Rejected
+PicklistValue.Standard.changeRequestStatus.Reviewed	Reviewed
+PicklistValue.Standard.changeRequestStatus.Scheduled	Scheduled
+PicklistValue.Standard.changeRequestPriority.Critical	Critical
+PicklistValue.Standard.changeRequestPriority.High	High
+PicklistValue.Standard.changeRequestPriority.Low	Low
+PicklistValue.Standard.changeRequestPriority.Moderate	Moderate
+PicklistValue.Standard.socialPostClassification.Customer Case	Customer Case
+PicklistValue.Standard.socialPostClassification.Inquiry	Inquiry
+PicklistValue.Standard.socialPostClassification.Lead	Lead
+PicklistValue.Standard.socialPostClassification.Outreach	Outreach
+PicklistValue.Standard.socialPostClassification.Product Review	Product Review
+PicklistValue.Standard.changeRequestImpact.High	High
+PicklistValue.Standard.changeRequestImpact.Low	Low
+PicklistValue.Standard.changeRequestImpact.Medium	Medium
+PicklistValue.Standard.changeRequestRiskLevel.High	High
+PicklistValue.Standard.changeRequestRiskLevel.Low	Low
+PicklistValue.Standard.changeRequestRiskLevel.Medium	Medium
+PicklistValue.Standard.fulfillmentReshipReason.Damaged	Damaged
+PicklistValue.Standard.fulfillmentReshipReason.Lost	Lost
+PicklistValue.Standard.fulfillmentReshipReason.Unknown	Unknown
+PicklistValue.Standard.fulfillmentReshipReason.Wrong Item	Wrong Item
+PicklistValue.Standard.changeRequestRelationType.Caused By	Caused By
+PicklistValue.Standard.changeRequestRelationType.Resolved By	Resolved By
+PicklistValue.Standard.problemIncidentRelationType.Caused By	Caused By
+PicklistValue.Standard.problemIncidentRelationType.Similar	Similar
+PicklistValue.Standard.caseRelationType.Root Cause	Root Cause
+PicklistValue.Standard.caseRelationType.Similar	Similar
+PicklistValue.Standard.consequenceOfFailure.Critical	Critical
+PicklistValue.Standard.consequenceOfFailure.Insignificant	Insignificant
+PicklistValue.Standard.consequenceOfFailure.Major	Major
+PicklistValue.Standard.consequenceOfFailure.Minor	Minor
+PicklistValue.Standard.consequenceOfFailure.Moderate	Moderate
+PicklistValue.Standard.taskSubject.Call	Call
+PicklistValue.Standard.taskSubject.Email	Email
+PicklistValue.Standard.taskSubject.Other	Other
+PicklistValue.Standard.taskSubject.Send Letter	Send Letter
+PicklistValue.Standard.taskSubject.Send Quote	Send Quote
+PicklistValue.Standard.accountContactMultiRoles.Business User	Business User
+PicklistValue.Standard.accountContactMultiRoles.Decision Maker	Decision Maker
+PicklistValue.Standard.accountContactMultiRoles.Economic Buyer	Economic Buyer
+PicklistValue.Standard.accountContactMultiRoles.Economic Decision Maker	Economic Decision Maker
+PicklistValue.Standard.accountContactMultiRoles.Evaluator	Evaluator
+PicklistValue.Standard.accountContactMultiRoles.Executive Sponsor	Executive Sponsor
+PicklistValue.Standard.accountContactMultiRoles.Influencer	Influencer
+PicklistValue.Standard.accountContactMultiRoles.Other	Other
+PicklistValue.Standard.accountContactMultiRoles.Technical Buyer	Technical Buyer
+PicklistValue.Standard.workOrderStatus.Canceled	Canceled
+PicklistValue.Standard.workOrderStatus.Cannot Complete	Cannot Complete
+PicklistValue.Standard.workOrderStatus.Closed	Closed
+PicklistValue.Standard.workOrderStatus.Completed	Completed
+PicklistValue.Standard.workOrderStatus.In Progress	In Progress
+PicklistValue.Standard.workOrderStatus.New	New
+PicklistValue.Standard.workOrderStatus.On Hold	On Hold
+PicklistValue.Standard.workOrderPriority.Critical	Critical
+PicklistValue.Standard.workOrderPriority.High	High
+PicklistValue.Standard.workOrderPriority.Low	Low
+PicklistValue.Standard.workOrderPriority.Medium	Medium
+PicklistValue.Standard.workOrderLineItemStatus.Canceled	Canceled
+PicklistValue.Standard.workOrderLineItemStatus.Cannot Complete	Cannot Complete
+PicklistValue.Standard.workOrderLineItemStatus.Closed	Closed
+PicklistValue.Standard.workOrderLineItemStatus.Completed	Completed
+PicklistValue.Standard.workOrderLineItemStatus.In Progress	In Progress
+PicklistValue.Standard.workOrderLineItemStatus.New	New
+PicklistValue.Standard.workOrderLineItemStatus.On Hold	On Hold
+PicklistValue.Standard.incidentRelatedItemImpactType.Business-Blocking	Business-Blocking
+PicklistValue.Standard.incidentRelatedItemImpactType.Not Business-Blocking	Not Business-Blocking
+PicklistValue.Standard.incidentRelatedItemImpactType.Partially Business-Blocking	Partially Business-Blocking
+PicklistValue.Standard.incidentRelatedItemImpactLevel.High	High
+PicklistValue.Standard.incidentRelatedItemImpactLevel.Low	Low
+PicklistValue.Standard.incidentRelatedItemImpactLevel.Medium	Medium
+PicklistValue.Standard.resourceAbsenceType.Medical	Medical
+PicklistValue.Standard.resourceAbsenceType.Meeting	Meeting
+PicklistValue.Standard.resourceAbsenceType.Training	Training
+PicklistValue.Standard.resourceAbsenceType.Vacation	Vacation
+PicklistValue.Standard.problemRelatedItemImpactType.Business-Blocking	Business-Blocking
+PicklistValue.Standard.problemRelatedItemImpactType.Not Business-Blocking	Not Business-Blocking
+PicklistValue.Standard.problemRelatedItemImpactType.Partially Business-Blocking	Partially Business-Blocking
+PicklistValue.Standard.problemRelatedItemImpactLevel.High	High
+PicklistValue.Standard.problemRelatedItemImpactLevel.Low	Low
+PicklistValue.Standard.problemRelatedItemImpactLevel.Medium	Medium
+PicklistValue.Standard.changeRequestRelatedItemRelationType.Broke Item	Broke Item
+PicklistValue.Standard.changeRequestRelatedItemRelationType.Fixed Item	Fixed Item
+PicklistValue.Standard.changeRequestRelatedItemImpactLevel.High	High
+PicklistValue.Standard.changeRequestRelatedItemImpactLevel.Low	Low
+PicklistValue.Standard.changeRequestRelatedItemImpactLevel.Medium	Medium
+PicklistValue.Standard.serviceAppointmentStatus.Canceled	Canceled
+PicklistValue.Standard.serviceAppointmentStatus.Cannot Complete	Cannot Complete
+PicklistValue.Standard.serviceAppointmentStatus.Completed	Completed
+PicklistValue.Standard.serviceAppointmentStatus.Dispatched	Dispatched
+PicklistValue.Standard.serviceAppointmentStatus.In Progress	In Progress
+PicklistValue.Standard.serviceAppointmentStatus.None	None
+PicklistValue.Standard.serviceAppointmentStatus.Scheduled	Scheduled
+PicklistValue.Standard.salutation.Dr.	Dr.
+PicklistValue.Standard.salutation.Mr.	Mr.
+PicklistValue.Standard.salutation.Mrs.	Mrs.
+PicklistValue.Standard.salutation.Ms.	Ms.
+PicklistValue.Standard.salutation.Prof.	Prof.
+PicklistValue.Standard.quantityUnitOfMeasure.Each	Each
+PicklistValue.Standard.fulfillmentRejectReason.Damaged	Damaged
+PicklistValue.Standard.fulfillmentRejectReason.Just Sold	Just Sold
+PicklistValue.Standard.fulfillmentRejectReason.Other	Other
+PicklistValue.Standard.fulfillmentRejectReason.Out of Packing Supplies	Out of Packing Supplies
+PicklistValue.Standard.fulfillmentRejectReason.Out of Stock	Out of Stock
+PicklistValue.Standard.leadSource.Other	Other
+PicklistValue.Standard.leadSource.Partner Referral	Partner Referral
+PicklistValue.Standard.leadSource.Phone Inquiry	Phone Inquiry
+PicklistValue.Standard.leadSource.Purchased List	Purchased List
+PicklistValue.Standard.leadSource.Web	Web
+PicklistValue.Standard.productLineEnum.Salesforce Scheduler	Salesforce Scheduler
+PicklistValue.Standard.assetRelationshipType.Crossgrade	Crossgrade
+PicklistValue.Standard.assetRelationshipType.Replacement	Replacement
+PicklistValue.Standard.assetRelationshipType.Upgrade	Upgrade
+PicklistValue.Standard.fieldBusinessStatus.Active	Active
+PicklistValue.Standard.fieldBusinessStatus.DeprecateCandidate	DeprecateCandidate
+PicklistValue.Standard.fieldBusinessStatus.Hidden	Hidden
+PicklistValue.Standard.sAppointmentGroupStatus.Awaiting Approval	Awaiting Approval
+PicklistValue.Standard.sAppointmentGroupStatus.Canceled	Canceled
+PicklistValue.Standard.sAppointmentGroupStatus.None	None
+PicklistValue.Standard.sAppointmentGroupStatus.Scheduled	Scheduled
+PicklistValue.Standard.engagementActivityType.Email Hard Bounce	Email Hard Bounce
+PicklistValue.Standard.engagementActivityType.Email Open	Email Open
+PicklistValue.Standard.engagementActivityType.Email Opt-in	Email Opt-in
+PicklistValue.Standard.engagementActivityType.Email Preferences Open	Email Preferences Open
+PicklistValue.Standard.engagementActivityType.Email Send	Email Send
+PicklistValue.Standard.engagementActivityType.Email Soft Bounce	Email Soft Bounce
+PicklistValue.Standard.engagementActivityType.Email Spam Complaint	Email Spam Complaint
+PicklistValue.Standard.engagementActivityType.Email Unsubscribe	Email Unsubscribe
+PicklistValue.Standard.engagementActivityType.Form Submit Error	Form Submit Error
+PicklistValue.Standard.engagementActivityType.Form Submit Success	Form Submit Success
+PicklistValue.Standard.engagementActivityType.Form View	Form View
+PicklistValue.Standard.engagementActivityType.Landing Page Form Submit Error	Landing Page Form Submit Error
+PicklistValue.Standard.engagementActivityType.Landing Page Form Submit Success	Landing Page Form Submit Success
+PicklistValue.Standard.engagementActivityType.Landing Page View	Landing Page View
+PicklistValue.Standard.engagementActivityType.Link Click	Link Click
+PicklistValue.Standard.scorecardMetricCategory.Adoption	Adoption
+PicklistValue.Standard.scorecardMetricCategory.Field Enablement	Field Enablement
+PicklistValue.Standard.scorecardMetricCategory.Marketing	Marketing
+PicklistValue.Standard.scorecardMetricCategory.Sales	Sales
+PicklistValue.Standard.scorecardMetricCategory.Support	Support
+RecordType.Metric.Completion	Completion
+RecordType.Metric.Completion.Description	Measure achievement based on whether or not the metric is finished. Ideal for tracking milestones, or when you don't have metrics based on hard numbers. For example: Become Salesforce Certified.
+RecordType.Metric.Progress	Progress
+RecordType.Metric.Progress.Description	Measure achievement based on how much is finished compared to a targeted value. Ideal for tracking hard numbers and percentages. For example: Convert 50 Leads or Achieve 100% Customer Satisfaction.
+AddressCountry.AD	Andorra
+AddressCountry.AE	United Arab Emirates
+AddressCountry.AF	Afghanistan
+AddressCountry.AG	Antigua and Barbuda
+AddressCountry.AI	Anguilla
+AddressCountry.AL	Albania
+AddressCountry.AM	Armenia
+AddressCountry.AO	Angola
+AddressCountry.AQ	Antarctica
+AddressCountry.AR	Argentina
+AddressCountry.AT	Austria
+AddressCountry.AU	Australia
+AddressCountry.AW	Aruba
+AddressCountry.AX	Aland Islands
+AddressCountry.AZ	Azerbaijan
+AddressCountry.BA	Bosnia and Herzegovina
+AddressCountry.BB	Barbados
+AddressCountry.BD	Bangladesh
+AddressCountry.BE	Belgium
+AddressCountry.BF	Burkina Faso
+AddressCountry.BG	Bulgaria
+AddressCountry.BH	Bahrain
+AddressCountry.BI	Burundi
+AddressCountry.BJ	Benin
+AddressCountry.BL	Saint Barthélemy
+AddressCountry.BM	Bermuda
+AddressCountry.BN	Brunei Darussalam
+AddressCountry.BO	Bolivia, Plurinational State of
+AddressCountry.BQ	Bonaire, Sint Eustatius and Saba
+AddressCountry.BR	Brazil
+AddressCountry.BS	Bahamas
+AddressCountry.BT	Bhutan
+AddressCountry.BV	Bouvet Island
+AddressCountry.BW	Botswana
+AddressCountry.BY	Belarus
+AddressCountry.BZ	Belize
+AddressCountry.CA	Canada
+AddressCountry.CC	Cocos (Keeling) Islands
+AddressCountry.CD	Congo, the Democratic Republic of the
+AddressCountry.CF	Central African Republic
+AddressCountry.CG	Congo
+AddressCountry.CH	Switzerland
+AddressCountry.CI	Cote d'Ivoire
+AddressCountry.CK	Cook Islands
+AddressCountry.CL	Chile
+AddressCountry.CM	Cameroon
+AddressCountry.CN	China
+AddressCountry.CO	Colombia
+AddressCountry.CR	Costa Rica
+AddressCountry.CU	Cuba
+AddressCountry.CV	Cape Verde
+AddressCountry.CW	Curaçao
+AddressCountry.CX	Christmas Island
+AddressCountry.CY	Cyprus
+AddressCountry.CZ	Czech Republic
+AddressCountry.DE	Germany
+AddressCountry.DJ	Djibouti
+AddressCountry.DK	Denmark
+AddressCountry.DM	Dominica
+AddressCountry.DO	Dominican Republic
+AddressCountry.DZ	Algeria
+AddressCountry.EC	Ecuador
+AddressCountry.EE	Estonia
+AddressCountry.EG	Egypt
+AddressCountry.EH	Western Sahara
+AddressCountry.ER	Eritrea
+AddressCountry.ES	Spain
+AddressCountry.ET	Ethiopia
+AddressCountry.FI	Finland
+AddressCountry.FJ	Fiji
+AddressCountry.FK	Falkland Islands (Malvinas)
+AddressCountry.FO	Faroe Islands
+AddressCountry.FR	France
+AddressCountry.GA	Gabon
+AddressCountry.GB	United Kingdom
+AddressCountry.GD	Grenada
+AddressCountry.GE	Georgia
+AddressCountry.GF	French Guiana
+AddressCountry.GG	Guernsey
+AddressCountry.GH	Ghana
+AddressCountry.GI	Gibraltar
+AddressCountry.GL	Greenland
+AddressCountry.GM	Gambia
+AddressCountry.GN	Guinea
+AddressCountry.GP	Guadeloupe
+AddressCountry.GQ	Equatorial Guinea
+AddressCountry.GR	Greece
+AddressCountry.GS	South Georgia and the South Sandwich Islands
+AddressCountry.GT	Guatemala
+AddressCountry.GW	Guinea-Bissau
+AddressCountry.GY	Guyana
+AddressCountry.HM	Heard Island and McDonald Islands
+AddressCountry.HN	Honduras
+AddressCountry.HR	Croatia
+AddressCountry.HT	Haiti
+AddressCountry.HU	Hungary
+AddressCountry.ID	Indonesia
+AddressCountry.IE	Ireland
+AddressCountry.IL	Israel
+AddressCountry.IM	Isle of Man
+AddressCountry.IN	India
+AddressCountry.IO	British Indian Ocean Territory
+AddressCountry.IQ	Iraq
+AddressCountry.IR	Iran, Islamic Republic of
+AddressCountry.IS	Iceland
+AddressCountry.IT	Italy
+AddressCountry.JE	Jersey
+AddressCountry.JM	Jamaica
+AddressCountry.JO	Jordan
+AddressCountry.JP	Japan
+AddressCountry.KE	Kenya
+AddressCountry.KG	Kyrgyzstan
+AddressCountry.KH	Cambodia
+AddressCountry.KI	Kiribati
+AddressCountry.KM	Comoros
+AddressCountry.KN	Saint Kitts and Nevis
+AddressCountry.KP	Korea, Democratic People's Republic of
+AddressCountry.KR	Korea, Republic of
+AddressCountry.KW	Kuwait
+AddressCountry.KY	Cayman Islands
+AddressCountry.KZ	Kazakhstan
+AddressCountry.LA	Lao People's Democratic Republic
+AddressCountry.LB	Lebanon
+AddressCountry.LC	Saint Lucia
+AddressCountry.LI	Liechtenstein
+AddressCountry.LK	Sri Lanka
+AddressCountry.LR	Liberia
+AddressCountry.LS	Lesotho
+AddressCountry.LT	Lithuania
+AddressCountry.LU	Luxembourg
+AddressCountry.LV	Latvia
+AddressCountry.LY	Libya
+AddressCountry.MA	Morocco
+AddressCountry.MC	Monaco
+AddressCountry.MD	Moldova, Republic of
+AddressCountry.ME	Montenegro
+AddressCountry.MF	Saint Martin (French part)
+AddressCountry.MG	Madagascar
+AddressCountry.MK	Macedonia, the former Yugoslav Republic of
+AddressCountry.ML	Mali
+AddressCountry.MM	Myanmar
+AddressCountry.MN	Mongolia
+AddressCountry.MO	Macao
+AddressCountry.MQ	Martinique
+AddressCountry.MR	Mauritania
+AddressCountry.MS	Montserrat
+AddressCountry.MT	Malta
+AddressCountry.MU	Mauritius
+AddressCountry.MV	Maldives
+AddressCountry.MW	Malawi
+AddressCountry.MX	Mexico
+AddressCountry.MY	Malaysia
+AddressCountry.MZ	Mozambique
+AddressCountry.NA	Namibia
+AddressCountry.NC	New Caledonia
+AddressCountry.NE	Niger
+AddressCountry.NF	Norfolk Island
+AddressCountry.NG	Nigeria
+AddressCountry.NI	Nicaragua
+AddressCountry.NL	Netherlands
+AddressCountry.NO	Norway
+AddressCountry.NP	Nepal
+AddressCountry.NR	Nauru
+AddressCountry.NU	Niue
+AddressCountry.NZ	New Zealand
+AddressCountry.OM	Oman
+AddressCountry.PA	Panama
+AddressCountry.PE	Peru
+AddressCountry.PF	French Polynesia
+AddressCountry.PG	Papua New Guinea
+AddressCountry.PH	Philippines
+AddressCountry.PK	Pakistan
+AddressCountry.PL	Poland
+AddressCountry.PM	Saint Pierre and Miquelon
+AddressCountry.PN	Pitcairn
+AddressCountry.PS	Palestine
+AddressCountry.PT	Portugal
+AddressCountry.PY	Paraguay
+AddressCountry.QA	Qatar
+AddressCountry.RE	Reunion
+AddressCountry.RO	Romania
+AddressCountry.RS	Serbia
+AddressCountry.RU	Russian Federation
+AddressCountry.RW	Rwanda
+AddressCountry.SA	Saudi Arabia
+AddressCountry.SB	Solomon Islands
+AddressCountry.SC	Seychelles
+AddressCountry.SD	Sudan
+AddressCountry.SE	Sweden
+AddressCountry.SG	Singapore
+AddressCountry.SH	Saint Helena, Ascension and Tristan da Cunha
+AddressCountry.SI	Slovenia
+AddressCountry.SJ	Svalbard and Jan Mayen
+AddressCountry.SK	Slovakia
+AddressCountry.SL	Sierra Leone
+AddressCountry.SM	San Marino
+AddressCountry.SN	Senegal
+AddressCountry.SO	Somalia
+AddressCountry.SR	Suriname
+AddressCountry.SS	South Sudan
+AddressCountry.ST	Sao Tome and Principe
+AddressCountry.SV	El Salvador
+AddressCountry.SX	Sint Maarten (Dutch part)
+AddressCountry.SY	Syrian Arab Republic
+AddressCountry.SZ	Swaziland
+AddressCountry.TC	Turks and Caicos Islands
+AddressCountry.TD	Chad
+AddressCountry.TF	French Southern Territories
+AddressCountry.TG	Togo
+AddressCountry.TH	Thailand
+AddressCountry.TJ	Tajikistan
+AddressCountry.TK	Tokelau
+AddressCountry.TL	Timor-Leste
+AddressCountry.TM	Turkmenistan
+AddressCountry.TN	Tunisia
+AddressCountry.TO	Tonga
+AddressCountry.TR	Turkey
+AddressCountry.TT	Trinidad and Tobago
+AddressCountry.TV	Tuvalu
+AddressCountry.TW	Taiwan
+AddressCountry.TZ	Tanzania, United Republic of
+AddressCountry.UA	Ukraine
+AddressCountry.UG	Uganda
+AddressCountry.US	United States
+AddressCountry.UY	Uruguay
+AddressCountry.UZ	Uzbekistan
+AddressCountry.VA	Holy See (Vatican City State)
+AddressCountry.VC	Saint Vincent and the Grenadines
+AddressCountry.VE	Venezuela, Bolivarian Republic of
+AddressCountry.VG	Virgin Islands, British
+AddressCountry.VN	Vietnam
+AddressCountry.VU	Vanuatu
+AddressCountry.WF	Wallis and Futuna
+AddressCountry.WS	Samoa
+AddressCountry.YE	Yemen
+AddressCountry.YT	Mayotte
+AddressCountry.ZA	South Africa
+AddressCountry.ZM	Zambia
+AddressCountry.ZW	Zimbabwe
+AddressState.AU.ACT	Australian Capital Territory
+AddressState.AU.NSW	New South Wales
+AddressState.AU.NT	Northern Territory
+AddressState.AU.QLD	Queensland
+AddressState.AU.SA	South Australia
+AddressState.AU.TAS	Tasmania
+AddressState.AU.VIC	Victoria
+AddressState.AU.WA	Western Australia
+AddressState.BR.AC	Acre
+AddressState.BR.AL	Alagoas
+AddressState.BR.AM	Amazonas
+AddressState.BR.AP	Amapá
+AddressState.BR.BA	Bahia
+AddressState.BR.CE	Ceará
+AddressState.BR.DF	Distrito Federal
+AddressState.BR.ES	Espírito Santo
+AddressState.BR.GO	Goiás
+AddressState.BR.MA	Maranhão
+AddressState.BR.MG	Minas Gerais
+AddressState.BR.MS	Mato Grosso do Sul
+AddressState.BR.MT	Mato Grosso
+AddressState.BR.PA	Pará
+AddressState.BR.PB	Paraíba
+AddressState.BR.PE	Pernambuco
+AddressState.BR.PI	Piauí
+AddressState.BR.PR	Paraná
+AddressState.BR.RJ	Rio de Janeiro
+AddressState.BR.RN	Rio Grande do Norte
+AddressState.BR.RO	Rondônia
+AddressState.BR.RR	Roraima
+AddressState.BR.RS	Rio Grande do Sul
+AddressState.BR.SC	Santa Catarina
+AddressState.BR.SE	Sergipe
+AddressState.BR.SP	São Paulo
+AddressState.BR.TO	Tocantins
+AddressState.CA.AB	Alberta
+AddressState.CA.BC	British Columbia
+AddressState.CA.MB	Manitoba
+AddressState.CA.NB	New Brunswick
+AddressState.CA.NL	Newfoundland and Labrador
+AddressState.CA.NS	Nova Scotia
+AddressState.CA.NT	Northwest Territories
+AddressState.CA.NU	Nunavut
+AddressState.CA.ON	Ontario
+AddressState.CA.PE	Prince Edward Island
+AddressState.CA.QC	Quebec
+AddressState.CA.SK	Saskatchewan
+AddressState.CA.YT	Yukon Territories
+AddressState.CN.11	Beijing
+AddressState.CN.12	Tianjin
+AddressState.CN.13	Hebei
+AddressState.CN.14	Shanxi
+AddressState.CN.15	Nei Mongol
+AddressState.CN.21	Liaoning
+AddressState.CN.22	Jilin
+AddressState.CN.23	Heilongjiang
+AddressState.CN.31	Shanghai
+AddressState.CN.32	Jiangsu
+AddressState.CN.33	Zhejiang
+AddressState.CN.34	Anhui
+AddressState.CN.35	Fujian
+AddressState.CN.36	Jiangxi
+AddressState.CN.37	Shandong
+AddressState.CN.41	Henan
+AddressState.CN.42	Hubei
+AddressState.CN.43	Hunan
+AddressState.CN.44	Guangdong
+AddressState.CN.45	Guangxi
+AddressState.CN.46	Hainan
+AddressState.CN.50	Chongqing
+AddressState.CN.51	Sichuan
+AddressState.CN.52	Guizhou
+AddressState.CN.53	Yunnan
+AddressState.CN.54	Xizang
+AddressState.CN.61	Shaanxi
+AddressState.CN.62	Gansu
+AddressState.CN.63	Qinghai
+AddressState.CN.64	Ningxia
+AddressState.CN.65	Xinjiang
+AddressState.CN.71	Taiwan
+AddressState.CN.91	Hong Kong
+AddressState.CN.92	Macao
+AddressState.IE.CE	Clare
+AddressState.IE.CN	Cavan
+AddressState.IE.CO	Cork
+AddressState.IE.CW	Carlow
+AddressState.IE.D	Dublin
+AddressState.IE.DL	Donegal
+AddressState.IE.G	Galway
+AddressState.IE.KE	Kildare
+AddressState.IE.KK	Kilkenny
+AddressState.IE.KY	Kerry
+AddressState.IE.LD	Longford
+AddressState.IE.LH	Louth
+AddressState.IE.LK	Limerick
+AddressState.IE.LM	Leitrim
+AddressState.IE.LS	Laois
+AddressState.IE.MH	Meath
+AddressState.IE.MN	Monaghan
+AddressState.IE.MO	Mayo
+AddressState.IE.OY	Offaly
+AddressState.IE.RN	Roscommon
+AddressState.IE.SO	Sligo
+AddressState.IE.TA	Tipperary
+AddressState.IE.WD	Waterford
+AddressState.IE.WH	Westmeath
+AddressState.IE.WW	Wicklow
+AddressState.IE.WX	Wexford
+AddressState.IN.AN	Andaman and Nicobar Islands
+AddressState.IN.AP	Andhra Pradesh
+AddressState.IN.AR	Arunachal Pradesh
+AddressState.IN.AS	Assam
+AddressState.IN.BR	Bihar
+AddressState.IN.CH	Chandigarh
+AddressState.IN.CT	Chhattisgarh
+AddressState.IN.DD	Daman and Diu
+AddressState.IN.DL	Delhi
+AddressState.IN.DN	Dadra and Nagar Haveli
+AddressState.IN.GA	Goa
+AddressState.IN.GJ	Gujarat
+AddressState.IN.HP	Himachal Pradesh
+AddressState.IN.HR	Haryana
+AddressState.IN.JH	Jharkhand
+AddressState.IN.JK	Jammu and Kashmir
+AddressState.IN.KA	Karnataka
+AddressState.IN.KL	Kerala
+AddressState.IN.LD	Lakshadweep
+AddressState.IN.MH	Maharashtra
+AddressState.IN.ML	Meghalaya
+AddressState.IN.MN	Manipur
+AddressState.IN.MP	Madhya Pradesh
+AddressState.IN.MZ	Mizoram
+AddressState.IN.NL	Nagaland
+AddressState.IN.OR	Odisha
+AddressState.IN.PB	Punjab
+AddressState.IN.PY	Puducherry
+AddressState.IN.RJ	Rajasthan
+AddressState.IN.SK	Sikkim
+AddressState.IN.TG	Telangana
+AddressState.IN.TN	Tamil Nadu
+AddressState.IN.TR	Tripura
+AddressState.IN.UP	Uttar Pradesh
+AddressState.IN.UT	Uttarakhand
+AddressState.IN.WB	West Bengal
+AddressState.IT.AG	Agrigento
+AddressState.IT.AL	Alessandria
+AddressState.IT.AN	Ancona
+AddressState.IT.AO	Aosta
+AddressState.IT.AP	Ascoli Piceno
+AddressState.IT.AQ	L'Aquila
+AddressState.IT.AR	Arezzo
+AddressState.IT.AT	Asti
+AddressState.IT.AV	Avellino
+AddressState.IT.BA	Bari
+AddressState.IT.BG	Bergamo
+AddressState.IT.BI	Biella
+AddressState.IT.BL	Belluno
+AddressState.IT.BN	Benevento
+AddressState.IT.BO	Bologna
+AddressState.IT.BR	Brindisi
+AddressState.IT.BS	Brescia
+AddressState.IT.BT	Barletta-Andria-Trani
+AddressState.IT.BZ	Bolzano
+AddressState.IT.CA	Cagliari
+AddressState.IT.CB	Campobasso
+AddressState.IT.CE	Caserta
+AddressState.IT.CH	Chieti
+AddressState.IT.CI	Carbonia-Iglesias
+AddressState.IT.CL	Caltanissetta
+AddressState.IT.CN	Cuneo
+AddressState.IT.CO	Como
+AddressState.IT.CR	Cremona
+AddressState.IT.CS	Cosenza
+AddressState.IT.CT	Catania
+AddressState.IT.CZ	Catanzaro
+AddressState.IT.EN	Enna
+AddressState.IT.FC	Forlì-Cesena
+AddressState.IT.FE	Ferrara
+AddressState.IT.FG	Foggia
+AddressState.IT.FI	Florence
+AddressState.IT.FM	Fermo
+AddressState.IT.FR	Frosinone
+AddressState.IT.GE	Genoa
+AddressState.IT.GO	Gorizia
+AddressState.IT.GR	Grosseto
+AddressState.IT.IM	Imperia
+AddressState.IT.IS	Isernia
+AddressState.IT.KR	Crotone
+AddressState.IT.LC	Lecco
+AddressState.IT.LE	Lecce
+AddressState.IT.LI	Livorno
+AddressState.IT.LO	Lodi
+AddressState.IT.LT	Latina
+AddressState.IT.LU	Lucca
+AddressState.IT.MB	Monza and Brianza
+AddressState.IT.MC	Macerata
+AddressState.IT.ME	Messina
+AddressState.IT.MI	Milan
+AddressState.IT.MN	Mantua
+AddressState.IT.MO	Modena
+AddressState.IT.MS	Massa and Carrara
+AddressState.IT.MT	Matera
+AddressState.IT.NA	Naples
+AddressState.IT.NO	Novara
+AddressState.IT.NU	Nuoro
+AddressState.IT.OG	Ogliastra
+AddressState.IT.OR	Oristano
+AddressState.IT.OT	Olbia-Tempio
+AddressState.IT.PA	Palermo
+AddressState.IT.PC	Piacenza
+AddressState.IT.PD	Padua
+AddressState.IT.PE	Pescara
+AddressState.IT.PG	Perugia
+AddressState.IT.PI	Pisa
+AddressState.IT.PN	Pordenone
+AddressState.IT.PO	Prato
+AddressState.IT.PR	Parma
+AddressState.IT.PT	Pistoia
+AddressState.IT.PU	Pesaro and Urbino
+AddressState.IT.PV	Pavia
+AddressState.IT.PZ	Potenza
+AddressState.IT.RA	Ravenna
+AddressState.IT.RC	Reggio Calabria
+AddressState.IT.RE	Reggio Emilia
+AddressState.IT.RG	Ragusa
+AddressState.IT.RI	Rieti
+AddressState.IT.RM	Rome
+AddressState.IT.RN	Rimini
+AddressState.IT.RO	Rovigo
+AddressState.IT.SA	Salerno
+AddressState.IT.SI	Siena
+AddressState.IT.SO	Sondrio
+AddressState.IT.SP	La Spezia
+AddressState.IT.SR	Syracuse
+AddressState.IT.SS	Sassari
+AddressState.IT.SV	Savona
+AddressState.IT.TA	Taranto
+AddressState.IT.TE	Teramo
+AddressState.IT.TN	Trento
+AddressState.IT.TO	Turin
+AddressState.IT.TP	Trapani
+AddressState.IT.TR	Terni
+AddressState.IT.TS	Trieste
+AddressState.IT.TV	Treviso
+AddressState.IT.UD	Udine
+AddressState.IT.VA	Varese
+AddressState.IT.VB	Verbano-Cusio-Ossola
+AddressState.IT.VC	Vercelli
+AddressState.IT.VE	Venice
+AddressState.IT.VI	Vicenza
+AddressState.IT.VR	Verona
+AddressState.IT.VS	Medio Campidano
+AddressState.IT.VT	Viterbo
+AddressState.IT.VV	Vibo Valentia
+AddressState.JP.01	Hokkaido
+AddressState.JP.02	Akita
+AddressState.JP.03	Iwate
+AddressState.JP.04	Miyagi
+AddressState.JP.05	Aichi
+AddressState.JP.06	Yamagata
+AddressState.JP.07	Fukushima
+AddressState.JP.08	Ibaraki
+AddressState.JP.09	Tochigi
+AddressState.JP.10	Gunma
+AddressState.JP.11	Saitama
+AddressState.JP.12	Chiba
+AddressState.JP.13	Tokyo
+AddressState.JP.14	Kanagawa
+AddressState.JP.15	Niigata
+AddressState.JP.16	Toyama
+AddressState.JP.17	Ishikawa
+AddressState.JP.18	Fukui
+AddressState.JP.19	Yamanashi
+AddressState.JP.20	Nagano
+AddressState.JP.21	Gifu
+AddressState.JP.22	Shizuoka
+AddressState.JP.23	Aomori
+AddressState.JP.24	Mie
+AddressState.JP.25	Shiga
+AddressState.JP.26	Kyoto
+AddressState.JP.27	Osaka
+AddressState.JP.28	Hyogo
+AddressState.JP.29	Nara
+AddressState.JP.30	Wakayama
+AddressState.JP.31	Tottori
+AddressState.JP.32	Shimane
+AddressState.JP.33	Okayama
+AddressState.JP.34	Hiroshima
+AddressState.JP.35	Yamaguchi
+AddressState.JP.36	Tokushima
+AddressState.JP.37	Kagawa
+AddressState.JP.38	Ehime
+AddressState.JP.39	Kochi
+AddressState.JP.40	Fukuoka
+AddressState.JP.41	Saga
+AddressState.JP.42	Nagasaki
+AddressState.JP.43	Kumamoto
+AddressState.JP.44	Oita
+AddressState.JP.45	Miyazaki
+AddressState.JP.46	Kagoshima
+AddressState.JP.47	Okinawa
+AddressState.MX.AG	Aguascalientes
+AddressState.MX.BC	Baja California
+AddressState.MX.BS	Baja California Sur
+AddressState.MX.CH	Chihuahua
+AddressState.MX.CL	Colima
+AddressState.MX.CM	Campeche
+AddressState.MX.CO	Coahuila
+AddressState.MX.CS	Chiapas
+AddressState.MX.DF	Federal District
+AddressState.MX.DG	Durango
+AddressState.MX.GR	Guerrero
+AddressState.MX.GT	Guanajuato
+AddressState.MX.HG	Hidalgo
+AddressState.MX.JA	Jalisco
+AddressState.MX.ME	Mexico State
+AddressState.MX.MI	Michoacán
+AddressState.MX.MO	Morelos
+AddressState.MX.NA	Nayarit
+AddressState.MX.NL	Nuevo León
+AddressState.MX.OA	Oaxaca
+AddressState.MX.PB	Puebla
+AddressState.MX.QE	Querétaro
+AddressState.MX.QR	Quintana Roo
+AddressState.MX.SI	Sinaloa
+AddressState.MX.SL	San Luis Potosí
+AddressState.MX.SO	Sonora
+AddressState.MX.TB	Tabasco
+AddressState.MX.TL	Tlaxcala
+AddressState.MX.TM	Tamaulipas
+AddressState.MX.VE	Veracruz
+AddressState.MX.YU	Yucatán
+AddressState.MX.ZA	Zacatecas
+AddressState.US.AK	Alaska
+AddressState.US.AL	Alabama
+AddressState.US.AR	Arkansas
+AddressState.US.AZ	Arizona
+AddressState.US.CA	California
+AddressState.US.CO	Colorado
+AddressState.US.CT	Connecticut
+AddressState.US.DC	District of Columbia
+AddressState.US.DE	Delaware
+AddressState.US.FL	Florida
+AddressState.US.GA	Georgia
+AddressState.US.HI	Hawaii
+AddressState.US.IA	Iowa
+AddressState.US.ID	Idaho
+AddressState.US.IL	Illinois
+AddressState.US.IN	Indiana
+AddressState.US.KS	Kansas
+AddressState.US.KY	Kentucky
+AddressState.US.LA	Louisiana
+AddressState.US.MA	Massachusetts
+AddressState.US.MD	Maryland
+AddressState.US.ME	Maine
+AddressState.US.MI	Michigan
+AddressState.US.MN	Minnesota
+AddressState.US.MO	Missouri
+AddressState.US.MS	Mississippi
+AddressState.US.MT	Montana
+AddressState.US.NC	North Carolina
+AddressState.US.ND	North Dakota
+AddressState.US.NE	Nebraska
+AddressState.US.NH	New Hampshire
+AddressState.US.NJ	New Jersey
+AddressState.US.NM	New Mexico
+AddressState.US.NV	Nevada
+AddressState.US.NY	New York
+AddressState.US.OH	Ohio
+AddressState.US.OK	Oklahoma
+AddressState.US.OR	Oregon
+AddressState.US.PA	Pennsylvania
+AddressState.US.RI	Rhode Island
+AddressState.US.SC	South Carolina
+AddressState.US.SD	South Dakota
+AddressState.US.TN	Tennessee
+AddressState.US.TX	Texas
+AddressState.US.UT	Utah
+AddressState.US.VA	Virginia
+AddressState.US.VT	Vermont
+AddressState.US.WA	Washington
+AddressState.US.WI	Wisconsin
+AddressState.US.WV	West Virginia
+AddressState.US.WY	Wyoming
+ManagedContentType.cms_document	Document
+ManagedContentType.cms_document.Description	Add content using any file type or an external URL.
+ManagedContentType.cms_image	Image
+ManagedContentType.cms_image.Description	Add media files, such as PNG or JPEG, or link to a URL.
+ManagedContentType.news	News
+ManagedContentType.news.Description	A basic article format with rich text and image support.
+ManagedContentNodeType.null	MTEXT
+ManagedContentNodeType.cms_document.altText.HelpText	Enter a brief description of the document.
+ManagedContentNodeType.null	MEDIA
+ManagedContentNodeType.cms_document.source.HelpText	Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.
+ManagedContentNodeType.null	URL
+ManagedContentNodeType.cms_document.thumbUrl.HelpText	Links a thumbnail image to the content.
+ManagedContentNodeType.null	NAMEFIELD
+ManagedContentNodeType.cms_document.title.HelpText	Enter the file name.
+ManagedContentNodeType.null	MTEXT
+ManagedContentNodeType.cms_image.altText.HelpText	Enter a brief description of the image.
+ManagedContentNodeType.null	MEDIA
+ManagedContentNodeType.cms_image.source.HelpText	Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.
+ManagedContentNodeType.null	URL
+ManagedContentNodeType.cms_image.thumbUrl.HelpText	Links a thumbnail image to the content.
+ManagedContentNodeType.null	NAMEFIELD
+ManagedContentNodeType.cms_image.title.HelpText	Enter the file name.
+ManagedContentNodeType.null	IMG
+ManagedContentNodeType.news.bannerImage.HelpText	Images aren’t required, but they help your post get attention.
+ManagedContentNodeType.null	RTE
+ManagedContentNodeType.null	MTEXT
+ManagedContentNodeType.news.excerpt.HelpText	Excerpts display as summary or teaser text on compilation pages. Excerpts give your customers a quick sense of what your post is about so they can quickly decide whether or not to view the full article.
+ManagedContentNodeType.news.excerpt.InfoMessage	Enter a summary or short description of your post...
+ManagedContentNodeType.null	NAMEFIELD
+
+
