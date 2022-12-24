@@ -1469,28 +1469,14 @@ ManagedContentType.cms_image	Image
 ManagedContentType.cms_image.Description	Add media files, such as PNG or JPEG, or link to a URL.
 ManagedContentType.news	News
 ManagedContentType.news.Description	A basic article format with rich text and image support.
-ManagedContentNodeType.null	MTEXT
 ManagedContentNodeType.cms_document.altText.HelpText	Enter a brief description of the document.
-ManagedContentNodeType.null	MEDIA
 ManagedContentNodeType.cms_document.source.HelpText	Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.
-ManagedContentNodeType.null	URL
 ManagedContentNodeType.cms_document.thumbUrl.HelpText	Links a thumbnail image to the content.
-ManagedContentNodeType.null	NAMEFIELD
 ManagedContentNodeType.cms_document.title.HelpText	Enter the file name.
-ManagedContentNodeType.null	MTEXT
 ManagedContentNodeType.cms_image.altText.HelpText	Enter a brief description of the image.
-ManagedContentNodeType.null	MEDIA
 ManagedContentNodeType.cms_image.source.HelpText	Adds media to your content from a desktop file or URL link. Make sure the domain for your URL is allowed by your org so your users can access it.
-ManagedContentNodeType.null	URL
 ManagedContentNodeType.cms_image.thumbUrl.HelpText	Links a thumbnail image to the content.
-ManagedContentNodeType.null	NAMEFIELD
 ManagedContentNodeType.cms_image.title.HelpText	Enter the file name.
-ManagedContentNodeType.null	IMG
 ManagedContentNodeType.news.bannerImage.HelpText	Images aren’t required, but they help your post get attention.
-ManagedContentNodeType.null	RTE
-ManagedContentNodeType.null	MTEXT
 ManagedContentNodeType.news.excerpt.HelpText	Excerpts display as summary or teaser text on compilation pages. Excerpts give your customers a quick sense of what your post is about so they can quickly decide whether or not to view the full article.
 ManagedContentNodeType.news.excerpt.InfoMessage	Enter a summary or short description of your post...
-ManagedContentNodeType.null	NAMEFIELD
-
-

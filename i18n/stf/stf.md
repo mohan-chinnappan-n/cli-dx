@@ -39,7 +39,11 @@ sfdx mohanc:i18n:stf:fill -i batch-1.stf -t  translated-2.psv > batch-2.stf
 
 6. and so on...
 7. You can load (import) the final stf file to the org in translation workbench
+- [Demo showing Importing STF file](img/import-1.pdf)
 
+8. If you export again you will see the results of your translations:
+
+![Checking Import](img/exported-2.png)
 
 ## Using Kural to translate
 - [Kural Docs](https://github.com/mohan-chinnappan-n/kural-docs)
