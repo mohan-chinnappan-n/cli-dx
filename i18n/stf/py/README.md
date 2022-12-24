@@ -19,6 +19,7 @@ python csv2psv.py -i fruits.csv -o fruits.csv.psv
 
 ## Output
 
+```
 cat fruits.csv.psv 
 
 name|qty|store
