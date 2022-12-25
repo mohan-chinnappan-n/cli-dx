@@ -10,7 +10,7 @@ sfdx mohanc:i18n:stf:prep -i exported-2.stf > exported-2.stf.tsv
 
 
 ## Using XLF export
-- If you exported the XLF file is translation workbench you will know the max width/size of the translation allowed
+- If you exported the [XLF file](img/exported-2.xlf) is translation workbench you will know the max width/size of the translation allowed
 - Using our CLI you can convert that XLF file into TSV
 - [stf2tsvHtml.xsl](xsl/stf2tsvHtml.xsl) used here
 ```
