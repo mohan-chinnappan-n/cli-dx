@@ -5,7 +5,7 @@
 sfdx mohanc:mdapi:listFiles -p /path/to/src/folder -t profiles > /tmp/profiles.json
 
 # find the dangling fields for those profiles
-sfdx mohanc:mdapi:df -i /tmp/profiles.json > dangling_fields_2.txt
+sfdx mohanc:mdapi:df -i /tmp/profiles.json > dangling_fields_2.tsv
 
 # cleanup
 cd /path/to/src/profiles/folder
