@@ -1,0 +1,29 @@
+SELECT
+Id
+,SystemModstamp
+,NumberComponentsDeployed
+,NumberComponentErrors
+,numberTestErrors
+,numberTestsCompleted
+,numberTestsTotal
+,runTestsEnabled
+,rollbackOnError
+
+
+,CheckOnly
+,completedDate	
+,createdDate	
+
+
+,ErrorStatusCode
+,Status
+,ErrorMessage
+
+,ignoreWarnings
+
+,startDate
+,stateDetail	
+
+FROM DeployRequest 
+ORDER BY CompletedDate DESC
+LIMIT 10 
