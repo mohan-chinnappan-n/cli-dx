@@ -1,0 +1,20 @@
+name: check-cli-install
+run-name: check-cli-install 
+
+on: [workflow_dispatch]
+jobs:
+  check-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm install sfdx-cli -g
+       
+
+      - name: Install mohanc sfdx plugin
+        run: |
+          echo 'y' | sfdx plugins:install sfdx-mohanc-plugins
+          sfdx plugins
+          sfdx mohanc:xml:validate  --help 
+ 
+      
+
