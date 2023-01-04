@@ -1,6 +1,6 @@
 # Checking object-Ids  in the folder of xml files
 ```
-sfdx mohanc:xml:email -p /path/to/xml_files > output.tsv
+sfdx mohanc:xml:objectId -p /path/to/xml_files > output.tsv
 open output.tsv
 ```
 ## Prefix for the Objects
