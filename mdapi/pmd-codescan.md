@@ -111,7 +111,7 @@ pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/deployment/unpackaged/classes/
 
 # query the results using SQL
 echo 'SELECT COUNT(*) AS CNT   FROM CSV("results.csv", {headers:true}) WHERE Priority < 3' > q.sql
-sfdx mohanc:data:query:sql -q q.sql -d results.csv > out.json
+sfdx mohanc:data:query:sql -q q.sql  > out.json
 
 # check for the errors
 nerrors=`sfdx mohanc:data:jq -f  '.[].CNT'  -i out.json`
