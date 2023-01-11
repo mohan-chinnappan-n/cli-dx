@@ -1,6 +1,9 @@
 # PMD Apex code scan using DX 
 
 
+## Topics
+- [How to use in CI/CD pipeline](#cicd)
+
 ## Make sure you have java installed
 ```
 java --version
@@ -89,6 +92,37 @@ unpackaged/classes/GeocodingService.cls:1:@SuppressWarnings('PMD.ExcessiveParame
 - csv output
 ```
 pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f csv > /tmp/apex/pmd-results.csv
+
+
+```
+
+<a name="cicd"></a>
+
+## Script for CI/CD Pipeline
+
+```bash
+# Script for pipeline
+# Bails out if count of P1 and P2 are not zero
+# -----------------------------------------
+
+# Run the pmd
+pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /path/to/classes -f csv > results.csv
+
+# query the results using SQL
+echo 'SELECT COUNT(*) AS CNT   FROM CSV("results.csv", {headers:true}) WHERE Priority < 3' > q.sql
+sfdx mohanc:data:query:sql -q q.sql -d results.csv > out.json
+
+# check for the errors
+nerrors=`sfdx mohanc:data:jq -f  '.[].CNT'  -i out.json`
+echo "nerrors: $nerrors"
+
+if [ "$nerrors" != 0 ]
+then
+  echo "Number of P1 and P2 issues are:  $nerrors. Stopping the deployment!"
+  exit 2
+fi
+echo "Continue the deployment..."
+
 ```
 
 ### Open the results csv file
