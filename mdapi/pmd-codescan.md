@@ -3,6 +3,7 @@
 
 ## Topics
 - [How to use in CI/CD pipeline](#cicd)
+- [Github Actions](#gha)
 
 ## Make sure you have java installed
 ```
@@ -134,6 +135,23 @@ Jan 10, 2023 9:42:14 PM net.sourceforge.pmd.PMD encourageToUseIncrementalAnalysi
 WARNING: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.47.0/pmd_userdocs_incremental_analysis.html
 nerrors: 0
 Continue the deployment...
+```
+
+<a name='gha'></a>
+
+## PMD workflow bailing out when violations count is not zero
+
+```yaml
+ - uses: pmd/pmd-github-action@v1
+        id: pmd
+        with:
+          version: '6.40.0'
+          sourcePath: 'mc2Project/force-app/main/default/classes'
+          rulesets: 'pmd/rulesets/apex_ruleset.xml'
+      
+      - name: Fail build if there are violations
+        if: steps.pmd.outputs.violations != 0
+        run: exit 1
 ```
 
 ### Open the results csv file
