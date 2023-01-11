@@ -125,6 +125,8 @@ echo "Continue the deployment..."
 
 ```
 
+### Query used [q.sql](q.sql)
+
 ### sample run
 ```
 bash cicd-pmd.sh 
