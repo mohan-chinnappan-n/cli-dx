@@ -98,7 +98,7 @@ pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f cs
 
 <a name="cicd"></a>
 
-## Script for CI/CD Pipeline
+## Script for CI/CD Pipeline [cicd-pmd.sh](cicd-pmd.sh)
 
 ```bash
 # Script for pipeline
@@ -106,7 +106,7 @@ pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/apex/unpackaged/classes/ -f cs
 # -----------------------------------------
 
 # Run the pmd
-pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /path/to/classes -f csv > results.csv
+pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d /tmp/deployment/unpackaged/classes/  -f csv > results.csv
 
 # query the results using SQL
 echo 'SELECT COUNT(*) AS CNT   FROM CSV("results.csv", {headers:true}) WHERE Priority < 3' > q.sql
@@ -123,6 +123,15 @@ then
 fi
 echo "Continue the deployment..."
 
+```
+
+### sample run
+```
+bash cicd-pmd.sh 
+Jan 10, 2023 9:42:14 PM net.sourceforge.pmd.PMD encourageToUseIncrementalAnalysis
+WARNING: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.47.0/pmd_userdocs_incremental_analysis.html
+nerrors: 0
+Continue the deployment...
 ```
 
 ### Open the results csv file
