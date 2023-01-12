@@ -1,5 +1,7 @@
 # Finding the metadata dendency
 
+- [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
 ## Login to your org
 ```
 sfdx force:auth:web:login -r https://login.salesforce.com
