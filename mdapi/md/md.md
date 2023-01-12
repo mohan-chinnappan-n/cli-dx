@@ -31,5 +31,8 @@ sfdx mohanc:tooling:query -u  mohan.chinnappan.n.sel@gmail.com -q ~/.soql/meta-d
 ```
 open md.csv
 ``` 
+
+- [Sample CSV Output](md.csv)
+----
 - ![Sample](img/md-1.png)
 
