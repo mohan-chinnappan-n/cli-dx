@@ -14,6 +14,7 @@ sfdx mohanc:xml:transform -i ~/treeprj/force-app/main/default/profiles/Admin.pro
 sfdx mohanc:xml:transform -i ~/treeprj/force-app/main/default/permissionsets/sf_devops_InitializeEnvironments.permissionset-meta.xml  -m permset    
 === Writing the output into file : /Users/mchinnappan/treeprj/force-app/main/default/permissionsets/sf_devops_InitializeEnvironments.permissionset-meta.xml.html ===
 ```
+- ![Permset](img/permset-1.webm.gif)
 
 ## package.xml
 ```
@@ -21,3 +22,4 @@ sfdx mohanc:xml:transform -i ~/treeprj/force-app/main/default/permissionsets/sf_
 === Writing the output into file : package.xml.html ===
 
 ```
+- ![package](img/package1.png)
