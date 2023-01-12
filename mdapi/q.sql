@@ -1,1 +1,1 @@
-SELECT COUNT(*) AS CNT   FROM CSV("results.csv", {headers:true}) WHERE Priority < 3
+SELECT * FROM CSV("/tmp/commits.csv",{headers:false})  LIMIT 5 
