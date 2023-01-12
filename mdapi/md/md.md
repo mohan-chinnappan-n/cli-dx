@@ -6,11 +6,12 @@ sfdx force:auth:web:login -r https://login.salesforce.com
 Successfully authorized mohan.chinnappan.n.sel@gmail.com with org ID 00D4x000007rxoGEAQ
 ```
 
+## Qurey SOQL
+
 ```
 cat ~/.soql/meta-dep.soql 
 ```
 
-## Qurey SOQL
 ```sql
 SELECT Id, 
 MetadataComponentId, MetadataComponentName,MetadataComponentNamespace,
