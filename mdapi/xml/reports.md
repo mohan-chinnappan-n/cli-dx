@@ -23,3 +23,10 @@ sfdx mohanc:xml:transform -i ~/treeprj/force-app/main/default/permissionsets/sf_
 
 ```
 - ![package](img/package1.png)
+
+## Using weburl for input xml file
+
+```
+sfdx mohanc:xml:transform  -i https://raw.githubusercontent.com/mohan-chinnappan-n/org-compare/main/se2/unpackaged/unpackaged/permissionsets/Experience_Profile_Manager.permissionset -m permset
+=== Writing the output into file : output.html ===
+```
