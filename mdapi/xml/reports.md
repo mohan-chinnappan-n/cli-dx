@@ -48,7 +48,12 @@ sfdx mohanc:xml:transform  -i https://raw.githubusercontent.com/mohan-chinnappan
 <a name='pmd'></a>
 ## PMD Ruleset 
 ```
-sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/mdapi/pmd-rules/apex_ruleset.xml -m pmd-rulset
+sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/mdapi/pmd-rules/apex_ruleset.xml -m pmd-ruleset
 === Writing the output into file : output.html ===
+```
+
+```
+sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/mohan-chinnappan-n/cli-dx/master/mdapi/pmd-rules/apex_ruleset-old.xml -m pmd-ruleset
+=
 ```
 - ![pmdRuleset](img/pmd-ruleset-1.png)
