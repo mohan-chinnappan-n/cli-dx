@@ -64,3 +64,28 @@ sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/pmd/pmd/master/pm
 ```
 
 - ![pmdRuleset](img/pmd-ruleset-1.png)
+
+### PMD built-in rules are sorted in one of eight categories
+```
+- Best Practices: These are rules which enforce generally accepted best practices.
+- Code Style: These rules enforce a specific coding style.
+- Design: Rules that help you discover design issues.
+- Documentation: These rules are related to code documentation.
+- Error Prone: Rules to detect constructs that are either broken, extremely confusing or prone to runtime errors.
+- Multithreading: These are rules that flag issues when dealing with multiple threads of execution.
+- Performance: Rules that flag suboptimal code.
+- Security: Rules that flag potential security flaws
+```
+
+### Script to produce html report for all DEFAULT PMD rulesets
+```bash
+# Script to render html for the default PMD rules for apex
+for ITEM in bestpractices codestyle design documentation errorprone multithreading performance security
+do
+  echo sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/pmd/pmd/master/pmd-apex/src/main/resources/category/apex/$ITEM.xml -m pmd-ruleset; 
+  sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/pmd/pmd/master/pmd-apex/src/main/resources/category/apex/$ITEM.xml -m pmd-ruleset; 
+  mv output.html def-${ITEM}.html
+done
+```
+- All the rules are here
+	-  [PMD Default Rules](https://mohan-chinnappan-n5.github.io/pmd/def-apex-rulesets.html) 
