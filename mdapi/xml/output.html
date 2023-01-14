@@ -1,19 +1,4 @@
-<html><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/></head><body style="min-height: 75rem; padding-top: 3.5rem;"><nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"><a class="navbar-brand" href="#">PMD Ruleset</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"/></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item active"><a class="nav-link" href="#">Home</a></li></ul></div></nav><h4>
-		Default ruleset used by vscode-apex-pmd (modified from Code Climate)
-	</h4><table style="width:640px" class="table table-light table-bordered table-striped table-hover"><tr><th>priority</th><th>message</th><th>ref</th><th>name_value</th><th/></tr><tr><td>3<td>Apex unit tests should include at least one assertion.  This makes the tests more robust, and using assert
-        with messages provide the developer a clearer idea of what the test does.</td><td>rulesets/apex/apexunit.xml/ApexUnitTestClassShouldHaveAsserts</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
-           
-            <b>Bug Risk</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
-           
-            <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
-           
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex unit tests should not use @isTest(seeAllData=true) because it opens up the existing database data for unexpected modification by tests.</td><td>rulesets/apex/apexunit.xml/ApexUnitTestShouldNotUseSeeAllDataTrue</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
-           
-            <b>Bug Risk</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
-           
-            <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
-           
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid really long classes (lines of code)</td><td>rulesets/apex/complexity.xml/ExcessiveClassLength</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
+<html><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/></head><body style="min-height: 75rem; padding-top: 3.5rem;"><nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"><a class="navbar-brand" href="#">PMD Ruleset</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"/></button><div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav"><li class="nav-item active"><a class="nav-link" href="#">Home</a></li></ul></div></nav><h4>Quickstart configuration of PMD for Salesforce.com Apex. Includes the rules that are most likely to apply everywhere.</h4><table style="width:640px" class="table table-light table-bordered table-striped table-hover"><tr><th>priority</th><th>message</th><th>ref</th><th>name_value</th></tr><tr><td>3<td>Avoid really long classes (lines of code)</td><td>category/apex/design.xml/ExcessiveClassLength</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
            
             <b>1000</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -21,15 +6,7 @@
            
             <b>150</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid really long classes (lines of code)</td><td>rulesets/apex/complexity.xml/ExcessiveClassLength</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
-           
-            <b>1000</b></li><li class="list-group-item"><i>cc_categories</i>:
-           
-            <b>Complexity</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
-           
-            <b>150</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
-           
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid long parameter lists</td><td>rulesets/apex/complexity.xml/ExcessiveParameterList</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid long parameter lists</td><td>category/apex/design.xml/ExcessiveParameterList</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
            
             <b>4</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -37,7 +14,7 @@
            
             <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>This class has too many public methods and attributes</td><td>rulesets/apex/complexity.xml/ExcessivePublicCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>This class has too many public methods and attributes</td><td>category/apex/design.xml/ExcessivePublicCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
            
             <b>25</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -45,7 +22,7 @@
            
             <b>150</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>The constructor has an NCSS line count of {0}</td><td>rulesets/apex/complexity.xml/NcssConstructorCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>The constructor has an NCSS line count of {0}</td><td>category/apex/design.xml/NcssConstructorCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
            
             <b>20</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -53,7 +30,7 @@
            
             <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>The method {0}() has an NCSS line count of {1}</td><td>rulesets/apex/complexity.xml/NcssMethodCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>The method {0}() has an NCSS line count of {1}</td><td>category/apex/design.xml/NcssMethodCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
            
             <b>60</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -61,7 +38,7 @@
            
             <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>The type has an NCSS line count of {0}</td><td>rulesets/apex/complexity.xml/NcssTypeCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>The type has an NCSS line count of {0}</td><td>category/apex/design.xml/NcssTypeCount</td></td><td><ul class="list-group"><li class="list-group-item"><i>minimum</i>:
            
             <b>700</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -69,7 +46,7 @@
            
             <b>250</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>The {0} ''{1}'' has a Standard Cyclomatic Complexity of {2}.</td><td>rulesets/apex/complexity.xml/StdCyclomaticComplexity</td></td><td><ul class="list-group"><li class="list-group-item"><i>reportLevel</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>The {0} ''{1}'' has a Standard Cyclomatic Complexity of {2}.</td><td>category/apex/design.xml/StdCyclomaticComplexity</td></td><td><ul class="list-group"><li class="list-group-item"><i>reportLevel</i>:
            
             <b>10</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -77,7 +54,7 @@
            
             <b>250</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Too many fields</td><td>rulesets/apex/complexity.xml/TooManyFields</td></td><td><ul class="list-group"><li class="list-group-item"><i>maxfields</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Too many fields</td><td>category/apex/design.xml/TooManyFields</td></td><td><ul class="list-group"><li class="list-group-item"><i>maxfields</i>:
            
             <b>20</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -85,7 +62,7 @@
            
             <b>200</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Deeply nested if..else statements are hard to read</td><td>rulesets/apex/complexity.xml/AvoidDeeplyNestedIfStmts</td></td><td><ul class="list-group"><li class="list-group-item"><i>problemDepth</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Deeply nested if..else statements are hard to read</td><td>category/apex/design.xml/AvoidDeeplyNestedIfStmts</td></td><td><ul class="list-group"><li class="list-group-item"><i>problemDepth</i>:
            
             <b>4</b></li><li class="list-group-item"><i>cc_categories</i>:
            
@@ -93,51 +70,237 @@
            
             <b>200</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>1<td>Avoid Soql queries inside loops</td><td>rulesets/apex/performance.xml/AvoidSoqlInLoops</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/design.xml/CyclomaticComplexity</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Complexity</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>200</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid operations in loops that may hit governor limits</td><td>category/apex/performance.xml/OperationWithLimitsInLoop</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Performance</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>150</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>1<td>Avoid Soql queries inside loops</td><td>rulesets/apex/performance.xml/AvoidDmlStatementsInLoops</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid directly accessing Trigger.old and Trigger.new</td><td>category/apex/errorprone.xml/AvoidDirectAccessTriggerMap</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Performance</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>150</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid logic in triggers</td><td>rulesets/apex/style.xml/AvoidLogicInTrigger</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid logic in triggers</td><td>category/apex/bestpractices.xml/AvoidLogicInTrigger</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>200</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid using global modifier</td><td>rulesets/apex/style.xml/AvoidGlobalModifier</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid using global modifier</td><td>category/apex/bestpractices.xml/AvoidGlobalModifier</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Class names should begin with an uppercase character</td><td>rulesets/apex/style.xml/ClassNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td><td></td><td>category/apex/errorprone.xml/AvoidNonExistentAnnotations</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid hardcoding ID's</td><td>category/apex/errorprone.xml/AvoidHardcodingId</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>20</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Class names should begin with an uppercase character</td><td>category/apex/codestyle.xml/ClassNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Method name does not begin with a lower case character.</td><td>rulesets/apex/style.xml/MethodNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Method name does not begin with a lower case character.</td><td>category/apex/codestyle.xml/MethodNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>1</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>Classes should not have non-constructor methods with the same name as the class</td><td>rulesets/apex/style.xml/MethodWithSameNameAsEnclosingClass</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Classes should not have non-constructor methods with the same name as the class</td><td>category/apex/errorprone.xml/MethodWithSameNameAsEnclosingClass</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            
-            <b>false</b></li></ul></td></tr><tr><td>3<td>{0} variable {1} should begin with {2}</td><td>rulesets/apex/style.xml/VariableNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/codestyle.xml/FieldNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
            
             <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/codestyle.xml/FormalParameterNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/codestyle.xml/LocalVariableNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/codestyle.xml/PropertyNamingConventions</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex unit test classes should have at least one System.assert() or assertEquals() or AssertNotEquals() call</td><td>category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Bug Risk</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>@isTest(seeAllData=true) should not be used in Apex unit tests because it opens up the existing database data for unexpected modification by tests</td><td>category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Bug Risk</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td><td></td><td>category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveRunAs</td></td><td><ul class="list-group"/></td></tr><tr><td>3<td>Apex classes should declare a sharing model if DML or SOQL is used</td><td>category/apex/security.xml/ApexSharingViolations</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex callouts should use encrypted communication channels</td><td>category/apex/security.xml/ApexInsecureEndpoint</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/errorprone.xml/ApexCSRF</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>100</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex classes should safely redirect to a known location</td><td>category/apex/security.xml/ApexOpenRedirect</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex classes should escape variables merged in DML query</td><td>category/apex/security.xml/ApexSOQLInjection</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>20</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex classes should escape Strings obtained from URL parameters</td><td>category/apex/security.xml/ApexXSSFromURLParam</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>20</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex classes should escape addError strings</td><td>category/apex/security.xml/ApexXSSFromEscapeFalse</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>20</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Apex Crypto should use random IV/key</td><td>category/apex/security.xml/ApexBadCrypto</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Validate CRUD permission before SOQL/DML operation</td><td>category/apex/security.xml/ApexCRUDViolation</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>150</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Calling potentially dangerous method</td><td>category/apex/security.xml/ApexDangerousMethods</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Consider using named credentials for authenticated callouts</td><td>category/apex/security.xml/ApexSuggestUsingNamedCred</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Security</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>20</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid using if statements without curly braces</td><td>category/apex/codestyle.xml/IfStmtsMustUseBraces</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid using 'while' statements without curly braces</td><td>category/apex/codestyle.xml/WhileLoopsMustUseBraces</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid using 'if...else' statements without curly braces</td><td>category/apex/codestyle.xml/IfElseStmtsMustUseBraces</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid using 'for' statements without curly braces</td><td>category/apex/codestyle.xml/ForLoopsMustUseBraces</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid empty catch blocks</td><td>category/apex/errorprone.xml/EmptyCatchBlock</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid empty 'if' statements</td><td>category/apex/errorprone.xml/EmptyIfStmt</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid empty 'while' statements</td><td>category/apex/errorprone.xml/EmptyWhileStmt</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid empty try or finally blocks</td><td>category/apex/errorprone.xml/EmptyTryOrFinallyBlock</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Avoid empty block statements.</td><td>category/apex/errorprone.xml/EmptyStatementBlock</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/codestyle.xml/OneDeclarationPerLine</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td>Document classes, methods, and properties that are public or global.</td><td>category/apex/documentation.xml/ApexDoc</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Style</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
+           
+            <b>50</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
+           
+            <b>false</b></li></ul></td></tr><tr><td>3<td></td><td>category/apex/bestpractices.xml/DebugsShouldUseLoggingLevel</td></td><td><ul class="list-group"><li class="list-group-item"><i>cc_categories</i>:
+           
+            <b>Clarity</b></li><li class="list-group-item"><i>cc_remediation_points_multiplier</i>:
            
             <b>5</b></li><li class="list-group-item"><i>cc_block_highlighting</i>:
            

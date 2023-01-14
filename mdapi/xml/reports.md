@@ -57,4 +57,10 @@ sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/mohan-chinnappan-
 === Writing the output into file : output.html ===
 
 ```
+```
+sfdx mohanc:xml:transform -i https://raw.githubusercontent.com/pmd/pmd/master/pmd-apex/src/main/resources/rulesets/apex/quickstart.xml -m pmd-ruleset
+
+=== Writing the output into file : output.html ===
+```
+
 - ![pmdRuleset](img/pmd-ruleset-1.png)
