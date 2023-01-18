@@ -57,6 +57,6 @@ DEPLOY PROGRESS | ████████████████████�
 ## Open the org to check the deployment status
 
 ```
-sfdx force:org:open  -p   lightning/setup/DeployStatus/home
+sfdx force:org:open  -p   lightning/setup/DeployStatus/ -u username
 
 ```
