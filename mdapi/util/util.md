@@ -53,3 +53,10 @@ DEPLOY PROGRESS | ████████████████████�
 
 
 ```
+
+## Open the org to check the deployment status
+
+```
+#fdx force:org:open  -p   lightning/setup/DeployStatus/home
+
+```
