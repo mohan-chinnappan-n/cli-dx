@@ -1,9 +1,13 @@
 # Deployment Util commands
 
+## Quick Demo
 - ![Demo](./img/mdapi-utill--1.webm.gif)
 
 - Needs plugin version 0.0.330
     - [How to install plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+
+## Steps
 
 ```
 sfdx mohanc:mdapi:helper:retrieve  -m Profile -n "Read Only"  -u mohan.chinnappan.n.sel@gmail.com
