@@ -183,10 +183,10 @@ open /tmp/apex/pmd-results.html
 ## Run pmd enhanced html output
 
 ```
-pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d ./unpackaged/classes -f xslt -property xsltFilename=pmd-report-v2.xslt > pmd-report.html
+pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d ./unpackaged/classes -f xslt -property xsltFilename=html-report-v2.xslt > pmd-report.html
 
 ```
-- [pmd-report-v2.xslt](https://raw.githubusercontent.com/mohan-chinnappan-n/pmd/master/pmd-core/etc/xslt/pmd-report-v2.xslt)
+- [pmd-report-v2.xslt](https://raw.githubusercontent.com/mohan-chinnappan-n/pmd/master/pmd-core/etc/xslt/html-report-v2.xslt)
 
 
 ### Screenshot
