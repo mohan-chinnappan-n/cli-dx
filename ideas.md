@@ -1,5 +1,4 @@
 ## Idea
-
 ### Data Model
 
 #### Idea resources
