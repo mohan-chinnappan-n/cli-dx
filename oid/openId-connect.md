@@ -23,7 +23,7 @@
 <a name='cs'></a>
 
 ## OID provider client secret details
-- Note: Content is mangled here to protect the idenity
+- Note: Content is mangled here to protect secrets 
 ```json
 
 {
@@ -191,8 +191,8 @@ $ cat authproviders/Google.authprovider
 <?xml version="1.0" encoding="UTF-8"?>
 <AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
     <authorizeUrl>https://accounts.google.com/o/oauth2/auth</authorizeUrl>
-    <consumerKey>113225562349-fqktafcmesni74spapbj1ep0pvja4oor.apps.googleusercontent.com</consumerKey>
-    <consumerSecret>+Za8U3gPxgIJUNK49yR1Z7va0cEEY92ILatc=</consumerSecret>
+    <consumerKey>113225562ee349-fqktafcmesni74spaJUNK1ep0pvja4oor.apps.googleusercontent.com</consumerKey>
+    <consumerSecret>+Za8U3gPxgIJUNK49yR1Z7va0JUNK2eeeILatc=</consumerSecret>
     <defaultScopes>email openid  profile</defaultScopes>
     <executionUser>mohan.chinnappan@email.com</executionUser>
     <friendlyName>Google</friendlyName>
