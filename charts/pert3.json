@@ -1,0 +1,84 @@
+ {
+        "T1.1": {
+          "Tid": "T1.1",
+          "task": "Shopping",
+          "start": 0,
+          "duration": 1,
+          "end": 0,
+          "responsible": "Ken",
+          "pred": ["START"]
+        },
+        "T1.2": {
+          "Tid": "T1.2",
+           "task": "Delivery",
+          "start": 0,
+          "duration": 3,
+          "end": 0,
+          "responsible": "James",
+          "pred": ["T1.1"]
+        },
+        "T1.3": {
+          "Tid": "T1.3",
+            "task": "Put in Fridge",
+         "start": 0,
+          "duration": 3,
+          "end": 0,
+          "responsible": "Ken",
+          "pred": [ "T1.2"]
+        },
+        "T1.4": {
+          "Tid": "T1.4",
+             "task": "Clean",
+        "start": 0,
+          "duration": 2,
+          "end": 0,
+          "responsible": "Ken",
+          "pred": ["T1.2"]
+        },
+        "T1.5": {
+          "Tid": "T1.5",
+              "task": "Prepare Meals",
+       "start": 0,
+          "duration": 2,
+          "end": 0,
+          "responsible": "Jane",
+          "pred": ["T1.3"]
+        },
+        "T1.6": {
+          "Tid": "T1.6",
+               "task": "Payment",
+      "start": 0,
+          "duration": 1,
+          "end": 0,
+          "responsible": "Ken",
+          "pred": ["T1.4"]
+        },
+        "T1.7": {
+          "Tid": "T1.7",
+                "task": "Invite",
+     "start": 0,
+          "duration": 3,
+          "end": 0,
+          "responsible": "Jane",
+          "pred": ["START"]
+        },
+        "T1.8": {
+          "Tid": "T1.8",
+                 "task": "Eat",
+    "start": 0,
+          "duration": 0,
+          "end": 0,
+          "responsible": "All",
+          "pred": ["T1.5","T1.6","T1.7"]
+        },
+        "END": {
+          "Tid": "END",
+                  "task": "End",
+   "start": 0,
+          "duration": 0,
+          "end": 0,
+          "responsible": "All",
+          "pred": ["T1.8"]
+        }
+}
+                     
