@@ -5,7 +5,7 @@
           "start": 0,
           "duration": 1,
           "end": 0,
-          "responsible": "Shopping",
+          "responsible": "Ken",
           "pred": ["START"]
         },
         "T1.2": {
@@ -14,7 +14,7 @@
           "start": 0,
           "duration": 3,
           "end": 0,
-          "responsible": "Delivery",
+          "responsible": "James",
           "pred": ["T1.1"]
         },
         "T1.3": {
@@ -23,7 +23,7 @@
          "start": 0,
           "duration": 3,
           "end": 0,
-          "responsible": "Put it in Fridge",
+          "responsible": "Ken",
           "pred": [ "T1.2"]
         },
         "T1.4": {
@@ -32,7 +32,7 @@
         "start": 0,
           "duration": 2,
           "end": 0,
-          "responsible": "Clean",
+          "responsible": "Ken",
           "pred": ["T1.2"]
         },
         "T1.5": {
@@ -41,7 +41,7 @@
        "start": 0,
           "duration": 2,
           "end": 0,
-          "responsible": "Prepare Recipe",
+          "responsible": "Jane",
           "pred": ["T1.3"]
         },
         "T1.6": {
@@ -50,7 +50,7 @@
       "start": 0,
           "duration": 1,
           "end": 0,
-          "responsible": "Send Payment",
+          "responsible": "Ken",
           "pred": ["T1.4"]
         },
         "T1.7": {
@@ -59,7 +59,7 @@
      "start": 0,
           "duration": 3,
           "end": 0,
-          "responsible": "Invite",
+          "responsible": "Jane",
           "pred": ["START"]
         },
         "T1.8": {
@@ -68,7 +68,7 @@
     "start": 0,
           "duration": 0,
           "end": 0,
-          "responsible": "Eat",
+          "responsible": "All",
           "pred": ["T1.5","T1.6","T1.7"]
         },
         "END": {
@@ -77,7 +77,7 @@
    "start": 0,
           "duration": 0,
           "end": 0,
-          "responsible": "Responsible",
+          "responsible": "All",
           "pred": ["T1.8"]
         }
 }
