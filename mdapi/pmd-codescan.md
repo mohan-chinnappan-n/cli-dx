@@ -14,30 +14,30 @@ OpenJDK 64-Bit Server VM Homebrew (build 11.0.14.1+0, mixed mode)
 
 ```
 
-## Download and install pmd distribution - pmd-bin-6.47.0 
+## Download and install pmd distribution - pmd-bin-6.54.0 
 
-- from [pmd-bin-6.47.0](dist/pmd-bin-6.47.0.zip)
+- from [pmd-bin-6.54.0](dist/pmd-bin-6.54.0.zip)
 
-- unzip the file pmd-bin-6.47.0.zip
+- unzip the file pmd-bin-6.54.0.zip
 
 ```
-jar xvf pmd-bin-6.47.0.zip
+jar xvf pmd-bin-6.54.0.zip
 ```
 
 
-- go to bin folder of the extracted pmd-bin-6.47.0.zip
+- go to bin folder of the extracted pmd-bin-6.54.0.zip
 - do this copy
 ```
-cd pmd-bin-6.47.0/bin
+cd pmd-bin-6.54.0/bin
 cp run.sh pmd-run.sh 
 ```
 
-- put this folder: ```pmd-bin-6.47.0/bin``` in your PATH (```~/.zshrc or ~/.bashrc```)
+- put this folder: ```pmd-bin-6.54.0/bin``` in your PATH (```~/.zshrc or ~/.bashrc```)
 - example in ~/.zshrc
 ```
 
 # PMD env var holds the location of your PMD install
-export PMD="/Users/mchinnappan/node-pmd/pmd-bin-6.47.0"
+export PMD="/Users/mchinnappan/node-pmd/pmd-bin-6.54.0"
 # let us put the bin folder of the PMD in path
 export PATH="$PATH:$PMD/bin"
 
@@ -132,7 +132,7 @@ echo "Continue the deployment..."
 ```
 bash cicd-pmd.sh 
 Jan 10, 2023 9:42:14 PM net.sourceforge.pmd.PMD encourageToUseIncrementalAnalysis
-WARNING: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.47.0/pmd_userdocs_incremental_analysis.html
+WARNING: This analysis could be faster, please consider using Incremental Analysis: https://pmd.github.io/pmd-6.54.0/pmd_userdocs_incremental_analysis.html
 nerrors: 0
 Continue the deployment...
 ```
