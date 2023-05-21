@@ -186,7 +186,7 @@ open /tmp/apex/pmd-results.html
 pmd-run.sh pmd -R ~/.pmd/apex_ruleset.xml -d ./unpackaged/classes -f xslt -property xsltFilename=html-report-v2.xslt > pmd-report.html
 
 ```
-- [html-report-v2.xslt](https://raw.githubusercontent.com/mohan-chinnappan-n/pmd/master/pmd-core/etc/xslt/html-report-v2.xslt)
+- [html-report-v2.xslt](https://github.com/pmd/pmd/blob/master/pmd-core/etc/xslt/html-report-v2.xslt)
 
 
 ### Screenshot
