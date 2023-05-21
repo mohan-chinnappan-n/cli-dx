@@ -121,10 +121,10 @@ run_check_pmd() {
 
 
 
-  cmd="run-pmd.sh pmd -R ${RULESET} -d ${CLS_FOLDER}    -f csv > ${OUTFILE}"
+  cmd="pmd-run.sh pmd -R ${RULESET} -d ${CLS_FOLDER}    -f csv > ${OUTFILE}"
   echo "running cmd: ${cmd}"
   
-   ${PMD_PATH}/run-pmd.sh pmd -R ${RULESET} -d ${CLS_FOLDER}    -f csv > ${OUTFILE}
+   ${PMD_PATH}/pmd-run.sh pmd -R ${RULESET} -d ${CLS_FOLDER}    -f csv > ${OUTFILE}
 
   # query the results using SQL
   
