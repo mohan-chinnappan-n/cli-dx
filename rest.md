@@ -642,6 +642,18 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 
 ### POST
 
+```
+sfdx mohanc:ws:rest -r https://jsonplaceholder.typicode.com/posts -m POST -d ~/.rest-client/data.json -f ~/.rest-client/header.json
+```
+```json
+{
+    "title": "foo",
+    "body": "bar",
+    "userId": 1,
+    "id": 101
+}
+```
+
 #### POST a Chatter Feed for the given user and message
 ```
 $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/services/data/v49.0/sobjects/FeedItem -m POST -f header_ea.json -d feed/fi.json 
