@@ -639,8 +639,32 @@ $ sfdx mohanc:ws:rest -r https://mohansun-ea-02-dev-ed.my.salesforce.com/service
 ```
 <a name="post"></a>
 
-
 ### POST
+
+```
+cat ~/.rest-client/data.json
+
+```
+
+```json
+
+{
+        "title": "foo",
+        "body": "bar",
+        "userId": 1
+}
+```
+
+```
+cat  ~/.rest-client/header.json
+
+```
+
+```json
+{
+	"Content-Type": "application/json"
+}
+```
 
 ```
 sfdx mohanc:ws:rest -r https://jsonplaceholder.typicode.com/posts -m POST -d ~/.rest-client/data.json -f ~/.rest-client/header.json
