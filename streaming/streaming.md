@@ -1,9 +1,9 @@
 # Subscribing to Salesforce Streaming API
 
 
-- Requires 0.0.357 version of the plugin
+- Requires 0.0.358 version of the plugin
     - sfdx plugins:update 
-    - sfdx-mohanc-plugins@0.0.0.357
+    - sfdx-mohanc-plugins@0.0.0.358
     - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
  
