@@ -1,5 +1,25 @@
 # Subscribing to Salesforce Streaming API
 
+
+- Requires 0.0.357 version of the plugin
+    - sfdx plugins:update 
+    - sfdx-mohanc-plugins@0.0.0.357
+    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+
+ 
+ ## Login to the org (sandbox) to get the user-id
+ ```
+ sfdx force:auth:web:login -r https://test.salesforce.com
+
+ ```
+## Login to the org (Product or Developer Edition)
+ ```
+ sfdx force:auth:web:login 
+
+ ```
+
+
+
 ## Apex code to  create push topic
 ```java
 // apex code to create push topic ( ~/.apex/pushNewAccounts.cls)
