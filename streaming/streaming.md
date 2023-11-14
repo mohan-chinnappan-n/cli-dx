@@ -12,7 +12,7 @@
  sfdx force:auth:web:login -r https://test.salesforce.com
 
  ```
-## Login to the org (Product or Developer Edition)
+## Login to the org (PROD or Developer Edition)
  ```
  sfdx force:auth:web:login 
 
