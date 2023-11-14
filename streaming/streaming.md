@@ -1,18 +1,33 @@
 # Subscribing to Salesforce Streaming API
 
+## Topics
+- [Install](#install)
+- [Push Topics](#pushTopics)
+- [Generic Subscriptions](#GenericSubscriptions)
 
+---
+
+
+<a name='install'>
+
+## Install 
 - Requires 0.0.358 version of the plugin
-    - sfdx plugins:update 
-    - sfdx-mohanc-plugins@0.0.0.358
-    - [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
+- sfdx plugins:update 
+- sfdx-mohanc-plugins@0.0.0.358
+- [How to install the plugin](https://mohan-chinnappan-n.github.io/dx/plugins.html#/1)
 
+---
+
+<a name='pushTopics'>
+
+## Push Topics
  
- ## Login to the org (sandbox) to get the user-id
+ ### Login to the org (sandbox) to get the user-id
  ```
  sfdx force:auth:web:login -r https://test.salesforce.com
 
  ```
-## Login to the org (PROD or Developer Edition)
+### Login to the org (PROD or Developer Edition)
  ```
  sfdx force:auth:web:login 
 
@@ -20,7 +35,7 @@
 
 
 
-## Apex code to  create push topic
+### Apex code to  create push topic
 ```java
 // apex code to create push topic ( ~/.apex/pushNewAccounts.cls)
   PushTopic pushTopic = new PushTopic();
@@ -31,6 +46,8 @@
   pushTopic.NotifyForOperationDelete = false;
   pushTopic.NotifyForOperationUndelete = false;
 
+  insert pushTopic;
+
 ```
 
 ### Run this anonymous apex code:  
@@ -39,10 +56,10 @@
 
 ``` 
 
-## In UI 
+### In UI 
 - Create a New Account record
 
-## Subscribe this topic (NewAccounts):
+### Subscribe this push topic (NewAccounts):
 
 ```
  sfdx mohanc:streaming:sub -u mohan.chinnappan.n.sel2@gmail.com -t 'NewAccounts'
@@ -64,6 +81,32 @@
 
 ```
 
+
+---
+
+<a name='GenericSubscriptions'>
+
+## Generic Subscriptions
+
+```
+ sfdx mohanc:streaming:sub -u mohan.chinnappan.n.sel2@gmail.com -t '/event/AccountEvent__e'
+
+```
+```json
+
+{
+    "schema": "tE5g_mM0KX9CfyI4TjyxTg",
+    "payload": {
+      ...
+    },
+    "event": {
+        "EventUuid": "25d04728-31fa-4395-9b97-a5e96b7f1835",
+        "replayId": 16278341,
+        "EventApiName": "AccountEvent__e"
+    }
+}
+
+```
 ## Documentation
 
 ```
@@ -96,6 +139,9 @@ EXAMPLES
   pushTopic.NotifyForOperationUpdate = false;
   pushTopic.NotifyForOperationDelete = false;
   pushTopic.NotifyForOperationUndelete = false;
+
+  insert pushTopic;
+
   // run it
   $ sfdx mohanc:tooling:execute -u mohan.chinnappan.n.sel2@gmail.com -a ~/.apex/pushNewAccounts.cls
   // in UI create a New Account record
@@ -117,3 +163,5 @@ EXAMPLES
 
 
 ```
+
+
