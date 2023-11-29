@@ -362,7 +362,17 @@ $ cat header.json
 
 
 ``` 
+## Open with frontdoor.jsp
+- Seesion Id: AccessToken (2nd line above header.json, the string after  Bearer)
 
+
+```
+https://instance.salesforce.com/secur/frontdoor.jsp?sid=session_ID
+```
+example:
+```
+https://mohansun-ea-02-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=session_ID
+```
 ## JWT on Ubuntu
 
 ### Install
