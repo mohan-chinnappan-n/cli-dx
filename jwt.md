@@ -1,5 +1,7 @@
 ## How to use OAuth2.0 based JWT flow to login to a Salesforce org using DX
 
+- [Using frontdoor.jsp](#frontdoor)
+
 - We need the following
     - server.key (private key)  aka jwt key file
     - Connected App
@@ -343,6 +345,7 @@ DESCRIPTION
 
 ```
 
+<a name='frontdoor'></a>
 ### Login via command line
 ```
 $ sfdx force:auth:jwt:grant -u mohan.chinnappan.n_ea2@gmail.com -f server.key -i 3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL
@@ -373,6 +376,22 @@ example:
 ```
 https://mohansun-ea-02-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=session_ID
 ```
+
+## How to create a csv for login_urls for the given csv file of username
+- [Download this script: form_login_urls.sh](jwt/form_login_urls.sh)
+- Create a csv file with list of users in users.csv
+- Provide the private key location 
+- Provide the consumerKey for the connectApp
+
+```bash
+bash form_login_urls.sh users.csv ~/.keys/private.key '3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL' loginUrls.csv
+
+```
+- This will generate an output csv ```loginUrs.csv``` file with these fields
+  - username, frontdoor.jsp_based_url 
+- You can read this output csv ```loginUrs.csv``` file to test login to multiple users that you have provided in the input ```users.csv```
+-----
+
 ## JWT on Ubuntu
 
 ### Install
