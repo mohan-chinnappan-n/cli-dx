@@ -379,6 +379,7 @@ https://mohansun-ea-02-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=session_
 
 ## How to create a csv for login_urls for the given csv file of username
 - [Download this script: form_login_urls.sh](jwt/form_login_urls.sh)
+- Make sure you have jq installed in your machine
 - Create a csv file with list of users in users.csv
 - Provide the private key location 
 - Provide the consumerKey for the connectApp
