@@ -500,5 +500,6 @@ RSA key ok
     - [Java Example](jwt/java)
 - [Using python for JWT flow](https://github.com/mohan-chinnappan-n/bulkapi2-dx/tree/master/jwt/py)
 - [Sign in error 'Login Rate Exceeded'](https://help.salesforce.com/articleView?id=000312767&type=1&mode=1)
+- [Manage Access to Your Connected App](https://trailhead.salesforce.com/content/learn/projects/build-a-connected-app-for-api-integration/manage-access-to-your-connected-app)
 
 
