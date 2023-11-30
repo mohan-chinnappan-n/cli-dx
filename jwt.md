@@ -382,8 +382,9 @@ https://mohansun-ea-02-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=session_
 - Make sure you have jq installed in your machine
 - Create a csv file with list of users in users.csv
 - Provide the private key location 
-- Provide the consumerKey for the connectApp
+- Provide the consumerKey for the connectedApp
 
+![script](jwt/img/jwt-frondoor.svg)
 ```bash
 bash form_login_urls.sh users.csv ~/.keys/private.key '3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL' loginUrls.csv
 
