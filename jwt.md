@@ -384,7 +384,7 @@ https://mohansun-ea-02-dev-ed.my.salesforce.com/secur/frontdoor.jsp?sid=session_
 - Provide the private key location 
 - Provide the consumerKey for the connectedApp
 
-![script](jwt/img/jwt-frondoor.svg)
+![script](jwt/img/jwt-frontdoor.png)
 ```bash
 bash form_login_urls.sh users.csv ~/.keys/private.key '3MVG9Kip4IKAJUNK4gZDQcUI7albyrfHKO6yYqMW09rBf5JiiqNOx3jgIZdPvBWargyvDKjnXlwrZ4uhR6wmL' loginUrls.csv
 
