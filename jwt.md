@@ -394,6 +394,12 @@ bash form_login_urls.sh users.csv ~/.keys/private.key '3MVG9Kip4IKAJUNK4gZDQcUI7
 - You can read this output csv ```loginUrs.csv``` file to test login to multiple users that you have provided in the input ```users.csv```
 -----
 
+Looking for a cloud based server which hosts the callback url?
+- [jwt server](jwt/py/server/README.md)
+
+----
+
+
 ## JWT on Ubuntu
 
 ### Install
