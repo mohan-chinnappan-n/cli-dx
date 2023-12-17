@@ -395,8 +395,8 @@ bash form_login_urls.sh users.csv ~/.keys/private.key '3MVG9Kip4IKAJUNK4gZDQcUI7
 -----
 
 Looking for a cloud based server which hosts the callback url?
-- [jwt server](jwt/py/server/README.md)
-
+- [jwt server python](jwt/py/server/README.md)
+- [jwt in java](jwt/java/README.md)
 ----
 
 
