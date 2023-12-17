@@ -4,6 +4,10 @@
 
 - author: mohan chinnappan
 -------------------------------------------------------------------
+## Requirements
+- pip install pyJWT
+- pip install Flask
+
 
 ### Run:
 CID=<consumer_key> PK=/tmp/certs/server.key PORT=3000 C_URL='http://localhost:3000/callback' python  jwt-auth.py
